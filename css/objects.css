@@ -25,9 +25,30 @@ div.modal {
 
 .box {
   font-size: 1rem;
-  padding: 0.8em;
+  padding: 0.6em;
   border: 1px solid rgb(218, 218, 218);
-  border-radius: 0.4em;
+  border-radius: 0.3em;
   background-color: rgb(255, 255, 255);
   box-shadow: 0em 0.05em 0.04em 0em rgba(190, 190, 190, 0.4);
 }
+
+.box-title {
+  font-size: 1rem;
+  background-color: rgb(232, 232, 232);
+  padding: 0.5em;
+}
+
+.box-body {
+  padding: 0.8em 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
