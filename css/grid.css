@@ -5,7 +5,7 @@
 div[class*="small-"], div[class*="medium-"],
 div[class*="large-"], div[class*="default-"] {
   float: left;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 
 div.container {
@@ -283,7 +283,7 @@ div.default-push-12 {
 
   /* ==================================== */
 
-  .small-absent {
+  .absent-small {
     display: none;
   }
 }
@@ -392,7 +392,7 @@ div.default-push-12 {
 
   /* ==================================== */
 
-  .medium-absent {
+  .absent-medium {
     display: none;
   }
 }
@@ -501,7 +501,7 @@ div.default-push-12 {
 
   /* ==================================== */
 
-  .large-absent {
+  .absent-large {
     display: none;
   }
 }

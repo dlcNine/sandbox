@@ -34,11 +34,39 @@
   visibility: hidden !important;
 }
 
+.relative {
+  position: relative;
+}
+
 *[disabled] {
   opacity: 0.5;
 }
 
+/* ====================================================== */
 
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
 
 
 
