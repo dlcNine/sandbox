@@ -1,0 +1,48 @@
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.no-radius {
+  border-radius: 0 !important;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.to-left {
+  float: left;
+}
+
+.to-right {
+  float: right;
+}
+
+.absent {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+*[disabled] {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
