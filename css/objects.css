@@ -51,16 +51,16 @@ div.modal {
 
 .message {
   font-size: 1rem;
-  border: 0.1em solid rgb(81, 81, 81); /*dark*/
+  border: 0.1em solid rgb(81, 81, 81);
   border-radius: 0.3em;
-  background-color: rgb(242, 242, 242); /*light*/
+  background-color: rgb(242, 242, 242);
   color: rgb(81, 81, 81);
 }
 
 .message-header {
   padding: 0.6em 1em;
   color: rgb(255, 255, 255);
-  background-color: rgb(81, 81, 81); /*dark*/
+  background-color: rgb(81, 81, 81);
 }
 
 .message-body {
@@ -105,7 +105,10 @@ div.tabs li[class~="active"] {
   color: rgb(62, 157, 239);
   background-color: rgb(242, 242, 242);
   border-bottom: 0.1em solid rgb(62, 157, 239);
+  font-weight: bold;
 }
+
+/* ==================================== */
 
 
 
