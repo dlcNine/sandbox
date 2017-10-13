@@ -14,7 +14,8 @@ div.container {
   position: relative;
 }
 
-div.container::after, .clearfix::after, div.navbar::after {
+div.container::after, .clearfix::after, 
+div.tabs::after {
   content: "";
   clear: both;
   display: table;
