@@ -3,6 +3,19 @@ z-index layers:
   2: modal-backdrop
   1: navbar
   0: unchanged
+
+colors: 
+  light-gray: rgb(242, 242, 242);
+  medium-gray: rgb(206, 206, 206);
+  dark-gray: rgb(81, 81, 81);
+
+  (primary)
+  light-blue: rgb(244, 249, 252);
+  medium-blue: rgb(62, 157, 239);
+  dark-blue: rgb(19, 116, 196);
+
+  charcoal: rgb(55, 55, 61);
+  black: rgb(30, 30, 33);
 */
 
 div.modal-backdrop {
@@ -23,6 +36,8 @@ div.modal {
   border-radius: 0.5em;
 }
 
+/* ==================================== */
+
 .box {
   font-size: 1rem;
   padding: 0.6em;
@@ -32,22 +47,37 @@ div.modal {
   box-shadow: 0em 0.05em 0.04em 0em rgb(242, 242, 242);
 }
 
+/* ==================================== */
+
 .message {
   font-size: 1rem;
-  border: 0.1em solid rgb(115, 115, 115);
+  border: 0.1em solid rgb(81, 81, 81); /*dark*/
   border-radius: 0.3em;
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242); /*light*/
+  color: rgb(81, 81, 81);
 }
 
 .message-header {
   padding: 0.6em 1em;
   color: rgb(255, 255, 255);
-  background-color: rgb(115, 115, 115);
+  background-color: rgb(81, 81, 81); /*dark*/
 }
 
 .message-body {
-  padding: 0.8em 0.8em 0.8em 1.2em;
+  padding: 0.8em 1.2em;
 }
+
+.message[class~="theme-primary"] {
+  border-color: rgb(62, 157, 239);
+  color: rgb(19, 116, 196);
+  background-color: rgb(244, 249, 252);
+}
+
+.message[class~="theme-primary"] .message-header {
+  background-color: rgb(62, 157, 239);
+}
+
+/* ==================================== */
 
 div.tabs {
   font-size: 1rem;
@@ -60,19 +90,21 @@ div.tabs li {
   padding: 0.8em 1.5em;
   margin: 0em -0.1em -0.1em 0em;
   border-radius: 0.3em 0.3em 0em 0em;
+  color: rgb(206, 206, 206);
 }
-
-/*
-  border-color: rgb(206, 206, 206);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 0.3em 0.3em 0em 0em;
-*/
 
 div.tabs li:hover {
   padding-bottom: 0.7em;
+  color: rgb(81, 81, 81);
   background-color: rgb(242, 242, 242);
-  border-bottom: 0.1em solid rgb(115, 115, 115);
+  border-bottom: 0.1em solid rgb(81, 81, 81);
+}
+
+div.tabs li[class~="active"] {
+  padding-bottom: 0.7em;
+  color: rgb(62, 157, 239);
+  background-color: rgb(242, 242, 242);
+  border-bottom: 0.1em solid rgb(62, 157, 239);
 }
 
 
