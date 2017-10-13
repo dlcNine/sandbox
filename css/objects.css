@@ -6,7 +6,7 @@ z-index layers:
 
 colors: 
   light-gray: rgb(242, 242, 242);
-  medium-gray: rgb(206, 206, 206);
+  medium-gray: temp: rgb(190, 190 ,190);
   dark-gray: rgb(81, 81, 81);
 
   (primary)
@@ -41,7 +41,7 @@ div.modal {
 .box {
   font-size: 1rem;
   padding: 0.6em;
-  border: 0.1em solid rgb(206, 206, 206);
+  border: 0.1em solid rgb(190, 190 ,190); 
   border-radius: 0.4em;
   background-color: rgb(255, 255, 255);
   box-shadow: 0em 0.05em 0.04em 0em rgb(242, 242, 242);
@@ -81,16 +81,16 @@ div.modal {
 
 div.tabs {
   font-size: 1rem;
-  border-bottom: 0.1em solid rgb(206, 206, 206);
+  border-bottom: 0.1em solid rgb(190, 190 ,190);
 }
 
 div.tabs li {
-  font-size: 1rem;
+  font-size: 1em;
   float: left;
   padding: 0.8em 1.5em;
   margin: 0em -0.1em -0.1em 0em;
   border-radius: 0.3em 0.3em 0em 0em;
-  color: rgb(206, 206, 206);
+  color: rgb(190, 190 ,190);
 }
 
 div.tabs li:hover {
