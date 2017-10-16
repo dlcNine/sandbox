@@ -3,7 +3,7 @@ index.html
 dev-helper.css
 /javascript
 .sass-cache/
-output-css/grid.css.map
-output-css/reset.css.map
-output-css/utility.css.map
-output-css/objects.css.map
+css/grid.css.map
+css/reset.css.map
+css/utility.css.map
+css/objects.css.map

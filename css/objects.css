@@ -7,12 +7,11 @@ div.modal-backdrop {
   height: auto;
   background-color: rgba(55, 55, 61, 0.9);
   padding: 1.5rem; }
-
-div.modal {
-  font-size: 1rem;
-  padding: 2.5em 2em 4em 2em;
-  background-color: white;
-  border-radius: 0.5em; }
+  div.modal-backdrop div.modal {
+    font-size: 1rem;
+    padding: 2.5em 2em 4em 2em;
+    background-color: white;
+    border-radius: 0.5em; }
 
 /* ==================================== */
 .box {
@@ -30,47 +29,40 @@ div.modal {
   border-radius: 0.3em;
   background-color: #f2f2f2;
   color: #515151; }
-
-.message-header {
-  padding: 0.6em 1em;
-  color: white;
-  background-color: #515151; }
-
-.message-body {
-  padding: 0.8em 1.2em; }
-
-.message[class~="theme-primary"] {
-  border-color: #3e9def;
-  color: #1374c4;
-  background-color: #f4f9fc; }
-
-.message[class~="theme-primary"] .message-header {
-  background-color: #3e9def; }
+  .message .message-header {
+    padding: 0.6em 1em;
+    color: white;
+    background-color: #515151; }
+  .message .message-body {
+    padding: 0.8em 1.2em; }
+  .message[class~="theme-primary"] {
+    border-color: #3e9def;
+    color: #1374c4;
+    background-color: #f4f9fc; }
+    .message[class~="theme-primary"] .message-header {
+      background-color: #3e9def; }
 
 /* ==================================== */
 div.tabs {
   font-size: 1rem;
   border-bottom: 0.1em solid #bebebe; }
-
-div.tabs li {
-  font-size: 1em;
-  float: left;
-  padding: 0.8em 1.5em;
-  margin: 0em -0.1em -0.1em 0em;
-  border-radius: 0.3em 0.3em 0em 0em;
-  color: #bebebe; }
-
-div.tabs li:hover {
-  padding-bottom: 0.7em;
-  color: #515151;
-  background-color: #f2f2f2;
-  border-bottom: 0.1em solid #515151; }
-
-div.tabs li[class~="active"] {
-  padding-bottom: 0.7em;
-  color: #3e9def;
-  background-color: #f2f2f2;
-  border-bottom: 0.1em solid #3e9def;
-  font-weight: bold; }
+  div.tabs li {
+    font-size: 1em;
+    float: left;
+    padding: 0.8em 1.5em;
+    margin: 0em -0.1em -0.1em 0em;
+    border-radius: 0.3em 0.3em 0em 0em;
+    color: #bebebe; }
+    div.tabs li:hover {
+      padding-bottom: 0.7em;
+      color: #515151;
+      background-color: #f2f2f2;
+      border-bottom: 0.1em solid #515151; }
+    div.tabs li[class~="active"] {
+      padding-bottom: 0.7em;
+      color: #3e9def;
+      background-color: #f2f2f2;
+      border-bottom: 0.1em solid #3e9def;
+      font-weight: bold; }
 
 /*# sourceMappingURL=objects.css.map */

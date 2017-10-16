@@ -9,13 +9,13 @@ div.modal-backdrop {
   height: auto;
   background-color: $charcoal-transparent;
   padding: 1.5rem;
-}
 
-div.modal {
-  font-size: 1rem;
-  padding: 2.5em 2em 4em 2em;
-  background-color: $white;
-  border-radius: 0.5em;
+  div.modal {
+    font-size: 1rem;
+    padding: 2.5em 2em 4em 2em;
+    background-color: $white;
+    border-radius: 0.5em;
+  }
 }
 
 /* ==================================== */
@@ -31,32 +31,32 @@ div.modal {
 
 /* ==================================== */
 
-.message {
+div.message {
   font-size: 1rem;
   border: 0.1em solid $dark-gray;
   border-radius: 0.3em;
   background-color: $light-gray;
   color: $dark-gray;
-}
 
-.message-header {
-  padding: 0.6em 1em;
-  color: $white;
-  background-color: $dark-gray;
-}
+  div.message-header {
+    padding: 0.6em 1em;
+    color: $white;
+    background-color: $dark-gray;
+  }
 
-.message-body {
-  padding: 0.8em 1.2em;
-}
+  div.message-body {
+    padding: 0.8em 1.2em;
+  }
 
-.message[class~="theme-primary"] {
-  border-color: $medium-blue;
-  color: $dark-blue;
-  background-color: $light-blue;
-}
+  &[class~="theme-primary"] {
+    border-color: $medium-blue;
+    color: $dark-blue;
+    background-color: $light-blue;
 
-.message[class~="theme-primary"] .message-header {
-  background-color: $medium-blue;
+    .message-header {
+      background-color: $medium-blue;
+    }
+  }
 }
 
 /* ==================================== */
@@ -64,30 +64,30 @@ div.modal {
 div.tabs {
   font-size: 1rem;
   border-bottom: 0.1em solid $medium-gray;
-}
 
-div.tabs li {
-  font-size: 1em;
-  float: left;
-  padding: 0.8em 1.5em;
-  margin: 0em -0.1em -0.1em 0em;
-  border-radius: 0.3em 0.3em 0em 0em;
-  color: $medium-gray;
-}
+  li {
+    font-size: 1em;
+    float: left;
+    padding: 0.8em 1.5em;
+    margin: 0em -0.1em -0.1em 0em;
+    border-radius: 0.3em 0.3em 0em 0em;
+    color: $medium-gray;
 
-div.tabs li:hover {
-  padding-bottom: 0.7em;
-  color: $dark-gray;
-  background-color: $light-gray;
-  border-bottom: 0.1em solid $dark-gray;
-}
+    &:hover {
+      padding-bottom: 0.7em;
+      color: $dark-gray;
+      background-color: $light-gray;
+      border-bottom: 0.1em solid $dark-gray;
+    }
 
-div.tabs li[class~="active"] {
-  padding-bottom: 0.7em;
-  color: $medium-blue;
-  background-color: $light-gray;
-  border-bottom: 0.1em solid $medium-blue;
-  font-weight: bold;
+    &[class~="active"] {
+      padding-bottom: 0.7em;
+      color: $medium-blue;
+      background-color: $light-gray;
+      border-bottom: 0.1em solid $medium-blue;
+      font-weight: bold;
+    }
+  }
 }
 
 
