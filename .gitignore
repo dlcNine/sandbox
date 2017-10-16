@@ -1,6 +1,6 @@
 .DS_Store
 index.html
-/css/background-colors.css
+dev-helper.css
 /javascript
 .sass-cache/
 output-css/grid.css.map
