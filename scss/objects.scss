@@ -1,25 +1,3 @@
-@import "./colors.scss"
-
-/*
-z-index layers:
-  2: modal-backdrop
-  1: navbar
-  0: unchanged
-
-colors: 
-  light-gray: rgb(242, 242, 242);
-  medium-gray: temp: rgb(190, 190 ,190);
-  dark-gray: rgb(81, 81, 81);
-
-  (primary)
-  light-blue: rgb(244, 249, 252);
-  medium-blue: rgb(62, 157, 239);
-  dark-blue: rgb(19, 116, 196);
-
-  charcoal: rgb(55, 55, 61);
-  black: rgb(30, 30, 33);
-*/
-
 div.modal-backdrop {
   position: fixed;
   top: 0;
@@ -43,10 +21,10 @@ div.modal {
 .box {
   font-size: 1rem;
   padding: 0.6em;
-  border: 0.1em solid rgb(190, 190 ,190); 
+  border: 0.1em solid rgb(190, 190 , 190);
   border-radius: 0.4em;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0em 0.05em 0.04em 0em rgb(242, 242, 242);
+  box-shadow: 0em 0.05em 0.04em oem rgb(242, 242, 242);
 }
 
 /* ==================================== */
@@ -83,7 +61,7 @@ div.modal {
 
 div.tabs {
   font-size: 1rem;
-  border-bottom: 0.1em solid rgb(190, 190 ,190);
+  border-bottom: 0.1em solid rgb(190, 190, 190);
 }
 
 div.tabs li {
@@ -92,7 +70,7 @@ div.tabs li {
   padding: 0.8em 1.5em;
   margin: 0em -0.1em -0.1em 0em;
   border-radius: 0.3em 0.3em 0em 0em;
-  color: rgb(190, 190 ,190);
+  color: rgb(190, 190, 190);
 }
 
 div.tabs li:hover {
@@ -110,7 +88,8 @@ div.tabs li[class~="active"] {
   font-weight: bold;
 }
 
-/* ==================================== */
+
+
 
 
 
