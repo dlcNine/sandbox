@@ -2,3 +2,7 @@
 index.html
 /css/background-colors.css
 /javascript
+.sass-cache/
+output-css/grid.css.map
+output-css/reset.css.map
+output-css/utility.css.map
