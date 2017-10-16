@@ -1,2 +1,2 @@
 # sandbox
-A CSS framework built with simplicity and openness in mind.
+A CSS framework built around floated elements, and relative units. 
