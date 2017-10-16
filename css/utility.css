@@ -1,76 +1,53 @@
 .no-padding {
-  padding: 0 !important;
-}
+  padding: 0 !important; }
 
 .no-margin {
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
 .no-border {
-  border: none !important;
-}
+  border: none !important; }
 
 .no-radius {
-  border-radius: 0 !important;
-}
+  border-radius: 0 !important; }
 
 .no-shadow {
-  box-shadow: none !important;
-}
+  box-shadow: none !important; }
 
 .to-left {
-  float: left;
-}
+  float: left; }
 
 .to-right {
-  float: right;
-}
+  float: right; }
 
 .absent {
-  display: none !important;
-}
+  display: none !important; }
 
 .invisible {
-  visibility: hidden !important;
-}
+  visibility: hidden !important; }
 
 .relative {
-  position: relative;
-}
+  position: relative; }
 
 *[disabled] {
-  opacity: 0.5;
-}
+  opacity: 0.5; }
 
 /* ====================================================== */
-
 .text-left {
-  text-align: left;
-}
+  text-align: left; }
 
 .text-center {
-  text-align: center;
-}
+  text-align: center; }
 
 .text-right {
-  text-align: right;
-}
+  text-align: right; }
 
 .text-capitalize {
-  text-transform: capitalize;
-}
+  text-transform: capitalize; }
 
 .text-uppercase {
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .text-lowercase {
-  text-transform: lowercase;
-}
+  text-transform: lowercase; }
 
-
-
-
-
-
-
+/*# sourceMappingURL=utility.css.map */
