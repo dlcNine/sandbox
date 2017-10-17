@@ -39,34 +39,34 @@ div.message {
     border-color: #3e9def;
     background-color: #f4f9fc; }
     div.message[class~="theme-primary"] .message-header {
-      background-color: #3e9def;
-      color: #f4f9fc; }
+      color: #f4f9fc;
+      background-color: #3e9def; }
     div.message[class~="theme-primary"] .message-body {
-      color: #1374c4; }
+      color: #0c62b2; }
   div.message[class~="theme-info"] {
     border-color: #53e258;
     background-color: #f5fcf4; }
     div.message[class~="theme-info"] .message-header {
-      background-color: #53e258;
-      color: #f5fcf4; }
+      color: #f5fcf4;
+      background-color: #53e258; }
     div.message[class~="theme-info"] .message-body {
-      color: #3ac152; }
+      color: #1d9b41; }
   div.message[class~="theme-caution"] {
     border-color: #f9f261;
     background-color: #fcfbf2; }
     div.message[class~="theme-caution"] .message-header {
-      background-color: #f9f261;
-      color: #918f2d; }
+      color: #918f2d;
+      background-color: #f9f261; }
     div.message[class~="theme-caution"] .message-body {
       color: #918f2d; }
   div.message[class~="theme-danger"] {
     border-color: #ef3232;
     background-color: #fff8f7; }
     div.message[class~="theme-danger"] .message-header {
-      background-color: #ef3232;
-      color: #fff8f7; }
+      color: #fff8f7;
+      background-color: #ef3232; }
     div.message[class~="theme-danger"] .message-body {
-      color: #d62b22; }
+      color: #b2250c; }
 
 /* ==================================== */
 div.tabs {

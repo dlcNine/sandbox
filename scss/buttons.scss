@@ -4,11 +4,8 @@
   font-size: 1rem;
   color: $dark-gray;
   background-color: $light-gray;
-  padding: 0.5em 1.4em;
-  border: 0.1em solid $light-gray;
+  padding: 0.6em 1.2em;
   border-radius: 0.2em;
-  text-align: center;
-  vertical-align: middle;
 
   &:link {
     text-decoration: none;
@@ -20,7 +17,6 @@
 
   &:hover {
     background-color: $medium-gray;
-    border-color: $medium-gray;
   }
 
   &:active {
@@ -28,18 +24,16 @@
   }
   
   &:focus {
-    border-color: $medium-gray;
+    box-shadow: 0em 0em 0em 0.1em $dark-gray;
     outline: none;
   }
 
   &[class~="theme-primary"] {
     color: $light-blue;
     background-color: $medium-blue;
-    border-color: $medium-blue;
 
     &:hover {
       background-color: $dark-blue;
-      border-color: $dark-blue;
     }
 
     &:active {
@@ -47,18 +41,16 @@
     }
 
     &:focus {
-      border-color: $dark-blue;
+      box-shadow: 0em 0em 0em 0.1em $dark-blue;
     }
   }
 
   &[class~="theme-info"] {
     color: $light-green;
     background-color: $medium-green;
-    border-color: $medium-green;
 
     &:hover {
       background-color: $dark-green;
-      border-color: $dark-green;
     }
 
     &:active {
@@ -66,18 +58,16 @@
     }
 
     &:focus {
-      border-color: $dark-green;
+      box-shadow: 0em 0em 0em 0.1em $dark-green;
     }
   }
 
   &[class~="theme-caution"] {
     color: $dark-yellow;
     background-color: $medium-yellow;
-    border-color: $medium-yellow;
 
     &:hover {
       background-color: $dark-yellow;
-      border-color: $dark-yellow;
       color: $light-yellow;
     }
 
@@ -86,18 +76,16 @@
     }
 
     &:focus {
-      border-color: $dark-yellow;
+      box-shadow: 0em 0em 0em 0.1em $dark-yellow;
     }
   }
 
   &[class~="theme-danger"] {
     color: $light-red;
     background-color: $medium-red;
-    border-color: $medium-red;
 
     &:hover {
       background-color: $dark-red;
-      border-color: $dark-red;
       color: $light-red;
     }
 
@@ -106,7 +94,7 @@
     }
 
     &:focus {
-      border-color: $dark-red;
+      box-shadow: 0em 0em 0em 0.1em $dark-red;
     }
   }
 }
