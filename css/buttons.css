@@ -41,6 +41,30 @@
       color: #53e258; }
     .button[class~="theme-info"]:focus {
       border-color: #3ac152; }
+  .button[class~="theme-caution"] {
+    color: #918f2d;
+    background-color: #f9f261;
+    border-color: #f9f261; }
+    .button[class~="theme-caution"]:hover {
+      background-color: #918f2d;
+      border-color: #918f2d;
+      color: #fcfbf2; }
+    .button[class~="theme-caution"]:active {
+      color: #f9f261; }
+    .button[class~="theme-caution"]:focus {
+      border-color: #918f2d; }
+  .button[class~="theme-danger"] {
+    color: #fff8f7;
+    background-color: #ef3232;
+    border-color: #ef3232; }
+    .button[class~="theme-danger"]:hover {
+      background-color: #d62b22;
+      border-color: #d62b22;
+      color: #fff8f7; }
+    .button[class~="theme-danger"]:active {
+      color: #ef3232; }
+    .button[class~="theme-danger"]:focus {
+      border-color: #d62b22; }
 
 a.button {
   display: inline-block; }

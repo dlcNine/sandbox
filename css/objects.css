@@ -51,6 +51,22 @@ div.message {
       color: #f5fcf4; }
     div.message[class~="theme-info"] .message-body {
       color: #3ac152; }
+  div.message[class~="theme-caution"] {
+    border-color: #f9f261;
+    background-color: #fcfbf2; }
+    div.message[class~="theme-caution"] .message-header {
+      background-color: #f9f261;
+      color: #918f2d; }
+    div.message[class~="theme-caution"] .message-body {
+      color: #918f2d; }
+  div.message[class~="theme-danger"] {
+    border-color: #ef3232;
+    background-color: #fff8f7; }
+    div.message[class~="theme-danger"] .message-header {
+      background-color: #ef3232;
+      color: #fff8f7; }
+    div.message[class~="theme-danger"] .message-body {
+      color: #d62b22; }
 
 /* ==================================== */
 div.tabs {

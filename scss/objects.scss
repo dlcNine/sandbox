@@ -75,6 +75,34 @@ div.message {
       color: $dark-green;
     }
   }
+
+  &[class~="theme-caution"] {
+    border-color: $medium-yellow;
+    background-color: $light-yellow;
+
+    .message-header {
+      background-color: $medium-yellow;
+      color: $dark-yellow;
+    }
+
+    .message-body {
+      color: $dark-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    border-color: $medium-red;
+    background-color: $light-red;
+
+    .message-header {
+      background-color: $medium-red;
+      color: $light-red;
+    }
+
+    .message-body {
+      color: $dark-red;
+    }
+  }
 }
 
 /* ==================================== */
