@@ -50,6 +50,25 @@
       border-color: $dark-blue;
     }
   }
+
+  &[class~="theme-info"] {
+    color: $light-green;
+    background-color: $medium-green;
+    border-color: $medium-green;
+
+    &:hover {
+      background-color: $dark-green;
+      border-color: $dark-green;
+    }
+
+    &:active {
+      color: $medium-green;
+    }
+
+    &:focus {
+      border-color: $dark-green;
+    }
+  }
 }
 
 a.button {

@@ -30,6 +30,17 @@
       color: #3e9def; }
     .button[class~="theme-primary"]:focus {
       border-color: #1374c4; }
+  .button[class~="theme-info"] {
+    color: #f5fcf4;
+    background-color: #53e258;
+    border-color: #53e258; }
+    .button[class~="theme-info"]:hover {
+      background-color: #3ac152;
+      border-color: #3ac152; }
+    .button[class~="theme-info"]:active {
+      color: #53e258; }
+    .button[class~="theme-info"]:focus {
+      border-color: #3ac152; }
 
 a.button {
   display: inline-block; }

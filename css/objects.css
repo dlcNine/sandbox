@@ -43,6 +43,14 @@ div.message {
       color: #f4f9fc; }
     div.message[class~="theme-primary"] .message-body {
       color: #1374c4; }
+  div.message[class~="theme-info"] {
+    border-color: #53e258;
+    background-color: #f5fcf4; }
+    div.message[class~="theme-info"] .message-header {
+      background-color: #53e258;
+      color: #f5fcf4; }
+    div.message[class~="theme-info"] .message-body {
+      color: #3ac152; }
 
 /* ==================================== */
 div.tabs {

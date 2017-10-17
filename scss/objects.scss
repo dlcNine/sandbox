@@ -61,6 +61,20 @@ div.message {
       color: $dark-blue;
     }
   }
+
+  &[class~="theme-info"] {
+    border-color: $medium-green;
+    background-color: $light-green;
+
+    .message-header {
+      background-color: $medium-green;
+      color: $light-green;
+    }
+
+    .message-body {
+      color: $dark-green;
+    }
+  }
 }
 
 /* ==================================== */
