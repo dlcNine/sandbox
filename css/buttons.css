@@ -1,9 +1,11 @@
 .button {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #515151;
   background-color: #f2f2f2;
-  padding: 0.6em 1.2em;
-  border-radius: 0.2em; }
+  padding: 0.375em 0.75em;
+  /* 6px 12px */
+  border-radius: 0.1875em;
+  /* 3px */ }
   .button:link {
     text-decoration: none; }
   .button:visited {
@@ -13,7 +15,10 @@
   .button:active {
     color: #f2f2f2; }
   .button:focus {
-    box-shadow: 0em 0em 0em 0.1em #515151;
+    padding: 0.3125em 0.6875em;
+    /* 5px 11px */
+    border: 0.0625em solid #515151;
+    /* 1px */
     outline: none; }
   .button[class~="theme-primary"] {
     color: #f4f9fc;
@@ -23,7 +28,8 @@
     .button[class~="theme-primary"]:active {
       color: #3e9def; }
     .button[class~="theme-primary"]:focus {
-      box-shadow: 0em 0em 0em 0.1em #0c62b2; }
+      border: 0.0625em solid #0c62b2;
+      /* 1px */ }
   .button[class~="theme-info"] {
     color: #f5fcf4;
     background-color: #53e258; }
@@ -32,7 +38,8 @@
     .button[class~="theme-info"]:active {
       color: #53e258; }
     .button[class~="theme-info"]:focus {
-      box-shadow: 0em 0em 0em 0.1em #1d9b41; }
+      border: 0.0625em solid #1d9b41;
+      /* 1px */ }
   .button[class~="theme-caution"] {
     color: #918f2d;
     background-color: #f9f261; }
@@ -42,7 +49,8 @@
     .button[class~="theme-caution"]:active {
       color: #f9f261; }
     .button[class~="theme-caution"]:focus {
-      box-shadow: 0em 0em 0em 0.1em #918f2d; }
+      border: 0.0625em solid #918f2d;
+      /* 1px */ }
   .button[class~="theme-danger"] {
     color: #fff8f7;
     background-color: #ef3232; }
@@ -52,7 +60,14 @@
     .button[class~="theme-danger"]:active {
       color: #ef3232; }
     .button[class~="theme-danger"]:focus {
-      box-shadow: 0em 0em 0em 0.1em #b2250c; }
+      border: 0.0625em solid #b2250c;
+      /* 1px */ }
+  .button[class~="resize-small"] {
+    font-size: 1.2rem; }
+  .button[class~="resize-medium"] {
+    font-size: 2rem; }
+  .button[class~="resize-large"] {
+    font-size: 2.6rem; }
 
 a.button {
   display: inline-block; }
