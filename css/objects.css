@@ -27,20 +27,22 @@ div.message {
   font-size: 1rem;
   border: 0.1em solid #515151;
   border-radius: 0.3em;
-  background-color: #f2f2f2;
-  color: #515151; }
+  background-color: #f2f2f2; }
   div.message div.message-header {
     padding: 0.6em 1em;
     color: white;
     background-color: #515151; }
   div.message div.message-body {
-    padding: 0.8em 1.2em; }
+    padding: 0.8em 1.2em;
+    color: #515151; }
   div.message[class~="theme-primary"] {
     border-color: #3e9def;
-    color: #1374c4;
     background-color: #f4f9fc; }
     div.message[class~="theme-primary"] .message-header {
-      background-color: #3e9def; }
+      background-color: #3e9def;
+      color: #f4f9fc; }
+    div.message[class~="theme-primary"] .message-body {
+      color: #1374c4; }
 
 /* ==================================== */
 div.tabs {

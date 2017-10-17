@@ -36,7 +36,6 @@ div.message {
   border: 0.1em solid $dark-gray;
   border-radius: 0.3em;
   background-color: $light-gray;
-  color: $dark-gray;
 
   div.message-header {
     padding: 0.6em 1em;
@@ -46,16 +45,20 @@ div.message {
 
   div.message-body {
     padding: 0.8em 1.2em;
+    color: $dark-gray;
   }
 
   &[class~="theme-primary"] {
     border-color: $medium-blue;
-    color: $dark-blue;
     background-color: $light-blue;
 
     .message-header {
       background-color: $medium-blue;
       color: $light-blue;
+    }
+
+    .message-body {
+      color: $dark-blue;
     }
   }
 }

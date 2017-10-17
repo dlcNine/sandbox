@@ -1,4 +1,12 @@
 .button {
-  font-size: 1rem; }
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  padding: 0.5em 1.4em;
+  border-radius: 0.3em; }
+  .button:hover {
+    box-shadow: 0em 0.2em 0em #bebebe; }
+
+a.button {
+  display: inline-block; }
 
 /*# sourceMappingURL=buttons.css.map */
