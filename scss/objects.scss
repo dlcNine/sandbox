@@ -36,7 +36,6 @@ div.message {
   border: 0.1em solid $dark-gray;
   border-radius: 0.3em;
   background-color: $light-gray;
-  color: $dark-gray;
 
   div.message-header {
     padding: 0.6em 1em;
@@ -46,15 +45,62 @@ div.message {
 
   div.message-body {
     padding: 0.8em 1.2em;
+    color: $dark-gray;
   }
 
   &[class~="theme-primary"] {
     border-color: $medium-blue;
-    color: $dark-blue;
     background-color: $light-blue;
 
     .message-header {
+      color: $light-blue;
       background-color: $medium-blue;
+    }
+
+    .message-body {
+      color: $dark-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    border-color: $medium-green;
+    background-color: $light-green;
+
+    .message-header {
+      color: $light-green;
+      background-color: $medium-green;
+    }
+
+    .message-body {
+      color: $dark-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    border-color: $medium-yellow;
+    background-color: $light-yellow;
+
+    .message-header {
+      color: $dark-yellow;
+      background-color: $medium-yellow;
+    }
+
+    .message-body {
+      color: $dark-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    border-color: $medium-red;
+    background-color: $light-red;
+
+    .message-header {
+      color: $light-red;
+      background-color: $medium-red;
+    }
+
+    .message-body {
+      color: $dark-red;
     }
   }
 }

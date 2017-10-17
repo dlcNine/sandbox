@@ -1,0 +1,126 @@
+@import "./colors.scss";
+
+.button {
+  font-size: 1.6rem;
+  color: $dark-gray;
+  background-color: $light-gray;
+  padding: 0.375em 0.75em;    /* 6px 12px */
+  border-radius: 0.1875em;    /* 3px */
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $medium-gray;
+  }
+
+  &:active {
+    color: $light-gray;
+  }
+  
+  &:focus {
+    padding: 0.3125em 0.6875em; /* 5px 11px */
+    border: 0.0625em  solid $dark-gray; /* 1px */
+    outline: none;
+  }
+
+  &[class~="theme-primary"] {
+    color: $light-blue;
+    background-color: $medium-blue;
+
+    &:hover {
+      background-color: $dark-blue;
+    }
+
+    &:active {
+      color: $medium-blue;
+    }
+
+    &:focus {
+      border: 0.0625em  solid $dark-blue; /* 1px */
+    }
+  }
+
+  &[class~="theme-info"] {
+    color: $light-green;
+    background-color: $medium-green;
+
+    &:hover {
+      background-color: $dark-green;
+    }
+
+    &:active {
+      color: $medium-green;
+    }
+
+    &:focus {
+      border: 0.0625em  solid $dark-green; /* 1px */
+    }
+  }
+
+  &[class~="theme-caution"] {
+    color: $dark-yellow;
+    background-color: $medium-yellow;
+
+    &:hover {
+      background-color: $dark-yellow;
+      color: $light-yellow;
+    }
+
+    &:active {
+      color: $medium-yellow;
+    }
+
+    &:focus {
+      border: 0.0625em  solid $dark-yellow; /* 1px */
+    }
+  }
+
+  &[class~="theme-danger"] {
+    color: $light-red;
+    background-color: $medium-red;
+
+    &:hover {
+      background-color: $dark-red;
+      color: $light-red;
+    }
+
+    &:active {
+      color: $medium-red;
+    }
+
+    &:focus {
+      border: 0.0625em solid $dark-red; /* 1px */
+    }
+  }
+
+  &[class~="resize-small"] {
+    font-size: 1.2rem;
+  }
+
+  &[class~="resize-medium"] {
+    font-size: 2rem;
+  }
+
+  &[class~="resize-large"] {
+    font-size: 2.6rem;
+  }
+}
+
+a.button {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
