@@ -3,10 +3,13 @@
 .button {
   font-size: 1.6rem;
   color: $dark-gray;
+  text-align: center;
   background-color: $light-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
-  border: 0.0625em solid $light-gray;
+  margin: 0.8rem 0.4rem;
+  border: 0.0625em solid $light-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
+
 
   &:hover {
     background-color: $medium-gray;
@@ -197,8 +200,63 @@ a.button {
 }
 
 /* ==================================== */
+$padding-amount: 0.8rem;
 
-div.button-group {
+.container-buttons {
+  div[class*="default-"] {
+    padding: 0;
+
+    button.button {
+      @extend .button[class~="wide"];
+    }
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  .div[class~="padding-top"] {
+    padding-top: $padding-amount;
+  }
+
+  .div[class~="padding-poles"] {
+    padding-top: $padding-amount 0em;
+  }
+
+  div[class~="padding-bottom"] {
+    padding-bottom: $padding-amount;
+  }
+
+  div[class~="padding-right"] {
+    padding-right: $padding-amount;
+  }
+
+  div[class~="padding-sides"] {
+    padding: 0rem $padding-amount;
+  }
+
+  div[class~="padding-left"] {
+    padding-left: $padding-amount;
+  }
+
+}
+
+.container-buttons::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.button[class~="wide"] {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ==================================== */
+
+div.button-bar {
   &::after {
     content: "";
     clear: both;
@@ -207,6 +265,7 @@ div.button-group {
 
   .button {
     float: left;
+    margin: 0;
   }
 
   .button:first-child {

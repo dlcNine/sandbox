@@ -13,18 +13,21 @@
 .no-shadow {
   box-shadow: none !important; }
 
+/* ====================================================== */
 .to-left {
   float: left; }
 
 .to-right {
   float: right; }
 
+/* ====================================================== */
 .absent {
   display: none !important; }
 
 .invisible {
   visibility: hidden !important; }
 
+/* ====================================================== */
 .relative {
   position: relative; }
 
@@ -33,21 +36,21 @@
 
 /* ====================================================== */
 .text-left {
-  text-align: left; }
+  text-align: left !important; }
 
 .text-center {
-  text-align: center; }
+  text-align: center !important; }
 
 .text-right {
-  text-align: right; }
+  text-align: right !important; }
 
 .text-capitalize {
-  text-transform: capitalize; }
+  text-transform: capitalize !important; }
 
 .text-uppercase {
-  text-transform: uppercase; }
+  text-transform: uppercase !important; }
 
 .text-lowercase {
-  text-transform: lowercase; }
+  text-transform: lowercase !important; }
 
 /*# sourceMappingURL=utility.css.map */

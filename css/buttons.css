@@ -1,10 +1,13 @@
 .button {
   font-size: 1.6rem;
   color: #515151;
+  text-align: center;
   background-color: #f2f2f2;
   padding: 0.375em 0.75em;
   /* 6px 12px */
+  margin: 0.8rem 0.4rem;
   border: 0.0625em solid #f2f2f2;
+  /* 1px */
   border-radius: 0.1875em;
   /* 3px */ }
   .button:hover {
@@ -117,19 +120,49 @@ a.button {
       color: #b2250c; }
 
 /* ==================================== */
-div.button-group::after {
+.container-buttons div[class*="default-"] {
+  padding: 0; }
+.container-buttons .button {
+  margin: 0; }
+.container-buttons .div[class~="padding-top"] {
+  padding-top: 0.8rem; }
+.container-buttons .div[class~="padding-poles"] {
+  padding-top: 0.8rem 0em; }
+.container-buttons div[class~="padding-bottom"] {
+  padding-bottom: 0.8rem; }
+.container-buttons div[class~="padding-right"] {
+  padding-right: 0.8rem; }
+.container-buttons div[class~="padding-sides"] {
+  padding: 0rem 0.8rem; }
+.container-buttons div[class~="padding-left"] {
+  padding-left: 0.8rem; }
+
+.container-buttons::after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.button[class~="wide"], .container-buttons div[class*="default-"] button.button {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
+/* ==================================== */
+div.button-bar::after {
   content: "";
   clear: both;
   display: table; }
-div.button-group .button {
-  float: left; }
-div.button-group .button:first-child {
+div.button-bar .button {
+  float: left;
+  margin: 0; }
+div.button-bar .button:first-child {
   border-top-right-radius: 0em;
   border-bottom-right-radius: 0em; }
-div.button-group .button:last-child {
+div.button-bar .button:last-child {
   border-top-left-radius: 0em;
   border-bottom-left-radius: 0em; }
-div.button-group .button:not(:first-child):not(:last-child) {
+div.button-bar .button:not(:first-child):not(:last-child) {
   border-radius: 0em; }
 
 /* ==================================== */
