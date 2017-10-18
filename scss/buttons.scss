@@ -5,70 +5,70 @@
   color: $dark-gray;
   background-color: $light-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
+  border: 0.0625em solid $light-gray;
   border-radius: 0.1875em;    /* 3px */
-
-  &:link {
-    text-decoration: none;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
 
   &:hover {
     background-color: $medium-gray;
+    border-color: $medium-gray;
   }
 
   &:active {
     color: $light-gray;
+    outline: none;
   }
   
-  &:focus {
-    padding: 0.3125em 0.6875em; /* 5px 11px */
-    border: 0.0625em  solid $dark-gray; /* 1px */
+  &:focus:not(:active) {
+    border-color: $dark-gray;
     outline: none;
   }
 
   &[class~="theme-primary"] {
     color: $light-blue;
+    border-color: $medium-blue;
     background-color: $medium-blue;
 
     &:hover {
       background-color: $dark-blue;
+      border-color: $dark-blue;
     }
 
     &:active {
       color: $medium-blue;
     }
 
-    &:focus {
-      border: 0.0625em  solid $dark-blue; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-blue;
     }
   }
 
   &[class~="theme-info"] {
     color: $light-green;
+    border-color: $medium-green;
     background-color: $medium-green;
 
     &:hover {
       background-color: $dark-green;
+      border-color: $dark-green;
     }
 
     &:active {
       color: $medium-green;
     }
 
-    &:focus {
-      border: 0.0625em  solid $dark-green; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-green;
     }
   }
 
   &[class~="theme-caution"] {
     color: $dark-yellow;
     background-color: $medium-yellow;
+    border-color: $medium-yellow;
 
     &:hover {
       background-color: $dark-yellow;
+      border-color: $dark-yellow;
       color: $light-yellow;
     }
 
@@ -77,25 +77,26 @@
     }
 
     &:focus {
-      border: 0.0625em  solid $dark-yellow; /* 1px */
+      border-color: $dark-yellow;
     }
   }
 
   &[class~="theme-danger"] {
     color: $light-red;
+    border-color: $medium-red;
     background-color: $medium-red;
 
     &:hover {
       background-color: $dark-red;
-      color: $light-red;
+      border-color: $dark-red;
     }
 
     &:active {
       color: $medium-red;
     }
 
-    &:focus {
-      border: 0.0625em solid $dark-red; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-red;
     }
   }
 
@@ -114,6 +115,22 @@
 
 a.button {
   display: inline-block;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+/* ==================================== */
+
+.button[class~="style-outlined"] {
+  background-color: transparent;
+  border: 0.0625em solid $medium-gray;
+  color: $dark-gray;
 }
 
 /* ==================================== */
@@ -146,10 +163,6 @@ div.button-group {
 }
 
 /* ==================================== */
-
-div.button-group-vertical {
-  
-}
 
 
 
