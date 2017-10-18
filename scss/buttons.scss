@@ -206,7 +206,7 @@ $padding-amount: 0.8rem;
   div[class*="default-"] {
     padding: 0;
 
-    button.button {
+    .button {
       @extend .button[class~="wide"];
     }
   }
