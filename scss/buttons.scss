@@ -3,72 +3,75 @@
 .button {
   font-size: 1.6rem;
   color: $dark-gray;
+  text-align: center;
   background-color: $light-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
+  margin: 0.8rem 0.4rem;
+  border: 0.0625em solid $light-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
 
-  &:link {
-    text-decoration: none;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
 
   &:hover {
     background-color: $medium-gray;
+    border-color: $medium-gray;
   }
 
   &:active {
     color: $light-gray;
+    outline: none;
   }
   
-  &:focus {
-    padding: 0.3125em 0.6875em; /* 5px 11px */
-    border: 0.0625em  solid $dark-gray; /* 1px */
+  &:focus:not(:active) {
+    border-color: $dark-gray;
     outline: none;
   }
 
   &[class~="theme-primary"] {
     color: $light-blue;
+    border-color: $medium-blue;
     background-color: $medium-blue;
 
     &:hover {
       background-color: $dark-blue;
+      border-color: $dark-blue;
     }
 
     &:active {
       color: $medium-blue;
     }
 
-    &:focus {
-      border: 0.0625em  solid $dark-blue; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-blue;
     }
   }
 
   &[class~="theme-info"] {
     color: $light-green;
+    border-color: $medium-green;
     background-color: $medium-green;
 
     &:hover {
       background-color: $dark-green;
+      border-color: $dark-green;
     }
 
     &:active {
       color: $medium-green;
     }
 
-    &:focus {
-      border: 0.0625em  solid $dark-green; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-green;
     }
   }
 
   &[class~="theme-caution"] {
     color: $dark-yellow;
     background-color: $medium-yellow;
+    border-color: $medium-yellow;
 
     &:hover {
       background-color: $dark-yellow;
+      border-color: $dark-yellow;
       color: $light-yellow;
     }
 
@@ -77,25 +80,26 @@
     }
 
     &:focus {
-      border: 0.0625em  solid $dark-yellow; /* 1px */
+      border-color: $dark-yellow;
     }
   }
 
   &[class~="theme-danger"] {
     color: $light-red;
+    border-color: $medium-red;
     background-color: $medium-red;
 
     &:hover {
       background-color: $dark-red;
-      color: $light-red;
+      border-color: $dark-red;
     }
 
     &:active {
       color: $medium-red;
     }
 
-    &:focus {
-      border: 0.0625em solid $dark-red; /* 1px */
+    &:focus:not(:active) {
+      border-color: $dark-red;
     }
   }
 
@@ -114,7 +118,178 @@
 
 a.button {
   display: inline-block;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
 }
+
+/* ==================================== */
+
+.button[class~="outlined"] {
+  background-color: transparent;
+  border-color: $medium-gray;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &:active {
+    background-color: $medium-gray;
+    color: $dark-gray;
+  }
+
+  &[class~="theme-primary"] {
+    color: $medium-blue;
+    border-color: $medium-blue;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:active {
+      background-color: $medium-blue;
+      color: $dark-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    color: $medium-green;
+    border-color: $medium-green;
+
+    &:hover {
+      background-color: $light-green;
+    }
+
+    &:active {
+      background-color: $medium-green;
+      color: $dark-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    color: $dark-yellow;
+    border-color: $medium-yellow;
+
+    &:hover {
+      background-color: $light-yellow;
+    }
+
+    &:active {
+      background-color: $medium-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    color: $medium-red;
+    border-color: $medium-red;
+
+    &:hover {
+      background-color: $light-red;
+    }
+
+    &:active {
+      background-color: $medium-red;
+      color: $dark-red;
+    }
+  }
+}
+
+/* ==================================== */
+$padding-amount: 0.8rem;
+
+.container-buttons {
+  div[class*="default-"] {
+    padding: 0;
+
+    .button {
+      @extend .button[class~="wide"];
+    }
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  .div[class~="padding-top"] {
+    padding-top: $padding-amount;
+  }
+
+  .div[class~="padding-poles"] {
+    padding-top: $padding-amount 0em;
+  }
+
+  div[class~="padding-bottom"] {
+    padding-bottom: $padding-amount;
+  }
+
+  div[class~="padding-right"] {
+    padding-right: $padding-amount;
+  }
+
+  div[class~="padding-sides"] {
+    padding: 0rem $padding-amount;
+  }
+
+  div[class~="padding-left"] {
+    padding-left: $padding-amount;
+  }
+
+}
+
+.container-buttons::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.button[class~="wide"] {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ==================================== */
+
+div.button-bar {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+
+  .button {
+    float: left;
+    margin: 0;
+  }
+
+  .button:first-child {
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+  }
+
+  .button:last-child {
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+  }
+
+  .button:not(:first-child):not(:last-child) {
+    border-radius: 0em;
+  }
+}
+
+/* ==================================== */
+
+
+
+
+
+
 
 
 

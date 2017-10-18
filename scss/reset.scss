@@ -1,21 +1,15 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, button, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, input, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+a, abbr, address, area, article, aside, audio, b, 
+base, bdi, bdo, blockquote, body, br, button, 
+canvas, caption, cite, code, col, colgroup, datalist, 
+dd, del, details, dfn, dialog, div, dl, dt, em, 
+embed, fieldset, figcaption, figure, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hr, html, i, iframe, 
+img, input, ins, kbd, label, legend, li, main, map, 
+mark, menu, menuitem, meter, nav, noscript, object, ol, 
+optgroup, option, output, p, param, picture, pre, progress, 
+q, rp, rt, ruby, s, samp, section, select, small, span, 
+strong, sub, summary, sup, table, tbody, td, textarea, 
+tfoot, th, thead, time, tr, track, u, ul, var, video, wbr {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,33 +17,58 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+/* 
+omitted from above:
+  head, link, meta, script, source, style, 
+  title
+*/
+
+/* HTML5 block elements */
+article, aside, audio, canvas, details, embed, figcaption, figure, 
+footer, header, main, meter, nav, picture, ruby, section, 
+summary, video {
   display: block;
 }
+
+/*HTML5 inline elements */
+bdi, datalist, mark, output, progress, rp, rt, time, wbr {
+  display: inline;
+}
+
+/* 
+omitted from HTML5 elements:
+  dialog, menuitem, source, track, 
+*/
+
 html {
   font-size: 62.5%;
 }
+
 body {
   line-height: 1;
   font-size: 100%;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote::before, blockquote::after, 
+q::before, q::after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 
 
 
