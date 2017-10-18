@@ -72,4 +72,22 @@
 a.button {
   display: inline-block; }
 
+/* ==================================== */
+div.button-group::after {
+  content: "";
+  clear: both;
+  display: table; }
+div.button-group .button {
+  float: left; }
+div.button-group .button:first-child {
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em; }
+div.button-group .button:last-child {
+  border-top-left-radius: 0em;
+  border-bottom-left-radius: 0em; }
+div.button-group .button:not(:first-child):not(:last-child) {
+  border-radius: 0em; }
+
+/* ==================================== */
+
 /*# sourceMappingURL=buttons.css.map */
