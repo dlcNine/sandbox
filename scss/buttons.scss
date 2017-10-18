@@ -127,16 +127,78 @@ a.button {
 
 /* ==================================== */
 
-.button[class~="style-outlined"] {
+.button[class~="outlined"] {
   background-color: transparent;
-  border: 0.0625em solid $medium-gray;
-  color: $dark-gray;
+  border-color: $medium-gray;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  &:active {
+    background-color: $medium-gray;
+    color: $dark-gray;
+  }
+
+  &[class~="theme-primary"] {
+    color: $medium-blue;
+    border-color: $medium-blue;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:active {
+      background-color: $medium-blue;
+      color: $dark-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    color: $medium-green;
+    border-color: $medium-green;
+
+    &:hover {
+      background-color: $light-green;
+    }
+
+    &:active {
+      background-color: $medium-green;
+      color: $dark-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    color: $dark-yellow;
+    border-color: $medium-yellow;
+
+    &:hover {
+      background-color: $light-yellow;
+    }
+
+    &:active {
+      background-color: $medium-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    color: $medium-red;
+    border-color: $medium-red;
+
+    &:hover {
+      background-color: $light-red;
+    }
+
+    &:active {
+      background-color: $medium-red;
+      color: $dark-red;
+    }
+  }
 }
 
 /* ==================================== */
 
 div.button-group {
-
   &::after {
     content: "";
     clear: both;

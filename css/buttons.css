@@ -76,10 +76,45 @@ a.button {
     text-decoration: none; }
 
 /* ==================================== */
-.button[class~="style-outlined"] {
+.button[class~="outlined"] {
   background-color: transparent;
-  border: 0.0625em solid #bebebe;
-  color: #515151; }
+  border-color: #bebebe; }
+  .button[class~="outlined"]:hover {
+    background-color: #f2f2f2; }
+  .button[class~="outlined"]:active {
+    background-color: #bebebe;
+    color: #515151; }
+  .button[class~="outlined"][class~="theme-primary"] {
+    color: #3e9def;
+    border-color: #3e9def; }
+    .button[class~="outlined"][class~="theme-primary"]:hover {
+      background-color: #f4f9fc; }
+    .button[class~="outlined"][class~="theme-primary"]:active {
+      background-color: #3e9def;
+      color: #0c62b2; }
+  .button[class~="outlined"][class~="theme-info"] {
+    color: #53e258;
+    border-color: #53e258; }
+    .button[class~="outlined"][class~="theme-info"]:hover {
+      background-color: #f5fcf4; }
+    .button[class~="outlined"][class~="theme-info"]:active {
+      background-color: #53e258;
+      color: #1d9b41; }
+  .button[class~="outlined"][class~="theme-caution"] {
+    color: #918f2d;
+    border-color: #f9f261; }
+    .button[class~="outlined"][class~="theme-caution"]:hover {
+      background-color: #fcfbf2; }
+    .button[class~="outlined"][class~="theme-caution"]:active {
+      background-color: #f9f261; }
+  .button[class~="outlined"][class~="theme-danger"] {
+    color: #ef3232;
+    border-color: #ef3232; }
+    .button[class~="outlined"][class~="theme-danger"]:hover {
+      background-color: #fff8f7; }
+    .button[class~="outlined"][class~="theme-danger"]:active {
+      background-color: #ef3232;
+      color: #b2250c; }
 
 /* ==================================== */
 div.button-group::after {
