@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 /* input types: 
   button
   checkbox
@@ -33,9 +35,40 @@
   url
 */
 
-form input {
+form label {
   font-size: 1.6rem;
 }
+
+form div.field {
+  background-color: white;
+  
+  input[type="email"], input[type="number"],
+  input[type="password"], input[type="search"], 
+  input[type="tel"], input[type="text"], input[type="url"] {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    padding: 0.375em 0.5em;
+    border: 0.0625em solid $medium-gray;
+    border-radius: 0.1875em;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

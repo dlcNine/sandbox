@@ -31,7 +31,19 @@
   text
   url
 */
-form input {
+form label {
   font-size: 1.6rem; }
+
+form div.field {
+  background-color: white; }
+  form div.field input[type="email"], form div.field input[type="number"],
+  form div.field input[type="password"], form div.field input[type="search"],
+  form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"] {
+    font-size: 1.6rem;
+    display: block;
+    width: 100%;
+    padding: 0.375em 0.5em;
+    border: 0.0625em solid #bebebe;
+    border-radius: 0.1875em; }
 
 /*# sourceMappingURL=form.css.map */
