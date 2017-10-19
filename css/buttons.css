@@ -78,6 +78,14 @@ a.button {
   a.button:visited {
     text-decoration: none; }
 
+.button[class~="wide"], .container-buttons div[class*="default-"] .button, .container-buttons div[class*="small-"] .button,
+.container-buttons div[class*="medium-"] .button, .container-buttons div[class*="large-"] .button, div.container-buttons-bar div[class*="default-"] .button, div.container-buttons-bar div[class*="small-"] .button,
+div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-bar div[class*="large-"] .button {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0; }
+
 /* ==================================== */
 .button[class~="outlined"] {
   background-color: transparent;
@@ -131,14 +139,26 @@ a.button {
   clear: both;
   display: table; }
 
-.button[class~="wide"], .container-buttons div[class*="default-"] .button, .container-buttons div[class*="small-"] .button,
-.container-buttons div[class*="medium-"] .button, .container-buttons div[class*="large-"] .button {
-  display: block;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0; }
-
 /* ==================================== */
+div.container-buttons-bar div[class*="default-"], div.container-buttons-bar div[class*="small-"],
+div.container-buttons-bar div[class*="medium-"], div.container-buttons-bar div[class*="large-"] {
+  padding: 0; }
+div.container-buttons-bar::after {
+  content: "";
+  clear: both;
+  display: table; }
+div.container-buttons-bar .button {
+  float: left;
+  margin: 0; }
+div.container-buttons-bar .first-button {
+  border-top-right-radius: 0em;
+  border-bottom-right-radius: 0em; }
+div.container-buttons-bar .last-button {
+  border-top-left-radius: 0em;
+  border-bottom-left-radius: 0em; }
+div.container-buttons-bar .button:not(.first-button):not(.last-button) {
+  border-radius: 0em; }
+
 /* ==================================== */
 
 /*# sourceMappingURL=buttons.css.map */
