@@ -110,9 +110,13 @@ div.message {
 div.tabs {
   font-size: 1rem;
   border-bottom: 0.1em solid $medium-gray;
-  content: "";
-  clear: both;
-  display: table;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  
 
   li {
     font-size: 1em;

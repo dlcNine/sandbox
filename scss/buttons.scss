@@ -10,7 +10,6 @@
   border: 0.0625em solid $light-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
 
-
   &:hover {
     background-color: $medium-gray;
     border-color: $medium-gray;
@@ -128,6 +127,13 @@ a.button {
   }
 }
 
+.button[class~="wide"] {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* ==================================== */
 
 .button[class~="outlined"] {
@@ -200,63 +206,37 @@ a.button {
 }
 
 /* ==================================== */
-$padding-amount: 0.8rem;
 
 .container-buttons {
-  div[class*="default-"] {
-    padding: 0;
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0.4rem;
 
     .button {
       @extend .button[class~="wide"];
+      margin: 0;
     }
   }
 
-  .button {
-    margin: 0;
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
   }
-
-  .div[class~="padding-top"] {
-    padding-top: $padding-amount;
-  }
-
-  .div[class~="padding-poles"] {
-    padding-top: $padding-amount 0em;
-  }
-
-  div[class~="padding-bottom"] {
-    padding-bottom: $padding-amount;
-  }
-
-  div[class~="padding-right"] {
-    padding-right: $padding-amount;
-  }
-
-  div[class~="padding-sides"] {
-    padding: 0rem $padding-amount;
-  }
-
-  div[class~="padding-left"] {
-    padding-left: $padding-amount;
-  }
-
-}
-
-.container-buttons::after {
-  content: '';
-  clear: both;
-  display: table;
-}
-
-.button[class~="wide"] {
-  display: block;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 /* ==================================== */
 
-div.button-bar {
+div.container-buttons-bar {
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0;
+
+    & .button {
+      @extend .button[class~="wide"];
+    }
+  }
+
   &::after {
     content: "";
     clear: both;
@@ -268,17 +248,17 @@ div.button-bar {
     margin: 0;
   }
 
-  .button:first-child {
+  .first-button {
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em;
   }
 
-  .button:last-child {
+  .last-button {
     border-top-left-radius: 0em;
     border-bottom-left-radius: 0em;
   }
 
-  .button:not(:first-child):not(:last-child) {
+  .button:not(.first-button):not(.last-button) {
     border-radius: 0em;
   }
 }
