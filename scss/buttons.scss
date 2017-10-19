@@ -200,51 +200,23 @@ a.button {
 }
 
 /* ==================================== */
-$padding-amount: 0.8rem;
 
 .container-buttons {
-  div[class*="default-"] {
-    padding: 0;
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0.4rem;
 
     .button {
       @extend .button[class~="wide"];
+      margin: 0;
     }
   }
 
-  .button {
-    margin: 0;
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
   }
-
-  .div[class~="padding-top"] {
-    padding-top: $padding-amount;
-  }
-
-  .div[class~="padding-poles"] {
-    padding-top: $padding-amount 0em;
-  }
-
-  div[class~="padding-bottom"] {
-    padding-bottom: $padding-amount;
-  }
-
-  div[class~="padding-right"] {
-    padding-right: $padding-amount;
-  }
-
-  div[class~="padding-sides"] {
-    padding: 0rem $padding-amount;
-  }
-
-  div[class~="padding-left"] {
-    padding-left: $padding-amount;
-  }
-
-}
-
-.container-buttons::after {
-  content: '';
-  clear: both;
-  display: table;
 }
 
 .button[class~="wide"] {
@@ -256,32 +228,32 @@ $padding-amount: 0.8rem;
 
 /* ==================================== */
 
-div.button-bar {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }  
+// div.container-buttons-bar {
+//   &::after {
+//     content: "";
+//     clear: both;
+//     display: table;
+//   }  
 
-  .button {
-    float: left;
-    margin: 0;
-  }
+//   .button {
+//     float: left;
+//     margin: 0;
+//   }
 
-  .button:first-child {
-    border-top-right-radius: 0em;
-    border-bottom-right-radius: 0em;
-  }
+//   .button:first-child {
+//     border-top-right-radius: 0em;
+//     border-bottom-right-radius: 0em;
+//   }
 
-  .button:last-child {
-    border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em;
-  }
+//   .button:last-child {
+//     border-top-left-radius: 0em;
+//     border-bottom-left-radius: 0em;
+//   }
 
-  .button:not(:first-child):not(:last-child) {
-    border-radius: 0em;
-  }
-}
+//   .button:not(:first-child):not(:last-child) {
+//     border-radius: 0em;
+//   }
+// }
 
 /* ==================================== */
 
