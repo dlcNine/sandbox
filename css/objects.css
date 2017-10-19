@@ -72,7 +72,7 @@ div.message {
 div.tabs {
   font-size: 1rem;
   border-bottom: 0.1em solid #bebebe;
-  content: "";
+  content: '';
   clear: both;
   display: table; }
   div.tabs li {
