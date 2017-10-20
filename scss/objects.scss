@@ -8,11 +8,11 @@ div.modal-backdrop {
   min-height: 100%;
   height: auto;
   background-color: $charcoal-transparent;
-  padding: 1.5rem;
+  padding: 1.8rem;
 
   div.modal {
     font-size: 1rem;
-    padding: 2.5em 2em 4em 2em;
+    padding: 1.8em;
     background-color: $white;
     border-radius: 0.5em;
   }
@@ -22,7 +22,7 @@ div.modal-backdrop {
 
 .box {
   font-size: 1rem;
-  padding: 0.6em;
+  padding: 0.9em;
   border: 0.1em solid $medium-gray;
   border-radius: 0.4em;
   background-color: $white;
