@@ -35,25 +35,62 @@
   url
 */
 
-form label {
-  font-size: 1.6rem;
-}
-
 form div.field {
+  font-size: 1rem;
   background-color: white;
+  padding: 0.6em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+
+  label {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
   
   input[type="email"], input[type="number"],
   input[type="password"], input[type="search"], 
-  input[type="tel"], input[type="text"], input[type="url"] {
+  input[type="tel"], input[type="text"], input[type="url"], 
+  select {
     font-size: 1.6rem;
     display: block;
     width: 100%;
-    padding: 0.375em 0.5em;
+    padding: 0.375em 0.625em;
     border: 0.0625em solid $medium-gray;
     border-radius: 0.1875em;
+    margin: 0.375em 0em;
   }
 
+  .help {
+    font-size: 1.2rem;
+  }
+
+  div.controls {
+    &::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    div[class*="default-"], div[class*="small-"], 
+    div[class*="medium-"], div[class*="large-"] {
+      padding: 0;
+      
+      &:not(.first-control):not(.last-control) {
+        padding: 0rem 0.6rem;
+      }
+    }
+
+    div.first-control {
+      padding-right: 0.6rem;
+    }
+
+    div.last-control {
+      padding-left: 0.6rem;
+    }
+  }
 }
+
+
 
 
 

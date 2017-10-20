@@ -8,7 +8,6 @@ div[class*="large-"], div[class*="default-"] {
 
 div.container {
   height: auto;
-  padding: 1rem;
   position: relative; }
 
 div.container::after, .clearfix::after {

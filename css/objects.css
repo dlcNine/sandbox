@@ -6,17 +6,17 @@ div.modal-backdrop {
   min-height: 100%;
   height: auto;
   background-color: rgba(55, 55, 61, 0.9);
-  padding: 1.5rem; }
+  padding: 1.8rem; }
   div.modal-backdrop div.modal {
     font-size: 1rem;
-    padding: 2.5em 2em 4em 2em;
+    padding: 1.8em;
     background-color: white;
     border-radius: 0.5em; }
 
 /* ==================================== */
 .box {
   font-size: 1rem;
-  padding: 0.6em;
+  padding: 0.9em;
   border: 0.1em solid #bebebe;
   border-radius: 0.4em;
   background-color: white;
@@ -27,13 +27,14 @@ div.message {
   font-size: 1rem;
   border: 0.1em solid #515151;
   border-radius: 0.3em;
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  margin: 0.6em 0em; }
   div.message div.message-header {
-    padding: 0.6em 1em;
+    padding: 0.8em;
     color: white;
     background-color: #515151; }
   div.message div.message-body {
-    padding: 0.8em 1.2em;
+    padding: 0.8em 0.8em 0.8em 1.2em;
     color: #515151; }
   div.message[class~="theme-primary"] {
     border-color: #3e9def;
@@ -79,7 +80,7 @@ div.tabs {
   div.tabs li {
     font-size: 1em;
     float: left;
-    padding: 0.8em 1.5em;
+    padding: 0.8em 1.2em;
     margin: 0em -0.1em -0.1em 0em;
     border-radius: 0.3em 0.3em 0em 0em;
     color: #bebebe; }
