@@ -34,13 +34,6 @@
   text
   url
 */
-form.container-form {
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-}
 
 form div.field {
   font-size: 1rem;
@@ -71,7 +64,33 @@ form div.field {
     font-size: 1.2rem;
   }
 
+  div.controls {
+    &::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    div[class*="default-"], div[class*="small-"], 
+    div[class*="medium-"], div[class*="large-"] {
+      padding: 0;
+      
+      &:not(.first-control):not(.last-control) {
+        padding: 0rem 0.6rem;
+      }
+    }
+
+    div.first-control {
+      padding-right: 0.6rem;
+    }
+
+    div.last-control {
+      padding-left: 0.6rem;
+    }
+  }
 }
+
+
 
 
 
