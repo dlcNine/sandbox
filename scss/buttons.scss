@@ -6,7 +6,7 @@
   text-align: center;
   background-color: $light-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
-  margin: 0.8rem 0.4rem;
+  margin: 0.8rem 0.6rem;
   border: 0.0625em solid $light-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
 
@@ -210,10 +210,11 @@ a.button {
 div.container-buttons {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
-    padding: 0.4rem;
+    padding: 0.4rem 0.6rem;
 
     .button {
-      @extend .button[class~="wide"];
+      display: block;
+      width: 100%;
       margin: 0;
     }
   }
@@ -228,12 +229,17 @@ div.container-buttons {
 /* ==================================== */
 
 div.container-buttons-bar {
+  padding: 0.6rem;
+
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
     padding: 0;
 
     & .button {
-      @extend .button[class~="wide"];
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 

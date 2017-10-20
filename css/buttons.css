@@ -5,7 +5,7 @@
   background-color: #f2f2f2;
   padding: 0.375em 0.75em;
   /* 6px 12px */
-  margin: 0.8rem 0.4rem;
+  margin: 0.8rem 0.6rem;
   border: 0.0625em solid #f2f2f2;
   /* 1px */
   border-radius: 0.1875em;
@@ -72,9 +72,7 @@ a.button {
   a.button:visited {
     text-decoration: none; }
 
-.button[class~="wide"], div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
-div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button, div.container-buttons-bar div[class*="default-"] .button, div.container-buttons-bar div[class*="small-"] .button,
-div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-bar div[class*="large-"] .button {
+.button[class~="wide"] {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -124,9 +122,11 @@ div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-b
 /* ==================================== */
 div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
 div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
-  padding: 0.4rem; }
+  padding: 0.4rem 0.6rem; }
   div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
   div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
+    display: block;
+    width: 100%;
     margin: 0; }
 div.container-buttons::after {
   content: '';
@@ -134,24 +134,32 @@ div.container-buttons::after {
   display: table; }
 
 /* ==================================== */
-div.container-buttons-bar div[class*="default-"], div.container-buttons-bar div[class*="small-"],
-div.container-buttons-bar div[class*="medium-"], div.container-buttons-bar div[class*="large-"] {
-  padding: 0; }
-div.container-buttons-bar::after {
-  content: "";
-  clear: both;
-  display: table; }
-div.container-buttons-bar .button {
-  float: left;
-  margin: 0; }
-div.container-buttons-bar .first-button {
-  border-top-right-radius: 0em;
-  border-bottom-right-radius: 0em; }
-div.container-buttons-bar .last-button {
-  border-top-left-radius: 0em;
-  border-bottom-left-radius: 0em; }
-div.container-buttons-bar .button:not(.first-button):not(.last-button) {
-  border-radius: 0em; }
+div.container-buttons-bar {
+  padding: 0.6rem; }
+  div.container-buttons-bar div[class*="default-"], div.container-buttons-bar div[class*="small-"],
+  div.container-buttons-bar div[class*="medium-"], div.container-buttons-bar div[class*="large-"] {
+    padding: 0; }
+    div.container-buttons-bar div[class*="default-"] .button, div.container-buttons-bar div[class*="small-"] .button,
+    div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-bar div[class*="large-"] .button {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+  div.container-buttons-bar::after {
+    content: "";
+    clear: both;
+    display: table; }
+  div.container-buttons-bar .button {
+    float: left;
+    margin: 0; }
+  div.container-buttons-bar .first-button {
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em; }
+  div.container-buttons-bar .last-button {
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em; }
+  div.container-buttons-bar .button:not(.first-button):not(.last-button) {
+    border-radius: 0em; }
 
 /* ==================================== */
 

@@ -36,15 +36,16 @@ div.message {
   border: 0.1em solid $dark-gray;
   border-radius: 0.3em;
   background-color: $light-gray;
+  margin: 0.6em 0em;
 
   div.message-header {
-    padding: 0.6em 1em;
+    padding: 0.8em;
     color: $white;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 0.8em 1.2em;
+    padding: 0.8em 0.8em 0.8em 1.2em;
     color: $dark-gray;
   }
 
@@ -121,7 +122,7 @@ div.tabs {
   li {
     font-size: 1em;
     float: left;
-    padding: 0.8em 1.5em;
+    padding: 0.8em 1.2em;
     margin: 0em -0.1em -0.1em 0em;
     border-radius: 0.3em 0.3em 0em 0em;
     color: $medium-gray;
