@@ -35,12 +35,21 @@
   url
 */
 
-form label {
-  font-size: 1.6rem;
+form.container-form::after {
+  content: '';
+  clear: both;
+  display: table;
 }
 
 form div.field {
+  font-size: 1rem;
   background-color: white;
+  padding: 1em;
+
+  label {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
   
   input[type="email"], input[type="number"],
   input[type="password"], input[type="search"], 
@@ -51,6 +60,11 @@ form div.field {
     padding: 0.375em 0.5em;
     border: 0.0625em solid $medium-gray;
     border-radius: 0.1875em;
+    margin: 0.375em 0em;
+  }
+
+  .help {
+    font-size: 1.2rem;
   }
 
 }

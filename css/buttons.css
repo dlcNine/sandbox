@@ -64,12 +64,6 @@
       color: #ef3232; }
     .button[class~="theme-danger"]:focus:not(:active) {
       border-color: #b2250c; }
-  .button[class~="resize-small"] {
-    font-size: 1.2rem; }
-  .button[class~="resize-medium"] {
-    font-size: 2rem; }
-  .button[class~="resize-large"] {
-    font-size: 2.6rem; }
 
 a.button {
   display: inline-block; }
@@ -78,8 +72,8 @@ a.button {
   a.button:visited {
     text-decoration: none; }
 
-.button[class~="wide"], .container-buttons div[class*="default-"] .button, .container-buttons div[class*="small-"] .button,
-.container-buttons div[class*="medium-"] .button, .container-buttons div[class*="large-"] .button, div.container-buttons-bar div[class*="default-"] .button, div.container-buttons-bar div[class*="small-"] .button,
+.button[class~="wide"], div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
+div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button, div.container-buttons-bar div[class*="default-"] .button, div.container-buttons-bar div[class*="small-"] .button,
 div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-bar div[class*="large-"] .button {
   display: block;
   width: 100%;
@@ -128,13 +122,13 @@ div.container-buttons-bar div[class*="medium-"] .button, div.container-buttons-b
       color: #b2250c; }
 
 /* ==================================== */
-.container-buttons div[class*="default-"], .container-buttons div[class*="small-"],
-.container-buttons div[class*="medium-"], .container-buttons div[class*="large-"] {
+div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
+div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
   padding: 0.4rem; }
-  .container-buttons div[class*="default-"] .button, .container-buttons div[class*="small-"] .button,
-  .container-buttons div[class*="medium-"] .button, .container-buttons div[class*="large-"] .button {
+  div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
+  div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
     margin: 0; }
-.container-buttons::after {
+div.container-buttons::after {
   content: '';
   clear: both;
   display: table; }

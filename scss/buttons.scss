@@ -102,17 +102,17 @@
     }
   }
 
-  &[class~="resize-small"] {
-    font-size: 1.2rem;
-  }
+  // &[class~="resize-small"] {
+  //   font-size: 1.2rem;
+  // }
 
-  &[class~="resize-medium"] {
-    font-size: 2rem;
-  }
+  // &[class~="resize-medium"] {
+  //   font-size: 2rem;
+  // }
 
-  &[class~="resize-large"] {
-    font-size: 2.6rem;
-  }
+  // &[class~="resize-large"] {
+  //   font-size: 2.6rem;
+  // }
 }
 
 a.button {
@@ -207,7 +207,7 @@ a.button {
 
 /* ==================================== */
 
-.container-buttons {
+div.container-buttons {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
     padding: 0.4rem;

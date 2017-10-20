@@ -31,11 +31,18 @@
   text
   url
 */
-form label {
-  font-size: 1.6rem; }
+form.container-form::after {
+  content: '';
+  clear: both;
+  display: table; }
 
 form div.field {
-  background-color: white; }
+  font-size: 1rem;
+  background-color: white;
+  padding: 1em; }
+  form div.field label {
+    font-size: 1.6rem;
+    font-weight: bold; }
   form div.field input[type="email"], form div.field input[type="number"],
   form div.field input[type="password"], form div.field input[type="search"],
   form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"] {
@@ -44,6 +51,9 @@ form div.field {
     width: 100%;
     padding: 0.375em 0.5em;
     border: 0.0625em solid #bebebe;
-    border-radius: 0.1875em; }
+    border-radius: 0.1875em;
+    margin: 0.375em 0em; }
+  form div.field .help {
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=form.css.map */
