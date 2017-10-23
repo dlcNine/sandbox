@@ -42,6 +42,8 @@ form div.field {
   form div.field .label {
     font-size: 1.6rem;
     font-weight: bold; }
+  form div.field .help {
+    font-size: 1.2rem; }
   form div.field input[type="email"], form div.field input[type="number"],
   form div.field input[type="password"], form div.field input[type="search"],
   form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"],
@@ -53,8 +55,9 @@ form div.field {
     border: 0.0625em solid #bebebe;
     border-radius: 0.1875em;
     margin: 0.375em 0em; }
-  form div.field .help {
-    font-size: 1.2rem; }
+  form div.field label.checkbox, form div.field label.radio {
+    font-size: 1.6rem;
+    margin: 0.375em 0.5625em 0.375em 0em; }
   form div.field div.container-controls::after {
     content: '';
     clear: both;
@@ -73,9 +76,7 @@ form div.field {
     display: inline;
     width: initial;
     margin-right: 0.9rem; }
-  form div.field div.controls-inline label {
-    margin-right: 0.9rem; }
-    form div.field div.controls-inline label input {
-      margin: 0; }
+  form div.field div.controls-inline label input {
+    margin-right: 0.2rem; }
 
 /*# sourceMappingURL=form.css.map */
