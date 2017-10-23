@@ -39,7 +39,7 @@ form div.field {
   margin-bottom: 0.2em;
   /* ==================================== */
   /* ==================================== */ }
-  form div.field label {
+  form div.field .label {
     font-size: 1.6rem;
     font-weight: bold; }
   form div.field input[type="email"], form div.field input[type="number"],
@@ -69,5 +69,13 @@ form div.field {
     padding-right: 0.6rem; }
   form div.field div.container-controls div.last-control {
     padding-left: 0.6rem; }
+  form div.field div.controls-inline input {
+    display: inline;
+    width: initial;
+    margin-right: 0.9rem; }
+  form div.field div.controls-inline label {
+    margin-right: 0.9rem; }
+    form div.field div.controls-inline label input {
+      margin: 0; }
 
 /*# sourceMappingURL=form.css.map */

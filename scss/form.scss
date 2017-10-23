@@ -42,7 +42,7 @@ form div.field {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 
-  label {
+  .label {
     font-size: 1.6rem;
     font-weight: bold;
   }
@@ -93,6 +93,22 @@ form div.field {
 
  /* ==================================== */
 
+  div.controls-inline {
+    input {
+      display: inline;
+      width: initial;
+      margin-right: 0.9rem;
+
+    }
+
+    label {
+      margin-right: 0.9rem;
+
+      input {
+        margin: 0;
+      }
+    }
+  }
 
 }
 
