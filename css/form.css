@@ -45,7 +45,8 @@ form div.field {
     font-size: 1.6rem;
     font-weight: bold; }
   form div.field .help {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    margin: 0.25em 0em; }
   form div.field input[type="email"], form div.field input[type="number"],
   form div.field input[type="password"], form div.field input[type="search"],
   form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"],
@@ -59,7 +60,10 @@ form div.field {
     margin: 0.375em 0em; }
   form div.field label.checkbox, form div.field label.radio {
     font-size: 1.6rem;
-    margin: 0.375em 0.5625em 0.375em 0em; }
+    display: inline-block;
+    padding: 0.375em 0.625em 0.375em 0em; }
+    form div.field label.checkbox input[type="checkbox"], form div.field label.checkbox input[type="radio"], form div.field label.radio input[type="checkbox"], form div.field label.radio input[type="radio"] {
+      margin-right: 0.2rem; }
   form div.field.container-field-horizontal::after {
     content: '';
     clear: both;
@@ -78,6 +82,9 @@ form div.field {
       form div.field.container-field-horizontal div[class*="default-"].right-side *:first-child, form div.field.container-field-horizontal div[class*="small-"].right-side *:first-child,
       form div.field.container-field-horizontal div[class*="medium-"].right-side *:first-child, form div.field.container-field-horizontal div[class*="large-"].right-side *:first-child {
         margin-top: 0; }
+      form div.field.container-field-horizontal div[class*="default-"].right-side label.checkbox label.radio, form div.field.container-field-horizontal div[class*="small-"].right-side label.checkbox label.radio,
+      form div.field.container-field-horizontal div[class*="medium-"].right-side label.checkbox label.radio, form div.field.container-field-horizontal div[class*="large-"].right-side label.checkbox label.radio {
+        position: relative; }
   form div.field div.container-controls::after {
     content: '';
     clear: both;
@@ -96,7 +103,7 @@ form div.field {
     display: inline;
     width: initial;
     margin-right: 0.9rem; }
-  form div.field div.controls-inline label input {
+  form div.field div.controls-inline label.checkbox input[type="checkbox"], form div.field div.controls-inline label.checkbox input[type="radio"], form div.field div.controls-inline label.radio input[type="checkbox"], form div.field div.controls-inline label.radio input[type="radio"] {
     margin-right: 0.2rem; }
 
 /*# sourceMappingURL=form.css.map */

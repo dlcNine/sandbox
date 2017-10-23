@@ -49,6 +49,7 @@ form div.field {
 
   .help {
     font-size: 1.2rem;
+    margin: 0.25em 0em;
   }
   
   input[type="email"], input[type="number"],
@@ -66,7 +67,12 @@ form div.field {
 
   label.checkbox, label.radio {
     font-size: 1.6rem;
-    margin: 0.375em 0.5625em 0.375em 0em;
+    display: inline-block;
+    padding: 0.375em 0.625em 0.375em 0em;
+
+    input[type="checkbox"], input[type="radio"] {
+      margin-right: 0.2rem;
+    }
   }
 
   /* ==================================== */
@@ -93,6 +99,11 @@ form div.field {
 
         *:first-child {
           margin-top: 0;
+        }
+
+        label.checkbox label.radio {
+          position: relative;
+          
         }
         
       }
@@ -135,12 +146,11 @@ form div.field {
       margin-right: 0.9rem;
     }
 
-    label {
-      input {
+    label.checkbox, label.radio {
+      input[type="checkbox"], input[type="radio"] {
         margin-right: 0.2rem;
       }
     }
-
   }
 
   /* ==================================== */
