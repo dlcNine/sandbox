@@ -71,20 +71,22 @@ form div.field {
   form div.field.container-field-horizontal div[class*="default-"], form div.field.container-field-horizontal div[class*="small-"],
   form div.field.container-field-horizontal div[class*="medium-"], form div.field.container-field-horizontal div[class*="large-"] {
     padding: 0; }
-    form div.field.container-field-horizontal div[class*="default-"].left-side, form div.field.container-field-horizontal div[class*="small-"].left-side,
-    form div.field.container-field-horizontal div[class*="medium-"].left-side, form div.field.container-field-horizontal div[class*="large-"].left-side {
+    form div.field.container-field-horizontal div[class*="default-"].field-label, form div.field.container-field-horizontal div[class*="small-"].field-label,
+    form div.field.container-field-horizontal div[class*="medium-"].field-label, form div.field.container-field-horizontal div[class*="large-"].field-label {
       padding-right: 0.6rem;
       position: relative;
       top: 0.9rem; }
-    form div.field.container-field-horizontal div[class*="default-"].right-side, form div.field.container-field-horizontal div[class*="small-"].right-side,
-    form div.field.container-field-horizontal div[class*="medium-"].right-side, form div.field.container-field-horizontal div[class*="large-"].right-side {
+    form div.field.container-field-horizontal div[class*="default-"].field-body, form div.field.container-field-horizontal div[class*="small-"].field-body,
+    form div.field.container-field-horizontal div[class*="medium-"].field-body, form div.field.container-field-horizontal div[class*="large-"].field-body {
       padding-left: 0.6rem; }
-      form div.field.container-field-horizontal div[class*="default-"].right-side *:first-child, form div.field.container-field-horizontal div[class*="small-"].right-side *:first-child,
-      form div.field.container-field-horizontal div[class*="medium-"].right-side *:first-child, form div.field.container-field-horizontal div[class*="large-"].right-side *:first-child {
+      form div.field.container-field-horizontal div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="small-"].field-body *:first-child,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="large-"].field-body *:first-child {
         margin-top: 0; }
-      form div.field.container-field-horizontal div[class*="default-"].right-side label.checkbox label.radio, form div.field.container-field-horizontal div[class*="small-"].right-side label.checkbox label.radio,
-      form div.field.container-field-horizontal div[class*="medium-"].right-side label.checkbox label.radio, form div.field.container-field-horizontal div[class*="large-"].right-side label.checkbox label.radio {
-        position: relative; }
+      form div.field.container-field-horizontal div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="small-"].field-body label.radio,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body label.checkbox,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="large-"].field-body label.radio {
+        position: relative;
+        top: 0.3rem; }
   form div.field div.container-controls::after {
     content: '';
     clear: both;

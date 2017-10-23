@@ -88,22 +88,23 @@ form div.field {
     div[class*="medium-"], div[class*="large-"] {
       padding: 0;
 
-      &.left-side {
+      &.field-label {
         padding-right: 0.6rem;
         position: relative;
         top: 0.9rem;
       }
 
-      &.right-side {
+      &.field-body {
         padding-left: 0.6rem;
 
         *:first-child {
           margin-top: 0;
         }
 
-        label.checkbox label.radio {
+        label.checkbox, label.radio {
           position: relative;
-          
+          top: 0.3rem;
+
         }
         
       }

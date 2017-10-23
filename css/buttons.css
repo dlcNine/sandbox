@@ -122,7 +122,7 @@ a.button {
 /* ====================================================== */
 div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
 div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
-  padding: 0.4rem 0.6rem; }
+  padding: 0.4rem 0.4rem; }
   div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
   div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
     display: block;
