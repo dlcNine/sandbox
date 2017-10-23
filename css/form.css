@@ -36,10 +36,17 @@ form div.field {
   background-color: white;
   padding: 0.6em;
   margin-top: 0.2em;
-  margin-bottom: 0.2em; }
-  form div.field label {
+  margin-bottom: 0.2em;
+  /* ==================================== */
+  /* ==================================== */
+  /* ==================================== */
+  /* ==================================== */ }
+  form div.field .label {
     font-size: 1.6rem;
     font-weight: bold; }
+  form div.field .help {
+    font-size: 1.2rem;
+    margin: 0.25em 0em; }
   form div.field input[type="email"], form div.field input[type="number"],
   form div.field input[type="password"], form div.field input[type="search"],
   form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"],
@@ -51,21 +58,54 @@ form div.field {
     border: 0.0625em solid #bebebe;
     border-radius: 0.1875em;
     margin: 0.375em 0em; }
-  form div.field .help {
-    font-size: 1.2rem; }
-  form div.field div.controls::after {
+  form div.field label.checkbox, form div.field label.radio {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0.375em 0.625em 0.375em 0em; }
+    form div.field label.checkbox input[type="checkbox"], form div.field label.checkbox input[type="radio"], form div.field label.radio input[type="checkbox"], form div.field label.radio input[type="radio"] {
+      margin-right: 0.2rem; }
+  form div.field.container-field-horizontal::after {
     content: '';
     clear: both;
     display: table; }
-  form div.field div.controls div[class*="default-"], form div.field div.controls div[class*="small-"],
-  form div.field div.controls div[class*="medium-"], form div.field div.controls div[class*="large-"] {
+  form div.field.container-field-horizontal div[class*="default-"], form div.field.container-field-horizontal div[class*="small-"],
+  form div.field.container-field-horizontal div[class*="medium-"], form div.field.container-field-horizontal div[class*="large-"] {
     padding: 0; }
-    form div.field div.controls div[class*="default-"]:not(.first-control):not(.last-control), form div.field div.controls div[class*="small-"]:not(.first-control):not(.last-control),
-    form div.field div.controls div[class*="medium-"]:not(.first-control):not(.last-control), form div.field div.controls div[class*="large-"]:not(.first-control):not(.last-control) {
+    form div.field.container-field-horizontal div[class*="default-"].field-label, form div.field.container-field-horizontal div[class*="small-"].field-label,
+    form div.field.container-field-horizontal div[class*="medium-"].field-label, form div.field.container-field-horizontal div[class*="large-"].field-label {
+      padding-right: 0.6rem;
+      position: relative;
+      top: 0.9rem; }
+    form div.field.container-field-horizontal div[class*="default-"].field-body, form div.field.container-field-horizontal div[class*="small-"].field-body,
+    form div.field.container-field-horizontal div[class*="medium-"].field-body, form div.field.container-field-horizontal div[class*="large-"].field-body {
+      padding-left: 0.6rem; }
+      form div.field.container-field-horizontal div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="small-"].field-body *:first-child,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="large-"].field-body *:first-child {
+        margin-top: 0; }
+      form div.field.container-field-horizontal div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="small-"].field-body label.radio,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body label.checkbox,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="large-"].field-body label.radio {
+        position: relative;
+        top: 0.3rem; }
+  form div.field div.container-controls::after {
+    content: '';
+    clear: both;
+    display: table; }
+  form div.field div.container-controls div[class*="default-"], form div.field div.container-controls div[class*="small-"],
+  form div.field div.container-controls div[class*="medium-"], form div.field div.container-controls div[class*="large-"] {
+    padding: 0; }
+    form div.field div.container-controls div[class*="default-"]:not(.first-control):not(.last-control), form div.field div.container-controls div[class*="small-"]:not(.first-control):not(.last-control),
+    form div.field div.container-controls div[class*="medium-"]:not(.first-control):not(.last-control), form div.field div.container-controls div[class*="large-"]:not(.first-control):not(.last-control) {
       padding: 0rem 0.6rem; }
-  form div.field div.controls div.first-control {
+  form div.field div.container-controls div.first-control {
     padding-right: 0.6rem; }
-  form div.field div.controls div.last-control {
+  form div.field div.container-controls div.last-control {
     padding-left: 0.6rem; }
+  form div.field div.controls-inline input {
+    display: inline;
+    width: initial;
+    margin-right: 0.9rem; }
+  form div.field div.controls-inline label.checkbox input[type="checkbox"], form div.field div.controls-inline label.checkbox input[type="radio"], form div.field div.controls-inline label.radio input[type="checkbox"], form div.field div.controls-inline label.radio input[type="radio"] {
+    margin-right: 0.2rem; }
 
 /*# sourceMappingURL=form.css.map */

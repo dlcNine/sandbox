@@ -134,7 +134,7 @@ a.button {
   margin-right: 0;
 }
 
-/* ==================================== */
+/* ====================================================== */
 
 .button[class~="outlined"] {
   background-color: transparent;
@@ -205,12 +205,12 @@ a.button {
   }
 }
 
-/* ==================================== */
+/* ====================================================== */
 
 div.container-buttons {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem 0.4rem;
 
     .button {
       display: block;
@@ -226,7 +226,7 @@ div.container-buttons {
   }
 }
 
-/* ==================================== */
+/* ====================================================== */
 
 div.container-buttons-bar {
   padding: 0.6rem;
@@ -269,7 +269,7 @@ div.container-buttons-bar {
   }
 }
 
-/* ==================================== */
+/* ====================================================== */
 
 
 

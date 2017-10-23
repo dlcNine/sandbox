@@ -42,9 +42,14 @@ form div.field {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
 
-  label {
+  .label {
     font-size: 1.6rem;
     font-weight: bold;
+  }
+
+  .help {
+    font-size: 1.2rem;
+    margin: 0.25em 0em;
   }
   
   input[type="email"], input[type="number"],
@@ -54,17 +59,25 @@ form div.field {
     font-size: 1.6rem;
     display: block;
     width: 100%;
-    padding: 0.375em 0.625em;
+    padding: 0.375em 0.625em;  // 6px 10px
     border: 0.0625em solid $medium-gray;
-    border-radius: 0.1875em;
-    margin: 0.375em 0em;
+    border-radius: 0.1875em;  // 3px
+    margin: 0.375em 0em;  // 6px
   }
 
-  .help {
-    font-size: 1.2rem;
+  label.checkbox, label.radio {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0.375em 0.625em 0.375em 0em;
+
+    input[type="checkbox"], input[type="radio"] {
+      margin-right: 0.2rem;
+    }
   }
 
-  div.controls {
+  /* ==================================== */
+
+  &.container-field-horizontal {
     &::after {
       content: '';
       clear: both;
@@ -74,7 +87,43 @@ form div.field {
     div[class*="default-"], div[class*="small-"], 
     div[class*="medium-"], div[class*="large-"] {
       padding: 0;
-      
+
+      &.field-label {
+        padding-right: 0.6rem;
+        position: relative;
+        top: 0.9rem;
+      }
+
+      &.field-body {
+        padding-left: 0.6rem;
+
+        *:first-child {
+          margin-top: 0;
+        }
+
+        label.checkbox, label.radio {
+          position: relative;
+          top: 0.3rem;
+
+        }
+        
+      }
+    }
+  }
+
+  /* ==================================== */
+
+  div.container-controls {
+    &::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    div[class*="default-"], div[class*="small-"], 
+    div[class*="medium-"], div[class*="large-"] {
+      padding: 0;
+
       &:not(.first-control):not(.last-control) {
         padding: 0rem 0.6rem;
       }
@@ -88,6 +137,25 @@ form div.field {
       padding-left: 0.6rem;
     }
   }
+
+ /* ==================================== */
+
+  div.controls-inline {
+    input {
+      display: inline;
+      width: initial;
+      margin-right: 0.9rem;
+    }
+
+    label.checkbox, label.radio {
+      input[type="checkbox"], input[type="radio"] {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+
+  /* ==================================== */
+
 }
 
 

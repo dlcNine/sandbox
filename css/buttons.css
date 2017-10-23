@@ -78,7 +78,7 @@ a.button {
   margin-left: 0;
   margin-right: 0; }
 
-/* ==================================== */
+/* ====================================================== */
 .button[class~="outlined"] {
   background-color: transparent;
   border-color: #bebebe; }
@@ -119,10 +119,10 @@ a.button {
       background-color: #ef3232;
       color: #b2250c; }
 
-/* ==================================== */
+/* ====================================================== */
 div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
 div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
-  padding: 0.4rem 0.6rem; }
+  padding: 0.4rem 0.4rem; }
   div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
   div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
     display: block;
@@ -133,7 +133,7 @@ div.container-buttons::after {
   clear: both;
   display: table; }
 
-/* ==================================== */
+/* ====================================================== */
 div.container-buttons-bar {
   padding: 0.6rem; }
   div.container-buttons-bar div[class*="default-"], div.container-buttons-bar div[class*="small-"],
@@ -161,6 +161,6 @@ div.container-buttons-bar {
   div.container-buttons-bar .button:not(.first-button):not(.last-button) {
     border-radius: 0em; }
 
-/* ==================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=buttons.css.map */
