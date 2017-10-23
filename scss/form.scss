@@ -69,7 +69,35 @@ form div.field {
     margin: 0.375em 0.5625em 0.375em 0em;
   }
 
-  
+  /* ==================================== */
+
+  &.container-field-horizontal {
+    &::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    div[class*="default-"], div[class*="small-"], 
+    div[class*="medium-"], div[class*="large-"] {
+      padding: 0;
+
+      &.left-side {
+        padding-right: 0.6rem;
+        position: relative;
+        top: 0.9rem;
+      }
+
+      &.right-side {
+        padding-left: 0.6rem;
+
+        *:first-child {
+          margin-top: 0;
+        }
+        
+      }
+    }
+  }
 
   /* ==================================== */
 
@@ -114,6 +142,8 @@ form div.field {
     }
 
   }
+
+  /* ==================================== */
 
 }
 
