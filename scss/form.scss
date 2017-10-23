@@ -54,17 +54,19 @@ form div.field {
     font-size: 1.6rem;
     display: block;
     width: 100%;
-    padding: 0.375em 0.625em;
+    padding: 0.375em 0.625em;  // 6px 10px
     border: 0.0625em solid $medium-gray;
-    border-radius: 0.1875em;
-    margin: 0.375em 0em;
+    border-radius: 0.1875em;  // 3px
+    margin: 0.375em 0em;  // 6px
   }
 
   .help {
     font-size: 1.2rem;
   }
 
-  div.controls {
+  /* ==================================== */
+
+  div.container-controls {
     &::after {
       content: '';
       clear: both;
@@ -74,7 +76,7 @@ form div.field {
     div[class*="default-"], div[class*="small-"], 
     div[class*="medium-"], div[class*="large-"] {
       padding: 0;
-      
+
       &:not(.first-control):not(.last-control) {
         padding: 0rem 0.6rem;
       }
@@ -88,6 +90,10 @@ form div.field {
       padding-left: 0.6rem;
     }
   }
+
+ /* ==================================== */
+
+
 }
 
 

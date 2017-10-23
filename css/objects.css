@@ -13,7 +13,7 @@ div.modal-backdrop {
     background-color: white;
     border-radius: 0.5em; }
 
-/* ==================================== */
+/* ====================================================== */
 .box {
   font-size: 1rem;
   padding: 0.9em;
@@ -22,7 +22,7 @@ div.modal-backdrop {
   background-color: white;
   box-shadow: 0em 0.05em 0.04em 0em #f2f2f2; }
 
-/* ==================================== */
+/* ====================================================== */
 div.message {
   font-size: 1rem;
   border: 0.1em solid #515151;
@@ -69,7 +69,7 @@ div.message {
     div.message[class~="theme-danger"] .message-body {
       color: #b2250c; }
 
-/* ==================================== */
+/* ====================================================== */
 div.tabs {
   font-size: 1rem;
   border-bottom: 0.1em solid #bebebe; }
