@@ -81,21 +81,13 @@ form div.field {
 
       content: " ";
       display: block;
-      border: 0.1rem solid $medium-gray;
-      border-left: 0;
-      border-bottom: 0;
-      width: 0.6rem;
-      height: 0.6rem;
+      width: 1rem;
+      height: 1rem;
       position: absolute;
-      top: 30%;
+      top: 25%;
       right: 1.6rem;
       z-index: 1;
     }
-  }
-
-  select::after {
-    content: 'heyoejr';
-    border: 1px solid blue;
   }
 
   label.checkbox, label.radio {
