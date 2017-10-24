@@ -1,0 +1,27 @@
+@mixin set-appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
+@mixin rotate-2d($degree) {
+  -webkit-transform: rotate($degree);
+  -moz-transform: rotate($degree);
+  -o-transform: rotate($degree);
+  -ms-transform: rotate($degree);
+  transform: rotate($degree);
+}
+
+@mixin translate-2d($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -moz-transform: translate($x, $y);
+  -o-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+@mixin select-arrow-color($color) {
+  background-image: -webkit-linear-gradient(45deg, transparent 50%, $color 50%);
+  background-image: -moz-linear-gradient(45deg, transparent 50%, $color 50%);
+  background-image: -o-linear-gradient(45deg, transparent 50%, $color 50%);
+}

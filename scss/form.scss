@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./mixins.scss";
 
 /* input types: 
   button
@@ -63,6 +64,38 @@ form div.field {
     border: 0.0625em solid $medium-gray;
     border-radius: 0.1875em;  // 3px
     margin: 0.375em 0em;  // 6px
+  }
+
+  div.select {
+    position: relative;
+
+    select {
+      @include set-appearance(none);
+      background-color: $white;
+      height: 3.2rem;
+    }
+
+    &::after {
+      @include select-arrow-color($medium-gray);
+      @include rotate-2d(135deg);
+
+      content: " ";
+      display: block;
+      border: 0.1rem solid $medium-gray;
+      border-left: 0;
+      border-bottom: 0;
+      width: 0.6rem;
+      height: 0.6rem;
+      position: absolute;
+      top: 30%;
+      right: 1.6rem;
+      z-index: 1;
+    }
+  }
+
+  select::after {
+    content: 'heyoejr';
+    border: 1px solid blue;
   }
 
   label.checkbox, label.radio {
