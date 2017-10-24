@@ -105,12 +105,13 @@ form div.field {
     form div.field.container-field-horizontal div[class*="medium-"].field-label, form div.field.container-field-horizontal div[class*="large-"].field-label {
       padding-right: 0.6rem;
       position: relative;
-      top: 0.9rem; }
+      top: 0.8rem; }
     form div.field.container-field-horizontal div[class*="default-"].field-body, form div.field.container-field-horizontal div[class*="small-"].field-body,
     form div.field.container-field-horizontal div[class*="medium-"].field-body, form div.field.container-field-horizontal div[class*="large-"].field-body {
       padding-left: 0.6rem; }
-      form div.field.container-field-horizontal div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="small-"].field-body *:first-child,
-      form div.field.container-field-horizontal div[class*="medium-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="large-"].field-body *:first-child {
+      form div.field.container-field-horizontal div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="default-"].field-body div.controls-inline input, form div.field.container-field-horizontal div[class*="small-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="small-"].field-body div.controls-inline input,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body *:first-child,
+      form div.field.container-field-horizontal div[class*="medium-"].field-body div.controls-inline input, form div.field.container-field-horizontal div[class*="large-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="large-"].field-body div.controls-inline input {
         margin-top: 0; }
       form div.field.container-field-horizontal div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="small-"].field-body label.radio,
       form div.field.container-field-horizontal div[class*="medium-"].field-body label.checkbox,

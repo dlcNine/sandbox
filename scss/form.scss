@@ -123,13 +123,13 @@ form div.field {
       &.field-label {
         padding-right: 0.6rem;
         position: relative;
-        top: 0.9rem;
+        top: 0.8rem;
       }
 
       &.field-body {
         padding-left: 0.6rem;
 
-        *:first-child {
+        *:first-child, div.controls-inline input {
           margin-top: 0;
         }
 
