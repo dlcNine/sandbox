@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./mixins.scss";
 
 /* input types: 
   button
@@ -55,7 +56,7 @@ form div.field {
   input[type="email"], input[type="number"],
   input[type="password"], input[type="search"], 
   input[type="tel"], input[type="text"], input[type="url"], 
-  select {
+  select, textarea {
     font-size: 1.6rem;
     display: block;
     width: 100%;
@@ -63,6 +64,37 @@ form div.field {
     border: 0.0625em solid $medium-gray;
     border-radius: 0.1875em;  // 3px
     margin: 0.375em 0em;  // 6px
+  }
+
+  div.select {
+    position: relative;
+
+    select {
+      @include set-appearance(none);
+      background-color: $white;
+      height: 3.2rem;
+    }
+
+    &::after {
+      @include select-arrow-color($medium-gray);
+      @include rotate-2d(135deg);
+
+      content: " ";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 25%;
+      right: 1.6rem;
+      z-index: 1;
+    }
+  }
+
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 6.2rem;
+    max-height: 22rem;
   }
 
   label.checkbox, label.radio {
@@ -91,13 +123,13 @@ form div.field {
       &.field-label {
         padding-right: 0.6rem;
         position: relative;
-        top: 0.9rem;
+        top: 0.8rem;
       }
 
       &.field-body {
         padding-left: 0.6rem;
 
-        *:first-child {
+        *:first-child, div.controls-inline input {
           margin-top: 0;
         }
 
