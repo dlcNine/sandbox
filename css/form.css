@@ -50,7 +50,7 @@ form div.field {
   form div.field input[type="email"], form div.field input[type="number"],
   form div.field input[type="password"], form div.field input[type="search"],
   form div.field input[type="tel"], form div.field input[type="text"], form div.field input[type="url"],
-  form div.field select {
+  form div.field select, form div.field textarea {
     font-size: 1.6rem;
     display: block;
     width: 100%;
@@ -83,6 +83,11 @@ form div.field {
       top: 25%;
       right: 1.6rem;
       z-index: 1; }
+  form div.field textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 6.2rem;
+    max-height: 22rem; }
   form div.field label.checkbox, form div.field label.radio {
     font-size: 1.6rem;
     display: inline-block;
