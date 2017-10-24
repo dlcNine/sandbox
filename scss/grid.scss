@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -35,7 +37,7 @@ div.position-left-top {
 
 div.position-left-center {
   top: 50%;
-  transform: translate(0%, -50%);
+  @include translate-2d(0%, -50%);
 }
 
 div.position-left-bottom {
@@ -48,17 +50,17 @@ div[class*="position-center-"] {
 
 div.position-center-top {
   top: 0;
-  transform: translate(-50%, 0%);
+  @include translate-2d(-50%, 0%);
 }
 
 div.position-center-center {
   top: 50%;
-  transform: translate(-50%, -50%);
+  @include translate-2d(-50%, -50%);
 }
 
 div.position-center-bottom {
   bottom: 0;
-  transform: translate(-50%, 0%);
+  @include translate-2d(-50%, 0%);
 }
 
 div[class*="position-right-"] {
@@ -71,7 +73,7 @@ div.position-right-top {
 
 div.position-right-center {
   top: 50%;
-  transform: translate(0%, -50%);
+  @include translate-2d(0%, -50%);
 }
 
 div.position-right-bottom {
