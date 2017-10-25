@@ -34,9 +34,19 @@ select, textarea {
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;  // 6px 10px
-  border: 0.0625em solid $medium-gray;
+  border: 0.0625em solid $light-gray;
   border-radius: 0.1875em;  // 3px
   margin: 0.375em 0em;  // 6px
+
+  &:hover {
+    border-color: $medium-gray;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $medium-blue;
+    box-shadow: 0em 0em 0em 0.1875em $light-blue;
+  }
 }
 
 div.select {
@@ -49,7 +59,7 @@ div.select {
   }
 
   &::after {
-    @include select-arrow-color($medium-gray);
+    @include select-arrow-color($light-gray);
     @include rotate-2d(135deg);
 
     content: " ";
@@ -84,7 +94,6 @@ label.checkbox, label.radio {
 
 form div.field {
   font-size: 1rem;
-  // background-color: white;
   padding: 0.6em;
   margin-top: 0.2em;
   margin-bottom: 0.2em;

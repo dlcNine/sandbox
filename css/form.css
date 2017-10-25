@@ -33,6 +33,18 @@ select, textarea {
   border: 0.0625em solid #bebebe;
   border-radius: 0.1875em;
   margin: 0.375em 0em; }
+  input[type="email"]:hover, input[type="number"]:hover,
+  input[type="password"]:hover, input[type="search"]:hover,
+  input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,
+  select:hover, textarea:hover {
+    border-color: #969696; }
+  input[type="email"]:focus, input[type="number"]:focus,
+  input[type="password"]:focus, input[type="search"]:focus,
+  input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus,
+  select:focus, textarea:focus {
+    outline: none;
+    border-color: #3e9def;
+    box-shadow: 0em 0em 0em 0.1875em #c0e3f9; }
 
 div.select {
   position: relative; }

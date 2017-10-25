@@ -4,19 +4,19 @@
   font-size: 1.6rem;
   color: $dark-gray;
   text-align: center;
-  background-color: $light-gray;
+  background-color: $white-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
   margin: 0.8rem 0.6rem;
-  border: 0.0625em solid $light-gray; /* 1px */
+  border: 0.0625em solid $white-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
 
   &:hover {
-    background-color: $medium-gray;
-    border-color: $medium-gray;
+    background-color: $light-gray;
+    border-color: $light-gray;
   }
 
   &:active {
-    color: $light-gray;
+    color: $white-gray;
     outline: none;
   }
   
@@ -26,7 +26,7 @@
   }
 
   &[class~="theme-primary"] {
-    color: $light-blue;
+    color: $white-blue;
     border-color: $medium-blue;
     background-color: $medium-blue;
 
@@ -45,7 +45,7 @@
   }
 
   &[class~="theme-info"] {
-    color: $light-green;
+    color: $white-green;
     border-color: $medium-green;
     background-color: $medium-green;
 
@@ -71,7 +71,7 @@
     &:hover {
       background-color: $dark-yellow;
       border-color: $dark-yellow;
-      color: $light-yellow;
+      color: $white-yellow;
     }
 
     &:active {
@@ -84,7 +84,7 @@
   }
 
   &[class~="theme-danger"] {
-    color: $light-red;
+    color: $white-red;
     border-color: $medium-red;
     background-color: $medium-red;
 
@@ -138,14 +138,14 @@ a.button {
 
 .button[class~="outlined"] {
   background-color: transparent;
-  border-color: $medium-gray;
+  border-color: $light-gray;
 
   &:hover {
-    background-color: $light-gray;
+    background-color: $white-gray;
   }
 
   &:active {
-    background-color: $medium-gray;
+    background-color: $light-gray;
     color: $dark-gray;
   }
 
@@ -154,7 +154,7 @@ a.button {
     border-color: $medium-blue;
 
     &:hover {
-      background-color: $light-blue;
+      background-color: $white-blue;
     }
 
     &:active {
@@ -168,7 +168,7 @@ a.button {
     border-color: $medium-green;
 
     &:hover {
-      background-color: $light-green;
+      background-color: $white-green;
     }
 
     &:active {
@@ -182,7 +182,7 @@ a.button {
     border-color: $medium-yellow;
 
     &:hover {
-      background-color: $light-yellow;
+      background-color: $white-yellow;
     }
 
     &:active {
@@ -195,7 +195,7 @@ a.button {
     border-color: $medium-red;
 
     &:hover {
-      background-color: $light-red;
+      background-color: $white-red;
     }
 
     &:active {

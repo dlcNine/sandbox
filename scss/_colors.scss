@@ -1,25 +1,30 @@
 // default
-$light-gray: rgb(242, 242, 242);
-$medium-gray: rgb(190, 190 , 190);
+$white-gray: rgb(242, 242, 242);
+$light-gray: rgb(190, 190 , 190);
+$medium-gray: rgb(150, 150, 150);
 $dark-gray: rgb(81, 81, 81);
 
 // theme-primary
-$light-blue: rgb(244, 249, 252);
+$white-blue: rgb(244, 249, 252);
+$light-blue: rgb(192, 227, 249);
 $medium-blue: rgb(62, 157, 239);
 $dark-blue: rgb(12, 98, 178);
 
 // theme-info
-$light-green: rgb(245, 252, 244);
+$white-green: rgb(245, 252, 244);
+// $light-green: rgb();
 $medium-green: rgb(83, 226, 88);
 $dark-green: rgb(29, 155, 65);
 
 // theme-caution
-$light-yellow: rgb(252, 251, 242);
+$white-yellow: rgb(252, 251, 242);
+// $light-yellow: rgb();
 $medium-yellow: rgb(249, 242, 97);
 $dark-yellow: rgb(145, 143, 45); 
 
 // theme-danger
-$light-red: rgb(255, 248, 247);
+$white-red: rgb(255, 248, 247);
+// $light-red: rgb();
 $medium-red: rgb(239, 50, 50);
 $dark-red: rgb(178, 37, 12);
 
