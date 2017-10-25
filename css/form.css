@@ -4,32 +4,23 @@
   color
   date
   datetime-local
-  email
+  email          textfield
   file
   hidden
   image
   month
-  number
-  password
+  number         textfield      
+  password       textfield
   radio
   range
   reset
-  search
+  search         textfield
   submit
-  tel
-  text
+  tel            textfield
+  text           textfield
   time
-  url
+  url            textfield
   week
-*/
-/* text related input types:
-  email
-  number
-  password
-  search
-  tel
-  text
-  url
 */
 form div.field {
   font-size: 1rem;
