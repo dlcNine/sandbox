@@ -26,6 +26,62 @@
   week
 */
 
+input[type="email"], input[type="number"],
+input[type="password"], input[type="search"], 
+input[type="tel"], input[type="text"], input[type="url"], 
+select, textarea {
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+  padding: 0.375em 0.625em;  // 6px 10px
+  border: 0.0625em solid $medium-gray;
+  border-radius: 0.1875em;  // 3px
+  margin: 0.375em 0em;  // 6px
+}
+
+div.select {
+  position: relative;
+
+  select {
+    @include set-appearance(none);
+    background-color: $white;
+    height: 3.2rem;
+  }
+
+  &::after {
+    @include select-arrow-color($medium-gray);
+    @include rotate-2d(135deg);
+
+    content: " ";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 25%;
+    right: 1.6rem;
+    z-index: 1;
+  }
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 6.2rem;
+  max-height: 22rem;
+}
+
+label.checkbox, label.radio {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 0.375em 0.625em 0.375em 0em;
+
+  input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.2rem;
+  }
+}
+
+/* ====================================================== */
+
 form div.field {
   font-size: 1rem;
   background-color: white;
@@ -41,61 +97,6 @@ form div.field {
   .help {
     font-size: 1.2rem;
     margin: 0.25em 0em;
-  }
-  
-  
-  input[type="email"], input[type="number"],
-  input[type="password"], input[type="search"], 
-  input[type="tel"], input[type="text"], input[type="url"], 
-  select, textarea {
-    font-size: 1.6rem;
-    display: block;
-    width: 100%;
-    padding: 0.375em 0.625em;  // 6px 10px
-    border: 0.0625em solid $medium-gray;
-    border-radius: 0.1875em;  // 3px
-    margin: 0.375em 0em;  // 6px
-  }
-
-  div.select {
-    position: relative;
-
-    select {
-      @include set-appearance(none);
-      background-color: $white;
-      height: 3.2rem;
-    }
-
-    &::after {
-      @include select-arrow-color($medium-gray);
-      @include rotate-2d(135deg);
-
-      content: " ";
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      position: absolute;
-      top: 25%;
-      right: 1.6rem;
-      z-index: 1;
-    }
-  }
-
-  textarea {
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 6.2rem;
-    max-height: 22rem;
-  }
-
-  label.checkbox, label.radio {
-    font-size: 1.6rem;
-    display: inline-block;
-    padding: 0.375em 0.625em 0.375em 0em;
-
-    input[type="checkbox"], input[type="radio"] {
-      margin-right: 0.2rem;
-    }
   }
 
   /* ==================================== */
@@ -127,61 +128,56 @@ form div.field {
         label.checkbox, label.radio {
           position: relative;
           top: 0.3rem;
-
         }
         
       }
     }
   }
-
-  /* ==================================== */
-
-  div.container-controls {
-    &::after {
-      content: '';
-      clear: both;
-      display: table;
-    }
-
-    div[class*="default-"], div[class*="small-"], 
-    div[class*="medium-"], div[class*="large-"] {
-      padding: 0;
-
-      &:not(.first-control):not(.last-control) {
-        padding: 0rem 0.6rem;
-      }
-    }
-
-    div.first-control {
-      padding-right: 0.6rem;
-    }
-
-    div.last-control {
-      padding-left: 0.6rem;
-    }
-  }
-
- /* ==================================== */
-
-  div.controls-inline {
-    input {
-      display: inline;
-      width: initial;
-      margin-right: 0.9rem;
-    }
-
-    label.checkbox, label.radio {
-      input[type="checkbox"], input[type="radio"] {
-        margin-right: 0.2rem;
-      }
-    }
-  }
-
-  /* ==================================== */
-
+  
 }
 
+/* ====================================================== */
 
+div.container-controls {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0;
+
+    &:not(.first-control):not(.last-control) {
+      padding: 0rem 0.6rem;
+    }
+  }
+
+  div.first-control {
+    padding-right: 0.6rem;
+  }
+
+  div.last-control {
+    padding-left: 0.6rem;
+  }
+}
+
+/* ====================================================== */
+
+div.controls-inline {
+  input {
+    display: inline;
+    width: initial;
+    margin-right: 0.9rem;
+  }
+
+  label.checkbox, label.radio {
+    input[type="checkbox"], input[type="radio"] {
+      margin-right: 0.2rem;
+    }
+  }
+}
 
 
 
