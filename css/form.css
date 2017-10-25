@@ -81,9 +81,11 @@ textarea {
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
-  padding: 0.375em 0.625em 0.375em 0em; }
+  padding: 0.375em 0em;
+  margin-right: 0.625em; }
   label.checkbox input[type="checkbox"], label.checkbox input[type="radio"], label.radio input[type="checkbox"], label.radio input[type="radio"] {
-    margin-right: 0.2rem; }
+    margin-right: 0.2rem;
+    border-radius: 0.1875em; }
 
 /* ====================================================== */
 form div.field {
@@ -91,6 +93,7 @@ form div.field {
   padding: 0.6em;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
+  /* ==================================== */
   /* ==================================== */ }
   form div.field .label {
     font-size: 1.6rem;
@@ -115,6 +118,38 @@ form div.field {
       form div.field.container-field-horizontal > div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="small-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="large-"].field-body label.radio {
         position: relative;
         top: 0.3rem; }
+  form div.field[class~="theme-primary"] input:not([type="checkbox"]):not([type="radio"]),
+  form div.field[class~="theme-primary"] select, form div.field[class~="theme-primary"] textarea {
+    border-color: #3e9def;
+    box-shadow: 0em 0em 0em 0.1875em #c0e3f9 inset; }
+  form div.field[class~="theme-primary"] .help {
+    color: #3e9def; }
+  form div.field[class~="theme-primary"] label.checkbox, form div.field[class~="theme-primary"] label.radio {
+    border-bottom: 0.1875em solid #c0e3f9; }
+  form div.field[class~="theme-info"] input:not([type="checkbox"]):not([type="radio"]),
+  form div.field[class~="theme-info"] select, form div.field[class~="theme-info"] textarea {
+    border-color: #53e258;
+    box-shadow: 0em 0em 0em 0.1875em #b5f7af inset; }
+  form div.field[class~="theme-info"] .help {
+    color: #53e258; }
+  form div.field[class~="theme-info"] label.checkbox, form div.field[class~="theme-info"] label.radio {
+    border-bottom: 0.1875em solid #b5f7af; }
+  form div.field[class~="theme-caution"] input:not([type="checkbox"]):not([type="radio"]),
+  form div.field[class~="theme-caution"] select, form div.field[class~="theme-caution"] textarea {
+    border-color: #f9f261;
+    box-shadow: 0em 0em 0em 0.1875em #fcf6c9 inset; }
+  form div.field[class~="theme-caution"] .help {
+    color: #918f2d; }
+  form div.field[class~="theme-caution"] label.checkbox, form div.field[class~="theme-caution"] label.radio {
+    border-bottom: 0.1875em solid #fcf6c9; }
+  form div.field[class~="theme-danger"] input:not([type="checkbox"]):not([type="radio"]),
+  form div.field[class~="theme-danger"] select, form div.field[class~="theme-danger"] textarea {
+    border-color: #ef3232;
+    box-shadow: 0em 0em 0em 0.1875em #f99595 inset; }
+  form div.field[class~="theme-danger"] .help {
+    color: #b2250c; }
+  form div.field[class~="theme-danger"] label.checkbox, form div.field[class~="theme-danger"] label.radio {
+    border-bottom: 0.1875em solid #f99595; }
 
 /* ====================================================== */
 div.container-controls::after {

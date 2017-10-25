@@ -83,10 +83,12 @@ textarea {
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
-  padding: 0.375em 0.625em 0.375em 0em;
+  padding: 0.375em 0em;
+  margin-right: 0.625em;
 
   input[type="checkbox"], input[type="radio"] {
     margin-right: 0.2rem;
+    border-radius: 0.1875em;  // 3px
   }
 }
 
@@ -140,6 +142,72 @@ form div.field {
         }
         
       }
+    }
+  }
+
+  /* ==================================== */
+
+  &[class~="theme-primary"] {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    select, textarea {
+      border-color: $medium-blue;
+      box-shadow: 0em 0em 0em 0.1875em $light-blue inset;
+    }
+
+    .help {
+      color: $medium-blue;
+    }
+
+    label.checkbox, label.radio {
+      border-bottom: 0.1875em solid $light-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    select, textarea {
+      border-color: $medium-green;
+      box-shadow: 0em 0em 0em 0.1875em $light-green inset;
+    }
+
+    .help {
+      color: $medium-green;
+    }
+
+    label.checkbox, label.radio {
+      border-bottom: 0.1875em solid $light-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    select, textarea {
+      border-color: $medium-yellow;
+      box-shadow: 0em 0em 0em 0.1875em $light-yellow inset;
+    }
+
+    .help {
+      color: $dark-yellow;
+    }
+
+    label.checkbox, label.radio {
+      border-bottom: 0.1875em solid $light-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    select, textarea {
+      border-color: $medium-red;
+      box-shadow: 0em 0em 0em 0.1875em $light-red inset;
+    }
+
+    .help {
+      color: $dark-red;
+    }
+
+    label.checkbox, label.radio {
+      border-bottom: 0.1875em solid $light-red;
     }
   }
   
