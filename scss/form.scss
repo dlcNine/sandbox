@@ -84,7 +84,7 @@ label.checkbox, label.radio {
 
 form div.field {
   font-size: 1rem;
-  background-color: white;
+  // background-color: white;
   padding: 0.6em;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
@@ -108,8 +108,8 @@ form div.field {
       display: table;
     }
 
-    div[class*="default-"], div[class*="small-"], 
-    div[class*="medium-"], div[class*="large-"] {
+    & > div[class*="default-"], & > div[class*="small-"], 
+    & > div[class*="medium-"], & > div[class*="large-"] {
       padding: 0;
 
       &.field-label {
@@ -152,14 +152,14 @@ div.container-controls {
     &:not(.first-control):not(.last-control) {
       padding: 0rem 0.6rem;
     }
-  }
 
-  div.first-control {
-    padding-right: 0.6rem;
-  }
+    &.first-control {
+      padding-right: 0.6rem;
+    }
 
-  div.last-control {
-    padding-left: 0.6rem;
+    &.last-control {
+      padding-left: 0.6rem;
+    }
   }
 }
 

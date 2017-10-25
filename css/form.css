@@ -76,7 +76,6 @@ label.checkbox, label.radio {
 /* ====================================================== */
 form div.field {
   font-size: 1rem;
-  background-color: white;
   padding: 0.6em;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
@@ -91,24 +90,17 @@ form div.field {
     content: '';
     clear: both;
     display: table; }
-  form div.field.container-field-horizontal div[class*="default-"], form div.field.container-field-horizontal div[class*="small-"],
-  form div.field.container-field-horizontal div[class*="medium-"], form div.field.container-field-horizontal div[class*="large-"] {
+  form div.field.container-field-horizontal > div[class*="default-"], form div.field.container-field-horizontal > div[class*="small-"], form div.field.container-field-horizontal > div[class*="medium-"], form div.field.container-field-horizontal > div[class*="large-"] {
     padding: 0; }
-    form div.field.container-field-horizontal div[class*="default-"].field-label, form div.field.container-field-horizontal div[class*="small-"].field-label,
-    form div.field.container-field-horizontal div[class*="medium-"].field-label, form div.field.container-field-horizontal div[class*="large-"].field-label {
+    form div.field.container-field-horizontal > div[class*="default-"].field-label, form div.field.container-field-horizontal > div[class*="small-"].field-label, form div.field.container-field-horizontal > div[class*="medium-"].field-label, form div.field.container-field-horizontal > div[class*="large-"].field-label {
       padding-right: 0.6rem;
       position: relative;
       top: 0.8rem; }
-    form div.field.container-field-horizontal div[class*="default-"].field-body, form div.field.container-field-horizontal div[class*="small-"].field-body,
-    form div.field.container-field-horizontal div[class*="medium-"].field-body, form div.field.container-field-horizontal div[class*="large-"].field-body {
+    form div.field.container-field-horizontal > div[class*="default-"].field-body, form div.field.container-field-horizontal > div[class*="small-"].field-body, form div.field.container-field-horizontal > div[class*="medium-"].field-body, form div.field.container-field-horizontal > div[class*="large-"].field-body {
       padding-left: 0.6rem; }
-      form div.field.container-field-horizontal div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="default-"].field-body div.controls-inline input, form div.field.container-field-horizontal div[class*="small-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="small-"].field-body div.controls-inline input,
-      form div.field.container-field-horizontal div[class*="medium-"].field-body *:first-child,
-      form div.field.container-field-horizontal div[class*="medium-"].field-body div.controls-inline input, form div.field.container-field-horizontal div[class*="large-"].field-body *:first-child, form div.field.container-field-horizontal div[class*="large-"].field-body div.controls-inline input {
+      form div.field.container-field-horizontal > div[class*="default-"].field-body *:first-child, form div.field.container-field-horizontal > div[class*="default-"].field-body div.controls-inline input, form div.field.container-field-horizontal > div[class*="small-"].field-body *:first-child, form div.field.container-field-horizontal > div[class*="small-"].field-body div.controls-inline input, form div.field.container-field-horizontal > div[class*="medium-"].field-body *:first-child, form div.field.container-field-horizontal > div[class*="medium-"].field-body div.controls-inline input, form div.field.container-field-horizontal > div[class*="large-"].field-body *:first-child, form div.field.container-field-horizontal > div[class*="large-"].field-body div.controls-inline input {
         margin-top: 0; }
-      form div.field.container-field-horizontal div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="small-"].field-body label.radio,
-      form div.field.container-field-horizontal div[class*="medium-"].field-body label.checkbox,
-      form div.field.container-field-horizontal div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal div[class*="large-"].field-body label.radio {
+      form div.field.container-field-horizontal > div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="small-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="large-"].field-body label.radio {
         position: relative;
         top: 0.3rem; }
 
@@ -123,10 +115,12 @@ div.container-controls div[class*="medium-"], div.container-controls div[class*=
   div.container-controls div[class*="default-"]:not(.first-control):not(.last-control), div.container-controls div[class*="small-"]:not(.first-control):not(.last-control),
   div.container-controls div[class*="medium-"]:not(.first-control):not(.last-control), div.container-controls div[class*="large-"]:not(.first-control):not(.last-control) {
     padding: 0rem 0.6rem; }
-div.container-controls div.first-control {
-  padding-right: 0.6rem; }
-div.container-controls div.last-control {
-  padding-left: 0.6rem; }
+  div.container-controls div[class*="default-"].first-control, div.container-controls div[class*="small-"].first-control,
+  div.container-controls div[class*="medium-"].first-control, div.container-controls div[class*="large-"].first-control {
+    padding-right: 0.6rem; }
+  div.container-controls div[class*="default-"].last-control, div.container-controls div[class*="small-"].last-control,
+  div.container-controls div[class*="medium-"].last-control, div.container-controls div[class*="large-"].last-control {
+    padding-left: 0.6rem; }
 
 /* ====================================================== */
 div.controls-inline input {
