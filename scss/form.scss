@@ -151,7 +151,10 @@ form div.field {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-blue;
-      box-shadow: 0em 0em 0em 0.1875em $light-blue inset;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.1875em $light-blue;
+      }
     }
 
     .help {
@@ -159,7 +162,7 @@ form div.field {
     }
 
     label.checkbox, label.radio {
-      border-bottom: 0.1875em solid $light-blue;
+      color: $medium-blue;
     }
   }
 
@@ -167,7 +170,10 @@ form div.field {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-green;
-      box-shadow: 0em 0em 0em 0.1875em $light-green inset;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.1875em $light-green;
+      }
     }
 
     .help {
@@ -175,7 +181,7 @@ form div.field {
     }
 
     label.checkbox, label.radio {
-      border-bottom: 0.1875em solid $light-green;
+      color: $medium-green;
     }
   }
 
@@ -183,7 +189,10 @@ form div.field {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-yellow;
-      box-shadow: 0em 0em 0em 0.1875em $light-yellow inset;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.1875em $light-yellow;
+      }
     }
 
     .help {
@@ -191,7 +200,7 @@ form div.field {
     }
 
     label.checkbox, label.radio {
-      border-bottom: 0.1875em solid $light-yellow;
+      color: $medium-yellow;
     }
   }
 
@@ -199,7 +208,10 @@ form div.field {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-red;
-      box-shadow: 0em 0em 0em 0.1875em $light-red inset;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.1875em $light-red;
+      }
     }
 
     .help {
@@ -207,7 +219,7 @@ form div.field {
     }
 
     label.checkbox, label.radio {
-      border-bottom: 0.1875em solid $light-red;
+      color: $medium-red;
     }
   }
   
