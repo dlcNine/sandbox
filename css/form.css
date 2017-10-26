@@ -75,8 +75,8 @@ div.select {
 textarea {
   min-width: 100%;
   max-width: 100%;
-  min-height: 6.2rem;
-  max-height: 22rem; }
+  min-height: 10rem;
+  max-height: 40rem; }
 
 label.checkbox, label.radio {
   font-size: 1.6rem;
