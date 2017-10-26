@@ -23,60 +23,60 @@ div.container::after, .clearfix::after {
 
 /* ====================================================== */
 
-div[class*="position-"] {
+*[class*="position-"] {
   position: absolute;
 }
 
-div[class*="position-left-"] {
+*[class*="position-left-"] {
   left: 0;
 }
 
-div.position-left-top {
+*.position-left-top {
   top: 0;
 }
 
-div.position-left-center {
+*.position-left-center {
   top: 50%;
   @include translate-2d(0%, -50%);
 }
 
-div.position-left-bottom {
+*.position-left-bottom {
   bottom: 0;
 }
 
-div[class*="position-center-"] {
+*[class*="position-center-"] {
   left: 50%;
 }
 
-div.position-center-top {
+*.position-center-top {
   top: 0;
   @include translate-2d(-50%, 0%);
 }
 
-div.position-center-center {
+*.position-center-center {
   top: 50%;
   @include translate-2d(-50%, -50%);
 }
 
-div.position-center-bottom {
+*.position-center-bottom {
   bottom: 0;
   @include translate-2d(-50%, 0%);
 }
 
-div[class*="position-right-"] {
+*[class*="position-right-"] {
   right: 0;
 }
 
-div.position-right-top {
+*.position-right-top {
   top: 0;
 }
 
-div.position-right-center {
+*.position-right-center {
   top: 50%;
   @include translate-2d(0%, -50%);
 }
 
-div.position-right-bottom {
+*.position-right-bottom {
   bottom: 0;
 }
 
