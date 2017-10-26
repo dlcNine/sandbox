@@ -144,6 +144,84 @@ div.tabs {
   }
 }
 
+/* ====================================================== */
+
+span.stamp {
+  font-size: 1em;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.1875em;
+  background-color: $medium-gray;
+  color: $white;
+
+  &[class~="round"] {
+    border-radius: 1em;
+  }
+
+  &[class~="theme-primary"] {
+    background-color: $medium-blue;
+  }
+
+  &[class~="theme-info"] {
+    background-color: $medium-green;
+  }
+
+  &[class~="theme-caution"] {
+    background-color: $medium-yellow;
+  }
+
+  &[class~="theme-danger"] {
+    background-color: $medium-red;
+  }
+}
+
+/* ====================================================== */
+
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid $dark-white;
+  border-radius: 0.4em;
+
+  .button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    font-size: 1.4rem;
+    padding: 1rem;
+    vertical-align: middle;
+
+
+    &.menu-header {
+      background-color: $light-white;
+      border-radius: 0.3rem 0.3rem 0em 0em;
+      border-bottom: 0.1rem solid $dark-white;
+    }
+
+    &.menu-item {
+      background-color: $white;
+      border-bottom: 0.1rem solid $dark-white;
+    }
+
+    &.menu-item-alternate {
+      background-color: $light-white;
+      border-bottom: 0.1rem solid $dark-white;
+    }
+
+    &.menu-footer {
+      background-color: $light-white;
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
+    }
+  }
+
+}
+
+
+
+
+
+
 
 
 

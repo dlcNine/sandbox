@@ -1,12 +1,12 @@
 .button {
   font-size: 1.6rem;
-  color: #515151;
+  color: #646464;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
   padding: 0.375em 0.75em;
   /* 6px 12px */
-  margin: 0.8rem 0.6rem;
-  border: 0.0625em solid #f2f2f2;
+  margin: 0.6rem;
+  border: 0.0625em solid whitesmoke;
   /* 1px */
   border-radius: 0.1875em;
   /* 3px */ }
@@ -14,10 +14,10 @@
     background-color: #bebebe;
     border-color: #bebebe; }
   .button:active {
-    color: #f2f2f2;
+    color: whitesmoke;
     outline: none; }
   .button:focus:not(:active) {
-    border-color: #515151;
+    border-color: #646464;
     outline: none; }
   .button[class~="theme-primary"] {
     color: #f4f9fc;
@@ -83,10 +83,10 @@ a.button {
   background-color: transparent;
   border-color: #bebebe; }
   .button[class~="outlined"]:hover {
-    background-color: #f2f2f2; }
+    background-color: whitesmoke; }
   .button[class~="outlined"]:active {
     background-color: #bebebe;
-    color: #515151; }
+    color: #646464; }
   .button[class~="outlined"][class~="theme-primary"] {
     color: #3e9def;
     border-color: #3e9def; }
