@@ -20,14 +20,14 @@ div.modal-backdrop {
   border: 0.1em solid #bebebe;
   border-radius: 0.4em;
   background-color: white;
-  box-shadow: 0em 0.05em 0.04em 0em #f2f2f2; }
+  box-shadow: 0em 0.05em 0.04em 0em whitesmoke; }
 
 /* ====================================================== */
 div.message {
   font-size: 1rem;
   border: 0.1em solid #646464;
   border-radius: 0.3em;
-  background-color: #f2f2f2;
+  background-color: whitesmoke;
   margin: 0.6em 0em; }
   div.message div.message-header {
     padding: 0.8em;
@@ -87,38 +87,33 @@ div.tabs {
     div.tabs li:hover {
       padding-bottom: 0.7em;
       color: #646464;
-      background-color: #f2f2f2;
+      background-color: whitesmoke;
       border-bottom: 0.1em solid #646464; }
     div.tabs li[class~="active"] {
       padding-bottom: 0.7em;
       color: #3e9def;
-      background-color: #f2f2f2;
+      background-color: whitesmoke;
       border-bottom: 0.1em solid #3e9def;
       font-weight: bold; }
 
 /* ====================================================== */
-ul.menu {
-  font-size: 1rem;
-  border: 0.1em solid #d7d7d7;
-  border-radius: 0.4em; }
-  ul.menu .button {
-    margin-top: 0;
-    margin-bottom: 0; }
-  ul.menu li {
-    font-size: 1.4rem;
-    padding: 1.2rem;
-    vertical-align: middle; }
-    ul.menu li.menu-header {
-      background-color: whitesmoke;
-      border-radius: 0.3rem 0.3rem 0em 0em;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-item {
-      background-color: white;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-footer {
-      background-color: whitesmoke;
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
-
 /* ====================================================== */
+span.stamp {
+  font-size: 1em;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.1875em;
+  background-color: #969696;
+  color: white; }
+  span.stamp[class~="round"] {
+    border-radius: 1em; }
+  span.stamp[class~="theme-primary"] {
+    background-color: #3e9def; }
+  span.stamp[class~="theme-info"] {
+    background-color: #53e258; }
+  span.stamp[class~="theme-caution"] {
+    background-color: #f9f261; }
+  span.stamp[class~="theme-danger"] {
+    background-color: #ef3232; }
 
 /*# sourceMappingURL=objects.css.map */
