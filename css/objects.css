@@ -25,17 +25,17 @@ div.modal-backdrop {
 /* ====================================================== */
 div.message {
   font-size: 1rem;
-  border: 0.1em solid #515151;
+  border: 0.1em solid #646464;
   border-radius: 0.3em;
   background-color: #f2f2f2;
   margin: 0.6em 0em; }
   div.message div.message-header {
     padding: 0.8em;
     color: white;
-    background-color: #515151; }
+    background-color: #646464; }
   div.message div.message-body {
     padding: 0.8em 0.8em 0.8em 1.2em;
-    color: #515151; }
+    color: #646464; }
   div.message[class~="theme-primary"] {
     border-color: #3e9def;
     background-color: #f4f9fc; }
@@ -86,14 +86,39 @@ div.tabs {
     color: #bebebe; }
     div.tabs li:hover {
       padding-bottom: 0.7em;
-      color: #515151;
+      color: #646464;
       background-color: #f2f2f2;
-      border-bottom: 0.1em solid #515151; }
+      border-bottom: 0.1em solid #646464; }
     div.tabs li[class~="active"] {
       padding-bottom: 0.7em;
       color: #3e9def;
       background-color: #f2f2f2;
       border-bottom: 0.1em solid #3e9def;
       font-weight: bold; }
+
+/* ====================================================== */
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid #d7d7d7;
+  border-radius: 0.4em; }
+  ul.menu .button {
+    margin-top: 0;
+    margin-bottom: 0; }
+  ul.menu li {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    vertical-align: middle; }
+    ul.menu li.menu-header {
+      background-color: whitesmoke;
+      border-radius: 0.3rem 0.3rem 0em 0em;
+      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-item {
+      background-color: white;
+      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-footer {
+      background-color: whitesmoke;
+      border-radius: 0rem 0rem 0.3rem 0.3rem; }
+
+/* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */

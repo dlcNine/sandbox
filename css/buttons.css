@@ -1,11 +1,11 @@
 .button {
   font-size: 1.6rem;
-  color: #515151;
+  color: #646464;
   text-align: center;
   background-color: #f2f2f2;
   padding: 0.375em 0.75em;
   /* 6px 12px */
-  margin: 0.8rem 0.6rem;
+  margin: 0.6rem;
   border: 0.0625em solid #f2f2f2;
   /* 1px */
   border-radius: 0.1875em;
@@ -17,7 +17,7 @@
     color: #f2f2f2;
     outline: none; }
   .button:focus:not(:active) {
-    border-color: #515151;
+    border-color: #646464;
     outline: none; }
   .button[class~="theme-primary"] {
     color: #f4f9fc;
@@ -86,7 +86,7 @@ a.button {
     background-color: #f2f2f2; }
   .button[class~="outlined"]:active {
     background-color: #bebebe;
-    color: #515151; }
+    color: #646464; }
   .button[class~="outlined"][class~="theme-primary"] {
     color: #3e9def;
     border-color: #3e9def; }

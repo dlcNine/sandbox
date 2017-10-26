@@ -144,6 +144,54 @@ div.tabs {
   }
 }
 
+/* ====================================================== */
+
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid $dark-white;
+  border-radius: 0.4em;
+
+  .button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    font-size: 1.4rem;
+    padding: 1.2rem;
+    vertical-align: middle;
+
+
+    &.menu-header {
+      background-color: $light-white;
+      border-radius: 0.3rem 0.3rem 0em 0em;
+      border-bottom: 0.1rem solid $dark-white;
+
+    }
+
+    &.menu-item {
+      background-color: $white;
+      border-bottom: 0.1rem solid $dark-white;
+    }
+
+    &.menu-footer {
+      background-color: $light-white;
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
+    }
+  }
+
+}
+
+/* ====================================================== */
+
+
+
+
+
+
+
+
+
 
 
 
