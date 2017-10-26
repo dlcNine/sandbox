@@ -97,7 +97,6 @@ div.tabs {
       font-weight: bold; }
 
 /* ====================================================== */
-/* ====================================================== */
 span.stamp {
   font-size: 1em;
   display: inline-block;
@@ -115,5 +114,31 @@ span.stamp {
     background-color: #f9f261; }
   span.stamp[class~="theme-danger"] {
     background-color: #ef3232; }
+
+/* ====================================================== */
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid #d7d7d7;
+  border-radius: 0.4em; }
+  ul.menu .button {
+    margin-top: 0;
+    margin-bottom: 0; }
+  ul.menu li {
+    font-size: 1.4rem;
+    padding: 1rem;
+    vertical-align: middle; }
+    ul.menu li.menu-header {
+      background-color: whitesmoke;
+      border-radius: 0.3rem 0.3rem 0em 0em;
+      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-item {
+      background-color: white;
+      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-item-alternate {
+      background-color: whitesmoke;
+      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-footer {
+      background-color: whitesmoke;
+      border-radius: 0rem 0rem 0.3rem 0.3rem; }
 
 /*# sourceMappingURL=objects.css.map */

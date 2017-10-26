@@ -189,7 +189,7 @@ ul.menu {
 
   li {
     font-size: 1.4rem;
-    padding: 1.2rem;
+    padding: 1rem;
     vertical-align: middle;
 
 
@@ -197,11 +197,15 @@ ul.menu {
       background-color: $light-white;
       border-radius: 0.3rem 0.3rem 0em 0em;
       border-bottom: 0.1rem solid $dark-white;
-
     }
 
     &.menu-item {
       background-color: $white;
+      border-bottom: 0.1rem solid $dark-white;
+    }
+
+    &.menu-item-alternate {
+      background-color: $light-white;
       border-bottom: 0.1rem solid $dark-white;
     }
 
