@@ -144,9 +144,14 @@ span.stamp {
 /* ====================================================== */
 span.icon {
   display: inline-block;
-  height: inherit;
-  width: 1.5em;
-  background-color: #ef3232; }
+  height: auto;
+  width: 2rem; }
+  span.icon[class~="size-large"] {
+    width: 2.6rem; }
+  span.icon[class~="size-doubled"] {
+    width: 3.8rem; }
+  span.icon[class~="size-tripled"] {
+    width: 5.8rem; }
 
 /* ====================================================== */
 /* ====================================================== */

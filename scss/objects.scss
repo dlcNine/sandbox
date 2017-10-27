@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./mixins.scss";
 
 div.modal-backdrop {
   position: fixed;
@@ -226,10 +227,20 @@ span.stamp {
 
 span.icon {
   display: inline-block;
-  height: inherit;
-  width: 1.5em;
-  background-color: $medium-red;
-  
+  height: auto;
+  width: 2rem;
+
+  &[class~="size-large"] {
+    width: 2.6rem;
+  }
+
+  &[class~="size-doubled"] {
+    width: 3.8rem;
+  }
+
+  &[class~="size-tripled"] {
+    width: 5.8rem;
+  }
 }
 
 /* ====================================================== */
