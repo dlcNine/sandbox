@@ -36,7 +36,7 @@ select, textarea {
   padding: 0.375em 0.625em;  // 6px 10px
   border: 0.0625em solid $light-gray;
   border-radius: 0.1875em;  // 3px
-  margin: 0.375em 0em;  // 6px
+  margin: 0.8rem 0rem;  // 6px
 
   &:hover {
     border-color: $medium-gray;
@@ -85,7 +85,7 @@ label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
   padding: 0.375em 0em;
-  margin-right: 0.625em;
+  margin-right: 0.625rem;
 
   input[type="checkbox"], input[type="radio"] {
     margin-right: 0.2rem;
@@ -98,8 +98,8 @@ label.checkbox, label.radio {
 form div.field {
   font-size: 1rem;
   padding: 0.6em;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 
   .label {
     font-size: 1.6rem;
