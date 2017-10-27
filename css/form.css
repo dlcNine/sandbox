@@ -32,7 +32,7 @@ select, textarea {
   padding: 0.375em 0.625em;
   border: 0.0625em solid #bebebe;
   border-radius: 0.1875em;
-  margin: 0.375em 0em; }
+  margin: 0.8rem 0rem; }
   input[type="email"]:hover, input[type="number"]:hover,
   input[type="password"]:hover, input[type="search"]:hover,
   input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,
@@ -82,7 +82,7 @@ label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
   padding: 0.375em 0em;
-  margin-right: 0.625em; }
+  margin-right: 0.625rem; }
   label.checkbox input[type="checkbox"], label.checkbox input[type="radio"], label.radio input[type="checkbox"], label.radio input[type="radio"] {
     margin-right: 0.2rem;
     border-radius: 0.1875em; }
@@ -91,8 +91,8 @@ label.checkbox, label.radio {
 form div.field {
   font-size: 1rem;
   padding: 0.6em;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
   /* ==================================== */
   /* ==================================== */ }
   form div.field .label {

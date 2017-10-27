@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./mixins.scss";
 
 div.modal-backdrop {
   position: fixed;
@@ -146,9 +147,56 @@ div.tabs {
 
 /* ====================================================== */
 
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid $dark-white;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.2em 0em $medium-white;
+
+  .button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    font-size: 1rem;  
+    padding: 1em;
+    vertical-align: middle;
+
+    &.menu-header, &.menu-item, &.menu-footer {
+      background-color: $white;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    &.menu-header[class~="alternate"], 
+    &.menu-item[class~="alternate"], 
+    &.menu-footer[class~="alternate"] {
+      background-color: $light-white;
+    }
+  
+    &.menu-header {
+      border-radius: 0.3em 0.3em 0em 0em;
+      border-bottom: 0.1em solid $dark-white;
+    }
+
+    &.menu-item {
+      border-bottom: 0.1em solid $dark-white;
+    }
+
+    &.menu-footer {
+      border-radius: 0em 0em 0.3em 0.3em;
+    }
+  }
+
+}
+
+/* ====================================================== */
+
 span.stamp {
   font-size: 1em;
-  display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.1875em;
   background-color: $medium-gray;
@@ -177,45 +225,29 @@ span.stamp {
 
 /* ====================================================== */
 
-ul.menu {
-  font-size: 1rem;
-  border: 0.1em solid $dark-white;
-  border-radius: 0.4em;
+span.icon {
+  display: inline-block;
+  height: auto;
+  width: 2rem;
 
-  .button {
-    margin-top: 0;
-    margin-bottom: 0;
+  &[class~="size-large"] {
+    width: 2.6rem;
   }
 
-  li {
-    font-size: 1.4rem;
-    padding: 1rem;
-    vertical-align: middle;
-
-
-    &.menu-header {
-      background-color: $light-white;
-      border-radius: 0.3rem 0.3rem 0em 0em;
-      border-bottom: 0.1rem solid $dark-white;
-    }
-
-    &.menu-item {
-      background-color: $white;
-      border-bottom: 0.1rem solid $dark-white;
-    }
-
-    &.menu-item-alternate {
-      background-color: $light-white;
-      border-bottom: 0.1rem solid $dark-white;
-    }
-
-    &.menu-footer {
-      background-color: $light-white;
-      border-radius: 0rem 0rem 0.3rem 0.3rem;
-    }
+  &[class~="size-doubled"] {
+    width: 3.8rem;
   }
 
+  &[class~="size-tripled"] {
+    width: 5.8rem;
+  }
 }
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+/* ====================================================== */
 
 
 

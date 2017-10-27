@@ -97,9 +97,35 @@ div.tabs {
       font-weight: bold; }
 
 /* ====================================================== */
+ul.menu {
+  font-size: 1rem;
+  border: 0.1em solid #d7d7d7;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em 0.2em 0em #e6e6e6; }
+  ul.menu .button {
+    margin-top: 0;
+    margin-bottom: 0; }
+  ul.menu li {
+    font-size: 1rem;
+    padding: 1em;
+    vertical-align: middle; }
+    ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
+      background-color: white; }
+      ul.menu li.menu-header p, ul.menu li.menu-item p, ul.menu li.menu-footer p {
+        font-size: 1.4rem; }
+    ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
+      background-color: whitesmoke; }
+    ul.menu li.menu-header {
+      border-radius: 0.3em 0.3em 0em 0em;
+      border-bottom: 0.1em solid #d7d7d7; }
+    ul.menu li.menu-item {
+      border-bottom: 0.1em solid #d7d7d7; }
+    ul.menu li.menu-footer {
+      border-radius: 0em 0em 0.3em 0.3em; }
+
+/* ====================================================== */
 span.stamp {
   font-size: 1em;
-  display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.1875em;
   background-color: #969696;
@@ -116,29 +142,19 @@ span.stamp {
     background-color: #ef3232; }
 
 /* ====================================================== */
-ul.menu {
-  font-size: 1rem;
-  border: 0.1em solid #d7d7d7;
-  border-radius: 0.4em; }
-  ul.menu .button {
-    margin-top: 0;
-    margin-bottom: 0; }
-  ul.menu li {
-    font-size: 1.4rem;
-    padding: 1rem;
-    vertical-align: middle; }
-    ul.menu li.menu-header {
-      background-color: whitesmoke;
-      border-radius: 0.3rem 0.3rem 0em 0em;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-item {
-      background-color: white;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-item-alternate {
-      background-color: whitesmoke;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-footer {
-      background-color: whitesmoke;
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
+span.icon {
+  display: inline-block;
+  height: auto;
+  width: 2rem; }
+  span.icon[class~="size-large"] {
+    width: 2.6rem; }
+  span.icon[class~="size-doubled"] {
+    width: 3.8rem; }
+  span.icon[class~="size-tripled"] {
+    width: 5.8rem; }
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */
