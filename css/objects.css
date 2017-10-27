@@ -99,7 +99,6 @@ div.tabs {
 /* ====================================================== */
 span.stamp {
   font-size: 1em;
-  display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.1875em;
   background-color: #969696;
@@ -125,20 +124,21 @@ ul.menu {
     margin-top: 0;
     margin-bottom: 0; }
   ul.menu li {
-    font-size: 1.4rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 1em;
     vertical-align: middle; }
-    ul.menu li.menu-header {
-      background-color: white;
-      border-radius: 0.3rem 0.3rem 0em 0em;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-item {
-      background-color: white;
-      border-bottom: 0.1rem solid #d7d7d7; }
+    ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
+      background-color: white; }
+      ul.menu li.menu-header p, ul.menu li.menu-item p, ul.menu li.menu-footer p {
+        font-size: 1.4rem; }
     ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
       background-color: whitesmoke; }
+    ul.menu li.menu-header {
+      border-radius: 0.3em 0.3em 0em 0em;
+      border-bottom: 0.1em solid #d7d7d7; }
+    ul.menu li.menu-item {
+      border-bottom: 0.1em solid #d7d7d7; }
     ul.menu li.menu-footer {
-      background-color: white;
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
+      border-radius: 0em 0em 0.3em 0.3em; }
 
 /*# sourceMappingURL=objects.css.map */

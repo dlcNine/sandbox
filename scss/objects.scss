@@ -148,7 +148,6 @@ div.tabs {
 
 span.stamp {
   font-size: 1em;
-  display: inline-block;
   padding: 0.25em 0.5em;
   border-radius: 0.1875em;
   background-color: $medium-gray;
@@ -189,20 +188,16 @@ ul.menu {
   }
 
   li {
-    font-size: 1.4rem;
-    padding: 1rem;
+    font-size: 1rem;  
+    padding: 1em;
     vertical-align: middle;
 
-
-    &.menu-header {
+    &.menu-header, &.menu-item, &.menu-footer {
       background-color: $white;
-      border-radius: 0.3rem 0.3rem 0em 0em;
-      border-bottom: 0.1rem solid $dark-white;
-    }
 
-    &.menu-item {
-      background-color: $white;
-      border-bottom: 0.1rem solid $dark-white;
+      p {
+        font-size: 1.4rem;
+      }
     }
 
     &.menu-header[class~="alternate"], 
@@ -210,10 +205,18 @@ ul.menu {
     &.menu-footer[class~="alternate"] {
       background-color: $light-white;
     }
+  
+    &.menu-header {
+      border-radius: 0.3em 0.3em 0em 0em;
+      border-bottom: 0.1em solid $dark-white;
+    }
+
+    &.menu-item {
+      border-bottom: 0.1em solid $dark-white;
+    }
 
     &.menu-footer {
-      background-color: $white;
-      border-radius: 0rem 0rem 0.3rem 0.3rem;
+      border-radius: 0em 0em 0.3em 0.3em;
     }
   }
 
