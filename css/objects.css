@@ -97,24 +97,6 @@ div.tabs {
       font-weight: bold; }
 
 /* ====================================================== */
-span.stamp {
-  font-size: 1em;
-  padding: 0.25em 0.5em;
-  border-radius: 0.1875em;
-  background-color: #969696;
-  color: white; }
-  span.stamp[class~="round"] {
-    border-radius: 1em; }
-  span.stamp[class~="theme-primary"] {
-    background-color: #3e9def; }
-  span.stamp[class~="theme-info"] {
-    background-color: #53e258; }
-  span.stamp[class~="theme-caution"] {
-    background-color: #f9f261; }
-  span.stamp[class~="theme-danger"] {
-    background-color: #ef3232; }
-
-/* ====================================================== */
 ul.menu {
   font-size: 1rem;
   border: 0.1em solid #d7d7d7;
@@ -140,5 +122,34 @@ ul.menu {
       border-bottom: 0.1em solid #d7d7d7; }
     ul.menu li.menu-footer {
       border-radius: 0em 0em 0.3em 0.3em; }
+
+/* ====================================================== */
+span.stamp {
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.1875em;
+  background-color: #969696;
+  color: white; }
+  span.stamp[class~="round"] {
+    border-radius: 1em; }
+  span.stamp[class~="theme-primary"] {
+    background-color: #3e9def; }
+  span.stamp[class~="theme-info"] {
+    background-color: #53e258; }
+  span.stamp[class~="theme-caution"] {
+    background-color: #f9f261; }
+  span.stamp[class~="theme-danger"] {
+    background-color: #ef3232; }
+
+/* ====================================================== */
+span.icon {
+  display: inline-block;
+  height: inherit;
+  width: 1.5em;
+  background-color: #ef3232; }
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */

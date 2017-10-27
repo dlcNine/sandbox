@@ -146,36 +146,6 @@ div.tabs {
 
 /* ====================================================== */
 
-span.stamp {
-  font-size: 1em;
-  padding: 0.25em 0.5em;
-  border-radius: 0.1875em;
-  background-color: $medium-gray;
-  color: $white;
-
-  &[class~="round"] {
-    border-radius: 1em;
-  }
-
-  &[class~="theme-primary"] {
-    background-color: $medium-blue;
-  }
-
-  &[class~="theme-info"] {
-    background-color: $medium-green;
-  }
-
-  &[class~="theme-caution"] {
-    background-color: $medium-yellow;
-  }
-
-  &[class~="theme-danger"] {
-    background-color: $medium-red;
-  }
-}
-
-/* ====================================================== */
-
 ul.menu {
   font-size: 1rem;
   border: 0.1em solid $dark-white;
@@ -221,6 +191,52 @@ ul.menu {
   }
 
 }
+
+/* ====================================================== */
+
+span.stamp {
+  font-size: 1em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.1875em;
+  background-color: $medium-gray;
+  color: $white;
+
+  &[class~="round"] {
+    border-radius: 1em;
+  }
+
+  &[class~="theme-primary"] {
+    background-color: $medium-blue;
+  }
+
+  &[class~="theme-info"] {
+    background-color: $medium-green;
+  }
+
+  &[class~="theme-caution"] {
+    background-color: $medium-yellow;
+  }
+
+  &[class~="theme-danger"] {
+    background-color: $medium-red;
+  }
+}
+
+/* ====================================================== */
+
+span.icon {
+  display: inline-block;
+  height: inherit;
+  width: 1.5em;
+  background-color: $medium-red;
+  
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+/* ====================================================== */
 
 
 
