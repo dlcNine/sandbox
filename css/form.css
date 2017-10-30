@@ -44,7 +44,22 @@ select, textarea {
   select:focus, textarea:focus {
     outline: none;
     border-color: #3e9def;
-    box-shadow: 0em 0em 0em 0.1875em #c0e3f9; }
+    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
+  input[type="email"][class~="resize-small"], input[type="number"][class~="resize-small"],
+  input[type="password"][class~="resize-small"], input[type="search"][class~="resize-small"],
+  input[type="tel"][class~="resize-small"], input[type="text"][class~="resize-small"], input[type="url"][class~="resize-small"],
+  select[class~="resize-small"], textarea[class~="resize-small"] {
+    font-size: 1.4rem; }
+  input[type="email"][class~="resize-medium"], input[type="number"][class~="resize-medium"],
+  input[type="password"][class~="resize-medium"], input[type="search"][class~="resize-medium"],
+  input[type="tel"][class~="resize-medium"], input[type="text"][class~="resize-medium"], input[type="url"][class~="resize-medium"],
+  select[class~="resize-medium"], textarea[class~="resize-medium"] {
+    font-size: 1.8rem; }
+  input[type="email"][class~="resize-large"], input[type="number"][class~="resize-large"],
+  input[type="password"][class~="resize-large"], input[type="search"][class~="resize-large"],
+  input[type="tel"][class~="resize-large"], input[type="text"][class~="resize-large"], input[type="url"][class~="resize-large"],
+  select[class~="resize-large"], textarea[class~="resize-large"] {
+    font-size: 2rem; }
 
 div.select {
   position: relative; }
@@ -54,6 +69,12 @@ div.select {
     appearance: none;
     background-color: white;
     height: 3.2rem; }
+    div.select select[class~="resize-small"] {
+      height: 2.825rem; }
+    div.select select[class~="resize-medium"] {
+      height: 3.675rem; }
+    div.select select[class~="resize-large"] {
+      height: 4.05rem; }
   div.select::after {
     background-image: -webkit-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -moz-linear-gradient(45deg, transparent 50%, #bebebe 50%);
@@ -96,7 +117,7 @@ form div.field {
   /* ==================================== */
   /* ==================================== */ }
   form div.field .label {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold; }
   form div.field .help {
     font-size: 1.2rem;

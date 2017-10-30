@@ -5,7 +5,7 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: rgba(55, 55, 61, 0.9);
+  background-color: rgba(30, 30, 33, 0.9);
   padding: 1.8rem; }
   div.modal-backdrop div.modal {
     font-size: 1rem;
@@ -154,6 +154,89 @@ span.icon {
     width: 5.8rem; }
 
 /* ====================================================== */
+button.close {
+  font-size: 1rem;
+  height: 1.6em;
+  width: 1.6em;
+  border-radius: 0.2em;
+  position: relative;
+  background-color: #d7d7d7; }
+  button.close:hover {
+    background-color: #e6e6e6; }
+    button.close:hover::before, button.close:hover::after {
+      background-color: #444447;
+      border-color: #444447; }
+  button.close:focus:not(:active) {
+    outline: none;
+    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
+  button.close:active {
+    outline: none;
+    background-color: whitesmoke; }
+    button.close:active::before, button.close:active::after {
+      background-color: #1e1e21;
+      border-color: #1e1e21; }
+  button.close::before, button.close::after {
+    content: '';
+    background-color: #545456;
+    border: 0.1em solid #545456;
+    height: 0.8em;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  button.close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  button.close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  button.close[class~="alternate"] {
+    background-color: #545456; }
+    button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
+      background-color: #d7d7d7;
+      border-color: #d7d7d7; }
+    button.close[class~="alternate"]:hover {
+      background-color: #444447; }
+      button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
+        background-color: #e6e6e6;
+        border-color: #e6e6e6; }
+    button.close[class~="alternate"]:active {
+      background-color: #2e2e33; }
+      button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
+        background-color: white;
+        border-color: white; }
+  button.close[class~="resize-small"] {
+    height: 1.2em;
+    width: 1.2em; }
+    button.close[class~="resize-small"]::before, button.close[class~="resize-small"]::after {
+      height: 0.6em;
+      top: 15%; }
+  button.close[class~="resize-medium"] {
+    height: 2em;
+    width: 2em; }
+    button.close[class~="resize-medium"]::before, button.close[class~="resize-medium"]::after {
+      height: 1.2em;
+      left: 45%;
+      top: 15%; }
+  button.close[class~="resize-large"] {
+    height: 2.4em;
+    width: 2.4em; }
+    button.close[class~="resize-large"]::before, button.close[class~="resize-large"]::after {
+      border-width: 0.2em;
+      height: 1.4em;
+      left: 40%;
+      top: 12%; }
+
 /* ====================================================== */
 /* ====================================================== */
 

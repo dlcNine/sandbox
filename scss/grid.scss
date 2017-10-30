@@ -24,7 +24,7 @@ div.container::after, .clearfix::after {
 /* ====================================================== */
 
 *[class*="position-"] {
-  position: absolute;
+  position: absolute !important;
 }
 
 *[class*="position-left-"] {
