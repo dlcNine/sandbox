@@ -1,6 +1,7 @@
 @import "./colors.scss";
 
-.button {
+a.button, button.button, 
+input[type="submit"], input[type="reset"] {
   font-size: 1.6rem;
   color: $dark-gray;
   text-align: center;

@@ -1,4 +1,5 @@
-.button {
+a.button, button.button,
+input[type="submit"], input[type="reset"] {
   font-size: 1.6rem;
   color: #646464;
   text-align: center;
@@ -10,59 +11,78 @@
   /* 1px */
   border-radius: 0.1875em;
   /* 3px */ }
-  .button:hover {
+  a.button:hover, button.button:hover,
+  input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #bebebe;
     border-color: #bebebe; }
-  .button:active {
+  a.button:active, button.button:active,
+  input[type="submit"]:active, input[type="reset"]:active {
     color: whitesmoke;
     outline: none; }
-  .button:focus:not(:active) {
+  a.button:focus:not(:active), button.button:focus:not(:active),
+  input[type="submit"]:focus:not(:active), input[type="reset"]:focus:not(:active) {
     border-color: #646464;
     outline: none; }
-  .button[class~="theme-primary"] {
+  a.button[class~="theme-primary"], button.button[class~="theme-primary"],
+  input[type="submit"][class~="theme-primary"], input[type="reset"][class~="theme-primary"] {
     color: #f4f9fc;
     border-color: #3e9def;
     background-color: #3e9def; }
-    .button[class~="theme-primary"]:hover {
+    a.button[class~="theme-primary"]:hover, button.button[class~="theme-primary"]:hover,
+    input[type="submit"][class~="theme-primary"]:hover, input[type="reset"][class~="theme-primary"]:hover {
       background-color: #0c62b2;
       border-color: #0c62b2; }
-    .button[class~="theme-primary"]:active {
+    a.button[class~="theme-primary"]:active, button.button[class~="theme-primary"]:active,
+    input[type="submit"][class~="theme-primary"]:active, input[type="reset"][class~="theme-primary"]:active {
       color: #3e9def; }
-    .button[class~="theme-primary"]:focus:not(:active) {
+    a.button[class~="theme-primary"]:focus:not(:active), button.button[class~="theme-primary"]:focus:not(:active),
+    input[type="submit"][class~="theme-primary"]:focus:not(:active), input[type="reset"][class~="theme-primary"]:focus:not(:active) {
       border-color: #0c62b2; }
-  .button[class~="theme-info"] {
+  a.button[class~="theme-info"], button.button[class~="theme-info"],
+  input[type="submit"][class~="theme-info"], input[type="reset"][class~="theme-info"] {
     color: #f5fcf4;
     border-color: #53e258;
     background-color: #53e258; }
-    .button[class~="theme-info"]:hover {
+    a.button[class~="theme-info"]:hover, button.button[class~="theme-info"]:hover,
+    input[type="submit"][class~="theme-info"]:hover, input[type="reset"][class~="theme-info"]:hover {
       background-color: #1d9b41;
       border-color: #1d9b41; }
-    .button[class~="theme-info"]:active {
+    a.button[class~="theme-info"]:active, button.button[class~="theme-info"]:active,
+    input[type="submit"][class~="theme-info"]:active, input[type="reset"][class~="theme-info"]:active {
       color: #53e258; }
-    .button[class~="theme-info"]:focus:not(:active) {
+    a.button[class~="theme-info"]:focus:not(:active), button.button[class~="theme-info"]:focus:not(:active),
+    input[type="submit"][class~="theme-info"]:focus:not(:active), input[type="reset"][class~="theme-info"]:focus:not(:active) {
       border-color: #1d9b41; }
-  .button[class~="theme-caution"] {
+  a.button[class~="theme-caution"], button.button[class~="theme-caution"],
+  input[type="submit"][class~="theme-caution"], input[type="reset"][class~="theme-caution"] {
     color: #918f2d;
     background-color: #f9f261;
     border-color: #f9f261; }
-    .button[class~="theme-caution"]:hover {
+    a.button[class~="theme-caution"]:hover, button.button[class~="theme-caution"]:hover,
+    input[type="submit"][class~="theme-caution"]:hover, input[type="reset"][class~="theme-caution"]:hover {
       background-color: #918f2d;
       border-color: #918f2d;
       color: #fcfbf2; }
-    .button[class~="theme-caution"]:active {
+    a.button[class~="theme-caution"]:active, button.button[class~="theme-caution"]:active,
+    input[type="submit"][class~="theme-caution"]:active, input[type="reset"][class~="theme-caution"]:active {
       color: #f9f261; }
-    .button[class~="theme-caution"]:focus {
+    a.button[class~="theme-caution"]:focus, button.button[class~="theme-caution"]:focus,
+    input[type="submit"][class~="theme-caution"]:focus, input[type="reset"][class~="theme-caution"]:focus {
       border-color: #918f2d; }
-  .button[class~="theme-danger"] {
+  a.button[class~="theme-danger"], button.button[class~="theme-danger"],
+  input[type="submit"][class~="theme-danger"], input[type="reset"][class~="theme-danger"] {
     color: #fff8f7;
     border-color: #ef3232;
     background-color: #ef3232; }
-    .button[class~="theme-danger"]:hover {
+    a.button[class~="theme-danger"]:hover, button.button[class~="theme-danger"]:hover,
+    input[type="submit"][class~="theme-danger"]:hover, input[type="reset"][class~="theme-danger"]:hover {
       background-color: #b2250c;
       border-color: #b2250c; }
-    .button[class~="theme-danger"]:active {
+    a.button[class~="theme-danger"]:active, button.button[class~="theme-danger"]:active,
+    input[type="submit"][class~="theme-danger"]:active, input[type="reset"][class~="theme-danger"]:active {
       color: #ef3232; }
-    .button[class~="theme-danger"]:focus:not(:active) {
+    a.button[class~="theme-danger"]:focus:not(:active), button.button[class~="theme-danger"]:focus:not(:active),
+    input[type="submit"][class~="theme-danger"]:focus:not(:active), input[type="reset"][class~="theme-danger"]:focus:not(:active) {
       border-color: #b2250c; }
 
 a.button {
