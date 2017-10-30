@@ -255,6 +255,11 @@ button.close {
 
   &:hover {
     background-color: $medium-white;
+
+    &::before, &::after {
+      background-color: $light-black;
+      border-color: $light-black;
+    }
   }
 
   &:focus:not(:active) {
@@ -294,12 +299,17 @@ button.close {
     background-color: $white-black;
 
     &::before, &::after {
-      background-color: $medium-white;
-      border-color: $medium-white;
+      background-color: $dark-white;
+      border-color: $dark-white;
     }
 
     &:hover {
       background-color: $light-black;
+
+      &::before, &::after {
+        background-color: $light-white;
+        border-color: $light-white;
+      }
     }
 
     &:active {

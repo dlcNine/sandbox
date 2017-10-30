@@ -163,6 +163,9 @@ button.close {
   background-color: #d7d7d7; }
   button.close:hover {
     background-color: #e6e6e6; }
+    button.close:hover::before, button.close:hover::after {
+      background-color: #444447;
+      border-color: #444447; }
   button.close:focus:not(:active) {
     outline: none;
     box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
@@ -199,10 +202,13 @@ button.close {
   button.close[class~="alternate"] {
     background-color: #545456; }
     button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
-      background-color: #e6e6e6;
-      border-color: #e6e6e6; }
+      background-color: #d7d7d7;
+      border-color: #d7d7d7; }
     button.close[class~="alternate"]:hover {
       background-color: #444447; }
+      button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
+        background-color: whitesmoke;
+        border-color: whitesmoke; }
     button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
       background-color: white;
       border-color: white; }
