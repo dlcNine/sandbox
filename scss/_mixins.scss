@@ -4,6 +4,13 @@
   appearance: $value;
 }
 
+@mixin transform-origin($x, $y) {
+  -webkit-transform-origin: $x, $y;
+  -moz-transform-origin: $x, $y;
+  -o-transform-origin: $x, $y;
+  -ms-transform-origin: $x, $y;
+}
+
 @mixin rotate-2d($degree) {
   -webkit-transform: rotate($degree);
   -moz-transform: rotate($degree);

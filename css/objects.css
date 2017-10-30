@@ -156,23 +156,36 @@ span.icon {
 /* ====================================================== */
 button.close {
   font-size: 1rem;
-  height: 2em;
-  width: 2em;
-  border-radius: 0.3em; }
-  button.close::before {
-    position: relative;
-    top: 50%;
+  height: 1.6em;
+  width: 1.6em;
+  display: inline-block;
+  border-radius: 0.2em;
+  position: relative; }
+  button.close::before, button.close::after {
     content: '';
-    border: 0.2em solid white;
+    background-color: #1e1e21;
+    border: 0.1em solid #1e1e21;
+    height: 0.8em;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  button.close::before {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
   button.close::after {
-    content: '';
-    border: 0.2em solid #1e1e21;
-    display: block; }
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
 
 /* ====================================================== */
 /* ====================================================== */

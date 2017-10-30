@@ -247,24 +247,29 @@ span.icon {
 
 button.close {
   font-size: 1rem;
-  height: 2em;
-  width: 2em;
-  border-radius: 0.3em;
+  height: 1.6em;
+  width: 1.6em;
+  display: inline-block;
+  border-radius: 0.2em;
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    background-color: $black;
+    border: 0.1em solid $black;
+    height: 0.8em;
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    @include translate-2d(-50%, -50%);
+  }
 
   &::before {
-    position: relative;
-    top: 50%;
-    content: '';
-    border: 0.2em solid $white;
-    // display: block;
     @include rotate-2d(45deg);
   }
 
   &::after {
-    content: '';
-    border: 0.2em solid $black;
-    display: block;
-    // @include rotate-2d(135deg);
+    @include rotate-2d(-45deg);
   }
 }
 
