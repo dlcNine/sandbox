@@ -249,13 +249,12 @@ button.close {
   font-size: 1rem;
   height: 1.6em;
   width: 1.6em;
-  display: inline-block;
   border-radius: 0.2em;
   position: relative;
-  background-color: $white-black-opacity-3;
+  background-color: $dark-white;
 
   &:hover {
-    background-color: $white-black-opacity-6;
+    background-color: $medium-white;
   }
 
   &:focus:not(:active) {
@@ -265,40 +264,17 @@ button.close {
 
   &:active {
     outline: none;
-    background-color: $white-black-opacity-8;
     
-    &::before, &::after {
-      background-color: $white;
-      border-color: $white;
-    }
-  }
-
-  &[class~="alternate"] {
-    background-color: $dark-white-opacity-3;
-
     &::before, &::after {
       background-color: $medium-black;
       border-color: $medium-black;
-    }
-
-    &:hover {
-      background-color: $dark-white-opacity-6;
-    }
-
-    &:active {
-      background-color: $dark-white-opacity-8;
-
-      &::before, &::after {
-        background-color: $light-black;
-        border-color: $light-black;
-      }
     }
   }
 
   &::before, &::after {
     content: '';
-    background-color: $light-white;
-    border: 0.1em solid $light-white;
+    background-color: $white-black;
+    border: 0.1em solid $white-black;
     height: 0.8em;
     position: absolute;
     top: 20%;
@@ -314,10 +290,65 @@ button.close {
     @include rotate-2d(-45deg);
   }
 
+  &[class~="alternate"] {
+    background-color: $white-black;
+
+    &::before, &::after {
+      background-color: $medium-white;
+      border-color: $medium-white;
+    }
+
+    &:hover {
+      background-color: $light-black;
+    }
+
+    &:active {
+
+      &::before, &::after {
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+
+  &[class~="resize-small"] {
+    height: 1.2em;
+    width: 1.2em;
+
+    &::before, &::after {
+      height: 0.6em;
+      top: 15%;
+    }
+  }
+
+  &[class~="resize-medium"] {
+    height: 2em;
+    width: 2em;
+
+    &::before, &::after {
+      height: 1.2em;
+      left: 45%;
+      top: 15%;
+    }
+  }
+
+  &[class~="resize-large"] {
+    height: 2.4em;
+    width: 2.4em;
+
+    &::before, &::after {
+      border-width: 0.2em;
+      height: 1.4em;
+      left: 40%;
+      top: 12%;
+    }
+  }
+
 
 }
 
 /* ====================================================== */
+
 
 /* ====================================================== */
 
