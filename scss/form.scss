@@ -47,6 +47,18 @@ select, textarea {
     border-color: $medium-blue;
     box-shadow: 0em 0em 0em 0.1875em $light-blue;
   }
+
+  &[class~="resize-small"] {
+    font-size: 1.4rem;
+  }
+
+  &[class~="resize-medium"] {
+    font-size: 1.8rem;
+  }
+
+  &[class~="resize-large"] {
+    font-size: 2rem;
+  }
 }
 
 div.select {
@@ -56,6 +68,18 @@ div.select {
     @include set-appearance(none);
     background-color: $white;
     height: 3.2rem;
+
+    &[class~="resize-small"] {
+      height: 2.825rem;
+    }
+
+    &[class~="resize-medium"] {
+      height: 3.675rem;
+    }
+
+    &[class~="resize-large"] {
+      height: 4.05rem;
+    }
 
   }
 
@@ -271,34 +295,6 @@ div.controls-inline {
 
 /* ====================================================== */
 
-// div.control-has-icons {
-//   position: relative;
-
-//   input[type="email"], input[type="number"],
-//   input[type="password"], input[type="search"], 
-//   input[type="tel"], input[type="text"], input[type="url"], 
-//   select {
-//     font-size: 1.6rem;
-//     padding-left: 2em;
-//     padding-right: 2em;
-//   }
-
-//   .left-icon {
-//     color: $light-gray;
-//     position: absolute;
-//     top: 50%;
-//     left: 0.6rem;
-//     @include translate-2d(0%, -50%);
-//   }
-
-//   .right-icon {
-//     color: $light-gray;
-//     position: absolute;
-//     top: 50%;
-//     right: 0.6rem;
-//     @include translate-2d(0%, -50%);
-//   }
-// }
 
 
 
