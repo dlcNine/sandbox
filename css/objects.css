@@ -5,7 +5,7 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: rgba(55, 55, 61, 0.9);
+  background-color: rgba(30, 30, 33, 0.9);
   padding: 1.8rem; }
   div.modal-backdrop div.modal {
     font-size: 1rem;
@@ -160,11 +160,35 @@ button.close {
   width: 1.6em;
   display: inline-block;
   border-radius: 0.2em;
-  position: relative; }
+  position: relative;
+  background-color: rgba(84, 84, 86, 0.3); }
+  button.close:hover {
+    background-color: rgba(84, 84, 86, 0.6); }
+  button.close:focus:not(:active) {
+    outline: none;
+    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
+  button.close:active {
+    outline: none;
+    background-color: rgba(84, 84, 86, 0.8); }
+    button.close:active::before, button.close:active::after {
+      background-color: white;
+      border-color: white; }
+  button.close[class~="alternate"] {
+    background-color: rgba(215, 215, 215, 0.3); }
+    button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
+      background-color: #2e2e33;
+      border-color: #2e2e33; }
+    button.close[class~="alternate"]:hover {
+      background-color: rgba(215, 215, 215, 0.6); }
+    button.close[class~="alternate"]:active {
+      background-color: rgba(215, 215, 215, 0.8); }
+      button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
+        background-color: #444447;
+        border-color: #444447; }
   button.close::before, button.close::after {
     content: '';
-    background-color: #1e1e21;
-    border: 0.1em solid #1e1e21;
+    background-color: whitesmoke;
+    border: 0.1em solid whitesmoke;
     height: 0.8em;
     position: absolute;
     top: 20%;

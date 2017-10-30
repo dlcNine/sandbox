@@ -34,10 +34,24 @@ $light-white: rgb(245, 245, 245);
 $medium-white: rgb(230, 230, 230);
 $dark-white: rgb(215, 215, 215);
 
-$charcoal: rgb(55, 55, 61);
-$charcoal-transparent: rgba(55, 55, 61, 0.9);
-
+// blacks
+$white-black: rgb(84, 84, 86);
+$light-black: rgb(68, 68, 71);
+$medium-black: rgb(46, 46, 51);
 $black: rgb(30, 30, 33);
+
+// opacity changed
+$white-black-opacity-3: rgba(84, 84, 86, 0.3);
+$white-black-opacity-6: rgba(84, 84, 86, 0.6);
+$white-black-opacity-8: rgba(84, 84, 86, 0.8);
+$black-opacity-9: rgba(30, 30, 33, 0.9);
+
+$dark-white-opacity-3: rgba(215, 215, 215, 0.3);
+$dark-white-opacity-6: rgba(215, 215, 215, 0.6);
+$dark-white-opacity-8: rgba(215, 215, 215, 0.8);
+
+
+
 
 
 

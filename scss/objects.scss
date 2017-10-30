@@ -8,7 +8,7 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: $charcoal-transparent;
+  background-color: $black-opacity-9;
   padding: 1.8rem;
 
   div.modal {
@@ -252,11 +252,53 @@ button.close {
   display: inline-block;
   border-radius: 0.2em;
   position: relative;
+  background-color: $white-black-opacity-3;
+
+  &:hover {
+    background-color: $white-black-opacity-6;
+  }
+
+  &:focus:not(:active) {
+    outline: none;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue;
+  }
+
+  &:active {
+    outline: none;
+    background-color: $white-black-opacity-8;
+    
+    &::before, &::after {
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+
+  &[class~="alternate"] {
+    background-color: $dark-white-opacity-3;
+
+    &::before, &::after {
+      background-color: $medium-black;
+      border-color: $medium-black;
+    }
+
+    &:hover {
+      background-color: $dark-white-opacity-6;
+    }
+
+    &:active {
+      background-color: $dark-white-opacity-8;
+
+      &::before, &::after {
+        background-color: $light-black;
+        border-color: $light-black;
+      }
+    }
+  }
 
   &::before, &::after {
     content: '';
-    background-color: $black;
-    border: 0.1em solid $black;
+    background-color: $light-white;
+    border: 0.1em solid $light-white;
     height: 0.8em;
     position: absolute;
     top: 20%;
@@ -271,6 +313,8 @@ button.close {
   &::after {
     @include rotate-2d(-45deg);
   }
+
+
 }
 
 /* ====================================================== */
