@@ -269,6 +269,7 @@ button.close {
 
   &:active {
     outline: none;
+    background-color: $light-white;
     
     &::before, &::after {
       background-color: $black;
@@ -313,6 +314,7 @@ button.close {
     }
 
     &:active {
+      background-color: $medium-black;
 
       &::before, &::after {
         background-color: $white;
