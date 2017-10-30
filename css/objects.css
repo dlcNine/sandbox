@@ -207,8 +207,8 @@ button.close {
     button.close[class~="alternate"]:hover {
       background-color: #444447; }
       button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
-        background-color: whitesmoke;
-        border-color: whitesmoke; }
+        background-color: #e6e6e6;
+        border-color: #e6e6e6; }
     button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
       background-color: white;
       border-color: white; }

@@ -44,7 +44,7 @@ select, textarea {
   select:focus, textarea:focus {
     outline: none;
     border-color: #3e9def;
-    box-shadow: 0em 0em 0em 0.1875em #c0e3f9; }
+    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
   input[type="email"][class~="resize-small"], input[type="number"][class~="resize-small"],
   input[type="password"][class~="resize-small"], input[type="search"][class~="resize-small"],
   input[type="tel"][class~="resize-small"], input[type="text"][class~="resize-small"], input[type="url"][class~="resize-small"],

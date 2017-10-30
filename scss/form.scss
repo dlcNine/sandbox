@@ -45,7 +45,7 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.1875em $light-blue;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue;
   }
 
   &[class~="resize-small"] {
