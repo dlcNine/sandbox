@@ -172,8 +172,8 @@ button.close {
   button.close:active {
     outline: none; }
     button.close:active::before, button.close:active::after {
-      background-color: #2e2e33;
-      border-color: #2e2e33; }
+      background-color: #1e1e21;
+      border-color: #1e1e21; }
   button.close::before, button.close::after {
     content: '';
     background-color: #545456;

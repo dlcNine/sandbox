@@ -271,8 +271,8 @@ button.close {
     outline: none;
     
     &::before, &::after {
-      background-color: $medium-black;
-      border-color: $medium-black;
+      background-color: $black;
+      border-color: $black;
     }
   }
 
