@@ -27,6 +27,14 @@
   transform: translate($x, $y);
 }
 
+@mixin rotate-translate-2d($degree, $x, $y) {
+  -webkit-transform: rotate($degree) translate($x, $y);
+  -moz-transform: rotate($degree) translate($x, $y);
+  -o-transform: rotate($degree) translate($x, $y);
+  -ms-transform: rotate($degree) translate($x, $y);
+  transform: rotate($degree) translate($x, $y);
+}
+
 @mixin select-arrow-color($color) {
   background-image: -webkit-linear-gradient(45deg, transparent 50%, $color 50%);
   background-image: -moz-linear-gradient(45deg, transparent 50%, $color 50%);

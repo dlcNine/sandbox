@@ -67,7 +67,7 @@ div.select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: white;
+    background-color: white;
     height: 3.2rem; }
     div.select select[class~="resize-small"] {
       height: 2.45rem; }
@@ -79,19 +79,19 @@ div.select {
     background-image: -webkit-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -moz-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -o-linear-gradient(45deg, transparent 50%, #bebebe 50%);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg) translate(-50%, 50%);
+    -moz-transform: rotate(135deg) translate(-50%, 50%);
+    -o-transform: rotate(135deg) translate(-50%, 50%);
+    -ms-transform: rotate(135deg) translate(-50%, 50%);
+    transform: rotate(135deg) translate(-50%, 50%);
     content: " ";
     display: block;
-    pointer-events: none;
     width: 1rem;
     height: 1rem;
     position: absolute;
-    top: 25%;
-    right: 1.6rem; }
+    top: 50%;
+    right: 1.6rem;
+    pointer-events: none; }
 
 textarea {
   min-width: 100%;

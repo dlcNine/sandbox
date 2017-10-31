@@ -64,7 +64,6 @@ select, textarea {
 div.select {
   position: relative;
 
-
   select {
     @include set-appearance(none);
     background-color: $white;
@@ -86,15 +85,15 @@ div.select {
 
   &::after {
     @include select-arrow-color($light-gray);
-    @include rotate-2d(135deg);
+    @include rotate-translate-2d(135deg, -50%, 50%);
     content: " ";
     display: block;
-    pointer-events: none;
     width: 1rem;
     height: 1rem;
     position: absolute;
-    top: 25%;
+    top: 50%;
     right: 1.6rem;
+    pointer-events: none;
   }
 }
 
