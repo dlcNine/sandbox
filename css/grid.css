@@ -11,7 +11,7 @@ div.container {
   position: relative; }
 
 div.container::after, .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: table; }
 
