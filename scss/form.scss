@@ -49,15 +49,15 @@ select, textarea {
   }
 
   &[class~="resize-small"] {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   &[class~="resize-medium"] {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   &[class~="resize-large"] {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -70,15 +70,15 @@ div.select {
     height: 3.2rem;
 
     &[class~="resize-small"] {
-      height: 2.825rem;
+      height: 2.45rem;
     }
 
     &[class~="resize-medium"] {
-      height: 3.675rem;
+      height: 4.425rem;
     }
 
     &[class~="resize-large"] {
-      height: 4.05rem;
+      height: 5.65rem;
     }
 
   }
