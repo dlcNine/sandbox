@@ -61,6 +61,7 @@ select, textarea {
   select[class~="resize-large"], textarea[class~="resize-large"] {
     font-size: 2.8rem; }
 
+/* ==================================== */
 div.select {
   position: relative; }
   div.select select:not([multiple]) {
@@ -119,12 +120,14 @@ div.select {
     div.select select[multiple][class~="resize-large"] {
       height: 16.6rem; }
 
+/* ==================================== */
 textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
 
+/* ==================================== */
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;

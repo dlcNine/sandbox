@@ -197,9 +197,11 @@ ul.menu {
 
 span.stamp {
   font-size: 1em;
-  padding: 0.25em 0.5em;
+  padding: 0.2em 0.5em 0.25em 0.5em;
+  display: inline-block;
   border-radius: 0.1875em;
-  background-color: $medium-gray;
+  line-height: 1.4;
+  background-color: $light-gray;
   color: $white;
 
   &[class~="round"] {
@@ -221,6 +223,36 @@ span.stamp {
   &[class~="theme-danger"] {
     background-color: $medium-red;
   }
+}
+
+div.stamp-duo {
+  font-size: 1.4rem;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  span.stamp {
+    float: left;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+div.stamp-collection {
+
+}
+
 }
 
 /* ====================================================== */
@@ -282,19 +314,19 @@ button.close {
     content: '';
     background-color: $white-black;
     border: 0.1em solid $white-black;
-    height: 0.8em;
+    height: 0.8em; // 0.8em
     position: absolute;
-    top: 20%;
-    left: 45%;
-    @include translate-2d(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    @include transform-origin(0%, 0%);
   }
 
   &::before {
-    @include rotate-2d(45deg);
+    @include rotate-translate-2d(45deg, -50%, -50%);
   }
 
   &::after {
-    @include rotate-2d(-45deg);
+    @include rotate-translate-2d(135deg, -50%, -50%);
   }
 
   &[class~="alternate"] {
@@ -330,7 +362,6 @@ button.close {
 
     &::before, &::after {
       height: 0.6em;
-      top: 15%;
     }
   }
 
@@ -340,8 +371,6 @@ button.close {
 
     &::before, &::after {
       height: 1.2em;
-      left: 45%;
-      top: 15%;
     }
   }
 
@@ -352,8 +381,6 @@ button.close {
     &::before, &::after {
       border-width: 0.2em;
       height: 1.4em;
-      left: 40%;
-      top: 12%;
     }
   }
 
