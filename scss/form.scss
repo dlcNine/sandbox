@@ -49,54 +49,91 @@ select, textarea {
   }
 
   &[class~="resize-small"] {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   &[class~="resize-medium"] {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   &[class~="resize-large"] {
-    font-size: 2rem;
+    font-size: 2.8rem;
   }
 }
+
+/* ==================================== */
 
 div.select {
   position: relative;
 
-  select {
+  select:not([multiple]) {
     @include set-appearance(none);
     background-color: $white;
     height: 3.2rem;
 
     &[class~="resize-small"] {
-      height: 2.825rem;
+      height: 2.45rem;
     }
 
     &[class~="resize-medium"] {
-      height: 3.675rem;
+      height: 4.425rem;
     }
 
     &[class~="resize-large"] {
-      height: 4.05rem;
+      height: 5.65rem;
+    }
+  }
+
+  &:not(:hover):not(.multiple) {
+    &::after {
+      @include select-arrow-color($light-gray);
+      @include rotate-translate-2d(135deg, -50%, 50%);
+      content: " ";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      right: 1.6rem;
+      pointer-events: none;
+    }
+  }
+
+  &:hover:not(.multiple) {
+    &::after {
+      @include select-arrow-color($medium-gray);
+      @include rotate-translate-2d(135deg, -50%, 50%);
+      content: " ";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      right: 1.6rem;
+      pointer-events: none;
+    }
+  }
+
+  select[multiple] {
+    background-color: $white;
+    height: 9.2rem;
+
+    &[class~="resize-small"] {
+      height: 7rem;
     }
 
+    &[class~="resize-medium"] {
+      height: 13rem;
+    }
+
+    &[class~="resize-large"] {
+      height: 16.6rem;
+    }
   }
 
-  &::after {
-    @include select-arrow-color($light-gray);
-    @include rotate-2d(135deg);
-
-    content: " ";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 25%;
-    right: 1.6rem;
-    z-index: 1;
-  }
 }
+
+/* ==================================== */
 
 textarea {
   min-width: 100%;
@@ -104,6 +141,8 @@ textarea {
   min-height: 10rem;
   max-height: 40rem;
 }
+
+/* ==================================== */
 
 label.checkbox, label.radio {
   font-size: 1.6rem;

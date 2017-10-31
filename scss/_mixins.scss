@@ -5,10 +5,11 @@
 }
 
 @mixin transform-origin($x, $y) {
-  -webkit-transform-origin: $x, $y;
-  -moz-transform-origin: $x, $y;
-  -o-transform-origin: $x, $y;
-  -ms-transform-origin: $x, $y;
+  -webkit-transform-origin: $x $y;
+  -moz-transform-origin: $x $y;
+  -o-transform-origin: $x $y;
+  -ms-transform-origin: $x $y;
+  transform-origin: $x $y;
 }
 
 @mixin rotate-2d($degree) {
@@ -25,6 +26,14 @@
   -o-transform: translate($x, $y);
   -ms-transform: translate($x, $y);
   transform: translate($x, $y);
+}
+
+@mixin rotate-translate-2d($degree, $x, $y) {
+  -webkit-transform: rotate($degree) translate($x, $y);
+  -moz-transform: rotate($degree) translate($x, $y);
+  -o-transform: rotate($degree) translate($x, $y);
+  -ms-transform: rotate($degree) translate($x, $y);
+  transform: rotate($degree) translate($x, $y);
 }
 
 @mixin select-arrow-color($color) {

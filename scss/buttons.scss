@@ -26,6 +26,18 @@ input[type="submit"], input[type="reset"] {
     outline: none;
   }
 
+  &[class~="resize-small"] {
+    font-size: 1.2rem;
+  }
+
+  &[class~="resize-medium"] {
+    font-size: 2.2rem;
+  }
+
+  &[class~="resize-large"] {
+    font-size: 2.8rem;
+  }
+
   &[class~="theme-primary"] {
     color: $white-blue;
     border-color: $medium-blue;
@@ -102,18 +114,6 @@ input[type="submit"], input[type="reset"] {
       border-color: $dark-red;
     }
   }
-
-  // &[class~="resize-small"] {
-  //   font-size: 1.2rem;
-  // }
-
-  // &[class~="resize-medium"] {
-  //   font-size: 2rem;
-  // }
-
-  // &[class~="resize-large"] {
-  //   font-size: 2.6rem;
-  // }
 }
 
 a.button {
@@ -245,7 +245,7 @@ div.container-buttons-bar {
   }
 
   &::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
   }  

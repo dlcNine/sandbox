@@ -49,56 +49,85 @@ select, textarea {
   input[type="password"][class~="resize-small"], input[type="search"][class~="resize-small"],
   input[type="tel"][class~="resize-small"], input[type="text"][class~="resize-small"], input[type="url"][class~="resize-small"],
   select[class~="resize-small"], textarea[class~="resize-small"] {
-    font-size: 1.4rem; }
+    font-size: 1.2rem; }
   input[type="email"][class~="resize-medium"], input[type="number"][class~="resize-medium"],
   input[type="password"][class~="resize-medium"], input[type="search"][class~="resize-medium"],
   input[type="tel"][class~="resize-medium"], input[type="text"][class~="resize-medium"], input[type="url"][class~="resize-medium"],
   select[class~="resize-medium"], textarea[class~="resize-medium"] {
-    font-size: 1.8rem; }
+    font-size: 2.2rem; }
   input[type="email"][class~="resize-large"], input[type="number"][class~="resize-large"],
   input[type="password"][class~="resize-large"], input[type="search"][class~="resize-large"],
   input[type="tel"][class~="resize-large"], input[type="text"][class~="resize-large"], input[type="url"][class~="resize-large"],
   select[class~="resize-large"], textarea[class~="resize-large"] {
-    font-size: 2rem; }
+    font-size: 2.8rem; }
 
+/* ==================================== */
 div.select {
   position: relative; }
-  div.select select {
+  div.select select:not([multiple]) {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: white;
     height: 3.2rem; }
-    div.select select[class~="resize-small"] {
-      height: 2.825rem; }
-    div.select select[class~="resize-medium"] {
-      height: 3.675rem; }
-    div.select select[class~="resize-large"] {
-      height: 4.05rem; }
-  div.select::after {
+    div.select select:not([multiple])[class~="resize-small"] {
+      height: 2.45rem; }
+    div.select select:not([multiple])[class~="resize-medium"] {
+      height: 4.425rem; }
+    div.select select:not([multiple])[class~="resize-large"] {
+      height: 5.65rem; }
+  div.select:not(:hover):not(.multiple)::after {
     background-image: -webkit-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -moz-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -o-linear-gradient(45deg, transparent 50%, #bebebe 50%);
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg) translate(-50%, 50%);
+    -moz-transform: rotate(135deg) translate(-50%, 50%);
+    -o-transform: rotate(135deg) translate(-50%, 50%);
+    -ms-transform: rotate(135deg) translate(-50%, 50%);
+    transform: rotate(135deg) translate(-50%, 50%);
     content: " ";
     display: block;
     width: 1rem;
     height: 1rem;
     position: absolute;
-    top: 25%;
+    top: 50%;
     right: 1.6rem;
-    z-index: 1; }
+    pointer-events: none; }
+  div.select:hover:not(.multiple)::after {
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #969696 50%);
+    background-image: -moz-linear-gradient(45deg, transparent 50%, #969696 50%);
+    background-image: -o-linear-gradient(45deg, transparent 50%, #969696 50%);
+    -webkit-transform: rotate(135deg) translate(-50%, 50%);
+    -moz-transform: rotate(135deg) translate(-50%, 50%);
+    -o-transform: rotate(135deg) translate(-50%, 50%);
+    -ms-transform: rotate(135deg) translate(-50%, 50%);
+    transform: rotate(135deg) translate(-50%, 50%);
+    content: " ";
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    right: 1.6rem;
+    pointer-events: none; }
+  div.select select[multiple] {
+    background-color: white;
+    height: 9.2rem; }
+    div.select select[multiple][class~="resize-small"] {
+      height: 7rem; }
+    div.select select[multiple][class~="resize-medium"] {
+      height: 13rem; }
+    div.select select[multiple][class~="resize-large"] {
+      height: 16.6rem; }
 
+/* ==================================== */
 textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
 
+/* ==================================== */
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;

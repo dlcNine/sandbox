@@ -16,7 +16,7 @@ div.container {
 }
 
 div.container::after, .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: table;
 }

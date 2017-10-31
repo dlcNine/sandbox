@@ -23,6 +23,15 @@ input[type="submit"], input[type="reset"] {
   input[type="submit"]:focus:not(:active), input[type="reset"]:focus:not(:active) {
     border-color: #646464;
     outline: none; }
+  a.button[class~="resize-small"], button.button[class~="resize-small"],
+  input[type="submit"][class~="resize-small"], input[type="reset"][class~="resize-small"] {
+    font-size: 1.2rem; }
+  a.button[class~="resize-medium"], button.button[class~="resize-medium"],
+  input[type="submit"][class~="resize-medium"], input[type="reset"][class~="resize-medium"] {
+    font-size: 2.2rem; }
+  a.button[class~="resize-large"], button.button[class~="resize-large"],
+  input[type="submit"][class~="resize-large"], input[type="reset"][class~="resize-large"] {
+    font-size: 2.8rem; }
   a.button[class~="theme-primary"], button.button[class~="theme-primary"],
   input[type="submit"][class~="theme-primary"], input[type="reset"][class~="theme-primary"] {
     color: #f4f9fc;
@@ -166,7 +175,7 @@ div.container-buttons-bar {
       margin-left: 0;
       margin-right: 0; }
   div.container-buttons-bar::after {
-    content: "";
+    content: '';
     clear: both;
     display: table; }
   div.container-buttons-bar .button {
