@@ -5,7 +5,7 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: rgba(30, 30, 33, 0.9);
+  background-color: rgba(30, 30, 33, 0.8);
   padding: 1.8rem; }
   div.modal-backdrop div.modal {
     font-size: 1rem;
