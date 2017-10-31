@@ -195,68 +195,6 @@ ul.menu {
 
 /* ====================================================== */
 
-span.stamp {
-  font-size: 1em;
-  padding: 0.2em 0.5em 0.25em 0.5em;
-  display: inline-block;
-  border-radius: 0.1875em;
-  line-height: 1.4;
-  background-color: $light-gray;
-  color: $white;
-
-  &[class~="round"] {
-    border-radius: 1em;
-  }
-
-  &[class~="theme-primary"] {
-    background-color: $medium-blue;
-  }
-
-  &[class~="theme-info"] {
-    background-color: $medium-green;
-  }
-
-  &[class~="theme-caution"] {
-    background-color: $medium-yellow;
-  }
-
-  &[class~="theme-danger"] {
-    background-color: $medium-red;
-  }
-}
-
-div.stamp-duo {
-  font-size: 1.4rem;
-  display: inline-block;
-
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
-
-  span.stamp {
-    float: left;
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-  }
-
-div.stamp-collection {
-
-}
-
-}
-
-/* ====================================================== */
-
 span.icon {
   display: inline-block;
   height: auto;
@@ -314,7 +252,7 @@ button.close {
     content: '';
     background-color: $white-black;
     border: 0.1em solid $white-black;
-    height: 0.8em; // 0.8em
+    height: 0.8em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -385,6 +323,82 @@ button.close {
   }
 
 
+}
+
+/* ====================================================== */
+
+span.stamp {
+  font-size: 1em;
+  padding: 0.2em 0.5em 0.25em 0.5em;
+  display: inline-block;
+  border-radius: 0.1875em;
+  line-height: 1.4;
+  background-color: $dark-white;
+  color: $white;
+
+  &[class~="round"] {
+    border-radius: 1em;
+  }
+
+  &[class~="theme-primary"] {
+    background-color: $medium-blue;
+  }
+
+  &[class~="theme-info"] {
+    background-color: $medium-green;
+  }
+
+  &[class~="theme-caution"] {
+    background-color: $medium-yellow;
+  }
+
+  &[class~="theme-danger"] {
+    background-color: $medium-red;
+  }
+}
+
+div.stamp-duo {
+  font-size: 1.2rem;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  span.stamp {
+    font-size: inherit;
+    float: left;
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &[class~="relative"] {
+      min-width: 2em;
+      min-height: 1.8em;
+    }
+  }
+}
+
+div.stamps {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  & > span.stamp, & > div.stamp-duo {
+    float: left;
+    margin: 0.4rem;
+  }
 }
 
 /* ====================================================== */
