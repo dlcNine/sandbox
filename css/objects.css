@@ -162,7 +162,8 @@ button.close {
   position: relative;
   background-color: #d7d7d7; }
   button.close:hover {
-    background-color: #e6e6e6; }
+    background-color: #e6e6e6;
+    cursor: pointer; }
     button.close:hover::before, button.close:hover::after {
       background-color: #444447;
       border-color: #444447; }

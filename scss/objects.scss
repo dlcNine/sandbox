@@ -255,6 +255,7 @@ button.close {
 
   &:hover {
     background-color: $medium-white;
+    cursor: pointer;
 
     &::before, &::after {
       background-color: $light-black;
