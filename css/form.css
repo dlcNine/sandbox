@@ -63,19 +63,19 @@ select, textarea {
 
 div.select {
   position: relative; }
-  div.select select {
+  div.select select:not([multiple]) {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: white;
     height: 3.2rem; }
-    div.select select[class~="resize-small"] {
+    div.select select:not([multiple])[class~="resize-small"] {
       height: 2.45rem; }
-    div.select select[class~="resize-medium"] {
+    div.select select:not([multiple])[class~="resize-medium"] {
       height: 4.425rem; }
-    div.select select[class~="resize-large"] {
+    div.select select:not([multiple])[class~="resize-large"] {
       height: 5.65rem; }
-  div.select:not(:hover)::after {
+  div.select:not(:hover):not(.multiple)::after {
     background-image: -webkit-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -moz-linear-gradient(45deg, transparent 50%, #bebebe 50%);
     background-image: -o-linear-gradient(45deg, transparent 50%, #bebebe 50%);
@@ -92,7 +92,7 @@ div.select {
     top: 50%;
     right: 1.6rem;
     pointer-events: none; }
-  div.select:hover::after {
+  div.select:hover:not(.multiple)::after {
     background-image: -webkit-linear-gradient(45deg, transparent 50%, #969696 50%);
     background-image: -moz-linear-gradient(45deg, transparent 50%, #969696 50%);
     background-image: -o-linear-gradient(45deg, transparent 50%, #969696 50%);
@@ -109,6 +109,15 @@ div.select {
     top: 50%;
     right: 1.6rem;
     pointer-events: none; }
+  div.select select[multiple] {
+    background-color: white;
+    height: 9.2rem; }
+    div.select select[multiple][class~="resize-small"] {
+      height: 7rem; }
+    div.select select[multiple][class~="resize-medium"] {
+      height: 13rem; }
+    div.select select[multiple][class~="resize-large"] {
+      height: 16.6rem; }
 
 textarea {
   min-width: 100%;

@@ -64,7 +64,7 @@ select, textarea {
 div.select {
   position: relative;
 
-  select {
+  select:not([multiple]) {
     @include set-appearance(none);
     background-color: $white;
     height: 3.2rem;
@@ -80,10 +80,9 @@ div.select {
     &[class~="resize-large"] {
       height: 5.65rem;
     }
-
   }
 
-  &:not(:hover) {
+  &:not(:hover):not(.multiple) {
     &::after {
       @include select-arrow-color($light-gray);
       @include rotate-translate-2d(135deg, -50%, 50%);
@@ -98,7 +97,7 @@ div.select {
     }
   }
 
-  &:hover {
+  &:hover:not(.multiple) {
     &::after {
       @include select-arrow-color($medium-gray);
       @include rotate-translate-2d(135deg, -50%, 50%);
@@ -112,6 +111,24 @@ div.select {
       pointer-events: none;
     }
   }
+
+  select[multiple] {
+    background-color: $white;
+    height: 9.2rem;
+
+    &[class~="resize-small"] {
+      height: 7rem;
+    }
+
+    &[class~="resize-medium"] {
+      height: 13rem;
+    }
+
+    &[class~="resize-large"] {
+      height: 16.6rem;
+    }
+  }
+
 }
 
 textarea {
