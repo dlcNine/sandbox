@@ -83,17 +83,34 @@ div.select {
 
   }
 
-  &::after {
-    @include select-arrow-color($light-gray);
-    @include rotate-translate-2d(135deg, -50%, 50%);
-    content: " ";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    right: 1.6rem;
-    pointer-events: none;
+  &:not(:hover) {
+    &::after {
+      @include select-arrow-color($light-gray);
+      @include rotate-translate-2d(135deg, -50%, 50%);
+      content: " ";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      right: 1.6rem;
+      pointer-events: none;
+    }
+  }
+
+  &:hover {
+    &::after {
+      @include select-arrow-color($medium-gray);
+      @include rotate-translate-2d(135deg, -50%, 50%);
+      content: " ";
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      right: 1.6rem;
+      pointer-events: none;
+    }
   }
 }
 
