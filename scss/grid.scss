@@ -27,56 +27,56 @@ div.container::after, .clearfix::after {
   position: absolute !important;
 }
 
-*[class*="position-l-"] {
+*[class*="position-left-"] {
   left: 0;
 }
 
-*.position-l-t {
+*.position-left-top {
   top: 0;
 }
 
-*.position-l-c {
+*.position-left-center {
   top: 50%;
   @include translate-2d(0%, -50%);
 }
 
-*.position-l-b {
+*.position-left-bottom {
   bottom: 0;
 }
 
-*[class*="position-c-"] {
+*[class*="position-center-"] {
   left: 50%;
 }
 
-*.position-c-t {
+*.position-center-top {
   top: 0;
   @include translate-2d(-50%, 0%);
 }
 
-*.position-c-c {
+*.position-center-center {
   top: 50%;
   @include translate-2d(-50%, -50%);
 }
 
-*.position-c-b {
+*.position-center-bottom {
   bottom: 0;
   @include translate-2d(-50%, 0%);
 }
 
-*[class*="position-r-"] {
+*[class*="position-right-"] {
   right: 0;
 }
 
-*.position-r-t {
+*.position-right-top {
   top: 0;
 }
 
-*.position-r-c {
+*.position-right-center {
   top: 50%;
   @include translate-2d(0%, -50%);
 }
 
-*.position-r-b {
+*.position-right-bottom {
   bottom: 0;
 }
 
@@ -518,12 +518,3 @@ div.default-push-12 {
     visibility: hidden;
   }
 }
-
-
-
-
-
-
-
-
-
