@@ -58,4 +58,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* ==================================== */
+b, strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+del {
+  text-decoration: line-through; }
+
+ins {
+  text-decoration: underline; }
+
+sub {
+  vertical-align: sub; }
+
+sup {
+  vertical-align: super; }
+
 /*# sourceMappingURL=reset.css.map */
