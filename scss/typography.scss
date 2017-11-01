@@ -1,0 +1,35 @@
+@import "./colors.scss";
+/*
+scale ratio : 1.33333
+*/
+
+h1.title, h2.title, h3.title, 
+h4.title, h5.title, h6.title, 
+p.p, small.small {
+  color: $medium-black;
+}
+
+h1.title {
+  font-size: 3.8rem;
+}
+
+h2.title {
+  font-size: 2.8rem;
+}
+
+h3.title {
+ font-size: 2.1rem;
+}
+
+h4.title, {
+  font-size: 1.6rem;
+}
+
+h5.title, p.p {
+  font-size: 1.2rem;
+}
+
+h6.title, small.small {
+  font-size: 1rem;
+}
+
