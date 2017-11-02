@@ -20,7 +20,7 @@ div.modal-backdrop {
   border: 0.1em solid #bebebe;
   border-radius: 0.4em;
   background-color: white;
-  box-shadow: 0em 0.05em 0.04em 0em whitesmoke; }
+  box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
 
 /* ====================================================== */
 div.message {
@@ -262,55 +262,60 @@ div.stamps > span.stamp, div.stamps > div.stamp-duo {
   margin: 0.4rem; }
 
 /* ====================================================== */
+figure[class*="image-"] {
+  background-color: #969696; }
+  figure[class*="image-"] img {
+    object-fit: cover; }
+
 figure[class~="image-16x"] {
   width: 16px;
-  height: 16px;
-  background-color: #969696; }
+  height: 16px; }
   figure[class~="image-16x"] img {
     width: 16px;
-    height: 16px;
-    object-fit: cover; }
+    height: 16px; }
+    figure[class~="image-16x"] img[class~="rounded"] {
+      border-radius: 0.3rem; }
 
 figure[class~="image-32x"] {
   width: 32px;
-  height: 32px;
-  background-color: #969696; }
+  height: 32px; }
   figure[class~="image-32x"] img {
     width: 32px;
-    height: 32px;
-    object-fit: cover; }
+    height: 32px; }
+    figure[class~="image-32x"] img[class~="rounded"] {
+      border-radius: 0.4rem; }
 
 figure[class~="image-64x"] {
   width: 64px;
-  height: 64px;
-  background-color: #969696; }
+  height: 64px; }
   figure[class~="image-64x"] img {
     width: 64px;
-    height: 64px;
-    object-fit: cover; }
+    height: 64px; }
+    figure[class~="image-64x"] img[class~="rounded"] {
+      border-radius: 0.6rem; }
 
 figure[class~="image-128x"] {
   width: 128px;
-  height: 128px;
-  background-color: #969696; }
+  height: 128px; }
   figure[class~="image-128x"] img {
     width: 128px;
-    height: 128px;
-    object-fit: cover; }
+    height: 128px; }
+    figure[class~="image-128x"] img[class~="rounded"] {
+      border-radius: 0.8rem; }
 
 figure[class~="image-256x"] {
   width: 256px;
-  height: 256px;
-  background-color: #969696; }
+  height: 256px; }
   figure[class~="image-256x"] img {
     width: 256px;
-    height: 256px;
-    object-fit: cover; }
+    height: 256px; }
+    figure[class~="image-256x"] img[class~="rounded"] {
+      border-radius: 1rem; }
 
-img[class~="rounded"] {
-  border-radius: 1rem; }
 img[class~="circular"] {
   border-radius: 50%; }
+img[class~="rounded"] {
+  border-radius: 1rem; }
 
 /* ====================================================== */
 
