@@ -111,8 +111,6 @@ ul.menu {
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
       background-color: white; }
-      ul.menu li.menu-header p, ul.menu li.menu-item p, ul.menu li.menu-footer p {
-        font-size: 1.4rem; }
     ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
       background-color: whitesmoke; }
     ul.menu li.menu-header {

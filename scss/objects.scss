@@ -164,10 +164,6 @@ ul.menu {
 
     &.menu-header, &.menu-item, &.menu-footer {
       background-color: $white;
-
-      p {
-        font-size: 1.4rem;
-      }
     }
 
     &.menu-header[class~="alternate"], 
