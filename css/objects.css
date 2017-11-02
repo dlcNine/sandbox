@@ -335,7 +335,19 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     border-radius: inherit;
+    background-color: #646464; }
+  div.progress-bar[class~="resize-medium"] {
+    font-size: 1.4rem; }
+  div.progress-bar[class~="resize-large"] {
+    font-size: 2rem; }
+  div.progress-bar[class~="theme-primary"] div.progress {
     background-color: #3e9def; }
+  div.progress-bar[class~="theme-info"] div.progress {
+    background-color: #53e258; }
+  div.progress-bar[class~="theme-caution"] div.progress {
+    background-color: #f9f261; }
+  div.progress-bar[class~="theme-danger"] div.progress {
+    background-color: #ef3232; }
 
 /* ====================================================== */
 /* ====================================================== */

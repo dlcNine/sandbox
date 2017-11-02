@@ -508,9 +508,40 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     border-radius: inherit;
-    background-color: $medium-blue;
+    background-color: $dark-gray;
   }
 
+  &[class~="resize-medium"] {
+    font-size: 1.4rem;
+  }
+
+  &[class~="resize-large"] {
+    font-size: 2rem;
+  }
+
+  &[class~="theme-primary"] {
+    div.progress {
+      background-color: $medium-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    div.progress {
+      background-color: $medium-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    div.progress {
+      background-color: $medium-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    div.progress {
+      background-color: $medium-red;
+    }
+  }
 
 }
 
