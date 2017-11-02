@@ -23,6 +23,10 @@
 .to-right {
   float: right; }
 
+.block-center {
+  display: block;
+  margin: auto; }
+
 /* ====================================================== */
 .absent {
   display: none !important; }

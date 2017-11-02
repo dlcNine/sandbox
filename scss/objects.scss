@@ -478,20 +478,21 @@ figure[class~="image-256x"] {
 }
 
 img {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-gray;
+
   &[class~="circular"] {
     border-radius: 50%;
   }
 
   &[class~="rounded"] {
-    border-radius: 1rem;
+    border-radius: 0.8rem;
+  }
+
+  &[class~="responsive"] {
+    max-width: 100%;
+    height: auto;
   }
 }
-
-
-
-
-
-
 
 /* ====================================================== */
 
