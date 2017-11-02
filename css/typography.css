@@ -1,29 +1,63 @@
 /*
 scale ratio : 1.33333
 */
-h1.h1, h2.h2, h3.h3,
-h4.h4, h5.h5, h6.h6,
-p.p, small.small {
+.t {
   font-family: sans-serif;
   color: #2e2e33;
   line-height: 2.6rem; }
 
-h1.h1 {
-  font-size: 3.8rem; }
+.huge-1 {
+  font-size: 5.1rem;
+  line-height: 4.8rem; }
 
-h2.h2 {
+.huge-2 {
+  font-size: 6.7rem;
+  line-height: 6rem; }
+
+.h1 {
+  font-size: 3.8rem;
+  line-height: 3.2rem; }
+
+.h2 {
   font-size: 2.8rem; }
 
-h3.h3 {
+.h3 {
   font-size: 2.1rem; }
 
-h4.h4, p.p {
+.h4, .p {
   font-size: 1.6rem; }
 
-h5.h5 {
+.p-small {
+  font-size: 1.4rem; }
+
+.h5 {
   font-size: 1.2rem; }
 
-h6.h6, small.small {
+.h6 {
   font-size: 1rem; }
+
+/* ====================================================== */
+ul.ul[class~="square"] {
+  list-style: square inside; }
+ul.ul[class~="circle-solid"] {
+  list-style: disc inside; }
+ul.ul[class~="circle-hollow"] {
+  list-style: circle inside; }
+
+ol.ol[class~="numbers"] {
+  list-style: decimal inside; }
+ol.ol[class~="alpha-lower"] {
+  list-style: lower-alpha inside; }
+ol.ol[class~="alpha-upper"] {
+  list-style: upper-alpha inside; }
+ol.ol[class~="roman-lower"] {
+  list-style: lower-roman inside; }
+ol.ol[class~="roman-upper"] {
+  list-style: upper-roman inside; }
+
+ul.ul li.sublist, ol.ol li.sublist {
+  list-style-type: none; }
+  ul.ul li.sublist ul.ul, ul.ul li.sublist ol.ol, ol.ol li.sublist ul.ul, ol.ol li.sublist ol.ol {
+    margin-left: 1.5rem; }
 
 /*# sourceMappingURL=typography.css.map */

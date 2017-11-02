@@ -23,11 +23,11 @@ div.modal-backdrop {
 
 .box {
   font-size: 1rem;
-  padding: 0.9em;
+  padding: 1.6em;
   border: 0.1em solid $light-gray;
   border-radius: 0.4em;
   background-color: $white;
-  box-shadow: 0em 0.05em 0.04em 0em $white-gray;
+  box-shadow: 0em 0.05em 0.04em 0em $medium-white;
 }
 
 /* ====================================================== */
@@ -164,10 +164,6 @@ ul.menu {
 
     &.menu-header, &.menu-item, &.menu-footer {
       background-color: $white;
-
-      p {
-        font-size: 1.4rem;
-      }
     }
 
     &.menu-header[class~="alternate"], 
@@ -321,7 +317,6 @@ button.close {
     }
   }
 
-
 }
 
 /* ====================================================== */
@@ -402,10 +397,181 @@ div.stamps {
 
 /* ====================================================== */
 
+figure[class*="image-"] {
+  background-color: $medium-gray;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+figure[class~="image-16x"] {
+  width: 16px;
+  height: 16px;
+
+  img {
+    width: 16px;
+    height: 16px;
+
+    &[class~="rounded"] {
+      border-radius: 0.3rem;
+    }
+  }
+}
+
+figure[class~="image-32x"] {
+  width: 32px;
+  height: 32px;
+
+  img {
+    width: 32px;
+    height: 32px;
+
+    &[class~="rounded"] {
+      border-radius: 0.4rem;
+    }
+
+  }
+}
+
+figure[class~="image-64x"] {
+  width: 64px;
+  height: 64px;
+
+  img {
+    width: 64px;
+    height: 64px;
+
+    &[class~="rounded"] {
+      border-radius: 0.6rem;
+    }
+  }
+}
+
+figure[class~="image-128x"] {
+  width: 128px;
+  height: 128px;
+
+  img {
+    width: 128px; 
+    height: 128px;
+
+    &[class~="rounded"] {
+      border-radius: 0.8rem;
+    }
+  }
+}
+
+figure[class~="image-256x"] {
+  width: 256px;
+  height: 256px;
+
+  img {
+    width: 256px;
+    height: 256px;
+
+    &[class~="rounded"] {
+      border-radius: 1rem;
+    }
+  }
+}
+
+img {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-gray;
+
+  &[class~="circular"] {
+    border-radius: 50%;
+  }
+
+  &[class~="rounded"] {
+    border-radius: 0.8rem;
+  }
+
+  &[class~="responsive"] {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 /* ====================================================== */
 
+div.progress-bar {
+  font-size: 1rem;
+  height: 1.2em;
+  background-color: $dark-white;
+  border-radius: 0.6em;
+  margin: 1rem 0rem;
 
+  div.progress {
+    float: left;
+    height: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    border-radius: inherit;
+    background-color: $dark-gray;
+  }
+
+  &[class~="resize-medium"] {
+    font-size: 1.4rem;
+  }
+
+  &[class~="resize-large"] {
+    font-size: 2rem;
+  }
+
+  &[class~="theme-primary"] {
+    div.progress {
+      background-color: $medium-blue;
+    }
+  }
+
+  &[class~="theme-info"] {
+    div.progress {
+      background-color: $medium-green;
+    }
+  }
+
+  &[class~="theme-caution"] {
+    div.progress {
+      background-color: $medium-yellow;
+    }
+  }
+
+  &[class~="theme-danger"] {
+    div.progress {
+      background-color: $medium-red;
+    }
+  }
+
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+// div.banner-5 {
+//   height: 100%;
+// }
+
+// div.banner-4 {
+//   height: 80%;
+// }
+
+// div.banner-3 {
+//   height: 60%;
+// }
+
+// div.banner-2 {
+//   height: 40%;
+// }
+
+// div.banner-1 {
+//   height: 20%;
+// }
 
 
 

@@ -37,11 +37,13 @@ omitted from HTML5 elements:
   dialog, menuitem, source, track, 
 */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
   line-height: 1;
-  font-size: 100%; }
+  font-size: 100%;
+  height: 100%; }
 
 ol, ul {
   list-style: none; }

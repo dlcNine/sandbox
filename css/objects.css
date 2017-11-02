@@ -16,11 +16,11 @@ div.modal-backdrop {
 /* ====================================================== */
 .box {
   font-size: 1rem;
-  padding: 0.9em;
+  padding: 1.6em;
   border: 0.1em solid #bebebe;
   border-radius: 0.4em;
   background-color: white;
-  box-shadow: 0em 0.05em 0.04em 0em whitesmoke; }
+  box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
 
 /* ====================================================== */
 div.message {
@@ -111,8 +111,6 @@ ul.menu {
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
       background-color: white; }
-      ul.menu li.menu-header p, ul.menu li.menu-item p, ul.menu li.menu-footer p {
-        font-size: 1.4rem; }
     ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
       background-color: whitesmoke; }
     ul.menu li.menu-header {
@@ -263,6 +261,96 @@ div.stamps > span.stamp, div.stamps > div.stamp-duo {
   float: left;
   margin: 0.4rem; }
 
+/* ====================================================== */
+figure[class*="image-"] {
+  background-color: #969696; }
+  figure[class*="image-"] img {
+    object-fit: cover; }
+
+figure[class~="image-16x"] {
+  width: 16px;
+  height: 16px; }
+  figure[class~="image-16x"] img {
+    width: 16px;
+    height: 16px; }
+    figure[class~="image-16x"] img[class~="rounded"] {
+      border-radius: 0.3rem; }
+
+figure[class~="image-32x"] {
+  width: 32px;
+  height: 32px; }
+  figure[class~="image-32x"] img {
+    width: 32px;
+    height: 32px; }
+    figure[class~="image-32x"] img[class~="rounded"] {
+      border-radius: 0.4rem; }
+
+figure[class~="image-64x"] {
+  width: 64px;
+  height: 64px; }
+  figure[class~="image-64x"] img {
+    width: 64px;
+    height: 64px; }
+    figure[class~="image-64x"] img[class~="rounded"] {
+      border-radius: 0.6rem; }
+
+figure[class~="image-128x"] {
+  width: 128px;
+  height: 128px; }
+  figure[class~="image-128x"] img {
+    width: 128px;
+    height: 128px; }
+    figure[class~="image-128x"] img[class~="rounded"] {
+      border-radius: 0.8rem; }
+
+figure[class~="image-256x"] {
+  width: 256px;
+  height: 256px; }
+  figure[class~="image-256x"] img {
+    width: 256px;
+    height: 256px; }
+    figure[class~="image-256x"] img[class~="rounded"] {
+      border-radius: 1rem; }
+
+img {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #bebebe; }
+  img[class~="circular"] {
+    border-radius: 50%; }
+  img[class~="rounded"] {
+    border-radius: 0.8rem; }
+  img[class~="responsive"] {
+    max-width: 100%;
+    height: auto; }
+
+/* ====================================================== */
+div.progress-bar {
+  font-size: 1rem;
+  height: 1.2em;
+  background-color: #d7d7d7;
+  border-radius: 0.6em;
+  margin: 1rem 0rem; }
+  div.progress-bar div.progress {
+    float: left;
+    height: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    border-radius: inherit;
+    background-color: #646464; }
+  div.progress-bar[class~="resize-medium"] {
+    font-size: 1.4rem; }
+  div.progress-bar[class~="resize-large"] {
+    font-size: 2rem; }
+  div.progress-bar[class~="theme-primary"] div.progress {
+    background-color: #3e9def; }
+  div.progress-bar[class~="theme-info"] div.progress {
+    background-color: #53e258; }
+  div.progress-bar[class~="theme-caution"] div.progress {
+    background-color: #f9f261; }
+  div.progress-bar[class~="theme-danger"] div.progress {
+    background-color: #ef3232; }
+
+/* ====================================================== */
+/* ====================================================== */
 /* ====================================================== */
 /* ====================================================== */
 

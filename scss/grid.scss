@@ -10,11 +10,6 @@ div[class*="large-"], div[class*="default-"] {
   padding: 1.2rem;
 }
 
-div.container {
-  height: auto;
-  position: relative;
-}
-
 div.container::after, .clearfix::after {
   content: '';
   clear: both;
