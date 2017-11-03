@@ -550,19 +550,21 @@ div.progress-bar {
 ul.text-menu {
   li {
     line-height: 1;
-    padding: 0.6rem 0rem;
+    padding: 0.6rem 0rem 0.6rem 1.4rem;
+    border-radius: 0.2rem;
   }
 
-  li.menu-item.menu-submenu {
+  li.menu-submenu {
     padding-bottom: 0;
   }
 
   li.menu-submenu ul.text-menu {
     padding-top: 0.6rem;
 
-    li.menu-item {
-      padding-left: 1rem;
-      border-left: 0.2rem solid $dark-white;
+    li.menu-item, li.menu-submenu {
+      border-left: 0.1rem solid $dark-white;
+      border-top-left-radius: 0rem;
+      border-bottom-left-radius: 0rem;
     }
   }
 
