@@ -10,6 +10,14 @@ div[class*="large-"], div[class*="default-"] {
   padding: 1.2rem;
 }
 
+div[class*="height-"], article[class*="height-"],
+aside[class*="height-"], figure[class*="height-"], 
+footer[class*="height-"], header[class*="height-"], 
+main[class*="height-"], nav[class*="height-"], 
+section[class*="height-"] {
+  padding: 1.2rem;
+}
+
 div.container::after, .clearfix::after {
   content: '';
   clear: both;
