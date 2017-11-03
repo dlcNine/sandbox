@@ -350,6 +350,17 @@ div.progress-bar {
     background-color: #ef3232; }
 
 /* ====================================================== */
+ul.text-menu li {
+  line-height: 1;
+  padding: 0.6rem 0rem; }
+ul.text-menu li.menu-item.menu-submenu {
+  padding-bottom: 0; }
+ul.text-menu li.menu-submenu ul.text-menu {
+  padding-top: 0.6rem; }
+  ul.text-menu li.menu-submenu ul.text-menu li.menu-item {
+    padding-left: 1rem;
+    border-left: 0.2rem solid #d7d7d7; }
+
 /* ====================================================== */
 /* ====================================================== */
 /* ====================================================== */

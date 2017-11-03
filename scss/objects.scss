@@ -547,32 +547,32 @@ div.progress-bar {
 
 /* ====================================================== */
 
-/* ====================================================== */
+ul.text-menu {
+  li {
+    line-height: 1;
+    padding: 0.6rem 0rem;
+  }
+
+  li.menu-item.menu-submenu {
+    padding-bottom: 0;
+  }
+
+  li.menu-submenu ul.text-menu {
+    padding-top: 0.6rem;
+
+    li.menu-item {
+      padding-left: 1rem;
+      border-left: 0.2rem solid $dark-white;
+    }
+  }
+
+}
 
 /* ====================================================== */
 
 /* ====================================================== */
 
-// div.banner-5 {
-//   height: 100%;
-// }
-
-// div.banner-4 {
-//   height: 80%;
-// }
-
-// div.banner-3 {
-//   height: 60%;
-// }
-
-// div.banner-2 {
-//   height: 40%;
-// }
-
-// div.banner-1 {
-//   height: 20%;
-// }
-
+/* ====================================================== */
 
 
 
