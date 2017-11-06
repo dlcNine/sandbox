@@ -477,7 +477,7 @@ figure[class~="image-256x"] {
 }
 
 img {
-  // box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-gray;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-gray;
 
   &.circular {
     border-radius: 50%;
@@ -499,10 +499,6 @@ img {
 
   &.radius-inherit {
     border-radius: inherit;
-  }
-
-  &.cover {
-    object-fit: contain;
   }
 }
 
@@ -585,18 +581,30 @@ ul.text-menu {
 
 /* ====================================================== */
 
+/* ====================================================== */
+
 div.card {
   font-size: 1rem;
   border: 0.1rem solid $medium-white;
   border-radius: 0.5rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $medium-white;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-white;
+  background-color: $white;
 
   hr {
     border-color: $medium-white;
   }
 
-  div.card-header, div.card-body, div.card-footer {
-    padding: 1rem;
+  div.card-header, div.card-content, div.card-footer {
+    padding: 0.6rem 1rem;
+
+    &.hero-image {
+      padding: 0;
+
+      img {
+        display: block;
+        border-radius: inherit;
+      }
+    }
   }
 
   div.card-header {
@@ -604,14 +612,13 @@ div.card {
     border-bottom: 0.1rem solid $medium-white;
   }
 
-  div.card-body {
+  div.card-content {
     border-radius: 0.4rem;
   }
 
   div.card-footer {
     border-radius: 0rem 0rem 0.4rem 0.4rem;
     border-top: 0.1rem solid $medium-white;
-
   }
 }
 
