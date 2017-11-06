@@ -1,17 +1,65 @@
-.no-padding {
+.pad-0 {
   padding: 0 !important; }
 
-.no-margin {
+.pad-t-0 {
+  padding-top: 0 !important; }
+
+.pad-b-0 {
+  padding-bottom: 0 !important; }
+
+.pad-l-0 {
+  padding-left: 0 !important; }
+
+.pad-r-0 {
+  padding-right: 0 !important; }
+
+.mgn-0 {
   margin: 0 !important; }
 
-.no-border {
+.mgn-t-0 {
+  margin-top: 0 !important; }
+
+.mgn-b-0 {
+  margin-bottom: 0 !important; }
+
+.mgn-l-0 {
+  margin-left: 0 !important; }
+
+.mgn-r-0 {
+  margin-right: 0 !important; }
+
+.bdr-0 {
   border: none !important; }
+
+.bdr-t-0 {
+  border-top: none !important; }
+
+.bdr-b-0 {
+  border-bottom: none !important; }
+
+.bdr-l-0 {
+  border-left: none !important; }
+
+.bdr-r-0 {
+  border-right: none !important; }
+
+.rds-0 {
+  border-radius: 0 !important; }
+
+.rds-tl-0 {
+  border-top-left-radius: 0 !important; }
+
+.rds-tr-0 {
+  border-top-right-radius: 0 !important; }
+
+.rds-bl-0 {
+  border-bottom-left-radius: 0 !important; }
+
+.rds-br-0 {
+  border-bottom-right-radius: 0 !important; }
 
 .no-background {
   background: none !important; }
-
-.no-radius {
-  border-radius: 0 !important; }
 
 .no-shadow {
   box-shadow: none !important; }

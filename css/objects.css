@@ -314,13 +314,18 @@ figure[class~="image-256x"] {
 
 img {
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem #bebebe; }
-  img[class~="circular"] {
+  img.circular {
     border-radius: 50%; }
-  img[class~="rounded"] {
+  img.rounded {
     border-radius: 0.8rem; }
-  img[class~="responsive"] {
+  img.responsive {
     max-width: 100%;
     height: auto; }
+  img.fill-width {
+    width: 100%;
+    height: auto; }
+  img.radius-inherit {
+    border-radius: inherit; }
 
 /* ====================================================== */
 div.progress-bar {
@@ -364,6 +369,31 @@ ul.text-menu li.menu-submenu ul.text-menu {
     border-bottom-left-radius: 0rem; }
 
 /* ====================================================== */
+/* ====================================================== */
+div.card {
+  font-size: 1rem;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem whitesmoke;
+  background-color: white; }
+  div.card hr {
+    border-color: #e6e6e6; }
+  div.card div.card-header, div.card div.card-content, div.card div.card-footer {
+    padding: 1rem 2rem; }
+    div.card div.card-header.hero-image, div.card div.card-content.hero-image, div.card div.card-footer.hero-image {
+      padding: 0; }
+      div.card div.card-header.hero-image img, div.card div.card-content.hero-image img, div.card div.card-footer.hero-image img {
+        display: block;
+        border-radius: inherit; }
+  div.card div.card-header {
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    border-bottom: 0.1rem solid #e6e6e6; }
+  div.card div.card-content {
+    border-radius: 0.4rem; }
+  div.card div.card-footer {
+    border-radius: 0rem 0rem 0.4rem 0.4rem;
+    border-top: 0.1rem solid #e6e6e6; }
+
 /* ====================================================== */
 /* ====================================================== */
 
