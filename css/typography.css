@@ -36,6 +36,9 @@ scale ratio : 1.33333
 .h6 {
   font-size: 1rem; }
 
+.subtitle {
+  line-height: 1; }
+
 /* ====================================================== */
 ul.ul[class~="square"] {
   list-style: square inside; }

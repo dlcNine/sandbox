@@ -379,7 +379,7 @@ div.card {
   div.card hr {
     border-color: #e6e6e6; }
   div.card div.card-header, div.card div.card-content, div.card div.card-footer {
-    padding: 0.6rem 1rem; }
+    padding: 1rem 2rem; }
     div.card div.card-header.hero-image, div.card div.card-content.hero-image, div.card div.card-footer.hero-image {
       padding: 0; }
       div.card div.card-header.hero-image img, div.card div.card-content.hero-image img, div.card div.card-footer.hero-image img {
