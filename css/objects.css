@@ -312,18 +312,20 @@ figure[class~="image-256x"] {
     figure[class~="image-256x"] img[class~="rounded"] {
       border-radius: 1rem; }
 
-img {
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #bebebe; }
-  img[class~="circular"] {
-    border-radius: 50%; }
-  img[class~="rounded"] {
-    border-radius: 0.8rem; }
-  img[class~="responsive"] {
-    max-width: 100%;
-    height: auto; }
-  img[class~="fill-width"] {
-    width: 100%;
-    height: auto; }
+img.circular {
+  border-radius: 50%; }
+img.rounded {
+  border-radius: 0.8rem; }
+img.responsive {
+  max-width: 100%;
+  height: auto; }
+img.fill-width {
+  width: 100%;
+  height: auto; }
+img.radius-inherit {
+  border-radius: inherit; }
+img.cover {
+  object-fit: contain; }
 
 /* ====================================================== */
 div.progress-bar {

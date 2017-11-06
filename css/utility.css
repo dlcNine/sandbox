@@ -1,4 +1,4 @@
-.no-padding {
+.pad-0 {
   padding: 0 !important; }
 
 .pad-t-0 {
@@ -13,7 +13,7 @@
 .pad-r-0 {
   padding-right: 0 !important; }
 
-.no-margin {
+.mgn-0 {
   margin: 0 !important; }
 
 .mgn-t-0 {
@@ -28,7 +28,7 @@
 .mgn-r-0 {
   margin-right: 0 !important; }
 
-.no-border {
+.bdr-0 {
   border: none !important; }
 
 .bdr-t-0 {
@@ -43,11 +43,23 @@
 .bdr-r-0 {
   border-right: none !important; }
 
+.rds-0 {
+  border-radius: 0 !important; }
+
+.rds-tl-0 {
+  border-top-left-radius: 0 !important; }
+
+.rds-tr-0 {
+  border-top-right-radius: 0 !important; }
+
+.rds-bl-0 {
+  border-bottom-left-radius: 0 !important; }
+
+.rds-br-0 {
+  border-bottom-right-radius: 0 !important; }
+
 .no-background {
   background: none !important; }
-
-.no-radius {
-  border-radius: 0 !important; }
 
 .no-shadow {
   box-shadow: none !important; }
