@@ -2,13 +2,28 @@
   padding: 0 !important;
 }
 
+.pad-t-0 { padding-top: 0 !important; }
+.pad-b-0 { padding-bottom: 0 !important; }
+.pad-l-0 { padding-left: 0 !important; }
+.pad-r-0 { padding-right: 0 !important; }
+
 .no-margin {
   margin: 0 !important;
 }
 
+.mgn-t-0 { margin-top: 0 !important; }
+.mgn-b-0 { margin-bottom: 0 !important; }
+.mgn-l-0 { margin-left: 0 !important; }
+.mgn-r-0 { margin-right: 0 !important; }
+
 .no-border {
   border: none !important;
 }
+
+.bdr-t-0 { border-top: none !important; }
+.bdr-b-0 { border-bottom: none !important; }
+.bdr-l-0 { border-left: none !important; }
+.bdr-r-0 { border-right: none !important; }
 
 .no-background {
   background: none !important;

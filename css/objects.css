@@ -321,6 +321,9 @@ img {
   img[class~="responsive"] {
     max-width: 100%;
     height: auto; }
+  img[class~="fill-width"] {
+    width: 100%;
+    height: auto; }
 
 /* ====================================================== */
 div.progress-bar {
@@ -365,7 +368,22 @@ ul.text-menu li.menu-submenu ul.text-menu {
 
 /* ====================================================== */
 div.card {
-  font-size: 1rem; }
+  font-size: 1rem;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #e6e6e6; }
+  div.card hr {
+    border-color: #e6e6e6; }
+  div.card div.card-header, div.card div.card-body, div.card div.card-footer {
+    padding: 1rem; }
+  div.card div.card-header {
+    border-radius: 0.4rem 0.4rem 0rem 0rem;
+    border-bottom: 0.1rem solid #e6e6e6; }
+  div.card div.card-body {
+    border-radius: 0.4rem; }
+  div.card div.card-footer {
+    border-radius: 0rem 0rem 0.4rem 0.4rem;
+    border-top: 0.1rem solid #e6e6e6; }
 
 /* ====================================================== */
 /* ====================================================== */
