@@ -10,10 +10,6 @@ div[class*="large-"], div[class*="default-"] {
   padding: 1.2rem;
 }
 
-.gutter {
-  padding: 1.2rem;
-}
-
 div.container::after, .clearfix::after {
   content: '';
   clear: both;

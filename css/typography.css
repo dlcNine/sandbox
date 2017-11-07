@@ -37,6 +37,15 @@ scale ratio : 1.33333
   font-size: 1rem; }
 
 /* ====================================================== */
+.a:link {
+  color: #216bce;
+  text-decoration: none; }
+.a:hover:not(:visited) {
+  color: #154191; }
+.a:visited {
+  color: #6747ad; }
+
+/* ====================================================== */
 ul.ul[class~="square"] {
   list-style: square inside; }
 ul.ul[class~="circle-solid"] {

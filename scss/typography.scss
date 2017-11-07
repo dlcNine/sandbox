@@ -51,6 +51,23 @@ scale ratio : 1.33333
 
 /* ====================================================== */
 
+.a {
+  &:link {
+    color: $link-unvisited;
+    text-decoration: none;
+  }
+
+  &:hover:not(:visited) {
+    color: $link-hover;
+  }
+
+  &:visited {
+    color: $link-visited;
+  }
+}
+
+/* ====================================================== */
+
 ul.ul {
   &[class~="square"] {
     list-style: square inside;
