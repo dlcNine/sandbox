@@ -6,9 +6,6 @@ div[class*="large-"], div[class*="default-"] {
   float: left;
   padding: 1.2rem; }
 
-.gutter {
-  padding: 1.2rem; }
-
 div.container::after, .clearfix::after {
   content: '';
   clear: both;

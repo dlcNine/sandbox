@@ -581,6 +581,22 @@ ul.text-menu {
 
 /* ====================================================== */
 
+div.banner{
+  height: 12rem;
+
+  &.resize-small {
+    height: 8rem;
+  }
+
+  &.resize-medium {
+    height: 34rem;
+  }
+
+  &.resize-large {
+    height: 54rem;
+  }
+}
+
 /* ====================================================== */
 
 div.card {

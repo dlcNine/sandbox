@@ -4,19 +4,16 @@ scale ratio : 1.33333
 .t {
   font-family: sans-serif;
   color: #2e2e33;
-  line-height: 2.6rem; }
+  line-height: 1.5; }
 
 .huge-1 {
-  font-size: 5.1rem;
-  line-height: 4.8rem; }
+  font-size: 5.1rem; }
 
 .huge-2 {
-  font-size: 6.7rem;
-  line-height: 6rem; }
+  font-size: 6.7rem; }
 
 .h1 {
-  font-size: 3.8rem;
-  line-height: 3.2rem; }
+  font-size: 3.8rem; }
 
 .h2 {
   font-size: 2.8rem; }
@@ -36,8 +33,36 @@ scale ratio : 1.33333
 .h6 {
   font-size: 1rem; }
 
-.subtitle {
-  line-height: 1; }
+/* ====================================================== */
+h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class*="subtitle-"], h5[class*="subtitle-"], h6[class*="subtitle-"], p[class*="subtitle-"], small[class*="subtitle-"] {
+  position: relative; }
+
+.subtitle-1 {
+  bottom: 1.4rem; }
+
+.subtitle-2 {
+  bottom: 1.2rem; }
+
+.subtitle-3 {
+  bottom: 1rem; }
+
+.subtitle-4 {
+  bottom: 0.8rem; }
+
+.subtitle-5 {
+  bottom: 0.6rem; }
+
+.subtitle-6 {
+  bottom: 0.4rem; }
+
+/* ====================================================== */
+.a:link {
+  color: #216bce;
+  text-decoration: none; }
+.a:hover:not(:visited) {
+  color: #154191; }
+.a:visited {
+  color: #6747ad; }
 
 /* ====================================================== */
 ul.ul[class~="square"] {

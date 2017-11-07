@@ -369,6 +369,15 @@ ul.text-menu li.menu-submenu ul.text-menu {
     border-bottom-left-radius: 0rem; }
 
 /* ====================================================== */
+div.banner {
+  height: 12rem; }
+  div.banner.resize-small {
+    height: 8rem; }
+  div.banner.resize-medium {
+    height: 34rem; }
+  div.banner.resize-large {
+    height: 54rem; }
+
 /* ====================================================== */
 div.card {
   font-size: 1rem;
