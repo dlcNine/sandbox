@@ -3,17 +3,18 @@
 a.button, button.button, 
 input[type="submit"], input[type="reset"] {
   font-size: 1.6rem;
-  color: $dark-gray;
-  text-align: center;
-  background-color: $white-gray;
   padding: 0.375em 0.75em;    /* 6px 12px */
   margin: 0.6rem;
-  border: 0.0625em solid $white-gray; /* 1px */
+  // border: 0.0625em solid $white-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
+  text-align: center;
+
+  color: $dark-gray;
+  background-color: $light-gray;
+  
 
   &:hover {
-    background-color: $light-gray;
-    border-color: $light-gray;
+    background-color: $medium-gray;
     cursor: pointer;
   }
 
@@ -23,7 +24,6 @@ input[type="submit"], input[type="reset"] {
   }
   
   &:focus:not(:active) {
-    border-color: $dark-gray;
     outline: none;
   }
 
