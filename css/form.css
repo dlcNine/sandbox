@@ -68,7 +68,7 @@ div.select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: #f9f9f9;
+    background-color: white;
     height: 3.2rem; }
     div.select select:not([multiple])[class~="resize-small"] {
       height: 2.45rem; }
@@ -111,7 +111,7 @@ div.select {
     right: 1.6rem;
     pointer-events: none; }
   div.select select[multiple] {
-    background-color: #f9f9f9;
+    background-color: white;
     height: 9.2rem; }
     div.select select[multiple][class~="resize-small"] {
       height: 7rem; }
