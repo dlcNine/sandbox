@@ -10,7 +10,7 @@ div.modal-backdrop {
   div.modal-backdrop div.modal {
     font-size: 1rem;
     padding: 1.8em;
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 0.5em; }
 
 /* ====================================================== */
@@ -19,7 +19,7 @@ div.modal-backdrop {
   padding: 1.6em;
   border: 0.1em solid #bebebe;
   border-radius: 0.4em;
-  background-color: white;
+  background-color: #f9f9f9;
   box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
 
 /* ====================================================== */
@@ -31,7 +31,7 @@ div.message {
   margin: 0.6em 0em; }
   div.message div.message-header {
     padding: 0.8em;
-    color: white;
+    color: #f9f9f9;
     background-color: #646464; }
   div.message div.message-body {
     padding: 0.8em 0.8em 0.8em 1.2em;
@@ -110,7 +110,7 @@ ul.menu {
     padding: 1em;
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
-      background-color: white; }
+      background-color: #f9f9f9; }
     ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
       background-color: whitesmoke; }
     ul.menu li.menu-header {
@@ -194,8 +194,8 @@ button.close {
     button.close[class~="alternate"]:active {
       background-color: #2e2e33; }
       button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
-        background-color: white;
-        border-color: white; }
+        background-color: #f9f9f9;
+        border-color: #f9f9f9; }
   button.close[class~="resize-small"] {
     height: 1.2em;
     width: 1.2em; }
@@ -221,7 +221,7 @@ span.stamp {
   border-radius: 0.1875em;
   line-height: 1.4;
   background-color: #d7d7d7;
-  color: white; }
+  color: #f9f9f9; }
   span.stamp[class~="round"] {
     border-radius: 1em; }
   span.stamp[class~="theme-primary"] {
@@ -375,7 +375,7 @@ div.card {
   border: 0.1rem solid #e6e6e6;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem whitesmoke;
-  background-color: white; }
+  background-color: #f9f9f9; }
   div.card hr {
     border-color: #e6e6e6; }
   div.card div.card-header, div.card div.card-content, div.card div.card-footer {

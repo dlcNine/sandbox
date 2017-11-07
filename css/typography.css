@@ -34,6 +34,28 @@ scale ratio : 1.33333
   font-size: 1rem; }
 
 /* ====================================================== */
+h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class*="subtitle-"], h5[class*="subtitle-"], h6[class*="subtitle-"], p[class*="subtitle-"], small[class*="subtitle-"] {
+  position: relative; }
+
+.subtitle-1 {
+  bottom: 1.4rem; }
+
+.subtitle-2 {
+  bottom: 1.2rem; }
+
+.subtitle-3 {
+  bottom: 1rem; }
+
+.subtitle-4 {
+  bottom: 0.8rem; }
+
+.subtitle-5 {
+  bottom: 0.6rem; }
+
+.subtitle-6 {
+  bottom: 0.4rem; }
+
+/* ====================================================== */
 .a:link {
   color: #216bce;
   text-decoration: none; }
