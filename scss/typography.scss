@@ -6,8 +6,13 @@ scale ratio : 1.33333
 
 .t {
   font-family: sans-serif;
-  color: $medium-black;
+  color: inherit;
   line-height: 1.5;
+}
+
+.tc {
+  @extend .t;
+  color: $medium-black;
 }
 
 .huge-1 {

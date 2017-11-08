@@ -78,15 +78,15 @@ input[type="submit"], input[type="reset"] {
   a.button[class~="theme-danger"], button.button[class~="theme-danger"],
   input[type="submit"][class~="theme-danger"], input[type="reset"][class~="theme-danger"] {
     color: #fff8f7;
-    border-color: #ef4e39;
-    background-color: #ef4e39; }
+    border-color: #ed432d;
+    background-color: #ed432d; }
     a.button[class~="theme-danger"]:hover, button.button[class~="theme-danger"]:hover,
     input[type="submit"][class~="theme-danger"]:hover, input[type="reset"][class~="theme-danger"]:hover {
       background-color: #ba311f;
       border-color: #ba311f; }
     a.button[class~="theme-danger"]:active, button.button[class~="theme-danger"]:active,
     input[type="submit"][class~="theme-danger"]:active, input[type="reset"][class~="theme-danger"]:active {
-      color: #ef4e39; }
+      color: #ed432d; }
     a.button[class~="theme-danger"]:focus:not(:active), button.button[class~="theme-danger"]:focus:not(:active),
     input[type="submit"][class~="theme-danger"]:focus:not(:active), input[type="reset"][class~="theme-danger"]:focus:not(:active) {
       border-color: #ba311f; }
@@ -137,12 +137,12 @@ a.button {
     .button[class~="outlined"][class~="theme-caution"]:active {
       background-color: #f2f230; }
   .button[class~="outlined"][class~="theme-danger"] {
-    color: #ef4e39;
-    border-color: #ef4e39; }
+    color: #ed432d;
+    border-color: #ed432d; }
     .button[class~="outlined"][class~="theme-danger"]:hover {
       background-color: #fff8f7; }
     .button[class~="outlined"][class~="theme-danger"]:active {
-      background-color: #ef4e39;
+      background-color: #ed432d;
       color: #ba311f; }
 
 /* ====================================================== */

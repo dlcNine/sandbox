@@ -35,22 +35,22 @@ div.modal-backdrop {
 div.message {
   font-size: 1rem;
   border: 0.1em solid $dark-gray;
-  border-radius: 0.3em;
+  border-radius: 0.4em;
   background-color: $white-gray;
   margin: 0.6em 0em;
 
   div.message-header {
-    padding: 0.8em;
-    color: $white;
+    padding: 0.4em 1.2em;
+    color: $white-gray;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 0.8em 0.8em 0.8em 1.2em;
+    padding: 1em 1em 1em 1.8em;
     color: $dark-gray;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     border-color: $medium-blue;
     background-color: $white-blue;
 
@@ -64,7 +64,7 @@ div.message {
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     border-color: $medium-green;
     background-color: $white-green;
 
@@ -78,7 +78,7 @@ div.message {
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     border-color: $medium-yellow;
     background-color: $white-yellow;
 
@@ -92,7 +92,7 @@ div.message {
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     border-color: $medium-red;
     background-color: $white-red;
 
@@ -103,6 +103,34 @@ div.message {
 
     .message-body {
       color: $dark-red;
+    }
+  }
+
+  &.theme-light {
+    border-color: $medium-white;
+    background-color: $white;
+
+    .message-header {
+      color: $light-black;
+      background-color: $medium-white;
+    }
+
+    .message-body {
+      color: $light-black;
+    }
+  }
+
+  &.theme-dark {
+    border-color: $medium-black;
+    background-color: $light-white;
+
+    .message-header {
+      color: $white;
+      background-color: $medium-black;
+    }
+
+    .message-body {
+      color: $black;
     }
   }
 }

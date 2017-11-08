@@ -200,14 +200,14 @@ form div.field {
     color: #f2f230; }
   form div.field[class~="theme-danger"] input:not([type="checkbox"]):not([type="radio"]),
   form div.field[class~="theme-danger"] select, form div.field[class~="theme-danger"] textarea {
-    border-color: #ef4e39; }
+    border-color: #ed432d; }
     form div.field[class~="theme-danger"] input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field[class~="theme-danger"] select:focus, form div.field[class~="theme-danger"] textarea:focus {
       box-shadow: 0em 0em 0em 0.1875em #f26452; }
   form div.field[class~="theme-danger"] .help {
     color: #ba311f; }
   form div.field[class~="theme-danger"] label.checkbox, form div.field[class~="theme-danger"] label.radio {
-    color: #ef4e39; }
+    color: #ed432d; }
 
 /* ====================================================== */
 div.container-controls::after {

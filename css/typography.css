@@ -1,10 +1,13 @@
 /*
 scale ratio : 1.33333
 */
-.t {
+.t, .tc {
   font-family: sans-serif;
-  color: #2e2e33;
+  color: inherit;
   line-height: 1.5; }
+
+.tc {
+  color: #4c4c4c; }
 
 .huge-1 {
   font-size: 5.1rem; }
