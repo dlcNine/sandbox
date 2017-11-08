@@ -7,15 +7,15 @@ input[type="submit"], input[type="reset"] {
   border-radius: 0.1875em;
   /* 3px */
   text-align: center;
-  color: #c6c6c6;
-  background-color: #efefef; }
+  color: #939393;
+  background-color: #d8d8d8; }
   a.button:hover, button.button:hover,
   input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: gainsboro;
+    background-color: #bfbfbf;
     cursor: pointer; }
   a.button:active, button.button:active,
   input[type="submit"]:active, input[type="reset"]:active {
-    color: whitesmoke;
+    color: #f9f9f9;
     outline: none; }
   a.button:focus:not(:active), button.button:focus:not(:active),
   input[type="submit"]:focus:not(:active), input[type="reset"]:focus:not(:active) {
@@ -107,12 +107,12 @@ a.button {
 /* ====================================================== */
 .button[class~="outlined"] {
   background-color: transparent;
-  border-color: #efefef; }
+  border-color: #d8d8d8; }
   .button[class~="outlined"]:hover {
-    background-color: whitesmoke; }
+    background-color: #f9f9f9; }
   .button[class~="outlined"]:active {
-    background-color: #efefef;
-    color: #c6c6c6; }
+    background-color: #d8d8d8;
+    color: #939393; }
   .button[class~="outlined"][class~="theme-primary"] {
     color: #3e9def;
     border-color: #3e9def; }

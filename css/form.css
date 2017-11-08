@@ -30,14 +30,14 @@ select, textarea {
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;
-  border: 0.0625em solid #efefef;
+  border: 0.0625em solid #d8d8d8;
   border-radius: 0.1875em;
   margin: 0.8rem 0rem; }
   input[type="email"]:hover, input[type="number"]:hover,
   input[type="password"]:hover, input[type="search"]:hover,
   input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,
   select:hover, textarea:hover {
-    border-color: gainsboro; }
+    border-color: #bfbfbf; }
   input[type="email"]:focus, input[type="number"]:focus,
   input[type="password"]:focus, input[type="search"]:focus,
   input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus,
@@ -77,9 +77,9 @@ div.select {
     div.select select:not([multiple])[class~="resize-large"] {
       height: 5.65rem; }
   div.select:not(:hover):not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, #efefef 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, #efefef 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, #efefef 50%);
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
+    background-image: -moz-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
+    background-image: -o-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
     -webkit-transform: rotate(135deg) translate(-50%, 50%);
     -moz-transform: rotate(135deg) translate(-50%, 50%);
     -o-transform: rotate(135deg) translate(-50%, 50%);
@@ -94,9 +94,9 @@ div.select {
     right: 1.6rem;
     pointer-events: none; }
   div.select:hover:not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, gainsboro 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, gainsboro 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, gainsboro 50%);
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
+    background-image: -moz-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
+    background-image: -o-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
     -webkit-transform: rotate(135deg) translate(-50%, 50%);
     -moz-transform: rotate(135deg) translate(-50%, 50%);
     -o-transform: rotate(135deg) translate(-50%, 50%);

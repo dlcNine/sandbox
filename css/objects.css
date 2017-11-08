@@ -17,7 +17,7 @@ div.modal-backdrop {
 .box {
   font-size: 1rem;
   padding: 1.6em;
-  border: 0.1em solid #efefef;
+  border: 0.1em solid #d8d8d8;
   border-radius: 0.4em;
   background-color: white;
   box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
@@ -25,17 +25,17 @@ div.modal-backdrop {
 /* ====================================================== */
 div.message {
   font-size: 1rem;
-  border: 0.1em solid #c6c6c6;
+  border: 0.1em solid #939393;
   border-radius: 0.3em;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   margin: 0.6em 0em; }
   div.message div.message-header {
     padding: 0.8em;
     color: white;
-    background-color: #c6c6c6; }
+    background-color: #939393; }
   div.message div.message-body {
     padding: 0.8em 0.8em 0.8em 1.2em;
-    color: #c6c6c6; }
+    color: #939393; }
   div.message[class~="theme-primary"] {
     border-color: #3e9def;
     background-color: #f4faff; }
@@ -72,7 +72,7 @@ div.message {
 /* ====================================================== */
 div.tabs {
   font-size: 1rem;
-  border-bottom: 0.1em solid #efefef; }
+  border-bottom: 0.1em solid #d8d8d8; }
   div.tabs::after {
     content: '';
     clear: both;
@@ -83,16 +83,16 @@ div.tabs {
     padding: 0.8em 1.2em;
     margin: 0em -0.1em -0.1em 0em;
     border-radius: 0.3em 0.3em 0em 0em;
-    color: #efefef; }
+    color: #d8d8d8; }
     div.tabs li:hover {
       padding-bottom: 0.7em;
-      color: #c6c6c6;
-      background-color: whitesmoke;
-      border-bottom: 0.1em solid #c6c6c6; }
+      color: #939393;
+      background-color: #f9f9f9;
+      border-bottom: 0.1em solid #939393; }
     div.tabs li[class~="active"] {
       padding-bottom: 0.7em;
       color: #3e9def;
-      background-color: whitesmoke;
+      background-color: #f9f9f9;
       border-bottom: 0.1em solid #3e9def;
       font-weight: bold; }
 
@@ -263,7 +263,7 @@ div.stamps > span.stamp, div.stamps > div.stamp-duo {
 
 /* ====================================================== */
 figure[class*="image-"] {
-  background-color: gainsboro; }
+  background-color: #bfbfbf; }
   figure[class*="image-"] img {
     object-fit: cover; }
 
@@ -313,7 +313,7 @@ figure[class~="image-256x"] {
       border-radius: 1rem; }
 
 img {
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #efefef; }
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #d8d8d8; }
   img.circular {
     border-radius: 50%; }
   img.rounded {
@@ -340,7 +340,7 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     border-radius: inherit;
-    background-color: #c6c6c6; }
+    background-color: #939393; }
   div.progress-bar[class~="resize-medium"] {
     font-size: 1.4rem; }
   div.progress-bar[class~="resize-large"] {
