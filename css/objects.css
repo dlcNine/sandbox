@@ -20,7 +20,7 @@ div.modal-backdrop {
   border: 0.1em solid #d8d8d8;
   border-radius: 0.4em;
   background-color: white;
-  box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
+  box-shadow: 0.1em 0.1em 0.1em 0em #d8d8d8; }
 
 /* ====================================================== */
 div.message {
@@ -156,9 +156,9 @@ button.close {
   width: 1.6em;
   border-radius: 0.2em;
   position: relative;
-  background-color: #d7d7d7; }
+  background-color: #e6e6e6; }
   button.close:hover {
-    background-color: #e6e6e6;
+    background-color: whitesmoke;
     cursor: pointer; }
     button.close:hover::before, button.close:hover::after {
       background-color: #636363;
@@ -167,15 +167,14 @@ button.close {
     outline: none;
     box-shadow: 0em 0em 0em 0.2rem #68b6f9; }
   button.close:active {
-    outline: none;
-    background-color: whitesmoke; }
+    outline: none; }
     button.close:active::before, button.close:active::after {
       background-color: #383838;
       border-color: #383838; }
   button.close::before, button.close::after {
     content: '';
-    background-color: #727272;
-    border: 0.1em solid #727272;
+    background-color: #939393;
+    border: 0.1em solid #939393;
     height: 0.8em;
     position: absolute;
     top: 50%;
@@ -198,20 +197,18 @@ button.close {
     -ms-transform: rotate(135deg) translate(-50%, -50%);
     transform: rotate(135deg) translate(-50%, -50%); }
   button.close[class~="alternate"] {
-    background-color: #727272; }
+    background-color: #636363; }
     button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
-      background-color: #d7d7d7;
-      border-color: #d7d7d7; }
+      background-color: #bfbfbf;
+      border-color: #bfbfbf; }
     button.close[class~="alternate"]:hover {
-      background-color: #636363; }
+      background-color: #4c4c4c; }
       button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
         background-color: #e6e6e6;
         border-color: #e6e6e6; }
-    button.close[class~="alternate"]:active {
-      background-color: #4c4c4c; }
-      button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
-        background-color: white;
-        border-color: white; }
+    button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
+      background-color: white;
+      border-color: white; }
   button.close[class~="resize-small"] {
     height: 1.2em;
     width: 1.2em; }
@@ -232,50 +229,52 @@ button.close {
 /* ====================================================== */
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.5em 0.25em 0.5em;
-  display: inline-block;
+  padding: 0.1em 0.2em;
+  margin: 0em 0.2em;
   border-radius: 0.1875em;
-  line-height: 1.4;
-  background-color: #d7d7d7;
+  line-height: 1;
+  background-color: #bfbfbf;
   color: white; }
-  span.stamp[class~="round"] {
+  span.stamp.round {
     border-radius: 1em; }
-  span.stamp[class~="theme-primary"] {
+  span.stamp.theme-primary {
     background-color: #3e9def; }
-  span.stamp[class~="theme-info"] {
+  span.stamp.theme-info {
     background-color: #54c43a; }
-  span.stamp[class~="theme-caution"] {
-    background-color: #f2f230; }
-  span.stamp[class~="theme-danger"] {
+  span.stamp.theme-caution {
+    background-color: #f2f230;
+    color: #96961e; }
+  span.stamp.theme-danger {
     background-color: #ed432d; }
+  span.stamp.theme-light {
+    background-color: whitesmoke;
+    color: #636363; }
+  span.stamp.theme-dark {
+    background-color: #4c4c4c; }
 
 div.stamp-duo {
-  font-size: 1.2rem;
-  display: inline-block; }
+  font-size: 1.4rem;
+  display: inline-block;
+  margin: 0.6rem 0.4rem; }
   div.stamp-duo::after {
     content: '';
     clear: both;
     display: table; }
   div.stamp-duo span.stamp {
     font-size: inherit;
-    float: left; }
+    padding: 0.4rem 0.6rem;
+    float: left;
+    margin: 0; }
     div.stamp-duo span.stamp:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
     div.stamp-duo span.stamp:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-    div.stamp-duo span.stamp[class~="relative"] {
-      min-width: 2em;
-      min-height: 1.8em; }
-
-div.stamps::after {
-  content: '';
-  clear: both;
-  display: table; }
-div.stamps > span.stamp, div.stamps > div.stamp-duo {
-  float: left;
-  margin: 0.4rem; }
+    div.stamp-duo span.stamp.relative {
+      padding: 0;
+      min-height: 2.2rem;
+      min-width: 3rem; }
 
 /* ====================================================== */
 figure[class*="image-"] {

@@ -27,7 +27,7 @@ div.modal-backdrop {
   border: 0.1em solid $light-gray;
   border-radius: 0.4em;
   background-color: $white;
-  box-shadow: 0em 0.05em 0.04em 0em $medium-white;
+  box-shadow: 0.1em 0.1em 0.1em 0em $light-gray;
 }
 
 /* ====================================================== */
@@ -244,10 +244,10 @@ button.close {
   width: 1.6em;
   border-radius: 0.2em;
   position: relative;
-  background-color: $dark-white;
+  background-color: $medium-white;
 
   &:hover {
-    background-color: $medium-white;
+    background-color: $light-white;
     cursor: pointer;
 
     &::before, &::after {
@@ -263,7 +263,6 @@ button.close {
 
   &:active {
     outline: none;
-    background-color: $light-white;
     
     &::before, &::after {
       background-color: $black;
@@ -273,8 +272,8 @@ button.close {
 
   &::before, &::after {
     content: '';
-    background-color: $white-black;
-    border: 0.1em solid $white-black;
+    background-color: $dark-gray;
+    border: 0.1em solid $dark-gray;
     height: 0.8em;
     position: absolute;
     top: 50%;
@@ -291,15 +290,15 @@ button.close {
   }
 
   &[class~="alternate"] {
-    background-color: $white-black;
+    background-color: $light-black;
 
     &::before, &::after {
-      background-color: $dark-white;
-      border-color: $dark-white;
+      background-color: $medium-gray;
+      border-color: $medium-gray;
     }
 
     &:hover {
-      background-color: $light-black;
+      background-color: $medium-black;
 
       &::before, &::after {
         background-color: $medium-white;
@@ -308,8 +307,6 @@ button.close {
     }
 
     &:active {
-      background-color: $medium-black;
-
       &::before, &::after {
         background-color: $white;
         border-color: $white;
@@ -351,37 +348,48 @@ button.close {
 
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.5em 0.25em 0.5em;
-  display: inline-block;
+  padding: 0.1em 0.2em;
+  margin: 0em 0.2em;
   border-radius: 0.1875em;
-  line-height: 1.4;
-  background-color: $dark-white;
+  line-height: 1;
+  background-color: $medium-gray;
   color: $white;
 
-  &[class~="round"] {
+  &.round {
     border-radius: 1em;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     background-color: $medium-blue;
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     background-color: $medium-green;
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     background-color: $medium-yellow;
+    color: $dark-yellow;
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     background-color: $medium-red;
+  }
+
+  &.theme-light {
+    background-color: $light-white;
+    color: $light-black;
+  }
+
+  &.theme-dark {
+    background-color: $medium-black;
   }
 }
 
 div.stamp-duo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: inline-block;
+  margin: 0.6rem 0.4rem;
 
   &::after {
     content: '';
@@ -391,7 +399,9 @@ div.stamp-duo {
 
   span.stamp {
     font-size: inherit;
+    padding: 0.4rem 0.6rem;
     float: left;
+    margin: 0;
 
     &:first-child {
       border-top-right-radius: 0;
@@ -403,25 +413,27 @@ div.stamp-duo {
       border-bottom-left-radius: 0;
     }
 
-    &[class~="relative"] {
-      min-width: 2em;
-      min-height: 1.8em;
+    &.relative {
+      padding: 0;
+      min-height: 2.2rem;
+      min-width: 3rem;
+
     }
   }
 }
 
-div.stamps {
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
+// div.stamps {
+//   &::after {
+//     content: '';
+//     clear: both;
+//     display: table;
+//   }
 
-  & > span.stamp, & > div.stamp-duo {
-    float: left;
-    margin: 0.4rem;
-  }
-}
+//   & > span.stamp, & > div.stamp-duo {
+//     float: left;
+//     margin: 0.4rem;
+//   }
+// }
 
 /* ====================================================== */
 
