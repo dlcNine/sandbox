@@ -61,11 +61,11 @@ div.message {
     div.message.theme-caution .message-body {
       color: #96961e; }
   div.message.theme-danger {
-    border-color: #ed432d;
+    border-color: #e53c27;
     background-color: #fff8f7; }
     div.message.theme-danger .message-header {
       color: #fff8f7;
-      background-color: #ed432d; }
+      background-color: #e53c27; }
     div.message.theme-danger .message-body {
       color: #c62c17; }
   div.message.theme-light {
@@ -245,7 +245,7 @@ span.stamp {
     background-color: #e8e819;
     color: #96961e; }
   span.stamp.theme-danger {
-    background-color: #ed432d; }
+    background-color: #e53c27; }
   span.stamp.theme-light {
     background-color: whitesmoke;
     color: #636363; }
@@ -351,6 +351,7 @@ div.progress-bar {
   font-size: 1rem;
   height: 1.2em;
   background-color: #d8d8d8;
+  color: #f9f9f9;
   border-radius: 0.6em;
   margin: 1rem 0rem; }
   div.progress-bar div.progress {
@@ -374,14 +375,14 @@ div.progress-bar {
     background-color: #e8e819;
     color: #96961e; }
   div.progress-bar.theme-danger div.progress {
-    background-color: #ed432d;
+    background-color: #e53c27;
     color: #fff8f7; }
   div.progress-bar.theme-light div.progress {
     background-color: whitesmoke;
-    color: #4c4c4c; }
+    color: #636363; }
   div.progress-bar.theme-dark div.progress {
     background-color: #4c4c4c;
-    color: whitesmoke; }
+    color: white; }
 
 /* ====================================================== */
 ul.text-menu li {
