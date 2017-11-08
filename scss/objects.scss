@@ -542,7 +542,7 @@ img {
 div.progress-bar {
   font-size: 1rem;
   height: 1.2em;
-  background-color: $dark-white;
+  background-color: $light-gray;
   border-radius: 0.6em;
   margin: 1rem 0rem;
 
@@ -566,24 +566,42 @@ div.progress-bar {
   &.theme-primary {
     div.progress {
       background-color: $medium-blue;
+      color: $white-blue;
     }
   }
 
   &.theme-info {
     div.progress {
       background-color: $medium-green;
+      color: $white-green;
     }
   }
 
   &.theme-caution {
     div.progress {
       background-color: $medium-yellow;
+      color: $dark-yellow;
     }
   }
 
   &.theme-danger {
     div.progress {
       background-color: $medium-red;
+      color: $white-red;
+    }
+  }
+
+  &.theme-light {
+    div.progress {
+      background-color: $light-white;
+      color: $medium-black;
+    }
+  }
+
+  &.theme-dark {
+    div.progress {
+      background-color: $medium-black;
+      color: $light-white;
     }
   }
 
