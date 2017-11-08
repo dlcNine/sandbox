@@ -45,7 +45,7 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue-form-focus;
   }
 
   &.resize-small {
@@ -140,6 +140,10 @@ textarea {
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem;
+
+  &.fixed-size {
+    resize: none;
+  }
 }
 
 /* ==================================== */
@@ -160,6 +164,7 @@ label.checkbox, label.radio {
 
 form div.field {
   font-size: 1rem;
+  font-family: sans-serif;
   padding: 0.6em;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
@@ -217,7 +222,7 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-blue;
+        box-shadow: 0em 0em 0em 0.2rem $light-blue-form-focus;
       }
     }
 
@@ -236,7 +241,7 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-green;
+        box-shadow: 0em 0em 0em 0.2rem $light-green-form-focus;
       }
     }
 
@@ -255,7 +260,7 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-yellow;
+        box-shadow: 0em 0em 0em 0.2rem $light-yellow-form-focus;
       }
     }
 
@@ -274,7 +279,7 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-red;
+        box-shadow: 0em 0em 0em 0.2rem $light-red-form-focus;
       }
     }
 

@@ -7,15 +7,16 @@ input[type="submit"], input[type="reset"] {
   border-radius: 0.1875em;
   /* 3px */
   text-align: center;
-  color: #939393;
+  color: #636363;
   background-color: #d8d8d8; }
   a.button:hover, button.button:hover,
   input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #bfbfbf;
+    color: #f9f9f9;
     cursor: pointer; }
   a.button:active, button.button:active,
   input[type="submit"]:active, input[type="reset"]:active {
-    color: #f9f9f9;
+    background-color: #939393;
     outline: none; }
   a.button:focus:not(:active), button.button:focus:not(:active),
   input[type="submit"]:focus:not(:active), input[type="reset"]:focus:not(:active) {
@@ -32,64 +33,64 @@ input[type="submit"], input[type="reset"] {
   a.button.theme-primary, button.button.theme-primary,
   input[type="submit"].theme-primary, input[type="reset"].theme-primary {
     color: #f4faff;
-    border-color: #3e9def;
     background-color: #3e9def; }
     a.button.theme-primary:hover, button.button.theme-primary:hover,
     input[type="submit"].theme-primary:hover, input[type="reset"].theme-primary:hover {
-      background-color: #287ec9;
-      border-color: #287ec9; }
+      background-color: #54abf7; }
     a.button.theme-primary:active, button.button.theme-primary:active,
     input[type="submit"].theme-primary:active, input[type="reset"].theme-primary:active {
-      color: #3e9def; }
-    a.button.theme-primary:focus:not(:active), button.button.theme-primary:focus:not(:active),
-    input[type="submit"].theme-primary:focus:not(:active), input[type="reset"].theme-primary:focus:not(:active) {
-      border-color: #287ec9; }
+      background-color: #287ec9; }
   a.button.theme-info, button.button.theme-info,
   input[type="submit"].theme-info, input[type="reset"].theme-info {
     color: #f6fff4;
-    border-color: #54c43a;
     background-color: #54c43a; }
     a.button.theme-info:hover, button.button.theme-info:hover,
     input[type="submit"].theme-info:hover, input[type="reset"].theme-info:hover {
-      background-color: #3f962a;
-      border-color: #3f962a; }
+      background-color: #62d648; }
     a.button.theme-info:active, button.button.theme-info:active,
     input[type="submit"].theme-info:active, input[type="reset"].theme-info:active {
-      color: #54c43a; }
-    a.button.theme-info:focus:not(:active), button.button.theme-info:focus:not(:active),
-    input[type="submit"].theme-info:focus:not(:active), input[type="reset"].theme-info:focus:not(:active) {
-      border-color: #3f962a; }
+      background-color: #3f962a; }
   a.button.theme-caution, button.button.theme-caution,
   input[type="submit"].theme-caution, input[type="reset"].theme-caution {
     color: #96961e;
-    background-color: #f2f230;
-    border-color: #f2f230; }
+    background-color: #e8e819; }
     a.button.theme-caution:hover, button.button.theme-caution:hover,
     input[type="submit"].theme-caution:hover, input[type="reset"].theme-caution:hover {
-      background-color: #96961e;
-      border-color: #96961e;
-      color: #fcfcef; }
+      background-color: #f4f449; }
     a.button.theme-caution:active, button.button.theme-caution:active,
     input[type="submit"].theme-caution:active, input[type="reset"].theme-caution:active {
-      color: #f2f230; }
-    a.button.theme-caution:focus, button.button.theme-caution:focus,
-    input[type="submit"].theme-caution:focus, input[type="reset"].theme-caution:focus {
-      border-color: #96961e; }
+      background-color: #96961e;
+      color: #fcfcef; }
   a.button.theme-danger, button.button.theme-danger,
   input[type="submit"].theme-danger, input[type="reset"].theme-danger {
     color: #fff8f7;
-    border-color: #ed432d;
     background-color: #ed432d; }
     a.button.theme-danger:hover, button.button.theme-danger:hover,
     input[type="submit"].theme-danger:hover, input[type="reset"].theme-danger:hover {
-      background-color: #ba311f;
-      border-color: #ba311f; }
+      background-color: #f25541; }
     a.button.theme-danger:active, button.button.theme-danger:active,
     input[type="submit"].theme-danger:active, input[type="reset"].theme-danger:active {
-      color: #ed432d; }
-    a.button.theme-danger:focus:not(:active), button.button.theme-danger:focus:not(:active),
-    input[type="submit"].theme-danger:focus:not(:active), input[type="reset"].theme-danger:focus:not(:active) {
-      border-color: #ba311f; }
+      background-color: #c62c17; }
+  a.button.theme-light, button.button.theme-light,
+  input[type="submit"].theme-light, input[type="reset"].theme-light {
+    color: #4c4c4c;
+    background-color: #e6e6e6; }
+    a.button.theme-light:hover, button.button.theme-light:hover,
+    input[type="submit"].theme-light:hover, input[type="reset"].theme-light:hover {
+      background-color: whitesmoke; }
+    a.button.theme-light:active, button.button.theme-light:active,
+    input[type="submit"].theme-light:active, input[type="reset"].theme-light:active {
+      background-color: #d7d7d7; }
+  a.button.theme-dark, button.button.theme-dark,
+  input[type="submit"].theme-dark, input[type="reset"].theme-dark {
+    color: whitesmoke;
+    background-color: #4c4c4c; }
+    a.button.theme-dark:hover, button.button.theme-dark:hover,
+    input[type="submit"].theme-dark:hover, input[type="reset"].theme-dark:hover {
+      background-color: #636363; }
+    a.button.theme-dark:active, button.button.theme-dark:active,
+    input[type="submit"].theme-dark:active, input[type="reset"].theme-dark:active {
+      background-color: #383838; }
 
 a.button {
   display: inline-block; }
@@ -131,11 +132,11 @@ a.button {
       color: #3f962a; }
   .button.outlined.theme-caution {
     color: #96961e;
-    border-color: #f2f230; }
+    border-color: #e8e819; }
     .button.outlined.theme-caution:hover {
       background-color: #fcfcef; }
     .button.outlined.theme-caution:active {
-      background-color: #f2f230; }
+      background-color: #e8e819; }
   .button.outlined.theme-danger {
     color: #ed432d;
     border-color: #ed432d; }
@@ -143,7 +144,7 @@ a.button {
       background-color: #fff8f7; }
     .button.outlined.theme-danger:active {
       background-color: #ed432d;
-      color: #ba311f; }
+      color: #c62c17; }
 
 /* ====================================================== */
 div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
