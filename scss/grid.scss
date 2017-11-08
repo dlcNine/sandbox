@@ -332,11 +332,11 @@ div.default-push-12 {
   /* ==================================== */
 
   .absent-small {
-    display: none;
+    display: none !important;
   }
 
   .invisible-small {
-    visibility: hidden;
+    visibility: hidden !important;
   }
 }
 
@@ -471,11 +471,11 @@ div.default-push-12 {
   /* ==================================== */
 
   .absent-medium {
-    display: none;
+    display: none !important;
   }
 
   .invisible-medium {
-    visibility: hidden;
+    visibility: hidden !important;
   }
 }
 
@@ -610,10 +610,10 @@ div.default-push-12 {
   /* ==================================== */
 
   .absent-large {
-    display: none;
+    display: none !important;
   }
 
   .invisible-large {
-    visibility: hidden;
+    visibility: hidden !important;
   }
 }

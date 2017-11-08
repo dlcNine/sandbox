@@ -3,116 +3,132 @@
 a.button, button.button, 
 input[type="submit"], input[type="reset"] {
   font-size: 1.6rem;
+  font-family: sans-serif;
   padding: 0.375em 0.75em;    /* 6px 12px */
   margin: 0.6rem;
-  // border: 0.0625em solid $white-gray; /* 1px */
   border-radius: 0.1875em;    /* 3px */
   text-align: center;
 
-  color: $dark-gray;
-  background-color: $light-gray;
+  color: $light-black;
+  background-color: $medium-gray;
   
 
   &:hover {
-    background-color: $medium-gray;
+    background-color: $light-gray;
     cursor: pointer;
   }
 
   &:active {
+    background-color: $dark-gray;
     color: $white-gray;
     outline: none;
   }
   
   &:focus:not(:active) {
+    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-form-focus;
     outline: none;
   }
 
-  &[class~="resize-small"] {
+  &.resize-small {
     font-size: 1.2rem;
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     font-size: 2.2rem;
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     font-size: 2.8rem;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     color: $white-blue;
-    border-color: $medium-blue;
     background-color: $medium-blue;
 
     &:hover {
-      background-color: $dark-blue;
-      border-color: $dark-blue;
+      background-color: $light-blue;
     }
 
     &:active {
-      color: $medium-blue;
-    }
-
-    &:focus:not(:active) {
-      border-color: $dark-blue;
+      background-color: $dark-blue;
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     color: $white-green;
-    border-color: $medium-green;
     background-color: $medium-green;
 
     &:hover {
-      background-color: $dark-green;
-      border-color: $dark-green;
+      background-color: $light-green;
     }
 
     &:active {
-      color: $medium-green;
+      background-color: $dark-green;
     }
 
     &:focus:not(:active) {
-      border-color: $dark-green;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-form-focus;
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     color: $dark-yellow;
     background-color: $medium-yellow;
-    border-color: $medium-yellow;
 
     &:hover {
+      background-color: $light-yellow;
+    }
+
+    &:active {
       background-color: $dark-yellow;
-      border-color: $dark-yellow;
       color: $white-yellow;
     }
 
-    &:active {
-      color: $medium-yellow;
-    }
-
     &:focus {
-      border-color: $dark-yellow;
+      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-form-focus;
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     color: $white-red;
-    border-color: $medium-red;
     background-color: $medium-red;
 
     &:hover {
-      background-color: $dark-red;
-      border-color: $dark-red;
+      background-color: $light-red;
     }
 
     &:active {
-      color: $medium-red;
+      background-color: $dark-red;
     }
 
     &:focus:not(:active) {
-      border-color: $dark-red;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-form-focus;
+    }
+  }
+
+  &.theme-light {
+    color: $light-black;
+    background-color: $medium-white;
+
+    &:hover {
+      background-color: $light-white;
+    }
+
+    &:active {
+      background-color: $dark-white;
+    }
+  }
+
+  &.theme-dark {
+    color: $white;
+    background-color: $medium-black;
+
+    &:hover {
+      background-color: $light-black;
+    }
+
+    &:active {
+      background-color: $black;
     }
   }
 }
@@ -129,7 +145,7 @@ a.button {
   }
 }
 
-.button[class~="wide"] {
+.button.wide {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -138,71 +154,101 @@ a.button {
 
 /* ====================================================== */
 
-.button[class~="outlined"] {
-  background-color: transparent;
-  border-color: $light-gray;
+.button.outlined {
+  background-color: transparent !important;
+  border: 0.1rem solid $medium-gray;
+  color: $light-black;
 
   &:hover {
-    background-color: $white-gray;
+    border-color: $light-gray;
   }
 
   &:active {
-    background-color: $light-gray;
-    color: $dark-gray;
+    border-color: $dark-gray;
+    color: $light-black;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     color: $medium-blue;
     border-color: $medium-blue;
 
     &:hover {
-      background-color: $white-blue;
+      border-color: $light-blue;
     }
 
     &:active {
-      background-color: $medium-blue;
+      border-color: $dark-blue;
       color: $dark-blue;
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     color: $medium-green;
     border-color: $medium-green;
 
     &:hover {
-      background-color: $white-green;
+      border-color: $light-green;
     }
 
     &:active {
-      background-color: $medium-green;
+      border-color: $dark-green;
       color: $dark-green;
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     color: $dark-yellow;
     border-color: $medium-yellow;
 
     &:hover {
-      background-color: $white-yellow;
+      border-color: $light-yellow;
     }
 
     &:active {
-      background-color: $medium-yellow;
+      border-color: $dark-yellow;
+      color: $dark-yellow;
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     color: $medium-red;
     border-color: $medium-red;
 
     &:hover {
-      background-color: $white-red;
+      border-color: $light-red;
     }
 
     &:active {
-      background-color: $medium-red;
+      border-color: $dark-red;
       color: $dark-red;
+    }
+  }
+
+  &.theme-light {
+    color: $light-black;
+    border-color: $medium-white;
+
+    &:hover {
+      border-color: $light-white;
+    }
+
+    &:active {
+      border-color: $medium-gray;
+      color: $light-black;
+    }
+  }
+
+  &.theme-dark {
+    color: $light-black;
+    border-color: $medium-black;
+
+    &:hover {
+      border-color: $light-black;
+    }
+
+    &:active {
+      border-color: $black;
+      color: $black;
     }
   }
 }

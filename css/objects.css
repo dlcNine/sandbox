@@ -17,62 +17,78 @@ div.modal-backdrop {
 .box {
   font-size: 1rem;
   padding: 1.6em;
-  border: 0.1em solid #bebebe;
+  border: 0.1em solid #d8d8d8;
   border-radius: 0.4em;
   background-color: white;
-  box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
+  box-shadow: 0.1em 0.1em 0.1em 0em #d8d8d8; }
 
 /* ====================================================== */
 div.message {
   font-size: 1rem;
-  border: 0.1em solid #646464;
-  border-radius: 0.3em;
-  background-color: whitesmoke;
+  border: 0.1em solid #939393;
+  border-radius: 0.4em;
+  background-color: #f9f9f9;
   margin: 0.6em 0em; }
   div.message div.message-header {
-    padding: 0.8em;
-    color: white;
-    background-color: #646464; }
+    padding: 0.4em 1.2em;
+    color: #f9f9f9;
+    background-color: #939393; }
   div.message div.message-body {
-    padding: 0.8em 0.8em 0.8em 1.2em;
-    color: #646464; }
-  div.message[class~="theme-primary"] {
+    padding: 1em 1em 1em 1.8em;
+    color: #939393; }
+  div.message.theme-primary {
     border-color: #3e9def;
-    background-color: #f4f9fc; }
-    div.message[class~="theme-primary"] .message-header {
-      color: #f4f9fc;
+    background-color: #f4faff; }
+    div.message.theme-primary .message-header {
+      color: #f4faff;
       background-color: #3e9def; }
-    div.message[class~="theme-primary"] .message-body {
-      color: #0c62b2; }
-  div.message[class~="theme-info"] {
-    border-color: #53e258;
-    background-color: #f5fcf4; }
-    div.message[class~="theme-info"] .message-header {
-      color: #f5fcf4;
-      background-color: #53e258; }
-    div.message[class~="theme-info"] .message-body {
-      color: #1d9b41; }
-  div.message[class~="theme-caution"] {
-    border-color: #f9f261;
-    background-color: #fcfbf2; }
-    div.message[class~="theme-caution"] .message-header {
-      color: #918f2d;
-      background-color: #f9f261; }
-    div.message[class~="theme-caution"] .message-body {
-      color: #918f2d; }
-  div.message[class~="theme-danger"] {
-    border-color: #ef3232;
+    div.message.theme-primary .message-body {
+      color: #287ec9; }
+  div.message.theme-info {
+    border-color: #54c43a;
+    background-color: #f6fff4; }
+    div.message.theme-info .message-header {
+      color: #f6fff4;
+      background-color: #54c43a; }
+    div.message.theme-info .message-body {
+      color: #3f962a; }
+  div.message.theme-caution {
+    border-color: #e8e819;
+    background-color: #fcfcef; }
+    div.message.theme-caution .message-header {
+      color: #96961e;
+      background-color: #e8e819; }
+    div.message.theme-caution .message-body {
+      color: #96961e; }
+  div.message.theme-danger {
+    border-color: #e53c27;
     background-color: #fff8f7; }
-    div.message[class~="theme-danger"] .message-header {
+    div.message.theme-danger .message-header {
       color: #fff8f7;
-      background-color: #ef3232; }
-    div.message[class~="theme-danger"] .message-body {
-      color: #b2250c; }
+      background-color: #e53c27; }
+    div.message.theme-danger .message-body {
+      color: #c62c17; }
+  div.message.theme-light {
+    border-color: #e6e6e6;
+    background-color: white; }
+    div.message.theme-light .message-header {
+      color: #636363;
+      background-color: #e6e6e6; }
+    div.message.theme-light .message-body {
+      color: #636363; }
+  div.message.theme-dark {
+    border-color: #4c4c4c;
+    background-color: whitesmoke; }
+    div.message.theme-dark .message-header {
+      color: white;
+      background-color: #4c4c4c; }
+    div.message.theme-dark .message-body {
+      color: #383838; }
 
 /* ====================================================== */
 div.tabs {
   font-size: 1rem;
-  border-bottom: 0.1em solid #bebebe; }
+  border-bottom: 0.1em solid #d8d8d8; }
   div.tabs::after {
     content: '';
     clear: both;
@@ -83,16 +99,16 @@ div.tabs {
     padding: 0.8em 1.2em;
     margin: 0em -0.1em -0.1em 0em;
     border-radius: 0.3em 0.3em 0em 0em;
-    color: #bebebe; }
+    color: #d8d8d8; }
     div.tabs li:hover {
       padding-bottom: 0.7em;
-      color: #646464;
-      background-color: whitesmoke;
-      border-bottom: 0.1em solid #646464; }
-    div.tabs li[class~="active"] {
+      color: #939393;
+      background-color: #f9f9f9;
+      border-bottom: 0.1em solid #939393; }
+    div.tabs li.active {
       padding-bottom: 0.7em;
       color: #3e9def;
-      background-color: whitesmoke;
+      background-color: #f9f9f9;
       border-bottom: 0.1em solid #3e9def;
       font-weight: bold; }
 
@@ -111,7 +127,7 @@ ul.menu {
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
       background-color: white; }
-    ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
+    ul.menu li.menu-header.alternate, ul.menu li.menu-item.alternate, ul.menu li.menu-footer.alternate {
       background-color: whitesmoke; }
     ul.menu li.menu-header {
       border-radius: 0.3em 0.3em 0em 0em;
@@ -126,11 +142,11 @@ span.icon {
   display: inline-block;
   height: auto;
   width: 2rem; }
-  span.icon[class~="size-large"] {
+  span.icon.size-large {
     width: 2.6rem; }
-  span.icon[class~="size-doubled"] {
+  span.icon.size-doubled {
     width: 3.8rem; }
-  span.icon[class~="size-tripled"] {
+  span.icon.size-tripled {
     width: 5.8rem; }
 
 /* ====================================================== */
@@ -140,26 +156,25 @@ button.close {
   width: 1.6em;
   border-radius: 0.2em;
   position: relative;
-  background-color: #d7d7d7; }
+  background-color: #e6e6e6; }
   button.close:hover {
-    background-color: #e6e6e6;
+    background-color: whitesmoke;
     cursor: pointer; }
     button.close:hover::before, button.close:hover::after {
-      background-color: #444447;
-      border-color: #444447; }
+      background-color: #636363;
+      border-color: #636363; }
   button.close:focus:not(:active) {
     outline: none;
-    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
+    box-shadow: 0em 0em 0em 0.2rem #54abf7; }
   button.close:active {
-    outline: none;
-    background-color: whitesmoke; }
+    outline: none; }
     button.close:active::before, button.close:active::after {
-      background-color: #1e1e21;
-      border-color: #1e1e21; }
+      background-color: #383838;
+      border-color: #383838; }
   button.close::before, button.close::after {
     content: '';
-    background-color: #545456;
-    border: 0.1em solid #545456;
+    background-color: #939393;
+    border: 0.1em solid #939393;
     height: 0.8em;
     position: absolute;
     top: 50%;
@@ -181,139 +196,143 @@ button.close {
     -o-transform: rotate(135deg) translate(-50%, -50%);
     -ms-transform: rotate(135deg) translate(-50%, -50%);
     transform: rotate(135deg) translate(-50%, -50%); }
-  button.close[class~="alternate"] {
-    background-color: #545456; }
-    button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
-      background-color: #d7d7d7;
-      border-color: #d7d7d7; }
-    button.close[class~="alternate"]:hover {
-      background-color: #444447; }
-      button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
+  button.close.alternate {
+    background-color: #636363; }
+    button.close.alternate::before, button.close.alternate::after {
+      background-color: #bfbfbf;
+      border-color: #bfbfbf; }
+    button.close.alternate:hover {
+      background-color: #4c4c4c; }
+      button.close.alternate:hover::before, button.close.alternate:hover::after {
         background-color: #e6e6e6;
         border-color: #e6e6e6; }
-    button.close[class~="alternate"]:active {
-      background-color: #2e2e33; }
-      button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
-        background-color: white;
-        border-color: white; }
-  button.close[class~="resize-small"] {
+    button.close.alternate:active::before, button.close.alternate:active::after {
+      background-color: white;
+      border-color: white; }
+  button.close.resize-small {
     height: 1.2em;
     width: 1.2em; }
-    button.close[class~="resize-small"]::before, button.close[class~="resize-small"]::after {
+    button.close.resize-small::before, button.close.resize-small::after {
       height: 0.6em; }
-  button.close[class~="resize-medium"] {
+  button.close.resize-medium {
     height: 2em;
     width: 2em; }
-    button.close[class~="resize-medium"]::before, button.close[class~="resize-medium"]::after {
+    button.close.resize-medium::before, button.close.resize-medium::after {
       height: 1.2em; }
-  button.close[class~="resize-large"] {
+  button.close.resize-large {
     height: 2.4em;
     width: 2.4em; }
-    button.close[class~="resize-large"]::before, button.close[class~="resize-large"]::after {
+    button.close.resize-large::before, button.close.resize-large::after {
       border-width: 0.2em;
       height: 1.4em; }
 
 /* ====================================================== */
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.5em 0.25em 0.5em;
-  display: inline-block;
+  padding: 0.1em 0.2em;
+  margin: 0em 0.2em;
   border-radius: 0.1875em;
-  line-height: 1.4;
-  background-color: #d7d7d7;
+  line-height: 1;
+  background-color: #bfbfbf;
   color: white; }
-  span.stamp[class~="round"] {
+  span.stamp.round {
     border-radius: 1em; }
-  span.stamp[class~="theme-primary"] {
+  span.stamp.theme-primary {
     background-color: #3e9def; }
-  span.stamp[class~="theme-info"] {
-    background-color: #53e258; }
-  span.stamp[class~="theme-caution"] {
-    background-color: #f9f261; }
-  span.stamp[class~="theme-danger"] {
-    background-color: #ef3232; }
+  span.stamp.theme-info {
+    background-color: #54c43a; }
+  span.stamp.theme-caution {
+    background-color: #e8e819;
+    color: #96961e; }
+  span.stamp.theme-danger {
+    background-color: #e53c27; }
+  span.stamp.theme-light {
+    background-color: whitesmoke;
+    color: #636363; }
+  span.stamp.theme-dark {
+    background-color: #4c4c4c; }
 
 div.stamp-duo {
-  font-size: 1.2rem;
-  display: inline-block; }
+  font-size: 1.4rem;
+  display: inline-block;
+  margin: 0.6rem 0.4rem; }
   div.stamp-duo::after {
     content: '';
     clear: both;
     display: table; }
   div.stamp-duo span.stamp {
     font-size: inherit;
-    float: left; }
+    padding: 0.4rem 0.6rem;
+    float: left;
+    margin: 0; }
     div.stamp-duo span.stamp:first-child {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
     div.stamp-duo span.stamp:last-child {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-    div.stamp-duo span.stamp[class~="relative"] {
-      min-width: 2em;
-      min-height: 1.8em; }
-
-div.stamps::after {
-  content: '';
-  clear: both;
-  display: table; }
-div.stamps > span.stamp, div.stamps > div.stamp-duo {
-  float: left;
-  margin: 0.4rem; }
+    div.stamp-duo span.stamp.relative {
+      padding: 0;
+      min-height: 2.2rem;
+      min-width: 3rem; }
+  div.stamp-duo.resize-large {
+    font-size: 2.1rem; }
+    div.stamp-duo.resize-large span.stamp.relative {
+      min-height: 2.9rem; }
 
 /* ====================================================== */
 figure[class*="image-"] {
-  background-color: #969696; }
+  background-color: #bfbfbf; }
   figure[class*="image-"] img {
     object-fit: cover; }
 
-figure[class~="image-16x"] {
+figure.image-16x {
   width: 16px;
   height: 16px; }
-  figure[class~="image-16x"] img {
+  figure.image-16x img {
     width: 16px;
     height: 16px; }
-    figure[class~="image-16x"] img[class~="rounded"] {
+    figure.image-16x img.rounded {
       border-radius: 0.3rem; }
 
-figure[class~="image-32x"] {
+figure.image-32x {
   width: 32px;
   height: 32px; }
-  figure[class~="image-32x"] img {
+  figure.image-32x img {
     width: 32px;
     height: 32px; }
-    figure[class~="image-32x"] img[class~="rounded"] {
+    figure.image-32x img.rounded {
       border-radius: 0.4rem; }
 
-figure[class~="image-64x"] {
+figure.image-64x {
   width: 64px;
   height: 64px; }
-  figure[class~="image-64x"] img {
+  figure.image-64x img {
     width: 64px;
     height: 64px; }
-    figure[class~="image-64x"] img[class~="rounded"] {
+    figure.image-64x img.rounded {
       border-radius: 0.6rem; }
 
-figure[class~="image-128x"] {
+figure.image-128x {
   width: 128px;
   height: 128px; }
-  figure[class~="image-128x"] img {
+  figure.image-128x img {
     width: 128px;
     height: 128px; }
-    figure[class~="image-128x"] img[class~="rounded"] {
+    figure.image-128x img.rounded {
       border-radius: 0.8rem; }
 
-figure[class~="image-256x"] {
+figure.image-256x {
   width: 256px;
   height: 256px; }
-  figure[class~="image-256x"] img {
+  figure.image-256x img {
     width: 256px;
     height: 256px; }
-    figure[class~="image-256x"] img[class~="rounded"] {
+    figure.image-256x img.rounded {
       border-radius: 1rem; }
 
 img {
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #bebebe; }
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #d8d8d8; }
   img.circular {
     border-radius: 50%; }
   img.rounded {
@@ -331,7 +350,8 @@ img {
 div.progress-bar {
   font-size: 1rem;
   height: 1.2em;
-  background-color: #d7d7d7;
+  background-color: #d8d8d8;
+  color: #f9f9f9;
   border-radius: 0.6em;
   margin: 1rem 0rem; }
   div.progress-bar div.progress {
@@ -340,19 +360,29 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     border-radius: inherit;
-    background-color: #646464; }
-  div.progress-bar[class~="resize-medium"] {
+    background-color: #939393; }
+  div.progress-bar.resize-medium {
     font-size: 1.4rem; }
-  div.progress-bar[class~="resize-large"] {
+  div.progress-bar.resize-large {
     font-size: 2rem; }
-  div.progress-bar[class~="theme-primary"] div.progress {
-    background-color: #3e9def; }
-  div.progress-bar[class~="theme-info"] div.progress {
-    background-color: #53e258; }
-  div.progress-bar[class~="theme-caution"] div.progress {
-    background-color: #f9f261; }
-  div.progress-bar[class~="theme-danger"] div.progress {
-    background-color: #ef3232; }
+  div.progress-bar.theme-primary div.progress {
+    background-color: #3e9def;
+    color: #f4faff; }
+  div.progress-bar.theme-info div.progress {
+    background-color: #54c43a;
+    color: #f6fff4; }
+  div.progress-bar.theme-caution div.progress {
+    background-color: #e8e819;
+    color: #96961e; }
+  div.progress-bar.theme-danger div.progress {
+    background-color: #e53c27;
+    color: #fff8f7; }
+  div.progress-bar.theme-light div.progress {
+    background-color: whitesmoke;
+    color: #636363; }
+  div.progress-bar.theme-dark div.progress {
+    background-color: #4c4c4c;
+    color: white; }
 
 /* ====================================================== */
 ul.text-menu li {

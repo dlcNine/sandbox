@@ -6,8 +6,13 @@ scale ratio : 1.33333
 
 .t {
   font-family: sans-serif;
-  color: $medium-black;
+  color: inherit;
   line-height: 1.5;
+}
+
+.tc {
+  @extend .t;
+  color: $medium-black;
 }
 
 .huge-1 {
@@ -93,43 +98,48 @@ h1, h2, h3, h4, h5, h6, p, small {
   &:visited {
     color: $link-visited;
   }
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
+  }
 }
 
 /* ====================================================== */
 
 ul.ul {
-  &[class~="square"] {
+  &.square {
     list-style: square inside;
   }
 
-  &[class~="circle-solid"] {
+  &.circle-solid {
     list-style: disc inside;
   }
 
-  &[class~="circle-hollow"] {
+  &.circle-hollow {
     list-style: circle inside;
   }
 }
 
 ol.ol {
 
-  &[class~="numbers"] {
+  &.numbers {
     list-style: decimal inside;
   }
 
-  &[class~="alpha-lower"] {
+  &.alpha-lower {
     list-style: lower-alpha inside;
   }
 
-  &[class~="alpha-upper"] {
+  &.alpha-upper {
     list-style: upper-alpha inside;
   }
 
-  &[class~="roman-lower"] {
+  &.roman-lower {
     list-style: lower-roman inside;
   }
 
-  &[class~="roman-upper"] {
+  &.roman-upper {
     list-style: upper-roman inside;
   }
 }

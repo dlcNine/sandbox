@@ -45,18 +45,18 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue-form-focus;
   }
 
-  &[class~="resize-small"] {
+  &.resize-small {
     font-size: 1.2rem;
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     font-size: 2.2rem;
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     font-size: 2.8rem;
   }
 }
@@ -71,15 +71,15 @@ div.select {
     background-color: $white;
     height: 3.2rem;
 
-    &[class~="resize-small"] {
+    &.resize-small {
       height: 2.45rem;
     }
 
-    &[class~="resize-medium"] {
+    &.resize-medium {
       height: 4.425rem;
     }
 
-    &[class~="resize-large"] {
+    &.resize-large {
       height: 5.65rem;
     }
   }
@@ -118,15 +118,15 @@ div.select {
     background-color: $white;
     height: 9.2rem;
 
-    &[class~="resize-small"] {
+    &.resize-small {
       height: 7rem;
     }
 
-    &[class~="resize-medium"] {
+    &.resize-medium {
       height: 13rem;
     }
 
-    &[class~="resize-large"] {
+    &.resize-large {
       height: 16.6rem;
     }
   }
@@ -140,6 +140,10 @@ textarea {
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem;
+
+  &.fixed-size {
+    resize: none;
+  }
 }
 
 /* ==================================== */
@@ -160,6 +164,7 @@ label.checkbox, label.radio {
 
 form div.field {
   font-size: 1rem;
+  font-family: sans-serif;
   padding: 0.6em;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
@@ -211,13 +216,13 @@ form div.field {
 
   /* ==================================== */
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-blue;
+        box-shadow: 0em 0em 0em 0.2rem $light-blue-form-focus;
       }
     }
 
@@ -230,13 +235,13 @@ form div.field {
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-green;
+        box-shadow: 0em 0em 0em 0.2rem $light-green-form-focus;
       }
     }
 
@@ -249,13 +254,13 @@ form div.field {
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-yellow;
+        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-form-focus;
       }
     }
 
@@ -268,13 +273,13 @@ form div.field {
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     input:not([type="checkbox"]):not([type="radio"]), 
     select, textarea {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.1875em $light-red;
+        box-shadow: 0em 0em 0em 0.2rem $light-red-form-focus;
       }
     }
 

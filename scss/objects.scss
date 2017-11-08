@@ -27,7 +27,7 @@ div.modal-backdrop {
   border: 0.1em solid $light-gray;
   border-radius: 0.4em;
   background-color: $white;
-  box-shadow: 0em 0.05em 0.04em 0em $medium-white;
+  box-shadow: 0.1em 0.1em 0.1em 0em $light-gray;
 }
 
 /* ====================================================== */
@@ -35,22 +35,22 @@ div.modal-backdrop {
 div.message {
   font-size: 1rem;
   border: 0.1em solid $dark-gray;
-  border-radius: 0.3em;
+  border-radius: 0.4em;
   background-color: $white-gray;
   margin: 0.6em 0em;
 
   div.message-header {
-    padding: 0.8em;
-    color: $white;
+    padding: 0.4em 1.2em;
+    color: $white-gray;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 0.8em 0.8em 0.8em 1.2em;
+    padding: 1em 1em 1em 1.8em;
     color: $dark-gray;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     border-color: $medium-blue;
     background-color: $white-blue;
 
@@ -64,7 +64,7 @@ div.message {
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     border-color: $medium-green;
     background-color: $white-green;
 
@@ -78,7 +78,7 @@ div.message {
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     border-color: $medium-yellow;
     background-color: $white-yellow;
 
@@ -92,7 +92,7 @@ div.message {
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     border-color: $medium-red;
     background-color: $white-red;
 
@@ -103,6 +103,34 @@ div.message {
 
     .message-body {
       color: $dark-red;
+    }
+  }
+
+  &.theme-light {
+    border-color: $medium-white;
+    background-color: $white;
+
+    .message-header {
+      color: $light-black;
+      background-color: $medium-white;
+    }
+
+    .message-body {
+      color: $light-black;
+    }
+  }
+
+  &.theme-dark {
+    border-color: $medium-black;
+    background-color: $light-white;
+
+    .message-header {
+      color: $white;
+      background-color: $medium-black;
+    }
+
+    .message-body {
+      color: $black;
     }
   }
 }
@@ -134,7 +162,7 @@ div.tabs {
       border-bottom: 0.1em solid $dark-gray;
     }
 
-    &[class~="active"] {
+    &.active {
       padding-bottom: 0.7em;
       color: $medium-blue;
       background-color: $white-gray;
@@ -166,9 +194,9 @@ ul.menu {
       background-color: $white;
     }
 
-    &.menu-header[class~="alternate"], 
-    &.menu-item[class~="alternate"], 
-    &.menu-footer[class~="alternate"] {
+    &.menu-header.alternate, 
+    &.menu-item.alternate, 
+    &.menu-footer.alternate {
       background-color: $light-white;
     }
   
@@ -195,15 +223,15 @@ span.icon {
   height: auto;
   width: 2rem;
 
-  &[class~="size-large"] {
+  &.size-large {
     width: 2.6rem;
   }
 
-  &[class~="size-doubled"] {
+  &.size-doubled {
     width: 3.8rem;
   }
 
-  &[class~="size-tripled"] {
+  &.size-tripled {
     width: 5.8rem;
   }
 }
@@ -216,10 +244,10 @@ button.close {
   width: 1.6em;
   border-radius: 0.2em;
   position: relative;
-  background-color: $dark-white;
+  background-color: $medium-white;
 
   &:hover {
-    background-color: $medium-white;
+    background-color: $light-white;
     cursor: pointer;
 
     &::before, &::after {
@@ -235,7 +263,6 @@ button.close {
 
   &:active {
     outline: none;
-    background-color: $light-white;
     
     &::before, &::after {
       background-color: $black;
@@ -245,8 +272,8 @@ button.close {
 
   &::before, &::after {
     content: '';
-    background-color: $white-black;
-    border: 0.1em solid $white-black;
+    background-color: $dark-gray;
+    border: 0.1em solid $dark-gray;
     height: 0.8em;
     position: absolute;
     top: 50%;
@@ -262,16 +289,16 @@ button.close {
     @include rotate-translate-2d(135deg, -50%, -50%);
   }
 
-  &[class~="alternate"] {
-    background-color: $white-black;
+  &.alternate {
+    background-color: $light-black;
 
     &::before, &::after {
-      background-color: $dark-white;
-      border-color: $dark-white;
+      background-color: $medium-gray;
+      border-color: $medium-gray;
     }
 
     &:hover {
-      background-color: $light-black;
+      background-color: $medium-black;
 
       &::before, &::after {
         background-color: $medium-white;
@@ -280,8 +307,6 @@ button.close {
     }
 
     &:active {
-      background-color: $medium-black;
-
       &::before, &::after {
         background-color: $white;
         border-color: $white;
@@ -289,7 +314,7 @@ button.close {
     }
   }
 
-  &[class~="resize-small"] {
+  &.resize-small {
     height: 1.2em;
     width: 1.2em;
 
@@ -298,7 +323,7 @@ button.close {
     }
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     height: 2em;
     width: 2em;
 
@@ -307,7 +332,7 @@ button.close {
     }
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     height: 2.4em;
     width: 2.4em;
 
@@ -323,37 +348,48 @@ button.close {
 
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.5em 0.25em 0.5em;
-  display: inline-block;
+  padding: 0.1em 0.2em;
+  margin: 0em 0.2em;
   border-radius: 0.1875em;
-  line-height: 1.4;
-  background-color: $dark-white;
+  line-height: 1;
+  background-color: $medium-gray;
   color: $white;
 
-  &[class~="round"] {
+  &.round {
     border-radius: 1em;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     background-color: $medium-blue;
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     background-color: $medium-green;
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     background-color: $medium-yellow;
+    color: $dark-yellow;
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     background-color: $medium-red;
+  }
+
+  &.theme-light {
+    background-color: $light-white;
+    color: $light-black;
+  }
+
+  &.theme-dark {
+    background-color: $medium-black;
   }
 }
 
 div.stamp-duo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: inline-block;
+  margin: 0.6rem 0.4rem;
 
   &::after {
     content: '';
@@ -363,7 +399,9 @@ div.stamp-duo {
 
   span.stamp {
     font-size: inherit;
+    padding: 0.4rem 0.6rem;
     float: left;
+    margin: 0;
 
     &:first-child {
       border-top-right-radius: 0;
@@ -375,23 +413,20 @@ div.stamp-duo {
       border-bottom-left-radius: 0;
     }
 
-    &[class~="relative"] {
-      min-width: 2em;
-      min-height: 1.8em;
+    &.relative {
+      padding: 0;
+      min-height: 2.2rem;
+      min-width: 3rem;
+
     }
   }
-}
 
-div.stamps {
-  &::after {
-    content: '';
-    clear: both;
-    display: table;
-  }
+  &.resize-large {
+    font-size: 2.1rem;
 
-  & > span.stamp, & > div.stamp-duo {
-    float: left;
-    margin: 0.4rem;
+    span.stamp.relative {
+      min-height: 2.9rem;
+    }
   }
 }
 
@@ -405,7 +440,7 @@ figure[class*="image-"] {
   }
 }
 
-figure[class~="image-16x"] {
+figure.image-16x {
   width: 16px;
   height: 16px;
 
@@ -413,13 +448,13 @@ figure[class~="image-16x"] {
     width: 16px;
     height: 16px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.3rem;
     }
   }
 }
 
-figure[class~="image-32x"] {
+figure.image-32x {
   width: 32px;
   height: 32px;
 
@@ -427,14 +462,14 @@ figure[class~="image-32x"] {
     width: 32px;
     height: 32px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.4rem;
     }
 
   }
 }
 
-figure[class~="image-64x"] {
+figure.image-64x {
   width: 64px;
   height: 64px;
 
@@ -442,13 +477,13 @@ figure[class~="image-64x"] {
     width: 64px;
     height: 64px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.6rem;
     }
   }
 }
 
-figure[class~="image-128x"] {
+figure.image-128x {
   width: 128px;
   height: 128px;
 
@@ -456,13 +491,13 @@ figure[class~="image-128x"] {
     width: 128px; 
     height: 128px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.8rem;
     }
   }
 }
 
-figure[class~="image-256x"] {
+figure.image-256x {
   width: 256px;
   height: 256px;
 
@@ -470,7 +505,7 @@ figure[class~="image-256x"] {
     width: 256px;
     height: 256px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 1rem;
     }
   }
@@ -507,7 +542,8 @@ img {
 div.progress-bar {
   font-size: 1rem;
   height: 1.2em;
-  background-color: $dark-white;
+  background-color: $light-gray;
+  color: $white-gray;
   border-radius: 0.6em;
   margin: 1rem 0rem;
 
@@ -520,35 +556,53 @@ div.progress-bar {
     background-color: $dark-gray;
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     font-size: 1.4rem;
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     font-size: 2rem;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     div.progress {
       background-color: $medium-blue;
+      color: $white-blue;
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     div.progress {
       background-color: $medium-green;
+      color: $white-green;
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     div.progress {
       background-color: $medium-yellow;
+      color: $dark-yellow;
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     div.progress {
       background-color: $medium-red;
+      color: $white-red;
+    }
+  }
+
+  &.theme-light {
+    div.progress {
+      background-color: $light-white;
+      color: $light-black;
+    }
+  }
+
+  &.theme-dark {
+    div.progress {
+      background-color: $medium-black;
+      color: $white;
     }
   }
 

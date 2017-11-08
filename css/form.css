@@ -30,35 +30,35 @@ select, textarea {
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;
-  border: 0.0625em solid #bebebe;
+  border: 0.0625em solid #d8d8d8;
   border-radius: 0.1875em;
   margin: 0.8rem 0rem; }
   input[type="email"]:hover, input[type="number"]:hover,
   input[type="password"]:hover, input[type="search"]:hover,
   input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,
   select:hover, textarea:hover {
-    border-color: #969696; }
+    border-color: #bfbfbf; }
   input[type="email"]:focus, input[type="number"]:focus,
   input[type="password"]:focus, input[type="search"]:focus,
   input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus,
   select:focus, textarea:focus {
     outline: none;
     border-color: #3e9def;
-    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
-  input[type="email"][class~="resize-small"], input[type="number"][class~="resize-small"],
-  input[type="password"][class~="resize-small"], input[type="search"][class~="resize-small"],
-  input[type="tel"][class~="resize-small"], input[type="text"][class~="resize-small"], input[type="url"][class~="resize-small"],
-  select[class~="resize-small"], textarea[class~="resize-small"] {
+    box-shadow: 0em 0em 0em 0.2rem rgba(104, 182, 249, 0.5); }
+  input[type="email"].resize-small, input[type="number"].resize-small,
+  input[type="password"].resize-small, input[type="search"].resize-small,
+  input[type="tel"].resize-small, input[type="text"].resize-small, input[type="url"].resize-small,
+  select.resize-small, textarea.resize-small {
     font-size: 1.2rem; }
-  input[type="email"][class~="resize-medium"], input[type="number"][class~="resize-medium"],
-  input[type="password"][class~="resize-medium"], input[type="search"][class~="resize-medium"],
-  input[type="tel"][class~="resize-medium"], input[type="text"][class~="resize-medium"], input[type="url"][class~="resize-medium"],
-  select[class~="resize-medium"], textarea[class~="resize-medium"] {
+  input[type="email"].resize-medium, input[type="number"].resize-medium,
+  input[type="password"].resize-medium, input[type="search"].resize-medium,
+  input[type="tel"].resize-medium, input[type="text"].resize-medium, input[type="url"].resize-medium,
+  select.resize-medium, textarea.resize-medium {
     font-size: 2.2rem; }
-  input[type="email"][class~="resize-large"], input[type="number"][class~="resize-large"],
-  input[type="password"][class~="resize-large"], input[type="search"][class~="resize-large"],
-  input[type="tel"][class~="resize-large"], input[type="text"][class~="resize-large"], input[type="url"][class~="resize-large"],
-  select[class~="resize-large"], textarea[class~="resize-large"] {
+  input[type="email"].resize-large, input[type="number"].resize-large,
+  input[type="password"].resize-large, input[type="search"].resize-large,
+  input[type="tel"].resize-large, input[type="text"].resize-large, input[type="url"].resize-large,
+  select.resize-large, textarea.resize-large {
     font-size: 2.8rem; }
 
 /* ==================================== */
@@ -70,16 +70,16 @@ div.select {
     appearance: none;
     background-color: white;
     height: 3.2rem; }
-    div.select select:not([multiple])[class~="resize-small"] {
+    div.select select:not([multiple]).resize-small {
       height: 2.45rem; }
-    div.select select:not([multiple])[class~="resize-medium"] {
+    div.select select:not([multiple]).resize-medium {
       height: 4.425rem; }
-    div.select select:not([multiple])[class~="resize-large"] {
+    div.select select:not([multiple]).resize-large {
       height: 5.65rem; }
   div.select:not(:hover):not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, #bebebe 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, #bebebe 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, #bebebe 50%);
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
+    background-image: -moz-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
+    background-image: -o-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
     -webkit-transform: rotate(135deg) translate(-50%, 50%);
     -moz-transform: rotate(135deg) translate(-50%, 50%);
     -o-transform: rotate(135deg) translate(-50%, 50%);
@@ -94,9 +94,9 @@ div.select {
     right: 1.6rem;
     pointer-events: none; }
   div.select:hover:not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, #969696 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, #969696 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, #969696 50%);
+    background-image: -webkit-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
+    background-image: -moz-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
+    background-image: -o-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
     -webkit-transform: rotate(135deg) translate(-50%, 50%);
     -moz-transform: rotate(135deg) translate(-50%, 50%);
     -o-transform: rotate(135deg) translate(-50%, 50%);
@@ -113,11 +113,11 @@ div.select {
   div.select select[multiple] {
     background-color: white;
     height: 9.2rem; }
-    div.select select[multiple][class~="resize-small"] {
+    div.select select[multiple].resize-small {
       height: 7rem; }
-    div.select select[multiple][class~="resize-medium"] {
+    div.select select[multiple].resize-medium {
       height: 13rem; }
-    div.select select[multiple][class~="resize-large"] {
+    div.select select[multiple].resize-large {
       height: 16.6rem; }
 
 /* ==================================== */
@@ -126,6 +126,8 @@ textarea {
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
+  textarea.fixed-size {
+    resize: none; }
 
 /* ==================================== */
 label.checkbox, label.radio {
@@ -140,6 +142,7 @@ label.checkbox, label.radio {
 /* ====================================================== */
 form div.field {
   font-size: 1rem;
+  font-family: sans-serif;
   padding: 0.6em;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
@@ -168,46 +171,46 @@ form div.field {
       form div.field.container-field-horizontal > div[class*="default-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="default-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="small-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="small-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="medium-"].field-body label.radio, form div.field.container-field-horizontal > div[class*="large-"].field-body label.checkbox, form div.field.container-field-horizontal > div[class*="large-"].field-body label.radio {
         position: relative;
         top: 0.3rem; }
-  form div.field[class~="theme-primary"] input:not([type="checkbox"]):not([type="radio"]),
-  form div.field[class~="theme-primary"] select, form div.field[class~="theme-primary"] textarea {
+  form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]),
+  form div.field.theme-primary select, form div.field.theme-primary textarea {
     border-color: #3e9def; }
-    form div.field[class~="theme-primary"] input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field[class~="theme-primary"] select:focus, form div.field[class~="theme-primary"] textarea:focus {
-      box-shadow: 0em 0em 0em 0.1875em #c0e3f9; }
-  form div.field[class~="theme-primary"] .help {
+    form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
+    form div.field.theme-primary select:focus, form div.field.theme-primary textarea:focus {
+      box-shadow: 0em 0em 0em 0.2rem rgba(104, 182, 249, 0.5); }
+  form div.field.theme-primary .help {
     color: #3e9def; }
-  form div.field[class~="theme-primary"] label.checkbox, form div.field[class~="theme-primary"] label.radio {
+  form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
-  form div.field[class~="theme-info"] input:not([type="checkbox"]):not([type="radio"]),
-  form div.field[class~="theme-info"] select, form div.field[class~="theme-info"] textarea {
-    border-color: #53e258; }
-    form div.field[class~="theme-info"] input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field[class~="theme-info"] select:focus, form div.field[class~="theme-info"] textarea:focus {
-      box-shadow: 0em 0em 0em 0.1875em #b5f7af; }
-  form div.field[class~="theme-info"] .help {
-    color: #53e258; }
-  form div.field[class~="theme-info"] label.checkbox, form div.field[class~="theme-info"] label.radio {
-    color: #53e258; }
-  form div.field[class~="theme-caution"] input:not([type="checkbox"]):not([type="radio"]),
-  form div.field[class~="theme-caution"] select, form div.field[class~="theme-caution"] textarea {
-    border-color: #f9f261; }
-    form div.field[class~="theme-caution"] input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field[class~="theme-caution"] select:focus, form div.field[class~="theme-caution"] textarea:focus {
-      box-shadow: 0em 0em 0em 0.1875em #fcf6c9; }
-  form div.field[class~="theme-caution"] .help {
-    color: #918f2d; }
-  form div.field[class~="theme-caution"] label.checkbox, form div.field[class~="theme-caution"] label.radio {
-    color: #f9f261; }
-  form div.field[class~="theme-danger"] input:not([type="checkbox"]):not([type="radio"]),
-  form div.field[class~="theme-danger"] select, form div.field[class~="theme-danger"] textarea {
-    border-color: #ef3232; }
-    form div.field[class~="theme-danger"] input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field[class~="theme-danger"] select:focus, form div.field[class~="theme-danger"] textarea:focus {
-      box-shadow: 0em 0em 0em 0.1875em #f99595; }
-  form div.field[class~="theme-danger"] .help {
-    color: #b2250c; }
-  form div.field[class~="theme-danger"] label.checkbox, form div.field[class~="theme-danger"] label.radio {
-    color: #ef3232; }
+  form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
+  form div.field.theme-info select, form div.field.theme-info textarea {
+    border-color: #54c43a; }
+    form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
+    form div.field.theme-info select:focus, form div.field.theme-info textarea:focus {
+      box-shadow: 0em 0em 0em 0.2rem rgba(119, 216, 97, 0.5); }
+  form div.field.theme-info .help {
+    color: #54c43a; }
+  form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
+    color: #54c43a; }
+  form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
+  form div.field.theme-caution select, form div.field.theme-caution textarea {
+    border-color: #e8e819; }
+    form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus,
+    form div.field.theme-caution select:focus, form div.field.theme-caution textarea:focus {
+      box-shadow: 0em 0em 0em 0.2rem rgba(232, 232, 25, 0.5); }
+  form div.field.theme-caution .help {
+    color: #96961e; }
+  form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
+    color: #e8e819; }
+  form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]),
+  form div.field.theme-danger select, form div.field.theme-danger textarea {
+    border-color: #e53c27; }
+    form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus,
+    form div.field.theme-danger select:focus, form div.field.theme-danger textarea:focus {
+      box-shadow: 0em 0em 0em 0.2rem rgba(242, 100, 82, 0.5); }
+  form div.field.theme-danger .help {
+    color: #c62c17; }
+  form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
+    color: #e53c27; }
 
 /* ====================================================== */
 div.container-controls::after {

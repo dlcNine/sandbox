@@ -1,10 +1,13 @@
 /*
 scale ratio : 1.33333
 */
-.t {
+.t, .tc {
   font-family: sans-serif;
-  color: #2e2e33;
+  color: inherit;
   line-height: 1.5; }
+
+.tc {
+  color: #4c4c4c; }
 
 .huge-1 {
   font-size: 5.1rem; }
@@ -63,24 +66,27 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   color: #154191; }
 .a:visited {
   color: #6747ad; }
+.a:focus {
+  outline: none;
+  text-decoration: underline; }
 
 /* ====================================================== */
-ul.ul[class~="square"] {
+ul.ul.square {
   list-style: square inside; }
-ul.ul[class~="circle-solid"] {
+ul.ul.circle-solid {
   list-style: disc inside; }
-ul.ul[class~="circle-hollow"] {
+ul.ul.circle-hollow {
   list-style: circle inside; }
 
-ol.ol[class~="numbers"] {
+ol.ol.numbers {
   list-style: decimal inside; }
-ol.ol[class~="alpha-lower"] {
+ol.ol.alpha-lower {
   list-style: lower-alpha inside; }
-ol.ol[class~="alpha-upper"] {
+ol.ol.alpha-upper {
   list-style: upper-alpha inside; }
-ol.ol[class~="roman-lower"] {
+ol.ol.roman-lower {
   list-style: lower-roman inside; }
-ol.ol[class~="roman-upper"] {
+ol.ol.roman-upper {
   list-style: upper-roman inside; }
 
 ul.ul li.sublist, ol.ol li.sublist {
