@@ -162,7 +162,7 @@ div.tabs {
       border-bottom: 0.1em solid $dark-gray;
     }
 
-    &[class~="active"] {
+    &.active {
       padding-bottom: 0.7em;
       color: $medium-blue;
       background-color: $white-gray;
@@ -194,9 +194,9 @@ ul.menu {
       background-color: $white;
     }
 
-    &.menu-header[class~="alternate"], 
-    &.menu-item[class~="alternate"], 
-    &.menu-footer[class~="alternate"] {
+    &.menu-header.alternate, 
+    &.menu-item.alternate, 
+    &.menu-footer.alternate {
       background-color: $light-white;
     }
   
@@ -223,15 +223,15 @@ span.icon {
   height: auto;
   width: 2rem;
 
-  &[class~="size-large"] {
+  &.size-large {
     width: 2.6rem;
   }
 
-  &[class~="size-doubled"] {
+  &.size-doubled {
     width: 3.8rem;
   }
 
-  &[class~="size-tripled"] {
+  &.size-tripled {
     width: 5.8rem;
   }
 }
@@ -289,7 +289,7 @@ button.close {
     @include rotate-translate-2d(135deg, -50%, -50%);
   }
 
-  &[class~="alternate"] {
+  &.alternate {
     background-color: $light-black;
 
     &::before, &::after {
@@ -314,7 +314,7 @@ button.close {
     }
   }
 
-  &[class~="resize-small"] {
+  &.resize-small {
     height: 1.2em;
     width: 1.2em;
 
@@ -323,7 +323,7 @@ button.close {
     }
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     height: 2em;
     width: 2em;
 
@@ -332,7 +332,7 @@ button.close {
     }
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     height: 2.4em;
     width: 2.4em;
 
@@ -420,20 +420,15 @@ div.stamp-duo {
 
     }
   }
+
+  &.resize-large {
+    font-size: 2.1rem;
+
+    span.stamp.relative {
+      min-height: 2.9rem;
+    }
+  }
 }
-
-// div.stamps {
-//   &::after {
-//     content: '';
-//     clear: both;
-//     display: table;
-//   }
-
-//   & > span.stamp, & > div.stamp-duo {
-//     float: left;
-//     margin: 0.4rem;
-//   }
-// }
 
 /* ====================================================== */
 
@@ -445,7 +440,7 @@ figure[class*="image-"] {
   }
 }
 
-figure[class~="image-16x"] {
+figure.image-16x {
   width: 16px;
   height: 16px;
 
@@ -453,13 +448,13 @@ figure[class~="image-16x"] {
     width: 16px;
     height: 16px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.3rem;
     }
   }
 }
 
-figure[class~="image-32x"] {
+figure.image-32x {
   width: 32px;
   height: 32px;
 
@@ -467,14 +462,14 @@ figure[class~="image-32x"] {
     width: 32px;
     height: 32px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.4rem;
     }
 
   }
 }
 
-figure[class~="image-64x"] {
+figure.image-64x {
   width: 64px;
   height: 64px;
 
@@ -482,13 +477,13 @@ figure[class~="image-64x"] {
     width: 64px;
     height: 64px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.6rem;
     }
   }
 }
 
-figure[class~="image-128x"] {
+figure.image-128x {
   width: 128px;
   height: 128px;
 
@@ -496,13 +491,13 @@ figure[class~="image-128x"] {
     width: 128px; 
     height: 128px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 0.8rem;
     }
   }
 }
 
-figure[class~="image-256x"] {
+figure.image-256x {
   width: 256px;
   height: 256px;
 
@@ -510,7 +505,7 @@ figure[class~="image-256x"] {
     width: 256px;
     height: 256px;
 
-    &[class~="rounded"] {
+    &.rounded {
       border-radius: 1rem;
     }
   }
@@ -560,33 +555,33 @@ div.progress-bar {
     background-color: $dark-gray;
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     font-size: 1.4rem;
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     font-size: 2rem;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     div.progress {
       background-color: $medium-blue;
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     div.progress {
       background-color: $medium-green;
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     div.progress {
       background-color: $medium-yellow;
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     div.progress {
       background-color: $medium-red;
     }

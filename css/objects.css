@@ -105,7 +105,7 @@ div.tabs {
       color: #939393;
       background-color: #f9f9f9;
       border-bottom: 0.1em solid #939393; }
-    div.tabs li[class~="active"] {
+    div.tabs li.active {
       padding-bottom: 0.7em;
       color: #3e9def;
       background-color: #f9f9f9;
@@ -127,7 +127,7 @@ ul.menu {
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
       background-color: white; }
-    ul.menu li.menu-header[class~="alternate"], ul.menu li.menu-item[class~="alternate"], ul.menu li.menu-footer[class~="alternate"] {
+    ul.menu li.menu-header.alternate, ul.menu li.menu-item.alternate, ul.menu li.menu-footer.alternate {
       background-color: whitesmoke; }
     ul.menu li.menu-header {
       border-radius: 0.3em 0.3em 0em 0em;
@@ -142,11 +142,11 @@ span.icon {
   display: inline-block;
   height: auto;
   width: 2rem; }
-  span.icon[class~="size-large"] {
+  span.icon.size-large {
     width: 2.6rem; }
-  span.icon[class~="size-doubled"] {
+  span.icon.size-doubled {
     width: 3.8rem; }
-  span.icon[class~="size-tripled"] {
+  span.icon.size-tripled {
     width: 5.8rem; }
 
 /* ====================================================== */
@@ -196,33 +196,33 @@ button.close {
     -o-transform: rotate(135deg) translate(-50%, -50%);
     -ms-transform: rotate(135deg) translate(-50%, -50%);
     transform: rotate(135deg) translate(-50%, -50%); }
-  button.close[class~="alternate"] {
+  button.close.alternate {
     background-color: #636363; }
-    button.close[class~="alternate"]::before, button.close[class~="alternate"]::after {
+    button.close.alternate::before, button.close.alternate::after {
       background-color: #bfbfbf;
       border-color: #bfbfbf; }
-    button.close[class~="alternate"]:hover {
+    button.close.alternate:hover {
       background-color: #4c4c4c; }
-      button.close[class~="alternate"]:hover::before, button.close[class~="alternate"]:hover::after {
+      button.close.alternate:hover::before, button.close.alternate:hover::after {
         background-color: #e6e6e6;
         border-color: #e6e6e6; }
-    button.close[class~="alternate"]:active::before, button.close[class~="alternate"]:active::after {
+    button.close.alternate:active::before, button.close.alternate:active::after {
       background-color: white;
       border-color: white; }
-  button.close[class~="resize-small"] {
+  button.close.resize-small {
     height: 1.2em;
     width: 1.2em; }
-    button.close[class~="resize-small"]::before, button.close[class~="resize-small"]::after {
+    button.close.resize-small::before, button.close.resize-small::after {
       height: 0.6em; }
-  button.close[class~="resize-medium"] {
+  button.close.resize-medium {
     height: 2em;
     width: 2em; }
-    button.close[class~="resize-medium"]::before, button.close[class~="resize-medium"]::after {
+    button.close.resize-medium::before, button.close.resize-medium::after {
       height: 1.2em; }
-  button.close[class~="resize-large"] {
+  button.close.resize-large {
     height: 2.4em;
     width: 2.4em; }
-    button.close[class~="resize-large"]::before, button.close[class~="resize-large"]::after {
+    button.close.resize-large::before, button.close.resize-large::after {
       border-width: 0.2em;
       height: 1.4em; }
 
@@ -275,6 +275,10 @@ div.stamp-duo {
       padding: 0;
       min-height: 2.2rem;
       min-width: 3rem; }
+  div.stamp-duo.resize-large {
+    font-size: 2.1rem; }
+    div.stamp-duo.resize-large span.stamp.relative {
+      min-height: 2.9rem; }
 
 /* ====================================================== */
 figure[class*="image-"] {
@@ -282,49 +286,49 @@ figure[class*="image-"] {
   figure[class*="image-"] img {
     object-fit: cover; }
 
-figure[class~="image-16x"] {
+figure.image-16x {
   width: 16px;
   height: 16px; }
-  figure[class~="image-16x"] img {
+  figure.image-16x img {
     width: 16px;
     height: 16px; }
-    figure[class~="image-16x"] img[class~="rounded"] {
+    figure.image-16x img.rounded {
       border-radius: 0.3rem; }
 
-figure[class~="image-32x"] {
+figure.image-32x {
   width: 32px;
   height: 32px; }
-  figure[class~="image-32x"] img {
+  figure.image-32x img {
     width: 32px;
     height: 32px; }
-    figure[class~="image-32x"] img[class~="rounded"] {
+    figure.image-32x img.rounded {
       border-radius: 0.4rem; }
 
-figure[class~="image-64x"] {
+figure.image-64x {
   width: 64px;
   height: 64px; }
-  figure[class~="image-64x"] img {
+  figure.image-64x img {
     width: 64px;
     height: 64px; }
-    figure[class~="image-64x"] img[class~="rounded"] {
+    figure.image-64x img.rounded {
       border-radius: 0.6rem; }
 
-figure[class~="image-128x"] {
+figure.image-128x {
   width: 128px;
   height: 128px; }
-  figure[class~="image-128x"] img {
+  figure.image-128x img {
     width: 128px;
     height: 128px; }
-    figure[class~="image-128x"] img[class~="rounded"] {
+    figure.image-128x img.rounded {
       border-radius: 0.8rem; }
 
-figure[class~="image-256x"] {
+figure.image-256x {
   width: 256px;
   height: 256px; }
-  figure[class~="image-256x"] img {
+  figure.image-256x img {
     width: 256px;
     height: 256px; }
-    figure[class~="image-256x"] img[class~="rounded"] {
+    figure.image-256x img.rounded {
       border-radius: 1rem; }
 
 img {
@@ -356,17 +360,17 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: #939393; }
-  div.progress-bar[class~="resize-medium"] {
+  div.progress-bar.resize-medium {
     font-size: 1.4rem; }
-  div.progress-bar[class~="resize-large"] {
+  div.progress-bar.resize-large {
     font-size: 2rem; }
-  div.progress-bar[class~="theme-primary"] div.progress {
+  div.progress-bar.theme-primary div.progress {
     background-color: #3e9def; }
-  div.progress-bar[class~="theme-info"] div.progress {
+  div.progress-bar.theme-info div.progress {
     background-color: #54c43a; }
-  div.progress-bar[class~="theme-caution"] div.progress {
+  div.progress-bar.theme-caution div.progress {
     background-color: #f2f230; }
-  div.progress-bar[class~="theme-danger"] div.progress {
+  div.progress-bar.theme-danger div.progress {
     background-color: #ed432d; }
 
 /* ====================================================== */

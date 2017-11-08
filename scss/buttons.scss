@@ -27,19 +27,19 @@ input[type="submit"], input[type="reset"] {
     outline: none;
   }
 
-  &[class~="resize-small"] {
+  &.resize-small {
     font-size: 1.2rem;
   }
 
-  &[class~="resize-medium"] {
+  &.resize-medium {
     font-size: 2.2rem;
   }
 
-  &[class~="resize-large"] {
+  &.resize-large {
     font-size: 2.8rem;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     color: $white-blue;
     border-color: $medium-blue;
     background-color: $medium-blue;
@@ -58,7 +58,7 @@ input[type="submit"], input[type="reset"] {
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     color: $white-green;
     border-color: $medium-green;
     background-color: $medium-green;
@@ -77,7 +77,7 @@ input[type="submit"], input[type="reset"] {
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     color: $dark-yellow;
     background-color: $medium-yellow;
     border-color: $medium-yellow;
@@ -97,7 +97,7 @@ input[type="submit"], input[type="reset"] {
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     color: $white-red;
     border-color: $medium-red;
     background-color: $medium-red;
@@ -129,7 +129,7 @@ a.button {
   }
 }
 
-.button[class~="wide"] {
+.button.wide {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -138,7 +138,7 @@ a.button {
 
 /* ====================================================== */
 
-.button[class~="outlined"] {
+.button.outlined {
   background-color: transparent;
   border-color: $light-gray;
 
@@ -151,7 +151,7 @@ a.button {
     color: $dark-gray;
   }
 
-  &[class~="theme-primary"] {
+  &.theme-primary {
     color: $medium-blue;
     border-color: $medium-blue;
 
@@ -165,7 +165,7 @@ a.button {
     }
   }
 
-  &[class~="theme-info"] {
+  &.theme-info {
     color: $medium-green;
     border-color: $medium-green;
 
@@ -179,7 +179,7 @@ a.button {
     }
   }
 
-  &[class~="theme-caution"] {
+  &.theme-caution {
     color: $dark-yellow;
     border-color: $medium-yellow;
 
@@ -192,7 +192,7 @@ a.button {
     }
   }
 
-  &[class~="theme-danger"] {
+  &.theme-danger {
     color: $medium-red;
     border-color: $medium-red;
 

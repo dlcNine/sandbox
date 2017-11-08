@@ -68,22 +68,22 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   color: #6747ad; }
 
 /* ====================================================== */
-ul.ul[class~="square"] {
+ul.ul.square {
   list-style: square inside; }
-ul.ul[class~="circle-solid"] {
+ul.ul.circle-solid {
   list-style: disc inside; }
-ul.ul[class~="circle-hollow"] {
+ul.ul.circle-hollow {
   list-style: circle inside; }
 
-ol.ol[class~="numbers"] {
+ol.ol.numbers {
   list-style: decimal inside; }
-ol.ol[class~="alpha-lower"] {
+ol.ol.alpha-lower {
   list-style: lower-alpha inside; }
-ol.ol[class~="alpha-upper"] {
+ol.ol.alpha-upper {
   list-style: upper-alpha inside; }
-ol.ol[class~="roman-lower"] {
+ol.ol.roman-lower {
   list-style: lower-roman inside; }
-ol.ol[class~="roman-upper"] {
+ol.ol.roman-upper {
   list-style: upper-roman inside; }
 
 ul.ul li.sublist, ol.ol li.sublist {
