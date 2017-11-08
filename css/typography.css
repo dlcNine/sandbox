@@ -66,6 +66,9 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   color: #154191; }
 .a:visited {
   color: #6747ad; }
+.a:focus {
+  outline: none;
+  text-decoration: underline; }
 
 /* ====================================================== */
 ul.ul.square {
