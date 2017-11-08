@@ -17,7 +17,7 @@ div.modal-backdrop {
 .box {
   font-size: 1rem;
   padding: 1.6em;
-  border: 0.1em solid #bebebe;
+  border: 0.1em solid #efefef;
   border-radius: 0.4em;
   background-color: white;
   box-shadow: 0em 0.05em 0.04em 0em #e6e6e6; }
@@ -25,54 +25,54 @@ div.modal-backdrop {
 /* ====================================================== */
 div.message {
   font-size: 1rem;
-  border: 0.1em solid #646464;
+  border: 0.1em solid #c6c6c6;
   border-radius: 0.3em;
   background-color: whitesmoke;
   margin: 0.6em 0em; }
   div.message div.message-header {
     padding: 0.8em;
     color: white;
-    background-color: #646464; }
+    background-color: #c6c6c6; }
   div.message div.message-body {
     padding: 0.8em 0.8em 0.8em 1.2em;
-    color: #646464; }
+    color: #c6c6c6; }
   div.message[class~="theme-primary"] {
     border-color: #3e9def;
-    background-color: #f4f9fc; }
+    background-color: #f4faff; }
     div.message[class~="theme-primary"] .message-header {
-      color: #f4f9fc;
+      color: #f4faff;
       background-color: #3e9def; }
     div.message[class~="theme-primary"] .message-body {
-      color: #0c62b2; }
+      color: #287ec9; }
   div.message[class~="theme-info"] {
-    border-color: #53e258;
-    background-color: #f5fcf4; }
+    border-color: #54c43a;
+    background-color: #f6fff4; }
     div.message[class~="theme-info"] .message-header {
-      color: #f5fcf4;
-      background-color: #53e258; }
+      color: #f6fff4;
+      background-color: #54c43a; }
     div.message[class~="theme-info"] .message-body {
-      color: #1d9b41; }
+      color: #3f962a; }
   div.message[class~="theme-caution"] {
-    border-color: #f9f261;
-    background-color: #fcfbf2; }
+    border-color: #f2f230;
+    background-color: #fcfcef; }
     div.message[class~="theme-caution"] .message-header {
-      color: #918f2d;
-      background-color: #f9f261; }
+      color: #96961e;
+      background-color: #f2f230; }
     div.message[class~="theme-caution"] .message-body {
-      color: #918f2d; }
+      color: #96961e; }
   div.message[class~="theme-danger"] {
-    border-color: #ef3232;
+    border-color: #ef4e39;
     background-color: #fff8f7; }
     div.message[class~="theme-danger"] .message-header {
       color: #fff8f7;
-      background-color: #ef3232; }
+      background-color: #ef4e39; }
     div.message[class~="theme-danger"] .message-body {
-      color: #b2250c; }
+      color: #ba311f; }
 
 /* ====================================================== */
 div.tabs {
   font-size: 1rem;
-  border-bottom: 0.1em solid #bebebe; }
+  border-bottom: 0.1em solid #efefef; }
   div.tabs::after {
     content: '';
     clear: both;
@@ -83,12 +83,12 @@ div.tabs {
     padding: 0.8em 1.2em;
     margin: 0em -0.1em -0.1em 0em;
     border-radius: 0.3em 0.3em 0em 0em;
-    color: #bebebe; }
+    color: #efefef; }
     div.tabs li:hover {
       padding-bottom: 0.7em;
-      color: #646464;
+      color: #c6c6c6;
       background-color: whitesmoke;
-      border-bottom: 0.1em solid #646464; }
+      border-bottom: 0.1em solid #c6c6c6; }
     div.tabs li[class~="active"] {
       padding-bottom: 0.7em;
       color: #3e9def;
@@ -149,7 +149,7 @@ button.close {
       border-color: #444447; }
   button.close:focus:not(:active) {
     outline: none;
-    box-shadow: 0em 0em 0em 0.2rem #c0e3f9; }
+    box-shadow: 0em 0em 0em 0.2rem #68b6f9; }
   button.close:active {
     outline: none;
     background-color: whitesmoke; }
@@ -227,11 +227,11 @@ span.stamp {
   span.stamp[class~="theme-primary"] {
     background-color: #3e9def; }
   span.stamp[class~="theme-info"] {
-    background-color: #53e258; }
+    background-color: #54c43a; }
   span.stamp[class~="theme-caution"] {
-    background-color: #f9f261; }
+    background-color: #f2f230; }
   span.stamp[class~="theme-danger"] {
-    background-color: #ef3232; }
+    background-color: #ef4e39; }
 
 div.stamp-duo {
   font-size: 1.2rem;
@@ -263,7 +263,7 @@ div.stamps > span.stamp, div.stamps > div.stamp-duo {
 
 /* ====================================================== */
 figure[class*="image-"] {
-  background-color: #969696; }
+  background-color: gainsboro; }
   figure[class*="image-"] img {
     object-fit: cover; }
 
@@ -313,7 +313,7 @@ figure[class~="image-256x"] {
       border-radius: 1rem; }
 
 img {
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #bebebe; }
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #efefef; }
   img.circular {
     border-radius: 50%; }
   img.rounded {
@@ -340,7 +340,7 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     border-radius: inherit;
-    background-color: #646464; }
+    background-color: #c6c6c6; }
   div.progress-bar[class~="resize-medium"] {
     font-size: 1.4rem; }
   div.progress-bar[class~="resize-large"] {
@@ -348,11 +348,11 @@ div.progress-bar {
   div.progress-bar[class~="theme-primary"] div.progress {
     background-color: #3e9def; }
   div.progress-bar[class~="theme-info"] div.progress {
-    background-color: #53e258; }
+    background-color: #54c43a; }
   div.progress-bar[class~="theme-caution"] div.progress {
-    background-color: #f9f261; }
+    background-color: #f2f230; }
   div.progress-bar[class~="theme-danger"] div.progress {
-    background-color: #ef3232; }
+    background-color: #ef4e39; }
 
 /* ====================================================== */
 ul.text-menu li {
