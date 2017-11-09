@@ -7,7 +7,7 @@ scale ratio : 1.33333
   line-height: 1.5; }
 
 .tc {
-  color: #4c4c4c; }
+  color: #383838; }
 
 .huge-1 {
   font-size: 5.1rem; }
@@ -66,6 +66,8 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   color: #154191; }
 .a:visited {
   color: #6747ad; }
+  .a:visited:hover {
+    color: #432782; }
 .a:focus {
   outline: none;
   text-decoration: underline; }
