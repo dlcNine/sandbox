@@ -386,7 +386,7 @@ span.stamp {
   }
 }
 
-div.stamp-duo {
+div.stamp-bar {
   font-size: 1.4rem;
   display: inline-block;
   margin: 0.6rem 0.4rem;
@@ -413,19 +413,28 @@ div.stamp-duo {
       border-bottom-left-radius: 0;
     }
 
-    &.relative {
-      padding: 0;
-      min-height: 2.2rem;
-      min-width: 3rem;
+    &:only-child {
+      border-radius: 0.1875em;
+    }
 
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &.close {
+      position: relative;
+      padding: 0;
+      height: 2.2rem;
+      width: 3rem;
     }
   }
 
   &.resize-large {
     font-size: 2.1rem;
 
-    span.stamp.relative {
-      min-height: 2.9rem;
+    span.stamp.close {
+      height: 2.9rem;
+      width: 3.2rem;
     }
   }
 }
@@ -540,11 +549,10 @@ img {
 /* ====================================================== */
 
 div.progress-bar {
-  font-size: 1rem;
-  height: 1.2em;
+  height: 1.2rem;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 0.6em;
+  border-radius: 1rem;
   margin: 1rem 0rem;
 
   div.progress {
@@ -556,12 +564,16 @@ div.progress-bar {
     background-color: $dark-gray;
   }
 
+  &.resize-small {
+    height: 0.6rem;
+  }
+
   &.resize-medium {
-    font-size: 1.4rem;
+    height: 1.6rem;
   }
 
   &.resize-large {
-    font-size: 2rem;
+    height: 2rem;
   }
 
   &.theme-primary {
@@ -610,28 +622,43 @@ div.progress-bar {
 
 /* ====================================================== */
 
-ul.text-menu {
+ul.text-list {
   li {
     line-height: 1;
-    padding: 0.6rem 0rem 0.6rem 1.4rem;
-    border-radius: 0.2rem;
-  }
+    padding: 0.3rem 0rem 0.3rem 1.4rem;
 
-  li.menu-submenu {
-    padding-bottom: 0;
-  }
+    a:link {
+      text-decoration: none;
+    }
 
-  li.menu-submenu ul.text-menu {
-    padding-top: 0.6rem;
+    &.list-label, &.list-label a {
+      font-weight: bold;
+      color: $black;
+    }
 
-    li.menu-item, li.menu-submenu {
-      border-left: 0.1rem solid $dark-white;
-      border-top-left-radius: 0rem;
-      border-bottom-left-radius: 0rem;
+    &.list-item a {
+      color: $white-black;
+
+      &:hover {
+        color: $black;
+      }
     }
   }
 
 }
+  // li.menu-submenu {
+  //   padding-bottom: 0;
+  // }
+
+  // li.menu-submenu ul.text-menu {
+  //   padding-top: 0.6rem;
+
+  //   li.menu-item, li.menu-submenu {
+  //     border-left: 0.1rem solid $dark-white;
+  //     border-top-left-radius: 0rem;
+  //     border-bottom-left-radius: 0rem;
+  //   }
+  // }
 
 /* ====================================================== */
 
