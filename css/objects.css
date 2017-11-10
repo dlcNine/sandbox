@@ -35,7 +35,7 @@ div.message {
     background-color: #939393; }
   div.message div.message-body {
     padding: 1em 1em 1em 1.8em;
-    color: #939393; }
+    color: #636363; }
   div.message.theme-primary {
     border-color: #3e9def;
     background-color: #f4faff; }
@@ -56,10 +56,10 @@ div.message {
     border-color: #e8e819;
     background-color: #fcfcef; }
     div.message.theme-caution .message-header {
-      color: #96961e;
+      color: #82820a;
       background-color: #e8e819; }
     div.message.theme-caution .message-body {
-      color: #96961e; }
+      color: #82820a; }
   div.message.theme-danger {
     border-color: #e53c27;
     background-color: #fff8f7; }
@@ -243,7 +243,7 @@ span.stamp {
     background-color: #54c43a; }
   span.stamp.theme-caution {
     background-color: #e8e819;
-    color: #96961e; }
+    color: #82820a; }
   span.stamp.theme-danger {
     background-color: #e53c27; }
   span.stamp.theme-light {
@@ -380,7 +380,7 @@ div.progress-bar {
     color: #f6fff4; }
   div.progress-bar.theme-caution div.progress {
     background-color: #e8e819;
-    color: #96961e; }
+    color: #82820a; }
   div.progress-bar.theme-danger div.progress {
     background-color: #e53c27;
     color: #fff8f7; }
