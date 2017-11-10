@@ -59,16 +59,16 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   bottom: 0.4rem; }
 
 /* ====================================================== */
-.a:link {
+a.a:link {
   color: #216bce;
   text-decoration: none; }
-.a:hover:not(:visited) {
+a.a:hover:not(:visited) {
   color: #154191; }
-.a:visited {
+a.a:visited {
   color: #6747ad; }
-  .a:visited:hover {
+  a.a:visited:hover {
     color: #432782; }
-.a:focus {
+a.a:focus {
   outline: none;
   text-decoration: underline; }
 
@@ -91,9 +91,8 @@ ol.ol.roman-lower {
 ol.ol.roman-upper {
   list-style: upper-roman inside; }
 
-ul.ul li.sublist, ol.ol li.sublist {
-  list-style-type: none; }
-  ul.ul li.sublist ul.ul, ul.ul li.sublist ol.ol, ol.ol li.sublist ul.ul, ol.ol li.sublist ol.ol {
-    margin-left: 1.5rem; }
+ul.ul ul.sublist, ul.ul ol.sublist,
+ol.ol ol.sublist, ol.ol ul.sublist {
+  margin-left: 1.5rem; }
 
 /*# sourceMappingURL=typography.css.map */

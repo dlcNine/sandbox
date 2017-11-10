@@ -10,7 +10,8 @@ $light-blue: rgb(84, 171, 247);
 $medium-blue: rgb(62, 157, 239);
 $dark-blue: rgb(40, 126, 201);
 
-$light-blue-form-focus: rgba(104, 182, 249, 0.5);
+$light-blue-opacity-5: rgba(104, 182, 249, 0.5);
+$medium-blue-opacity-8: rgba(62, 157, 239, 0.8);
 
 // theme-info
 $white-green: rgb(246, 255, 244);
@@ -18,15 +19,15 @@ $light-green: rgb(98, 214, 72);
 $medium-green: rgb(84, 196, 58);
 $dark-green: rgb(63, 150, 42);
 
-$light-green-form-focus: rgba(119, 216, 97, 0.5);
+$light-green-opacity-5: rgba(119, 216, 97, 0.5);
 
 // theme-caution
 $white-yellow: rgb(252, 252, 239);
 $light-yellow: rgb(244, 244, 73);
 $medium-yellow: rgb(232, 232, 25);
-$dark-yellow: rgb(150, 150, 30);
+$dark-yellow: rgb(130, 130, 10);
 
-$medium-yellow-form-focus: rgba(232, 232, 25, 0.5);
+$medium-yellow-opacity-5: rgba(232, 232, 25, 0.5);
 
 // theme-danger
 $white-red: rgb(255, 248, 247);
@@ -34,7 +35,7 @@ $light-red: rgb(242, 85, 65);
 $medium-red: rgb(229, 60, 39);
 $dark-red: rgb(198, 44, 23);
 
-$light-red-form-focus: rgba(242, 100, 82, 0.5);
+$light-red-opacity-5: rgba(242, 100, 82, 0.5);
 
 // whites 
 $white: rgb(255, 255, 255);
@@ -42,21 +43,16 @@ $light-white: rgb(245, 245, 245);
 $medium-white: rgb(230, 230, 230);
 $dark-white: rgb(215, 215, 215);
 
+$medium-white-opacity-9: rgba(245, 245, 245, 0.9);
+
 // blacks
 $white-black: rgb(122, 122, 122);
 $light-black: rgb(99, 99, 99);
 $medium-black: rgb(76, 76, 76);
 $black: rgb(56, 56, 56);
 
-// opacity changed
-$white-black-opacity-3: rgba(84, 84, 86, 0.3);
-$white-black-opacity-6: rgba(84, 84, 86, 0.6);
-$white-black-opacity-8: rgba(84, 84, 86, 0.8);
 $black-opacity-8: rgba(30, 30, 33, 0.8);
-
-$dark-white-opacity-3: rgba(215, 215, 215, 0.3);
-$dark-white-opacity-6: rgba(215, 215, 215, 0.6);
-$dark-white-opacity-8: rgba(215, 215, 215, 0.8);
+$light-black-opacity-6: rgba(99, 99, 99, 0.6);
 
 // links
 $link-unvisited: rgb(33, 107, 206);

@@ -47,7 +47,7 @@ div.message {
 
   div.message-body {
     padding: 1em 1em 1em 1.8em;
-    color: $dark-gray;
+    color: $light-black;
   }
 
   &.theme-primary {
@@ -137,10 +137,7 @@ div.message {
 
 /* ====================================================== */
 
-div.tabs {
-  font-size: 1rem;
-  border-bottom: 0.1em solid $light-gray;
-
+ul.tabs {
   &::after {
     content: '';
     clear: both;
@@ -150,24 +147,46 @@ div.tabs {
   li {
     font-size: 1em;
     float: left;
-    padding: 0.8em 1.2em;
-    margin: 0em -0.1em -0.1em 0em;
-    border-radius: 0.3em 0.3em 0em 0em;
-    color: $light-gray;
+    padding: 0.3em 1em;
+    border-radius: 0.2em 0.2em 0em 0em;
+    color: $dark-gray;
+    border-bottom: 0.2rem solid $medium-gray;
 
     &:hover {
-      padding-bottom: 0.7em;
-      color: $dark-gray;
-      background-color: $white-gray;
-      border-bottom: 0.1em solid $dark-gray;
+      cursor: pointer;
+      color: $light-black;
+      background-color: $medium-white-opacity-9;
+      border-color: $white-black;
     }
 
     &.active {
-      padding-bottom: 0.7em;
       color: $medium-blue;
-      background-color: $white-gray;
-      border-bottom: 0.1em solid $medium-blue;
+      background-color: $medium-white-opacity-9;
+      border-color: $medium-blue;
       font-weight: bold;
+    }
+  }
+
+  &.theme-light {
+    li:not(.active) {
+      color: $medium-gray;
+
+      &:hover {
+        color: $white-gray;
+        border-color: $white-gray;
+        background-color: $light-black-opacity-6;
+      }
+    }
+  }
+
+  &.theme-dark {
+    li:not(.active) {
+      color: $medium-black;
+
+      &:hover {
+        color: $black;
+        border-color: $light-black;
+      }
     }
   }
 }
@@ -622,31 +641,21 @@ div.progress-bar {
 
 /* ====================================================== */
 
-/* colors 
-normal
-  inactive: $white-black;
-  active: $black
-theme-light
-  inactive: $medium-gray;
-  active: $light-white
-
-
-
-*/
-
 ul.text-list {
+  &.indent-sublists ul.text-list {
+    margin-left: 1.2rem;
+  }
+
   li {
     line-height: 1;
     padding: 0.3rem 0rem 0.3rem 1.4rem;
     color: $white-black;
+    border-radius: 0.2rem;
 
     a {
+      color: inherit;
       text-decoration: none;
-
-      &:visited {
-        color: $white-black;
-      }
-
+      
       &:hover {
         color: $black;
       }
@@ -654,13 +663,19 @@ ul.text-list {
 
     &.list-label {
       font-weight: bold;
+      color: $light-black;
+    }
 
-      a {
-        color: $light-black;
-      }
+    &:hover {
+      background-color: $medium-white-opacity-9;
+    }
 
-      &.active, &.active a, a:hover {
-        color: $black;
+    &.active {
+      color: $white;
+      background-color: $medium-blue-opacity-8;
+
+      a:hover {
+        color: $light-white;
       }
     }
   }
@@ -670,27 +685,33 @@ ul.text-list {
       border-color: $dark-gray;
     }
 
-    li {
+    li:not(.active) {
       color: $medium-gray;
 
-      a {
-        &:visited {
-          color: $medium-gray;
-        }
-
-        &:hover {
-          color: $white;
-        }
+      a:hover {
+        color: $white;
       }
 
       &.list-label {
-        a {
-          color: $light-gray;
-        }
+        color: $light-gray;
+      }
 
-        &.active, &.active a, a:hover {
-          color: $white;
-        }
+      &:hover {
+        background-color: $light-black-opacity-6;
+      }
+    }
+  }
+
+  &.theme-dark {
+    li:not(.active) {
+      color: $medium-black;
+
+      a:hover {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $medium-white-opacity-9;
       }
     }
   }

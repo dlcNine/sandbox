@@ -198,7 +198,7 @@ form div.field {
     form div.field.theme-caution select:focus, form div.field.theme-caution textarea:focus {
       box-shadow: 0em 0em 0em 0.2rem rgba(232, 232, 25, 0.5); }
   form div.field.theme-caution .help {
-    color: #96961e; }
+    color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
     color: #e8e819; }
   form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]),
