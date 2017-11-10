@@ -137,10 +137,7 @@ div.message {
 
 /* ====================================================== */
 
-div.tabs {
-  font-size: 1rem;
-  border-bottom: 0.1em solid $light-gray;
-
+ul.tabs {
   &::after {
     content: '';
     clear: both;
@@ -150,24 +147,46 @@ div.tabs {
   li {
     font-size: 1em;
     float: left;
-    padding: 0.8em 1.2em;
-    margin: 0em -0.1em -0.1em 0em;
-    border-radius: 0.3em 0.3em 0em 0em;
-    color: $light-gray;
+    padding: 0.3em 1em;
+    border-radius: 0.2em 0.2em 0em 0em;
+    color: $dark-gray;
+    border-bottom: 0.2rem solid $medium-gray;
 
     &:hover {
-      padding-bottom: 0.7em;
-      color: $dark-gray;
-      background-color: $white-gray;
-      border-bottom: 0.1em solid $dark-gray;
+      cursor: pointer;
+      color: $light-black;
+      background-color: $medium-white-opacity-9;
+      border-color: $white-black;
     }
 
     &.active {
-      padding-bottom: 0.7em;
       color: $medium-blue;
-      background-color: $white-gray;
-      border-bottom: 0.1em solid $medium-blue;
+      background-color: $medium-white-opacity-9;
+      border-color: $medium-blue;
       font-weight: bold;
+    }
+  }
+
+  &.theme-light {
+    li:not(.active) {
+      color: $medium-gray;
+
+      &:hover {
+        color: $white-gray;
+        border-color: $white-gray;
+        background-color: $light-black-opacity-6;
+      }
+    }
+  }
+
+  &.theme-dark {
+    li:not(.active) {
+      color: $medium-black;
+
+      &:hover {
+        color: $black;
+        border-color: $light-black;
+      }
     }
   }
 }
