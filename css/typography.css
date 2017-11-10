@@ -59,16 +59,16 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
   bottom: 0.4rem; }
 
 /* ====================================================== */
-.a:link {
+a.a:link {
   color: #216bce;
   text-decoration: none; }
-.a:hover:not(:visited) {
+a.a:hover:not(:visited) {
   color: #154191; }
-.a:visited {
+a.a:visited {
   color: #6747ad; }
-  .a:visited:hover {
+  a.a:visited:hover {
     color: #432782; }
-.a:focus {
+a.a:focus {
   outline: none;
   text-decoration: underline; }
 

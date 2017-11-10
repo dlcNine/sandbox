@@ -25,7 +25,7 @@ input[type="submit"], input[type="reset"] {
   }
   
   &:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-form-focus;
+    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-opacity-5;
     outline: none;
   }
 
@@ -67,7 +67,7 @@ input[type="submit"], input[type="reset"] {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-form-focus;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-opacity-5;
     }
   }
 
@@ -85,7 +85,7 @@ input[type="submit"], input[type="reset"] {
     }
 
     &:focus {
-      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-form-focus;
+      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-opacity-5;
     }
   }
 
@@ -102,7 +102,7 @@ input[type="submit"], input[type="reset"] {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-form-focus;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-opacity-5;
     }
   }
 
