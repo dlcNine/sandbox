@@ -392,6 +392,8 @@ div.progress-bar {
     color: white; }
 
 /* ====================================================== */
+ul.text-list.indent-nested ul.text-list {
+  margin-left: 1.2rem; }
 ul.text-list li {
   line-height: 1;
   padding: 0.3rem 0rem 0.3rem 1.4rem;
