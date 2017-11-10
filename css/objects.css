@@ -392,7 +392,7 @@ div.progress-bar {
     color: white; }
 
 /* ====================================================== */
-ul.text-list.indent-nested ul.text-list {
+ul.text-list.indent-sublists ul.text-list {
   margin-left: 1.2rem; }
 ul.text-list li {
   line-height: 1;
@@ -414,6 +414,22 @@ ul.text-list li {
     background-color: rgba(62, 157, 239, 0.8); }
     ul.text-list li.active a:hover {
       color: whitesmoke; }
+ul.text-list.theme-light hr {
+  border-color: #939393; }
+ul.text-list.theme-light li:not(.active) {
+  color: #bfbfbf; }
+  ul.text-list.theme-light li:not(.active) a:hover {
+    color: white; }
+  ul.text-list.theme-light li:not(.active).list-label {
+    color: #d8d8d8; }
+  ul.text-list.theme-light li:not(.active):hover {
+    background-color: rgba(99, 99, 99, 0.6); }
+ul.text-list.theme-dark li:not(.active) {
+  color: #4c4c4c; }
+  ul.text-list.theme-dark li:not(.active) a:hover {
+    color: #383838; }
+  ul.text-list.theme-dark li:not(.active):hover {
+    background-color: rgba(245, 245, 245, 0.9); }
 
 /* ====================================================== */
 div.banner {

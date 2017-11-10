@@ -623,7 +623,7 @@ div.progress-bar {
 /* ====================================================== */
 
 ul.text-list {
-  &.indent-nested ul.text-list {
+  &.indent-sublists ul.text-list {
     margin-left: 1.2rem;
   }
 
@@ -661,35 +661,41 @@ ul.text-list {
     }
   }
 
-  // &.theme-light {
-  //   hr {
-  //     border-color: $dark-gray;
-  //   }
+  &.theme-light {
+    hr {
+      border-color: $dark-gray;
+    }
 
-  //   li {
-  //     color: $medium-gray;
+    li:not(.active) {
+      color: $medium-gray;
 
-  //     a {
-  //       &:visited {
-  //         color: $medium-gray;
-  //       }
+      a:hover {
+        color: $white;
+      }
 
-  //       &:hover {
-  //         color: $white;
-  //       }
-  //     }
+      &.list-label {
+        color: $light-gray;
+      }
 
-  //     &.list-label {
-  //       a {
-  //         color: $light-gray;
-  //       }
+      &:hover {
+        background-color: $light-black-opacity-6;
+      }
+    }
+  }
 
-  //       &.active, &.active a, a:hover {
-  //         color: $white;
-  //       }
-  //     }
-  //   }
-  // }
+  &.theme-dark {
+    li:not(.active) {
+      color: $medium-black;
+
+      a:hover {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $medium-white-opacity-9;
+      }
+    }
+  }
 
 }
 
