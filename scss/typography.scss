@@ -148,14 +148,10 @@ ol.ol {
   }
 }
 
-ul.ul li.sublist, ol.ol li.sublist {
-  list-style-type: none;
-
-  ul.ul, ol.ol {
-    margin-left: 1.5rem;
-  }
+ul.ul ul.sublist, ul.ul ol.sublist, 
+ol.ol ol.sublist, ol.ol ul.sublist {
+  margin-left: 1.5rem;
 }
-
 
 
 

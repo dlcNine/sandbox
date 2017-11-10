@@ -91,9 +91,8 @@ ol.ol.roman-lower {
 ol.ol.roman-upper {
   list-style: upper-roman inside; }
 
-ul.ul li.sublist, ol.ol li.sublist {
-  list-style-type: none; }
-  ul.ul li.sublist ul.ul, ul.ul li.sublist ol.ol, ol.ol li.sublist ul.ul, ol.ol li.sublist ol.ol {
-    margin-left: 1.5rem; }
+ul.ul ul.sublist, ul.ul ol.sublist,
+ol.ol ol.sublist, ol.ol ul.sublist {
+  margin-left: 1.5rem; }
 
 /*# sourceMappingURL=typography.css.map */
