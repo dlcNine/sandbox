@@ -2,7 +2,7 @@
 scale ratio : 1.33333
 */
 .t, .tc {
-  font-family: sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica,  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  "Segoe UI Symbol";
   color: inherit;
   line-height: 1.5; }
 
