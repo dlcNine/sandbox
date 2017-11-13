@@ -69,8 +69,8 @@
 
 /* ====================================================== */
 
-.flex,  {
-  display: flex;
+.flex  {
+  display: flex !important;
   flex-flow: row nowrap;
 }
 
