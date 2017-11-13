@@ -32,7 +32,8 @@ select, textarea {
   padding: 0.375em 0.625em;
   border: 0.0625em solid #d8d8d8;
   border-radius: 0.1875em;
-  margin: 0.8rem 0rem; }
+  margin: 0.8rem 0rem;
+  color: #383838; }
   input[type="email"]:hover, input[type="number"]:hover,
   input[type="password"]:hover, input[type="search"]:hover,
   input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,

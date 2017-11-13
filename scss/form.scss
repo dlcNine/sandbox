@@ -37,6 +37,7 @@ select, textarea {
   border: 0.0625em solid $light-gray;
   border-radius: 0.1875em;  // 3px
   margin: 0.8rem 0rem;  // 6px
+  color: $black;
 
   &:hover {
     border-color: $medium-gray;
