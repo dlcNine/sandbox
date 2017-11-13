@@ -152,7 +152,7 @@ ul.tabs {
     color: $dark-gray;
     border-bottom: 0.2rem solid $medium-gray;
 
-    a {
+    a.a, a.a:hover {
       color: inherit;
       text-decoration: none;
     }
@@ -177,8 +177,8 @@ ul.tabs {
       color: $medium-gray;
 
       &:hover {
-        color: $white-gray;
-        border-color: $white-gray;
+        color: $white;
+        border-color: $white;
         background-color: $light-black-opacity-6;
       }
     }
@@ -209,6 +209,26 @@ ul.menu {
     margin-bottom: 0;
   }
 
+  &.theme-dark {
+    border-color: $medium-gray;
+
+    li.menu-header, li.menu-item, li.menu-footer {
+      color: $light-gray;
+      background-color: $medium-black;
+      border-color: $medium-gray;
+
+      a.a {
+        color: $medium-gray;
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+        }
+      }
+      
+    }
+  }
+
   li {
     font-size: 1rem;  
     padding: 1em;
@@ -216,12 +236,6 @@ ul.menu {
 
     &.menu-header, &.menu-item, &.menu-footer {
       background-color: $white;
-    }
-
-    &.menu-header.alternate, 
-    &.menu-item.alternate, 
-    &.menu-footer.alternate {
-      background-color: $light-white;
     }
   
     &.menu-header {
@@ -235,6 +249,14 @@ ul.menu {
 
     &.menu-footer {
       border-radius: 0em 0em 0.3em 0.3em;
+    }
+
+    a.a {
+      color: $link-unvisited;
+
+      &:hover {
+        color: $link-hover;
+      }
     }
   }
 
@@ -313,7 +335,7 @@ button.close {
     @include rotate-translate-2d(135deg, -50%, -50%);
   }
 
-  &.alternate {
+  &.theme-dark {
     background-color: $light-black;
 
     &::before, &::after {
@@ -657,7 +679,7 @@ ul.text-list {
     color: $white-black;
     border-radius: 0.2rem;
 
-    a {
+    a.a {
       color: inherit;
       text-decoration: none;
       

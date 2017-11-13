@@ -97,7 +97,7 @@ ul.tabs li {
   border-radius: 0.2em 0.2em 0em 0em;
   color: #939393;
   border-bottom: 0.2rem solid #bfbfbf; }
-  ul.tabs li a {
+  ul.tabs li a.a, ul.tabs li a.a:hover {
     color: inherit;
     text-decoration: none; }
   ul.tabs li:hover {
@@ -113,8 +113,8 @@ ul.tabs li {
 ul.tabs.theme-light li:not(.active) {
   color: #bfbfbf; }
   ul.tabs.theme-light li:not(.active):hover {
-    color: #f9f9f9;
-    border-color: #f9f9f9;
+    color: white;
+    border-color: white;
     background-color: rgba(99, 99, 99, 0.6); }
 ul.tabs.theme-dark li:not(.active) {
   color: #4c4c4c; }
@@ -131,14 +131,23 @@ ul.menu {
   ul.menu .button {
     margin-top: 0;
     margin-bottom: 0; }
+  ul.menu.theme-dark {
+    border-color: #bfbfbf; }
+    ul.menu.theme-dark li.menu-header, ul.menu.theme-dark li.menu-item, ul.menu.theme-dark li.menu-footer {
+      color: #d8d8d8;
+      background-color: #4c4c4c;
+      border-color: #bfbfbf; }
+      ul.menu.theme-dark li.menu-header a.a, ul.menu.theme-dark li.menu-item a.a, ul.menu.theme-dark li.menu-footer a.a {
+        color: #bfbfbf;
+        text-decoration: none; }
+        ul.menu.theme-dark li.menu-header a.a:hover, ul.menu.theme-dark li.menu-item a.a:hover, ul.menu.theme-dark li.menu-footer a.a:hover {
+          color: white; }
   ul.menu li {
     font-size: 1rem;
     padding: 1em;
     vertical-align: middle; }
     ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
       background-color: white; }
-    ul.menu li.menu-header.alternate, ul.menu li.menu-item.alternate, ul.menu li.menu-footer.alternate {
-      background-color: whitesmoke; }
     ul.menu li.menu-header {
       border-radius: 0.3em 0.3em 0em 0em;
       border-bottom: 0.1em solid #d7d7d7; }
@@ -146,6 +155,10 @@ ul.menu {
       border-bottom: 0.1em solid #d7d7d7; }
     ul.menu li.menu-footer {
       border-radius: 0em 0em 0.3em 0.3em; }
+    ul.menu li a.a {
+      color: #216bce; }
+      ul.menu li a.a:hover {
+        color: #154191; }
 
 /* ====================================================== */
 span.icon {
@@ -206,17 +219,17 @@ button.close {
     -o-transform: rotate(135deg) translate(-50%, -50%);
     -ms-transform: rotate(135deg) translate(-50%, -50%);
     transform: rotate(135deg) translate(-50%, -50%); }
-  button.close.alternate {
+  button.close.theme-dark {
     background-color: #636363; }
-    button.close.alternate::before, button.close.alternate::after {
+    button.close.theme-dark::before, button.close.theme-dark::after {
       background-color: #bfbfbf;
       border-color: #bfbfbf; }
-    button.close.alternate:hover {
+    button.close.theme-dark:hover {
       background-color: #4c4c4c; }
-      button.close.alternate:hover::before, button.close.alternate:hover::after {
+      button.close.theme-dark:hover::before, button.close.theme-dark:hover::after {
         background-color: #e6e6e6;
         border-color: #e6e6e6; }
-    button.close.alternate:active::before, button.close.alternate:active::after {
+    button.close.theme-dark:active::before, button.close.theme-dark:active::after {
       background-color: white;
       border-color: white; }
   button.close.resize-small {
@@ -409,10 +422,10 @@ ul.text-list li {
   padding: 0.3rem 0rem 0.3rem 1.4rem;
   color: #7a7a7a;
   border-radius: 0.2rem; }
-  ul.text-list li a {
+  ul.text-list li a.a {
     color: inherit;
     text-decoration: none; }
-    ul.text-list li a:hover {
+    ul.text-list li a.a:hover {
       color: #383838; }
   ul.text-list li.list-label {
     font-weight: bold;

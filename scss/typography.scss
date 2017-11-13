@@ -93,6 +93,7 @@ a.a {
 
   &:hover:not(:visited) {
     color: $link-hover;
+    outline: none;
   }
 
   &:visited {
@@ -103,9 +104,9 @@ a.a {
     }
   }
 
-  &:focus {
+  &:focus:not(:active):not(:hover) {
     outline: none;
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 }
 
