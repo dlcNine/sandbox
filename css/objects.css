@@ -165,13 +165,13 @@ ul.menu {
 span.icon {
   display: inline-block;
   height: auto;
-  width: 2rem; }
+  width: 1.4em; }
   span.icon.size-large {
-    width: 2.6rem; }
+    width: 2em; }
   span.icon.size-doubled {
-    width: 3.8rem; }
+    width: 2.4em; }
   span.icon.size-tripled {
-    width: 5.8rem; }
+    width: 3.4em; }
 
 /* ====================================================== */
 button.close {
@@ -253,7 +253,7 @@ button.close {
 /* ====================================================== */
 span.stamp {
   font-size: 1em;
-  padding: 0.1em 0.2em;
+  padding: 0.2em 0.4em;
   margin: 0em 0.2em;
   border-radius: 0.1875em;
   line-height: 1;
@@ -416,7 +416,7 @@ div.progress-bar {
     color: white; }
 
 /* ====================================================== */
-ul.text-list.indent-sublists ul.text-list {
+ul.text-list.indent-sublists ul.text-list, ul.text-list.indent-immediate > li {
   margin-left: 1.2rem; }
 ul.text-list li {
   line-height: 1;
