@@ -60,10 +60,10 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
 
 /* ====================================================== */
 a.a:link {
-  color: #216bce;
+  color: #2771d1;
   text-decoration: none; }
 a.a:hover:not(:visited) {
-  color: #154191;
+  color: #0850af;
   outline: none; }
 a.a:visited {
   color: #6747ad; }
