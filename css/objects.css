@@ -97,7 +97,7 @@ ul.tabs li {
   border-radius: 0.2em 0.2em 0em 0em;
   color: #939393;
   border-bottom: 0.2rem solid #bfbfbf; }
-  ul.tabs li a.a, ul.tabs li a.a:hover {
+  ul.tabs li a, ul.tabs li a:hover {
     color: inherit;
     text-decoration: none; }
   ul.tabs li:hover {
@@ -137,10 +137,10 @@ ul.menu {
       color: #d8d8d8;
       background-color: #4c4c4c;
       border-color: #bfbfbf; }
-      ul.menu.theme-dark li.menu-header a.a, ul.menu.theme-dark li.menu-item a.a, ul.menu.theme-dark li.menu-footer a.a {
+      ul.menu.theme-dark li.menu-header a, ul.menu.theme-dark li.menu-item a, ul.menu.theme-dark li.menu-footer a {
         color: #bfbfbf;
         text-decoration: none; }
-        ul.menu.theme-dark li.menu-header a.a:hover, ul.menu.theme-dark li.menu-item a.a:hover, ul.menu.theme-dark li.menu-footer a.a:hover {
+        ul.menu.theme-dark li.menu-header a:hover, ul.menu.theme-dark li.menu-item a:hover, ul.menu.theme-dark li.menu-footer a:hover {
           color: white; }
   ul.menu li {
     font-size: 1rem;
@@ -155,9 +155,10 @@ ul.menu {
       border-bottom: 0.1em solid #d7d7d7; }
     ul.menu li.menu-footer {
       border-radius: 0em 0em 0.3em 0.3em; }
-    ul.menu li a.a {
+    ul.menu li a {
+      text-decoration: none;
       color: #2771d1; }
-      ul.menu li a.a:hover {
+      ul.menu li a:hover {
         color: #0850af; }
 
 /* ====================================================== */
@@ -422,10 +423,10 @@ ul.text-list li {
   padding: 0.3rem 0rem 0.3rem 1.4rem;
   color: #7a7a7a;
   border-radius: 0.2rem; }
-  ul.text-list li a.a {
+  ul.text-list li a {
     color: inherit;
     text-decoration: none; }
-    ul.text-list li a.a:hover {
+    ul.text-list li a:hover {
       color: #383838; }
   ul.text-list li.list-label {
     font-weight: bold;
