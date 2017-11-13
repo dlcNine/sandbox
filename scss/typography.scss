@@ -103,10 +103,16 @@ a.a {
       color: $link-visited-hover;
     }
   }
+}
 
+a.a, a {
   &:focus:not(:active):not(:hover) {
     outline: none;
     text-decoration: underline !important;
+  }
+
+  &:focus:not(:active):hover {
+    outline: none;
   }
 }
 
