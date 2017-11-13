@@ -5,7 +5,9 @@ scale ratio : 1.33333
 */
 
 .t {
-  font-family: sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, 
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+  "Segoe UI Symbol";
   color: inherit;
   line-height: 1.5;
 }
@@ -93,6 +95,7 @@ a.a {
 
   &:hover:not(:visited) {
     color: $link-hover;
+    outline: none;
   }
 
   &:visited {
@@ -102,10 +105,16 @@ a.a {
       color: $link-visited-hover;
     }
   }
+}
 
-  &:focus {
+a.a, a {
+  &:focus:not(:active):not(:hover) {
     outline: none;
-    text-decoration: underline;
+    text-decoration: underline !important;
+  }
+
+  &:focus:not(:active):hover {
+    outline: none;
   }
 }
 

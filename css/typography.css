@@ -2,7 +2,7 @@
 scale ratio : 1.33333
 */
 .t, .tc {
-  font-family: sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica,  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",  "Segoe UI Symbol";
   color: inherit;
   line-height: 1.5; }
 
@@ -60,17 +60,21 @@ h1[class*="subtitle-"], h2[class*="subtitle-"], h3[class*="subtitle-"], h4[class
 
 /* ====================================================== */
 a.a:link {
-  color: #216bce;
+  color: #2771d1;
   text-decoration: none; }
 a.a:hover:not(:visited) {
-  color: #154191; }
+  color: #0850af;
+  outline: none; }
 a.a:visited {
   color: #6747ad; }
   a.a:visited:hover {
     color: #432782; }
-a.a:focus {
+
+a.a:focus:not(:active):not(:hover), a:focus:not(:active):not(:hover) {
   outline: none;
-  text-decoration: underline; }
+  text-decoration: underline !important; }
+a.a:focus:not(:active):hover, a:focus:not(:active):hover {
+  outline: none; }
 
 /* ====================================================== */
 ul.ul.square {
