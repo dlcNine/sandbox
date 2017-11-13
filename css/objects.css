@@ -311,10 +311,8 @@ div.stamp-bar {
       width: 3.2rem; }
 
 /* ====================================================== */
-figure[class*="image-"] {
-  background-color: #bfbfbf; }
-  figure[class*="image-"] img {
-    object-fit: cover; }
+figure[class*="image-"] img {
+  object-fit: cover; }
 
 figure.image-16x {
   width: 16px;
@@ -491,6 +489,9 @@ div.card {
     border-top: 0.1rem solid #e6e6e6; }
 
 /* ====================================================== */
+div.navbar div.navbar-item {
+  float: left; }
+
 /* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */

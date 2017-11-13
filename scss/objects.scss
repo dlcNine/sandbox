@@ -488,12 +488,8 @@ div.stamp-bar {
 
 /* ====================================================== */
 
-figure[class*="image-"] {
-  background-color: $medium-gray;
-
-  img {
-    object-fit: cover;
-  }
+figure[class*="image-"] img {
+  object-fit: cover;
 }
 
 figure.image-16x {
@@ -806,6 +802,12 @@ div.card {
 }
 
 /* ====================================================== */
+
+div.navbar {
+  div.navbar-item {
+    float: left;
+  }
+}
 
 /* ====================================================== */
 
