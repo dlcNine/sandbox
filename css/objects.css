@@ -97,6 +97,9 @@ ul.tabs li {
   border-radius: 0.2em 0.2em 0em 0em;
   color: #939393;
   border-bottom: 0.2rem solid #bfbfbf; }
+  ul.tabs li a {
+    color: inherit;
+    text-decoration: none; }
   ul.tabs li:hover {
     cursor: pointer;
     color: #636363;

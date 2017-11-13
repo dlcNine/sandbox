@@ -152,6 +152,11 @@ ul.tabs {
     color: $dark-gray;
     border-bottom: 0.2rem solid $medium-gray;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     &:hover {
       cursor: pointer;
       color: $light-black;
