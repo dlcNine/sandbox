@@ -4,7 +4,7 @@
 div.modal-backdrop {
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
   min-height: 100%;
   height: auto;
@@ -141,7 +141,7 @@ ul.tabs {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 
   li {
@@ -442,7 +442,7 @@ div.stamp-bar {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 
   span.stamp {
@@ -807,6 +807,7 @@ div.card {
 div.navbar {
   &.fixed-top {
     position: fixed;
+    z-index: 5;
     top: 0;
     width: 100%;
   }

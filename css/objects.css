@@ -1,7 +1,7 @@
 div.modal-backdrop {
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
   min-height: 100%;
   height: auto;
@@ -89,7 +89,7 @@ div.message {
 ul.tabs::after {
   content: '';
   clear: both;
-  display: table; }
+  display: block; }
 ul.tabs li {
   font-size: 1em;
   float: left;
@@ -283,7 +283,7 @@ div.stamp-bar {
   div.stamp-bar::after {
     content: '';
     clear: both;
-    display: table; }
+    display: block; }
   div.stamp-bar span.stamp {
     font-size: inherit;
     padding: 0.4rem 0.6rem;
@@ -491,6 +491,7 @@ div.card {
 /* ====================================================== */
 div.navbar.fixed-top {
   position: fixed;
+  z-index: 5;
   top: 0;
   width: 100%; }
 div.navbar div.navbar-item {

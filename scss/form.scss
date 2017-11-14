@@ -186,7 +186,7 @@ form div.field {
     &::after {
       content: '';
       clear: both;
-      display: table;
+      display: block;
     }
 
     & > div[class*="default-"], & > div[class*="small-"], 
@@ -301,7 +301,7 @@ div.container-controls {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 
   div[class*="default-"], div[class*="small-"], 

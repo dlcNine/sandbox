@@ -158,7 +158,7 @@ form div.field {
   form div.field.container-field-horizontal::after {
     content: '';
     clear: both;
-    display: table; }
+    display: block; }
   form div.field.container-field-horizontal > div[class*="default-"], form div.field.container-field-horizontal > div[class*="small-"], form div.field.container-field-horizontal > div[class*="medium-"], form div.field.container-field-horizontal > div[class*="large-"] {
     padding: 0; }
     form div.field.container-field-horizontal > div[class*="default-"].field-label, form div.field.container-field-horizontal > div[class*="small-"].field-label, form div.field.container-field-horizontal > div[class*="medium-"].field-label, form div.field.container-field-horizontal > div[class*="large-"].field-label {
@@ -217,7 +217,7 @@ form div.field {
 div.container-controls::after {
   content: '';
   clear: both;
-  display: table; }
+  display: block; }
 div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
 div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
   padding: 0; }

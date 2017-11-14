@@ -92,31 +92,6 @@
   visibility: hidden !important; }
 
 /* ====================================================== */
-.flex {
-  display: flex !important;
-  flex-flow: row nowrap; }
-
-.flex-left {
-  justify-content: flex-start; }
-
-.flex-x-center {
-  justify-content: center; }
-
-.flex-right {
-  justify-content: flex-end; }
-
-.flex-top {
-  align-items: flex-start; }
-
-.flex-y-center {
-  align-items: center; }
-
-.flex-bottom {
-  align-items: flex-end; }
-
-.flex-stretch {
-  align-items: stretch; }
-
 /* ====================================================== */
 .relative {
   position: relative; }
