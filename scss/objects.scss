@@ -829,20 +829,60 @@ div.navbar {
     }
   }
 
-  &.theme-dark {
-    div.navbar-item {
-      color: $light-gray;
+  &.theme-dark div.navbar-item{
+    color: $light-gray;
 
-      a {
-        color: inherit;
+    a {
+      color: inherit;
 
-        &:hover {
-          color: $white;
-        }
+      &:hover {
+        color: $white;
       }
     }
   }
+
 }
+
+/* ====================================================== */
+
+ul.dropdown-menu {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  @include translate-2d(-50%, 100%);
+  border: 0.1rem solid $light-gray;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem $light-gray;
+  width: 18rem;
+  padding-bottom: 0.3em;
+  background-color: $white;
+
+  li {
+    padding: 0.3em 1em;
+    color: $black;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:last-child {
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $medium-blue;
+
+      a:hover {
+        color: inherit;
+      }
+    }
+    
+  }
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
 
 /* ====================================================== */
 

@@ -513,5 +513,37 @@ div.navbar.theme-dark div.navbar-item {
       color: white; }
 
 /* ====================================================== */
+ul.dropdown-menu {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 100%);
+  -moz-transform: translate(-50%, 100%);
+  -o-transform: translate(-50%, 100%);
+  -ms-transform: translate(-50%, 100%);
+  transform: translate(-50%, 100%);
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem #d8d8d8;
+  width: 18rem;
+  padding-bottom: 0.3em;
+  background-color: white; }
+  ul.dropdown-menu li {
+    padding: 0.3em 1em;
+    color: #383838;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+    ul.dropdown-menu li:last-child {
+      border-radius: 0rem 0rem 0.3rem 0.3rem; }
+    ul.dropdown-menu li:hover {
+      color: white;
+      background-color: #3e9def; }
+      ul.dropdown-menu li:hover a:hover {
+        color: inherit; }
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */
