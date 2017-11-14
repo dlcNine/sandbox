@@ -111,16 +111,16 @@ ul.tabs li {
     border-color: #3e9def;
     font-weight: bold; }
 ul.tabs.theme-light li:not(.active) {
-  color: #bfbfbf; }
+  color: #4c4c4c; }
   ul.tabs.theme-light li:not(.active):hover {
+    color: #383838;
+    border-color: #636363; }
+ul.tabs.theme-dark li:not(.active) {
+  color: #bfbfbf; }
+  ul.tabs.theme-dark li:not(.active):hover {
     color: white;
     border-color: white;
     background-color: rgba(99, 99, 99, 0.6); }
-ul.tabs.theme-dark li:not(.active) {
-  color: #4c4c4c; }
-  ul.tabs.theme-dark li:not(.active):hover {
-    color: #383838;
-    border-color: #636363; }
 
 /* ====================================================== */
 ul.menu {
@@ -436,22 +436,22 @@ ul.text-list li {
     background-color: rgba(62, 157, 239, 0.8); }
     ul.text-list li.active a:hover {
       color: whitesmoke; }
-ul.text-list.theme-light hr {
-  border-color: #939393; }
 ul.text-list.theme-light li:not(.active) {
-  color: #bfbfbf; }
-  ul.text-list.theme-light li:not(.active) a:hover {
-    color: white; }
-  ul.text-list.theme-light li:not(.active).list-label {
-    color: #d8d8d8; }
-  ul.text-list.theme-light li:not(.active):hover {
-    background-color: rgba(99, 99, 99, 0.6); }
-ul.text-list.theme-dark li:not(.active) {
   color: #4c4c4c; }
-  ul.text-list.theme-dark li:not(.active) a:hover {
+  ul.text-list.theme-light li:not(.active) a:hover {
     color: #383838; }
-  ul.text-list.theme-dark li:not(.active):hover {
+  ul.text-list.theme-light li:not(.active):hover {
     background-color: rgba(245, 245, 245, 0.9); }
+ul.text-list.theme-dark hr {
+  border-color: #939393; }
+ul.text-list.theme-dark li:not(.active) {
+  color: #bfbfbf; }
+  ul.text-list.theme-dark li:not(.active) a:hover {
+    color: white; }
+  ul.text-list.theme-dark li:not(.active).list-label {
+    color: #d8d8d8; }
+  ul.text-list.theme-dark li:not(.active):hover {
+    background-color: rgba(99, 99, 99, 0.6); }
 
 /* ====================================================== */
 div.banner {
@@ -504,11 +504,11 @@ div.navbar div.navbar-item {
     div.navbar div.navbar-item a:hover {
       color: #383838;
       cursor: pointer; }
-div.navbar.theme-light div.navbar-item {
-  color: #bfbfbf; }
-  div.navbar.theme-light div.navbar-item a {
+div.navbar.theme-dark div.navbar-item {
+  color: #d8d8d8; }
+  div.navbar.theme-dark div.navbar-item a {
     color: inherit; }
-    div.navbar.theme-light div.navbar-item a:hover {
+    div.navbar.theme-dark div.navbar-item a:hover {
       color: white; }
 
 /* ====================================================== */
