@@ -596,7 +596,7 @@ div.progress-bar {
   height: 1.2rem;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   margin: 1rem 0rem;
 
   div.progress {
@@ -606,10 +606,12 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: $dark-gray;
+    // @include transition(width, 300ms);
   }
 
   &.resize-small {
     height: 0.6rem;
+    border-radius: 0.2rem;
   }
 
   &.resize-medium {
@@ -847,15 +849,23 @@ div.navbar {
 
 ul.dropdown-menu {
   position: absolute;
-  left: 50%;
   bottom: 0;
-  @include translate-2d(-50%, 100%);
+  z-index: 3;
+  @include translate-2d(0%, 100%);
   border: 0.1rem solid $light-gray;
-  border-radius: 0rem 0rem 0.4rem 0.4rem;
-  box-shadow: 0rem 0.1rem 0.2rem 0rem $light-gray;
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
   width: 18rem;
-  padding-bottom: 0.3em;
   background-color: $white;
+
+  &.above {
+    bottom: 100%;
+    @include translate-2d(0%, 0%);
+  }
+
+  &.flush-right {
+    right: 0;
+  }
 
   li {
     padding: 0.3em 1em;
@@ -864,8 +874,16 @@ ul.dropdown-menu {
     white-space: nowrap;
     text-overflow: ellipsis;
 
+    &:first-child {
+      border-radius: 0.3rem 0.3rem 0rem 0rem;
+    }
+
     &:last-child {
       border-radius: 0rem 0rem 0.3rem 0.3rem;
+    }
+
+    &:only-child {
+      border-radius: 0.3rem;
     }
 
     &:hover {
@@ -876,7 +894,14 @@ ul.dropdown-menu {
         color: inherit;
       }
     }
-    
+  }
+
+  &.resize-medium {
+    width: 24rem;
+  }
+
+  &.resize-large {
+    width: 30rem;
   }
 }
 
