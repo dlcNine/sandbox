@@ -514,7 +514,7 @@ div.navbar.theme-dark div.navbar-item {
       color: white; }
 
 /* ====================================================== */
-ul.dropdown-menu {
+ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
@@ -529,45 +529,56 @@ ul.dropdown-menu {
   width: 18rem;
   background-color: white;
   overflow: visible; }
-  ul.dropdown-menu.on-top {
+  ul.dropdown.on-top {
     bottom: 100%;
     -webkit-transform: translate(0%, 0%);
     -moz-transform: translate(0%, 0%);
     -o-transform: translate(0%, 0%);
     -ms-transform: translate(0%, 0%);
     transform: translate(0%, 0%); }
-  ul.dropdown-menu.align-right {
+  ul.dropdown li ul.dropdown.on-right {
+    right: 0;
+    bottom: 50%;
+    -webkit-transform: translate(100%, 50%);
+    -moz-transform: translate(100%, 50%);
+    -o-transform: translate(100%, 50%);
+    -ms-transform: translate(100%, 50%);
+    transform: translate(100%, 50%); }
+  ul.dropdown li ul.dropdown.on-left {
+    left: 0;
+    bottom: 50%;
+    -webkit-transform: translate(-100%, 50%);
+    -moz-transform: translate(-100%, 50%);
+    -o-transform: translate(-100%, 50%);
+    -ms-transform: translate(-100%, 50%);
+    transform: translate(-100%, 50%); }
+  ul.dropdown.align-right {
     right: 0; }
-  ul.dropdown-menu.width-auto {
-    width: auto; }
-  ul.dropdown-menu li {
+  ul.dropdown li {
     padding: 0.3em 1em;
-    color: #383838;
-    overflow-x: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
-    ul.dropdown-menu li:first-child {
+    color: #383838; }
+    ul.dropdown li:first-child {
       border-radius: 0.3rem 0.3rem 0rem 0rem; }
-    ul.dropdown-menu li:last-child {
+    ul.dropdown li:last-child {
       border-radius: 0rem 0rem 0.3rem 0.3rem; }
-    ul.dropdown-menu li:only-child {
+    ul.dropdown li:only-child {
       border-radius: 0.3rem; }
-    ul.dropdown-menu li:hover {
+    ul.dropdown li:hover {
       color: white;
       background-color: #3e9def; }
-      ul.dropdown-menu li:hover a:hover {
+      ul.dropdown li:hover a:hover {
         color: inherit; }
-  ul.dropdown-menu.theme-dark {
+  ul.dropdown.theme-dark {
     background-color: #4c4c4c; }
-    ul.dropdown-menu.theme-dark hr {
+    ul.dropdown.theme-dark hr {
       border-color: #939393; }
-    ul.dropdown-menu.theme-dark li {
+    ul.dropdown.theme-dark li {
       color: #d8d8d8; }
-      ul.dropdown-menu.theme-dark li a:hover {
+      ul.dropdown.theme-dark li a:hover {
         color: white; }
-  ul.dropdown-menu.resize-medium {
+  ul.dropdown.resize-medium {
     width: 28rem; }
-  ul.dropdown-menu.resize-large {
+  ul.dropdown.resize-large {
     width: 36rem; }
 
 /* ====================================================== */

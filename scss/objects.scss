@@ -847,7 +847,7 @@ div.navbar {
 
 /* ====================================================== */
 
-ul.dropdown-menu {
+ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
@@ -864,24 +864,25 @@ ul.dropdown-menu {
     @include translate-2d(0%, 0%);
   }
 
-  &.on-right {
-    // right: 0;
+  li ul.dropdown.on-right {
+    right: 0;
+    bottom: 50%;
+    @include translate-2d(100%, 50%);
+  }
+
+  li ul.dropdown.on-left {
+    left: 0;
+    bottom: 50%;
+    @include translate-2d(-100%, 50%);
   }
 
   &.align-right {
     right: 0;
   }
 
-  &.width-auto {
-    width: auto;
-  }
-
   li {
     padding: 0.3em 1em;
     color: $black;
-    overflow-x: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 
     &:first-child {
       border-radius: 0.3rem 0.3rem 0rem 0rem;
