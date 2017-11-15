@@ -9,7 +9,11 @@ div[class*="large-"], div[class*="default-"] {
 div.container::after, .clearfix::after {
   content: '';
   clear: both;
-  display: table; }
+  display: block; }
+
+div.new-line {
+  float: left;
+  width: 100%; }
 
 /* ====================================================== */
 *[class*="position-"] {

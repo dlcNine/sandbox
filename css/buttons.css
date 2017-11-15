@@ -1,5 +1,6 @@
 a.button, button.button,
-input[type="submit"], input[type="reset"] {
+input[type="submit"].button,
+input[type="reset"].button {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: 0.375em 0.75em;
@@ -11,96 +12,123 @@ input[type="submit"], input[type="reset"] {
   color: #636363;
   background-color: #bfbfbf; }
   a.button:hover, button.button:hover,
-  input[type="submit"]:hover, input[type="reset"]:hover {
+  input[type="submit"].button:hover,
+  input[type="reset"].button:hover {
     background-color: #d8d8d8;
     cursor: pointer; }
   a.button:active, button.button:active,
-  input[type="submit"]:active, input[type="reset"]:active {
+  input[type="submit"].button:active,
+  input[type="reset"].button:active {
     background-color: #939393;
     color: #f9f9f9;
     outline: none; }
   a.button:focus:not(:active), button.button:focus:not(:active),
-  input[type="submit"]:focus:not(:active), input[type="reset"]:focus:not(:active) {
+  input[type="submit"].button:focus:not(:active),
+  input[type="reset"].button:focus:not(:active) {
     box-shadow: 0rem 0rem 0rem 0.2rem rgba(104, 182, 249, 0.5);
     outline: none; }
   a.button.resize-small, button.button.resize-small,
-  input[type="submit"].resize-small, input[type="reset"].resize-small {
+  input[type="submit"].button.resize-small,
+  input[type="reset"].button.resize-small {
     font-size: 1.2rem; }
   a.button.resize-medium, button.button.resize-medium,
-  input[type="submit"].resize-medium, input[type="reset"].resize-medium {
+  input[type="submit"].button.resize-medium,
+  input[type="reset"].button.resize-medium {
     font-size: 2.2rem; }
   a.button.resize-large, button.button.resize-large,
-  input[type="submit"].resize-large, input[type="reset"].resize-large {
+  input[type="submit"].button.resize-large,
+  input[type="reset"].button.resize-large {
     font-size: 2.8rem; }
   a.button.theme-primary, button.button.theme-primary,
-  input[type="submit"].theme-primary, input[type="reset"].theme-primary {
+  input[type="submit"].button.theme-primary,
+  input[type="reset"].button.theme-primary {
     color: #f4faff;
     background-color: #3e9def; }
     a.button.theme-primary:hover, button.button.theme-primary:hover,
-    input[type="submit"].theme-primary:hover, input[type="reset"].theme-primary:hover {
+    input[type="submit"].button.theme-primary:hover,
+    input[type="reset"].button.theme-primary:hover {
       background-color: #54abf7; }
     a.button.theme-primary:active, button.button.theme-primary:active,
-    input[type="submit"].theme-primary:active, input[type="reset"].theme-primary:active {
+    input[type="submit"].button.theme-primary:active,
+    input[type="reset"].button.theme-primary:active {
       background-color: #287ec9; }
   a.button.theme-info, button.button.theme-info,
-  input[type="submit"].theme-info, input[type="reset"].theme-info {
+  input[type="submit"].button.theme-info,
+  input[type="reset"].button.theme-info {
     color: #f6fff4;
     background-color: #54c43a; }
     a.button.theme-info:hover, button.button.theme-info:hover,
-    input[type="submit"].theme-info:hover, input[type="reset"].theme-info:hover {
+    input[type="submit"].button.theme-info:hover,
+    input[type="reset"].button.theme-info:hover {
       background-color: #62d648; }
     a.button.theme-info:active, button.button.theme-info:active,
-    input[type="submit"].theme-info:active, input[type="reset"].theme-info:active {
+    input[type="submit"].button.theme-info:active,
+    input[type="reset"].button.theme-info:active {
       background-color: #3f962a; }
     a.button.theme-info:focus:not(:active), button.button.theme-info:focus:not(:active),
-    input[type="submit"].theme-info:focus:not(:active), input[type="reset"].theme-info:focus:not(:active) {
+    input[type="submit"].button.theme-info:focus:not(:active),
+    input[type="reset"].button.theme-info:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.2rem rgba(119, 216, 97, 0.5); }
   a.button.theme-caution, button.button.theme-caution,
-  input[type="submit"].theme-caution, input[type="reset"].theme-caution {
+  input[type="submit"].button.theme-caution,
+  input[type="reset"].button.theme-caution {
     color: #82820a;
     background-color: #e8e819; }
     a.button.theme-caution:hover, button.button.theme-caution:hover,
-    input[type="submit"].theme-caution:hover, input[type="reset"].theme-caution:hover {
+    input[type="submit"].button.theme-caution:hover,
+    input[type="reset"].button.theme-caution:hover {
       background-color: #f4f449; }
     a.button.theme-caution:active, button.button.theme-caution:active,
-    input[type="submit"].theme-caution:active, input[type="reset"].theme-caution:active {
+    input[type="submit"].button.theme-caution:active,
+    input[type="reset"].button.theme-caution:active {
       background-color: #82820a;
       color: #fcfcef; }
     a.button.theme-caution:focus, button.button.theme-caution:focus,
-    input[type="submit"].theme-caution:focus, input[type="reset"].theme-caution:focus {
+    input[type="submit"].button.theme-caution:focus,
+    input[type="reset"].button.theme-caution:focus {
       box-shadow: 0rem 0rem 0rem 0.2rem rgba(232, 232, 25, 0.5); }
   a.button.theme-danger, button.button.theme-danger,
-  input[type="submit"].theme-danger, input[type="reset"].theme-danger {
+  input[type="submit"].button.theme-danger,
+  input[type="reset"].button.theme-danger {
     color: #fff8f7;
     background-color: #e53c27; }
     a.button.theme-danger:hover, button.button.theme-danger:hover,
-    input[type="submit"].theme-danger:hover, input[type="reset"].theme-danger:hover {
+    input[type="submit"].button.theme-danger:hover,
+    input[type="reset"].button.theme-danger:hover {
       background-color: #f25541; }
     a.button.theme-danger:active, button.button.theme-danger:active,
-    input[type="submit"].theme-danger:active, input[type="reset"].theme-danger:active {
+    input[type="submit"].button.theme-danger:active,
+    input[type="reset"].button.theme-danger:active {
       background-color: #c62c17; }
     a.button.theme-danger:focus:not(:active), button.button.theme-danger:focus:not(:active),
-    input[type="submit"].theme-danger:focus:not(:active), input[type="reset"].theme-danger:focus:not(:active) {
+    input[type="submit"].button.theme-danger:focus:not(:active),
+    input[type="reset"].button.theme-danger:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.2rem rgba(242, 100, 82, 0.5); }
   a.button.theme-light, button.button.theme-light,
-  input[type="submit"].theme-light, input[type="reset"].theme-light {
+  input[type="submit"].button.theme-light,
+  input[type="reset"].button.theme-light {
     color: #636363;
     background-color: #e6e6e6; }
     a.button.theme-light:hover, button.button.theme-light:hover,
-    input[type="submit"].theme-light:hover, input[type="reset"].theme-light:hover {
+    input[type="submit"].button.theme-light:hover,
+    input[type="reset"].button.theme-light:hover {
       background-color: whitesmoke; }
     a.button.theme-light:active, button.button.theme-light:active,
-    input[type="submit"].theme-light:active, input[type="reset"].theme-light:active {
+    input[type="submit"].button.theme-light:active,
+    input[type="reset"].button.theme-light:active {
       background-color: #d7d7d7; }
   a.button.theme-dark, button.button.theme-dark,
-  input[type="submit"].theme-dark, input[type="reset"].theme-dark {
+  input[type="submit"].button.theme-dark,
+  input[type="reset"].button.theme-dark {
     color: white;
     background-color: #4c4c4c; }
     a.button.theme-dark:hover, button.button.theme-dark:hover,
-    input[type="submit"].theme-dark:hover, input[type="reset"].theme-dark:hover {
+    input[type="submit"].button.theme-dark:hover,
+    input[type="reset"].button.theme-dark:hover {
       background-color: #636363; }
     a.button.theme-dark:active, button.button.theme-dark:active,
-    input[type="submit"].theme-dark:active, input[type="reset"].theme-dark:active {
+    input[type="submit"].button.theme-dark:active,
+    input[type="reset"].button.theme-dark:active {
       background-color: #383838; }
 
 a.button {
@@ -110,7 +138,9 @@ a.button {
   a.button:visited {
     text-decoration: none; }
 
-.button.wide {
+a.button.wide, button.button.wide,
+input[type="submit"].button.wide,
+input[type="reset"].button.wide {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -187,7 +217,7 @@ div.container-buttons div[class*="medium-"], div.container-buttons div[class*="l
 div.container-buttons::after {
   content: '';
   clear: both;
-  display: table; }
+  display: block; }
 
 /* ====================================================== */
 div.container-buttons-bar {
@@ -204,7 +234,7 @@ div.container-buttons-bar {
   div.container-buttons-bar::after {
     content: '';
     clear: both;
-    display: table; }
+    display: block; }
   div.container-buttons-bar .button {
     float: left;
     margin: 0; }

@@ -4,7 +4,7 @@
 div.modal-backdrop {
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
   width: 100%;
   min-height: 100%;
   height: auto;
@@ -141,7 +141,7 @@ ul.tabs {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 
   li {
@@ -174,6 +174,17 @@ ul.tabs {
 
   &.theme-light {
     li:not(.active) {
+      color: $medium-black;
+
+      &:hover {
+        color: $black;
+        border-color: $light-black;
+      }
+    }
+  }
+
+  &.theme-dark {
+    li:not(.active) {
       color: $medium-gray;
 
       &:hover {
@@ -183,17 +194,7 @@ ul.tabs {
       }
     }
   }
-
-  &.theme-dark {
-    li:not(.active) {
-      color: $medium-black;
-
-      &:hover {
-        color: $black;
-        border-color: $light-black;
-      }
-    }
-  }
+  
 }
 
 /* ====================================================== */
@@ -441,7 +442,7 @@ div.stamp-bar {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 
   span.stamp {
@@ -595,7 +596,7 @@ div.progress-bar {
   height: 1.2rem;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   margin: 1rem 0rem;
 
   div.progress {
@@ -605,10 +606,12 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: $dark-gray;
+    // @include transition(width, 300ms);
   }
 
   &.resize-small {
     height: 0.6rem;
+    border-radius: 0.2rem;
   }
 
   &.resize-medium {
@@ -705,6 +708,20 @@ ul.text-list {
   }
 
   &.theme-light {
+    li:not(.active) {
+      color: $medium-black;
+
+      a:hover {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $medium-white-opacity-9;
+      }
+    }
+  }
+
+  &.theme-dark {
     hr {
       border-color: $dark-gray;
     }
@@ -722,20 +739,6 @@ ul.text-list {
 
       &:hover {
         background-color: $light-black-opacity-6;
-      }
-    }
-  }
-
-  &.theme-dark {
-    li:not(.active) {
-      color: $medium-black;
-
-      a:hover {
-        color: $black;
-      }
-
-      &:hover {
-        background-color: $medium-white-opacity-9;
       }
     }
   }
@@ -806,6 +809,7 @@ div.card {
 div.navbar {
   &.fixed-top {
     position: fixed;
+    z-index: 5;
     top: 0;
     width: 100%;
   }
@@ -827,20 +831,83 @@ div.navbar {
     }
   }
 
-  &.theme-light {
-    div.navbar-item {
-      color: $medium-gray;
+  &.theme-dark div.navbar-item{
+    color: $light-gray;
 
-      a {
-        color: inherit;
+    a {
+      color: inherit;
 
-        &:hover {
-          color: $white;
-        }
+      &:hover {
+        color: $white;
       }
     }
   }
+
 }
+
+/* ====================================================== */
+
+ul.dropdown-menu {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  @include translate-2d(0%, 100%);
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
+  width: 18rem;
+  background-color: $white;
+
+  &.above {
+    bottom: 100%;
+    @include translate-2d(0%, 0%);
+  }
+
+  &.flush-right {
+    right: 0;
+  }
+
+  li {
+    padding: 0.3em 1em;
+    color: $black;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:first-child {
+      border-radius: 0.3rem 0.3rem 0rem 0rem;
+    }
+
+    &:last-child {
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
+    }
+
+    &:only-child {
+      border-radius: 0.3rem;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $medium-blue;
+
+      a:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  &.resize-medium {
+    width: 24rem;
+  }
+
+  &.resize-large {
+    width: 30rem;
+  }
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
 
 /* ====================================================== */
 

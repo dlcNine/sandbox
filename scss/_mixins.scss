@@ -28,6 +28,13 @@
   transform: translate($x, $y);
 }
 
+@mixin transition($property, $duration, $curve: ease, $delay: 0ms) {
+  -webkit-transition: $property $duration $curve $delay;
+  -moz-transition: $property $duration $curve $delay;
+  -o-transition: $property $duration $curve $delay;
+  transition: $property $duration $curve $delay;
+}
+
 @mixin rotate-translate-2d($degree, $x, $y) {
   -webkit-transform: rotate($degree) translate($x, $y);
   -moz-transform: rotate($degree) translate($x, $y);

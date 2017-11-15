@@ -1,7 +1,8 @@
 @import "./colors.scss";
 
 a.button, button.button, 
-input[type="submit"], input[type="reset"] {
+input[type="submit"].button, 
+input[type="reset"].button {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: 0.375em 0.75em;    /* 6px 12px */
@@ -145,7 +146,9 @@ a.button {
   }
 }
 
-.button.wide {
+a.button.wide, button.button.wide, 
+input[type="submit"].button.wide, 
+input[type="reset"].button.wide {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -270,7 +273,7 @@ div.container-buttons {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }
 }
 
@@ -294,7 +297,7 @@ div.container-buttons-bar {
   &::after {
     content: '';
     clear: both;
-    display: table;
+    display: block;
   }  
 
   .button {
