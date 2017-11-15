@@ -943,8 +943,25 @@ div.popover {
   border: 0.1rem solid $light-gray;
   border-radius: 0.4rem;
   padding: 1.2rem;
-  width: 25rem;
+  width: 16rem;
   box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
+
+  &.resize-small {
+    width: 12rem;
+  }
+
+  &.resize-medium {
+    width: 25rem;
+  }
+
+  &.resize-large {
+    width: 36rem;
+  }
+
+  &.width-auto {
+    width: auto;
+    white-space: nowrap;
+  }
 
   &::before {
     position: absolute;

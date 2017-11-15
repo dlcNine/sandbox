@@ -595,8 +595,17 @@ div.popover {
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.4rem;
   padding: 1.2rem;
-  width: 25rem;
+  width: 16rem;
   box-shadow: 0.1rem 0.1rem 0.1rem #d8d8d8; }
+  div.popover.resize-small {
+    width: 12rem; }
+  div.popover.resize-medium {
+    width: 25rem; }
+  div.popover.resize-large {
+    width: 36rem; }
+  div.popover.width-auto {
+    width: auto;
+    white-space: nowrap; }
   div.popover::before {
     position: absolute;
     left: 50%;
