@@ -934,6 +934,69 @@ ul.dropdown {
 
 /* ====================================================== */
 
+div.popover {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  @include translate-2d(-50%, 0%);
+  background-color: $white;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  width: 25rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    @include rotate-translate-2d(135deg, -50%, -50%);
+    @include transform-origin(0%, 0%);
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-top: 0.1rem solid $light-gray;
+    border-right: 0.1rem solid $light-gray;
+    background-color: $white;
+  }
+
+  &.on-bottom {
+    bottom: 0;
+    @include translate-2d(-50%, 100%);
+
+    &::before {
+      top: 0;
+      @include rotate-translate-2d(-45deg, -50%, -50%);
+    }
+  }
+
+  &.on-left {
+    bottom: 50%;
+    left: 0;
+    @include translate-2d(-100%, 50%);
+
+    &::before {
+      top: 50%;
+      left: 100%;
+      @include rotate-translate-2d(45deg, -50%, -50%);
+    }
+  }
+
+  &.on-right {
+    bottom: 50%;
+    left: 100%;
+    @include translate-2d(0%, 50%);
+
+    &::before {
+      left: 0;
+      top: 50%;
+      @include rotate-translate-2d(-135deg, -50%, -50%);
+    }
+  }
+  
+
+}
+
 /* ====================================================== */
 
 /* ====================================================== */
