@@ -847,7 +847,7 @@ div.navbar {
 
 /* ====================================================== */
 
-ul.dropdown-menu {
+ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
@@ -856,23 +856,33 @@ ul.dropdown-menu {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
   width: 18rem;
-  background-color: $white;
+  background-color: white;
+  overflow: visible;
 
-  &.above {
+  &.on-top {
     bottom: 100%;
     @include translate-2d(0%, 0%);
   }
 
-  &.flush-right {
+  li ul.dropdown.on-right {
+    right: 0;
+    bottom: 50%;
+    @include translate-2d(100%, 50%);
+  }
+
+  li ul.dropdown.on-left {
+    left: 0;
+    bottom: 50%;
+    @include translate-2d(-100%, 50%);
+  }
+
+  &.align-right {
     right: 0;
   }
 
   li {
     padding: 0.3em 1em;
     color: $black;
-    overflow-x: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 
     &:first-child {
       border-radius: 0.3rem 0.3rem 0rem 0rem;
@@ -896,16 +906,113 @@ ul.dropdown-menu {
     }
   }
 
+  &.theme-dark {
+    background-color: $medium-black;
+
+    hr {
+      border-color: $dark-gray;
+    }
+
+    li {
+      color: $light-gray;
+
+      a:hover {
+        color: $white;
+      }
+    }
+
+  }
+
   &.resize-medium {
-    width: 24rem;
+    width: 28rem;
   }
 
   &.resize-large {
-    width: 30rem;
+    width: 36rem;
   }
 }
 
 /* ====================================================== */
+
+div.popover {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  @include translate-2d(-50%, 0%);
+  background-color: $white;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  width: 16rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
+
+  &.resize-small {
+    width: 12rem;
+  }
+
+  &.resize-medium {
+    width: 25rem;
+  }
+
+  &.resize-large {
+    width: 36rem;
+  }
+
+  &.width-auto {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    @include rotate-translate-2d(135deg, -50%, -50%);
+    @include transform-origin(0%, 0%);
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-top: 0.1rem solid $light-gray;
+    border-right: 0.1rem solid $light-gray;
+    background-color: $white;
+  }
+
+  &.on-bottom {
+    bottom: 0;
+    @include translate-2d(-50%, 100%);
+
+    &::before {
+      top: 0;
+      @include rotate-translate-2d(-45deg, -50%, -50%);
+    }
+  }
+
+  &.on-left {
+    bottom: 50%;
+    left: 0;
+    @include translate-2d(-100%, 50%);
+
+    &::before {
+      top: 50%;
+      left: 100%;
+      @include rotate-translate-2d(45deg, -50%, -50%);
+    }
+  }
+
+  &.on-right {
+    bottom: 50%;
+    left: 100%;
+    @include translate-2d(0%, 50%);
+
+    &::before {
+      left: 0;
+      top: 50%;
+      @include rotate-translate-2d(-135deg, -50%, -50%);
+    }
+  }
+  
+
+}
 
 /* ====================================================== */
 
