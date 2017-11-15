@@ -102,6 +102,15 @@
 .flex-x-center {
   justify-content: center; }
 
+.flex-x-between {
+  justify-content: space-between; }
+
+.flex-x-around {
+  justify-content: space-around; }
+
+.flex-x-even {
+  justify-content: space-evenly; }
+
 .flex-right {
   justify-content: flex-end; }
 

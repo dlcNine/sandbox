@@ -856,15 +856,24 @@ ul.dropdown-menu {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
   width: 18rem;
-  background-color: $white;
+  background-color: white;
+  overflow: visible;
 
-  &.above {
+  &.on-top {
     bottom: 100%;
     @include translate-2d(0%, 0%);
   }
 
-  &.flush-right {
+  &.on-right {
+    // right: 0;
+  }
+
+  &.align-right {
     right: 0;
+  }
+
+  &.width-auto {
+    width: auto;
   }
 
   li {
@@ -896,12 +905,29 @@ ul.dropdown-menu {
     }
   }
 
+  &.theme-dark {
+    background-color: $medium-black;
+
+    hr {
+      border-color: $dark-gray;
+    }
+
+    li {
+      color: $light-gray;
+
+      a:hover {
+        color: $white;
+      }
+    }
+
+  }
+
   &.resize-medium {
-    width: 24rem;
+    width: 28rem;
   }
 
   &.resize-large {
-    width: 30rem;
+    width: 36rem;
   }
 }
 
