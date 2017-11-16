@@ -1053,23 +1053,23 @@ ol.code {
   font-family: menlo, monaco, monospace;
   background-color: $medium-white;
   counter-reset: line-number 0;
-  padding: 1.2rem 1.2rem 1.2rem 0.8rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.4rem;
   position: relative;
 
   li {
-    margin: 0.6rem 0rem 0.6rem 3.6rem;
+    margin: 0.6rem 0rem 0.6rem 1.4rem;
     counter-increment: line-number;
 
     &::before {
       position: absolute;
       left: 0;
-      @include translate-2d(100%, 0%);
       content: counter(line-number);
     }
   }
 
-  & ol.code-nested {
+  & ol.code-nested, ol.code-nested ol.code-nested {
     margin-left: 1.6rem;
+    border-left: 0.1rem solid $medium-gray;
   }
 }
 

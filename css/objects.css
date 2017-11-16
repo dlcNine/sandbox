@@ -706,22 +706,18 @@ ol.code {
   font-family: menlo, monaco, monospace;
   background-color: #e6e6e6;
   counter-reset: line-number 0;
-  padding: 1.2rem 1.2rem 1.2rem 0.8rem;
+  padding: 1.2rem 1.2rem 1.2rem 1.4rem;
   position: relative; }
   ol.code li {
-    margin: 0.6rem 0rem 0.6rem 3.6rem;
+    margin: 0.6rem 0rem 0.6rem 1.4rem;
     counter-increment: line-number; }
     ol.code li::before {
       position: absolute;
       left: 0;
-      -webkit-transform: translate(100%, 0%);
-      -moz-transform: translate(100%, 0%);
-      -o-transform: translate(100%, 0%);
-      -ms-transform: translate(100%, 0%);
-      transform: translate(100%, 0%);
       content: counter(line-number); }
-  ol.code ol.code-nested {
-    margin-left: 1.6rem; }
+  ol.code ol.code-nested, ol.code ol.code-nested ol.code-nested {
+    margin-left: 1.6rem;
+    border-left: 0.1rem solid #bfbfbf; }
 
 /* ====================================================== */
 
