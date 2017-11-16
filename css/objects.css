@@ -14,7 +14,7 @@ div.modal-backdrop {
     border-radius: 0.5em; }
 
 /* ====================================================== */
-.box {
+div.box {
   font-size: 1rem;
   padding: 1.6em;
   border: 0.1em solid #d8d8d8;
@@ -32,10 +32,14 @@ div.message {
   div.message div.message-header {
     padding: 0.4em 1.2em;
     color: #f9f9f9;
+    border-color: inherit;
     background-color: #939393; }
   div.message div.message-body {
     padding: 1em 1em 1em 1.8em;
-    color: #636363; }
+    color: #636363;
+    border-color: inherit;
+    border-radius: 0.3rem;
+    background-color: inherit; }
   div.message.theme-primary {
     border-color: #3e9def;
     background-color: #f4faff; }
@@ -261,20 +265,37 @@ span.stamp {
   color: white; }
   span.stamp.round {
     border-radius: 1em; }
+  span.stamp.has-link:hover {
+    background-color: #d8d8d8; }
+  span.stamp a {
+    color: inherit;
+    text-decoration: none; }
   span.stamp.theme-primary {
     background-color: #3e9def; }
+    span.stamp.theme-primary.has-link:hover {
+      background-color: #54abf7; }
   span.stamp.theme-info {
     background-color: #54c43a; }
+    span.stamp.theme-info.has-link:hover {
+      background-color: #62d648; }
   span.stamp.theme-caution {
     background-color: #e8e819;
     color: #82820a; }
+    span.stamp.theme-caution.has-link:hover {
+      background-color: #f4f449; }
   span.stamp.theme-danger {
     background-color: #e53c27; }
+    span.stamp.theme-danger.has-link:hover {
+      background-color: #f25541; }
   span.stamp.theme-light {
-    background-color: whitesmoke;
+    background-color: #e6e6e6;
     color: #636363; }
+    span.stamp.theme-light.has-link:hover {
+      background-color: whitesmoke; }
   span.stamp.theme-dark {
     background-color: #4c4c4c; }
+    span.stamp.theme-dark.has-link:hover {
+      background-color: #636363; }
 
 div.stamp-bar {
   font-size: 1.4rem;
@@ -299,14 +320,14 @@ div.stamp-bar {
       border-radius: 0.1875em; }
     div.stamp-bar span.stamp:not(:first-child):not(:last-child) {
       border-radius: 0; }
-    div.stamp-bar span.stamp.close {
+    div.stamp-bar span.stamp.has-close {
       position: relative;
       padding: 0;
       height: 2.2rem;
       width: 3rem; }
   div.stamp-bar.resize-large {
     font-size: 2.1rem; }
-    div.stamp-bar.resize-large span.stamp.close {
+    div.stamp-bar.resize-large span.stamp.has-close {
       height: 2.9rem;
       width: 3.2rem; }
 
@@ -371,8 +392,6 @@ img {
   img.fill-width {
     width: 100%;
     height: auto; }
-  img.radius-inherit {
-    border-radius: inherit; }
 
 /* ====================================================== */
 div.progress-bar {
@@ -527,6 +546,7 @@ ul.dropdown {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   background-color: white;
   overflow: visible; }
   ul.dropdown.on-top {
@@ -552,17 +572,18 @@ ul.dropdown {
     -o-transform: translate(-100%, 50%);
     -ms-transform: translate(-100%, 50%);
     transform: translate(-100%, 50%); }
+  ul.dropdown.align-center {
+    left: 50%;
+    -webkit-transform: translate(-50%, 100%);
+    -moz-transform: translate(-50%, 100%);
+    -o-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%); }
   ul.dropdown.align-right {
     right: 0; }
   ul.dropdown li {
     padding: 0.3em 1em;
     color: #383838; }
-    ul.dropdown li:first-child {
-      border-radius: 0.3rem 0.3rem 0rem 0rem; }
-    ul.dropdown li:last-child {
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
-    ul.dropdown li:only-child {
-      border-radius: 0.3rem; }
     ul.dropdown li:hover {
       color: white;
       background-color: #3e9def; }
@@ -580,6 +601,10 @@ ul.dropdown {
     width: 28rem; }
   ul.dropdown.resize-large {
     width: 36rem; }
+
+ul.dropdown.width-auto, div.popover.width-auto {
+  width: auto;
+  white-space: nowrap; }
 
 /* ====================================================== */
 div.popover {
@@ -603,29 +628,6 @@ div.popover {
     width: 25rem; }
   div.popover.resize-large {
     width: 36rem; }
-  div.popover.width-auto {
-    width: auto;
-    white-space: nowrap; }
-  div.popover::before {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    -webkit-transform: rotate(135deg) translate(-50%, -50%);
-    -moz-transform: rotate(135deg) translate(-50%, -50%);
-    -o-transform: rotate(135deg) translate(-50%, -50%);
-    -ms-transform: rotate(135deg) translate(-50%, -50%);
-    transform: rotate(135deg) translate(-50%, -50%);
-    -webkit-transform-origin: 0% 0%;
-    -moz-transform-origin: 0% 0%;
-    -o-transform-origin: 0% 0%;
-    -ms-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    border-top: 0.1rem solid #d8d8d8;
-    border-right: 0.1rem solid #d8d8d8;
-    background-color: white; }
   div.popover.on-bottom {
     bottom: 0;
     -webkit-transform: translate(-50%, 100%);
@@ -633,13 +635,6 @@ div.popover {
     -o-transform: translate(-50%, 100%);
     -ms-transform: translate(-50%, 100%);
     transform: translate(-50%, 100%); }
-    div.popover.on-bottom::before {
-      top: 0;
-      -webkit-transform: rotate(-45deg) translate(-50%, -50%);
-      -moz-transform: rotate(-45deg) translate(-50%, -50%);
-      -o-transform: rotate(-45deg) translate(-50%, -50%);
-      -ms-transform: rotate(-45deg) translate(-50%, -50%);
-      transform: rotate(-45deg) translate(-50%, -50%); }
   div.popover.on-left {
     bottom: 50%;
     left: 0;
@@ -648,14 +643,6 @@ div.popover {
     -o-transform: translate(-100%, 50%);
     -ms-transform: translate(-100%, 50%);
     transform: translate(-100%, 50%); }
-    div.popover.on-left::before {
-      top: 50%;
-      left: 100%;
-      -webkit-transform: rotate(45deg) translate(-50%, -50%);
-      -moz-transform: rotate(45deg) translate(-50%, -50%);
-      -o-transform: rotate(45deg) translate(-50%, -50%);
-      -ms-transform: rotate(45deg) translate(-50%, -50%);
-      transform: rotate(45deg) translate(-50%, -50%); }
   div.popover.on-right {
     bottom: 50%;
     left: 100%;
@@ -664,16 +651,74 @@ div.popover {
     -o-transform: translate(0%, 50%);
     -ms-transform: translate(0%, 50%);
     transform: translate(0%, 50%); }
-    div.popover.on-right::before {
-      left: 0;
-      top: 50%;
-      -webkit-transform: rotate(-135deg) translate(-50%, -50%);
-      -moz-transform: rotate(-135deg) translate(-50%, -50%);
-      -o-transform: rotate(-135deg) translate(-50%, -50%);
-      -ms-transform: rotate(-135deg) translate(-50%, -50%);
-      transform: rotate(-135deg) translate(-50%, -50%); }
+
+div.popmark::before, ul.popmark::before,
+li.popmark::before, aside.popmark::before {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: rotate(135deg) translate(-50%, -50%);
+  -moz-transform: rotate(135deg) translate(-50%, -50%);
+  -o-transform: rotate(135deg) translate(-50%, -50%);
+  -ms-transform: rotate(135deg) translate(-50%, -50%);
+  transform: rotate(135deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-top: 0.1rem solid;
+  border-right: 0.1rem solid;
+  border-color: inherit;
+  background-color: inherit; }
+div.popmark.mark-top::before, ul.popmark.mark-top::before,
+li.popmark.mark-top::before, aside.popmark.mark-top::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+  -moz-transform: rotate(-45deg) translate(-50%, -50%);
+  -o-transform: rotate(-45deg) translate(-50%, -50%);
+  -ms-transform: rotate(-45deg) translate(-50%, -50%);
+  transform: rotate(-45deg) translate(-50%, -50%); }
+div.popmark.mark-right::before, ul.popmark.mark-right::before,
+li.popmark.mark-right::before, aside.popmark.mark-right::before {
+  top: 50%;
+  left: 100%;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  -moz-transform: rotate(45deg) translate(-50%, -50%);
+  -o-transform: rotate(45deg) translate(-50%, -50%);
+  -ms-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%); }
+div.popmark.mark-left::before, ul.popmark.mark-left::before,
+li.popmark.mark-left::before, aside.popmark.mark-left::before {
+  left: 0;
+  top: 50%;
+  -webkit-transform: rotate(-135deg) translate(-50%, -50%);
+  -moz-transform: rotate(-135deg) translate(-50%, -50%);
+  -o-transform: rotate(-135deg) translate(-50%, -50%);
+  -ms-transform: rotate(-135deg) translate(-50%, -50%);
+  transform: rotate(-135deg) translate(-50%, -50%); }
 
 /* ====================================================== */
+ol.code {
+  font-family: menlo, monaco, monospace;
+  background-color: #e6e6e6;
+  counter-reset: line-number 0;
+  padding: 1.2rem 1.2rem 1.2rem 1.4rem;
+  position: relative; }
+  ol.code li {
+    margin: 0.6rem 0rem 0.6rem 1.4rem;
+    counter-increment: line-number; }
+    ol.code li::before {
+      position: absolute;
+      left: 0;
+      content: counter(line-number); }
+  ol.code ol.code-nested, ol.code ol.code-nested ol.code-nested {
+    margin-left: 1.6rem;
+    border-left: 0.1rem solid #bfbfbf; }
+
 /* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */
