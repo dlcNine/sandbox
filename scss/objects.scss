@@ -1049,6 +1049,30 @@ li.popmark, aside.popmark {
 
 /* ====================================================== */
 
+ol.code {
+  font-family: menlo, monaco, monospace;
+  background-color: $medium-white;
+  counter-reset: line-number 0;
+  padding: 1.2rem 1.2rem 1.2rem 0.8rem;
+  position: relative;
+
+  li {
+    margin: 0.6rem 0rem 0.6rem 3.6rem;
+    counter-increment: line-number;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      @include translate-2d(100%, 0%);
+      content: counter(line-number);
+    }
+  }
+
+  & ol.code-nested {
+    margin-left: 1.6rem;
+  }
+}
+
 /* ====================================================== */
 
 
