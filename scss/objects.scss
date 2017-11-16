@@ -411,30 +411,63 @@ span.stamp {
     border-radius: 1em;
   }
 
+  &.has-link:hover {
+    background-color: $light-gray;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   &.theme-primary {
     background-color: $medium-blue;
+
+    &.has-link:hover {
+      background-color: $light-blue;
+    }
   }
 
   &.theme-info {
     background-color: $medium-green;
+
+    &.has-link:hover {
+      background-color: $light-green;
+    }
   }
 
   &.theme-caution {
     background-color: $medium-yellow;
     color: $dark-yellow;
+
+    &.has-link:hover {
+      background-color: $light-yellow
+    }
   }
 
   &.theme-danger {
     background-color: $medium-red;
+
+    &.has-link:hover {
+      background-color: $light-red;
+    }
   }
 
   &.theme-light {
-    background-color: $light-white;
+    background-color: $medium-white;
     color: $light-black;
+
+    &.has-link:hover {
+      background-color: $light-white;
+    }
   }
 
   &.theme-dark {
     background-color: $medium-black;
+
+    &.has-link:hover {
+      background-color: $light-black;
+    }
   }
 }
 
@@ -473,7 +506,7 @@ div.stamp-bar {
       border-radius: 0;
     }
 
-    &.close {
+    &.has-close {
       position: relative;
       padding: 0;
       height: 2.2rem;
@@ -484,7 +517,7 @@ div.stamp-bar {
   &.resize-large {
     font-size: 2.1rem;
 
-    span.stamp.close {
+    span.stamp.has-close {
       height: 2.9rem;
       width: 3.2rem;
     }

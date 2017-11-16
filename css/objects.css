@@ -265,20 +265,37 @@ span.stamp {
   color: white; }
   span.stamp.round {
     border-radius: 1em; }
+  span.stamp.has-link:hover {
+    background-color: #d8d8d8; }
+  span.stamp a {
+    color: inherit;
+    text-decoration: none; }
   span.stamp.theme-primary {
     background-color: #3e9def; }
+    span.stamp.theme-primary.has-link:hover {
+      background-color: #54abf7; }
   span.stamp.theme-info {
     background-color: #54c43a; }
+    span.stamp.theme-info.has-link:hover {
+      background-color: #62d648; }
   span.stamp.theme-caution {
     background-color: #e8e819;
     color: #82820a; }
+    span.stamp.theme-caution.has-link:hover {
+      background-color: #f4f449; }
   span.stamp.theme-danger {
     background-color: #e53c27; }
+    span.stamp.theme-danger.has-link:hover {
+      background-color: #f25541; }
   span.stamp.theme-light {
-    background-color: whitesmoke;
+    background-color: #e6e6e6;
     color: #636363; }
+    span.stamp.theme-light.has-link:hover {
+      background-color: whitesmoke; }
   span.stamp.theme-dark {
     background-color: #4c4c4c; }
+    span.stamp.theme-dark.has-link:hover {
+      background-color: #636363; }
 
 div.stamp-bar {
   font-size: 1.4rem;
@@ -303,14 +320,14 @@ div.stamp-bar {
       border-radius: 0.1875em; }
     div.stamp-bar span.stamp:not(:first-child):not(:last-child) {
       border-radius: 0; }
-    div.stamp-bar span.stamp.close {
+    div.stamp-bar span.stamp.has-close {
       position: relative;
       padding: 0;
       height: 2.2rem;
       width: 3rem; }
   div.stamp-bar.resize-large {
     font-size: 2.1rem; }
-    div.stamp-bar.resize-large span.stamp.close {
+    div.stamp-bar.resize-large span.stamp.has-close {
       height: 2.9rem;
       width: 3.2rem; }
 
