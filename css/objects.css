@@ -32,10 +32,14 @@ div.message {
   div.message div.message-header {
     padding: 0.4em 1.2em;
     color: #f9f9f9;
+    border-color: inherit;
     background-color: #939393; }
   div.message div.message-body {
     padding: 1em 1em 1em 1.8em;
-    color: #636363; }
+    color: #636363;
+    border-color: inherit;
+    border-radius: 0.3rem;
+    background-color: inherit; }
   div.message.theme-primary {
     border-color: #3e9def;
     background-color: #f4faff; }
@@ -525,6 +529,7 @@ ul.dropdown {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   background-color: white;
   overflow: visible; }
   ul.dropdown.on-top {
@@ -550,17 +555,18 @@ ul.dropdown {
     -o-transform: translate(-100%, 50%);
     -ms-transform: translate(-100%, 50%);
     transform: translate(-100%, 50%); }
+  ul.dropdown.align-center {
+    left: 50%;
+    -webkit-transform: translate(-50%, 100%);
+    -moz-transform: translate(-50%, 100%);
+    -o-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%); }
   ul.dropdown.align-right {
     right: 0; }
   ul.dropdown li {
     padding: 0.3em 1em;
     color: #383838; }
-    ul.dropdown li:first-child {
-      border-radius: 0.3rem 0.3rem 0rem 0rem; }
-    ul.dropdown li:last-child {
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
-    ul.dropdown li:only-child {
-      border-radius: 0.3rem; }
     ul.dropdown li:hover {
       color: white;
       background-color: #3e9def; }
@@ -578,6 +584,10 @@ ul.dropdown {
     width: 28rem; }
   ul.dropdown.resize-large {
     width: 36rem; }
+
+ul.dropdown.width-auto, div.popover.width-auto {
+  width: auto;
+  white-space: nowrap; }
 
 /* ====================================================== */
 div.popover {
@@ -601,9 +611,6 @@ div.popover {
     width: 25rem; }
   div.popover.resize-large {
     width: 36rem; }
-  div.popover.width-auto {
-    width: auto;
-    white-space: nowrap; }
   div.popover.on-bottom {
     bottom: 0;
     -webkit-transform: translate(-50%, 100%);
@@ -628,8 +635,8 @@ div.popover {
     -ms-transform: translate(0%, 50%);
     transform: translate(0%, 50%); }
 
-div.pop-mark::before, ul.pop-mark::before,
-li.pop-mark::before, aside.pop-mark::before {
+div.popmark::before, ul.popmark::before,
+li.popmark::before, aside.popmark::before {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -650,16 +657,16 @@ li.pop-mark::before, aside.pop-mark::before {
   border-right: 0.1rem solid;
   border-color: inherit;
   background-color: inherit; }
-div.pop-mark.mark-top::before, ul.pop-mark.mark-top::before,
-li.pop-mark.mark-top::before, aside.pop-mark.mark-top::before {
+div.popmark.mark-top::before, ul.popmark.mark-top::before,
+li.popmark.mark-top::before, aside.popmark.mark-top::before {
   top: 0;
   -webkit-transform: rotate(-45deg) translate(-50%, -50%);
   -moz-transform: rotate(-45deg) translate(-50%, -50%);
   -o-transform: rotate(-45deg) translate(-50%, -50%);
   -ms-transform: rotate(-45deg) translate(-50%, -50%);
   transform: rotate(-45deg) translate(-50%, -50%); }
-div.pop-mark.mark-right::before, ul.pop-mark.mark-right::before,
-li.pop-mark.mark-right::before, aside.pop-mark.mark-right::before {
+div.popmark.mark-right::before, ul.popmark.mark-right::before,
+li.popmark.mark-right::before, aside.popmark.mark-right::before {
   top: 50%;
   left: 100%;
   -webkit-transform: rotate(45deg) translate(-50%, -50%);
@@ -667,8 +674,8 @@ li.pop-mark.mark-right::before, aside.pop-mark.mark-right::before {
   -o-transform: rotate(45deg) translate(-50%, -50%);
   -ms-transform: rotate(45deg) translate(-50%, -50%);
   transform: rotate(45deg) translate(-50%, -50%); }
-div.pop-mark.mark-left::before, ul.pop-mark.mark-left::before,
-li.pop-mark.mark-left::before, aside.pop-mark.mark-left::before {
+div.popmark.mark-left::before, ul.popmark.mark-left::before,
+li.popmark.mark-left::before, aside.popmark.mark-left::before {
   left: 0;
   top: 50%;
   -webkit-transform: rotate(-135deg) translate(-50%, -50%);

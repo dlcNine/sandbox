@@ -42,12 +42,16 @@ div.message {
   div.message-header {
     padding: 0.4em 1.2em;
     color: $white-gray;
+    border-color: inherit;
     background-color: $dark-gray;
   }
 
   div.message-body {
     padding: 1em 1em 1em 1.8em;
     color: $light-black;
+    border-color: inherit;
+    border-radius: 0.3rem;
+    background-color: inherit;
   }
 
   &.theme-primary {
@@ -852,6 +856,7 @@ ul.dropdown {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
   width: 18rem;
+  padding: 0.8rem 0rem 0.8rem 0rem;
   background-color: white;
   overflow: visible;
 
@@ -872,25 +877,19 @@ ul.dropdown {
     @include translate-2d(-100%, 50%);
   }
 
+  &.align-center {
+    left: 50%;
+    @include translate-2d(-50%, 100%);
+  }
+
   &.align-right {
     right: 0;
   }
 
+
   li {
     padding: 0.3em 1em;
     color: $black;
-
-    &:first-child {
-      border-radius: 0.3rem 0.3rem 0rem 0rem;
-    }
-
-    &:last-child {
-      border-radius: 0rem 0rem 0.3rem 0.3rem;
-    }
-
-    &:only-child {
-      border-radius: 0.3rem;
-    }
 
     &:hover {
       color: $white;
@@ -928,6 +927,11 @@ ul.dropdown {
   }
 }
 
+ul.dropdown.width-auto, div.popover.width-auto {
+  width: auto;
+  white-space: nowrap;
+}
+
 /* ====================================================== */
 
 div.popover {
@@ -954,11 +958,6 @@ div.popover {
     width: 36rem;
   }
 
-  &.width-auto {
-    width: auto;
-    white-space: nowrap;
-  }
-
   &.on-bottom {
     bottom: 0;
     @include translate-2d(-50%, 100%);
@@ -978,8 +977,8 @@ div.popover {
 
 }
 
-div.pop-mark, ul.pop-mark, 
-li.pop-mark, aside.pop-mark {
+div.popmark, ul.popmark, 
+li.popmark, aside.popmark {
 
   &::before {
     position: absolute;
@@ -996,27 +995,21 @@ li.pop-mark, aside.pop-mark {
     background-color: inherit;
   }
 
-  &.mark-top {
-    &::before {
-      top: 0;
-      @include rotate-translate-2d(-45deg, -50%, -50%);
-    }  
+  &.mark-top::before {
+    top: 0;
+    @include rotate-translate-2d(-45deg, -50%, -50%);
   }
 
-  &.mark-right {
-    &::before {
-      top: 50%;
-      left: 100%;
-      @include rotate-translate-2d(45deg, -50%, -50%);
-    }
+  &.mark-right::before {
+    top: 50%;
+    left: 100%;
+    @include rotate-translate-2d(45deg, -50%, -50%);
   }
 
-  &.mark-left {
-    &::before {
-      left: 0;
-      top: 50%;
-      @include rotate-translate-2d(-135deg, -50%, -50%);
-    }
+  &.mark-left::before {
+    left: 0;
+    top: 50%;
+    @include rotate-translate-2d(-135deg, -50%, -50%);
   }
 
 }
