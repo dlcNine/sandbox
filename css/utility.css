@@ -58,6 +58,9 @@
 .rds-br-0 {
   border-bottom-right-radius: 0 !important; }
 
+.rds-inherit {
+  border-radius: inherit; }
+
 .no-background {
   background: none !important; }
 
