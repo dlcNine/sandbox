@@ -1051,7 +1051,7 @@ li.popmark, aside.popmark {
 
 ol.code {
   font-family: menlo, monaco, monospace;
-  background-color: $code-background;
+  background-color: $light-white;
   counter-reset: line-number 0;
   padding: 0.75em 0.75em 0.75em 1em; // 12px 12px 12px 16px (when font-size 16px)
   position: relative;
@@ -1067,29 +1067,20 @@ ol.code {
       color: $light-gray;
       content: counter(line-number);
     }
+
+    &:hover {
+      background-color: $medium-white;
+
+      &::before {
+        color: $light-black;
+      }
+    }
   }
 
   & ol.code-nested, ol.code-nested ol.code-nested {
     margin-left: 1em; //16px (when font-size 16px)
     border-left: 0.1rem solid $light-gray;
   }
-
-  span.blue {
-    color: $medium-blue;
-  }
-
-  span.green {
-    color: $medium-green;
-  }
-
-  span.comment {
-    color: $medium-gray;
-  }
-
-  span.red {
-    // color: $code-red;
-  }
-
 }
 
 /* ====================================================== */

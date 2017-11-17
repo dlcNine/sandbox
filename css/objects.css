@@ -716,15 +716,13 @@ ol.code {
       left: 0;
       color: #d8d8d8;
       content: counter(line-number); }
+    ol.code li:hover {
+      background-color: #e6e6e6; }
+      ol.code li:hover::before {
+        color: #636363; }
   ol.code ol.code-nested, ol.code ol.code-nested ol.code-nested {
     margin-left: 1em;
     border-left: 0.1rem solid #d8d8d8; }
-  ol.code span.blue {
-    color: #3e9def; }
-  ol.code span.green {
-    color: #54c43a; }
-  ol.code span.comment {
-    color: #bfbfbf; }
 
 /* ====================================================== */
 
