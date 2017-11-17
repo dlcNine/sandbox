@@ -37,6 +37,34 @@ scale ratio : 1.33333
   font-size: 1rem; }
 
 /* ====================================================== */
+.text-red {
+  color: #e53c27; }
+
+.text-orange {
+  color: #e2af16; }
+
+.text-yellow {
+  color: #d8c312; }
+
+.text-green {
+  color: #54c43a; }
+
+.text-blue {
+  color: #3e9def; }
+
+.text-indigo {
+  color: #8f4fc3; }
+
+.text-violet {
+  color: #d46fd2; }
+
+.text-gray {
+  color: #bfbfbf; }
+
+.text-white {
+  color: white; }
+
+/* ====================================================== */
 /* ====================================================== */
 a.a:link {
   color: #2771d1;

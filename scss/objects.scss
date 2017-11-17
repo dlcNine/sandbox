@@ -389,8 +389,8 @@ button.close {
     width: 2.4em;
 
     &::before, &::after {
-      border-width: 0.2em;
-      height: 1.4em;
+      // border-width: 0.2em;
+      height: 1.6em;
     }
   }
 
@@ -1051,25 +1051,35 @@ li.popmark, aside.popmark {
 
 ol.code {
   font-family: menlo, monaco, monospace;
-  background-color: $medium-white;
+  background-color: $light-white;
   counter-reset: line-number 0;
-  padding: 1.2rem 1.2rem 1.2rem 1.4rem;
+  padding: 0.75em 0.75em 0.75em 1em; // 12px 12px 12px 16px (when font-size 16px)
   position: relative;
 
   li {
-    margin: 0.6rem 0rem 0.6rem 1.4rem;
+    margin: 0.375em 0em 0.375em 0.875em; //6px 0px 6px 14px (when font-size 16px)
     counter-increment: line-number;
+    color: $medium-black;
 
     &::before {
       position: absolute;
       left: 0;
+      color: $light-gray;
       content: counter(line-number);
+    }
+
+    &:hover {
+      background-color: $medium-white;
+
+      &::before {
+        color: $light-black;
+      }
     }
   }
 
   & ol.code-nested, ol.code-nested ol.code-nested {
-    margin-left: 1.6rem;
-    border-left: 0.1rem solid $medium-gray;
+    margin-left: 1em; //16px (when font-size 16px)
+    border-left: 0.1rem solid $light-gray;
   }
 }
 

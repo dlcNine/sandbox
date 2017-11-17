@@ -251,8 +251,7 @@ button.close {
     height: 2.4em;
     width: 2.4em; }
     button.close.resize-large::before, button.close.resize-large::after {
-      border-width: 0.2em;
-      height: 1.4em; }
+      height: 1.6em; }
 
 /* ====================================================== */
 span.stamp {
@@ -704,20 +703,26 @@ li.popmark.mark-left::before, aside.popmark.mark-left::before {
 /* ====================================================== */
 ol.code {
   font-family: menlo, monaco, monospace;
-  background-color: #e6e6e6;
+  background-color: whitesmoke;
   counter-reset: line-number 0;
-  padding: 1.2rem 1.2rem 1.2rem 1.4rem;
+  padding: 0.75em 0.75em 0.75em 1em;
   position: relative; }
   ol.code li {
-    margin: 0.6rem 0rem 0.6rem 1.4rem;
-    counter-increment: line-number; }
+    margin: 0.375em 0em 0.375em 0.875em;
+    counter-increment: line-number;
+    color: #4c4c4c; }
     ol.code li::before {
       position: absolute;
       left: 0;
+      color: #d8d8d8;
       content: counter(line-number); }
+    ol.code li:hover {
+      background-color: #e6e6e6; }
+      ol.code li:hover::before {
+        color: #636363; }
   ol.code ol.code-nested, ol.code ol.code-nested ol.code-nested {
-    margin-left: 1.6rem;
-    border-left: 0.1rem solid #bfbfbf; }
+    margin-left: 1em;
+    border-left: 0.1rem solid #d8d8d8; }
 
 /* ====================================================== */
 

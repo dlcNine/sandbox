@@ -55,6 +55,45 @@ scale ratio : 1.33333
 
 /* ====================================================== */
 
+.text-red {
+  color: $medium-red;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+.text-green {
+  color: $medium-green;
+}
+
+.text-blue {
+  color: $medium-blue;
+}
+
+.text-indigo {
+  color: $indigo;
+}
+
+.text-violet {
+  color: $violet;
+}
+
+.text-gray {
+  color: $medium-gray;
+}
+
+.text-white {
+  color: $white;
+}
+
+
+/* ====================================================== */
+
 // h1, h2, h3, h4, h5, h6, p, small {
 //   &[class*="subtitle-"] {
 //     position: relative;
