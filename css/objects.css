@@ -725,5 +725,30 @@ ol.code {
     border-left: 0.1rem solid #d8d8d8; }
 
 /* ====================================================== */
+@keyframes revolution {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+span.loading::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1em;
+  width: 1em;
+  margin: 0rem 0.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: revolution 550ms linear 0s infinite normal; }
 
 /*# sourceMappingURL=objects.css.map */
