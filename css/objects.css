@@ -801,6 +801,13 @@ span.loading.slow::before {
   -o-animation-duration: 1s;
   animation-duration: 1s; }
 span.loading.reverse::before {
-  @incldue animation-direction(reverse); }
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse; }
+
+/* ====================================================== */
+/* ====================================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */
