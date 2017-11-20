@@ -46,7 +46,7 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue-opacity-5;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
   }
 
   &.resize-small {
@@ -223,7 +223,7 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-blue-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
       }
     }
 
@@ -238,7 +238,7 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-green-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-green-thin;
       }
     }
 
@@ -253,7 +253,7 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-thin;
       }
     }
 
@@ -272,7 +272,7 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-red-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-red-thin;
       }
     }
 

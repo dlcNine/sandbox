@@ -25,7 +25,7 @@ input[type="reset"].button {
   }
   
   &:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-opacity-5;
+    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-thin;
     outline: none;
   }
 
@@ -67,7 +67,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-thin;
     }
   }
 
@@ -85,7 +85,7 @@ input[type="reset"].button {
     }
 
     &:focus {
-      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-thin;
     }
   }
 
@@ -102,7 +102,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-thin;
     }
   }
 
