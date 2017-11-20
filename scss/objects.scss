@@ -366,7 +366,7 @@ button.close {
     }
   }
 
-  &.resize-small {
+  &.size-small {
     height: 1.2em;
     width: 1.2em;
 
@@ -375,7 +375,7 @@ button.close {
     }
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 2em;
     width: 2em;
 
@@ -384,7 +384,7 @@ button.close {
     }
   }
 
-  &.resize-large {
+  &.size-large {
     height: 2.4em;
     width: 2.4em;
 
@@ -513,7 +513,7 @@ div.stamp-bar {
     }
   }
 
-  &.resize-large {
+  &.size-large {
     font-size: 2.1rem;
 
     span.stamp.has-close {
@@ -641,16 +641,16 @@ div.progress-bar {
     // @include transition(width, 300ms);
   }
 
-  &.resize-small {
+  &.size-small {
     height: 0.6rem;
     border-radius: 0.2rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 1.6rem;
   }
 
-  &.resize-large {
+  &.size-large {
     height: 2rem;
   }
 
@@ -782,15 +782,15 @@ ul.text-list {
 div.banner{
   height: 12rem;
 
-  &.resize-small {
+  &.size-small {
     height: 8rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 34rem;
   }
 
-  &.resize-large {
+  &.size-large {
     height: 54rem;
   }
 }
@@ -950,11 +950,11 @@ ul.dropdown {
 
   }
 
-  &.resize-medium {
+  &.size-medium {
     width: 28rem;
   }
 
-  &.resize-large {
+  &.size-large {
     width: 36rem;
   }
 }
@@ -978,15 +978,15 @@ div.popover {
   width: 16rem;
   box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
 
-  &.resize-small {
+  &.size-small {
     width: 12rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     width: 25rem;
   }
 
-  &.resize-large {
+  &.size-large {
     width: 36rem;
   }
 
