@@ -127,7 +127,7 @@ textarea {
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
-  textarea.fixed-size {
+  textarea.no-resize {
     resize: none; }
 
 /* ==================================== */
@@ -178,9 +178,7 @@ form div.field {
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-primary select:focus, form div.field.theme-primary textarea:focus {
       box-shadow: 0em 0em 0em 0.2rem rgba(104, 182, 249, 0.5); }
-  form div.field.theme-primary .help {
-    color: #3e9def; }
-  form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
+  form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
   form div.field.theme-info select, form div.field.theme-info textarea {
@@ -188,9 +186,7 @@ form div.field {
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-info select:focus, form div.field.theme-info textarea:focus {
       box-shadow: 0em 0em 0em 0.2rem rgba(119, 216, 97, 0.5); }
-  form div.field.theme-info .help {
-    color: #54c43a; }
-  form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
+  form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
   form div.field.theme-caution select, form div.field.theme-caution textarea {

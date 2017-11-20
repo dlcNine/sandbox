@@ -196,8 +196,8 @@ ol.ol {
   }
 }
 
-ul.ul ul.sublist, ul.ul ol.sublist, 
-ol.ol ol.sublist, ol.ol ul.sublist {
+ul.ul ul.ul, ul.ul ol.ol, 
+ol.ol ol.ol, ol.ol ul.ul {
   margin-left: 1.5rem;
 }
 

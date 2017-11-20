@@ -142,7 +142,7 @@ textarea {
   min-height: 10rem;
   max-height: 40rem;
 
-  &.fixed-size {
+  &.no-resize {
     resize: none;
   }
 }
@@ -227,11 +227,7 @@ form div.field {
       }
     }
 
-    .help {
-      color: $medium-blue;
-    }
-
-    label.checkbox, label.radio {
+    .help, label.checkbox, label.radio {
       color: $medium-blue;
     }
   }
@@ -246,11 +242,7 @@ form div.field {
       }
     }
 
-    .help {
-      color: $medium-green;
-    }
-
-    label.checkbox, label.radio {
+    .help, label.checkbox, label.radio {
       color: $medium-green;
     }
   }
