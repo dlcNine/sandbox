@@ -8,7 +8,7 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: $black-opacity-8;
+  background-color: $black-thick;
   padding: 1.8rem;
 
   div.modal {
@@ -164,13 +164,13 @@ ul.tabs {
     &:hover {
       cursor: pointer;
       color: $light-black;
-      background-color: $medium-white-opacity-9;
+      background-color: $medium-white-thick;
       border-color: $white-black;
     }
 
     &.active {
       color: $medium-blue;
-      background-color: $medium-white-opacity-9;
+      background-color: $medium-white-thick;
       border-color: $medium-blue;
       font-weight: bold;
     }
@@ -194,7 +194,7 @@ ul.tabs {
       &:hover {
         color: $white;
         border-color: $white;
-        background-color: $light-black-opacity-6;
+        background-color: $light-black-thick;
       }
     }
   }
@@ -366,7 +366,7 @@ button.close {
     }
   }
 
-  &.resize-small {
+  &.size-small {
     height: 1.2em;
     width: 1.2em;
 
@@ -375,7 +375,7 @@ button.close {
     }
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 2em;
     width: 2em;
 
@@ -384,12 +384,11 @@ button.close {
     }
   }
 
-  &.resize-large {
+  &.size-large {
     height: 2.4em;
     width: 2.4em;
 
     &::before, &::after {
-      // border-width: 0.2em;
       height: 1.6em;
     }
   }
@@ -514,7 +513,7 @@ div.stamp-bar {
     }
   }
 
-  &.resize-large {
+  &.size-large {
     font-size: 2.1rem;
 
     span.stamp.has-close {
@@ -642,16 +641,16 @@ div.progress-bar {
     // @include transition(width, 300ms);
   }
 
-  &.resize-small {
+  &.size-small {
     height: 0.6rem;
     border-radius: 0.2rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 1.6rem;
   }
 
-  &.resize-large {
+  &.size-large {
     height: 2rem;
   }
 
@@ -727,12 +726,12 @@ ul.text-list {
     }
 
     &:hover {
-      background-color: $medium-white-opacity-9;
+      background-color: $medium-white-thick;
     }
 
     &.active {
       color: $white;
-      background-color: $medium-blue-opacity-8;
+      background-color: $medium-blue-thick;
 
       a:hover {
         color: $light-white;
@@ -749,7 +748,7 @@ ul.text-list {
       }
 
       &:hover {
-        background-color: $medium-white-opacity-9;
+        background-color: $medium-white-thick;
       }
     }
   }
@@ -771,7 +770,7 @@ ul.text-list {
       }
 
       &:hover {
-        background-color: $light-black-opacity-6;
+        background-color: $light-black-thick;
       }
     }
   }
@@ -783,15 +782,15 @@ ul.text-list {
 div.banner{
   height: 12rem;
 
-  &.resize-small {
+  &.size-small {
     height: 8rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     height: 34rem;
   }
 
-  &.resize-large {
+  &.size-large {
     height: 54rem;
   }
 }
@@ -951,11 +950,11 @@ ul.dropdown {
 
   }
 
-  &.resize-medium {
+  &.size-medium {
     width: 28rem;
   }
 
-  &.resize-large {
+  &.size-large {
     width: 36rem;
   }
 }
@@ -979,15 +978,15 @@ div.popover {
   width: 16rem;
   box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
 
-  &.resize-small {
+  &.size-small {
     width: 12rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     width: 25rem;
   }
 
-  &.resize-large {
+  &.size-large {
     width: 36rem;
   }
 
@@ -1085,7 +1084,62 @@ ol.code {
 
 /* ====================================================== */
 
+@-webkit-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
 
+@-moz-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+@-o-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+@keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+span.loading {
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    height: 1em;
+    width: 1em;
+    margin: 0rem 0.8rem;
+    border-radius: 50%;
+    border: 0.2rem solid $white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    @include animation(revolution, 550ms, linear, 0s, infinite, normal);
+  }
+
+  &.theme-dark::before {
+    border-right-color: $medium-black;
+    border-top-color: $medium-black;
+  }
+
+  &.slow::before {
+    @include animation-duration(1s);
+  }
+
+  &.reverse::before {
+    @include animation-direction(reverse);
+  }
+
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+/* ====================================================== */
 
 
 

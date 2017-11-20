@@ -4,6 +4,12 @@
   appearance: $value;
 }
 
+@mixin select-arrow-color($color) {
+  background-image: -webkit-linear-gradient(45deg, transparent 50%, $color 50%);
+  background-image: -moz-linear-gradient(45deg, transparent 50%, $color 50%);
+  background-image: -o-linear-gradient(45deg, transparent 50%, $color 50%);
+}
+
 @mixin transform-origin($x, $y) {
   -webkit-transform-origin: $x $y;
   -moz-transform-origin: $x $y;
@@ -28,13 +34,6 @@
   transform: translate($x, $y);
 }
 
-@mixin transition($property, $duration, $curve: ease, $delay: 0ms) {
-  -webkit-transition: $property $duration $curve $delay;
-  -moz-transition: $property $duration $curve $delay;
-  -o-transition: $property $duration $curve $delay;
-  transition: $property $duration $curve $delay;
-}
-
 @mixin rotate-translate-2d($degree, $x, $y) {
   -webkit-transform: rotate($degree) translate($x, $y);
   -moz-transform: rotate($degree) translate($x, $y);
@@ -43,8 +42,46 @@
   transform: rotate($degree) translate($x, $y);
 }
 
-@mixin select-arrow-color($color) {
-  background-image: -webkit-linear-gradient(45deg, transparent 50%, $color 50%);
-  background-image: -moz-linear-gradient(45deg, transparent 50%, $color 50%);
-  background-image: -o-linear-gradient(45deg, transparent 50%, $color 50%);
+@mixin transition($property, $duration, $curve: ease, $delay: 0ms) {
+  -webkit-transition: $property $duration $curve $delay;
+  -moz-transition: $property $duration $curve $delay;
+  -o-transition: $property $duration $curve $delay;
+  transition: $property $duration $curve $delay;
 }
+
+@mixin animation($name, $duration, $curve: ease, 
+  $delay: 0s, $iterations: 1, $direction: normal) {
+  -webkit-animation: $name $duration $curve $delay $iterations $direction;
+  -moz-animation: $name $duration $curve $delay $iterations $direction;
+  -o-animation: $name $duration $curve $delay $iterations $direction;
+  animation: $name $duration $curve $delay $iterations $direction;
+}
+
+@mixin animation-duration($duration) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  -o-animation-duration: $duration;
+  animation-duration: $duration;
+}
+
+@mixin animation-direction($direction) {
+  -webkit-animation-direction: $direction;
+  -moz-animation-direction: $direction;
+  -o-animation-direction: $direction;
+  animation-direction: $direction;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

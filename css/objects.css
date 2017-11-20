@@ -237,20 +237,20 @@ button.close {
     button.close.theme-dark:active::before, button.close.theme-dark:active::after {
       background-color: white;
       border-color: white; }
-  button.close.resize-small {
+  button.close.size-small {
     height: 1.2em;
     width: 1.2em; }
-    button.close.resize-small::before, button.close.resize-small::after {
+    button.close.size-small::before, button.close.size-small::after {
       height: 0.6em; }
-  button.close.resize-medium {
+  button.close.size-medium {
     height: 2em;
     width: 2em; }
-    button.close.resize-medium::before, button.close.resize-medium::after {
+    button.close.size-medium::before, button.close.size-medium::after {
       height: 1.2em; }
-  button.close.resize-large {
+  button.close.size-large {
     height: 2.4em;
     width: 2.4em; }
-    button.close.resize-large::before, button.close.resize-large::after {
+    button.close.size-large::before, button.close.size-large::after {
       height: 1.6em; }
 
 /* ====================================================== */
@@ -324,9 +324,9 @@ div.stamp-bar {
       padding: 0;
       height: 2.2rem;
       width: 3rem; }
-  div.stamp-bar.resize-large {
+  div.stamp-bar.size-large {
     font-size: 2.1rem; }
-    div.stamp-bar.resize-large span.stamp.has-close {
+    div.stamp-bar.size-large span.stamp.has-close {
       height: 2.9rem;
       width: 3.2rem; }
 
@@ -406,12 +406,12 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: #939393; }
-  div.progress-bar.resize-small {
+  div.progress-bar.size-small {
     height: 0.6rem;
     border-radius: 0.2rem; }
-  div.progress-bar.resize-medium {
+  div.progress-bar.size-medium {
     height: 1.6rem; }
-  div.progress-bar.resize-large {
+  div.progress-bar.size-large {
     height: 2rem; }
   div.progress-bar.theme-primary div.progress {
     background-color: #3e9def;
@@ -475,11 +475,11 @@ ul.text-list.theme-dark li:not(.active) {
 /* ====================================================== */
 div.banner {
   height: 12rem; }
-  div.banner.resize-small {
+  div.banner.size-small {
     height: 8rem; }
-  div.banner.resize-medium {
+  div.banner.size-medium {
     height: 34rem; }
-  div.banner.resize-large {
+  div.banner.size-large {
     height: 54rem; }
 
 /* ====================================================== */
@@ -596,9 +596,9 @@ ul.dropdown {
       color: #d8d8d8; }
       ul.dropdown.theme-dark li a:hover {
         color: white; }
-  ul.dropdown.resize-medium {
+  ul.dropdown.size-medium {
     width: 28rem; }
-  ul.dropdown.resize-large {
+  ul.dropdown.size-large {
     width: 36rem; }
 
 ul.dropdown.width-auto, div.popover.width-auto {
@@ -621,11 +621,11 @@ div.popover {
   padding: 1.2rem;
   width: 16rem;
   box-shadow: 0.1rem 0.1rem 0.1rem #d8d8d8; }
-  div.popover.resize-small {
+  div.popover.size-small {
     width: 12rem; }
-  div.popover.resize-medium {
+  div.popover.size-medium {
     width: 25rem; }
-  div.popover.resize-large {
+  div.popover.size-large {
     width: 36rem; }
   div.popover.on-bottom {
     bottom: 0;
@@ -724,6 +724,90 @@ ol.code {
     margin-left: 1em;
     border-left: 0.1rem solid #d8d8d8; }
 
+/* ====================================================== */
+@-webkit-keyframes revolution {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-moz-keyframes revolution {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@-o-keyframes revolution {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes revolution {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+span.loading::before {
+  content: '';
+  display: inline-block;
+  vertical-align: bottom;
+  height: 1em;
+  width: 1em;
+  margin: 0rem 0.8rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  -webkit-animation: revolution 550ms linear 0s infinite normal;
+  -moz-animation: revolution 550ms linear 0s infinite normal;
+  -o-animation: revolution 550ms linear 0s infinite normal;
+  animation: revolution 550ms linear 0s infinite normal; }
+span.loading.theme-dark::before {
+  border-right-color: #4c4c4c;
+  border-top-color: #4c4c4c; }
+span.loading.slow::before {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s; }
+span.loading.reverse::before {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse; }
+
+/* ====================================================== */
+/* ====================================================== */
 /* ====================================================== */
 
 /*# sourceMappingURL=objects.css.map */

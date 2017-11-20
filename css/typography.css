@@ -9,6 +9,9 @@ scale ratio : 1.33333
 .tc {
   color: #383838; }
 
+.lh-1 {
+  line-height: 1; }
+
 .huge-1 {
   font-size: 5.1rem; }
 
@@ -65,7 +68,6 @@ scale ratio : 1.33333
   color: white; }
 
 /* ====================================================== */
-/* ====================================================== */
 a.a:link {
   color: #2771d1;
   text-decoration: none; }
@@ -102,8 +104,8 @@ ol.ol.roman-lower {
 ol.ol.roman-upper {
   list-style: upper-roman inside; }
 
-ul.ul ul.sublist, ul.ul ol.sublist,
-ol.ol ol.sublist, ol.ol ul.sublist {
+ul.ul ul.ul, ul.ul ol.ol,
+ol.ol ol.ol, ol.ol ul.ul {
   margin-left: 1.5rem; }
 
 /*# sourceMappingURL=typography.css.map */

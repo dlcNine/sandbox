@@ -46,18 +46,18 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue-opacity-5;
+    box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
   }
 
-  &.resize-small {
+  &.size-small {
     font-size: 1.2rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     font-size: 2.2rem;
   }
 
-  &.resize-large {
+  &.size-large {
     font-size: 2.8rem;
   }
 }
@@ -72,15 +72,15 @@ div.select {
     background-color: $white;
     height: 3.2rem;
 
-    &.resize-small {
+    &.size-small {
       height: 2.45rem;
     }
 
-    &.resize-medium {
+    &.size-medium {
       height: 4.425rem;
     }
 
-    &.resize-large {
+    &.size-large {
       height: 5.65rem;
     }
   }
@@ -119,15 +119,15 @@ div.select {
     background-color: $white;
     height: 9.2rem;
 
-    &.resize-small {
+    &.size-small {
       height: 7rem;
     }
 
-    &.resize-medium {
+    &.size-medium {
       height: 13rem;
     }
 
-    &.resize-large {
+    &.size-large {
       height: 16.6rem;
     }
   }
@@ -142,7 +142,7 @@ textarea {
   min-height: 10rem;
   max-height: 40rem;
 
-  &.fixed-size {
+  &.no-resize {
     resize: none;
   }
 }
@@ -223,15 +223,11 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-blue-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
       }
     }
 
-    .help {
-      color: $medium-blue;
-    }
-
-    label.checkbox, label.radio {
+    .help, label.checkbox, label.radio {
       color: $medium-blue;
     }
   }
@@ -242,15 +238,11 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-green-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-green-thin;
       }
     }
 
-    .help {
-      color: $medium-green;
-    }
-
-    label.checkbox, label.radio {
+    .help, label.checkbox, label.radio {
       color: $medium-green;
     }
   }
@@ -261,7 +253,7 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-thin;
       }
     }
 
@@ -280,7 +272,7 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-red-opacity-5;
+        box-shadow: 0em 0em 0em 0.2rem $light-red-thin;
       }
     }
 

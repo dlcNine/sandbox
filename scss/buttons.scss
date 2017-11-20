@@ -12,7 +12,6 @@ input[type="reset"].button {
 
   color: $light-black;
   background-color: $medium-gray;
-  
 
   &:hover {
     background-color: $light-gray;
@@ -26,19 +25,19 @@ input[type="reset"].button {
   }
   
   &:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-opacity-5;
+    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-thin;
     outline: none;
   }
 
-  &.resize-small {
+  &.size-small {
     font-size: 1.2rem;
   }
 
-  &.resize-medium {
+  &.size-medium {
     font-size: 2.2rem;
   }
 
-  &.resize-large {
+  &.size-large {
     font-size: 2.8rem;
   }
 
@@ -68,7 +67,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-thin;
     }
   }
 
@@ -86,7 +85,7 @@ input[type="reset"].button {
     }
 
     &:focus {
-      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-thin;
     }
   }
 
@@ -103,7 +102,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-opacity-5;
+      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-thin;
     }
   }
 

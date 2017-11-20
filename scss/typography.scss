@@ -17,6 +17,10 @@ scale ratio : 1.33333
   color: $black;
 }
 
+.lh-1 {
+  line-height: 1;
+}
+
 .huge-1 {
   font-size: 5.1rem;
 }
@@ -91,39 +95,6 @@ scale ratio : 1.33333
   color: $white;
 }
 
-
-/* ====================================================== */
-
-// h1, h2, h3, h4, h5, h6, p, small {
-//   &[class*="subtitle-"] {
-//     position: relative;
-//   }
-// }
-
-// .subtitle-1 {
-//   bottom: 1.4rem;
-// }
-
-// .subtitle-2 {
-//   bottom: 1.2rem;
-// }
-
-// .subtitle-3 {
-//   bottom: 1rem;
-// }
-
-// .subtitle-4 {
-//   bottom: 0.8rem;
-// }
-
-// .subtitle-5 {
-//   bottom: 0.6rem;
-// }
-
-// .subtitle-6 {
-//   bottom: 0.4rem;
-// }
-
 /* ====================================================== */
 
 a.a {
@@ -196,8 +167,8 @@ ol.ol {
   }
 }
 
-ul.ul ul.sublist, ul.ul ol.sublist, 
-ol.ol ol.sublist, ol.ol ul.sublist {
+ul.ul ul.ul, ul.ul ol.ol, 
+ol.ol ol.ol, ol.ol ul.ul {
   margin-left: 1.5rem;
 }
 

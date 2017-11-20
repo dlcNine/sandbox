@@ -27,17 +27,17 @@ input[type="reset"].button {
   input[type="reset"].button:focus:not(:active) {
     box-shadow: 0rem 0rem 0rem 0.2rem rgba(104, 182, 249, 0.5);
     outline: none; }
-  a.button.resize-small, button.button.resize-small,
-  input[type="submit"].button.resize-small,
-  input[type="reset"].button.resize-small {
+  a.button.size-small, button.button.size-small,
+  input[type="submit"].button.size-small,
+  input[type="reset"].button.size-small {
     font-size: 1.2rem; }
-  a.button.resize-medium, button.button.resize-medium,
-  input[type="submit"].button.resize-medium,
-  input[type="reset"].button.resize-medium {
+  a.button.size-medium, button.button.size-medium,
+  input[type="submit"].button.size-medium,
+  input[type="reset"].button.size-medium {
     font-size: 2.2rem; }
-  a.button.resize-large, button.button.resize-large,
-  input[type="submit"].button.resize-large,
-  input[type="reset"].button.resize-large {
+  a.button.size-large, button.button.size-large,
+  input[type="submit"].button.size-large,
+  input[type="reset"].button.size-large {
     font-size: 2.8rem; }
   a.button.theme-primary, button.button.theme-primary,
   input[type="submit"].button.theme-primary,
