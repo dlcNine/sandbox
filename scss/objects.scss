@@ -838,7 +838,7 @@ div.card {
 
 /* ====================================================== */
 
-div.navbar {
+div.container-navbar {
   &.fixed-top {
     position: fixed;
     z-index: 5;
@@ -846,10 +846,16 @@ div.navbar {
     width: 100%;
   }
 
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
   div.navbar-item {
     float: left;
     margin-right: 2.4rem;
-    color: $light-black;
+    color: $dark-gray;
    
     a {
       color: inherit;
