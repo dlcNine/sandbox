@@ -1147,37 +1147,100 @@ table.table {
   width: 100%;
   line-height: 1;
 
-  tbody.striped-odd tr:nth-child(odd), 
-  tbody.striped-even tr:nth-child(even) {
-    background-color: $table-striped;
-  }
-
-  tbody.row-hover tr:hover {
-    background-color: $table-hover;
-  }
-
-  th:first-child {
+  thead tr:first-child th:first-child {
     border-top-left-radius: 0.3rem;
   }
 
-  th:last-child {
+  thead tr:first-child th:last-child {
     border-top-right-radius: 0.3rem;
   }
 
   th {
     font-weight: bold;
     text-align: left;
-    border-bottom: 0.1rem solid $medium-gray;
   }
 
   td, th {
     padding: 0.6rem;
-    // border-bottom: 0.1rem solid $medium-gray;
   }
 
-  &.theme-dark, tr.theme-dark, th.theme-dark, td.theme-dark {
-    color: $medium-white;
-    background-color: $medium-black;
+  thead.striped-odd tr:nth-child(odd), 
+  thead.striped-even tr:nth-child(even),
+  tbody.striped-odd tr:nth-child(odd),
+  tbody.striped-even tr:nth-child(even), 
+  tfoot.striped-odd tr:nth-child(odd),
+  tfoot.striped-even tr:nth-child(even)  {
+    background-color: $table-striped;
+  }
+
+  &.bordered th, &.bordered td {
+    border: 0.1rem solid $medium-gray;
+  }
+
+  thead.border-rows tr, tbody.border-rows tr, 
+  tfoot.border-rows tr:not(:last-of-type), 
+  tr.border-row {
+    border-bottom: 0.1rem solid $medium-gray;
+  }
+
+  thead.row-hover tr:hover, tbody.row-hover tr:hover, 
+  tfoot.row-hover tr:hover,  {
+    background-color: $medium-white !important;
+  }
+
+  thead.row-hover tr.theme-primary:hover, 
+  tbody.row-hover tr.theme-primary:hover,
+  tfoot.row-hover tr.theme-primary:hover {
+    background-color: $light-blue !important;
+  }
+
+  thead.row-hover tr.theme-info:hover, 
+  tbody.row-hover tr.theme-info:hover,
+  tfoot.row-hover tr.theme-info:hover {
+    background-color: $light-green !important;
+  }
+
+  thead.row-hover tr.theme-caution:hover, 
+  tbody.row-hover tr.theme-caution:hover,
+  tfoot.row-hover tr.theme-caution:hover {
+    background-color: $light-yellow !important;
+  }
+
+  thead.row-hover tr.theme-danger:hover, 
+  tbody.row-hover tr.theme-danger:hover,
+  tfoot.row-hover tr.theme-danger:hover {
+    background-color: $light-red !important;
+  }
+
+  thead.row-hover tr.theme-dark:hover, 
+  tbody.row-hover tr.theme-dark:hover,
+  tfoot.row-hover tr.theme-dark:hover {
+    background-color: $light-black !important;
+  }
+
+  tr.theme-primary {
+    color: $white-blue;
+    background-color: $medium-blue !important;
+  }
+
+  tr.theme-info {
+    color: $white-green;
+    background-color: $medium-green !important;
+  }
+
+  tr.theme-caution {
+    color: $dark-yellow;
+    background-color: $medium-yellow !important;
+  }
+
+  tr.theme-danger {
+    color: $white-red;
+    background-color: $medium-red !important;
+  }
+
+  tr.theme-dark {
+    color: $white;
+    background-color: $medium-black !important;
   }
 
 

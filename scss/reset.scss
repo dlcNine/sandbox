@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 a, abbr, address, area, article, aside, audio, b, 
 base, bdi, bdo, blockquote, body, br, button, 
 canvas, caption, cite, code, col, colgroup, datalist, 
@@ -97,7 +99,7 @@ sup {
 }
 
 hr {
-  border-top: 0.1rem solid rgb(215, 215, 215); /*$dark-white*/
+  border-top: 0.1rem solid $dark-white;
 }
 
 
