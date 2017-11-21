@@ -811,6 +811,28 @@ span.loading.reverse::before {
   animation-direction: reverse; }
 
 /* ====================================================== */
+table.table {
+  width: 100%;
+  line-height: 1; }
+  table.table tbody.striped-odd tr:nth-child(odd),
+  table.table tbody.striped-even tr:nth-child(even) {
+    background-color: #f0f0f0; }
+  table.table tbody.row-hover tr:hover {
+    background-color: #e6e6e6; }
+  table.table th:first-child {
+    border-top-left-radius: 0.3rem; }
+  table.table th:last-child {
+    border-top-right-radius: 0.3rem; }
+  table.table th {
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 0.1rem solid #bfbfbf; }
+  table.table td, table.table th {
+    padding: 0.6rem; }
+  table.table.theme-dark, table.table tr.theme-dark, table.table th.theme-dark, table.table td.theme-dark {
+    color: #e6e6e6;
+    background-color: #4c4c4c; }
+
 /* ====================================================== */
 /* ====================================================== */
 

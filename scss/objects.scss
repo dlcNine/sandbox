@@ -1143,6 +1143,46 @@ span.loading {
 
 /* ====================================================== */
 
+table.table {
+  width: 100%;
+  line-height: 1;
+
+  tbody.striped-odd tr:nth-child(odd), 
+  tbody.striped-even tr:nth-child(even) {
+    background-color: $table-striped;
+  }
+
+  tbody.row-hover tr:hover {
+    background-color: $table-hover;
+  }
+
+  th:first-child {
+    border-top-left-radius: 0.3rem;
+  }
+
+  th:last-child {
+    border-top-right-radius: 0.3rem;
+  }
+
+  th {
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 0.1rem solid $medium-gray;
+  }
+
+  td, th {
+    padding: 0.6rem;
+    // border-bottom: 0.1rem solid $medium-gray;
+  }
+
+  &.theme-dark, tr.theme-dark, th.theme-dark, td.theme-dark {
+    color: $medium-white;
+    background-color: $medium-black;
+  }
+
+
+}
+
 /* ====================================================== */
 
 /* ====================================================== */
