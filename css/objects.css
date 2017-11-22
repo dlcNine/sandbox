@@ -383,10 +383,11 @@ img {
 
 /* ====================================================== */
 div.progress-bar {
-  height: 1.2rem;
+  font-size: 1.6rem;
+  height: 0.75em;
   background-color: #d8d8d8;
   color: #f9f9f9;
-  border-radius: 0.3rem;
+  border-radius: 0.1875em;
   margin: 1rem 0rem; }
   div.progress-bar div.progress {
     float: left;
@@ -399,9 +400,9 @@ div.progress-bar {
     height: 0.6rem;
     border-radius: 0.2rem; }
   div.progress-bar.size-medium {
-    height: 1.6rem; }
+    font-size: 2.1rem; }
   div.progress-bar.size-large {
-    height: 2rem; }
+    font-size: 2.8rem; }
   div.progress-bar.theme-primary div.progress {
     background-color: #3e9def;
     color: #f4faff; }
@@ -423,12 +424,12 @@ div.progress-bar {
 
 /* ====================================================== */
 ul.text-list.indent-sublists ul.text-list, ul.text-list.indent-immediate > li {
-  margin-left: 1.2rem; }
+  margin-left: 0.625em; }
 ul.text-list li {
   line-height: 1;
-  padding: 0.3rem 0rem 0.3rem 1.4rem;
+  padding: 0.1875em 0em 0.1875em 0.875em;
   color: #7a7a7a;
-  border-radius: 0.2rem; }
+  border-radius: 0.125em; }
   ul.text-list li a {
     color: inherit;
     text-decoration: none; }
@@ -574,7 +575,7 @@ ul.dropdown {
   ul.dropdown.align-right {
     right: 0; }
   ul.dropdown li {
-    padding: 0.3em 1em;
+    padding: 0.4rem 1.4rem;
     color: #383838; }
     ul.dropdown li:hover {
       color: white;

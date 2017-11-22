@@ -462,7 +462,7 @@ span.stamp {
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.375em 0.25em;  // 6px 4px
+  margin: 0.375em 0.25em;
 
   &::after {
     content: '';
@@ -472,7 +472,7 @@ div.stamp-bar {
 
   span.stamp {
     font-size: inherit;
-    padding: 0.25em 0.375em; // 4px 6px
+    padding: 0.25em 0.375em;
     float: left;
     margin: 0;
 
@@ -487,7 +487,7 @@ div.stamp-bar {
     }
 
     &:only-child {
-      border-radius: 0.1875em;  // 3px
+      border-radius: 0.1875em;
     }
 
     &:not(:first-child):not(:last-child) {
@@ -497,13 +497,13 @@ div.stamp-bar {
     &.has-close {
       position: relative;
       padding: 0;
-      height: 1.5em;  // 22px
-      width: 1.875em;    // 30px
+      height: 1.5em;
+      width: 1.875em;
     }
   }
 
   &.size-large {
-    font-size: 2.1rem;  // 21px
+    font-size: 2.1rem;
   }
 }
 
@@ -609,10 +609,11 @@ img {
 /* ====================================================== */
 
 div.progress-bar {
-  height: 1.2rem;
+  font-size: 1.6rem;
+  height: 0.75em;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 0.3rem;
+  border-radius: 0.1875em;
   margin: 1rem 0rem;
 
   div.progress {
@@ -631,11 +632,11 @@ div.progress-bar {
   }
 
   &.size-medium {
-    height: 1.6rem;
+    font-size: 2.1rem;
   }
 
   &.size-large {
-    height: 2rem;
+    font-size: 2.8rem;
   }
 
   &.theme-primary {
@@ -686,14 +687,14 @@ div.progress-bar {
 
 ul.text-list {
   &.indent-sublists ul.text-list, &.indent-immediate > li {
-    margin-left: 1.2rem;
+    margin-left: 0.625em;
   }
 
   li {
     line-height: 1;
-    padding: 0.3rem 0rem 0.3rem 1.4rem;
+    padding: 0.1875em 0em 0.1875em 0.875em;
     color: $white-black;
-    border-radius: 0.2rem;
+    border-radius: 0.125em;
 
     a {
       color: inherit;
@@ -910,7 +911,7 @@ ul.dropdown {
 
 
   li {
-    padding: 0.3em 1em;
+    padding: 0.4rem 1.4rem;
     color: $black;
 
     &:hover {
