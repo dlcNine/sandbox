@@ -815,14 +815,19 @@ table.table {
   width: 100%;
   line-height: 1; }
   table.table thead tr:first-child th:first-child {
-    border-top-left-radius: 0.3rem; }
+    border-top-left-radius: 0.25em; }
   table.table thead tr:first-child th:last-child {
-    border-top-right-radius: 0.3rem; }
+    border-top-right-radius: 0.25em; }
   table.table th {
     font-weight: bold;
     text-align: left; }
   table.table td, table.table th {
-    padding: 0.6rem; }
+    padding: 0.625em;
+    vertical-align: middle; }
+  table.table.slim th, table.table.slim td {
+    padding: 0.375em; }
+  table.table.border-all th, table.table.border-all td {
+    border: 0.1rem solid #bfbfbf; }
   table.table thead.striped-odd tr:nth-child(odd),
   table.table thead.striped-even tr:nth-child(even),
   table.table tbody.striped-odd tr:nth-child(odd),
@@ -830,8 +835,6 @@ table.table {
   table.table tfoot.striped-odd tr:nth-child(odd),
   table.table tfoot.striped-even tr:nth-child(even) {
     background-color: #f0f0f0; }
-  table.table.bordered th, table.table.bordered td {
-    border: 0.1rem solid #bfbfbf; }
   table.table thead.border-rows tr, table.table tbody.border-rows tr,
   table.table tfoot.border-rows tr:not(:last-of-type),
   table.table tr.border-row {

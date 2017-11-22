@@ -238,14 +238,9 @@ div.container-buttons-bar {
   div.container-buttons-bar .button {
     float: left;
     margin: 0; }
-  div.container-buttons-bar .first-button {
+  div.container-buttons-bar > button.button:first-child, div.container-buttons-bar > a.button:first-child, div.container-buttons-bar > input[type="submit"].button:first-child, div.container-buttons-bar > input[type="reset"].button:first-child {
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em; }
-  div.container-buttons-bar .last-button {
-    border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em; }
-  div.container-buttons-bar .button:not(.first-button):not(.last-button) {
-    border-radius: 0em; }
 
 /* ====================================================== */
 
