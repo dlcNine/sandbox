@@ -6,36 +6,33 @@ div.modal-backdrop {
   min-height: 100%;
   height: auto;
   background-color: rgba(30, 30, 33, 0.8);
-  padding: 1.8rem; }
+  padding: 2.4rem; }
   div.modal-backdrop div.modal {
-    font-size: 1rem;
-    padding: 1.8em;
+    padding: 2.4rem;
     background-color: white;
-    border-radius: 0.5em; }
+    border-radius: 0.5rem; }
 
 /* ====================================================== */
 div.box {
-  font-size: 1rem;
-  padding: 1.6em;
-  border: 0.1em solid #d8d8d8;
-  border-radius: 0.4em;
+  padding: 1.2rem;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.4rem;
   background-color: white;
-  box-shadow: 0.1em 0.1em 0.1em 0em #d8d8d8; }
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem #d8d8d8; }
 
 /* ====================================================== */
 div.message {
-  font-size: 1rem;
-  border: 0.1em solid #939393;
-  border-radius: 0.4em;
+  border: 0.1rem solid #939393;
+  border-radius: 0.4rem;
   background-color: #f9f9f9;
-  margin: 0.6em 0em; }
+  margin: 0.6rem 0rem; }
   div.message div.message-header {
-    padding: 0.4em 1.2em;
+    padding: 0.4rem 1.2rem;
     color: #f9f9f9;
     border-color: inherit;
     background-color: #939393; }
   div.message div.message-body {
-    padding: 1em 1em 1em 1.8em;
+    padding: 1rem 1rem 1rem 1.8rem;
     color: #636363;
     border-color: inherit;
     border-radius: 0.3rem;
@@ -90,41 +87,42 @@ div.message {
       color: #383838; }
 
 /* ====================================================== */
-ul.tabs::after {
-  content: '';
-  clear: both;
-  display: block; }
-ul.tabs li {
-  font-size: 1em;
-  float: left;
-  padding: 0.3em 1em;
-  border-radius: 0.2em 0.2em 0em 0em;
-  color: #939393;
-  border-bottom: 0.2rem solid #bfbfbf; }
-  ul.tabs li a, ul.tabs li a:hover {
-    color: inherit;
-    text-decoration: none; }
-  ul.tabs li:hover {
-    cursor: pointer;
-    color: #636363;
-    background-color: rgba(245, 245, 245, 0.9);
-    border-color: #7a7a7a; }
-  ul.tabs li.active {
-    color: #3e9def;
-    background-color: rgba(245, 245, 245, 0.9);
-    border-color: #3e9def;
-    font-weight: bold; }
-ul.tabs.theme-light li:not(.active) {
-  color: #4c4c4c; }
-  ul.tabs.theme-light li:not(.active):hover {
-    color: #383838;
-    border-color: #636363; }
-ul.tabs.theme-dark li:not(.active) {
-  color: #bfbfbf; }
-  ul.tabs.theme-dark li:not(.active):hover {
-    color: white;
-    border-color: white;
-    background-color: rgba(99, 99, 99, 0.6); }
+ul.tabs {
+  font-size: 1.6rem; }
+  ul.tabs::after {
+    content: '';
+    clear: both;
+    display: block; }
+  ul.tabs li {
+    float: left;
+    padding: 0.1875em 0.875em;
+    border-radius: 0.1875em 0.1875em 0em 0em;
+    color: #939393;
+    border-bottom: 0.2rem solid #bfbfbf; }
+    ul.tabs li a, ul.tabs li a:hover {
+      color: inherit;
+      text-decoration: none; }
+    ul.tabs li:hover {
+      cursor: pointer;
+      color: #636363;
+      background-color: rgba(245, 245, 245, 0.9);
+      border-color: #7a7a7a; }
+    ul.tabs li.active {
+      color: #3e9def;
+      background-color: rgba(245, 245, 245, 0.9);
+      border-color: #3e9def;
+      font-weight: bold; }
+  ul.tabs.theme-light li:not(.active) {
+    color: #4c4c4c; }
+    ul.tabs.theme-light li:not(.active):hover {
+      color: #383838;
+      border-color: #636363; }
+  ul.tabs.theme-dark li:not(.active) {
+    color: #bfbfbf; }
+    ul.tabs.theme-dark li:not(.active):hover {
+      color: white;
+      border-color: white;
+      background-color: rgba(99, 99, 99, 0.6); }
 
 /* ====================================================== */
 ul.menu {

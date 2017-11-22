@@ -9,45 +9,42 @@ div.modal-backdrop {
   min-height: 100%;
   height: auto;
   background-color: $black-thick;
-  padding: 1.8rem;
+  padding: 2.4rem;
 
   div.modal {
-    font-size: 1rem;
-    padding: 1.8em;
+    padding: 2.4rem;
     background-color: $white;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
   }
 }
 
 /* ====================================================== */
 
 div.box {
-  font-size: 1rem;
-  padding: 1.6em;
-  border: 0.1em solid $light-gray;
-  border-radius: 0.4em;
+  padding: 1.2rem;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
   background-color: $white;
-  box-shadow: 0.1em 0.1em 0.1em 0em $light-gray;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem $light-gray;
 }
 
 /* ====================================================== */
 
 div.message {
-  font-size: 1rem;
-  border: 0.1em solid $dark-gray;
-  border-radius: 0.4em;
+  border: 0.1rem solid $dark-gray;
+  border-radius: 0.4rem;
   background-color: $white-gray;
-  margin: 0.6em 0em;
+  margin: 0.6rem 0rem;
 
   div.message-header {
-    padding: 0.4em 1.2em;
+    padding: 0.4rem 1.2rem;
     color: $white-gray;
     border-color: inherit;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 1em 1em 1em 1.8em;
+    padding: 1rem 1rem 1rem 1.8rem;
     color: $light-black;
     border-color: inherit;
     border-radius: 0.3rem;
@@ -142,6 +139,7 @@ div.message {
 /* ====================================================== */
 
 ul.tabs {
+  font-size: 1.6rem;
   &::after {
     content: '';
     clear: both;
@@ -149,10 +147,9 @@ ul.tabs {
   }
 
   li {
-    font-size: 1em;
     float: left;
-    padding: 0.3em 1em;
-    border-radius: 0.2em 0.2em 0em 0em;
+    padding: 0.1875em 0.875em;
+    border-radius: 0.1875em 0.1875em 0em 0em;
     color: $dark-gray;
     border-bottom: 0.2rem solid $medium-gray;
 

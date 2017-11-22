@@ -45,7 +45,7 @@ select, textarea {
   select:focus, textarea:focus {
     outline: none;
     border-color: #3e9def;
-    box-shadow: 0em 0em 0em 0.2rem rgba(104, 182, 249, 0.5); }
+    box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
   input[type="email"].size-small, input[type="number"].size-small,
   input[type="password"].size-small, input[type="search"].size-small,
   input[type="tel"].size-small, input[type="text"].size-small, input[type="url"].size-small,
@@ -142,9 +142,9 @@ label.checkbox, label.radio {
 
 /* ====================================================== */
 form div.field {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family: sans-serif;
-  padding: 0.6em;
+  padding: 0.6rem;
   margin-top: 0.2rem;
   margin-bottom: 0.2rem;
   /* ==================================== */
@@ -177,7 +177,7 @@ form div.field {
     border-color: #3e9def; }
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-primary select:focus, form div.field.theme-primary textarea:focus {
-      box-shadow: 0em 0em 0em 0.2rem rgba(104, 182, 249, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
@@ -185,7 +185,7 @@ form div.field {
     border-color: #54c43a; }
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-info select:focus, form div.field.theme-info textarea:focus {
-      box-shadow: 0em 0em 0em 0.2rem rgba(119, 216, 97, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5); }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
@@ -193,7 +193,7 @@ form div.field {
     border-color: #e8e819; }
     form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-caution select:focus, form div.field.theme-caution textarea:focus {
-      box-shadow: 0em 0em 0em 0.2rem rgba(232, 232, 25, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5); }
   form div.field.theme-caution .help {
     color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
@@ -203,7 +203,7 @@ form div.field {
     border-color: #e53c27; }
     form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-danger select:focus, form div.field.theme-danger textarea:focus {
-      box-shadow: 0em 0em 0em 0.2rem rgba(242, 100, 82, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5); }
   form div.field.theme-danger .help {
     color: #c62c17; }
   form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
