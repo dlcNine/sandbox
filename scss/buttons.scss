@@ -304,27 +304,22 @@ div.container-buttons-bar {
     margin: 0;
   }
 
-  // .first-button {
-  //   border-top-right-radius: 0em;
-  //   border-bottom-right-radius: 0em;
-  // }
-
-  & > button.button:first-child, 
-  & > a.button:first-child, 
-  & > input[type="submit"].button:first-child, 
-  & > input[type="reset"].button:first-child {
+  & > .button:first-child, 
+  & > div:first-child .button {
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em;
   }
 
-  // .last-button {
-  //   border-top-left-radius: 0em;
-  //   border-bottom-left-radius: 0em;
-  // }
+  & > .button:last-child, 
+  & > div:last-child .button {
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+  }
 
-  // .button:not(.first-button):not(.last-button) {
-  //   border-radius: 0em;
-  // }
+  & > .button:not(:first-child):not(:last-child), 
+  & > div:not(:first-child):not(:last-child) .button {
+    border-radius: 0em;
+  }
 }
 
 /* ====================================================== */
