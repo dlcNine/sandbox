@@ -201,10 +201,9 @@ ul.tabs {
 /* ====================================================== */
 
 ul.menu {
-  font-size: 1rem;
-  border: 0.1em solid $dark-white;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em 0.2em 0em $medium-white;
+  border: 0.1rem solid $dark-white;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $medium-white;
 
   .button {
     margin-top: 0;
@@ -232,8 +231,8 @@ ul.menu {
   }
 
   li {
-    font-size: 1rem;  
-    padding: 1em;
+    padding: 1rem;  // 10px
+    line-height: 1;
     vertical-align: middle;
 
     &.menu-header, &.menu-item, &.menu-footer {
@@ -241,16 +240,16 @@ ul.menu {
     }
   
     &.menu-header {
-      border-radius: 0.3em 0.3em 0em 0em;
-      border-bottom: 0.1em solid $dark-white;
+      border-radius: 0.3rem 0.3rem 0rem 0rem;
+      border-bottom: 0.1rem solid $dark-white;
     }
 
     &.menu-item {
-      border-bottom: 0.1em solid $dark-white;
+      border-bottom: 0.1rem solid $dark-white;
     }
 
     &.menu-footer {
-      border-radius: 0em 0em 0.3em 0.3em;
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
     }
 
     a {
@@ -270,7 +269,7 @@ ul.menu {
 span.icon {
   display: inline-block;
   height: auto;
-  width: 1.4em; //2rem, 20px
+  width: 1.4em;
 
   &.size-large {
     width: 2em;
@@ -288,10 +287,10 @@ span.icon {
 /* ====================================================== */
 
 button.close {
-  font-size: 1rem;
-  height: 1.6em;
-  width: 1.6em;
-  border-radius: 0.2em;
+  font-size: 1.6rem;  
+  height: 1em;
+  width: 1em;
+  border-radius: 0.125em;
   position: relative;
   background-color: $medium-white;
 
@@ -307,7 +306,7 @@ button.close {
 
   &:focus:not(:active) {
     outline: none;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue;
+    box-shadow: 0em 0em 0em 0.125em $light-blue;
   }
 
   &:active {
@@ -322,8 +321,8 @@ button.close {
   &::before, &::after {
     content: '';
     background-color: $dark-gray;
-    border: 0.1em solid $dark-gray;
-    height: 0.8em;
+    border: 0.1rem solid $dark-gray;
+    height: 0.5em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -364,29 +363,22 @@ button.close {
   }
 
   &.size-small {
-    height: 1.2em;
-    width: 1.2em;
+    font-size: 1.2rem;
+  }
+
+  &.size-medium {
+    font-size: 2rem;
 
     &::before, &::after {
       height: 0.6em;
     }
   }
 
-  &.size-medium {
-    height: 2em;
-    width: 2em;
-
-    &::before, &::after {
-      height: 1.2em;
-    }
-  }
-
   &.size-large {
-    height: 2.4em;
-    width: 2.4em;
+    font-size: 2.4rem;
 
     &::before, &::after {
-      height: 1.6em;
+      height: 0.6667em;
     }
   }
 
@@ -468,9 +460,9 @@ span.stamp {
 }
 
 div.stamp-bar {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   display: inline-block;
-  margin: 0.6rem 0.4rem;
+  margin: 0.375em 0.25em;  // 6px 4px
 
   &::after {
     content: '';
@@ -480,7 +472,7 @@ div.stamp-bar {
 
   span.stamp {
     font-size: inherit;
-    padding: 0.4rem 0.6rem;
+    padding: 0.25em 0.375em; // 4px 6px
     float: left;
     margin: 0;
 
@@ -495,7 +487,7 @@ div.stamp-bar {
     }
 
     &:only-child {
-      border-radius: 0.1875em;
+      border-radius: 0.1875em;  // 3px
     }
 
     &:not(:first-child):not(:last-child) {
@@ -505,18 +497,13 @@ div.stamp-bar {
     &.has-close {
       position: relative;
       padding: 0;
-      height: 2.2rem;
-      width: 3rem;
+      height: 1.5em;  // 22px
+      width: 1.875em;    // 30px
     }
   }
 
   &.size-large {
-    font-size: 2.1rem;
-
-    span.stamp.has-close {
-      height: 2.9rem;
-      width: 3.2rem;
-    }
+    font-size: 2.1rem;  // 21px
   }
 }
 
