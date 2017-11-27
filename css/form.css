@@ -30,7 +30,7 @@ select, textarea {
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;
-  border: 0.0625em solid #d8d8d8;
+  border: 0.1rem solid #d8d8d8;
   border-radius: 0.1875em;
   margin: 0.8rem 0rem;
   color: #383838; }
@@ -232,56 +232,50 @@ div.controls-inline label.checkbox input[type="checkbox"], div.controls-inline l
   margin-right: 0.2rem; }
 
 /* ====================================================== */
-/* 
-
-height: 3.2rem;
-
-    &.size-small {
-      height: 2.45rem;
-    }
-
-    &.size-medium {
-      height: 4.425rem;
-    }
-
-    &.size-large {
-      height: 5.65rem;
-    }
-
-*/
 div.container-control-addons {
   height: 3.2rem;
   margin: 0.8rem 0rem; }
-  div.container-control-addons.size-small {
-    height: 2.45rem; }
-  div.container-control-addons.size-medium {
-    height: 4.425rem; }
-  div.container-control-addons.size-large {
-    height: 5.65rem; }
   div.container-control-addons::after {
     content: '';
     clear: both;
     display: block; }
+  div.container-control-addons.size-small {
+    height: 2.45rem;
+    font-size: 1.2rem; }
+  div.container-control-addons.size-medium {
+    height: 4.425rem;
+    font-size: 2.2rem; }
+  div.container-control-addons.size-large {
+    height: 5.65rem;
+    font-size: 2.8rem; }
   div.container-control-addons input, div.container-control-addons select {
     margin: 0;
-    height: 100%; }
+    height: 100%;
+    font-size: inherit; }
     div.container-control-addons input:focus, div.container-control-addons select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   div.container-control-addons > div[class*="small-"], div.container-control-addons > div[class*="medium-"], div.container-control-addons > div[class*="large-"], div.container-control-addons > div[class*="default-"] {
     padding: 0;
     height: 100%; }
+    div.container-control-addons > div[class*="small-"] .button, div.container-control-addons > div[class*="medium-"] .button, div.container-control-addons > div[class*="large-"] .button, div.container-control-addons > div[class*="default-"] .button {
+      font-size: inherit;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0; }
   div.container-control-addons > div:first-child {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em; }
-    div.container-control-addons > div:first-child input {
+    div.container-control-addons > div:first-child input, div.container-control-addons > div:first-child .button {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-  div.container-control-addons > div:not(:first-child):not(:last-child) input {
+  div.container-control-addons > div:not(:first-child):not(:last-child) input, div.container-control-addons > div:not(:first-child):not(:last-child) .button {
     border-radius: 0; }
   div.container-control-addons > div:last-child {
     border-top-right-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em; }
-    div.container-control-addons > div:last-child input {
+    div.container-control-addons > div:last-child input, div.container-control-addons > div:last-child .button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
   div.container-control-addons div.left-addon, div.container-control-addons div.right-addon {
@@ -292,6 +286,7 @@ div.container-control-addons {
     position: relative; }
     div.container-control-addons div.left-addon label, div.container-control-addons div.right-addon label {
       line-height: 1;
+      font-size: inherit;
       position: absolute;
       left: 50%;
       top: 50%;
