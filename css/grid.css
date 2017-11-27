@@ -266,14 +266,7 @@ div.push-12 {
     height: 75%; }
 
   .height-1-small {
-    height: 100%; }
-
-  /* ==================================== */
-  .absent-small {
-    display: none !important; }
-
-  .invisible-small {
-    visibility: hidden !important; } }
+    height: 100%; } }
 /* ====================================================== */
 /* >= 421px && <= 768px */
 @media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
@@ -367,14 +360,7 @@ div.push-12 {
     height: 75%; }
 
   .height-1-medium {
-    height: 100%; }
-
-  /* ==================================== */
-  .absent-medium {
-    display: none !important; }
-
-  .invisible-medium {
-    visibility: hidden !important; } }
+    height: 100%; } }
 /* ====================================================== */
 /* >= 769px */
 @media screen and (min-width: 48.0625rem) {
@@ -468,13 +454,6 @@ div.push-12 {
     height: 75%; }
 
   .height-1-large {
-    height: 100%; }
-
-  /* ==================================== */
-  .absent-large {
-    display: none !important; }
-
-  .invisible-large {
-    visibility: hidden !important; } }
+    height: 100%; } }
 
 /*# sourceMappingURL=grid.css.map */
