@@ -145,8 +145,7 @@ form div.field {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: 0.6rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin: 0.2rem 0rem;
   /* ==================================== */
   /* ==================================== */ }
   form div.field .label {
@@ -217,15 +216,12 @@ div.container-controls::after {
 div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
 div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
   padding: 0; }
-  div.container-controls div[class*="default-"]:not(.first-control):not(.last-control), div.container-controls div[class*="small-"]:not(.first-control):not(.last-control),
-  div.container-controls div[class*="medium-"]:not(.first-control):not(.last-control), div.container-controls div[class*="large-"]:not(.first-control):not(.last-control) {
-    padding: 0rem 0.6rem; }
-  div.container-controls div[class*="default-"].first-control, div.container-controls div[class*="small-"].first-control,
-  div.container-controls div[class*="medium-"].first-control, div.container-controls div[class*="large-"].first-control {
-    padding-right: 0.6rem; }
-  div.container-controls div[class*="default-"].last-control, div.container-controls div[class*="small-"].last-control,
-  div.container-controls div[class*="medium-"].last-control, div.container-controls div[class*="large-"].last-control {
-    padding-left: 0.6rem; }
+div.container-controls > div:first-child {
+  padding-right: 0.6rem; }
+div.container-controls > div:last-child {
+  padding-left: 0.6rem; }
+div.container-controls > div:not(:first-child):not(:last-child) {
+  padding: 0rem 0.6rem; }
 
 /* ====================================================== */
 div.controls-inline input {

@@ -167,8 +167,7 @@ form div.field {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: 0.6rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin: 0.2rem 0rem;
 
   .label {
     font-size: 1.4rem;    
@@ -299,18 +298,18 @@ div.container-controls {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
     padding: 0;
+  }
 
-    &:not(.first-control):not(.last-control) {
-      padding: 0rem 0.6rem;
-    }
+  & > div:first-child {
+    padding-right: 0.6rem;
+  }
 
-    &.first-control {
-      padding-right: 0.6rem;
-    }
+  & > div:last-child {
+    padding-left: 0.6rem;
+  }
 
-    &.last-control {
-      padding-left: 0.6rem;
-    }
+  & > div:not(:first-child):not(:last-child) {
+    padding: 0rem 0.6rem;
   }
 }
 

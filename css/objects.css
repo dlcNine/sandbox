@@ -93,8 +93,14 @@ ul.tabs {
     content: '';
     clear: both;
     display: block; }
+  ul.tabs.container-tabs-wide div[class*="small-"], ul.tabs.container-tabs-wide div[class*="medium-"],
+  ul.tabs.container-tabs-wide div[class*="large-"], ul.tabs.container-tabs-wide div[class*="default-"] {
+    padding: 0; }
+  ul.tabs.container-tabs-wide li {
+    width: 100%; }
   ul.tabs li {
     float: left;
+    text-align: center;
     padding: 0.1875em 0.875em;
     border-radius: 0.1875em 0.1875em 0em 0em;
     color: #939393;
@@ -316,8 +322,6 @@ div.stamp-bar {
       padding: 0;
       height: 1.5em;
       width: 1.875em; }
-  div.stamp-bar.size-large {
-    font-size: 2.1rem; }
 
 /* ====================================================== */
 figure[class*="image-"] img {
@@ -399,10 +403,6 @@ div.progress-bar {
   div.progress-bar.size-small {
     height: 0.6rem;
     border-radius: 0.2rem; }
-  div.progress-bar.size-medium {
-    font-size: 2.1rem; }
-  div.progress-bar.size-large {
-    font-size: 2.8rem; }
   div.progress-bar.theme-primary div.progress {
     background-color: #3e9def;
     color: #f4faff; }
