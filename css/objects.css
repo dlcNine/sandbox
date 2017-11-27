@@ -530,11 +530,11 @@ ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
-  -webkit-transform: translate(0%, 100%);
-  -moz-transform: translate(0%, 100%);
-  -o-transform: translate(0%, 100%);
-  -ms-transform: translate(0%, 100%);
-  transform: translate(0%, 100%);
+  -webkit-transform: translate(0%, calc(100% + 1rem));
+  -moz-transform: translate(0%, calc(100% + 1rem));
+  -o-transform: translate(0%, calc(100% + 1rem));
+  -ms-transform: translate(0%, calc(100% + 1rem));
+  transform: translate(0%, calc(100% + 1rem));
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
@@ -544,11 +544,11 @@ ul.dropdown {
   overflow: visible; }
   ul.dropdown.on-top {
     bottom: 100%;
-    -webkit-transform: translate(0%, 0%);
-    -moz-transform: translate(0%, 0%);
-    -o-transform: translate(0%, 0%);
-    -ms-transform: translate(0%, 0%);
-    transform: translate(0%, 0%); }
+    -webkit-transform: translate(0%, calc(0% - 1rem));
+    -moz-transform: translate(0%, calc(0% - 1rem));
+    -o-transform: translate(0%, calc(0% - 1rem));
+    -ms-transform: translate(0%, calc(0% - 1rem));
+    transform: translate(0%, calc(0% - 1rem)); }
   ul.dropdown li ul.dropdown.on-right {
     right: 0;
     bottom: 50%;
@@ -567,11 +567,11 @@ ul.dropdown {
     transform: translate(-100%, 50%); }
   ul.dropdown.align-center {
     left: 50%;
-    -webkit-transform: translate(-50%, 100%);
-    -moz-transform: translate(-50%, 100%);
-    -o-transform: translate(-50%, 100%);
-    -ms-transform: translate(-50%, 100%);
-    transform: translate(-50%, 100%); }
+    -webkit-transform: translate(-50%, calc(100% + 1rem));
+    -moz-transform: translate(-50%, calc(100% + 1rem));
+    -o-transform: translate(-50%, calc(100% + 1rem));
+    -ms-transform: translate(-50%, calc(100% + 1rem));
+    transform: translate(-50%, calc(100% + 1rem)); }
   ul.dropdown.align-right {
     right: 0; }
   ul.dropdown li {
@@ -604,11 +604,11 @@ div.popover {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, calc(0% - 1rem));
+  -moz-transform: translate(-50%, calc(0% - 1rem));
+  -o-transform: translate(-50%, calc(0% - 1rem));
+  -ms-transform: translate(-50%, calc(0% - 1rem));
+  transform: translate(-50%, calc(0% - 1rem));
   background-color: white;
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.4rem;
@@ -623,27 +623,27 @@ div.popover {
     width: 36rem; }
   div.popover.on-bottom {
     bottom: 0;
-    -webkit-transform: translate(-50%, 100%);
-    -moz-transform: translate(-50%, 100%);
-    -o-transform: translate(-50%, 100%);
-    -ms-transform: translate(-50%, 100%);
-    transform: translate(-50%, 100%); }
+    -webkit-transform: translate(-50%, calc(100% + 1rem));
+    -moz-transform: translate(-50%, calc(100% + 1rem));
+    -o-transform: translate(-50%, calc(100% + 1rem));
+    -ms-transform: translate(-50%, calc(100% + 1rem));
+    transform: translate(-50%, calc(100% + 1rem)); }
   div.popover.on-left {
     bottom: 50%;
     left: 0;
-    -webkit-transform: translate(-100%, 50%);
-    -moz-transform: translate(-100%, 50%);
-    -o-transform: translate(-100%, 50%);
-    -ms-transform: translate(-100%, 50%);
-    transform: translate(-100%, 50%); }
+    -webkit-transform: translate(calc(-100% - 1rem), 50%);
+    -moz-transform: translate(calc(-100% - 1rem), 50%);
+    -o-transform: translate(calc(-100% - 1rem), 50%);
+    -ms-transform: translate(calc(-100% - 1rem), 50%);
+    transform: translate(calc(-100% - 1rem), 50%); }
   div.popover.on-right {
     bottom: 50%;
     left: 100%;
-    -webkit-transform: translate(0%, 50%);
-    -moz-transform: translate(0%, 50%);
-    -o-transform: translate(0%, 50%);
-    -ms-transform: translate(0%, 50%);
-    transform: translate(0%, 50%); }
+    -webkit-transform: translate(calc(0% + 1rem), 50%);
+    -moz-transform: translate(calc(0% + 1rem), 50%);
+    -o-transform: translate(calc(0% + 1rem), 50%);
+    -ms-transform: translate(calc(0% + 1rem), 50%);
+    transform: translate(calc(0% + 1rem), 50%); }
 
 div.popmark::before, ul.popmark::before,
 li.popmark::before, aside.popmark::before {

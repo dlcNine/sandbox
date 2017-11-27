@@ -875,7 +875,7 @@ ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
-  @include translate-2d(0%, 100%);
+  @include translate-2d(0%, calc(100% + 1rem));
   border: 0.1rem solid $light-gray;
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
@@ -886,7 +886,7 @@ ul.dropdown {
 
   &.on-top {
     bottom: 100%;
-    @include translate-2d(0%, 0%);
+    @include translate-2d(0%, calc(0% - 1rem));
   }
 
   li ul.dropdown.on-right {
@@ -903,7 +903,7 @@ ul.dropdown {
 
   &.align-center {
     left: 50%;
-    @include translate-2d(-50%, 100%);
+    @include translate-2d(-50%, calc(100% + 1rem));
   }
 
   &.align-right {
@@ -962,7 +962,7 @@ div.popover {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  @include translate-2d(-50%, 0%);
+  @include translate-2d(-50%, calc(0% - 1rem));
   background-color: $white;
   border: 0.1rem solid $light-gray;
   border-radius: 0.4rem;
@@ -984,19 +984,19 @@ div.popover {
 
   &.on-bottom {
     bottom: 0;
-    @include translate-2d(-50%, 100%);
+    @include translate-2d(-50%, calc(100% + 1rem));
   }
 
   &.on-left {
     bottom: 50%;
     left: 0;
-    @include translate-2d(-100%, 50%);
+    @include translate-2d(calc(-100% - 1rem), 50%);
   }
 
   &.on-right {
     bottom: 50%;
     left: 100%;
-    @include translate-2d(0%, 50%);
+    @include translate-2d(calc(0% + 1rem), 50%);
   }
 
 }
