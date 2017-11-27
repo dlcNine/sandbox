@@ -25,20 +25,8 @@ input[type="reset"].button {
   a.button:focus:not(:active), button.button:focus:not(:active),
   input[type="submit"].button:focus:not(:active),
   input[type="reset"].button:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem 0.2rem rgba(104, 182, 249, 0.5);
+    box-shadow: 0rem 0rem 0rem 0.125em rgba(104, 182, 249, 0.5);
     outline: none; }
-  a.button.size-small, button.button.size-small,
-  input[type="submit"].button.size-small,
-  input[type="reset"].button.size-small {
-    font-size: 1.2rem; }
-  a.button.size-medium, button.button.size-medium,
-  input[type="submit"].button.size-medium,
-  input[type="reset"].button.size-medium {
-    font-size: 2.2rem; }
-  a.button.size-large, button.button.size-large,
-  input[type="submit"].button.size-large,
-  input[type="reset"].button.size-large {
-    font-size: 2.8rem; }
   a.button.theme-primary, button.button.theme-primary,
   input[type="submit"].button.theme-primary,
   input[type="reset"].button.theme-primary {
@@ -68,7 +56,7 @@ input[type="reset"].button {
     a.button.theme-info:focus:not(:active), button.button.theme-info:focus:not(:active),
     input[type="submit"].button.theme-info:focus:not(:active),
     input[type="reset"].button.theme-info:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem rgba(119, 216, 97, 0.5); }
+      box-shadow: 0rem 0rem 0rem 0.125em rgba(119, 216, 97, 0.5); }
   a.button.theme-caution, button.button.theme-caution,
   input[type="submit"].button.theme-caution,
   input[type="reset"].button.theme-caution {
@@ -86,7 +74,7 @@ input[type="reset"].button {
     a.button.theme-caution:focus, button.button.theme-caution:focus,
     input[type="submit"].button.theme-caution:focus,
     input[type="reset"].button.theme-caution:focus {
-      box-shadow: 0rem 0rem 0rem 0.2rem rgba(232, 232, 25, 0.5); }
+      box-shadow: 0rem 0rem 0rem 0.125em rgba(232, 232, 25, 0.5); }
   a.button.theme-danger, button.button.theme-danger,
   input[type="submit"].button.theme-danger,
   input[type="reset"].button.theme-danger {
@@ -103,7 +91,7 @@ input[type="reset"].button {
     a.button.theme-danger:focus:not(:active), button.button.theme-danger:focus:not(:active),
     input[type="submit"].button.theme-danger:focus:not(:active),
     input[type="reset"].button.theme-danger:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem rgba(242, 100, 82, 0.5); }
+      box-shadow: 0rem 0rem 0rem 0.125em rgba(242, 100, 82, 0.5); }
   a.button.theme-light, button.button.theme-light,
   input[type="submit"].button.theme-light,
   input[type="reset"].button.theme-light {
@@ -238,13 +226,13 @@ div.container-buttons-bar {
   div.container-buttons-bar .button {
     float: left;
     margin: 0; }
-  div.container-buttons-bar .first-button {
+  div.container-buttons-bar > .button:first-child, div.container-buttons-bar > div:first-child .button {
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em; }
-  div.container-buttons-bar .last-button {
+  div.container-buttons-bar > .button:last-child, div.container-buttons-bar > div:last-child .button {
     border-top-left-radius: 0em;
     border-bottom-left-radius: 0em; }
-  div.container-buttons-bar .button:not(.first-button):not(.last-button) {
+  div.container-buttons-bar > .button:not(:first-child):not(:last-child), div.container-buttons-bar > div:not(:first-child):not(:last-child) .button {
     border-radius: 0em; }
 
 /* ====================================================== */

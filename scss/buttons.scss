@@ -25,20 +25,8 @@ input[type="reset"].button {
   }
   
   &:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem 0.2rem $light-blue-thin;
+    box-shadow: 0rem 0rem 0rem 0.125em $light-blue-thin;
     outline: none;
-  }
-
-  &.size-small {
-    font-size: 1.2rem;
-  }
-
-  &.size-medium {
-    font-size: 2.2rem;
-  }
-
-  &.size-large {
-    font-size: 2.8rem;
   }
 
   &.theme-primary {
@@ -67,7 +55,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-green-thin;
+      box-shadow: 0rem 0rem 0rem 0.125em $light-green-thin;
     }
   }
 
@@ -85,7 +73,7 @@ input[type="reset"].button {
     }
 
     &:focus {
-      box-shadow: 0rem 0rem 0rem 0.2rem $medium-yellow-thin;
+      box-shadow: 0rem 0rem 0rem 0.125em $medium-yellow-thin;
     }
   }
 
@@ -102,7 +90,7 @@ input[type="reset"].button {
     }
 
     &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem 0.2rem $light-red-thin;
+      box-shadow: 0rem 0rem 0rem 0.125em $light-red-thin;
     }
   }
 
@@ -304,17 +292,20 @@ div.container-buttons-bar {
     margin: 0;
   }
 
-  .first-button {
+  & > .button:first-child, 
+  & > div:first-child .button {
     border-top-right-radius: 0em;
     border-bottom-right-radius: 0em;
   }
 
-  .last-button {
+  & > .button:last-child, 
+  & > div:last-child .button {
     border-top-left-radius: 0em;
     border-bottom-left-radius: 0em;
   }
 
-  .button:not(.first-button):not(.last-button) {
+  & > .button:not(:first-child):not(:last-child), 
+  & > div:not(:first-child):not(:last-child) .button {
     border-radius: 0em;
   }
 }

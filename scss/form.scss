@@ -34,7 +34,7 @@ select, textarea {
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;  // 6px 10px
-  border: 0.0625em solid $light-gray;
+  border: 0.1rem solid $light-gray;
   border-radius: 0.1875em;  // 3px
   margin: 0.8rem 0rem;  // 6px
   color: $black;
@@ -46,7 +46,7 @@ select, textarea {
   &:focus {
     outline: none;
     border-color: $medium-blue;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
+    box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
   }
 
   &.size-small {
@@ -164,14 +164,13 @@ label.checkbox, label.radio {
 /* ====================================================== */
 
 form div.field {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-family: sans-serif;
-  padding: 0.6em;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  padding: 0.6rem;
+  margin: 0.2rem 0rem;
 
   .label {
-    font-size: 1.4rem;
+    font-size: 1.4rem;    
     font-weight: bold;
   }
 
@@ -223,7 +222,7 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-blue-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
       }
     }
 
@@ -238,7 +237,7 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-green-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-green-thin;
       }
     }
 
@@ -253,7 +252,7 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $medium-yellow-thin;
+        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin;
       }
     }
 
@@ -272,7 +271,7 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.2rem $light-red-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-red-thin;
       }
     }
 
@@ -299,18 +298,18 @@ div.container-controls {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
     padding: 0;
+  }
 
-    &:not(.first-control):not(.last-control) {
-      padding: 0rem 0.6rem;
-    }
+  & > div:first-child {
+    padding-right: 0.6rem;
+  }
 
-    &.first-control {
-      padding-right: 0.6rem;
-    }
+  & > div:last-child {
+    padding-left: 0.6rem;
+  }
 
-    &.last-control {
-      padding-left: 0.6rem;
-    }
+  & > div:not(:first-child):not(:last-child) {
+    padding: 0rem 0.6rem;
   }
 }
 
@@ -327,6 +326,110 @@ div.controls-inline {
     input[type="checkbox"], input[type="radio"] {
       margin-right: 0.2rem;
     }
+  }
+}
+
+/* ====================================================== */
+
+div.container-control-addons {
+  height: 3.2rem;
+  margin: 0.8rem 0rem;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  &.size-small {
+    height: 2.45rem;
+    font-size: 1.2rem;
+  }
+
+  &.size-medium {
+    height: 4.425rem;
+    font-size: 2.2rem;
+  }
+
+  &.size-large {
+    height: 5.65rem;
+    font-size: 2.8rem;
+  }
+
+  input, select {
+    margin: 0;
+    height: 100%;
+    font-size: inherit;
+
+    &:focus {
+      box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
+    }
+  }
+
+  & > div[class*="small-"], & > div[class*="medium-"], 
+  & > div[class*="large-"], & > div[class*="default-"] {
+    padding: 0;
+    height: 100%;
+
+    .button {
+      font-size: inherit;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  & > div:first-child {
+    border-top-left-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+
+    input, .button {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  & > div:not(:first-child):not(:last-child) {
+    input, .button {
+      border-radius: 0;
+    }
+  }
+
+  & > div:last-child {
+    border-top-right-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+
+    input, .button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  div.left-addon, div.right-addon {
+    padding: 0.375em 0.625em;
+    background-color: $light-white;
+    border: 0.1rem solid $light-gray;
+    color: $white-black;
+    position: relative;
+
+    label {
+      line-height: 1;
+      font-size: inherit;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate-2d(-50%, -50%);
+    }
+  }
+
+  div.left-addon{
+    border-right: none;
+  }
+
+  div.right-addon {
+    border-left: none;
   }
 }
 

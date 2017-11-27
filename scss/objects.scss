@@ -9,45 +9,42 @@ div.modal-backdrop {
   min-height: 100%;
   height: auto;
   background-color: $black-thick;
-  padding: 1.8rem;
+  padding: 2.4rem;
 
   div.modal {
-    font-size: 1rem;
-    padding: 1.8em;
+    padding: 2.4rem;
     background-color: $white;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
   }
 }
 
 /* ====================================================== */
 
 div.box {
-  font-size: 1rem;
-  padding: 1.6em;
-  border: 0.1em solid $light-gray;
-  border-radius: 0.4em;
+  padding: 1.2rem;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
   background-color: $white;
-  box-shadow: 0.1em 0.1em 0.1em 0em $light-gray;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem $light-gray;
 }
 
 /* ====================================================== */
 
 div.message {
-  font-size: 1rem;
-  border: 0.1em solid $dark-gray;
-  border-radius: 0.4em;
+  border: 0.1rem solid $dark-gray;
+  border-radius: 0.4rem;
   background-color: $white-gray;
-  margin: 0.6em 0em;
+  margin: 0.6rem 0rem;
 
   div.message-header {
-    padding: 0.4em 1.2em;
+    padding: 0.4rem 1.2rem;
     color: $white-gray;
     border-color: inherit;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 1em 1em 1em 1.8em;
+    padding: 1rem 1rem 1rem 1.8rem;
     color: $light-black;
     border-color: inherit;
     border-radius: 0.3rem;
@@ -142,17 +139,29 @@ div.message {
 /* ====================================================== */
 
 ul.tabs {
+  font-size: 1.6rem;
   &::after {
     content: '';
     clear: both;
     display: block;
   }
 
+  &.container-tabs-wide {
+    div[class*="small-"], div[class*="medium-"], 
+    div[class*="large-"], div[class*="default-"] {
+      padding: 0;
+    }
+
+    li {
+      width: 100%;
+    }
+  }
+
   li {
-    font-size: 1em;
     float: left;
-    padding: 0.3em 1em;
-    border-radius: 0.2em 0.2em 0em 0em;
+    text-align: center;
+    padding: 0.1875em 0.875em;
+    border-radius: 0.1875em 0.1875em 0em 0em;
     color: $dark-gray;
     border-bottom: 0.2rem solid $medium-gray;
 
@@ -204,10 +213,9 @@ ul.tabs {
 /* ====================================================== */
 
 ul.menu {
-  font-size: 1rem;
-  border: 0.1em solid $dark-white;
-  border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em 0.2em 0em $medium-white;
+  border: 0.1rem solid $dark-white;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $medium-white;
 
   .button {
     margin-top: 0;
@@ -235,8 +243,8 @@ ul.menu {
   }
 
   li {
-    font-size: 1rem;  
-    padding: 1em;
+    padding: 1rem;  // 10px
+    line-height: 1;
     vertical-align: middle;
 
     &.menu-header, &.menu-item, &.menu-footer {
@@ -244,16 +252,16 @@ ul.menu {
     }
   
     &.menu-header {
-      border-radius: 0.3em 0.3em 0em 0em;
-      border-bottom: 0.1em solid $dark-white;
+      border-radius: 0.3rem 0.3rem 0rem 0rem;
+      border-bottom: 0.1rem solid $dark-white;
     }
 
     &.menu-item {
-      border-bottom: 0.1em solid $dark-white;
+      border-bottom: 0.1rem solid $dark-white;
     }
 
     &.menu-footer {
-      border-radius: 0em 0em 0.3em 0.3em;
+      border-radius: 0rem 0rem 0.3rem 0.3rem;
     }
 
     a {
@@ -273,7 +281,7 @@ ul.menu {
 span.icon {
   display: inline-block;
   height: auto;
-  width: 1.4em; //2rem, 20px
+  width: 1.4em;
 
   &.size-large {
     width: 2em;
@@ -291,10 +299,10 @@ span.icon {
 /* ====================================================== */
 
 button.close {
-  font-size: 1rem;
-  height: 1.6em;
-  width: 1.6em;
-  border-radius: 0.2em;
+  font-size: 1.6rem;  
+  height: 1em;
+  width: 1em;
+  border-radius: 0.125em;
   position: relative;
   background-color: $medium-white;
 
@@ -310,7 +318,7 @@ button.close {
 
   &:focus:not(:active) {
     outline: none;
-    box-shadow: 0em 0em 0em 0.2rem $light-blue;
+    box-shadow: 0em 0em 0em 0.125em $light-blue;
   }
 
   &:active {
@@ -325,8 +333,8 @@ button.close {
   &::before, &::after {
     content: '';
     background-color: $dark-gray;
-    border: 0.1em solid $dark-gray;
-    height: 0.8em;
+    border: 0.1rem solid $dark-gray;
+    height: 0.5em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -367,29 +375,22 @@ button.close {
   }
 
   &.size-small {
-    height: 1.2em;
-    width: 1.2em;
+    font-size: 1.2rem;
+  }
+
+  &.size-medium {
+    font-size: 2rem;
 
     &::before, &::after {
       height: 0.6em;
     }
   }
 
-  &.size-medium {
-    height: 2em;
-    width: 2em;
-
-    &::before, &::after {
-      height: 1.2em;
-    }
-  }
-
   &.size-large {
-    height: 2.4em;
-    width: 2.4em;
+    font-size: 2.4rem;
 
     &::before, &::after {
-      height: 1.6em;
+      height: 0.6667em;
     }
   }
 
@@ -471,9 +472,9 @@ span.stamp {
 }
 
 div.stamp-bar {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   display: inline-block;
-  margin: 0.6rem 0.4rem;
+  margin: 0.375em 0.25em;
 
   &::after {
     content: '';
@@ -483,7 +484,7 @@ div.stamp-bar {
 
   span.stamp {
     font-size: inherit;
-    padding: 0.4rem 0.6rem;
+    padding: 0.25em 0.375em;
     float: left;
     margin: 0;
 
@@ -508,19 +509,11 @@ div.stamp-bar {
     &.has-close {
       position: relative;
       padding: 0;
-      height: 2.2rem;
-      width: 3rem;
+      height: 1.5em;
+      width: 1.875em;
     }
   }
 
-  &.size-large {
-    font-size: 2.1rem;
-
-    span.stamp.has-close {
-      height: 2.9rem;
-      width: 3.2rem;
-    }
-  }
 }
 
 /* ====================================================== */
@@ -625,10 +618,11 @@ img {
 /* ====================================================== */
 
 div.progress-bar {
-  height: 1.2rem;
+  font-size: 1.6rem;
+  height: 0.75em;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 0.3rem;
+  border-radius: 0.1875em;
   margin: 1rem 0rem;
 
   div.progress {
@@ -644,14 +638,6 @@ div.progress-bar {
   &.size-small {
     height: 0.6rem;
     border-radius: 0.2rem;
-  }
-
-  &.size-medium {
-    height: 1.6rem;
-  }
-
-  &.size-large {
-    height: 2rem;
   }
 
   &.theme-primary {
@@ -702,14 +688,14 @@ div.progress-bar {
 
 ul.text-list {
   &.indent-sublists ul.text-list, &.indent-immediate > li {
-    margin-left: 1.2rem;
+    margin-left: 0.625em;
   }
 
   li {
     line-height: 1;
-    padding: 0.3rem 0rem 0.3rem 1.4rem;
+    padding: 0.1875em 0em 0.1875em 0.875em;
     color: $white-black;
-    border-radius: 0.2rem;
+    border-radius: 0.125em;
 
     a {
       color: inherit;
@@ -889,7 +875,7 @@ ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
-  @include translate-2d(0%, 100%);
+  @include translate-2d(0%, calc(100% + 1rem));
   border: 0.1rem solid $light-gray;
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
@@ -900,7 +886,7 @@ ul.dropdown {
 
   &.on-top {
     bottom: 100%;
-    @include translate-2d(0%, 0%);
+    @include translate-2d(0%, calc(0% - 1rem));
   }
 
   li ul.dropdown.on-right {
@@ -917,7 +903,7 @@ ul.dropdown {
 
   &.align-center {
     left: 50%;
-    @include translate-2d(-50%, 100%);
+    @include translate-2d(-50%, calc(100% + 1rem));
   }
 
   &.align-right {
@@ -926,7 +912,7 @@ ul.dropdown {
 
 
   li {
-    padding: 0.3em 1em;
+    padding: 0.4rem 1.4rem;
     color: $black;
 
     &:hover {
@@ -976,7 +962,7 @@ div.popover {
   position: absolute;
   bottom: 100%;
   left: 50%;
-  @include translate-2d(-50%, 0%);
+  @include translate-2d(-50%, calc(0% - 1rem));
   background-color: $white;
   border: 0.1rem solid $light-gray;
   border-radius: 0.4rem;
@@ -998,19 +984,19 @@ div.popover {
 
   &.on-bottom {
     bottom: 0;
-    @include translate-2d(-50%, 100%);
+    @include translate-2d(-50%, calc(100% + 1rem));
   }
 
   &.on-left {
     bottom: 50%;
     left: 0;
-    @include translate-2d(-100%, 50%);
+    @include translate-2d(calc(-100% - 1rem), 50%);
   }
 
   &.on-right {
     bottom: 50%;
     left: 100%;
-    @include translate-2d(0%, 50%);
+    @include translate-2d(calc(0% + 1rem), 50%);
   }
 
 }
@@ -1148,11 +1134,15 @@ table.table {
   line-height: 1;
 
   thead tr:first-child th:first-child {
-    border-top-left-radius: 0.3rem;
+    border-top-left-radius: 0.25em;  // 4px when font-size 16px
   }
 
   thead tr:first-child th:last-child {
-    border-top-right-radius: 0.3rem;
+    border-top-right-radius: 0.25em; // 4px when font-size 16px
+  }
+
+  caption {
+    padding: 0.5em 0em; // 8px when font-size 16px
   }
 
   th {
@@ -1161,7 +1151,16 @@ table.table {
   }
 
   td, th {
-    padding: 0.6rem;
+    padding: 0.75em;  // 12px when font-size 16px
+    vertical-align: middle;
+  }
+
+  &.slim th, &.slim td {
+    padding: 0.5em;  // 8px when font-size 16px
+  }
+
+  &.border-all th, &.border-all td {
+    border: 0.1rem solid $medium-gray;
   }
 
   thead.striped-odd tr:nth-child(odd), 
@@ -1171,10 +1170,6 @@ table.table {
   tfoot.striped-odd tr:nth-child(odd),
   tfoot.striped-even tr:nth-child(even)  {
     background-color: $table-striped;
-  }
-
-  &.bordered th, &.bordered td {
-    border: 0.1rem solid $medium-gray;
   }
 
   thead.border-rows tr, tbody.border-rows tr, 
@@ -1216,6 +1211,15 @@ table.table {
   tbody.row-hover tr.theme-dark:hover,
   tfoot.row-hover tr.theme-dark:hover {
     background-color: $light-black !important;
+  }
+
+  tr[class*="theme-"] a.a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover {
+      color: $link-hover;
+    }
   }
 
   tr.theme-primary {
