@@ -331,6 +331,114 @@ div.controls-inline {
 
 /* ====================================================== */
 
+/* 
+
+height: 3.2rem;
+
+    &.size-small {
+      height: 2.45rem;
+    }
+
+    &.size-medium {
+      height: 4.425rem;
+    }
+
+    &.size-large {
+      height: 5.65rem;
+    }
+
+*/
+
+div.container-control-addons {
+  height: 3.2rem;
+  margin: 0.8rem 0rem;
+
+  &.size-small {
+    height: 2.45rem;
+  }
+
+  &.size-medium {
+    height: 4.425rem;
+  }
+
+  &.size-large {
+    height: 5.65rem;
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  input, select {
+    margin: 0;
+    height: 100%;
+
+    &:focus {
+      box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
+    }
+  }
+
+  & > div[class*="small-"], & > div[class*="medium-"], 
+  & > div[class*="large-"], & > div[class*="default-"] {
+    padding: 0;
+    height: 100%;
+  }
+
+  & > div:first-child {
+    border-top-left-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+
+    input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  & > div:not(:first-child):not(:last-child) {
+    input {
+      border-radius: 0;
+    }
+  }
+
+  & > div:last-child {
+    border-top-right-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+
+    input {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  div.left-addon, div.right-addon {
+    padding: 0.375em 0.625em;
+    background-color: $light-white;
+    border: 0.1rem solid $light-gray;
+    color: $white-black;
+    position: relative;
+
+    label {
+      line-height: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      @include translate-2d(-50%, -50%);
+    }
+  }
+
+  div.left-addon{
+    border-right: none;
+  }
+
+  div.right-addon {
+    border-left: none;
+  }
+}
+
+/* ====================================================== */
+
 
 
 
