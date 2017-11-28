@@ -28,15 +28,15 @@
 
 input[type="email"], input[type="number"],
 input[type="password"], input[type="search"], 
-input[type="tel"], input[type="text"], input[type="url"], 
-select, textarea {
+input[type="tel"], input[type="text"], input[type="url"],
+textarea {
   font-size: 1.6rem;
   display: block;
   width: 100%;
   padding: 0.375em 0.625em;  // 6px 10px
   border: 0.1rem solid $light-gray;
   border-radius: 0.1875em;  // 3px
-  margin: 0.8rem 0rem;  // 6px
+  margin: 0.8rem 0rem;  // 8px
   color: $black;
 
   &:hover {
@@ -54,7 +54,7 @@ select, textarea {
   }
 
   &.size-medium {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
   }
 
   &.size-large {
@@ -65,58 +65,52 @@ select, textarea {
 /* ==================================== */
 
 div.select {
-  position: relative;
+  font-size: 1.6rem;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.1875em;
+  background-color: $white;
+  margin: 0.8rem 0rem;
+  height: 3.2rem;
 
-  select:not([multiple]) {
-    @include set-appearance(none);
+  &:hover {
+    border-color: $medium-gray;
+  }
+
+  &.size-small {
+    font-size: 1.2rem;
+    height: 2.5rem;
+  }
+
+  &.size-medium {
+    font-size: 2.1rem;
+    height: 4.175rem;
+  }
+
+  &.size-large {
+    font-size: 2.8rem;
+    height: 5.5rem;
+  }
+
+  &.focused {
+    border-color: $medium-blue;
+    box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
+    color: $black;
+
+    select:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    font-size: inherit;
+    display: block;
+    width: 100%;
     background-color: $white;
-    height: 3.2rem;
-
-    &.size-small {
-      height: 2.45rem;
-    }
-
-    &.size-medium {
-      height: 4.425rem;
-    }
-
-    &.size-large {
-      height: 5.65rem;
-    }
+    height: 100%;
+    color: $black;
   }
 
-  &:not(:hover):not(.multiple) {
-    &::after {
-      @include select-arrow-color($light-gray);
-      @include rotate-translate-2d(135deg, -50%, 50%);
-      content: " ";
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      position: absolute;
-      top: 50%;
-      right: 1.6rem;
-      pointer-events: none;
-    }
-  }
-
-  &:hover:not(.multiple) {
-    &::after {
-      @include select-arrow-color($medium-gray);
-      @include rotate-translate-2d(135deg, -50%, 50%);
-      content: " ";
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      position: absolute;
-      top: 50%;
-      right: 1.6rem;
-      pointer-events: none;
-    }
-  }
-
-  select[multiple] {
-    background-color: $white;
+  &.multiple {
     height: 9.2rem;
 
     &.size-small {
@@ -218,11 +212,11 @@ form div.field {
 
   &.theme-primary {
     input:not([type="checkbox"]):not([type="radio"]), 
-    select, textarea {
+    div.select, textarea {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
       }
     }
 
@@ -233,11 +227,11 @@ form div.field {
 
   &.theme-info {
     input:not([type="checkbox"]):not([type="radio"]), 
-    select, textarea {
+    div.select, textarea {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-green-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-green-thin inset;
       }
     }
 
@@ -248,11 +242,11 @@ form div.field {
 
   &.theme-caution {
     input:not([type="checkbox"]):not([type="radio"]), 
-    select, textarea {
+    div.select, textarea {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin;
+        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin inset;
       }
     }
 
@@ -267,11 +261,11 @@ form div.field {
 
   &.theme-danger {
     input:not([type="checkbox"]):not([type="radio"]), 
-    select, textarea {
+    div.select, textarea {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-red-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-red-thin inset;
       }
     }
 
@@ -331,7 +325,7 @@ div.controls-inline {
 
 /* ====================================================== */
 
-div.container-control-addons {
+div.container-addons {
   height: 3.2rem;
   margin: 0.8rem 0rem;
 
@@ -342,21 +336,21 @@ div.container-control-addons {
   }
 
   &.size-small {
-    height: 2.45rem;
+    height: 2.5rem;
     font-size: 1.2rem;
   }
 
   &.size-medium {
-    height: 4.425rem;
-    font-size: 2.2rem;
+    height: 4.175rem;
+    font-size: 2.1rem;
   }
 
   &.size-large {
-    height: 5.65rem;
+    height: 5.5rem;
     font-size: 2.8rem;
   }
 
-  input, select {
+  input, div.select {
     margin: 0;
     height: 100%;
     font-size: inherit;
@@ -371,7 +365,7 @@ div.container-control-addons {
     padding: 0;
     height: 100%;
 
-    .button {
+    .button, div.select {
       font-size: inherit;
       width: 100%;
       height: 100%;
@@ -385,14 +379,14 @@ div.container-control-addons {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em;
 
-    input, .button {
+    input, .button, div.select {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
   }
 
   & > div:not(:first-child):not(:last-child) {
-    input, .button {
+    input, .button, div.select {
       border-radius: 0;
     }
   }
@@ -401,7 +395,7 @@ div.container-control-addons {
     border-top-right-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em;
 
-    input, .button {
+    input, .button, div.select {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -414,13 +408,23 @@ div.container-control-addons {
     color: $white-black;
     position: relative;
 
-    label {
+    .label {
       line-height: 1;
       font-size: inherit;
+      font-weight: normal;
       position: absolute;
       left: 50%;
       top: 50%;
       @include translate-2d(-50%, -50%);
+    }
+
+    div.select {
+      border: none;
+      background-color: transparent;
+
+      select {
+        background-color: transparent;
+      }
     }
   }
 

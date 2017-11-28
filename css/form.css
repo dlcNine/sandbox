@@ -25,7 +25,7 @@
 input[type="email"], input[type="number"],
 input[type="password"], input[type="search"],
 input[type="tel"], input[type="text"], input[type="url"],
-select, textarea {
+textarea {
   font-size: 1.6rem;
   display: block;
   width: 100%;
@@ -37,88 +37,70 @@ select, textarea {
   input[type="email"]:hover, input[type="number"]:hover,
   input[type="password"]:hover, input[type="search"]:hover,
   input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover,
-  select:hover, textarea:hover {
+  textarea:hover {
     border-color: #bfbfbf; }
   input[type="email"]:focus, input[type="number"]:focus,
   input[type="password"]:focus, input[type="search"]:focus,
   input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus,
-  select:focus, textarea:focus {
+  textarea:focus {
     outline: none;
     border-color: #3e9def;
     box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
   input[type="email"].size-small, input[type="number"].size-small,
   input[type="password"].size-small, input[type="search"].size-small,
   input[type="tel"].size-small, input[type="text"].size-small, input[type="url"].size-small,
-  select.size-small, textarea.size-small {
+  textarea.size-small {
     font-size: 1.2rem; }
   input[type="email"].size-medium, input[type="number"].size-medium,
   input[type="password"].size-medium, input[type="search"].size-medium,
   input[type="tel"].size-medium, input[type="text"].size-medium, input[type="url"].size-medium,
-  select.size-medium, textarea.size-medium {
-    font-size: 2.2rem; }
+  textarea.size-medium {
+    font-size: 2.1rem; }
   input[type="email"].size-large, input[type="number"].size-large,
   input[type="password"].size-large, input[type="search"].size-large,
   input[type="tel"].size-large, input[type="text"].size-large, input[type="url"].size-large,
-  select.size-large, textarea.size-large {
+  textarea.size-large {
     font-size: 2.8rem; }
 
 /* ==================================== */
 div.select {
-  position: relative; }
-  div.select select:not([multiple]) {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background-color: white;
-    height: 3.2rem; }
-    div.select select:not([multiple]).size-small {
-      height: 2.45rem; }
-    div.select select:not([multiple]).size-medium {
-      height: 4.425rem; }
-    div.select select:not([multiple]).size-large {
-      height: 5.65rem; }
-  div.select:not(:hover):not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, #d8d8d8 50%);
-    -webkit-transform: rotate(135deg) translate(-50%, 50%);
-    -moz-transform: rotate(135deg) translate(-50%, 50%);
-    -o-transform: rotate(135deg) translate(-50%, 50%);
-    -ms-transform: rotate(135deg) translate(-50%, 50%);
-    transform: rotate(135deg) translate(-50%, 50%);
-    content: " ";
+  font-size: 1.6rem;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.1875em;
+  background-color: white;
+  margin: 0.8rem 0rem;
+  height: 3.2rem; }
+  div.select:hover {
+    border-color: #bfbfbf; }
+  div.select.size-small {
+    font-size: 1.2rem;
+    height: 2.5rem; }
+  div.select.size-medium {
+    font-size: 2.1rem;
+    height: 4.175rem; }
+  div.select.size-large {
+    font-size: 2.8rem;
+    height: 5.5rem; }
+  div.select.focused {
+    border-color: #3e9def;
+    box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5);
+    color: #383838; }
+    div.select.focused select:focus {
+      outline: none; }
+  div.select select {
+    font-size: inherit;
     display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    right: 1.6rem;
-    pointer-events: none; }
-  div.select:hover:not(.multiple)::after {
-    background-image: -webkit-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
-    background-image: -moz-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
-    background-image: -o-linear-gradient(45deg, transparent 50%, #bfbfbf 50%);
-    -webkit-transform: rotate(135deg) translate(-50%, 50%);
-    -moz-transform: rotate(135deg) translate(-50%, 50%);
-    -o-transform: rotate(135deg) translate(-50%, 50%);
-    -ms-transform: rotate(135deg) translate(-50%, 50%);
-    transform: rotate(135deg) translate(-50%, 50%);
-    content: " ";
-    display: block;
-    width: 1rem;
-    height: 1rem;
-    position: absolute;
-    top: 50%;
-    right: 1.6rem;
-    pointer-events: none; }
-  div.select select[multiple] {
+    width: 100%;
     background-color: white;
+    height: 100%;
+    color: #383838; }
+  div.select.multiple {
     height: 9.2rem; }
-    div.select select[multiple].size-small {
+    div.select.multiple.size-small {
       height: 7rem; }
-    div.select select[multiple].size-medium {
+    div.select.multiple.size-medium {
       height: 13rem; }
-    div.select select[multiple].size-large {
+    div.select.multiple.size-large {
       height: 16.6rem; }
 
 /* ==================================== */
@@ -172,37 +154,37 @@ form div.field {
         position: relative;
         top: 0.3rem; }
   form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]),
-  form div.field.theme-primary select, form div.field.theme-primary textarea {
+  form div.field.theme-primary div.select, form div.field.theme-primary textarea {
     border-color: #3e9def; }
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field.theme-primary select:focus, form div.field.theme-primary textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
+    form div.field.theme-primary div.select:focus, form div.field.theme-primary textarea:focus {
+      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
-  form div.field.theme-info select, form div.field.theme-info textarea {
+  form div.field.theme-info div.select, form div.field.theme-info textarea {
     border-color: #54c43a; }
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field.theme-info select:focus, form div.field.theme-info textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5); }
+    form div.field.theme-info div.select:focus, form div.field.theme-info textarea:focus {
+      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
-  form div.field.theme-caution select, form div.field.theme-caution textarea {
+  form div.field.theme-caution div.select, form div.field.theme-caution textarea {
     border-color: #e8e819; }
     form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field.theme-caution select:focus, form div.field.theme-caution textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5); }
+    form div.field.theme-caution div.select:focus, form div.field.theme-caution textarea:focus {
+      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
   form div.field.theme-caution .help {
     color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
     color: #e8e819; }
   form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]),
-  form div.field.theme-danger select, form div.field.theme-danger textarea {
+  form div.field.theme-danger div.select, form div.field.theme-danger textarea {
     border-color: #e53c27; }
     form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus,
-    form div.field.theme-danger select:focus, form div.field.theme-danger textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5); }
+    form div.field.theme-danger div.select:focus, form div.field.theme-danger textarea:focus {
+      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
   form div.field.theme-danger .help {
     color: #c62c17; }
   form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
@@ -232,61 +214,62 @@ div.controls-inline label.checkbox input[type="checkbox"], div.controls-inline l
   margin-right: 0.2rem; }
 
 /* ====================================================== */
-div.container-control-addons {
+div.container-addons {
   height: 3.2rem;
   margin: 0.8rem 0rem; }
-  div.container-control-addons::after {
+  div.container-addons::after {
     content: '';
     clear: both;
     display: block; }
-  div.container-control-addons.size-small {
-    height: 2.45rem;
+  div.container-addons.size-small {
+    height: 2.5rem;
     font-size: 1.2rem; }
-  div.container-control-addons.size-medium {
-    height: 4.425rem;
-    font-size: 2.2rem; }
-  div.container-control-addons.size-large {
-    height: 5.65rem;
+  div.container-addons.size-medium {
+    height: 4.175rem;
+    font-size: 2.1rem; }
+  div.container-addons.size-large {
+    height: 5.5rem;
     font-size: 2.8rem; }
-  div.container-control-addons input, div.container-control-addons select {
+  div.container-addons input, div.container-addons div.select {
     margin: 0;
     height: 100%;
     font-size: inherit; }
-    div.container-control-addons input:focus, div.container-control-addons select:focus {
+    div.container-addons input:focus, div.container-addons div.select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
-  div.container-control-addons > div[class*="small-"], div.container-control-addons > div[class*="medium-"], div.container-control-addons > div[class*="large-"], div.container-control-addons > div[class*="default-"] {
+  div.container-addons > div[class*="small-"], div.container-addons > div[class*="medium-"], div.container-addons > div[class*="large-"], div.container-addons > div[class*="default-"] {
     padding: 0;
     height: 100%; }
-    div.container-control-addons > div[class*="small-"] .button, div.container-control-addons > div[class*="medium-"] .button, div.container-control-addons > div[class*="large-"] .button, div.container-control-addons > div[class*="default-"] .button {
+    div.container-addons > div[class*="small-"] .button, div.container-addons > div[class*="small-"] div.select, div.container-addons > div[class*="medium-"] .button, div.container-addons > div[class*="medium-"] div.select, div.container-addons > div[class*="large-"] .button, div.container-addons > div[class*="large-"] div.select, div.container-addons > div[class*="default-"] .button, div.container-addons > div[class*="default-"] div.select {
       font-size: inherit;
       width: 100%;
       height: 100%;
       margin: 0;
       padding-left: 0;
       padding-right: 0; }
-  div.container-control-addons > div:first-child {
+  div.container-addons > div:first-child {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em; }
-    div.container-control-addons > div:first-child input, div.container-control-addons > div:first-child .button {
+    div.container-addons > div:first-child input, div.container-addons > div:first-child .button, div.container-addons > div:first-child div.select {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-  div.container-control-addons > div:not(:first-child):not(:last-child) input, div.container-control-addons > div:not(:first-child):not(:last-child) .button {
+  div.container-addons > div:not(:first-child):not(:last-child) input, div.container-addons > div:not(:first-child):not(:last-child) .button, div.container-addons > div:not(:first-child):not(:last-child) div.select {
     border-radius: 0; }
-  div.container-control-addons > div:last-child {
+  div.container-addons > div:last-child {
     border-top-right-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em; }
-    div.container-control-addons > div:last-child input, div.container-control-addons > div:last-child .button {
+    div.container-addons > div:last-child input, div.container-addons > div:last-child .button, div.container-addons > div:last-child div.select {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
-  div.container-control-addons div.left-addon, div.container-control-addons div.right-addon {
+  div.container-addons div.left-addon, div.container-addons div.right-addon {
     padding: 0.375em 0.625em;
     background-color: whitesmoke;
     border: 0.1rem solid #d8d8d8;
     color: #7a7a7a;
     position: relative; }
-    div.container-control-addons div.left-addon label, div.container-control-addons div.right-addon label {
+    div.container-addons div.left-addon .label, div.container-addons div.right-addon .label {
       line-height: 1;
       font-size: inherit;
+      font-weight: normal;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -295,9 +278,14 @@ div.container-control-addons {
       -o-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-  div.container-control-addons div.left-addon {
+    div.container-addons div.left-addon div.select, div.container-addons div.right-addon div.select {
+      border: none;
+      background-color: transparent; }
+      div.container-addons div.left-addon div.select select, div.container-addons div.right-addon div.select select {
+        background-color: transparent; }
+  div.container-addons div.left-addon {
     border-right: none; }
-  div.container-control-addons div.right-addon {
+  div.container-addons div.right-addon {
     border-left: none; }
 
 /* ====================================================== */
