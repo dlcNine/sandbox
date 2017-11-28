@@ -216,7 +216,7 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
       }
     }
 
@@ -231,7 +231,7 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-green-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-green-thin inset;
       }
     }
 
@@ -246,7 +246,7 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin;
+        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin inset;
       }
     }
 
@@ -265,7 +265,7 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em 0.125em $light-red-thin;
+        box-shadow: 0em 0em 0em 0.125em $light-red-thin inset;
       }
     }
 
@@ -336,21 +336,21 @@ div.container-addons {
   }
 
   &.size-small {
-    height: 2.45rem;
+    height: 2.5rem;
     font-size: 1.2rem;
   }
 
   &.size-medium {
-    height: 4.425rem;
-    font-size: 2.2rem;
+    height: 4.175rem;
+    font-size: 2.1rem;
   }
 
   &.size-large {
-    height: 5.65rem;
+    height: 5.5rem;
     font-size: 2.8rem;
   }
 
-  input, select {
+  input, div.select {
     margin: 0;
     height: 100%;
     font-size: inherit;
@@ -365,7 +365,7 @@ div.container-addons {
     padding: 0;
     height: 100%;
 
-    .button {
+    .button, div.select {
       font-size: inherit;
       width: 100%;
       height: 100%;
@@ -379,14 +379,14 @@ div.container-addons {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em;
 
-    input, .button {
+    input, .button, div.select {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
   }
 
   & > div:not(:first-child):not(:last-child) {
-    input, .button {
+    input, .button, div.select {
       border-radius: 0;
     }
   }
@@ -395,7 +395,7 @@ div.container-addons {
     border-top-right-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em;
 
-    input, .button {
+    input, .button, div.select {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
     }
@@ -408,13 +408,23 @@ div.container-addons {
     color: $white-black;
     position: relative;
 
-    label {
+    .label {
       line-height: 1;
       font-size: inherit;
+      font-weight: normal;
       position: absolute;
       left: 50%;
       top: 50%;
       @include translate-2d(-50%, -50%);
+    }
+
+    div.select {
+      border: none;
+      background-color: transparent;
+
+      select {
+        background-color: transparent;
+      }
     }
   }
 

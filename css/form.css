@@ -158,7 +158,7 @@ form div.field {
     border-color: #3e9def; }
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-primary div.select:focus, form div.field.theme-primary textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
@@ -166,7 +166,7 @@ form div.field {
     border-color: #54c43a; }
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-info div.select:focus, form div.field.theme-info textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
@@ -174,7 +174,7 @@ form div.field {
     border-color: #e8e819; }
     form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-caution div.select:focus, form div.field.theme-caution textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
   form div.field.theme-caution .help {
     color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
@@ -184,7 +184,7 @@ form div.field {
     border-color: #e53c27; }
     form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-danger div.select:focus, form div.field.theme-danger textarea:focus {
-      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5); }
+      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
   form div.field.theme-danger .help {
     color: #c62c17; }
   form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
@@ -222,24 +222,24 @@ div.container-addons {
     clear: both;
     display: block; }
   div.container-addons.size-small {
-    height: 2.45rem;
+    height: 2.5rem;
     font-size: 1.2rem; }
   div.container-addons.size-medium {
-    height: 4.425rem;
-    font-size: 2.2rem; }
+    height: 4.175rem;
+    font-size: 2.1rem; }
   div.container-addons.size-large {
-    height: 5.65rem;
+    height: 5.5rem;
     font-size: 2.8rem; }
-  div.container-addons input, div.container-addons select {
+  div.container-addons input, div.container-addons div.select {
     margin: 0;
     height: 100%;
     font-size: inherit; }
-    div.container-addons input:focus, div.container-addons select:focus {
+    div.container-addons input:focus, div.container-addons div.select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   div.container-addons > div[class*="small-"], div.container-addons > div[class*="medium-"], div.container-addons > div[class*="large-"], div.container-addons > div[class*="default-"] {
     padding: 0;
     height: 100%; }
-    div.container-addons > div[class*="small-"] .button, div.container-addons > div[class*="medium-"] .button, div.container-addons > div[class*="large-"] .button, div.container-addons > div[class*="default-"] .button {
+    div.container-addons > div[class*="small-"] .button, div.container-addons > div[class*="small-"] div.select, div.container-addons > div[class*="medium-"] .button, div.container-addons > div[class*="medium-"] div.select, div.container-addons > div[class*="large-"] .button, div.container-addons > div[class*="large-"] div.select, div.container-addons > div[class*="default-"] .button, div.container-addons > div[class*="default-"] div.select {
       font-size: inherit;
       width: 100%;
       height: 100%;
@@ -249,15 +249,15 @@ div.container-addons {
   div.container-addons > div:first-child {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em; }
-    div.container-addons > div:first-child input, div.container-addons > div:first-child .button {
+    div.container-addons > div:first-child input, div.container-addons > div:first-child .button, div.container-addons > div:first-child div.select {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
-  div.container-addons > div:not(:first-child):not(:last-child) input, div.container-addons > div:not(:first-child):not(:last-child) .button {
+  div.container-addons > div:not(:first-child):not(:last-child) input, div.container-addons > div:not(:first-child):not(:last-child) .button, div.container-addons > div:not(:first-child):not(:last-child) div.select {
     border-radius: 0; }
   div.container-addons > div:last-child {
     border-top-right-radius: 0.1875em;
     border-bottom-right-radius: 0.1875em; }
-    div.container-addons > div:last-child input, div.container-addons > div:last-child .button {
+    div.container-addons > div:last-child input, div.container-addons > div:last-child .button, div.container-addons > div:last-child div.select {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0; }
   div.container-addons div.left-addon, div.container-addons div.right-addon {
@@ -266,9 +266,10 @@ div.container-addons {
     border: 0.1rem solid #d8d8d8;
     color: #7a7a7a;
     position: relative; }
-    div.container-addons div.left-addon label, div.container-addons div.right-addon label {
+    div.container-addons div.left-addon .label, div.container-addons div.right-addon .label {
       line-height: 1;
       font-size: inherit;
+      font-weight: normal;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -277,6 +278,11 @@ div.container-addons {
       -o-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
+    div.container-addons div.left-addon div.select, div.container-addons div.right-addon div.select {
+      border: none;
+      background-color: transparent; }
+      div.container-addons div.left-addon div.select select, div.container-addons div.right-addon div.select select {
+        background-color: transparent; }
   div.container-addons div.left-addon {
     border-right: none; }
   div.container-addons div.right-addon {
