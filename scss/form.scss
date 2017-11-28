@@ -95,6 +95,10 @@ div.select {
     border-color: $medium-blue;
     box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
     color: $black;
+
+    select:focus {
+      outline: none;
+    }
   }
 
   select {
@@ -104,10 +108,6 @@ div.select {
     background-color: $white;
     height: 100%;
     color: $black;
-
-    &:focus {
-      outline: none;
-    }
   }
 
   &.multiple {

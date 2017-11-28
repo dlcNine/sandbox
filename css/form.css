@@ -85,6 +85,8 @@ div.select {
     border-color: #3e9def;
     box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5);
     color: #383838; }
+    div.select.focused select:focus {
+      outline: none; }
   div.select select {
     font-size: inherit;
     display: block;
@@ -92,8 +94,6 @@ div.select {
     background-color: white;
     height: 100%;
     color: #383838; }
-    div.select select:focus {
-      outline: none; }
   div.select.multiple {
     height: 9.2rem; }
     div.select.multiple.size-small {
