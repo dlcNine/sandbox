@@ -305,6 +305,8 @@ div.container-addons {
     border-right: none; }
   div.container-addons div.right-addon {
     border-left: none; }
+  div.container-addons div.control-with-icons {
+    font-size: inherit; }
 
 /* ====================================================== */
 div.control-with-icons {

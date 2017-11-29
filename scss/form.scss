@@ -466,6 +466,10 @@ div.container-addons {
   div.right-addon {
     border-left: none;
   }
+
+  & div.control-with-icons {
+    font-size: inherit;
+  }
 }
 
 /* ====================================================== */

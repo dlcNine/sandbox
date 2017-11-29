@@ -1252,6 +1252,34 @@ table.table {
 
 /* ====================================================== */
 
+ul.breadcrumb, ol.breadcrumb {
+  line-height: 1;
+
+  li {
+    display: inline;
+    color: $link-unvisited;
+
+    &:not(:last-child)::after {
+      content: ' / ';
+      padding: 0em 0.25em;
+      color: $light-black;
+    }
+
+    &:last-of-type {
+      color: $light-black;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 /* ====================================================== */
 
 
