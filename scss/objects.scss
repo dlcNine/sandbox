@@ -281,18 +281,18 @@ ul.menu {
 span.icon {
   display: inline-block;
   height: auto;
-  width: 1.4em;
+  width: 1.2em;
 
   &.size-large {
-    width: 2em;
+    width: 1.6em;
   }
 
   &.size-doubled {
-    width: 2.4em;
+    width: 2em;
   }
 
   &.size-tripled {
-    width: 3.4em;
+    width: 3em;
   }
 }
 
@@ -1251,6 +1251,34 @@ table.table {
 }
 
 /* ====================================================== */
+
+ul.breadcrumb, ol.breadcrumb {
+  line-height: 1;
+
+  li {
+    display: inline;
+    color: $link-unvisited;
+
+    &:not(:last-child)::after {
+      content: ' / ';
+      padding: 0em 0.25em;
+      color: $light-black;
+    }
+
+    &:last-of-type {
+      color: $light-black;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
 
 /* ====================================================== */
 

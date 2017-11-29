@@ -91,7 +91,7 @@ div.select {
     font-size: inherit;
     display: block;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
     height: 100%;
     color: #383838; }
   div.select.multiple {
@@ -159,6 +159,10 @@ form div.field {
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-primary div.select:focus, form div.field.theme-primary textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+  form div.field.theme-primary div.select.focused {
+    box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+    form div.field.theme-primary div.select.focused select {
+      outline: none; }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]),
@@ -167,6 +171,10 @@ form div.field {
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-info div.select:focus, form div.field.theme-info textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
+  form div.field.theme-info div.select.focused {
+    box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
+    form div.field.theme-info div.select.focused select {
+      outline: none; }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]),
@@ -175,6 +183,10 @@ form div.field {
     form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-caution div.select:focus, form div.field.theme-caution textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
+  form div.field.theme-caution div.select.focused {
+    box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
+    form div.field.theme-caution div.select.focused select {
+      outline: none; }
   form div.field.theme-caution .help {
     color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
@@ -185,6 +197,10 @@ form div.field {
     form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus,
     form div.field.theme-danger div.select:focus, form div.field.theme-danger textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
+  form div.field.theme-danger div.select.focused {
+    box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
+    form div.field.theme-danger div.select.focused select {
+      outline: none; }
   form div.field.theme-danger .help {
     color: #c62c17; }
   form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
@@ -236,6 +252,10 @@ div.container-addons {
     font-size: inherit; }
     div.container-addons input:focus, div.container-addons div.select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+  div.container-addons div.select.focused {
+    box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+    div.container-addons div.select.focused select {
+      background-color: transparent; }
   div.container-addons > div[class*="small-"], div.container-addons > div[class*="medium-"], div.container-addons > div[class*="large-"], div.container-addons > div[class*="default-"] {
     padding: 0;
     height: 100%; }
@@ -281,13 +301,46 @@ div.container-addons {
     div.container-addons div.left-addon div.select, div.container-addons div.right-addon div.select {
       border: none;
       background-color: transparent; }
-      div.container-addons div.left-addon div.select select, div.container-addons div.right-addon div.select select {
-        background-color: transparent; }
   div.container-addons div.left-addon {
     border-right: none; }
   div.container-addons div.right-addon {
     border-left: none; }
+  div.container-addons div.control-with-icons {
+    font-size: inherit; }
 
+/* ====================================================== */
+div.control-with-icons {
+  position: relative;
+  font-size: 1.6rem; }
+  div.control-with-icons.size-small {
+    font-size: 1.2rem; }
+  div.control-with-icons.size-medium {
+    font-size: 2.1rem; }
+  div.control-with-icons.size-large {
+    font-size: 2.8rem; }
+  div.control-with-icons span.left-icon, div.control-with-icons span.right-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    color: #939393; }
+    div.control-with-icons span.left-icon i, div.control-with-icons span.right-icon i {
+      font-size: inherit; }
+  div.control-with-icons span.left-icon {
+    left: 0.5em; }
+  div.control-with-icons span.right-icon {
+    right: 0.5em; }
+  div.control-with-icons input {
+    font-size: inherit;
+    padding-left: 2em;
+    padding-right: 2em; }
+    div.control-with-icons input:focus ~ span.left-icon, div.control-with-icons input:focus ~ span.right-icon {
+      color: #4c4c4c; }
+
+/* ====================================================== */
 /* ====================================================== */
 
 /*# sourceMappingURL=form.css.map */
