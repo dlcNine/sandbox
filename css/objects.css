@@ -172,13 +172,13 @@ ul.menu {
 span.icon {
   display: inline-block;
   height: auto;
-  width: 1.4em; }
+  width: 1.2em; }
   span.icon.size-large {
-    width: 2em; }
+    width: 1.6em; }
   span.icon.size-doubled {
-    width: 2.4em; }
+    width: 2em; }
   span.icon.size-tripled {
-    width: 3.4em; }
+    width: 3em; }
 
 /* ====================================================== */
 button.close {
