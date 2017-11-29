@@ -470,6 +470,57 @@ div.container-addons {
 
 /* ====================================================== */
 
+div.control-with-icons {
+  position: relative;
+  font-size: 1.6rem;
+
+  &.size-small {
+    font-size: 1.2rem;
+  }
+
+  &.size-medium {
+    font-size: 2.1rem;
+  }
+
+  &.size-large {
+    font-size: 2.8rem;
+  }
+
+  span.left-icon, span.right-icon {
+    position: absolute;
+    top: 50%;
+    @include translate-2d(0%, -50%);
+    color: $dark-gray;
+
+    i {
+      font-size: inherit;
+    }
+  }
+
+  span.left-icon {
+    left: 0.5em;
+  }
+
+  span.right-icon {
+    right: 0.5em;
+  }
+
+  input {
+    font-size: inherit;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    &:focus ~ span.left-icon, &:focus ~ span.right-icon {
+      color: $medium-black;
+    }
+  }
+}
+
+/* ====================================================== */
+
+/* ====================================================== */
+
+
 
 
 

@@ -307,5 +307,38 @@ div.container-addons {
     border-left: none; }
 
 /* ====================================================== */
+div.control-with-icons {
+  position: relative;
+  font-size: 1.6rem; }
+  div.control-with-icons.size-small {
+    font-size: 1.2rem; }
+  div.control-with-icons.size-medium {
+    font-size: 2.1rem; }
+  div.control-with-icons.size-large {
+    font-size: 2.8rem; }
+  div.control-with-icons span.left-icon, div.control-with-icons span.right-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    color: #939393; }
+    div.control-with-icons span.left-icon i, div.control-with-icons span.right-icon i {
+      font-size: inherit; }
+  div.control-with-icons span.left-icon {
+    left: 0.5em; }
+  div.control-with-icons span.right-icon {
+    right: 0.5em; }
+  div.control-with-icons input {
+    font-size: inherit;
+    padding-left: 2em;
+    padding-right: 2em; }
+    div.control-with-icons input:focus ~ span.left-icon, div.control-with-icons input:focus ~ span.right-icon {
+      color: #4c4c4c; }
+
+/* ====================================================== */
+/* ====================================================== */
 
 /*# sourceMappingURL=form.css.map */
