@@ -23,18 +23,6 @@ textarea {
     border-color: $medium-blue;
     box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
   }
-
-  &.size-small {
-    font-size: 1.2rem;
-  }
-
-  &.size-medium {
-    font-size: 2.1rem;
-  }
-
-  &.size-large {
-    font-size: 2.8rem;
-  }
 }
 
 /* ==================================== */
@@ -71,7 +59,7 @@ div.select {
     box-shadow: 0em 0em 0em 0.125em $light-blue-thin;
     color: $black;
 
-    select:focus {
+    select {
       outline: none;
     }
   }
@@ -80,8 +68,8 @@ div.select {
     font-size: inherit;
     display: block;
     width: 100%;
-    background-color: transparent;
     height: 100%;
+    background-color: transparent;
     color: $black;
   }
 
@@ -197,9 +185,6 @@ form div.field {
 
     div.select.focused {
       box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
-      select {
-        outline: none;
-      }
     }
 
     .help, label.checkbox, label.radio {
@@ -219,9 +204,6 @@ form div.field {
 
     div.select.focused {
       box-shadow: 0em 0em 0em 0.125em $light-green-thin inset;
-      select {
-        outline: none;
-      }
     }
 
     .help, label.checkbox, label.radio {
@@ -241,9 +223,6 @@ form div.field {
 
     div.select.focused {
       box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin inset;
-      select {
-        outline: none;
-      }
     }
 
     .help {
@@ -267,9 +246,6 @@ form div.field {
 
     div.select.focused {
       box-shadow: 0em 0em 0em 0.125em $light-red-thin inset;
-      select {
-        outline: none;
-      }
     }
 
     .help {
@@ -365,9 +341,6 @@ div.container-addons {
 
   div.select.focused {
     box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
-    select {
-      background-color: transparent;
-    }
   }
 
   & > div[class*="small-"], & > div[class*="medium-"], 
@@ -418,7 +391,7 @@ div.container-addons {
     color: $white-black;
     position: relative;
 
-    .label {
+    .addon-label {
       line-height: 1;
       font-size: inherit;
       font-weight: normal;
@@ -452,18 +425,6 @@ div.container-addons {
 div.control-with-icons {
   position: relative;
   font-size: 1.6rem;
-
-  &.size-small {
-    font-size: 1.2rem;
-  }
-
-  &.size-medium {
-    font-size: 2.1rem;
-  }
-
-  &.size-large {
-    font-size: 2.8rem;
-  }
 
   span.left-icon, span.right-icon {
     position: absolute;

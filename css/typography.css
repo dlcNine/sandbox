@@ -10,7 +10,7 @@ scale ratio : 1.3333
   color: #383838; }
 
 .lh-1 {
-  line-height: 1; }
+  line-height: 1 !important; }
 
 .huge-1 {
   font-size: 6.7rem !important; }
