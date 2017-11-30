@@ -1,31 +1,6 @@
 @import "./colors.scss";
 @import "./mixins.scss";
 
-/* input types: 
-  button
-  checkbox
-  color
-  date
-  datetime-local
-  email          textfield
-  file
-  hidden
-  image
-  month
-  number         textfield      
-  password       textfield
-  radio
-  range
-  reset
-  search         textfield
-  submit
-  tel            textfield
-  text           textfield
-  time
-  url            textfield
-  week
-*/
-
 input[type="email"], input[type="number"],
 input[type="password"], input[type="search"], 
 input[type="tel"], input[type="text"], input[type="url"],

@@ -73,17 +73,16 @@ a.a:link {
   text-decoration: none; }
 a.a:hover:not(:visited) {
   color: #0850af;
-  outline: none; }
+  outline: none;
+  text-decoration: underline; }
 a.a:visited {
   color: #6747ad; }
   a.a:visited:hover {
     color: #432782; }
 
-a.a:focus:not(:active):not(:hover), a:focus:not(:active):not(:hover) {
+a.a:focus, a:focus {
   outline: none;
-  text-decoration: underline !important; }
-a.a:focus:not(:active):hover, a:focus:not(:active):hover {
-  outline: none; }
+  text-decoration: underline; }
 
 /* ====================================================== */
 ul.ul.square {

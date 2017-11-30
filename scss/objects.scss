@@ -141,10 +141,16 @@ div.message {
 ul.tabs {
   font-size: 1.6rem;
 
-  li {
-    display: inline-block;
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  li.tab {
+    float: left;
     text-align: center;
-    padding: 0.1875em 0.875em;
+    padding: 0.25em 0.875em;
     border-radius: 0.1875em 0.1875em 0em 0em;
     color: $light-black;
     border-bottom: 0.2rem solid transparent;
@@ -169,7 +175,7 @@ ul.tabs {
   }
 
   &.theme-light {
-    li:not(.active) {
+    li.tab:not(.active) {
       color: $light-white;
 
       &:hover {
@@ -178,14 +184,14 @@ ul.tabs {
       }
     }
 
-    li.active {
+    li.tab.active {
       background-color: $white;
       border-color: $white;
     }
   }
 
   &.theme-dark {
-    li:not(.active) {
+    li.tab:not(.active) {
       color: $medium-gray;
 
       &:hover {
@@ -195,7 +201,7 @@ ul.tabs {
       }
     }
 
-    li.active {
+    li.tab.active {
       background-color: $light-white;
       color: $medium-black;
       border-color: $dark-gray;
@@ -237,12 +243,12 @@ ul.menu {
   }
 
   li {
-    padding: 1rem;  // 10px
-    line-height: 1;
-    vertical-align: middle;
 
     &.menu-header, &.menu-item, &.menu-footer {
       background-color: $white;
+      padding: 1rem;
+      line-height: 1;
+      vertical-align: middle;
     }
   
     &.menu-header {
