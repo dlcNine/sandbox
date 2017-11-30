@@ -133,9 +133,7 @@ a.button {
   }
 }
 
-a.button.wide, button.button.wide, 
-input[type="submit"].button.wide, 
-input[type="reset"].button.wide {
+.button.wide {
   display: block;
   width: 100%;
   margin-left: 0;
@@ -246,9 +244,11 @@ input[type="reset"].button.wide {
 /* ====================================================== */
 
 div.container-buttons {
+  padding: 0.3rem;
+
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
-    padding: 0.4rem;
+    padding: 0.3rem;
 
     .button {
       display: block;

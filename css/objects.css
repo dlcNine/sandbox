@@ -93,42 +93,43 @@ ul.tabs {
     content: '';
     clear: both;
     display: block; }
-  ul.tabs.container-tabs-wide div[class*="small-"], ul.tabs.container-tabs-wide div[class*="medium-"],
-  ul.tabs.container-tabs-wide div[class*="large-"], ul.tabs.container-tabs-wide div[class*="default-"] {
-    padding: 0; }
-  ul.tabs.container-tabs-wide li {
-    width: 100%; }
-  ul.tabs li {
+  ul.tabs li.tab {
     float: left;
     text-align: center;
-    padding: 0.1875em 0.875em;
+    padding: 0.25em 0.875em;
     border-radius: 0.1875em 0.1875em 0em 0em;
-    color: #939393;
-    border-bottom: 0.2rem solid #bfbfbf; }
-    ul.tabs li a, ul.tabs li a:hover {
+    color: #636363;
+    border-bottom: 0.2rem solid transparent; }
+    ul.tabs li.tab a, ul.tabs li.tab a:hover {
       color: inherit;
       text-decoration: none; }
-    ul.tabs li:hover {
+    ul.tabs li.tab:hover {
       cursor: pointer;
-      color: #636363;
-      background-color: rgba(245, 245, 245, 0.9);
-      border-color: #7a7a7a; }
-    ul.tabs li.active {
+      color: #4c4c4c;
+      border-color: #939393; }
+    ul.tabs li.tab.active {
       color: #3e9def;
       background-color: rgba(245, 245, 245, 0.9);
       border-color: #3e9def;
       font-weight: bold; }
-  ul.tabs.theme-light li:not(.active) {
-    color: #4c4c4c; }
-    ul.tabs.theme-light li:not(.active):hover {
-      color: #383838;
-      border-color: #636363; }
-  ul.tabs.theme-dark li:not(.active) {
+  ul.tabs.theme-light li.tab:not(.active) {
+    color: whitesmoke; }
+    ul.tabs.theme-light li.tab:not(.active):hover {
+      background-color: rgba(245, 245, 245, 0.3);
+      border-color: transparent; }
+  ul.tabs.theme-light li.tab.active {
+    background-color: white;
+    border-color: white; }
+  ul.tabs.theme-dark li.tab:not(.active) {
     color: #bfbfbf; }
-    ul.tabs.theme-dark li:not(.active):hover {
-      color: white;
-      border-color: white;
+    ul.tabs.theme-dark li.tab:not(.active):hover {
+      color: #e6e6e6;
+      border-color: #e6e6e6;
       background-color: rgba(99, 99, 99, 0.6); }
+  ul.tabs.theme-dark li.tab.active {
+    background-color: whitesmoke;
+    color: #4c4c4c;
+    border-color: #939393; }
 
 /* ====================================================== */
 ul.menu {
@@ -149,24 +150,23 @@ ul.menu {
         text-decoration: none; }
         ul.menu.theme-dark li.menu-header a:hover, ul.menu.theme-dark li.menu-item a:hover, ul.menu.theme-dark li.menu-footer a:hover {
           color: white; }
-  ul.menu li {
+  ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
+    background-color: white;
     padding: 1rem;
     line-height: 1;
     vertical-align: middle; }
-    ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
-      background-color: white; }
-    ul.menu li.menu-header {
-      border-radius: 0.3rem 0.3rem 0rem 0rem;
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-item {
-      border-bottom: 0.1rem solid #d7d7d7; }
-    ul.menu li.menu-footer {
-      border-radius: 0rem 0rem 0.3rem 0.3rem; }
-    ul.menu li a {
-      text-decoration: none;
-      color: #2771d1; }
-      ul.menu li a:hover {
-        color: #0850af; }
+  ul.menu li.menu-header {
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+    border-bottom: 0.1rem solid #d7d7d7; }
+  ul.menu li.menu-item {
+    border-bottom: 0.1rem solid #d7d7d7; }
+  ul.menu li.menu-footer {
+    border-radius: 0rem 0rem 0.3rem 0.3rem; }
+  ul.menu li a {
+    text-decoration: none;
+    color: #2771d1; }
+    ul.menu li a:hover {
+      color: #0850af; }
 
 /* ====================================================== */
 span.icon {
@@ -540,8 +540,7 @@ ul.dropdown {
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
   padding: 0.8rem 0rem 0.8rem 0rem;
-  background-color: white;
-  overflow: visible; }
+  background-color: white; }
   ul.dropdown.on-top {
     bottom: 100%;
     -webkit-transform: translate(0%, calc(0% - 1rem));
@@ -549,22 +548,42 @@ ul.dropdown {
     -o-transform: translate(0%, calc(0% - 1rem));
     -ms-transform: translate(0%, calc(0% - 1rem));
     transform: translate(0%, calc(0% - 1rem)); }
+    ul.dropdown.on-top li ul.dropdown.on-right, ul.dropdown.on-top li ul.dropdown.on-left {
+      bottom: 0;
+      top: initial; }
+    ul.dropdown.on-top.align-center {
+      left: 50%;
+      -webkit-transform: translate(-50%, calc(0% - 1rem));
+      -moz-transform: translate(-50%, calc(0% - 1rem));
+      -o-transform: translate(-50%, calc(0% - 1rem));
+      -ms-transform: translate(-50%, calc(0% - 1rem));
+      transform: translate(-50%, calc(0% - 1rem)); }
   ul.dropdown li ul.dropdown.on-right {
-    right: 0;
-    bottom: 50%;
-    -webkit-transform: translate(100%, 50%);
-    -moz-transform: translate(100%, 50%);
-    -o-transform: translate(100%, 50%);
-    -ms-transform: translate(100%, 50%);
-    transform: translate(100%, 50%); }
+    padding: 0;
+    left: 100%;
+    top: 0;
+    bottom: initial;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%); }
   ul.dropdown li ul.dropdown.on-left {
+    padding: 0;
     left: 0;
-    bottom: 50%;
-    -webkit-transform: translate(-100%, 50%);
-    -moz-transform: translate(-100%, 50%);
-    -o-transform: translate(-100%, 50%);
-    -ms-transform: translate(-100%, 50%);
-    transform: translate(-100%, 50%); }
+    bottom: initial;
+    top: 0;
+    -webkit-transform: translate(-100%, 0%);
+    -moz-transform: translate(-100%, 0%);
+    -o-transform: translate(-100%, 0%);
+    -ms-transform: translate(-100%, 0%);
+    transform: translate(-100%, 0%); }
+  ul.dropdown li ul.dropdown.on-right li:first-child, ul.dropdown li ul.dropdown.on-left li:first-child {
+    border-radius: 0.3rem 0.3rem 0rem 0rem; }
+  ul.dropdown li ul.dropdown.on-right li:last-child, ul.dropdown li ul.dropdown.on-left li:last-child {
+    border-radius: 0rem 0rem 0.3rem 0.3rem; }
+  ul.dropdown li ul.dropdown.on-right li:only-child, ul.dropdown li ul.dropdown.on-left li:only-child {
+    border-radius: 0.3rem; }
   ul.dropdown.align-center {
     left: 50%;
     -webkit-transform: translate(-50%, calc(100% + 1rem));

@@ -59,7 +59,7 @@
   border-bottom-right-radius: 0 !important; }
 
 .rds-inherit {
-  border-radius: inherit; }
+  border-radius: inherit !important; }
 
 .no-background {
   background: none !important; }
@@ -127,13 +127,13 @@
 .flex-x-center {
   justify-content: center; }
 
-.flex-x-between {
+.flex-between {
   justify-content: space-between; }
 
-.flex-x-around {
+.flex-around {
   justify-content: space-around; }
 
-.flex-x-even {
+.flex-even {
   justify-content: space-evenly; }
 
 .flex-right {

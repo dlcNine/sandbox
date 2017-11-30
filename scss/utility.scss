@@ -21,7 +21,7 @@
 .rds-tr-0 { border-top-right-radius: 0 !important; }
 .rds-bl-0 { border-bottom-left-radius: 0 !important; }
 .rds-br-0 { border-bottom-right-radius: 0 !important; }
-.rds-inherit { border-radius: inherit; }
+.rds-inherit { border-radius: inherit !important; }
 
 .no-background {
   background: none !important;
@@ -119,15 +119,15 @@
   justify-content: center;
 }
 
-.flex-x-between {
+.flex-between {
   justify-content: space-between;
 }
 
-.flex-x-around {
+.flex-around {
   justify-content: space-around;
 }
 
-.flex-x-even {
+.flex-even {
   justify-content: space-evenly;
 }
 
