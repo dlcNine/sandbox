@@ -540,8 +540,7 @@ ul.dropdown {
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
   padding: 0.8rem 0rem 0.8rem 0rem;
-  background-color: white;
-  overflow: visible; }
+  background-color: white; }
   ul.dropdown.on-top {
     bottom: 100%;
     -webkit-transform: translate(0%, calc(0% - 1rem));
@@ -550,21 +549,31 @@ ul.dropdown {
     -ms-transform: translate(0%, calc(0% - 1rem));
     transform: translate(0%, calc(0% - 1rem)); }
   ul.dropdown li ul.dropdown.on-right {
-    right: 0;
-    bottom: 50%;
-    -webkit-transform: translate(100%, 50%);
-    -moz-transform: translate(100%, 50%);
-    -o-transform: translate(100%, 50%);
-    -ms-transform: translate(100%, 50%);
-    transform: translate(100%, 50%); }
+    padding: 0;
+    left: 100%;
+    top: 0;
+    bottom: initial;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%); }
   ul.dropdown li ul.dropdown.on-left {
+    padding: 0;
     left: 0;
-    bottom: 50%;
-    -webkit-transform: translate(-100%, 50%);
-    -moz-transform: translate(-100%, 50%);
-    -o-transform: translate(-100%, 50%);
-    -ms-transform: translate(-100%, 50%);
-    transform: translate(-100%, 50%); }
+    bottom: initial;
+    top: 0;
+    -webkit-transform: translate(-100%, 0%);
+    -moz-transform: translate(-100%, 0%);
+    -o-transform: translate(-100%, 0%);
+    -ms-transform: translate(-100%, 0%);
+    transform: translate(-100%, 0%); }
+  ul.dropdown li ul.dropdown.on-right li:first-child, ul.dropdown li ul.dropdown.on-left li:first-child {
+    border-radius: 0.3rem 0.3rem 0rem 0rem; }
+  ul.dropdown li ul.dropdown.on-right li:last-child, ul.dropdown li ul.dropdown.on-left li:last-child {
+    border-radius: 0rem 0rem 0.3rem 0.3rem; }
+  ul.dropdown li ul.dropdown.on-right li:only-child, ul.dropdown li ul.dropdown.on-left li:only-child {
+    border-radius: 0.3rem; }
   ul.dropdown.align-center {
     left: 50%;
     -webkit-transform: translate(-50%, calc(100% + 1rem));
