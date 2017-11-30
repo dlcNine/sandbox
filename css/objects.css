@@ -548,6 +548,16 @@ ul.dropdown {
     -o-transform: translate(0%, calc(0% - 1rem));
     -ms-transform: translate(0%, calc(0% - 1rem));
     transform: translate(0%, calc(0% - 1rem)); }
+    ul.dropdown.on-top li ul.dropdown.on-right, ul.dropdown.on-top li ul.dropdown.on-left {
+      bottom: 0;
+      top: initial; }
+    ul.dropdown.on-top.align-center {
+      left: 50%;
+      -webkit-transform: translate(-50%, calc(0% - 1rem));
+      -moz-transform: translate(-50%, calc(0% - 1rem));
+      -o-transform: translate(-50%, calc(0% - 1rem));
+      -ms-transform: translate(-50%, calc(0% - 1rem));
+      transform: translate(-50%, calc(0% - 1rem)); }
   ul.dropdown li ul.dropdown.on-right {
     padding: 0;
     left: 100%;

@@ -886,6 +886,16 @@ ul.dropdown {
   &.on-top {
     bottom: 100%;
     @include translate-2d(0%, calc(0% - 1rem));
+
+    li ul.dropdown.on-right, li ul.dropdown.on-left {
+      bottom: 0;
+      top: initial;
+    }
+
+    &.align-center {
+      left: 50%;
+      @include translate-2d(-50%, calc(0% - 1rem));
+    }
   }
 
   li ul.dropdown.on-right {
@@ -894,10 +904,6 @@ ul.dropdown {
     top: 0;
     bottom: initial;
     @include translate-2d(0%, 0%);
-  }
-
-  li ul.dropdown.on-top.on-right {
-    
   }
 
   li ul.dropdown.on-left {
