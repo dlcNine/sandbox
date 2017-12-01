@@ -243,36 +243,33 @@ ul.menu {
     }
   }
 
-  li {
+  li.menu-header, li.menu-item, li.menu-footer {
+    background-color: $white;
+    padding: 1rem;
+    line-height: 1;
+    vertical-align: middle;
 
-    &.menu-header, &.menu-item, &.menu-footer {
-      background-color: $white;
-      padding: 1rem;
-      line-height: 1;
-      vertical-align: middle;
+    a {
+      text-decoration: none;
+      color: $link-unvisited;
 
-      a {
-        text-decoration: none;
-        color: $link-unvisited;
-
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
+  }
   
-    &.menu-header {
-      border-radius: 0.3rem 0.3rem 0rem 0rem;
-      border-bottom: 0.1rem solid $dark-white;
-    }
+  li.menu-header {
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+    border-bottom: 0.1rem solid $dark-white;
+  }
 
-    &.menu-item {
-      border-bottom: 0.1rem solid $dark-white;
-    }
+  li.menu-item {
+    border-bottom: 0.1rem solid $dark-white;
+  }
 
-    &.menu-footer {
-      border-radius: 0rem 0rem 0.3rem 0.3rem;
-    }
+  li.menu-footer {
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
   }
 
 }
