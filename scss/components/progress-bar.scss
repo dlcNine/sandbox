@@ -29,45 +29,33 @@ div.progress-bar {
     border-radius: $progress-bar-small-radius;
   }
 
-  &.theme-primary {
-    div.progress {
-      background-color: $medium-blue;
-      color: $white-blue;
-    }
+  &.theme-primary div.progress {
+    background-color: $medium-blue;
+    color: $white-blue;
   }
 
-  &.theme-info {
-    div.progress {
-      background-color: $medium-green;
-      color: $white-green;
-    }
+  &.theme-info div.progress {
+    background-color: $medium-green;
+    color: $white-green;
   }
 
-  &.theme-caution {
-    div.progress {
-      background-color: $medium-yellow;
-      color: $dark-yellow;
-    }
+  &.theme-caution div.progress {
+    background-color: $medium-yellow;
+    color: $dark-yellow;
   }
 
-  &.theme-danger {
-    div.progress {
-      background-color: $medium-red;
-      color: $white-red;
-    }
+  &.theme-danger div.progress {
+    background-color: $medium-red;
+    color: $white-red;
   }
 
-  &.theme-light {
-    div.progress {
-      background-color: $light-white;
-      color: $light-black;
-    }
+  &.theme-light div.progress {
+    background-color: $light-white;
+    color: $light-black;
   }
 
-  &.theme-dark {
-    div.progress {
-      background-color: $medium-black;
-      color: $white;
-    }
+  &.theme-dark div.progress {
+    background-color: $medium-black;
+    color: $white;
   }
 }

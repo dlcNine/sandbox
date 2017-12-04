@@ -3,6 +3,12 @@
 $tab-padding: 0.25em 0.875em;
 $tab-radius: 0.1875em 0.1875em 0em 0em;
 $tab-bottom-border-width: 0.2rem;
+$tab-color: $light-black;
+$tab-hover-color: $medium-black;
+$tab-hover-border-color: $dark-gray;
+$tab-active-color: $medium-blue;
+$tab-active-background-color: $light-white-thick;
+$tab-active-border-color: $medium-blue;
 
 ul.tabs {
   font-size: 1.6rem;
@@ -18,24 +24,24 @@ ul.tabs {
     text-align: center;
     padding: $tab-padding;
     border-radius: $tab-radius;
-    color: $light-black;
+    color: $tab-color;
     border-bottom: $tab-bottom-border-width solid transparent;
 
-    a, a:hover {
+    a.tab-link, a.tab-link:hover {
       color: inherit;
       text-decoration: none;
     }
 
     &:hover {
       cursor: pointer;
-      color: $medium-black;
-      border-color: $dark-gray;
+      color: $tab-hover-color;
+      border-color: $tab-hover-border-color;
     }
 
     &.active {
-      color: $medium-blue;
-      background-color: $light-white-thick;
-      border-color: $medium-blue;
+      color: $tab-active-color;
+      background-color: $tab-active-background-color;
+      border-color: $tab-active-border-color;
       font-weight: bold;
     }
   }

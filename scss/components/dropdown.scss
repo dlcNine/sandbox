@@ -91,7 +91,7 @@ ul.dropdown {
       color: $dropdown-item-hover-color;
       background-color: $dropdown-item-hover-background-color;
 
-      a:hover {
+      a.dropdown-link:hover {
         color: inherit;
       }
     }
@@ -107,7 +107,7 @@ ul.dropdown {
     li.dropdown-item {
       color: $light-gray;
 
-      a:hover {
+      a.dropdown-link:hover {
         color: $white;
       }
     }

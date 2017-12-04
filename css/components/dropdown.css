@@ -75,7 +75,7 @@ ul.dropdown {
     ul.dropdown li.dropdown-item:hover {
       color: white;
       background-color: #3e9def; }
-      ul.dropdown li.dropdown-item:hover a:hover {
+      ul.dropdown li.dropdown-item:hover a.dropdown-link:hover {
         color: inherit; }
   ul.dropdown.theme-dark {
     background-color: #4c4c4c; }
@@ -83,7 +83,7 @@ ul.dropdown {
       border-color: #939393; }
     ul.dropdown.theme-dark li.dropdown-item {
       color: #d8d8d8; }
-      ul.dropdown.theme-dark li.dropdown-item a:hover {
+      ul.dropdown.theme-dark li.dropdown-item a.dropdown-link:hover {
         color: white; }
   ul.dropdown.size-medium {
     width: 28rem; }

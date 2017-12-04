@@ -9,10 +9,10 @@ ul.path {
       color: #636363; }
     ul.path li.step:last-child {
       color: #636363; }
-    ul.path li.step a {
+    ul.path li.step a.path-link {
       color: inherit;
       text-decoration: none; }
-      ul.path li.step a:hover {
+      ul.path li.step a.path-link:hover {
         text-decoration: underline; }
 
 /*# sourceMappingURL=path.css.map */

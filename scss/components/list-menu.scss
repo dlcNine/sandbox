@@ -24,7 +24,7 @@ ul.list-menu {
     color: $list-item-color;
     border-radius: $list-item-radius;
 
-    a {
+    a.list-link {
       color: inherit;
       text-decoration: none;
       
@@ -41,7 +41,7 @@ ul.list-menu {
       color: $list-item-active-color;
       background-color: $list-item-active-background-color;
 
-      a:hover {
+      a.list-link:hover {
         color: $list-item-active-hover-color;
       }
     }
@@ -55,7 +55,7 @@ ul.list-menu {
   &.theme-light {
     li.list-item:not(.active), 
     li.list-label:not(.active) {
-      a:hover {
+      a.list-link:hover {
         color: $black;
       }
 
@@ -76,7 +76,7 @@ ul.list-menu {
 
     li.list-item:not(.active), 
     li.list-label:not(.active) {
-      a:hover {
+      a.list-link:hover {
         color: $white;
       }
 
