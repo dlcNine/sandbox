@@ -1,17 +1,28 @@
 @import "../colors.scss";
 @import "../mixins.scss";
 
+$dropdown-border-color: $light-gray;
+$dropdown-background-color: $white;
+$dropdown-shadow-color: $medium-gray;
+$dropdown-radius: 0.4rem;
+$dropdown-shadow-color: $medium-gray;
+$dropdown-padding: 0.8rem 0rem 0.8rem 0rem;
+$dropdown-item-padding: 0.4rem 1.4rem;
+$dropdown-side-first-child-radius: 0.3rem 0.3rem 0rem 0rem;
+$dropdown-side-last-child-radius: 0rem 0rem 0.3rem 0.3rem;
+$dropdown-side-only-child-radius: 0.3rem;
+
 ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
   @include translate-2d(0%, calc(100% + 1rem));
-  border: 0.1rem solid $light-gray;
-  border-radius: 0.4rem;
-  box-shadow: 0rem 0.1rem 0.2rem 0rem $medium-gray;
+  border: 0.1rem solid $dropdown-border-color;
+  border-radius: $dropdown-radius;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem $dropdown-shadow-color;
   width: 18rem;
-  padding: 0.8rem 0rem 0.8rem 0rem;
-  background-color: white;
+  padding: $dropdown-padding;
+  background-color: $dropdown-background-color;
 
   &.on-top {
     bottom: 100%;
@@ -48,15 +59,15 @@ ul.dropdown {
   li.dropdown-item ul.dropdown.on-right li.dropdown-item, 
   li.dropdown-item ul.dropdown.on-left li.dropdown-item {
     &:first-child {
-      border-radius: 0.3rem 0.3rem 0rem 0rem;
+      border-radius: $dropdown-side-first-child-radius;
     }
 
     &:last-child {
-      border-radius: 0rem 0rem 0.3rem 0.3rem;
+      border-radius: $dropdown-side-last-child-radius;
     }
 
     &:only-child {
-      border-radius: 0.3rem;
+      border-radius: $dropdown-side-only-child-radius;
     }
   }
 
@@ -71,7 +82,7 @@ ul.dropdown {
 
 
   li.dropdown-item {
-    padding: 0.4rem 1.4rem;
+    padding: $dropdown-item-padding;
     color: $black;
 
     &:hover {

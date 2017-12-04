@@ -1,8 +1,9 @@
 @import "../mixins.scss";
 
+$popmark-height-width: 1rem;
+
 div.popmark, ul.popmark, 
 li.popmark, aside.popmark {
-
   &::before {
     position: absolute;
     left: 50%;
@@ -10,8 +11,8 @@ li.popmark, aside.popmark {
     @include rotate-translate-2d(135deg, -50%, -50%);
     @include transform-origin(0%, 0%);
     content: '';
-    width: 1rem;
-    height: 1rem;
+    width: $popmark-height-width;
+    height: $popmark-height-width;
     border-top: 0.1rem solid;
     border-right: 0.1rem solid;
     border-color: inherit;

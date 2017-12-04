@@ -1,6 +1,10 @@
 @import "../colors.scss";
 @import "../mixins.scss";
 
+$loading-height-width: 1em;
+$loading-margin: 0rem 0.8rem;
+$loading-border-color: $white;
+
 @-webkit-keyframes revolution {
   0% { @include rotate-2d(0deg); }
   100% { @include rotate-2d(360deg); }
@@ -27,11 +31,11 @@ span.loading {
     content: '';
     display: inline-block;
     vertical-align: bottom;
-    height: 1em;
-    width: 1em;
-    margin: 0rem 0.8rem;
+    height: $loading-height-width;
+    width: $loading-height-width;
+    margin: $loading-margin;
     border-radius: 50%;
-    border: 0.2rem solid $white;
+    border: 0.2rem solid $loading-border-color;
     border-bottom-color: transparent;
     border-left-color: transparent;
     @include animation(revolution, 550ms, linear, 0s, infinite, normal);

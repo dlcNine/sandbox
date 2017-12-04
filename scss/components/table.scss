@@ -1,19 +1,27 @@
 @import "../colors.scss";
 
+$table-thead-tr-first-last-radius: 0.25em;
+$table-caption-padding: 0.5em 0em;
+$table-td-th-padding: 0.75em;
+$table-slim-padding: 0.5em;
+$table-border-color: $medium-gray;
+$table-stripe-background-color: $table-striped;
+$table-row-hover-color: $medium-white;
+
 table.table {
   width: 100%;
   line-height: 1;
 
   thead tr:first-child th:first-child {
-    border-top-left-radius: 0.25em;  // 4px when font-size 16px
+    border-top-left-radius: $table-thead-tr-first-last-radius;
   }
 
   thead tr:first-child th:last-child {
-    border-top-right-radius: 0.25em; // 4px when font-size 16px
+    border-top-right-radius: $table-thead-tr-first-last-radius;
   }
 
   caption {
-    padding: 0.5em 0em; // 8px when font-size 16px
+    padding: $table-caption-padding;
   }
 
   th {
@@ -22,16 +30,16 @@ table.table {
   }
 
   td, th {
-    padding: 0.75em;  // 12px when font-size 16px
+    padding: $table-td-th-padding;
     vertical-align: middle;
   }
 
   &.slim th, &.slim td {
-    padding: 0.5em;  // 8px when font-size 16px
+    padding: $table-slim-padding;
   }
 
   &.border-all th, &.border-all td {
-    border: 0.1rem solid $medium-gray;
+    border: 0.1rem solid $table-border-color;
   }
 
   thead.striped-odd tr:nth-child(odd), 
@@ -40,18 +48,18 @@ table.table {
   tbody.striped-even tr:nth-child(even), 
   tfoot.striped-odd tr:nth-child(odd),
   tfoot.striped-even tr:nth-child(even)  {
-    background-color: $table-striped;
+    background-color: $table-stripe-background-color;
   }
 
   thead.border-rows tr, tbody.border-rows tr, 
   tfoot.border-rows tr:not(:last-of-type), 
   tr.border-row {
-    border-bottom: 0.1rem solid $medium-gray;
+    border-bottom: 0.1rem solid $table-border-color;
   }
 
   thead.row-hover tr:hover, tbody.row-hover tr:hover, 
   tfoot.row-hover tr:hover,  {
-    background-color: $medium-white !important;
+    background-color: $table-row-hover-color !important;
   }
 
   thead.row-hover tr.theme-primary:hover, 
@@ -84,7 +92,7 @@ table.table {
     background-color: $light-black !important;
   }
 
-  tr[class*="theme-"] a {
+  th a, td a {
     color: inherit;
     text-decoration: underline;
 
