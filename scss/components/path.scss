@@ -8,7 +8,7 @@ ul.path {
     color: $link-unvisited;
 
     &:not(:last-child)::after {
-      content: ' / ';
+      content: " / ";
       padding: 0em 0.25em;
       color: $light-black;
     }

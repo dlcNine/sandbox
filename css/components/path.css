@@ -4,7 +4,7 @@ ul.path {
     display: inline;
     color: #2771d1; }
     ul.path li.step:not(:last-child)::after {
-      content: ' / ';
+      content: " / ";
       padding: 0em 0.25em;
       color: #636363; }
     ul.path li.step:last-child {

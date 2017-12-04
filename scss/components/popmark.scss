@@ -1,4 +1,3 @@
-@import "../colors.scss";
 @import "../mixins.scss";
 
 div.popmark, ul.popmark, 
@@ -35,5 +34,4 @@ li.popmark, aside.popmark {
     top: 50%;
     @include rotate-translate-2d(-135deg, -50%, -50%);
   }
-
 }

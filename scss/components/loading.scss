@@ -49,5 +49,4 @@ span.loading {
   &.reverse::before {
     @include animation-direction(reverse);
   }
-
 }
