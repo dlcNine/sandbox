@@ -1,5 +1,9 @@
 @import "../colors.scss";
 
+$tab-padding: 0.25em 0.875em;
+$tab-radius: 0.1875em 0.1875em 0em 0em;
+$tab-bottom-border-width: 0.2rem;
+
 ul.tabs {
   font-size: 1.6rem;
 
@@ -12,10 +16,10 @@ ul.tabs {
   li.tab {
     float: left;
     text-align: center;
-    padding: 0.25em 0.875em;
-    border-radius: 0.1875em 0.1875em 0em 0em;
+    padding: $tab-padding;
+    border-radius: $tab-radius;
     color: $light-black;
-    border-bottom: 0.2rem solid transparent;
+    border-bottom: $tab-bottom-border-width solid transparent;
 
     a, a:hover {
       color: inherit;

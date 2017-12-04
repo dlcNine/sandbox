@@ -1,23 +1,29 @@
 @import "../colors.scss";
 
+$message-radius: 0.4rem;
+$message-margin: 0.6rem 0rem;
+$message-header-padding: 0.4rem 1.2rem;
+$message-body-padding: 1rem 1rem 1rem 1.8rem;
+$message-body-radius: 0.3rem;
+
 div.message {
   border: 0.1rem solid $dark-gray;
-  border-radius: 0.4rem;
+  border-radius: $message-radius;
   background-color: $white-gray;
-  margin: 0.6rem 0rem;
+  margin: $message-margin;
 
   div.message-header {
-    padding: 0.4rem 1.2rem;
+    padding: $message-header-padding;
     color: $white-gray;
     border-color: inherit;
     background-color: $dark-gray;
   }
 
   div.message-body {
-    padding: 1rem 1rem 1rem 1.8rem;
+    padding: $message-body-padding;
     color: $light-black;
     border-color: inherit;
-    border-radius: 0.3rem;
+    border-radius: $message-body-radius;
     background-color: inherit;
   }
 

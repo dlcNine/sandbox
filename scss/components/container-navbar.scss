@@ -1,5 +1,9 @@
 @import "../colors.scss";
 
+$navbar-item-color: $dark-gray;
+$navbar-item-a-hover-color: $black;
+$navbar-item-margin-right: 2.4rem;
+
 div.container-navbar {
   &.fixed-top {
     position: fixed;
@@ -16,8 +20,8 @@ div.container-navbar {
 
   div.navbar-item {
     float: left;
-    margin-right: 2.4rem;
-    color: $dark-gray;
+    margin-right: $navbar-item-margin-right;
+    color: $navbar-item-color;
    
     a {
       color: inherit;
@@ -25,7 +29,7 @@ div.container-navbar {
       line-height: 1;
 
       &:hover {
-        color: $black;
+        color: $navbar-item-a-hover-color;
         cursor: pointer;
       }
     }

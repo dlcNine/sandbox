@@ -1,12 +1,18 @@
 @import "../colors.scss";
 
+$progress-bar-height: 0.75em;
+$progress-bar-radius: 0.1875em;
+$progress-bar-margin: 1rem 0rem;
+$progress-bar-small-height: 0.6rem;
+$progress-bar-small-radius: 0.2rem;
+
 div.progress-bar {
   font-size: 1.6rem;
-  height: 0.75em;
+  height: $progress-bar-height;
   background-color: $light-gray;
   color: $white-gray;
-  border-radius: 0.1875em;
-  margin: 1rem 0rem;
+  border-radius: $progress-bar-radius;
+  margin: $progress-bar-margin;
 
   div.progress {
     float: left;
@@ -19,8 +25,8 @@ div.progress-bar {
   }
 
   &.size-small {
-    height: 0.6rem;
-    border-radius: 0.2rem;
+    height: $progress-bar-small-height;
+    border-radius: $progress-bar-small-radius;
   }
 
   &.theme-primary {

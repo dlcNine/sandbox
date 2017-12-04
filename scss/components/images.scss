@@ -1,14 +1,9 @@
-@import "../colors.scss";
-
-figure[class*="image-"] img {
-  object-fit: cover;
-}
-
 figure.image-16x {
   width: 16px;
   height: 16px;
 
   img {
+    object-fit: cover;
     width: 16px;
     height: 16px;
 
@@ -23,6 +18,7 @@ figure.image-32x {
   height: 32px;
 
   img {
+    object-fit: cover;
     width: 32px;
     height: 32px;
 
@@ -38,6 +34,7 @@ figure.image-64x {
   height: 64px;
 
   img {
+    object-fit: cover;
     width: 64px;
     height: 64px;
 
@@ -52,6 +49,7 @@ figure.image-128x {
   height: 128px;
 
   img {
+    object-fit: cover;
     width: 128px; 
     height: 128px;
 
@@ -66,33 +64,12 @@ figure.image-256x {
   height: 256px;
 
   img {
+    object-fit: cover;
     width: 256px;
     height: 256px;
 
     &.rounded {
       border-radius: 1rem;
     }
-  }
-}
-
-img {
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-gray;
-
-  &.circular {
-    border-radius: 50%;
-  }
-
-  &.rounded {
-    border-radius: 0.8rem;
-  }
-
-  &.responsive {
-    max-width: 100%;
-    height: auto;
-  }
-
-  &.fill-width {
-    width: 100%;
-    height: auto;
   }
 }

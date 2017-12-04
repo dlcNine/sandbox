@@ -1,18 +1,27 @@
 @import "../colors.scss";
 
+$card-border-color: $medium-white;
+$card-radius: 0.5rem;
+$card-shadow-color: $light-white;
+$card-background-color: $white;
+$card-item-padding: 1rem 2rem;
+$card-header-radius: 0.4rem 0.4rem 0rem 0rem;
+$card-content-radius: 0.4rem;
+$card-footer-radius: 0rem 0rem 0.4rem 0.4rem;
+
 div.card {
   font-size: 1rem;
-  border: 0.1rem solid $medium-white;
-  border-radius: 0.5rem;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $light-white;
-  background-color: $white;
+  border: 0.1rem solid $card-border-color;
+  border-radius: $card-radius;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $card-shadow-color;
+  background-color: $card-background-color;
 
   hr {
-    border-color: $medium-white;
+    border-color: $card-border-color;
   }
 
   div.card-header, div.card-content, div.card-footer {
-    padding: 1rem 2rem;
+    padding: $card-item-padding;
 
     &.hero-image {
       padding: 0;
@@ -25,16 +34,16 @@ div.card {
   }
 
   div.card-header {
-    border-radius: 0.4rem 0.4rem 0rem 0rem;
-    border-bottom: 0.1rem solid $medium-white;
+    border-radius: $card-header-radius;
+    border-bottom: 0.1rem solid $card-border-color;
   }
 
   div.card-content {
-    border-radius: 0.4rem;
+    border-radius: $card-content-radius;
   }
 
   div.card-footer {
-    border-radius: 0rem 0rem 0.4rem 0.4rem;
-    border-top: 0.1rem solid $medium-white;
+    border-radius: $card-footer-radius;
+    border-top: 0.1rem solid $card-border-color;
   }
 }

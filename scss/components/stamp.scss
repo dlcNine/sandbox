@@ -1,10 +1,14 @@
 @import "../colors.scss";
 
+$stamp-padding: 0.2em 0.4em;
+$stamp-margin: 0em 0.2em;
+$stamp-radius: 0.1875em;
+
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.4em;
-  margin: 0em 0.2em;
-  border-radius: 0.1875em;
+  padding: $stamp-padding;
+  margin: $stamp-margin;
+  border-radius: $stamp-radius;
   line-height: 1;
   background-color: $medium-gray;
   color: $white;

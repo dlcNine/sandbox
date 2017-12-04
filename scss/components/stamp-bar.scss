@@ -1,7 +1,9 @@
+$stamp-bar-margin: 0.375em 0.25em;
+
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.375em 0.25em;
+  margin: $stamp-bar-margin;
 
   &::after {
     content: '';
