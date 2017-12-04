@@ -51,10 +51,10 @@ table.table {
   table.table tbody.row-hover tr.theme-dark:hover,
   table.table tfoot.row-hover tr.theme-dark:hover {
     background-color: #636363 !important; }
-  table.table th a, table.table td a {
+  table.table tr[class*="theme-"] a {
     color: inherit;
     text-decoration: underline; }
-    table.table th a:hover, table.table td a:hover {
+    table.table tr[class*="theme-"] a:hover {
       color: #0850af; }
   table.table tr.theme-primary {
     color: #f4faff;

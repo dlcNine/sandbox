@@ -92,7 +92,7 @@ table.table {
     background-color: $light-black !important;
   }
 
-  th a, td a {
+  tr[class*="theme-"] a {
     color: inherit;
     text-decoration: underline;
 

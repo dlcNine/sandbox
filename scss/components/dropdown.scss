@@ -5,9 +5,11 @@ $dropdown-border-color: $light-gray;
 $dropdown-background-color: $white;
 $dropdown-shadow-color: $medium-gray;
 $dropdown-radius: 0.4rem;
-$dropdown-shadow-color: $medium-gray;
 $dropdown-padding: 0.8rem 0rem 0.8rem 0rem;
 $dropdown-item-padding: 0.4rem 1.4rem;
+$dropdown-item-color: $black;
+$dropdown-item-hover-color: $white;
+$dropdown-item-hover-background-color: $medium-blue;
 $dropdown-side-first-child-radius: 0.3rem 0.3rem 0rem 0rem;
 $dropdown-side-last-child-radius: 0rem 0rem 0.3rem 0.3rem;
 $dropdown-side-only-child-radius: 0.3rem;
@@ -83,11 +85,11 @@ ul.dropdown {
 
   li.dropdown-item {
     padding: $dropdown-item-padding;
-    color: $black;
+    color: $dropdown-item-color;
 
     &:hover {
-      color: $white;
-      background-color: $medium-blue;
+      color: $dropdown-item-hover-color;
+      background-color: $dropdown-item-hover-background-color;
 
       a:hover {
         color: inherit;
