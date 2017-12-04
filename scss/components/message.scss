@@ -1,0 +1,113 @@
+@import "../colors.scss";
+
+$message-radius: 0.4rem;
+$message-margin: 0.6rem 0rem;
+$message-header-padding: 0.4rem 1.2rem;
+$message-body-padding: 1rem 1rem 1rem 1.8rem;
+$message-body-radius: 0.3rem;
+
+div.message {
+  border: 0.1rem solid $dark-gray;
+  border-radius: $message-radius;
+  background-color: $white-gray;
+  margin: $message-margin;
+
+  div.message-header {
+    padding: $message-header-padding;
+    color: $white-gray;
+    border-color: inherit;
+    background-color: $dark-gray;
+  }
+
+  div.message-body {
+    padding: $message-body-padding;
+    color: $light-black;
+    border-color: inherit;
+    border-radius: $message-body-radius;
+    background-color: inherit;
+  }
+
+  &.theme-primary {
+    border-color: $medium-blue;
+    background-color: $white-blue;
+
+    .message-header {
+      color: $white-blue;
+      background-color: $medium-blue;
+    }
+
+    .message-body {
+      color: $dark-blue;
+    }
+  }
+
+  &.theme-info {
+    border-color: $medium-green;
+    background-color: $white-green;
+
+    .message-header {
+      color: $white-green;
+      background-color: $medium-green;
+    }
+
+    .message-body {
+      color: $dark-green;
+    }
+  }
+
+  &.theme-caution {
+    border-color: $medium-yellow;
+    background-color: $white-yellow;
+
+    .message-header {
+      color: $dark-yellow;
+      background-color: $medium-yellow;
+    }
+
+    .message-body {
+      color: $dark-yellow;
+    }
+  }
+
+  &.theme-danger {
+    border-color: $medium-red;
+    background-color: $white-red;
+
+    .message-header {
+      color: $white-red;
+      background-color: $medium-red;
+    }
+
+    .message-body {
+      color: $dark-red;
+    }
+  }
+
+  &.theme-light {
+    border-color: $medium-white;
+    background-color: $white;
+
+    .message-header {
+      color: $light-black;
+      background-color: $medium-white;
+    }
+
+    .message-body {
+      color: $light-black;
+    }
+  }
+
+  &.theme-dark {
+    border-color: $medium-black;
+    background-color: $light-white;
+
+    .message-header {
+      color: $white;
+      background-color: $medium-black;
+    }
+
+    .message-body {
+      color: $black;
+    }
+  }
+}

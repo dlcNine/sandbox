@@ -1,0 +1,51 @@
+figure.image-16x {
+  width: 16px;
+  height: 16px; }
+  figure.image-16x img {
+    object-fit: cover;
+    width: 16px;
+    height: 16px; }
+    figure.image-16x img.rounded {
+      border-radius: 0.3rem; }
+
+figure.image-32x {
+  width: 32px;
+  height: 32px; }
+  figure.image-32x img {
+    object-fit: cover;
+    width: 32px;
+    height: 32px; }
+    figure.image-32x img.rounded {
+      border-radius: 0.4rem; }
+
+figure.image-64x {
+  width: 64px;
+  height: 64px; }
+  figure.image-64x img {
+    object-fit: cover;
+    width: 64px;
+    height: 64px; }
+    figure.image-64x img.rounded {
+      border-radius: 0.6rem; }
+
+figure.image-128x {
+  width: 128px;
+  height: 128px; }
+  figure.image-128x img {
+    object-fit: cover;
+    width: 128px;
+    height: 128px; }
+    figure.image-128x img.rounded {
+      border-radius: 0.8rem; }
+
+figure.image-256x {
+  width: 256px;
+  height: 256px; }
+  figure.image-256x img {
+    object-fit: cover;
+    width: 256px;
+    height: 256px; }
+    figure.image-256x img.rounded {
+      border-radius: 1rem; }
+
+/*# sourceMappingURL=images.css.map */

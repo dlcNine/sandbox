@@ -1,0 +1,82 @@
+@import "../colors.scss";
+
+$tab-padding: 0.25em 0.875em;
+$tab-radius: 0.1875em 0.1875em 0em 0em;
+$tab-bottom-border-width: 0.2rem;
+$tab-color: $light-black;
+$tab-hover-color: $medium-black;
+$tab-hover-border-color: $dark-gray;
+$tab-active-color: $medium-blue;
+$tab-active-background-color: $light-white-thick;
+$tab-active-border-color: $medium-blue;
+
+ul.tabs {
+  font-size: 1.6rem;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  li.tab {
+    float: left;
+    text-align: center;
+    padding: $tab-padding;
+    border-radius: $tab-radius;
+    color: $tab-color;
+    border-bottom: $tab-bottom-border-width solid transparent;
+
+    a.tab-link, a.tab-link:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $tab-hover-color;
+      border-color: $tab-hover-border-color;
+    }
+
+    &.active {
+      color: $tab-active-color;
+      background-color: $tab-active-background-color;
+      border-color: $tab-active-border-color;
+      font-weight: bold;
+    }
+  }
+
+  &.theme-light {
+    li.tab:not(.active) {
+      color: $light-white;
+
+      &:hover {
+        background-color: $light-white-thin;
+        border-color: transparent;
+      }
+    }
+
+    li.tab.active {
+      background-color: $white;
+      border-color: $white;
+    }
+  }
+
+  &.theme-dark {
+    li.tab:not(.active) {
+      color: $medium-gray;
+
+      &:hover {
+        color: $medium-white;
+        border-color: $medium-white;
+        background-color: $light-black-thick;
+      }
+    }
+
+    li.tab.active {
+      background-color: $light-white;
+      color: $medium-black;
+      border-color: $dark-gray;
+    }
+  }
+}

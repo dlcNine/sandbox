@@ -1,0 +1,44 @@
+@import "../colors.scss";
+
+$code-background-color: $light-white;
+$code-padding: 0.75em 0.75em 0.75em 1em;
+$code-line-color: $medium-black;
+$code-line-margin: 0.375em 0em 0.375em 0.875em;
+$code-line-hover-background-color: $medium-white;
+$code-line-number-color: $light-gray;
+$code-line-hover-line-number-color: $light-black;
+$code-nested-border-color: $light-gray;
+
+ol.code {
+  font-family: menlo, monaco, monospace;
+  background-color: $code-background-color;
+  counter-reset: line-number 0;
+  padding: $code-padding;
+  position: relative;
+
+  li.line {
+    margin: $code-line-margin;
+    counter-increment: line-number;
+    color: $code-line-color;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      color: $code-line-number-color;
+      content: counter(line-number);
+    }
+
+    &:hover {
+      background-color: $code-line-hover-background-color;
+
+      &::before {
+        color: $code-line-hover-line-number-color;
+      }
+    }
+  }
+
+  & ol.code-nested, ol.code-nested ol.code-nested {
+    margin-left: 1em; //16px (when font-size 16px)
+    border-left: 0.1rem solid $code-nested-border-color;
+  }
+}

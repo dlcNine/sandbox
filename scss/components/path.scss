@@ -1,0 +1,33 @@
+@import "../colors.scss";
+
+$path-color: $link-unvisited;
+$path-separator-padding: 0em 0.25em;
+$path-separator-color: $light-black;
+
+ul.path {
+  line-height: 1;
+
+  li.step {
+    display: inline;
+    color: $path-color;
+
+    &:not(:last-child)::after {
+      content: " / ";
+      padding: $path-separator-padding;
+      color: $path-separator-color;
+    }
+
+    &:last-child {
+      color: $path-separator-color;
+    }
+
+    a.path-link {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "../colors.scss";
+
+$backdrop-background-color: $black-thick;
+$padding: 2.4rem;
+$modal-background-color: $white;
+$modal-radius: 0.5rem;
+
+div.modal-backdrop {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  background-color: $backdrop-background-color;
+  padding: $padding;
+
+  div.modal {
+    padding: $padding;
+    background-color: $modal-background-color;
+    border-radius: $modal-radius;
+  }
+}

@@ -4,7 +4,5 @@ dev-helper.css
 padding-cheatsheet.rtf
 /javascript
 .sass-cache/
-css/grid.css.map
-css/reset.css.map
-css/utility.css.map
-css/objects.css.map
+css/*.css.map
+css/components/*.css.map

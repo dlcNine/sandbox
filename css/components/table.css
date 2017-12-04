@@ -1,0 +1,75 @@
+table.table {
+  width: 100%;
+  line-height: 1; }
+  table.table thead tr:first-child th:first-child {
+    border-top-left-radius: 0.25em; }
+  table.table thead tr:first-child th:last-child {
+    border-top-right-radius: 0.25em; }
+  table.table caption {
+    padding: 0.5em 0em; }
+  table.table th {
+    font-weight: bold;
+    text-align: left; }
+  table.table td, table.table th {
+    padding: 0.75em;
+    vertical-align: middle; }
+  table.table.slim th, table.table.slim td {
+    padding: 0.5em; }
+  table.table.border-all th, table.table.border-all td {
+    border: 0.1rem solid #bfbfbf; }
+  table.table thead.striped-odd tr:nth-child(odd),
+  table.table thead.striped-even tr:nth-child(even),
+  table.table tbody.striped-odd tr:nth-child(odd),
+  table.table tbody.striped-even tr:nth-child(even),
+  table.table tfoot.striped-odd tr:nth-child(odd),
+  table.table tfoot.striped-even tr:nth-child(even) {
+    background-color: #f0f0f0; }
+  table.table thead.border-rows tr, table.table tbody.border-rows tr,
+  table.table tfoot.border-rows tr:not(:last-of-type),
+  table.table tr.border-row {
+    border-bottom: 0.1rem solid #bfbfbf; }
+  table.table thead.row-hover tr:hover, table.table tbody.row-hover tr:hover,
+  table.table tfoot.row-hover tr:hover {
+    background-color: #e6e6e6 !important; }
+  table.table thead.row-hover tr.theme-primary:hover,
+  table.table tbody.row-hover tr.theme-primary:hover,
+  table.table tfoot.row-hover tr.theme-primary:hover {
+    background-color: #54abf7 !important; }
+  table.table thead.row-hover tr.theme-info:hover,
+  table.table tbody.row-hover tr.theme-info:hover,
+  table.table tfoot.row-hover tr.theme-info:hover {
+    background-color: #62d648 !important; }
+  table.table thead.row-hover tr.theme-caution:hover,
+  table.table tbody.row-hover tr.theme-caution:hover,
+  table.table tfoot.row-hover tr.theme-caution:hover {
+    background-color: #f4f449 !important; }
+  table.table thead.row-hover tr.theme-danger:hover,
+  table.table tbody.row-hover tr.theme-danger:hover,
+  table.table tfoot.row-hover tr.theme-danger:hover {
+    background-color: #f25541 !important; }
+  table.table thead.row-hover tr.theme-dark:hover,
+  table.table tbody.row-hover tr.theme-dark:hover,
+  table.table tfoot.row-hover tr.theme-dark:hover {
+    background-color: #636363 !important; }
+  table.table tr[class*="theme-"] a.table-link {
+    color: inherit;
+    text-decoration: underline; }
+    table.table tr[class*="theme-"] a.table-link:hover {
+      color: #0850af; }
+  table.table tr.theme-primary {
+    color: #f4faff;
+    background-color: #3e9def !important; }
+  table.table tr.theme-info {
+    color: #f6fff4;
+    background-color: #54c43a !important; }
+  table.table tr.theme-caution {
+    color: #82820a;
+    background-color: #e8e819 !important; }
+  table.table tr.theme-danger {
+    color: #fff8f7;
+    background-color: #e53c27 !important; }
+  table.table tr.theme-dark {
+    color: white;
+    background-color: #4c4c4c !important; }
+
+/*# sourceMappingURL=table.css.map */

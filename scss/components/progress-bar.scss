@@ -1,0 +1,61 @@
+@import "../colors.scss";
+
+$progress-bar-height: 0.75em;
+$progress-bar-radius: 0.1875em;
+$progress-bar-margin: 1rem 0rem;
+$progress-bar-small-height: 0.6rem;
+$progress-bar-small-radius: 0.2rem;
+
+div.progress-bar {
+  font-size: 1.6rem;
+  height: $progress-bar-height;
+  background-color: $light-gray;
+  color: $white-gray;
+  border-radius: $progress-bar-radius;
+  margin: $progress-bar-margin;
+
+  div.progress {
+    float: left;
+    height: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    border-radius: inherit;
+    background-color: $dark-gray;
+    // @include transition(width, 300ms);
+  }
+
+  &.size-small {
+    height: $progress-bar-small-height;
+    border-radius: $progress-bar-small-radius;
+  }
+
+  &.theme-primary div.progress {
+    background-color: $medium-blue;
+    color: $white-blue;
+  }
+
+  &.theme-info div.progress {
+    background-color: $medium-green;
+    color: $white-green;
+  }
+
+  &.theme-caution div.progress {
+    background-color: $medium-yellow;
+    color: $dark-yellow;
+  }
+
+  &.theme-danger div.progress {
+    background-color: $medium-red;
+    color: $white-red;
+  }
+
+  &.theme-light div.progress {
+    background-color: $light-white;
+    color: $light-black;
+  }
+
+  &.theme-dark div.progress {
+    background-color: $medium-black;
+    color: $white;
+  }
+}

@@ -287,6 +287,7 @@ span.stamp {
     span.stamp.theme-dark.has-link:hover {
       background-color: #636363; }
 
+/* ====================================================== */
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
@@ -665,6 +666,7 @@ div.popover {
     -ms-transform: translate(calc(0% + 1rem), 50%);
     transform: translate(calc(0% + 1rem), 50%); }
 
+/* ====================================================== */
 div.popmark::before, ul.popmark::before,
 li.popmark::before, aside.popmark::before {
   position: absolute;
@@ -915,4 +917,4 @@ ul.path {
 
 /* ====================================================== */
 
-/*# sourceMappingURL=objects.css.map */
+/*# sourceMappingURL=components-all.css.map */

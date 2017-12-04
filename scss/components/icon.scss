@@ -1,0 +1,17 @@
+span.icon {
+  display: inline-block;
+  height: auto;
+  width: 1.2em;
+
+  &.size-large {
+    width: 1.6em;
+  }
+
+  &.size-doubled {
+    width: 2em;
+  }
+
+  &.size-tripled {
+    width: 3em;
+  }
+}
