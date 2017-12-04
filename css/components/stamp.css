@@ -1,0 +1,45 @@
+span.stamp {
+  font-size: 1em;
+  padding: 0.2em 0.4em;
+  margin: 0em 0.2em;
+  border-radius: 0.1875em;
+  line-height: 1;
+  background-color: #bfbfbf;
+  color: white; }
+  span.stamp.round {
+    border-radius: 1em; }
+  span.stamp.has-link:hover {
+    background-color: #d8d8d8; }
+  span.stamp a {
+    color: inherit;
+    text-decoration: none; }
+    span.stamp a:hover {
+      text-decoration: underline; }
+  span.stamp.theme-primary {
+    background-color: #3e9def; }
+    span.stamp.theme-primary.has-link:hover {
+      background-color: #54abf7; }
+  span.stamp.theme-info {
+    background-color: #54c43a; }
+    span.stamp.theme-info.has-link:hover {
+      background-color: #62d648; }
+  span.stamp.theme-caution {
+    background-color: #e8e819;
+    color: #82820a; }
+    span.stamp.theme-caution.has-link:hover {
+      background-color: #f4f449; }
+  span.stamp.theme-danger {
+    background-color: #e53c27; }
+    span.stamp.theme-danger.has-link:hover {
+      background-color: #f25541; }
+  span.stamp.theme-light {
+    background-color: #e6e6e6;
+    color: #636363; }
+    span.stamp.theme-light.has-link:hover {
+      background-color: whitesmoke; }
+  span.stamp.theme-dark {
+    background-color: #4c4c4c; }
+    span.stamp.theme-dark.has-link:hover {
+      background-color: #636363; }
+
+/*# sourceMappingURL=stamp.css.map */

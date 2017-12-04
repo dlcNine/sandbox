@@ -1,0 +1,15 @@
+div.banner{
+  height: 12rem;
+
+  &.size-small {
+    height: 8rem;
+  }
+
+  &.size-medium {
+    height: 34rem;
+  }
+
+  &.size-large {
+    height: 54rem;
+  }
+}

@@ -1,0 +1,10 @@
+div.banner {
+  height: 12rem; }
+  div.banner.size-small {
+    height: 8rem; }
+  div.banner.size-medium {
+    height: 34rem; }
+  div.banner.size-large {
+    height: 54rem; }
+
+/*# sourceMappingURL=banner.css.map */

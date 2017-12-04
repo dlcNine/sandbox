@@ -422,7 +422,7 @@ span.stamp {
     color: $dark-yellow;
 
     &.has-link:hover {
-      background-color: $light-yellow
+      background-color: $light-yellow;
     }
   }
 
@@ -1018,7 +1018,6 @@ div.popover {
     left: 100%;
     @include translate-2d(calc(0% + 1rem), 50%);
   }
-
 }
 
 /* ====================================================== */
@@ -1268,7 +1267,6 @@ table.table {
     color: $white;
     background-color: $medium-black !important;
   }
-
 
 }
 

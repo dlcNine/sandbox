@@ -1,0 +1,63 @@
+@import "../colors.scss";
+
+ul.menu {
+  border: 0.1rem solid $dark-white;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $medium-white;
+
+  .button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &.theme-dark {
+    border-color: $medium-gray;
+
+    li.menu-header, li.menu-item, li.menu-footer {
+      color: $light-gray;
+      background-color: $medium-black;
+      border-color: $medium-gray;
+
+      a {
+        color: $medium-gray;
+        text-decoration: none;
+
+        &:hover {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+      
+    }
+  }
+
+  li.menu-header, li.menu-item, li.menu-footer {
+    background-color: $white;
+    padding: 1rem;
+    line-height: 1;
+    vertical-align: middle;
+
+    a {
+      text-decoration: none;
+      color: $link-unvisited;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  li.menu-header {
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+    border-bottom: 0.1rem solid $dark-white;
+  }
+
+  li.menu-item {
+    border-bottom: 0.1rem solid $dark-white;
+  }
+
+  li.menu-footer {
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+  }
+
+}

@@ -1,0 +1,44 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+div.popover {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  @include translate-2d(-50%, calc(0% - 1rem));
+  background-color: $white;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  width: 16rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem $light-gray;
+
+  &.size-small {
+    width: 12rem;
+  }
+
+  &.size-medium {
+    width: 25rem;
+  }
+
+  &.size-large {
+    width: 36rem;
+  }
+
+  &.on-bottom {
+    bottom: 0;
+    @include translate-2d(-50%, calc(100% + 1rem));
+  }
+
+  &.on-left {
+    bottom: 50%;
+    left: 0;
+    @include translate-2d(calc(-100% - 1rem), 50%);
+  }
+
+  &.on-right {
+    bottom: 50%;
+    left: 100%;
+    @include translate-2d(calc(0% + 1rem), 50%);
+  }
+}

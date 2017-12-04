@@ -1,0 +1,9 @@
+@import "../colors.scss";
+
+div.box {
+  padding: 1.2rem;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.4rem;
+  background-color: $white;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0rem $light-gray;
+}

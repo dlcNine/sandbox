@@ -1,0 +1,79 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+button.close {
+  font-size: 1.6rem;  
+  height: 1em;
+  width: 1em;
+  border-radius: 0.125em;
+  position: relative;
+  background-color: $medium-white;
+
+  &:hover {
+    background-color: $light-white;
+    cursor: pointer;
+
+    &::before, &::after {
+      background-color: $light-black;
+      border-color: $light-black;
+    }
+  }
+
+  &:focus:not(:active) {
+    outline: none;
+    box-shadow: 0em 0em 0em 0.125em $light-blue;
+  }
+
+  &:active {
+    outline: none;
+    
+    &::before, &::after {
+      background-color: $black;
+      border-color: $black;
+    }
+  }
+
+  &::before, &::after {
+    content: '';
+    background-color: $dark-gray;
+    border: 0.1rem solid $dark-gray;
+    height: 0.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform-origin(0%, 0%);
+  }
+
+  &::before {
+    @include rotate-translate-2d(45deg, -50%, -50%);
+  }
+
+  &::after {
+    @include rotate-translate-2d(135deg, -50%, -50%);
+  }
+
+  &.theme-dark {
+    background-color: $light-black;
+
+    &::before, &::after {
+      background-color: $medium-gray;
+      border-color: $medium-gray;
+    }
+
+    &:hover {
+      background-color: $medium-black;
+
+      &::before, &::after {
+        background-color: $medium-white;
+        border-color: $medium-white;
+      }
+    }
+
+    &:active {
+      &::before, &::after {
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+}

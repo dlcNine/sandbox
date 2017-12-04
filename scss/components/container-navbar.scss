@@ -1,0 +1,46 @@
+@import "../colors.scss";
+
+div.container-navbar {
+  &.fixed-top {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  div.navbar-item {
+    float: left;
+    margin-right: 2.4rem;
+    color: $dark-gray;
+   
+    a {
+      color: inherit;
+      text-decoration: none;
+      line-height: 1;
+
+      &:hover {
+        color: $black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.theme-dark div.navbar-item{
+    color: $light-gray;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+}

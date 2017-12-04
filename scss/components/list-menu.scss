@@ -1,0 +1,86 @@
+@import "../colors.scss";
+
+ul.list-menu {
+  &.indent-sublists ul.list-menu, 
+  &.indent-immediate > li.list-item, 
+  &.indent-immediate > li.list-label {
+    margin-left: 0.625em;
+  }
+
+  li.list-item, li.list-label {
+    line-height: 1;
+    padding: 0.1875em 0em 0.1875em 0.875em;
+    color: $white-black;
+    border-radius: 0.125em;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: $black;
+      }
+    }
+
+    &:hover {
+      background-color: $light-white-thick;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $medium-blue-thick;
+
+      a:hover {
+        color: $light-white;
+      }
+    }
+  }
+
+  li.list-label {
+    font-weight: bold;
+    color: $light-black;
+  }
+
+  &.theme-light {
+    li.list-item:not(.active), 
+    li.list-label:not(.active) {
+      a:hover {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: $light-white-thick;
+      }
+    }
+
+    li.list-item:not(.active) {
+      color: $medium-black;
+    }
+  }
+
+  &.theme-dark {
+    hr {
+      border-color: $dark-gray;
+    }
+
+    li.list-item:not(.active), 
+    li.list-label:not(.active) {
+      a:hover {
+        color: $white;
+      }
+
+      &:hover {
+        background-color: $light-black-thick;
+      }
+    }
+
+    li.list-item:not(.active) {
+      color: $medium-gray;
+    }
+
+    li.list-label:not(.active) {
+      color: $light-gray;
+    }
+  }
+
+}

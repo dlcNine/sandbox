@@ -1,0 +1,53 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+@-webkit-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+@-moz-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+@-o-keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+@keyframes revolution {
+  0% { @include rotate-2d(0deg); }
+  100% { @include rotate-2d(360deg); }
+}
+
+span.loading {
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: bottom;
+    height: 1em;
+    width: 1em;
+    margin: 0rem 0.8rem;
+    border-radius: 50%;
+    border: 0.2rem solid $white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    @include animation(revolution, 550ms, linear, 0s, infinite, normal);
+  }
+
+  &.theme-dark::before {
+    border-right-color: $medium-black;
+    border-top-color: $medium-black;
+  }
+
+  &.slow::before {
+    @include animation-duration(1s);
+  }
+
+  &.reverse::before {
+    @include animation-direction(reverse);
+  }
+
+}

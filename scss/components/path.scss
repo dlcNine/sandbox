@@ -1,0 +1,29 @@
+@import "../colors.scss";
+
+ul.path {
+  line-height: 1;
+
+  li.step {
+    display: inline;
+    color: $link-unvisited;
+
+    &:not(:last-child)::after {
+      content: ' / ';
+      padding: 0em 0.25em;
+      color: $light-black;
+    }
+
+    &:last-child {
+      color: $light-black;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
