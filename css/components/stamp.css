@@ -1,7 +1,7 @@
 span.stamp {
   font-size: 1em;
-  padding: 0.2em 0.4em;
-  margin: 0em 0.2em;
+  padding: 0.125em 0.375em;
+  margin: 0em 0.125em;
   border-radius: 0.1875em;
   line-height: 1;
   background-color: #bfbfbf;
@@ -10,10 +10,10 @@ span.stamp {
     border-radius: 1em; }
   span.stamp.has-link:hover {
     background-color: #d8d8d8; }
-  span.stamp a.stamp-link {
+  span.stamp a.stamp-a {
     color: inherit;
     text-decoration: none; }
-    span.stamp a.stamp-link:hover {
+    span.stamp a.stamp-a:hover {
       text-decoration: underline; }
   span.stamp.theme-primary {
     background-color: #3e9def; }

@@ -40,32 +40,12 @@ scale ratio : 1.3333
   font-size: 1rem !important; }
 
 /* ====================================================== */
-.text-red {
-  color: #e53c27; }
-
-.text-orange {
-  color: #e2af16; }
-
-.text-yellow {
-  color: #d8c312; }
-
-.text-green {
-  color: #54c43a; }
-
-.text-blue {
+span.snippet {
+  display: inline-block;
+  border-radius: 0.1875em;
+  padding: 0em 0.375em;
+  background-color: #e6e6e6;
   color: #3e9def; }
-
-.text-indigo {
-  color: #8f4fc3; }
-
-.text-violet {
-  color: #d46fd2; }
-
-.text-gray {
-  color: #bfbfbf; }
-
-.text-white {
-  color: white; }
 
 /* ====================================================== */
 a.a:link {

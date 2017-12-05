@@ -1,0 +1,68 @@
+.relative {
+  position: relative; }
+
+*[class*="position-"] {
+  position: absolute !important; }
+
+*[class*="position-left-"] {
+  left: 0; }
+
+*.position-left-top {
+  top: 0; }
+
+*.position-left-center {
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%); }
+
+*.position-left-bottom {
+  bottom: 0; }
+
+*[class*="position-center-"] {
+  left: 50%; }
+
+*.position-center-top {
+  top: 0;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+*.position-center-center {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+*.position-center-bottom {
+  bottom: 0;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%); }
+
+*[class*="position-right-"] {
+  right: 0; }
+
+*.position-right-top {
+  top: 0; }
+
+*.position-right-center {
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -o-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%); }
+
+*.position-right-bottom {
+  bottom: 0; }
+
+/*# sourceMappingURL=positioning.css.map */

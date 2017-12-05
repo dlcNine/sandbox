@@ -1,0 +1,27 @@
+@import "../colors.scss";
+
+$image-shadow-color: $light-gray;
+
+img {
+  &.shadow {
+    box-shadow: 0.1rem 0.1rem 0.2rem 0rem $image-shadow-color;
+  }
+
+  &.circular {
+    border-radius: 50%;
+  }
+
+  &.rounded {
+    border-radius: 0.8rem;
+  }
+
+  &.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &.fill-width {
+    width: 100%;
+    height: auto;
+  }
+}

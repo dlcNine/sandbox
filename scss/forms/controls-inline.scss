@@ -1,0 +1,13 @@
+div.controls-inline {
+  input {
+    display: inline;
+    width: initial;
+    margin-right: 0.9rem;
+  }
+
+  label.checkbox, label.radio {
+    input[type="checkbox"], input[type="radio"] {
+      margin-right: 0.2rem;
+    }
+  }
+}

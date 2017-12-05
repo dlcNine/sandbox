@@ -1,0 +1,149 @@
+@import "./colors.scss";
+
+$button-padding: 0.375em 0.75em;
+$button-margin: 0.6rem;
+$button-radius: 0.1875em;
+$button-focus-shadow-spread: 0.125em;
+$button-font-family: sans-serif;
+
+a.button, button.button, 
+input[type="submit"].button, 
+input[type="reset"].button {
+  font-size: 1.6rem;
+  font-family: $button-font-family;
+  padding: $button-padding;
+  margin: $button-margin;
+  border-radius: $button-radius;
+  text-align: center;
+
+  color: $light-black;
+  background-color: $medium-gray;
+
+  &:hover {
+    background-color: $light-gray;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $dark-gray;
+    color: $white-gray;
+    outline: none;
+  }
+  
+  &:focus:not(:active) {
+    box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-blue-thin;
+    outline: none;
+  }
+
+  &.theme-primary {
+    color: $white-blue;
+    background-color: $medium-blue;
+
+    &:hover {
+      background-color: $light-blue;
+    }
+
+    &:active {
+      background-color: $dark-blue;
+    }
+  }
+
+  &.theme-info {
+    color: $white-green;
+    background-color: $medium-green;
+
+    &:hover {
+      background-color: $light-green;
+    }
+
+    &:active {
+      background-color: $dark-green;
+    }
+
+    &:focus:not(:active) {
+      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-green-thin;
+    }
+  }
+
+  &.theme-caution {
+    color: $dark-yellow;
+    background-color: $medium-yellow;
+
+    &:hover {
+      background-color: $light-yellow;
+    }
+
+    &:active {
+      background-color: $dark-yellow;
+      color: $white-yellow;
+    }
+
+    &:focus {
+      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $medium-yellow-thin;
+    }
+  }
+
+  &.theme-danger {
+    color: $white-red;
+    background-color: $medium-red;
+
+    &:hover {
+      background-color: $light-red;
+    }
+
+    &:active {
+      background-color: $dark-red;
+    }
+
+    &:focus:not(:active) {
+      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-red-thin;
+    }
+  }
+
+  &.theme-light {
+    color: $light-black;
+    background-color: $medium-white;
+
+    &:hover {
+      background-color: $light-white;
+    }
+
+    &:active {
+      background-color: $dark-white;
+    }
+  }
+
+  &.theme-dark {
+    color: $white;
+    background-color: $medium-black;
+
+    &:hover {
+      background-color: $light-black;
+    }
+
+    &:active {
+      background-color: $black;
+    }
+  }
+}
+
+/* ==================================== */
+
+a.button {
+  display: inline-block;
+
+  &:link {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}
+
+.button.wide {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
