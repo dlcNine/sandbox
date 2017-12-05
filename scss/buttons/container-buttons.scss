@@ -1,0 +1,20 @@
+div.container-buttons {
+  padding: 0.3rem;
+
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0.3rem;
+
+    .button {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+}
