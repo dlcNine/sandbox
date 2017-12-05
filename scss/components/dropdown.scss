@@ -19,7 +19,7 @@ ul.dropdown {
   position: absolute;
   bottom: 0;
   z-index: 3;
-  @include translate-2d(0%, calc(100% + $dropdown-extra-offset));
+  @include translate-2d(0%, calc(100% + #{$dropdown-extra-offset}));
   border: 0.1rem solid $dropdown-border-color;
   border-radius: $dropdown-radius;
   box-shadow: 0rem 0.1rem 0.2rem 0rem $dropdown-shadow-color;
@@ -29,7 +29,7 @@ ul.dropdown {
 
   &.on-top {
     bottom: 100%;
-    @include translate-2d(0%, calc(0% - $dropdown-extra-offset));
+    @include translate-2d(0%, calc(0% - #{$dropdown-extra-offset}));
 
     li.dropdown-item ul.dropdown.on-right, 
     li.dropdown-item ul.dropdown.on-left {
@@ -39,7 +39,7 @@ ul.dropdown {
 
     &.align-center {
       left: 50%;
-      @include translate-2d(-50%, calc(0% - $dropdown-extra-offset));
+      @include translate-2d(-50%, calc(0% - #{$dropdown-extra-offset}));
     }
   }
 
@@ -76,7 +76,7 @@ ul.dropdown {
 
   &.align-center {
     left: 50%;
-    @include translate-2d(-50%, calc(100% + $dropdown-extra-offset));
+    @include translate-2d(-50%, calc(100% + #{$dropdown-extra-offset}));
   }
 
   &.align-right {
