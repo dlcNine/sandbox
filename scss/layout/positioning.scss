@@ -1,5 +1,9 @@
 @import "./mixins.scss";
 
+.relative {
+  position: relative;
+}
+
 *[class*="position-"] {
   position: absolute !important;
 }

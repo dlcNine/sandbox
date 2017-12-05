@@ -1,0 +1,43 @@
+.block {
+  display: block !important; }
+
+.inline {
+  display: inline !important; }
+
+.inline-block {
+  display: inline-block !important; }
+
+.block-center {
+  display: block !important;
+  margin: auto !important; }
+
+.absent {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden !important; }
+
+/* ====================================================== */
+/* <= 420px */
+@media screen and (max-width: 26.25rem) {
+  .absent-small {
+    display: none !important; }
+
+  .invisible-small {
+    visibility: hidden !important; } }
+/* >= 421px && <= 768px */
+@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+  .absent-medium {
+    display: none !important; }
+
+  .invisible-medium {
+    visibility: hidden !important; } }
+/* >= 769px */
+@media screen and (min-width: 48.0625rem) {
+  .absent-large {
+    display: none !important; }
+
+  .invisible-large {
+    visibility: hidden !important; } }
+
+/*# sourceMappingURL=display.css.map */

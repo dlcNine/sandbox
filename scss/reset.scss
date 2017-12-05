@@ -102,6 +102,10 @@ hr {
   border-top: 0.1rem solid $dark-white;
 }
 
+*[disabled] {
+  opacity: 0.5;
+}
+
 
 
 

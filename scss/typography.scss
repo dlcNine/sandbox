@@ -59,40 +59,12 @@ scale ratio : 1.3333
 
 /* ====================================================== */
 
-.text-red {
-  color: $medium-red;
-}
-
-.text-orange {
-  color: $orange;
-}
-
-.text-yellow {
-  color: $yellow;
-}
-
-.text-green {
-  color: $medium-green;
-}
-
-.text-blue {
+.snippet {
+  display: inline-block;
+  border-radius: 0.1875em;
+  padding: 0em 0.25em;
+  background-color: $medium-white;
   color: $medium-blue;
-}
-
-.text-indigo {
-  color: $indigo;
-}
-
-.text-violet {
-  color: $violet;
-}
-
-.text-gray {
-  color: $medium-gray;
-}
-
-.text-white {
-  color: $white;
 }
 
 /* ====================================================== */

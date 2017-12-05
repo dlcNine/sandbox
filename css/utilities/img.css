@@ -1,0 +1,14 @@
+img.shadow {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0rem #d8d8d8; }
+img.circular {
+  border-radius: 50%; }
+img.rounded {
+  border-radius: 0.8rem; }
+img.responsive {
+  max-width: 100%;
+  height: auto; }
+img.fill-width {
+  width: 100%;
+  height: auto; }
+
+/*# sourceMappingURL=img.css.map */
