@@ -1,0 +1,24 @@
+div.container-controls {
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  div[class*="default-"], div[class*="small-"], 
+  div[class*="medium-"], div[class*="large-"] {
+    padding: 0;
+  }
+
+  & > div:first-child {
+    padding-right: 0.6rem;
+  }
+
+  & > div:last-child {
+    padding-left: 0.6rem;
+  }
+
+  & > div:not(:first-child):not(:last-child) {
+    padding: 0rem 0.6rem;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../colors.scss";
+@import "../mixins.scss";
+
+div.control-with-icons {
+  position: relative;
+  font-size: 1.6rem;
+
+  span.left-icon, span.right-icon {
+    position: absolute;
+    top: 50%;
+    @include translate-2d(0%, -50%);
+    color: $dark-gray;
+
+    i {
+      font-size: inherit;
+    }
+  }
+
+  span.left-icon {
+    left: 0.5em;
+  }
+
+  span.right-icon {
+    right: 0.5em;
+  }
+
+  input {
+    font-size: inherit;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    &:focus ~ span.left-icon, &:focus ~ span.right-icon {
+      color: $medium-black;
+    }
+  }
+}

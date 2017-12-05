@@ -1,0 +1,140 @@
+@import "../colors.scss";
+
+form div.field {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  padding: 0.6rem;
+  margin: 0.2rem 0rem;
+
+  .label {
+    font-size: 1.4rem;    
+    font-weight: bold;
+  }
+
+  .help {
+    font-size: 1.2rem;
+    margin: 0.25em 0em;
+  }
+
+  /* ==================================== */
+
+  &.container-field-horizontal {
+    &::after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+
+    & > div[class*="default-"], & > div[class*="small-"], 
+    & > div[class*="medium-"], & > div[class*="large-"] {
+      padding: 0;
+
+      &.field-label {
+        padding-right: 0.6rem;
+        position: relative;
+        top: 0.8rem;
+      }
+
+      &.field-body {
+        padding-left: 0.6rem;
+
+        *:first-child, div.controls-inline input {
+          margin-top: 0;
+        }
+
+        label.checkbox, label.radio {
+          position: relative;
+          top: 0.3rem;
+        }
+        
+      }
+    }
+  }
+
+  /* ==================================== */
+
+  &.theme-primary {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    div.select, textarea {
+      border-color: $medium-blue;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
+      }
+    }
+
+    div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em $light-blue-thin inset;
+    }
+
+    .help, label.checkbox, label.radio {
+      color: $medium-blue;
+    }
+  }
+
+  &.theme-info {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    div.select, textarea {
+      border-color: $medium-green;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.125em $light-green-thin inset;
+      }
+    }
+
+    div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em $light-green-thin inset;
+    }
+
+    .help, label.checkbox, label.radio {
+      color: $medium-green;
+    }
+  }
+
+  &.theme-caution {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    div.select, textarea {
+      border-color: $medium-yellow;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin inset;
+      }
+    }
+
+    div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em $medium-yellow-thin inset;
+    }
+
+    .help {
+      color: $dark-yellow;
+    }
+
+    label.checkbox, label.radio {
+      color: $medium-yellow;
+    }
+  }
+
+  &.theme-danger {
+    input:not([type="checkbox"]):not([type="radio"]), 
+    div.select, textarea {
+      border-color: $medium-red;
+
+      &:focus {
+        box-shadow: 0em 0em 0em 0.125em $light-red-thin inset;
+      }
+    }
+
+    div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em $light-red-thin inset;
+    }
+
+    .help {
+      color: $dark-red;
+    }
+
+    label.checkbox, label.radio {
+      color: $medium-red;
+    }
+  }
+  
+}
