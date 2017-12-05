@@ -10,10 +10,10 @@ ul.menu {
     padding: 1rem;
     line-height: 1;
     vertical-align: middle; }
-    ul.menu li.menu-header a.menu-link, ul.menu li.menu-item a.menu-link, ul.menu li.menu-footer a.menu-link {
+    ul.menu li.menu-header a.menu-a, ul.menu li.menu-item a.menu-a, ul.menu li.menu-footer a.menu-a {
       text-decoration: none;
       color: #2771d1; }
-      ul.menu li.menu-header a.menu-link:hover, ul.menu li.menu-item a.menu-link:hover, ul.menu li.menu-footer a.menu-link:hover {
+      ul.menu li.menu-header a.menu-a:hover, ul.menu li.menu-item a.menu-a:hover, ul.menu li.menu-footer a.menu-a:hover {
         text-decoration: underline; }
   ul.menu li.menu-header {
     border-radius: 0.3rem 0.3rem 0rem 0rem;
@@ -28,10 +28,10 @@ ul.menu {
       color: #d8d8d8;
       background-color: #4c4c4c;
       border-color: #bfbfbf; }
-      ul.menu.theme-dark li.menu-header a.menu-link, ul.menu.theme-dark li.menu-item a.menu-link, ul.menu.theme-dark li.menu-footer a.menu-link {
+      ul.menu.theme-dark li.menu-header a.menu-a, ul.menu.theme-dark li.menu-item a.menu-a, ul.menu.theme-dark li.menu-footer a.menu-a {
         color: #bfbfbf;
         text-decoration: none; }
-        ul.menu.theme-dark li.menu-header a.menu-link:hover, ul.menu.theme-dark li.menu-item a.menu-link:hover, ul.menu.theme-dark li.menu-footer a.menu-link:hover {
+        ul.menu.theme-dark li.menu-header a.menu-a:hover, ul.menu.theme-dark li.menu-item a.menu-a:hover, ul.menu.theme-dark li.menu-footer a.menu-a:hover {
           color: white;
           text-decoration: underline; }
 

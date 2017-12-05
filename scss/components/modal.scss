@@ -1,7 +1,8 @@
 @import "../colors.scss";
 
-$backdrop-background-color: $black-thick;
-$padding: 2.4rem;
+$modal-backdrop-background-color: $black-thick;
+$modal-backdrop-padding: 2.4rem;
+$modal-padding: 2.4rem;
 $modal-background-color: $white;
 $modal-radius: 0.5rem;
 
@@ -12,11 +13,11 @@ div.modal-backdrop {
   width: 100%;
   min-height: 100%;
   height: auto;
-  background-color: $backdrop-background-color;
-  padding: $padding;
+  background-color: $modal-backdrop-background-color;
+  padding: $modal-backdrop-padding;
 
   div.modal {
-    padding: $padding;
+    padding: $modal-padding;
     background-color: $modal-background-color;
     border-radius: $modal-radius;
   }

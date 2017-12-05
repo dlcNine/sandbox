@@ -23,7 +23,7 @@ div.container-navbar {
     margin-right: $navbar-item-margin-right;
     color: $navbar-item-color;
    
-    a.navbar-link {
+    a.navbar-a {
       color: inherit;
       text-decoration: none;
       line-height: 1;
@@ -38,7 +38,7 @@ div.container-navbar {
   &.theme-dark div.navbar-item{
     color: $light-gray;
 
-    a.navbar-link {
+    a.navbar-a {
       color: inherit;
 
       &:hover {
