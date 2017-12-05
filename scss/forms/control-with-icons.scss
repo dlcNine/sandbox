@@ -1,6 +1,9 @@
 @import "../colors.scss";
 @import "../mixins.scss";
 
+$icon-color: $dark-gray;
+$icon-focus-color: $medium-black;
+
 div.control-with-icons {
   position: relative;
   font-size: 1.6rem;
@@ -9,7 +12,7 @@ div.control-with-icons {
     position: absolute;
     top: 50%;
     @include translate-2d(0%, -50%);
-    color: $dark-gray;
+    color: $icon-color;
 
     i {
       font-size: inherit;
@@ -30,7 +33,7 @@ div.control-with-icons {
     padding-right: 2em;
 
     &:focus ~ span.left-icon, &:focus ~ span.right-icon {
-      color: $medium-black;
+      color: $icon-focus-color;
     }
   }
 }

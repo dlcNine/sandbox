@@ -1,8 +1,9 @@
 .DS_Store
 index.html
 dev-helper.css
-padding-cheatsheet.rtf
-/javascript
 .sass-cache/
 css/*.css.map
 css/components/*.css.map
+css/forms/*.css.map
+css/buttons/*.css.map
+css/layout/*.css.map

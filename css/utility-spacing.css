@@ -125,6 +125,7 @@
 .pad-r-4 {
   padding-right: 4.8rem !important; }
 
+/* ====================================================== */
 /* <= 420px */
 @media screen and (max-width: 26.25rem) {
   .mgn-1-small {
@@ -253,6 +254,7 @@
 
   .pad-r-4-small {
     padding-right: 4.8rem !important; } }
+/* ====================================================== */
 /* >= 421px && <= 768px */
 @media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
   .mgn-1-medium {
@@ -381,6 +383,7 @@
 
   .pad-r-4-medium {
     padding-right: 4.8rem !important; } }
+/* ====================================================== */
 /* >= 769px */
 @media screen and (min-width: 48.0625rem) {
   .mgn-1-large {
