@@ -29,8 +29,7 @@ div.select {
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.1875em;
   background-color: white;
-  margin: 0.8rem 0rem;
-  height: 3.2rem; }
+  margin: 0.8rem 0rem; }
   div.select:hover {
     border-color: #bfbfbf; }
   div.select.size-small {

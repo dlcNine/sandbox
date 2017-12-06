@@ -1,84 +1,81 @@
 @import "../colors.scss";
 
-div.addons-wrapper {
-  font-size: 1.6rem;
-  height: 2em;
-  margin: 0.8rem 0rem;
-  border: 0.1rem solid $light-gray;
-  border-radius: 0.1875em;
+$control-radius: 0.1875em;
+$control-focus-shadow-spread: 0.125em;
+$control-focus-shadow-color: $light-blue-thin;
+$control-margin: 0.8rem 0rem;
+$addon-padding: 0.375em 0.625em;
+$addon-border-color: $light-gray;
+$addon-background-color: $light-white;
+$addon-color: $white-black;
 
-  &::after {
-    content: '';
-    clear: both;
-    display: block;
+div.flex-addons {
+  display: flex;
+  margin: $control-margin;
+
+  & > div:first-child,
+  & > div:first-child input,  
+  & > input:first-child {
+    border-top-left-radius: $control-radius;
+    border-bottom-left-radius: $control-radius;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
-  & > div:first-child {
-    border-top-left-radius: 0.1875em;
-    border-bottom-left-radius: 0.1875em;
+  & > div:last-child,
+  & > div:last-child input,  
+  & > input:last-child {
+    border-top-right-radius: $control-radius;
+    border-bottom-right-radius: $control-radius;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
-  & > div:last-child {
-    border-top-right-radius: 0.1875em;
-    border-bottom-right-radius: 0.1875em;
-  }
-
-  & > div:not(:first-child):not(:last-child) {
+  & > div:not(:first-child):not(:last-child), 
+  & > input:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
 
-  div.control {
-    float: left;
-    width: auto;
-    width: 50%;
+  div.left-addon, div.right-addon {
+    padding: $addon-padding;
+    border: 0.1rem solid $addon-border-color;
+    background-color: $addon-background-color;
+    color: $addon-color;
 
-    input {
-      font-size: inherit;
+    &.has-button {
+      padding: 0;
       border: none;
-      margin: 0;
-      background-color: transparent;
 
-      &:focus {
-        box-shadow: none;
+      .button {
+        white-space: nowrap;
+        font-size: inherit;
+        border-radius: inherit;
+        margin: 0;
+        height: 100%;
       }
     }
   }
 
-  div.left-addon, div.right-addon {
-    padding: 0.1875em 0.625em;
-    background-color: $light-white;
-    color: $white-black;
-    text-align: center;
-    width: auto;
-    height: 100%;
-    max-width: 25%;
-  }
-
   div.left-addon {
-    float: left;
-    border-right: 0.1rem solid $light-gray;
+    border-right: none;
   }
 
   div.right-addon {
-    float: right;
-    border-left: 0.1rem solid $light-gray;
+    border-left: none;
+  }
+
+  input, div.select, div.control-with-icons {
+    font-size: inherit;
+    margin: 0;
+    width: 100%;
+
+    &:focus, &.focused {
+      box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color inset;
+    }
+  }
+
+  div.control-with-icons input {
+    height: 100%;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

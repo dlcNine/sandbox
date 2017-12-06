@@ -56,8 +56,7 @@ form div.field {
   /* ==================================== */
 
   &.theme-primary {
-    input:not([type="checkbox"]):not([type="radio"]), 
-    div.select, textarea {
+    input:not([type="checkbox"]):not([type="radio"]), textarea {
       border-color: $medium-blue;
 
       &:focus {
@@ -75,8 +74,7 @@ form div.field {
   }
 
   &.theme-info {
-    input:not([type="checkbox"]):not([type="radio"]), 
-    div.select, textarea {
+    input:not([type="checkbox"]):not([type="radio"]), textarea {
       border-color: $medium-green;
 
       &:focus {
@@ -94,8 +92,7 @@ form div.field {
   }
 
   &.theme-caution {
-    input:not([type="checkbox"]):not([type="radio"]), 
-    div.select, textarea {
+    input:not([type="checkbox"]):not([type="radio"]), textarea {
       border-color: $medium-yellow;
 
       &:focus {
@@ -117,8 +114,7 @@ form div.field {
   }
 
   &.theme-danger {
-    input:not([type="checkbox"]):not([type="radio"]), 
-    div.select, textarea {
+    input:not([type="checkbox"]):not([type="radio"]), textarea {
       border-color: $medium-red;
 
       &:focus {
