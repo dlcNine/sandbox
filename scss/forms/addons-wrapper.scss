@@ -1,0 +1,84 @@
+@import "../colors.scss";
+
+div.addons-wrapper {
+  font-size: 1.6rem;
+  height: 2em;
+  margin: 0.8rem 0rem;
+  border: 0.1rem solid $light-gray;
+  border-radius: 0.1875em;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  & > div:first-child {
+    border-top-left-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+  }
+
+  & > div:last-child {
+    border-top-right-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+  }
+
+  & > div:not(:first-child):not(:last-child) {
+    border-radius: 0;
+  }
+
+  div.control {
+    float: left;
+    width: auto;
+    width: 50%;
+
+    input {
+      font-size: inherit;
+      border: none;
+      margin: 0;
+      background-color: transparent;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  div.left-addon, div.right-addon {
+    padding: 0.1875em 0.625em;
+    background-color: $light-white;
+    color: $white-black;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    max-width: 25%;
+  }
+
+  div.left-addon {
+    float: left;
+    border-right: 0.1rem solid $light-gray;
+  }
+
+  div.right-addon {
+    float: right;
+    border-left: 0.1rem solid $light-gray;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

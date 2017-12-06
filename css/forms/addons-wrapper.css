@@ -1,0 +1,45 @@
+div.addons-wrapper {
+  font-size: 1.6rem;
+  height: 2em;
+  margin: 0.8rem 0rem;
+  border: 0.1rem solid #d8d8d8;
+  border-radius: 0.1875em; }
+  div.addons-wrapper::after {
+    content: '';
+    clear: both;
+    display: block; }
+  div.addons-wrapper > div:first-child {
+    border-top-left-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em; }
+  div.addons-wrapper > div:last-child {
+    border-top-right-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em; }
+  div.addons-wrapper > div:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  div.addons-wrapper div.control {
+    float: left;
+    width: auto;
+    width: 50%; }
+    div.addons-wrapper div.control input {
+      font-size: inherit;
+      border: none;
+      margin: 0;
+      background-color: transparent; }
+      div.addons-wrapper div.control input:focus {
+        box-shadow: none; }
+  div.addons-wrapper div.left-addon, div.addons-wrapper div.right-addon {
+    padding: 0.1875em 0.625em;
+    background-color: whitesmoke;
+    color: #7a7a7a;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    max-width: 25%; }
+  div.addons-wrapper div.left-addon {
+    float: left;
+    border-right: 0.1rem solid #d8d8d8; }
+  div.addons-wrapper div.right-addon {
+    float: right;
+    border-left: 0.1rem solid #d8d8d8; }
+
+/*# sourceMappingURL=addons-wrapper.css.map */
