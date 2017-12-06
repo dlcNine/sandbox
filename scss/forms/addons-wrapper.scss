@@ -9,7 +9,7 @@ $addon-border-color: $light-gray;
 $addon-background-color: $light-white;
 $addon-color: $white-black;
 
-div.flex-addons {
+div.addons-wrapper {
   display: flex;
   margin: $control-margin;
 
@@ -72,6 +72,10 @@ div.flex-addons {
     &:focus, &.focused {
       box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color inset;
     }
+  }
+
+  div.select {
+    height: initial;
   }
 
   div.control-with-icons input {

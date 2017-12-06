@@ -1,0 +1,21 @@
+div.container-buttons-bar {
+  padding: 0.6rem; }
+  div.container-buttons-bar::after {
+    content: '';
+    clear: both;
+    display: block; }
+  div.container-buttons-bar.flex .button {
+    width: 100%; }
+  div.container-buttons-bar .button {
+    float: left;
+    margin: 0; }
+  div.container-buttons-bar > .button:first-child {
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em; }
+  div.container-buttons-bar > .button:last-child {
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em; }
+  div.container-buttons-bar > .button:not(:first-child):not(:last-child) {
+    border-radius: 0em; }
+
+/*# sourceMappingURL=buttons-bar.css.map */

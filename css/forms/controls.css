@@ -26,6 +26,7 @@ textarea {
 /* ==================================== */
 div.select {
   font-size: 1.6rem;
+  height: 2em;
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.1875em;
   background-color: white;
