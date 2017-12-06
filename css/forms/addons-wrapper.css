@@ -1,0 +1,45 @@
+div.addons-wrapper {
+  display: flex;
+  margin: 0.8rem 0rem; }
+  div.addons-wrapper > div:first-child, div.addons-wrapper > div:first-child input, div.addons-wrapper > input:first-child {
+    border-top-left-radius: 0.1875em;
+    border-bottom-left-radius: 0.1875em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  div.addons-wrapper > div:last-child, div.addons-wrapper > div:last-child input, div.addons-wrapper > input:last-child {
+    border-top-right-radius: 0.1875em;
+    border-bottom-right-radius: 0.1875em;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  div.addons-wrapper > div:not(:first-child):not(:last-child), div.addons-wrapper > input:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  div.addons-wrapper div.left-addon, div.addons-wrapper div.right-addon {
+    padding: 0.375em 0.625em;
+    border: 0.1rem solid #d8d8d8;
+    background-color: whitesmoke;
+    color: #7a7a7a; }
+    div.addons-wrapper div.left-addon.has-button, div.addons-wrapper div.right-addon.has-button {
+      padding: 0;
+      border: none; }
+      div.addons-wrapper div.left-addon.has-button .button, div.addons-wrapper div.right-addon.has-button .button {
+        white-space: nowrap;
+        font-size: inherit;
+        border-radius: inherit;
+        margin: 0;
+        height: 100%; }
+  div.addons-wrapper div.left-addon {
+    border-right: none; }
+  div.addons-wrapper div.right-addon {
+    border-left: none; }
+  div.addons-wrapper input, div.addons-wrapper div.select, div.addons-wrapper div.control-with-icons {
+    font-size: inherit;
+    margin: 0;
+    width: 100%; }
+    div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select:focus, div.addons-wrapper div.select.focused, div.addons-wrapper div.control-with-icons:focus, div.addons-wrapper div.control-with-icons.focused {
+      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+  div.addons-wrapper div.select {
+    height: initial; }
+  div.addons-wrapper div.control-with-icons input {
+    height: 100%; }
+
+/*# sourceMappingURL=addons-wrapper.css.map */
