@@ -27,6 +27,9 @@
   text-transform: lowercase !important; }
 
 /* ====================================================== */
+.text-nowrap {
+  white-space: nowrap; }
+
 /* ====================================================== */
 .text-red {
   color: #e53c27; }

@@ -38,14 +38,4 @@ figure.image-128x {
     figure.image-128x img.rounded {
       border-radius: 0.8rem; }
 
-figure.image-256x {
-  width: 256px;
-  height: 256px; }
-  figure.image-256x img {
-    object-fit: cover;
-    width: 256px;
-    height: 256px; }
-    figure.image-256x img.rounded {
-      border-radius: 1rem; }
-
 /*# sourceMappingURL=images.css.map */

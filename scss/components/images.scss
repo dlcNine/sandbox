@@ -58,18 +58,3 @@ figure.image-128x {
     }
   }
 }
-
-figure.image-256x {
-  width: 256px;
-  height: 256px;
-
-  img {
-    object-fit: cover;
-    width: 256px;
-    height: 256px;
-
-    &.rounded {
-      border-radius: 1rem;
-    }
-  }
-}
