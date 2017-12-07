@@ -1,4 +1,4 @@
-div.container-buttons-bar {
+div.buttons-bar {
   padding: 0.6rem;
 
   &::after {
@@ -8,7 +8,7 @@ div.container-buttons-bar {
   }
 
   &.flex .button {
-      width: 100%;
+    width: 100%;
   }
 
   .button {

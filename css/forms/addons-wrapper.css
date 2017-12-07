@@ -31,15 +31,15 @@ div.addons-wrapper {
     border-right: none; }
   div.addons-wrapper div.right-addon {
     border-left: none; }
-  div.addons-wrapper input, div.addons-wrapper div.select, div.addons-wrapper div.control-with-icons {
+  div.addons-wrapper input, div.addons-wrapper div.select, div.addons-wrapper div.icons-wrapper {
     font-size: inherit;
     margin: 0;
     width: 100%; }
-    div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select:focus, div.addons-wrapper div.select.focused, div.addons-wrapper div.control-with-icons:focus, div.addons-wrapper div.control-with-icons.focused {
+    div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select:focus, div.addons-wrapper div.select.focused, div.addons-wrapper div.icons-wrapper:focus, div.addons-wrapper div.icons-wrapper.focused {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   div.addons-wrapper div.select {
     height: initial; }
-  div.addons-wrapper div.control-with-icons input {
+  div.addons-wrapper div.icons-wrapper input {
     height: 100%; }
 
 /*# sourceMappingURL=addons-wrapper.css.map */

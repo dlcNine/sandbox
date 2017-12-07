@@ -11,7 +11,7 @@ ul.dropdown {
   border-radius: 0.4rem;
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
-  padding: 0.8rem 0rem 0.8rem 0rem;
+  padding: 0.8rem 0rem;
   background-color: white; }
   ul.dropdown.on-top {
     bottom: 100%;
@@ -89,9 +89,8 @@ ul.dropdown {
     width: 28rem; }
   ul.dropdown.size-large {
     width: 36rem; }
-
-ul.dropdown.width-auto, div.popover.width-auto {
-  width: auto;
-  white-space: nowrap; }
+  ul.dropdown.width-auto {
+    width: auto;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=dropdown.css.map */

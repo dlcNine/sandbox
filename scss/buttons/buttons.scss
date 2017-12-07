@@ -78,7 +78,7 @@ input[type="reset"].button {
       color: $white-yellow;
     }
 
-    &:focus {
+    &:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $medium-yellow-thin;
     }
   }

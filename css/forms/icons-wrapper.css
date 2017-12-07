@@ -1,0 +1,26 @@
+div.icons-wrapper {
+  position: relative;
+  font-size: 1.6rem; }
+  div.icons-wrapper span.left-icon, div.icons-wrapper span.right-icon {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    color: #939393; }
+    div.icons-wrapper span.left-icon i, div.icons-wrapper span.right-icon i {
+      font-size: inherit; }
+  div.icons-wrapper span.left-icon {
+    left: 0.5em; }
+  div.icons-wrapper span.right-icon {
+    right: 0.5em; }
+  div.icons-wrapper input {
+    font-size: inherit;
+    padding-left: 2em;
+    padding-right: 2em; }
+    div.icons-wrapper input:focus ~ span.left-icon, div.icons-wrapper input:focus ~ span.right-icon {
+      color: #4c4c4c; }
+
+/*# sourceMappingURL=icons-wrapper.css.map */

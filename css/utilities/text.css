@@ -16,6 +16,7 @@
 .text-bottom {
   vertical-align: bottom !important; }
 
+/* ====================================================== */
 .text-capitalize {
   text-transform: capitalize !important; }
 
@@ -25,6 +26,7 @@
 .text-lowercase {
   text-transform: lowercase !important; }
 
+/* ====================================================== */
 /* ====================================================== */
 .text-red {
   color: #e53c27; }

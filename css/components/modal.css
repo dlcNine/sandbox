@@ -12,4 +12,7 @@ div.modal-backdrop {
     background-color: white;
     border-radius: 0.5rem; }
 
+body.modal-present {
+  overflow: hidden; }
+
 /*# sourceMappingURL=modal.css.map */

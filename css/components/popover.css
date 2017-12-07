@@ -42,5 +42,8 @@ div.popover {
     -o-transform: translate(calc(0% + 1rem), 50%);
     -ms-transform: translate(calc(0% + 1rem), 50%);
     transform: translate(calc(0% + 1rem), 50%); }
+  div.popover.width-auto {
+    width: auto;
+    white-space: nowrap; }
 
 /*# sourceMappingURL=popover.css.map */

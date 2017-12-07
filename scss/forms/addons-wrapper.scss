@@ -64,7 +64,7 @@ div.addons-wrapper {
     border-left: none;
   }
 
-  input, div.select, div.control-with-icons {
+  input, div.select, div.icons-wrapper {
     font-size: inherit;
     margin: 0;
     width: 100%;
@@ -78,7 +78,7 @@ div.addons-wrapper {
     height: initial;
   }
 
-  div.control-with-icons input {
+  div.icons-wrapper input {
     height: 100%;
   }
 

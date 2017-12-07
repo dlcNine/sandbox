@@ -69,9 +69,9 @@ input[type="reset"].button {
     input[type="reset"].button.theme-caution:active {
       background-color: #82820a;
       color: #fcfcef; }
-    a.button.theme-caution:focus, button.button.theme-caution:focus,
-    input[type="submit"].button.theme-caution:focus,
-    input[type="reset"].button.theme-caution:focus {
+    a.button.theme-caution:focus:not(:active), button.button.theme-caution:focus:not(:active),
+    input[type="submit"].button.theme-caution:focus:not(:active),
+    input[type="reset"].button.theme-caution:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.125em rgba(232, 232, 25, 0.5); }
   a.button.theme-danger, button.button.theme-danger,
   input[type="submit"].button.theme-danger,

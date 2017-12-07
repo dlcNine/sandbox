@@ -22,3 +22,7 @@ div.modal-backdrop {
     border-radius: $modal-radius;
   }
 }
+
+body.modal-present {
+  overflow: hidden;
+}
