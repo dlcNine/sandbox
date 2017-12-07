@@ -3,6 +3,7 @@
 $control-padding: 0.375em 0.625em;
 $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
+$control-font-family: sans-serif;
 $control-color: $black;
 $control-radius: 0.1875em;
 $control-margin: 0.8rem 0rem;
@@ -16,6 +17,8 @@ input[type="password"], input[type="search"],
 input[type="tel"], input[type="text"], input[type="url"],
 textarea {
   font-size: 1.6rem;
+  font-family: $control-font-family;
+  line-height: 1;
   display: block;
   width: 100%;
   padding: $control-padding;
@@ -76,6 +79,8 @@ div.select {
 
   select {
     font-size: inherit;
+    font-family: $control-font-family;
+    line-height: 1;
     display: block;
     width: 100%;
     height: 100%;
@@ -118,6 +123,8 @@ textarea {
 
 label.checkbox, label.radio {
   font-size: 1.6rem;
+  color: $control-color;
+  font-family: sans-serif;
   display: inline-block;
   padding: 0.375em 0em;
   margin-right: 0.625rem;

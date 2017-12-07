@@ -30,15 +30,102 @@ scale ratio : 1.3333
 .h4, .p {
   font-size: 1.6rem !important; }
 
-.p-small {
+.p-alt {
   font-size: 1.4rem !important; }
 
-.h5, .small {
+.h5 {
   font-size: 1.2rem !important; }
 
 .h6 {
   font-size: 1rem !important; }
 
+/* ====================================================== */
+/* <= 420px */
+@media screen and (max-width: 26.25rem) {
+  .huge-1-small {
+    font-size: 6.7rem !important; }
+
+  .huge-2-small {
+    font-size: 5.1rem !important; }
+
+  .h1-small {
+    font-size: 3.8rem !important; }
+
+  .h2-small {
+    font-size: 2.8rem !important; }
+
+  .h3-small {
+    font-size: 2.1rem !important; }
+
+  .h4-small, .p-small {
+    font-size: 1.6rem !important; }
+
+  .p-alt-small {
+    font-size: 1.4rem !important; }
+
+  .h5-small {
+    font-size: 1.2rem !important; }
+
+  .h6-small {
+    font-size: 1rem !important; } }
+/* ====================================================== */
+/* >= 421px && <= 768px */
+@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+  .huge-1-medium {
+    font-size: 6.7rem !important; }
+
+  .huge-2-medium {
+    font-size: 5.1rem !important; }
+
+  .h1-medium {
+    font-size: 3.8rem !important; }
+
+  .h2-medium {
+    font-size: 2.8rem !important; }
+
+  .h3-medium {
+    font-size: 2.1rem !important; }
+
+  .h4-medium, .p-medium {
+    font-size: 1.6rem !important; }
+
+  .p-alt-medium {
+    font-size: 1.4rem !important; }
+
+  .h5-medium {
+    font-size: 1.2rem !important; }
+
+  .h6-medium {
+    font-size: 1rem !important; } }
+/* ====================================================== */
+/* >= 769px */
+@media screen and (min-width: 48.0625rem) {
+  .huge-1-large {
+    font-size: 6.7rem !important; }
+
+  .huge-2-large {
+    font-size: 5.1rem !important; }
+
+  .h1-large {
+    font-size: 3.8rem !important; }
+
+  .h2-large {
+    font-size: 2.8rem !important; }
+
+  .h3-large {
+    font-size: 2.1rem !important; }
+
+  .h4-large, .p-large {
+    font-size: 1.6rem !important; }
+
+  .p-alt-large {
+    font-size: 1.4rem !important; }
+
+  .h5-large {
+    font-size: 1.2rem !important; }
+
+  .h6-large {
+    font-size: 1rem !important; } }
 /* ====================================================== */
 .vw-1 {
   font-size: 1vw !important; }
@@ -84,26 +171,5 @@ a.a:focus, a:focus {
   text-decoration: underline; }
 
 /* ====================================================== */
-ul.ul.square {
-  list-style: square inside; }
-ul.ul.circle-solid {
-  list-style: disc inside; }
-ul.ul.circle-hollow {
-  list-style: circle inside; }
-
-ol.ol.numbers {
-  list-style: decimal inside; }
-ol.ol.alpha-lower {
-  list-style: lower-alpha inside; }
-ol.ol.alpha-upper {
-  list-style: upper-alpha inside; }
-ol.ol.roman-lower {
-  list-style: lower-roman inside; }
-ol.ol.roman-upper {
-  list-style: upper-roman inside; }
-
-ul.ul ul.ul, ul.ul ol.ol,
-ol.ol ol.ol, ol.ol ul.ul {
-  margin-left: 0.875em; }
 
 /*# sourceMappingURL=typography.css.map */
