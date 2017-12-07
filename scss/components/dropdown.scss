@@ -5,7 +5,7 @@ $dropdown-border-color: $light-gray;
 $dropdown-background-color: $white;
 $dropdown-shadow-color: $medium-gray;
 $dropdown-radius: 0.4rem;
-$dropdown-padding: 0.8rem 0rem 0.8rem 0rem;
+$dropdown-padding: 0.8rem 0rem;
 $dropdown-item-padding: 0.4rem 1.4rem;
 $dropdown-item-color: $black;
 $dropdown-item-hover-color: $white;
@@ -121,9 +121,9 @@ ul.dropdown {
   &.size-large {
     width: 36rem;
   }
-}
 
-ul.dropdown.width-auto, div.popover.width-auto {
-  width: auto;
-  white-space: nowrap;
+  &.width-auto {
+    width: auto;
+    white-space: nowrap;
+  }
 }

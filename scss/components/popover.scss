@@ -48,4 +48,9 @@ div.popover {
     left: 100%;
     @include translate-2d(calc(0% + #{$popover-extra-offset}), 50%);
   }
+
+  &.width-auto {
+    width: auto;
+    white-space: nowrap;
+  }
 }

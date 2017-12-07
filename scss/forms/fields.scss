@@ -18,43 +18,6 @@ form div.field {
     margin: 0.25em 0em;
   }
 
-  /* ==================================== */
-
-  &.container-field-horizontal {
-    &::after {
-      content: '';
-      clear: both;
-      display: block;
-    }
-
-    & > div[class*="default-"], & > div[class*="small-"], 
-    & > div[class*="medium-"], & > div[class*="large-"] {
-      padding: 0;
-
-      &.field-label {
-        padding-right: 0.6rem;
-        position: relative;
-        top: 0.8rem;
-      }
-
-      &.field-body {
-        padding-left: 0.6rem;
-
-        *:first-child, div.controls-inline input {
-          margin-top: 0;
-        }
-
-        label.checkbox, label.radio {
-          position: relative;
-          top: 0.3rem;
-        }
-        
-      }
-    }
-  }
-
-  /* ==================================== */
-
   &.theme-primary {
     input:not([type="checkbox"]):not([type="radio"]), textarea {
       border-color: $medium-blue;

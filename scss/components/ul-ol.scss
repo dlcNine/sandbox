@@ -1,0 +1,41 @@
+ul.ul {
+  &.square {
+    list-style: square inside;
+  }
+
+  &.circle-solid {
+    list-style: disc inside;
+  }
+
+  &.circle-hollow {
+    list-style: circle inside;
+  }
+}
+
+ol.ol {
+
+  &.numbers {
+    list-style: decimal inside;
+  }
+
+  &.alpha-lower {
+    list-style: lower-alpha inside;
+  }
+
+  &.alpha-upper {
+    list-style: upper-alpha inside;
+  }
+
+  &.roman-lower {
+    list-style: lower-roman inside;
+  }
+
+  &.roman-upper {
+    list-style: upper-roman inside;
+  }
+}
+
+ul.ul ul.ul, ul.ul ol.ol, 
+ol.ol ol.ol, ol.ol ul.ul {
+  margin-left: 0.875em;
+}

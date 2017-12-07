@@ -24,6 +24,8 @@
   vertical-align: bottom !important;
 }
 
+/* ====================================================== */
+
 .text-capitalize {
   text-transform: capitalize !important;
 }
@@ -34,6 +36,12 @@
 
 .text-lowercase {
   text-transform: lowercase !important;
+}
+
+/* ====================================================== */
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 /* ====================================================== */
