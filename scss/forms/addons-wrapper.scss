@@ -1,9 +1,9 @@
 @import "../colors.scss";
 
-$control-radius: 0.1875em;
-$control-focus-shadow-spread: 0.125em;
-$control-focus-shadow-color: $light-blue-thin;
-$control-margin: 0.8rem 0rem;
+$addon-control-radius: 0.1875em;
+$addon-control-focus-shadow-spread: 0.125em;
+$addon-control-focus-shadow-color: $light-blue-thin;
+$addon-control-margin: 0.8rem 0rem;
 $addon-padding: 0.375em 0.625em;
 $addon-border-color: $light-gray;
 $addon-background-color: $light-white;
@@ -11,13 +11,13 @@ $addon-color: $white-black;
 
 div.addons-wrapper {
   display: flex;
-  margin: $control-margin;
+  margin: $addon-control-margin;
 
   & > div:first-child,
   & > div:first-child input,  
   & > input:first-child {
-    border-top-left-radius: $control-radius;
-    border-bottom-left-radius: $control-radius;
+    border-top-left-radius: $addon-control-radius;
+    border-bottom-left-radius: $addon-control-radius;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -25,8 +25,8 @@ div.addons-wrapper {
   & > div:last-child,
   & > div:last-child input,  
   & > input:last-child {
-    border-top-right-radius: $control-radius;
-    border-bottom-right-radius: $control-radius;
+    border-top-right-radius: $addon-control-radius;
+    border-bottom-right-radius: $addon-control-radius;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -70,7 +70,7 @@ div.addons-wrapper {
     width: 100%;
 
     &:focus, &.focused {
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color inset;
+      box-shadow: 0em 0em 0em $addon-control-focus-shadow-spread $addon-control-focus-shadow-color inset;
     }
   }
 

@@ -1,6 +1,6 @@
 @import "../colors.scss";
 
-$control-focus-shadow-spread: 0.125em;
+$field-control-focus-shadow-spread: 0.125em;
 
 form div.field {
   font-size: 1.6rem;
@@ -23,12 +23,12 @@ form div.field {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-blue-thin inset;
+        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-blue-thin inset;
       }
     }
 
     div.select.focused {
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-blue-thin inset;
+      box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-blue-thin inset;
     }
 
     .help, label.checkbox, label.radio {
@@ -41,12 +41,12 @@ form div.field {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-green-thin inset;
+        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-green-thin inset;
       }
     }
 
     div.select.focused {
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-green-thin inset;
+      box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-green-thin inset;
     }
 
     .help, label.checkbox, label.radio {
@@ -59,12 +59,12 @@ form div.field {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em $control-focus-shadow-spread $medium-yellow-thin inset;
+        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $medium-yellow-thin inset;
       }
     }
 
     div.select.focused {
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $medium-yellow-thin inset;
+      box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $medium-yellow-thin inset;
     }
 
     .help {
@@ -81,12 +81,12 @@ form div.field {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-red-thin inset;
+        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-red-thin inset;
       }
     }
 
     div.select.focused {
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $light-red-thin inset;
+      box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-red-thin inset;
     }
 
     .help {
