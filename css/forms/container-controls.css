@@ -1,15 +1,19 @@
-div.container-controls::after {
-  content: '';
-  clear: both;
-  display: block; }
-div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
-div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
-  padding: 0; }
-div.container-controls > div:first-child {
-  padding-right: 0.6rem; }
-div.container-controls > div:last-child {
-  padding-left: 0.6rem; }
-div.container-controls > div:not(:first-child):not(:last-child) {
-  padding: 0rem 0.6rem; }
+div.container-controls {
+  margin: 0.8rem 0rem; }
+  div.container-controls::after {
+    content: '';
+    clear: both;
+    display: block; }
+  div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
+  div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
+    padding: 0; }
+  div.container-controls input, div.container-controls div.select, div.container-controls textarea {
+    margin: 0; }
+  div.container-controls > div:first-child {
+    padding-right: 0.6rem; }
+  div.container-controls > div:last-child {
+    padding-left: 0.6rem; }
+  div.container-controls > div:not(:first-child):not(:last-child) {
+    padding: 0rem 0.6rem; }
 
 /*# sourceMappingURL=container-controls.css.map */

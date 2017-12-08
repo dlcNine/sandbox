@@ -1762,7 +1762,10 @@ div.select {
     height: 100%;
     background-color: transparent;
     color: #383838; }
+    div.select select:focus {
+      outline: none; }
   div.select.multiple {
+    padding-left: 0.625em;
     height: 9.2rem; }
     div.select.multiple.size-small {
       height: 7rem; }
@@ -1803,28 +1806,37 @@ form div.field {
   form div.field .help {
     font-size: 1.2rem;
     margin: 0.25em 0em; }
+  form div.field.required .label::after {
+    content: ' * ';
+    color: #e53c27; }
   form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]), form div.field.theme-primary textarea {
     border-color: #3e9def; }
     form div.field.theme-primary input:not([type="checkbox"]):not([type="radio"]):focus, form div.field.theme-primary textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
-  form div.field.theme-primary div.select.focused {
-    box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
+  form div.field.theme-primary div.select {
+    border-color: #3e9def; }
+    form div.field.theme-primary div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
   form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]), form div.field.theme-info textarea {
     border-color: #54c43a; }
     form div.field.theme-info input:not([type="checkbox"]):not([type="radio"]):focus, form div.field.theme-info textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
-  form div.field.theme-info div.select.focused {
-    box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
+  form div.field.theme-info div.select {
+    border-color: #54c43a; }
+    form div.field.theme-info div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
   form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]), form div.field.theme-caution textarea {
     border-color: #e8e819; }
     form div.field.theme-caution input:not([type="checkbox"]):not([type="radio"]):focus, form div.field.theme-caution textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
-  form div.field.theme-caution div.select.focused {
-    box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
+  form div.field.theme-caution div.select {
+    border-color: #e8e819; }
+    form div.field.theme-caution div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
   form div.field.theme-caution .help {
     color: #82820a; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
@@ -1833,11 +1845,11 @@ form div.field {
     border-color: #e53c27; }
     form div.field.theme-danger input:not([type="checkbox"]):not([type="radio"]):focus, form div.field.theme-danger textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
-  form div.field.theme-danger div.select.focused {
-    box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
-  form div.field.theme-danger .help {
-    color: #c62c17; }
-  form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
+  form div.field.theme-danger div.select {
+    border-color: #e53c27; }
+    form div.field.theme-danger div.select.focused {
+      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
+  form div.field.theme-danger .help, form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
     color: #e53c27; }
 
 div.container-field-horizontal::after {
@@ -1858,19 +1870,23 @@ div.container-field-horizontal > div[class*="default-"], div.container-field-hor
       position: relative;
       top: 0.3rem; }
 
-div.container-controls::after {
-  content: '';
-  clear: both;
-  display: block; }
-div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
-div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
-  padding: 0; }
-div.container-controls > div:first-child {
-  padding-right: 0.6rem; }
-div.container-controls > div:last-child {
-  padding-left: 0.6rem; }
-div.container-controls > div:not(:first-child):not(:last-child) {
-  padding: 0rem 0.6rem; }
+div.container-controls {
+  margin: 0.8rem 0rem; }
+  div.container-controls::after {
+    content: '';
+    clear: both;
+    display: block; }
+  div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
+  div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
+    padding: 0; }
+  div.container-controls input, div.container-controls div.select, div.container-controls textarea {
+    margin: 0; }
+  div.container-controls > div:first-child {
+    padding-right: 0.6rem; }
+  div.container-controls > div:last-child {
+    padding-left: 0.6rem; }
+  div.container-controls > div:not(:first-child):not(:last-child) {
+    padding: 0rem 0.6rem; }
 
 div.controls-inline input {
   display: inline;

@@ -1,4 +1,8 @@
+$container-controls-margin: 0.8rem 0rem;
+
 div.container-controls {
+  margin: $container-controls-margin;
+
   &::after {
     content: '';
     clear: both;
@@ -8,6 +12,10 @@ div.container-controls {
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
     padding: 0;
+  }
+
+  input, div.select, textarea {
+    margin: 0;
   }
 
   & > div:first-child {

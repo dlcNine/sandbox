@@ -86,9 +86,14 @@ div.select {
     height: 100%;
     background-color: transparent;
     color: $control-color;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &.multiple {
+    padding-left: 0.625em;
     height: 9.2rem;
 
     &.size-small {
