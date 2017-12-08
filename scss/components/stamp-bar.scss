@@ -1,6 +1,6 @@
 $stamp-bar-margin: 0.375em 0.25em;
-$inner-stamp-padding: 0.25em 0.375em;
-$only-stamp-radius: 0.1875em;
+$stamp-bar-inner-stamp-padding: 0.25em 0.375em;
+$stamp-bar-only-stamp-radius: 0.1875em;
 
 div.stamp-bar {
   font-size: 1.6rem;
@@ -15,7 +15,7 @@ div.stamp-bar {
 
   span.stamp {
     font-size: inherit;
-    padding: $inner-stamp-padding;
+    padding: $stamp-bar-inner-stamp-padding;
     float: left;
     margin: 0;
 
@@ -30,7 +30,7 @@ div.stamp-bar {
     }
 
     &:only-child {
-      border-radius: $only-stamp-radius;
+      border-radius: $stamp-bar-only-stamp-radius;
     }
 
     &:not(:first-child):not(:last-child) {

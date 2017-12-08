@@ -2,10 +2,14 @@
   display: flex !important;
   flex-flow: row nowrap; }
 
-.flex-left {
+.flex-row-wrap {
+  display: flex !important;
+  flex-flow: row wrap; }
+
+.flex-start {
   justify-content: flex-start; }
 
-.flex-x-center {
+.flex-center {
   justify-content: center; }
 
 .flex-between {
@@ -17,19 +21,22 @@
 .flex-even {
   justify-content: space-evenly; }
 
-.flex-right {
+.flex-end {
   justify-content: flex-end; }
 
-.flex-top {
+.flex-cross-start {
   align-items: flex-start; }
 
-.flex-y-center {
+.flex-cross-center {
   align-items: center; }
 
-.flex-bottom {
+.flex-cross-end {
   align-items: flex-end; }
 
-.flex-stretch {
+.flex-cross-baseline {
+  align-items: baseline; }
+
+.flex-cross-stretch {
   align-items: stretch; }
 
 /*# sourceMappingURL=flexbox.css.map */
