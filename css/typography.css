@@ -147,6 +147,7 @@ scale ratio : 1.3333
 
 /* ====================================================== */
 span.snippet {
+  font-family: menlo, monaco, monospace;
   display: inline-block;
   border-radius: 0.1875em;
   padding: 0em 0.375em;

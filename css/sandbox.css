@@ -83,7 +83,8 @@ hr {
   border-top: 0.1rem solid #d7d7d7; }
 
 *[disabled] {
-  opacity: 0.5; }
+  opacity: 0.5;
+  cursor: default !important; }
 
 /*
 scale ratio : 1.3333
@@ -234,6 +235,7 @@ scale ratio : 1.3333
 
 /* ====================================================== */
 span.snippet {
+  font-family: menlo, monaco, monospace;
   display: inline-block;
   border-radius: 0.1875em;
   padding: 0em 0.375em;
@@ -1479,6 +1481,7 @@ input[type="submit"].button,
 input[type="reset"].button {
   font-size: 1.6rem;
   font-family: sans-serif;
+  line-height: 1;
   padding: 0.375em 0.75em;
   margin: 0.6rem;
   border-radius: 0.1875em;
