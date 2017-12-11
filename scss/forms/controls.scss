@@ -5,12 +5,13 @@ $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
 $control-font-family: sans-serif;
 $control-color: $black;
+$control-background-color: $white;
 $control-radius: 0.1875em;
 $control-margin: 0.8rem 0rem;
 $control-focus-border-color: $medium-blue;
 $control-focus-shadow-color: $light-blue-thin;
 $control-focus-shadow-spread: 0.125em;
-$div-select-background-color: $white;
+
 
 input[type="email"], input[type="number"],
 input[type="password"], input[type="search"], 
@@ -26,6 +27,7 @@ textarea {
   border-radius: $control-radius;
   margin: $control-margin;
   color: $control-color;
+  background-color: $control-background-color;
 
   &:hover {
     border-color: $control-hover-border-color;
@@ -45,7 +47,7 @@ div.select {
   height: 2em;
   border: 0.1rem solid $control-border-color;
   border-radius: $control-radius;
-  background-color: $div-select-background-color;
+  background-color: $control-background-color;
   margin: $control-margin;
 
   &:hover {

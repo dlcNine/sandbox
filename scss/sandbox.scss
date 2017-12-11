@@ -8,6 +8,7 @@
 @import "./utilities/zeroing.scss";
 @import "./utilities/spacing.scss";
 @import "./utilities/display.scss";
+@import "./utilities/flexbox.scss";
 @import "./utilities/float.scss";
 @import "./utilities/text.scss";
 @import "./utilities/img.scss";
@@ -15,9 +16,7 @@
 /* ============ layout ============ */
 @import "./layout/grid.scss";
 @import "./layout/positioning.scss";
-@import "./layout/flexbox.scss";
 @import "./layout/height.scss";
-
 
 /* ============ buttons ============ */
 @import "./buttons/buttons.scss";
