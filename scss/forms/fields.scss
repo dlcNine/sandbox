@@ -3,6 +3,10 @@
 $field-control-focus-shadow-spread: 0.125em;
 $field-padding: 0.6rem;
 $field-margin: 0.2rem 0rem;
+$field-label-font-size: 1.4rem;
+$field-help-font-size: 1.2rem;
+$field-help-margin: 0.25em 0em;
+$field-required-asterisk-color: $medium-red;
 
 form div.field {
   font-size: 1.6rem;
@@ -11,18 +15,18 @@ form div.field {
   margin: $field-margin;
 
   .label {
-    font-size: 1.4rem;    
+    font-size: $field-label-font-size;    
     font-weight: bold;
   }
 
   .help {
-    font-size: 1.2rem;
-    margin: 0.25em 0em;
+    font-size: $field-help-font-size;
+    margin: $field-help-margin;
   }
 
   &.required .label::after {
     content: ' * ';
-    color: $medium-red;
+    color: $field-required-asterisk-color;
   }
 
   &.theme-primary {
