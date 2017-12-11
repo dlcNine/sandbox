@@ -3,6 +3,7 @@ input[type="submit"].button,
 input[type="reset"].button {
   font-size: 1.6rem;
   font-family: sans-serif;
+  line-height: 1;
   padding: 0.375em 0.75em;
   margin: 0.6rem;
   border-radius: 0.1875em;

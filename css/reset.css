@@ -83,6 +83,7 @@ hr {
   border-top: 0.1rem solid #d7d7d7; }
 
 *[disabled] {
-  opacity: 0.5; }
+  opacity: 0.5;
+  cursor: default !important; }
 
 /*# sourceMappingURL=reset.css.map */

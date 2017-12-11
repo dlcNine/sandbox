@@ -1,4 +1,5 @@
 div.addons-wrapper {
+  font-size: 1.6rem;
   display: flex;
   margin: 0.8rem 0rem; }
   div.addons-wrapper > div:first-child, div.addons-wrapper > div:first-child input, div.addons-wrapper > input:first-child {
@@ -11,7 +12,7 @@ div.addons-wrapper {
     border-bottom-right-radius: 0.1875em;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
-  div.addons-wrapper > div:not(:first-child):not(:last-child), div.addons-wrapper > input:not(:first-child):not(:last-child) {
+  div.addons-wrapper > div:not(:first-child):not(:last-child), div.addons-wrapper > div:not(:first-child):not(:last-child) input, div.addons-wrapper > input:not(:first-child):not(:last-child) {
     border-radius: 0; }
   div.addons-wrapper div.left-addon, div.addons-wrapper div.right-addon {
     padding: 0.375em 0.625em;
@@ -37,8 +38,6 @@ div.addons-wrapper {
     width: 100%; }
     div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select:focus, div.addons-wrapper div.select.focused, div.addons-wrapper div.icons-wrapper:focus, div.addons-wrapper div.icons-wrapper.focused {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
-  div.addons-wrapper div.select {
-    height: initial; }
   div.addons-wrapper div.icons-wrapper input {
     height: 100%; }
 

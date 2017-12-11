@@ -11,6 +11,7 @@ input[type="submit"].button,
 input[type="reset"].button {
   font-size: 1.6rem;
   font-family: $button-font-family;
+  line-height: 1;
   padding: $button-padding;
   margin: $button-margin;
   border-radius: $button-radius;
