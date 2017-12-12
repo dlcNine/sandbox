@@ -2401,25 +2401,22 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: #939393; }
-  div.progress-bar.size-small {
-    height: 0.6rem;
-    border-radius: 0.2rem; }
-  div.progress-bar.theme-primary div.progress {
+  div.progress-bar div.progress.theme-primary {
     background-color: #3e9def;
     color: #f4faff; }
-  div.progress-bar.theme-info div.progress {
+  div.progress-bar div.progress.theme-info {
     background-color: #54c43a;
     color: #f6fff4; }
-  div.progress-bar.theme-caution div.progress {
+  div.progress-bar div.progress.theme-caution {
     background-color: #e8e819;
     color: #82820a; }
-  div.progress-bar.theme-danger div.progress {
+  div.progress-bar div.progress.theme-danger {
     background-color: #e53c27;
     color: #fff8f7; }
-  div.progress-bar.theme-light div.progress {
+  div.progress-bar div.progress.theme-light {
     background-color: whitesmoke;
     color: #636363; }
-  div.progress-bar.theme-dark div.progress {
+  div.progress-bar div.progress.theme-dark {
     background-color: #4c4c4c;
     color: white; }
 

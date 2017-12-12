@@ -3,8 +3,6 @@
 $progress-bar-height: 0.75em;
 $progress-bar-radius: 0.1875em;
 $progress-bar-margin: 0.6rem 0rem;
-$progress-bar-small-height: 0.6rem;
-$progress-bar-small-radius: 0.2rem;
 
 div.progress-bar {
   font-size: 1.6rem;
@@ -24,37 +22,32 @@ div.progress-bar {
     // @include transition(width, 300ms);
   }
 
-  &.size-small {
-    height: $progress-bar-small-height;
-    border-radius: $progress-bar-small-radius;
-  }
-
-  &.theme-primary div.progress {
+  div.progress.theme-primary {
     background-color: $medium-blue;
     color: $white-blue;
   }
 
-  &.theme-info div.progress {
+  div.progress.theme-info {
     background-color: $medium-green;
     color: $white-green;
   }
 
-  &.theme-caution div.progress {
+  div.progress.theme-caution {
     background-color: $medium-yellow;
     color: $dark-yellow;
   }
 
-  &.theme-danger div.progress {
+  div.progress.theme-danger {
     background-color: $medium-red;
     color: $white-red;
   }
 
-  &.theme-light div.progress {
+  div.progress.theme-light {
     background-color: $light-white;
     color: $light-black;
   }
 
-  &.theme-dark div.progress {
+  div.progress.theme-dark {
     background-color: $medium-black;
     color: $white;
   }
