@@ -61,16 +61,19 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
-b, strong {
+b, strong, .text-bold {
   font-weight: bold; }
 
-em {
+.text-normal {
+  font-weight: normal; }
+
+em, .text-italic {
   font-style: italic; }
 
-del {
+del, .text-strike {
   text-decoration: line-through; }
 
-ins {
+ins, .text-underline {
   text-decoration: underline; }
 
 sub {

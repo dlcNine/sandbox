@@ -61,16 +61,19 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
-b, strong {
+b, strong, .text-bold {
   font-weight: bold; }
 
-em {
+.text-normal {
+  font-weight: normal; }
+
+em, .text-italic {
   font-style: italic; }
 
-del {
+del, .text-strike {
   text-decoration: line-through; }
 
-ins {
+ins, .text-underline {
   text-decoration: underline; }
 
 sub {
@@ -2133,7 +2136,7 @@ ul.tabs {
       border-color: #939393; }
     ul.tabs li.tab.active {
       color: #3e9def;
-      background-color: rgba(245, 245, 245, 0.9);
+      background-color: rgba(245, 245, 245, 0.3);
       border-color: #3e9def;
       font-weight: bold; }
   ul.tabs.theme-light li.tab:not(.active) {
@@ -2165,8 +2168,7 @@ ul.menu {
   ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
     background-color: white;
     padding: 1rem;
-    line-height: 1;
-    vertical-align: middle; }
+    line-height: 1; }
     ul.menu li.menu-header a.menu-a, ul.menu li.menu-item a.menu-a, ul.menu li.menu-footer a.menu-a {
       text-decoration: none;
       color: #2771d1; }
