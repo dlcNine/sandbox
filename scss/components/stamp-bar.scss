@@ -1,4 +1,6 @@
-$stamp-bar-margin: 0.375em 0.25em;
+@import "../mixins.scss";
+
+$stamp-bar-margin: 0.6rem;
 $stamp-bar-inner-stamp-padding: 0.25em 0.375em;
 $stamp-bar-only-stamp-radius: 0.1875em;
 
@@ -42,6 +44,13 @@ div.stamp-bar {
       padding: 0;
       height: 1.5em;
       width: 1.875em;
+
+      button.close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include translate-2d(-50%, -50%);
+      }
     }
   }
 }

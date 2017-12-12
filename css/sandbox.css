@@ -2312,7 +2312,7 @@ span.stamp {
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.375em 0.25em; }
+  margin: 0.6rem; }
   div.stamp-bar::after {
     content: '';
     clear: both;
@@ -2337,6 +2337,15 @@ div.stamp-bar {
       padding: 0;
       height: 1.5em;
       width: 1.875em; }
+      div.stamp-bar span.stamp.has-close button.close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
 
 figure.image-16x {
   width: 16px;
