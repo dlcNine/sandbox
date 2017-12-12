@@ -20,7 +20,7 @@ ul.tabs {
       border-color: #939393; }
     ul.tabs li.tab.active {
       color: #3e9def;
-      background-color: rgba(245, 245, 245, 0.9);
+      background-color: rgba(245, 245, 245, 0.3);
       border-color: #3e9def;
       font-weight: bold; }
   ul.tabs.theme-light li.tab:not(.active) {

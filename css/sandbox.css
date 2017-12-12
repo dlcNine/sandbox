@@ -61,16 +61,19 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
-b, strong {
+b, strong, .text-bold {
   font-weight: bold; }
 
-em {
+.text-normal {
+  font-weight: normal; }
+
+em, .text-italic {
   font-style: italic; }
 
-del {
+del, .text-strike {
   text-decoration: line-through; }
 
-ins {
+ins, .text-underline {
   text-decoration: underline; }
 
 sub {
@@ -456,6 +459,26 @@ a.a:focus, a:focus {
 
 .pad-r-4 {
   padding-right: 4.8rem !important; }
+
+/* ==================================== */
+.pad-field {
+  padding: 0.6rem !important; }
+
+.pad-t-field {
+  padding-top: 0.6rem !important; }
+
+.pad-b-field {
+  padding-bottom: 0.6rem !important; }
+
+.pad-l-field {
+  padding-left: 0.6rem !important; }
+
+.pad-r-field {
+  padding-right: 0.6rem !important; }
+
+/* ==================================== */
+.mgn-field {
+  margin: 0.2rem 0rem !important; }
 
 /* ====================================================== */
 /* <= 420px */
@@ -943,6 +966,33 @@ a.a:focus, a:focus {
 .clear-both {
   clear: both !important; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
+.overflow-x-scroll {
+  overflow-x: scroll; }
+
+.overflow-x-auto {
+  overflow-x: auto; }
+
+.overflow-y-hidden {
+  overflow-y: hidden; }
+
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+.overflow-y-auto {
+  overflow-y: auto; }
+
 .text-left {
   text-align: left !important; }
 
@@ -974,6 +1024,9 @@ a.a:focus, a:focus {
 /* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis; }
 
 /* ====================================================== */
 .text-red {
@@ -1607,8 +1660,8 @@ a.button {
 .button.wide {
   display: block;
   width: 100%;
-  margin-left: 0;
-  margin-right: 0; }
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
 .button.outlined {
   background-color: transparent !important;
@@ -1805,9 +1858,11 @@ form div.field {
   padding: 0.6rem;
   margin: 0.2rem 0rem; }
   form div.field .label {
+    color: #383838;
     font-size: 1.4rem;
     font-weight: bold; }
   form div.field .help {
+    color: #383838;
     font-size: 1.2rem;
     margin: 0.25em 0em; }
   form div.field.required .label::after {
@@ -1976,8 +2031,7 @@ div.modal-backdrop {
   top: 0;
   z-index: 10;
   width: 100%;
-  min-height: 100%;
-  height: auto;
+  height: 100%;
   background-color: rgba(30, 30, 33, 0.8);
   padding: 2.4rem; }
   div.modal-backdrop div.modal {
@@ -2082,7 +2136,7 @@ ul.tabs {
       border-color: #939393; }
     ul.tabs li.tab.active {
       color: #3e9def;
-      background-color: rgba(245, 245, 245, 0.9);
+      background-color: rgba(245, 245, 245, 0.3);
       border-color: #3e9def;
       font-weight: bold; }
   ul.tabs.theme-light li.tab:not(.active) {
@@ -2114,8 +2168,7 @@ ul.menu {
   ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
     background-color: white;
     padding: 1rem;
-    line-height: 1;
-    vertical-align: middle; }
+    line-height: 1; }
     ul.menu li.menu-header a.menu-a, ul.menu li.menu-item a.menu-a, ul.menu li.menu-footer a.menu-a {
       text-decoration: none;
       color: #2771d1; }
@@ -2259,7 +2312,7 @@ span.stamp {
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.375em 0.25em; }
+  margin: 0.6rem; }
   div.stamp-bar::after {
     content: '';
     clear: both;
@@ -2284,6 +2337,15 @@ div.stamp-bar {
       padding: 0;
       height: 1.5em;
       width: 1.875em; }
+      div.stamp-bar span.stamp.has-close button.close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); }
 
 figure.image-16x {
   width: 16px;
@@ -2339,25 +2401,22 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: #939393; }
-  div.progress-bar.size-small {
-    height: 0.6rem;
-    border-radius: 0.2rem; }
-  div.progress-bar.theme-primary div.progress {
+  div.progress-bar div.progress.theme-primary {
     background-color: #3e9def;
     color: #f4faff; }
-  div.progress-bar.theme-info div.progress {
+  div.progress-bar div.progress.theme-info {
     background-color: #54c43a;
     color: #f6fff4; }
-  div.progress-bar.theme-caution div.progress {
+  div.progress-bar div.progress.theme-caution {
     background-color: #e8e819;
     color: #82820a; }
-  div.progress-bar.theme-danger div.progress {
+  div.progress-bar div.progress.theme-danger {
     background-color: #e53c27;
     color: #fff8f7; }
-  div.progress-bar.theme-light div.progress {
+  div.progress-bar div.progress.theme-light {
     background-color: whitesmoke;
     color: #636363; }
-  div.progress-bar.theme-dark div.progress {
+  div.progress-bar div.progress.theme-dark {
     background-color: #4c4c4c;
     color: white; }
 

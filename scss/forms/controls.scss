@@ -1,17 +1,20 @@
 @import "../colors.scss";
 
 $control-padding: 0.375em 0.625em;
+$control-margin: 0.8rem 0rem;
+$control-radius: 0.1875em;
 $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
 $control-font-family: sans-serif;
 $control-color: $black;
 $control-background-color: $white;
-$control-radius: 0.1875em;
-$control-margin: 0.8rem 0rem;
 $control-focus-border-color: $medium-blue;
 $control-focus-shadow-color: $light-blue-thin;
 $control-focus-shadow-spread: 0.125em;
-
+$textarea-min-height: 10rem;
+$textarea-max-height: 40rem;
+$label-checkbox-radio-padding: 0.375em 0em;
+$label-checkbox-radio-margin-right: 0.625rem;
 
 input[type="email"], input[type="number"],
 input[type="password"], input[type="search"], 
@@ -118,8 +121,8 @@ div.select {
 textarea {
   min-width: 100%;
   max-width: 100%;
-  min-height: 10rem;
-  max-height: 40rem;
+  min-height: $textarea-min-height;
+  max-height: $textarea-max-height;
 
   &.no-resize {
     resize: none;
@@ -133,8 +136,8 @@ label.checkbox, label.radio {
   color: $control-color;
   font-family: sans-serif;
   display: inline-block;
-  padding: 0.375em 0em;
-  margin-right: 0.625rem;
+  padding: $label-checkbox-radio-padding;
+  margin-right: $label-checkbox-radio-margin-right;
 
   input[type="checkbox"], input[type="radio"] {
     margin-right: 0.2rem;

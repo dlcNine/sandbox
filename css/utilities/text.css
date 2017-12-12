@@ -30,6 +30,9 @@
 .text-nowrap {
   white-space: nowrap; }
 
+.text-overflow-ellipsis {
+  text-overflow: ellipsis; }
+
 /* ====================================================== */
 .text-red {
   color: #e53c27; }

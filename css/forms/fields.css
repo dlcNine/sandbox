@@ -4,9 +4,11 @@ form div.field {
   padding: 0.6rem;
   margin: 0.2rem 0rem; }
   form div.field .label {
+    color: #383838;
     font-size: 1.4rem;
     font-weight: bold; }
   form div.field .help {
+    color: #383838;
     font-size: 1.2rem;
     margin: 0.25em 0em; }
   form div.field.required .label::after {
