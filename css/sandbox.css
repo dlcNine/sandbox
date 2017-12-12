@@ -457,6 +457,26 @@ a.a:focus, a:focus {
 .pad-r-4 {
   padding-right: 4.8rem !important; }
 
+/* ==================================== */
+.pad-field {
+  padding: 0.6rem !important; }
+
+.pad-t-field {
+  padding-top: 0.6rem !important; }
+
+.pad-b-field {
+  padding-bottom: 0.6rem !important; }
+
+.pad-l-field {
+  padding-left: 0.6rem !important; }
+
+.pad-r-field {
+  padding-right: 0.6rem !important; }
+
+/* ==================================== */
+.mgn-field {
+  margin: 0.2rem 0rem !important; }
+
 /* ====================================================== */
 /* <= 420px */
 @media screen and (max-width: 26.25rem) {
@@ -1637,8 +1657,8 @@ a.button {
 .button.wide {
   display: block;
   width: 100%;
-  margin-left: 0;
-  margin-right: 0; }
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
 
 .button.outlined {
   background-color: transparent !important;
@@ -2008,8 +2028,7 @@ div.modal-backdrop {
   top: 0;
   z-index: 10;
   width: 100%;
-  min-height: 100%;
-  height: auto;
+  height: 100%;
   background-color: rgba(30, 30, 33, 0.8);
   padding: 2.4rem; }
   div.modal-backdrop div.modal {

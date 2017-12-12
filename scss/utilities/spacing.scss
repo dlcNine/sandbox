@@ -1,4 +1,6 @@
 $spacing: 4.8rem;
+$field-padding: 0.6rem;
+$field-margin: 0.2rem 0rem;
 
 .mgn-1 { 
   margin: $spacing * (1/4) !important;
@@ -172,6 +174,34 @@ $spacing: 4.8rem;
 
 .pad-r-4 { 
   padding-right: $spacing !important;
+}
+
+/* ==================================== */
+
+.pad-field {
+  padding: $field-padding !important;
+}
+
+.pad-t-field { 
+  padding-top: $field-padding !important;
+}
+
+.pad-b-field { 
+  padding-bottom: $field-padding !important;
+}
+
+.pad-l-field { 
+  padding-left: $field-padding !important;
+}
+
+.pad-r-field { 
+  padding-right: $field-padding !important;
+}
+
+/* ==================================== */
+
+.mgn-field {
+  margin: $field-margin !important;
 }
 
 /* ====================================================== */
