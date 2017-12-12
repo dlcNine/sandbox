@@ -943,6 +943,33 @@ a.a:focus, a:focus {
 .clear-both {
   clear: both !important; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
+.overflow-scroll {
+  overflow: scroll; }
+
+.overflow-auto {
+  overflow: auto; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
+.overflow-x-scroll {
+  overflow-x: scroll; }
+
+.overflow-x-auto {
+  overflow-x: auto; }
+
+.overflow-y-hidden {
+  overflow-y: hidden; }
+
+.overflow-y-scroll {
+  overflow-y: scroll; }
+
+.overflow-y-auto {
+  overflow-y: auto; }
+
 .text-left {
   text-align: left !important; }
 
@@ -974,6 +1001,9 @@ a.a:focus, a:focus {
 /* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
+
+.text-overflow-ellipsis {
+  text-overflow: ellipsis; }
 
 /* ====================================================== */
 .text-red {
@@ -1805,9 +1835,11 @@ form div.field {
   padding: 0.6rem;
   margin: 0.2rem 0rem; }
   form div.field .label {
+    color: #383838;
     font-size: 1.4rem;
     font-weight: bold; }
   form div.field .help {
+    color: #383838;
     font-size: 1.2rem;
     margin: 0.25em 0em; }
   form div.field.required .label::after {

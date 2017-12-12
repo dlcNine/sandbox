@@ -10,6 +10,7 @@
 @import "./utilities/display.scss";
 @import "./utilities/flexbox.scss";
 @import "./utilities/float.scss";
+@import "./utilities/overflow.scss";
 @import "./utilities/text.scss";
 @import "./utilities/img.scss";
 
@@ -32,7 +33,6 @@
 @import "./forms/controls-inline.scss";
 @import "./forms/addons-wrapper.scss";
 @import "./forms/icons-wrapper.scss";
-
 
 /* ============ components ============ */
 @import "./components/modal.scss";
