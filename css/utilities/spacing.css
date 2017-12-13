@@ -141,10 +141,6 @@
 .pad-r-field {
   padding-right: 0.6rem !important; }
 
-/* ==================================== */
-.mgn-field {
-  margin: 0.2rem 0rem !important; }
-
 /* ====================================================== */
 /* <= 420px */
 @media screen and (max-width: 26.25rem) {

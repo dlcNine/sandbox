@@ -4,7 +4,7 @@ $navbar-item-color: $dark-gray;
 $navbar-item-a-hover-color: $black;
 $navbar-item-margin-right: 2.4rem;
 
-div.container-navbar {
+div.navbar, header.navbar, nav.navbar {
   &.fixed-top {
     position: fixed;
     z-index: 5;

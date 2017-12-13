@@ -38,7 +38,7 @@ ol.code {
   }
 
   & ol.code-nested, ol.code-nested ol.code-nested {
-    margin-left: 1em; //16px (when font-size 16px)
+    margin-left: 1em;
     border-left: 0.1rem solid $code-nested-border-color;
   }
 }
