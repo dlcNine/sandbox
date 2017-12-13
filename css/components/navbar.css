@@ -1,28 +1,26 @@
-div.navbar.fixed-top, header.navbar.fixed-top, nav.navbar.fixed-top {
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  width: 100%; }
-div.navbar::after, header.navbar::after, nav.navbar::after {
-  content: '';
-  clear: both;
-  display: block; }
-div.navbar div.navbar-item, header.navbar div.navbar-item, nav.navbar div.navbar-item {
-  float: left;
-  margin-right: 2.4rem;
-  color: #939393; }
-  div.navbar div.navbar-item a.navbar-a, header.navbar div.navbar-item a.navbar-a, nav.navbar div.navbar-item a.navbar-a {
-    color: inherit;
-    text-decoration: none;
-    line-height: 1; }
-    div.navbar div.navbar-item a.navbar-a:hover, header.navbar div.navbar-item a.navbar-a:hover, nav.navbar div.navbar-item a.navbar-a:hover {
-      color: #383838;
-      cursor: pointer; }
-div.navbar.theme-dark div.navbar-item, header.navbar.theme-dark div.navbar-item, nav.navbar.theme-dark div.navbar-item {
-  color: #d8d8d8; }
-  div.navbar.theme-dark div.navbar-item a.navbar-a, header.navbar.theme-dark div.navbar-item a.navbar-a, nav.navbar.theme-dark div.navbar-item a.navbar-a {
-    color: inherit; }
-    div.navbar.theme-dark div.navbar-item a.navbar-a:hover, header.navbar.theme-dark div.navbar-item a.navbar-a:hover, nav.navbar.theme-dark div.navbar-item a.navbar-a:hover {
-      color: white; }
+div.navbar, header.navbar, nav.navbar {
+  padding: 1.2rem; }
+  div.navbar.fixed-top, header.navbar.fixed-top, nav.navbar.fixed-top {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%; }
+  div.navbar div.navbar-item, header.navbar div.navbar-item, nav.navbar div.navbar-item {
+    padding: 0.6rem;
+    margin-right: 1.2rem;
+    color: #939393; }
+    div.navbar div.navbar-item a.navbar-a, header.navbar div.navbar-item a.navbar-a, nav.navbar div.navbar-item a.navbar-a {
+      color: inherit;
+      text-decoration: none;
+      line-height: 1; }
+      div.navbar div.navbar-item a.navbar-a:hover, header.navbar div.navbar-item a.navbar-a:hover, nav.navbar div.navbar-item a.navbar-a:hover {
+        color: #383838;
+        cursor: pointer; }
+  div.navbar.theme-dark div.navbar-item, header.navbar.theme-dark div.navbar-item, nav.navbar.theme-dark div.navbar-item {
+    color: #d8d8d8; }
+    div.navbar.theme-dark div.navbar-item a.navbar-a, header.navbar.theme-dark div.navbar-item a.navbar-a, nav.navbar.theme-dark div.navbar-item a.navbar-a {
+      color: inherit; }
+      div.navbar.theme-dark div.navbar-item a.navbar-a:hover, header.navbar.theme-dark div.navbar-item a.navbar-a:hover, nav.navbar.theme-dark div.navbar-item a.navbar-a:hover {
+        color: white; }
 
 /*# sourceMappingURL=navbar.css.map */
