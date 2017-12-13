@@ -2154,39 +2154,39 @@ ul.tabs {
     color: #4c4c4c;
     border-color: #939393; }
 
-ul.menu {
+div.menu {
   border: 0.1rem solid #d7d7d7;
   border-radius: 0.4rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem #e6e6e6; }
-  ul.menu .button {
+  div.menu .button {
     margin-top: 0;
     margin-bottom: 0; }
-  ul.menu li.menu-header, ul.menu li.menu-item, ul.menu li.menu-footer {
+  div.menu div.menu-header, div.menu div.menu-item, div.menu div.menu-footer {
     background-color: white;
     padding: 1rem;
     line-height: 1; }
-    ul.menu li.menu-header a.menu-a, ul.menu li.menu-item a.menu-a, ul.menu li.menu-footer a.menu-a {
+    div.menu div.menu-header a.menu-a, div.menu div.menu-item a.menu-a, div.menu div.menu-footer a.menu-a {
       text-decoration: none;
       color: #2771d1; }
-      ul.menu li.menu-header a.menu-a:hover, ul.menu li.menu-item a.menu-a:hover, ul.menu li.menu-footer a.menu-a:hover {
+      div.menu div.menu-header a.menu-a:hover, div.menu div.menu-item a.menu-a:hover, div.menu div.menu-footer a.menu-a:hover {
         text-decoration: underline; }
-  ul.menu li.menu-header {
+  div.menu div.menu-header {
     border-radius: 0.3rem 0.3rem 0rem 0rem;
     border-bottom: 0.1rem solid #d7d7d7; }
-  ul.menu li.menu-item {
+  div.menu div.menu-item {
     border-bottom: 0.1rem solid #d7d7d7; }
-  ul.menu li.menu-footer {
+  div.menu div.menu-footer {
     border-radius: 0rem 0rem 0.3rem 0.3rem; }
-  ul.menu.theme-dark {
+  div.menu.theme-dark {
     border-color: #bfbfbf; }
-    ul.menu.theme-dark li.menu-header, ul.menu.theme-dark li.menu-item, ul.menu.theme-dark li.menu-footer {
+    div.menu.theme-dark div.menu-header, div.menu.theme-dark div.menu-item, div.menu.theme-dark div.menu-footer {
       color: #d8d8d8;
       background-color: #4c4c4c;
       border-color: #bfbfbf; }
-      ul.menu.theme-dark li.menu-header a.menu-a, ul.menu.theme-dark li.menu-item a.menu-a, ul.menu.theme-dark li.menu-footer a.menu-a {
+      div.menu.theme-dark div.menu-header a.menu-a, div.menu.theme-dark div.menu-item a.menu-a, div.menu.theme-dark div.menu-footer a.menu-a {
         color: #bfbfbf;
         text-decoration: none; }
-        ul.menu.theme-dark li.menu-header a.menu-a:hover, ul.menu.theme-dark li.menu-item a.menu-a:hover, ul.menu.theme-dark li.menu-footer a.menu-a:hover {
+        div.menu.theme-dark div.menu-header a.menu-a:hover, div.menu.theme-dark div.menu-item a.menu-a:hover, div.menu.theme-dark div.menu-footer a.menu-a:hover {
           color: white;
           text-decoration: underline; }
 
@@ -2446,18 +2446,20 @@ ul.list-menu.theme-light li.list-label:not(.active):hover {
   background-color: rgba(245, 245, 245, 0.9); }
 ul.list-menu.theme-light li.list-item:not(.active) {
   color: #4c4c4c; }
-ul.list-menu.theme-dark hr {
-  border-color: #939393; }
-ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover,
-ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover {
-  color: white; }
-ul.list-menu.theme-dark li.list-item:not(.active):hover,
-ul.list-menu.theme-dark li.list-label:not(.active):hover {
-  background-color: rgba(99, 99, 99, 0.6); }
-ul.list-menu.theme-dark li.list-item:not(.active) {
-  color: #bfbfbf; }
-ul.list-menu.theme-dark li.list-label:not(.active) {
-  color: #d8d8d8; }
+ul.list-menu.theme-dark {
+  background-color: #4c4c4c; }
+  ul.list-menu.theme-dark hr {
+    border-color: #939393; }
+  ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover,
+  ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover {
+    color: white; }
+  ul.list-menu.theme-dark li.list-item:not(.active):hover,
+  ul.list-menu.theme-dark li.list-label:not(.active):hover {
+    background-color: rgba(99, 99, 99, 0.6); }
+  ul.list-menu.theme-dark li.list-item:not(.active) {
+    color: #bfbfbf; }
+  ul.list-menu.theme-dark li.list-label:not(.active) {
+    color: #d8d8d8; }
 
 div.banner {
   height: 12rem; }
