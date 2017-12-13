@@ -10,7 +10,6 @@ $card-content-radius: 0.4rem;
 $card-footer-radius: 0rem 0rem 0.4rem 0.4rem;
 
 div.card {
-  font-size: 1rem;
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem $card-shadow-color;
@@ -23,10 +22,11 @@ div.card {
   div.card-header, div.card-content, div.card-footer {
     padding: $card-item-padding;
 
-    &.hero-image {
+    &.has-hero-image {
       padding: 0;
 
       img {
+        width: 100%;
         display: block;
         border-radius: inherit;
       }
