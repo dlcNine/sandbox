@@ -8,7 +8,7 @@ $menu-item-padding: 1rem;
 $menu-header-radius: 0.3rem 0.3rem 0rem 0rem;
 $menu-footer-radius: 0rem 0rem 0.3rem 0.3rem;
 
-ul.menu {
+div.menu {
   border: 0.1rem solid $menu-border-color;
   border-radius: $menu-radius;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem $menu-shadow-color;
@@ -18,7 +18,7 @@ ul.menu {
     margin-bottom: 0;
   }
 
-  li.menu-header, li.menu-item, li.menu-footer {
+  div.menu-header, div.menu-item, div.menu-footer {
     background-color: $menu-item-background-color;
     padding: $menu-item-padding;
     line-height: 1;
@@ -33,23 +33,23 @@ ul.menu {
     }
   }
   
-  li.menu-header {
+  div.menu-header {
     border-radius: $menu-header-radius;
     border-bottom: 0.1rem solid $menu-border-color;
   }
 
-  li.menu-item {
+  div.menu-item {
     border-bottom: 0.1rem solid $menu-border-color;
   }
 
-  li.menu-footer {
+  div.menu-footer {
     border-radius: $menu-footer-radius;
   }
 
   &.theme-dark {
     border-color: $medium-gray;
 
-    li.menu-header, li.menu-item, li.menu-footer {
+    div.menu-header, div.menu-item, div.menu-footer {
       color: $light-gray;
       background-color: $medium-black;
       border-color: $medium-gray;

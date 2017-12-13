@@ -1,5 +1,4 @@
 div.card {
-  font-size: 1rem;
   border: 0.1rem solid #e6e6e6;
   border-radius: 0.5rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem whitesmoke;
@@ -8,9 +7,10 @@ div.card {
     border-color: #e6e6e6; }
   div.card div.card-header, div.card div.card-content, div.card div.card-footer {
     padding: 1rem 2rem; }
-    div.card div.card-header.hero-image, div.card div.card-content.hero-image, div.card div.card-footer.hero-image {
+    div.card div.card-header.has-hero-image, div.card div.card-content.has-hero-image, div.card div.card-footer.has-hero-image {
       padding: 0; }
-      div.card div.card-header.hero-image img, div.card div.card-content.hero-image img, div.card div.card-footer.hero-image img {
+      div.card div.card-header.has-hero-image img, div.card div.card-content.has-hero-image img, div.card div.card-footer.has-hero-image img {
+        width: 100%;
         display: block;
         border-radius: inherit; }
   div.card div.card-header {

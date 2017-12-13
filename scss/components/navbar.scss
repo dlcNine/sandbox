@@ -1,10 +1,14 @@
 @import "../colors.scss";
 
+$navbar-padding: 1.2rem;
 $navbar-item-color: $dark-gray;
 $navbar-item-a-hover-color: $black;
-$navbar-item-margin-right: 2.4rem;
+$navbar-item-padding: 0.6rem;
+$navbar-item-margin-right: 1.2rem;
 
-div.container-navbar {
+div.navbar, header.navbar, nav.navbar {
+  padding: $navbar-padding;
+
   &.fixed-top {
     position: fixed;
     z-index: 5;
@@ -12,14 +16,8 @@ div.container-navbar {
     width: 100%;
   }
 
-  &::after {
-    content: '';
-    clear: both;
-    display: block;
-  }
-
   div.navbar-item {
-    float: left;
+    padding: $navbar-item-padding;
     margin-right: $navbar-item-margin-right;
     color: $navbar-item-color;
    
