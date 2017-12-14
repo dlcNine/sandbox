@@ -1,6 +1,5 @@
 .flex {
-  display: flex !important;
-  flex-flow: row nowrap; }
+  display: flex !important; }
 
 .flex-row-wrap {
   display: flex !important;

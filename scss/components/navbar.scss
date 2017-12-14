@@ -6,7 +6,7 @@ $navbar-item-a-hover-color: $black;
 $navbar-item-padding: 0.6rem;
 $navbar-item-margin-right: 1.2rem;
 
-div.navbar, header.navbar, nav.navbar {
+div.navbar {
   padding: $navbar-padding;
 
   &.fixed-top {
@@ -33,7 +33,7 @@ div.navbar, header.navbar, nav.navbar {
     }
   }
 
-  &.theme-dark div.navbar-item{
+  &.theme-dark div.navbar-item {
     color: $light-gray;
 
     a.navbar-a {
