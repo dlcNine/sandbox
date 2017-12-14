@@ -6,14 +6,15 @@ $dropdown-background-color: $white;
 $dropdown-shadow-color: $medium-gray;
 $dropdown-radius: 0.4rem;
 $dropdown-padding: 0.8rem 0rem;
-$dropdown-item-padding: 0.4rem 1.4rem;
+$dropdown-extra-offset: 1rem;
+$dropdown-label-color: $dark-gray;
+$dropdown-item-padding: 0.8rem 1.2rem;
 $dropdown-item-color: $black;
 $dropdown-item-hover-color: $white;
 $dropdown-item-hover-background-color: $medium-blue;
 $dropdown-side-first-child-radius: 0.3rem 0.3rem 0rem 0rem;
 $dropdown-side-last-child-radius: 0rem 0rem 0.3rem 0.3rem;
 $dropdown-side-only-child-radius: 0.3rem;
-$dropdown-extra-offset: 1rem;
 
 ul.dropdown {
   position: absolute;
@@ -25,6 +26,7 @@ ul.dropdown {
   box-shadow: 0rem 0.1rem 0.2rem 0rem $dropdown-shadow-color;
   width: 18rem;
   padding: $dropdown-padding;
+  line-height: 1;
   background-color: $dropdown-background-color;
 
   &.on-top {
@@ -83,21 +85,33 @@ ul.dropdown {
     right: 0;
   }
 
-  li.dropdown-item {
+  li.dropdown-label {
+    color: $dropdown-label-color;
     padding: $dropdown-item-padding;
+  }
+
+  li.dropdown-item {
     color: $dropdown-item-color;
 
     &:hover {
       color: $dropdown-item-hover-color;
       background-color: $dropdown-item-hover-background-color;
+    }
 
-      a.dropdown-a:hover {
-        color: inherit;
+    a.dropdown-a {
+      display: block;
+      padding: $dropdown-item-padding;
+      color: inherit;
+      text-decoration: none;
+
+      &:focus:not(:hover) {
+        color: $dropdown-item-hover-color;
+        background-color: $dropdown-item-hover-background-color;
       }
     }
   }
 
-  &.theme-dark {
+  &.theme-dark, &.theme-dark ul.dropdown {
     background-color: $medium-black;
 
     hr {
@@ -107,11 +121,10 @@ ul.dropdown {
     li.dropdown-item {
       color: $light-gray;
 
-      a.dropdown-a:hover {
+      &:hover {
         color: $white;
       }
     }
-
   }
 
   &.size-medium {

@@ -1,9 +1,9 @@
 @import "../mixins.scss";
 
 $popmark-height-width: 1rem;
+$popmark-extra-offset: 0.8rem;
 
-div.popmark, ul.popmark, 
-li.popmark, aside.popmark {
+div.popmark, ul.popmark, li.popmark {
   &::before {
     position: absolute;
     left: 50%;
@@ -19,20 +19,64 @@ li.popmark, aside.popmark {
     background-color: inherit;
   }
 
-  &.mark-top::before {
+  &.popmark-bl::before {
+    left: calc(0% + #{$popmark-extra-offset});
+  }
+
+  &.popmark-br::before {
+    left: calc(100% - #{$popmark-extra-offset});
+  }
+
+  &.popmark-t::before {
     top: 0;
     @include rotate-translate-2d(-45deg, -50%, -50%);
   }
 
-  &.mark-right::before {
+  &.popmark-tl::before {
+    top: 0;
+    left: $popmark-extra-offset;
+    @include rotate-translate-2d(-45deg, -50%, -50%);
+  }
+
+  &.popmark-tr::before {
+    top: 0;
+    left: calc(100% - #{$popmark-extra-offset});
+    @include rotate-translate-2d(-45deg, -50%, -50%);
+  }
+
+  &.popmark-r::before {
     top: 50%;
     left: 100%;
     @include rotate-translate-2d(45deg, -50%, -50%);
   }
 
-  &.mark-left::before {
+  &.popmark-rt::before {
+    top: calc(0% + #{$popmark-extra-offset});
+    left: 100%;
+    @include rotate-translate-2d(45deg, -50%, -50%);
+  }
+
+  &.popmark-rb::before {
+    top: calc(100% - #{$popmark-extra-offset});
+    left: 100%;
+    @include rotate-translate-2d(45deg, -50%, -50%);
+  }
+
+  &.popmark-l::before {
     left: 0;
     top: 50%;
+    @include rotate-translate-2d(-135deg, -50%, -50%);
+  }
+
+  &.popmark-lt::before {
+    left: 0;
+    top: calc(0% + #{$popmark-extra-offset});
+    @include rotate-translate-2d(-135deg, -50%, -50%);
+  }
+
+  &.popmark-lb::before {
+    left: 0;
+    top: calc(100% - #{$popmark-extra-offset});
     @include rotate-translate-2d(-135deg, -50%, -50%);
   }
 }

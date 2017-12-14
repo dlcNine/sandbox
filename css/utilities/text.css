@@ -35,30 +35,30 @@
 
 /* ====================================================== */
 .text-red {
-  color: #e53c27; }
+  color: #e53c27 !important; }
 
 .text-orange {
-  color: #e2af16; }
+  color: #e2af16 !important; }
 
 .text-yellow {
-  color: #d8c312; }
+  color: #d8c312 !important; }
 
 .text-green {
-  color: #54c43a; }
+  color: #54c43a !important; }
 
 .text-blue {
-  color: #3e9def; }
+  color: #3e9def !important; }
 
 .text-indigo {
-  color: #8f4fc3; }
+  color: #8f4fc3 !important; }
 
 .text-violet {
-  color: #d46fd2; }
+  color: #d46fd2 !important; }
 
 .text-gray {
-  color: #939393; }
+  color: #939393 !important; }
 
 .text-white {
-  color: white; }
+  color: white !important; }
 
 /*# sourceMappingURL=text.css.map */

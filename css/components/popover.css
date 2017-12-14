@@ -45,5 +45,9 @@ div.popover {
   div.popover.width-auto {
     width: auto;
     white-space: nowrap; }
+  div.popover.theme-dark {
+    color: #f9f9f9;
+    border-color: #d8d8d8;
+    background-color: #4c4c4c; }
 
 /*# sourceMappingURL=popover.css.map */
