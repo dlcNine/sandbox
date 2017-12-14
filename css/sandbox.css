@@ -2968,7 +2968,7 @@ ul.path {
     ul.path li.step a.path-a {
       color: inherit;
       text-decoration: none; }
-      ul.path li.step a.path-a:hover {
+      ul.path li.step a.path-a:hover, ul.path li.step a.path-a:focus {
         text-decoration: underline; }
 
 ul.ul.square {
