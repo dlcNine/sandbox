@@ -13,8 +13,8 @@ span.stamp {
   span.stamp a.stamp-a {
     color: inherit;
     text-decoration: none; }
-    span.stamp a.stamp-a:hover {
-      text-decoration: underline; }
+    span.stamp a.stamp-a:hover, span.stamp a.stamp-a:focus {
+      text-decoration: underline !important; }
   span.stamp.theme-primary {
     background-color: #3e9def; }
     span.stamp.theme-primary.has-link:hover {

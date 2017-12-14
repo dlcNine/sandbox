@@ -12,7 +12,7 @@ div.menu {
     div.menu div.menu-header a.menu-a, div.menu div.menu-item a.menu-a, div.menu div.menu-footer a.menu-a {
       text-decoration: none;
       color: #2771d1; }
-      div.menu div.menu-header a.menu-a:hover, div.menu div.menu-item a.menu-a:hover, div.menu div.menu-footer a.menu-a:hover {
+      div.menu div.menu-header a.menu-a:hover, div.menu div.menu-header a.menu-a:focus, div.menu div.menu-item a.menu-a:hover, div.menu div.menu-item a.menu-a:focus, div.menu div.menu-footer a.menu-a:hover, div.menu div.menu-footer a.menu-a:focus {
         text-decoration: underline; }
   div.menu div.menu-header {
     border-radius: 0.3rem 0.3rem 0rem 0rem;
@@ -30,7 +30,7 @@ div.menu {
       div.menu.theme-dark div.menu-header a.menu-a, div.menu.theme-dark div.menu-item a.menu-a, div.menu.theme-dark div.menu-footer a.menu-a {
         color: #bfbfbf;
         text-decoration: none; }
-        div.menu.theme-dark div.menu-header a.menu-a:hover, div.menu.theme-dark div.menu-item a.menu-a:hover, div.menu.theme-dark div.menu-footer a.menu-a:hover {
+        div.menu.theme-dark div.menu-header a.menu-a:hover, div.menu.theme-dark div.menu-header a.menu-a:focus, div.menu.theme-dark div.menu-item a.menu-a:hover, div.menu.theme-dark div.menu-item a.menu-a:focus, div.menu.theme-dark div.menu-footer a.menu-a:hover, div.menu.theme-dark div.menu-footer a.menu-a:focus {
           color: white;
           text-decoration: underline; }
 

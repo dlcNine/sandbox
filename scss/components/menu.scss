@@ -27,7 +27,7 @@ div.menu {
       text-decoration: none;
       color: $link-unvisited;
 
-      &:hover {
+      &:hover, &:focus {
         text-decoration: underline;
       }
     }
@@ -58,7 +58,7 @@ div.menu {
         color: $medium-gray;
         text-decoration: none;
 
-        &:hover {
+        &:hover, &:focus {
           color: $white;
           text-decoration: underline;
         }

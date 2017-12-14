@@ -104,6 +104,11 @@ ul.dropdown {
       text-decoration: none;
       display: block;
       width: 100%;
+
+      &:focus:not(:hover) {
+        color: $dropdown-item-hover-color;
+        background-color: $dropdown-item-hover-background-color;
+      }
     }
   }
 

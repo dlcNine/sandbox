@@ -26,7 +26,7 @@ div.navbar {
       text-decoration: none;
       line-height: 1;
 
-      &:hover {
+      &:hover, &:focus {
         color: $navbar-item-a-hover-color;
         cursor: pointer;
       }
@@ -39,7 +39,7 @@ div.navbar {
     a.navbar-a {
       color: inherit;
 
-      &:hover {
+      &:hover, &:focus {
         color: $white;
       }
     }

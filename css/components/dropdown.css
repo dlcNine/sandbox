@@ -84,6 +84,9 @@ ul.dropdown {
       text-decoration: none;
       display: block;
       width: 100%; }
+      ul.dropdown li.dropdown-item a.dropdown-a:focus:not(:hover) {
+        color: white;
+        background-color: #3e9def; }
   ul.dropdown.theme-dark, ul.dropdown.theme-dark ul.dropdown {
     background-color: #4c4c4c; }
     ul.dropdown.theme-dark hr, ul.dropdown.theme-dark ul.dropdown hr {

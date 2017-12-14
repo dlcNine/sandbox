@@ -29,7 +29,7 @@ ul.list-menu {
       color: inherit;
       text-decoration: none;
       
-      &:hover {
+      &:hover, &:focus {
         color: $list-item-hover-color;
       }
     }
@@ -60,6 +60,10 @@ ul.list-menu {
         color: $black;
       }
 
+      a.list-a:focus:not(:hover) {
+        color: $medium-gray;
+      }
+
       &:hover {
         background-color: $light-white-thick;
       }
@@ -79,7 +83,7 @@ ul.list-menu {
 
     li.list-item:not(.active), 
     li.list-label:not(.active) {
-      a.list-a:hover {
+      a.list-a:hover, a.list-a:focus {
         color: $white;
       }
 
