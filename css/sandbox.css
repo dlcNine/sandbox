@@ -2419,10 +2419,11 @@ ul.list-menu.indent-sublists ul.list-menu, ul.list-menu.indent-immediate > li.li
   margin-left: 0.625em; }
 ul.list-menu li.list-item, ul.list-menu li.list-label {
   line-height: 1;
-  padding: 0.1875em 0em 0.1875em 0.875em;
   color: #7a7a7a;
   border-radius: 0.125em; }
   ul.list-menu li.list-item a.list-a, ul.list-menu li.list-label a.list-a {
+    display: block;
+    padding: 0.1875em 0.875em;
     color: inherit;
     text-decoration: none; }
     ul.list-menu li.list-item a.list-a:hover, ul.list-menu li.list-item a.list-a:focus, ul.list-menu li.list-label a.list-a:hover, ul.list-menu li.list-label a.list-a:focus {
@@ -2603,11 +2604,10 @@ ul.dropdown {
       color: white;
       background-color: #3e9def; }
     ul.dropdown li.dropdown-item a.dropdown-a {
+      display: block;
       padding: 0.8rem 1.2rem;
       color: inherit;
-      text-decoration: none;
-      display: block;
-      width: 100%; }
+      text-decoration: none; }
       ul.dropdown li.dropdown-item a.dropdown-a:focus:not(:hover) {
         color: white;
         background-color: #3e9def; }
@@ -2674,9 +2674,12 @@ div.popover {
   div.popover.width-auto {
     width: auto;
     white-space: nowrap; }
+  div.popover.theme-dark {
+    color: #f9f9f9;
+    border-color: #d8d8d8;
+    background-color: #4c4c4c; }
 
-div.popmark::before, ul.popmark::before,
-li.popmark::before, aside.popmark::before {
+div.popmark::before, ul.popmark::before, li.popmark::before {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -2697,16 +2700,34 @@ li.popmark::before, aside.popmark::before {
   border-right: 0.1rem solid;
   border-color: inherit;
   background-color: inherit; }
-div.popmark.mark-top::before, ul.popmark.mark-top::before,
-li.popmark.mark-top::before, aside.popmark.mark-top::before {
+div.popmark.popmark-bl::before, ul.popmark.popmark-bl::before, li.popmark.popmark-bl::before {
+  left: calc(0% + 0.8rem); }
+div.popmark.popmark-br::before, ul.popmark.popmark-br::before, li.popmark.popmark-br::before {
+  left: calc(100% - 0.8rem); }
+div.popmark.popmark-t::before, ul.popmark.popmark-t::before, li.popmark.popmark-t::before {
   top: 0;
   -webkit-transform: rotate(-45deg) translate(-50%, -50%);
   -moz-transform: rotate(-45deg) translate(-50%, -50%);
   -o-transform: rotate(-45deg) translate(-50%, -50%);
   -ms-transform: rotate(-45deg) translate(-50%, -50%);
   transform: rotate(-45deg) translate(-50%, -50%); }
-div.popmark.mark-right::before, ul.popmark.mark-right::before,
-li.popmark.mark-right::before, aside.popmark.mark-right::before {
+div.popmark.popmark-tl::before, ul.popmark.popmark-tl::before, li.popmark.popmark-tl::before {
+  top: 0;
+  left: 0.8rem;
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+  -moz-transform: rotate(-45deg) translate(-50%, -50%);
+  -o-transform: rotate(-45deg) translate(-50%, -50%);
+  -ms-transform: rotate(-45deg) translate(-50%, -50%);
+  transform: rotate(-45deg) translate(-50%, -50%); }
+div.popmark.popmark-tr::before, ul.popmark.popmark-tr::before, li.popmark.popmark-tr::before {
+  top: 0;
+  left: calc(100% - 0.8rem);
+  -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+  -moz-transform: rotate(-45deg) translate(-50%, -50%);
+  -o-transform: rotate(-45deg) translate(-50%, -50%);
+  -ms-transform: rotate(-45deg) translate(-50%, -50%);
+  transform: rotate(-45deg) translate(-50%, -50%); }
+div.popmark.popmark-r::before, ul.popmark.popmark-r::before, li.popmark.popmark-r::before {
   top: 50%;
   left: 100%;
   -webkit-transform: rotate(45deg) translate(-50%, -50%);
@@ -2714,10 +2735,41 @@ li.popmark.mark-right::before, aside.popmark.mark-right::before {
   -o-transform: rotate(45deg) translate(-50%, -50%);
   -ms-transform: rotate(45deg) translate(-50%, -50%);
   transform: rotate(45deg) translate(-50%, -50%); }
-div.popmark.mark-left::before, ul.popmark.mark-left::before,
-li.popmark.mark-left::before, aside.popmark.mark-left::before {
+div.popmark.popmark-rt::before, ul.popmark.popmark-rt::before, li.popmark.popmark-rt::before {
+  top: calc(0% + 0.8rem);
+  left: 100%;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  -moz-transform: rotate(45deg) translate(-50%, -50%);
+  -o-transform: rotate(45deg) translate(-50%, -50%);
+  -ms-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%); }
+div.popmark.popmark-rb::before, ul.popmark.popmark-rb::before, li.popmark.popmark-rb::before {
+  top: calc(100% - 0.8rem);
+  left: 100%;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+  -moz-transform: rotate(45deg) translate(-50%, -50%);
+  -o-transform: rotate(45deg) translate(-50%, -50%);
+  -ms-transform: rotate(45deg) translate(-50%, -50%);
+  transform: rotate(45deg) translate(-50%, -50%); }
+div.popmark.popmark-l::before, ul.popmark.popmark-l::before, li.popmark.popmark-l::before {
   left: 0;
   top: 50%;
+  -webkit-transform: rotate(-135deg) translate(-50%, -50%);
+  -moz-transform: rotate(-135deg) translate(-50%, -50%);
+  -o-transform: rotate(-135deg) translate(-50%, -50%);
+  -ms-transform: rotate(-135deg) translate(-50%, -50%);
+  transform: rotate(-135deg) translate(-50%, -50%); }
+div.popmark.popmark-lt::before, ul.popmark.popmark-lt::before, li.popmark.popmark-lt::before {
+  left: 0;
+  top: calc(0% + 0.8rem);
+  -webkit-transform: rotate(-135deg) translate(-50%, -50%);
+  -moz-transform: rotate(-135deg) translate(-50%, -50%);
+  -o-transform: rotate(-135deg) translate(-50%, -50%);
+  -ms-transform: rotate(-135deg) translate(-50%, -50%);
+  transform: rotate(-135deg) translate(-50%, -50%); }
+div.popmark.popmark-lb::before, ul.popmark.popmark-lb::before, li.popmark.popmark-lb::before {
+  left: 0;
+  top: calc(100% - 0.8rem);
   -webkit-transform: rotate(-135deg) translate(-50%, -50%);
   -moz-transform: rotate(-135deg) translate(-50%, -50%);
   -o-transform: rotate(-135deg) translate(-50%, -50%);

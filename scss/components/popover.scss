@@ -53,4 +53,10 @@ div.popover {
     width: auto;
     white-space: nowrap;
   }
+
+  &.theme-dark {
+    color: $white-gray;
+    border-color: $light-gray;
+    background-color: $medium-black;
+  }
 }
