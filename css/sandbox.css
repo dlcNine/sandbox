@@ -1025,31 +1025,31 @@ a.a:focus, a:focus {
 
 /* ====================================================== */
 .text-red {
-  color: #e53c27; }
+  color: #e53c27 !important; }
 
 .text-orange {
-  color: #e2af16; }
+  color: #e2af16 !important; }
 
 .text-yellow {
-  color: #d8c312; }
+  color: #d8c312 !important; }
 
 .text-green {
-  color: #54c43a; }
+  color: #54c43a !important; }
 
 .text-blue {
-  color: #3e9def; }
+  color: #3e9def !important; }
 
 .text-indigo {
-  color: #8f4fc3; }
+  color: #8f4fc3 !important; }
 
 .text-violet {
-  color: #d46fd2; }
+  color: #d46fd2 !important; }
 
 .text-gray {
-  color: #939393; }
+  color: #939393 !important; }
 
 .text-white {
-  color: white; }
+  color: white !important; }
 
 img.shadow {
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem #d8d8d8; }
@@ -2532,6 +2532,7 @@ ul.dropdown {
   box-shadow: 0rem 0.1rem 0.2rem 0rem #bfbfbf;
   width: 18rem;
   padding: 0.8rem 0rem;
+  line-height: 1;
   background-color: white; }
   ul.dropdown.on-top {
     bottom: 100%;
@@ -2589,21 +2590,27 @@ ul.dropdown {
     transform: translate(-50%, calc(100% + 1rem)); }
   ul.dropdown.align-right {
     right: 0; }
+  ul.dropdown li.dropdown-label {
+    color: #939393;
+    padding: 0.8rem 1.2rem; }
   ul.dropdown li.dropdown-item {
-    padding: 0.4rem 1.4rem;
     color: #383838; }
     ul.dropdown li.dropdown-item:hover {
       color: white;
       background-color: #3e9def; }
-      ul.dropdown li.dropdown-item:hover a.dropdown-a:hover {
-        color: inherit; }
-  ul.dropdown.theme-dark {
+    ul.dropdown li.dropdown-item a.dropdown-a {
+      padding: 0.8rem 1.2rem;
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      width: 100%; }
+  ul.dropdown.theme-dark, ul.dropdown.theme-dark ul.dropdown {
     background-color: #4c4c4c; }
-    ul.dropdown.theme-dark hr {
+    ul.dropdown.theme-dark hr, ul.dropdown.theme-dark ul.dropdown hr {
       border-color: #939393; }
-    ul.dropdown.theme-dark li.dropdown-item {
+    ul.dropdown.theme-dark li.dropdown-item, ul.dropdown.theme-dark ul.dropdown li.dropdown-item {
       color: #d8d8d8; }
-      ul.dropdown.theme-dark li.dropdown-item a.dropdown-a:hover {
+      ul.dropdown.theme-dark li.dropdown-item:hover, ul.dropdown.theme-dark ul.dropdown li.dropdown-item:hover {
         color: white; }
   ul.dropdown.size-medium {
     width: 28rem; }
