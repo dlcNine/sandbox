@@ -96,8 +96,8 @@ table.table {
     color: inherit;
     text-decoration: underline;
 
-    &:hover {
-      color: $link-hover;
+    &:hover, &:focus {
+      color: $link-unvisited;
     }
   }
 
@@ -124,6 +124,10 @@ table.table {
   tr.theme-dark {
     color: $white;
     background-color: $medium-black !important;
+
+    a.table-a:hover, a.table-a:focus {
+      color: $dark-white;
+    }
   }
 
 }

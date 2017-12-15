@@ -54,8 +54,8 @@ table.table {
   table.table th a.table-a, table.table td a.table-a {
     color: inherit;
     text-decoration: underline; }
-    table.table th a.table-a:hover, table.table td a.table-a:hover {
-      color: #0850af; }
+    table.table th a.table-a:hover, table.table th a.table-a:focus, table.table td a.table-a:hover, table.table td a.table-a:focus {
+      color: #2771d1; }
   table.table tr.theme-primary {
     color: #f4faff;
     background-color: #3e9def !important; }
@@ -71,5 +71,7 @@ table.table {
   table.table tr.theme-dark {
     color: white;
     background-color: #4c4c4c !important; }
+    table.table tr.theme-dark a.table-a:hover, table.table tr.theme-dark a.table-a:focus {
+      color: #d7d7d7; }
 
 /*# sourceMappingURL=table.css.map */

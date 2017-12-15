@@ -4,15 +4,18 @@ div.message {
   background-color: #f9f9f9;
   margin: 0.6rem 0rem; }
   div.message div.message-header {
+    border-radius: 0.2rem 0.2rem 0rem 0rem;
     padding: 0.4rem 1.2rem;
     color: #f9f9f9;
     border-color: inherit;
     background-color: #939393; }
+    div.message div.message-header:only-child {
+      border-radius: 0.2rem; }
   div.message div.message-body {
+    border-radius: 0.3rem;
     padding: 1rem 1rem 1rem 1.8rem;
     color: #636363;
     border-color: inherit;
-    border-radius: 0.3rem;
     background-color: inherit; }
   div.message.theme-primary {
     border-color: #3e9def;
