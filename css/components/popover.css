@@ -1,12 +1,12 @@
 div.popover {
   position: absolute;
   bottom: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, calc(0% - 1rem));
-  -moz-transform: translate(-50%, calc(0% - 1rem));
-  -o-transform: translate(-50%, calc(0% - 1rem));
-  -ms-transform: translate(-50%, calc(0% - 1rem));
-  transform: translate(-50%, calc(0% - 1rem));
+  left: 0;
+  -webkit-transform: translate(0%, calc(0% - 1rem));
+  -moz-transform: translate(0%, calc(0% - 1rem));
+  -o-transform: translate(0%, calc(0% - 1rem));
+  -ms-transform: translate(0%, calc(0% - 1rem));
+  transform: translate(0%, calc(0% - 1rem));
   background-color: white;
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.4rem;
@@ -19,29 +19,79 @@ div.popover {
     width: 25rem; }
   div.popover.size-large {
     width: 36rem; }
+  div.popover.align-center {
+    left: 50%;
+    -webkit-transform: translate(-50%, calc(0% - 1rem));
+    -moz-transform: translate(-50%, calc(0% - 1rem));
+    -o-transform: translate(-50%, calc(0% - 1rem));
+    -ms-transform: translate(-50%, calc(0% - 1rem));
+    transform: translate(-50%, calc(0% - 1rem)); }
+  div.popover.align-right {
+    left: 100%;
+    -webkit-transform: translate(-100%, calc(0% - 1rem));
+    -moz-transform: translate(-100%, calc(0% - 1rem));
+    -o-transform: translate(-100%, calc(0% - 1rem));
+    -ms-transform: translate(-100%, calc(0% - 1rem));
+    transform: translate(-100%, calc(0% - 1rem)); }
   div.popover.on-bottom {
     bottom: 0;
-    -webkit-transform: translate(-50%, calc(100% + 1rem));
-    -moz-transform: translate(-50%, calc(100% + 1rem));
-    -o-transform: translate(-50%, calc(100% + 1rem));
-    -ms-transform: translate(-50%, calc(100% + 1rem));
-    transform: translate(-50%, calc(100% + 1rem)); }
+    -webkit-transform: translate(0%, calc(100% + 1rem));
+    -moz-transform: translate(0%, calc(100% + 1rem));
+    -o-transform: translate(0%, calc(100% + 1rem));
+    -ms-transform: translate(0%, calc(100% + 1rem));
+    transform: translate(0%, calc(100% + 1rem)); }
+    div.popover.on-bottom.align-center {
+      left: 50%;
+      -webkit-transform: translate(-50%, calc(100% + 1rem));
+      -moz-transform: translate(-50%, calc(100% + 1rem));
+      -o-transform: translate(-50%, calc(100% + 1rem));
+      -ms-transform: translate(-50%, calc(100% + 1rem));
+      transform: translate(-50%, calc(100% + 1rem)); }
+    div.popover.on-bottom.align-right {
+      left: 100%;
+      -webkit-transform: translate(-100%, calc(100% + 1rem));
+      -moz-transform: translate(-100%, calc(100% + 1rem));
+      -o-transform: translate(-100%, calc(100% + 1rem));
+      -ms-transform: translate(-100%, calc(100% + 1rem));
+      transform: translate(-100%, calc(100% + 1rem)); }
   div.popover.on-left {
-    bottom: 50%;
-    left: 0;
-    -webkit-transform: translate(calc(-100% - 1rem), 50%);
-    -moz-transform: translate(calc(-100% - 1rem), 50%);
-    -o-transform: translate(calc(-100% - 1rem), 50%);
-    -ms-transform: translate(calc(-100% - 1rem), 50%);
-    transform: translate(calc(-100% - 1rem), 50%); }
+    bottom: initial;
+    top: 0;
+    -webkit-transform: translate(calc(-100% - 1rem), 0%);
+    -moz-transform: translate(calc(-100% - 1rem), 0%);
+    -o-transform: translate(calc(-100% - 1rem), 0%);
+    -ms-transform: translate(calc(-100% - 1rem), 0%);
+    transform: translate(calc(-100% - 1rem), 0%); }
+    div.popover.on-left.align-center {
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(calc(-100% - 1rem), -50%);
+      -moz-transform: translate(calc(-100% - 1rem), -50%);
+      -o-transform: translate(calc(-100% - 1rem), -50%);
+      -ms-transform: translate(calc(-100% - 1rem), -50%);
+      transform: translate(calc(-100% - 1rem), -50%); }
+    div.popover.on-left.align-bottom {
+      top: initial;
+      bottom: 0; }
   div.popover.on-right {
-    bottom: 50%;
+    bottom: initial;
+    top: 0;
     left: 100%;
-    -webkit-transform: translate(calc(0% + 1rem), 50%);
-    -moz-transform: translate(calc(0% + 1rem), 50%);
-    -o-transform: translate(calc(0% + 1rem), 50%);
-    -ms-transform: translate(calc(0% + 1rem), 50%);
-    transform: translate(calc(0% + 1rem), 50%); }
+    -webkit-transform: translate(calc(0% + 1rem), 0%);
+    -moz-transform: translate(calc(0% + 1rem), 0%);
+    -o-transform: translate(calc(0% + 1rem), 0%);
+    -ms-transform: translate(calc(0% + 1rem), 0%);
+    transform: translate(calc(0% + 1rem), 0%); }
+    div.popover.on-right.align-center {
+      top: 50%;
+      -webkit-transform: translate(calc(0% + 1rem), -50%);
+      -moz-transform: translate(calc(0% + 1rem), -50%);
+      -o-transform: translate(calc(0% + 1rem), -50%);
+      -ms-transform: translate(calc(0% + 1rem), -50%);
+      transform: translate(calc(0% + 1rem), -50%); }
+    div.popover.on-right.align-bottom {
+      top: initial;
+      bottom: 0; }
   div.popover.width-auto {
     width: auto;
     white-space: nowrap; }
