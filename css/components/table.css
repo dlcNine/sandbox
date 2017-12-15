@@ -14,7 +14,7 @@ table.table {
     padding: 0.75em;
     vertical-align: middle; }
   table.table.slim th, table.table.slim td {
-    padding: 0.5em; }
+    padding: 0.375em; }
   table.table.border-all th, table.table.border-all td {
     border: 0.1rem solid #bfbfbf; }
   table.table thead.striped-odd tr:nth-child(odd),
@@ -30,7 +30,7 @@ table.table {
     border-bottom: 0.1rem solid #bfbfbf; }
   table.table thead.row-hover tr:hover, table.table tbody.row-hover tr:hover,
   table.table tfoot.row-hover tr:hover {
-    background-color: #e6e6e6 !important; }
+    background-color: #d7d7d7 !important; }
   table.table thead.row-hover tr.theme-primary:hover,
   table.table tbody.row-hover tr.theme-primary:hover,
   table.table tfoot.row-hover tr.theme-primary:hover {
@@ -51,11 +51,11 @@ table.table {
   table.table tbody.row-hover tr.theme-dark:hover,
   table.table tfoot.row-hover tr.theme-dark:hover {
     background-color: #636363 !important; }
-  table.table tr[class*="theme-"] a.table-a {
+  table.table th a.table-a, table.table td a.table-a {
     color: inherit;
     text-decoration: underline; }
-    table.table tr[class*="theme-"] a.table-a:hover {
-      color: #0850af; }
+    table.table th a.table-a:hover, table.table th a.table-a:focus, table.table td a.table-a:hover, table.table td a.table-a:focus {
+      color: #2771d1; }
   table.table tr.theme-primary {
     color: #f4faff;
     background-color: #3e9def !important; }
@@ -71,5 +71,7 @@ table.table {
   table.table tr.theme-dark {
     color: white;
     background-color: #4c4c4c !important; }
+    table.table tr.theme-dark a.table-a:hover, table.table tr.theme-dark a.table-a:focus {
+      color: #d7d7d7; }
 
 /*# sourceMappingURL=table.css.map */

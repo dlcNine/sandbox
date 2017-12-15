@@ -3,10 +3,10 @@
 $table-thead-tr-first-last-cell-radius: 0.25em;
 $table-caption-padding: 0.5em 0em;
 $table-td-th-padding: 0.75em;
-$table-slim-padding: 0.5em;
+$table-slim-padding: 0.375em;
 $table-border-color: $medium-gray;
 $table-stripe-background-color: $table-striped;
-$table-row-hover-color: $medium-white;
+$table-row-hover-color: $dark-white;
 
 table.table {
   width: 100%;
@@ -92,12 +92,12 @@ table.table {
     background-color: $light-black !important;
   }
 
-  tr[class*="theme-"] a.table-a {
+  th a.table-a, td a.table-a {
     color: inherit;
     text-decoration: underline;
 
-    &:hover {
-      color: $link-hover;
+    &:hover, &:focus {
+      color: $link-unvisited;
     }
   }
 
@@ -124,6 +124,10 @@ table.table {
   tr.theme-dark {
     color: $white;
     background-color: $medium-black !important;
+
+    a.table-a:hover, a.table-a:focus {
+      color: $dark-white;
+    }
   }
 
 }

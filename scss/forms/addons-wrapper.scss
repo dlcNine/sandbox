@@ -43,6 +43,8 @@ div.addons-wrapper {
     border: 0.1rem solid $addon-border-color;
     background-color: $addon-background-color;
     color: $addon-color;
+    display: flex;
+    align-items: center;
 
     &.has-button {
       padding: 0;
@@ -76,7 +78,7 @@ div.addons-wrapper {
     }
   }
 
-  div.icons-wrapper input {
+  div.icons-wrapper input.textfield {
     height: 100%;
   }
 
