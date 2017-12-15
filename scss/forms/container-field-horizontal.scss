@@ -19,7 +19,7 @@ div.container-field-horizontal {
     &.field-body {
       padding-left: 0.6rem;
 
-      *:first-child, div.controls-inline input {
+      *:first-child, div.controls-inline input.textfield {
         margin-top: 0;
       }
 

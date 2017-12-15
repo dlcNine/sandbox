@@ -16,10 +16,7 @@ $textarea-max-height: 40rem;
 $label-checkbox-radio-padding: 0.375em 0em;
 $label-checkbox-radio-margin-right: 0.625rem;
 
-input[type="email"], input[type="number"],
-input[type="password"], input[type="search"], 
-input[type="tel"], input[type="text"], input[type="url"],
-textarea {
+input.textfield, textarea {
   font-size: 1.6rem;
   font-family: $control-font-family;
   line-height: 1;

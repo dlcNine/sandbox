@@ -16,11 +16,11 @@ div.icons-wrapper {
     left: 0.5em; }
   div.icons-wrapper span.right-icon {
     right: 0.5em; }
-  div.icons-wrapper input {
+  div.icons-wrapper input.textfield {
     font-size: inherit;
     padding-left: 2em;
     padding-right: 2em; }
-    div.icons-wrapper input:focus ~ span.left-icon, div.icons-wrapper input:focus ~ span.right-icon {
+    div.icons-wrapper input.textfield:focus ~ span.left-icon, div.icons-wrapper input.textfield:focus ~ span.right-icon {
       color: #4c4c4c; }
 
 /*# sourceMappingURL=icons-wrapper.css.map */
