@@ -18,7 +18,9 @@ div.addons-wrapper {
     padding: 0.375em 0.625em;
     border: 0.1rem solid #d8d8d8;
     background-color: whitesmoke;
-    color: #7a7a7a; }
+    color: #7a7a7a;
+    display: flex;
+    align-items: center; }
     div.addons-wrapper div.left-addon.has-button, div.addons-wrapper div.right-addon.has-button {
       padding: 0;
       border: none; }

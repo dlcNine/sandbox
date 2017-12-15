@@ -6,8 +6,7 @@ $button-radius: 0.1875em;
 $button-focus-shadow-spread: 0.125em;
 $button-font-family: sans-serif;
 
-a.button, button.button, 
-input[type="submit"].button, 
+button.button, input[type="submit"].button, 
 input[type="reset"].button {
   font-size: 1.6rem;
   font-family: $button-font-family;
@@ -129,18 +128,6 @@ input[type="reset"].button {
 }
 
 /* ==================================== */
-
-a.button {
-  display: inline-block;
-
-  &:link {
-    text-decoration: none;
-  }
-
-  &:visited {
-    text-decoration: none;
-  }
-}
 
 .button.wide {
   display: block;

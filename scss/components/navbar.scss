@@ -19,12 +19,12 @@ div.navbar {
   div.navbar-item {
     padding: $navbar-item-padding;
     margin-right: $navbar-item-margin-right;
+    line-height: 1;
     color: $navbar-item-color;
    
     a.navbar-a {
       color: inherit;
       text-decoration: none;
-      line-height: 1;
 
       &:hover, &:focus {
         color: $navbar-item-a-hover-color;

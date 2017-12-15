@@ -1,5 +1,4 @@
-a.button, button.button,
-input[type="submit"].button,
+button.button, input[type="submit"].button,
 input[type="reset"].button {
   font-size: 1.6rem;
   font-family: sans-serif;
@@ -10,122 +9,91 @@ input[type="reset"].button {
   text-align: center;
   color: #636363;
   background-color: #bfbfbf; }
-  a.button:hover, button.button:hover,
-  input[type="submit"].button:hover,
+  button.button:hover, input[type="submit"].button:hover,
   input[type="reset"].button:hover {
     background-color: #d8d8d8;
     cursor: pointer; }
-  a.button:active, button.button:active,
-  input[type="submit"].button:active,
+  button.button:active, input[type="submit"].button:active,
   input[type="reset"].button:active {
     background-color: #939393;
     color: #f9f9f9;
     outline: none; }
-  a.button:focus:not(:active), button.button:focus:not(:active),
-  input[type="submit"].button:focus:not(:active),
+  button.button:focus:not(:active), input[type="submit"].button:focus:not(:active),
   input[type="reset"].button:focus:not(:active) {
     box-shadow: 0rem 0rem 0rem 0.125em rgba(104, 182, 249, 0.5);
     outline: none; }
-  a.button.theme-primary, button.button.theme-primary,
-  input[type="submit"].button.theme-primary,
+  button.button.theme-primary, input[type="submit"].button.theme-primary,
   input[type="reset"].button.theme-primary {
     color: #f4faff;
     background-color: #3e9def; }
-    a.button.theme-primary:hover, button.button.theme-primary:hover,
-    input[type="submit"].button.theme-primary:hover,
+    button.button.theme-primary:hover, input[type="submit"].button.theme-primary:hover,
     input[type="reset"].button.theme-primary:hover {
       background-color: #54abf7; }
-    a.button.theme-primary:active, button.button.theme-primary:active,
-    input[type="submit"].button.theme-primary:active,
+    button.button.theme-primary:active, input[type="submit"].button.theme-primary:active,
     input[type="reset"].button.theme-primary:active {
       background-color: #287ec9; }
-  a.button.theme-info, button.button.theme-info,
-  input[type="submit"].button.theme-info,
+  button.button.theme-info, input[type="submit"].button.theme-info,
   input[type="reset"].button.theme-info {
     color: #f6fff4;
     background-color: #54c43a; }
-    a.button.theme-info:hover, button.button.theme-info:hover,
-    input[type="submit"].button.theme-info:hover,
+    button.button.theme-info:hover, input[type="submit"].button.theme-info:hover,
     input[type="reset"].button.theme-info:hover {
       background-color: #62d648; }
-    a.button.theme-info:active, button.button.theme-info:active,
-    input[type="submit"].button.theme-info:active,
+    button.button.theme-info:active, input[type="submit"].button.theme-info:active,
     input[type="reset"].button.theme-info:active {
       background-color: #3f962a; }
-    a.button.theme-info:focus:not(:active), button.button.theme-info:focus:not(:active),
-    input[type="submit"].button.theme-info:focus:not(:active),
+    button.button.theme-info:focus:not(:active), input[type="submit"].button.theme-info:focus:not(:active),
     input[type="reset"].button.theme-info:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.125em rgba(119, 216, 97, 0.5); }
-  a.button.theme-caution, button.button.theme-caution,
-  input[type="submit"].button.theme-caution,
+  button.button.theme-caution, input[type="submit"].button.theme-caution,
   input[type="reset"].button.theme-caution {
     color: #82820a;
     background-color: #e8e819; }
-    a.button.theme-caution:hover, button.button.theme-caution:hover,
-    input[type="submit"].button.theme-caution:hover,
+    button.button.theme-caution:hover, input[type="submit"].button.theme-caution:hover,
     input[type="reset"].button.theme-caution:hover {
       background-color: #f4f449; }
-    a.button.theme-caution:active, button.button.theme-caution:active,
-    input[type="submit"].button.theme-caution:active,
+    button.button.theme-caution:active, input[type="submit"].button.theme-caution:active,
     input[type="reset"].button.theme-caution:active {
       background-color: #82820a;
       color: #fcfcef; }
-    a.button.theme-caution:focus:not(:active), button.button.theme-caution:focus:not(:active),
-    input[type="submit"].button.theme-caution:focus:not(:active),
+    button.button.theme-caution:focus:not(:active), input[type="submit"].button.theme-caution:focus:not(:active),
     input[type="reset"].button.theme-caution:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.125em rgba(232, 232, 25, 0.5); }
-  a.button.theme-danger, button.button.theme-danger,
-  input[type="submit"].button.theme-danger,
+  button.button.theme-danger, input[type="submit"].button.theme-danger,
   input[type="reset"].button.theme-danger {
     color: #fff8f7;
     background-color: #e53c27; }
-    a.button.theme-danger:hover, button.button.theme-danger:hover,
-    input[type="submit"].button.theme-danger:hover,
+    button.button.theme-danger:hover, input[type="submit"].button.theme-danger:hover,
     input[type="reset"].button.theme-danger:hover {
       background-color: #f25541; }
-    a.button.theme-danger:active, button.button.theme-danger:active,
-    input[type="submit"].button.theme-danger:active,
+    button.button.theme-danger:active, input[type="submit"].button.theme-danger:active,
     input[type="reset"].button.theme-danger:active {
       background-color: #c62c17; }
-    a.button.theme-danger:focus:not(:active), button.button.theme-danger:focus:not(:active),
-    input[type="submit"].button.theme-danger:focus:not(:active),
+    button.button.theme-danger:focus:not(:active), input[type="submit"].button.theme-danger:focus:not(:active),
     input[type="reset"].button.theme-danger:focus:not(:active) {
       box-shadow: 0rem 0rem 0rem 0.125em rgba(242, 100, 82, 0.5); }
-  a.button.theme-light, button.button.theme-light,
-  input[type="submit"].button.theme-light,
+  button.button.theme-light, input[type="submit"].button.theme-light,
   input[type="reset"].button.theme-light {
     color: #636363;
     background-color: #e6e6e6; }
-    a.button.theme-light:hover, button.button.theme-light:hover,
-    input[type="submit"].button.theme-light:hover,
+    button.button.theme-light:hover, input[type="submit"].button.theme-light:hover,
     input[type="reset"].button.theme-light:hover {
       background-color: whitesmoke; }
-    a.button.theme-light:active, button.button.theme-light:active,
-    input[type="submit"].button.theme-light:active,
+    button.button.theme-light:active, input[type="submit"].button.theme-light:active,
     input[type="reset"].button.theme-light:active {
       background-color: #d7d7d7; }
-  a.button.theme-dark, button.button.theme-dark,
-  input[type="submit"].button.theme-dark,
+  button.button.theme-dark, input[type="submit"].button.theme-dark,
   input[type="reset"].button.theme-dark {
     color: white;
     background-color: #4c4c4c; }
-    a.button.theme-dark:hover, button.button.theme-dark:hover,
-    input[type="submit"].button.theme-dark:hover,
+    button.button.theme-dark:hover, input[type="submit"].button.theme-dark:hover,
     input[type="reset"].button.theme-dark:hover {
       background-color: #636363; }
-    a.button.theme-dark:active, button.button.theme-dark:active,
-    input[type="submit"].button.theme-dark:active,
+    button.button.theme-dark:active, input[type="submit"].button.theme-dark:active,
     input[type="reset"].button.theme-dark:active {
       background-color: #383838; }
 
 /* ==================================== */
-a.button {
-  display: inline-block; }
-  a.button:link {
-    text-decoration: none; }
-  a.button:visited {
-    text-decoration: none; }
-
 .button.wide {
   display: block;
   width: 100%;
