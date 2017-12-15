@@ -70,7 +70,7 @@ b, strong, .text-bold {
 em, .text-italic {
   font-style: italic; }
 
-del, .text-strike {
+del, .text-del {
   text-decoration: line-through; }
 
 ins, .text-underline {
@@ -243,7 +243,7 @@ span.snippet {
   border-radius: 0.1875em;
   padding: 0em 0.375em;
   background-color: #e6e6e6;
-  color: #3e9def; }
+  color: #e53c27; }
 
 /* ====================================================== */
 a.a:link {
@@ -2778,9 +2778,10 @@ div.popmark.popmark-lb::before, ul.popmark.popmark-lb::before, li.popmark.popmar
 
 ol.code {
   font-family: menlo, monaco, monospace;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   counter-reset: line-number 0;
   padding: 0.75em 0.75em 0.75em 1em;
+  line-height: 1;
   position: relative; }
   ol.code li.line {
     margin: 0.375em 0em 0.375em 0.875em;
@@ -2896,7 +2897,7 @@ table.table {
     padding: 0.75em;
     vertical-align: middle; }
   table.table.slim th, table.table.slim td {
-    padding: 0.5em; }
+    padding: 0.375em; }
   table.table.border-all th, table.table.border-all td {
     border: 0.1rem solid #bfbfbf; }
   table.table thead.striped-odd tr:nth-child(odd),
@@ -2912,7 +2913,7 @@ table.table {
     border-bottom: 0.1rem solid #bfbfbf; }
   table.table thead.row-hover tr:hover, table.table tbody.row-hover tr:hover,
   table.table tfoot.row-hover tr:hover {
-    background-color: #e6e6e6 !important; }
+    background-color: #d7d7d7 !important; }
   table.table thead.row-hover tr.theme-primary:hover,
   table.table tbody.row-hover tr.theme-primary:hover,
   table.table tfoot.row-hover tr.theme-primary:hover {
@@ -2933,10 +2934,10 @@ table.table {
   table.table tbody.row-hover tr.theme-dark:hover,
   table.table tfoot.row-hover tr.theme-dark:hover {
     background-color: #636363 !important; }
-  table.table tr[class*="theme-"] a.table-a {
+  table.table th a.table-a, table.table td a.table-a {
     color: inherit;
     text-decoration: underline; }
-    table.table tr[class*="theme-"] a.table-a:hover {
+    table.table th a.table-a:hover, table.table td a.table-a:hover {
       color: #0850af; }
   table.table tr.theme-primary {
     color: #f4faff;

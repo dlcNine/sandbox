@@ -1,8 +1,9 @@
 ol.code {
   font-family: menlo, monaco, monospace;
-  background-color: whitesmoke;
+  background-color: #f9f9f9;
   counter-reset: line-number 0;
   padding: 0.75em 0.75em 0.75em 1em;
+  line-height: 1;
   position: relative; }
   ol.code li.line {
     margin: 0.375em 0em 0.375em 0.875em;
