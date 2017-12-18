@@ -61,19 +61,20 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
-b, strong, .text-bold {
+* {
+  box-sizing: border-box; }
+
+/* ==================================== */
+b, strong {
   font-weight: bold; }
 
-.text-normal {
-  font-weight: normal; }
-
-em, .text-italic {
+em {
   font-style: italic; }
 
-del, .text-del {
+del {
   text-decoration: line-through; }
 
-ins, .text-underline {
+ins {
   text-decoration: underline; }
 
 sub {
@@ -919,6 +920,9 @@ a.a:focus, a:focus {
 .flex-center {
   justify-content: center; }
 
+.flex-end {
+  justify-content: flex-end; }
+
 .flex-between {
   justify-content: space-between; }
 
@@ -927,9 +931,6 @@ a.a:focus, a:focus {
 
 .flex-even {
   justify-content: space-evenly; }
-
-.flex-end {
-  justify-content: flex-end; }
 
 .flex-cross-start {
   align-items: flex-start; }
@@ -1017,6 +1018,25 @@ a.a:focus, a:focus {
   text-transform: lowercase !important; }
 
 /* ====================================================== */
+.text-thin {
+  font-weight: lighter; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-del {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
+
+/* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
 
@@ -1065,9 +1085,6 @@ img.fill-width {
   height: auto; }
 
 /* ============ layout ============ */
-* {
-  box-sizing: border-box; }
-
 div[class*="small-"], div[class*="medium-"],
 div[class*="large-"], div[class*="default-"] {
   float: left;
@@ -1685,6 +1702,7 @@ input[type="reset"].button {
       color: #383838; }
 
 div.buttons-bar {
+  font-size: 1.6rem;
   padding: 0.6rem; }
   div.buttons-bar::after {
     content: '';
@@ -1693,6 +1711,7 @@ div.buttons-bar {
   div.buttons-bar.flex .button {
     width: 100%; }
   div.buttons-bar .button {
+    font-size: inherit;
     float: left;
     margin: 0; }
   div.buttons-bar > .button:first-child {
@@ -2698,7 +2717,7 @@ div.popover {
     border-color: #d8d8d8;
     background-color: #4c4c4c; }
 
-div.popmark::before, ul.popmark::before, li.popmark::before {
+.popmark::before {
   position: absolute;
   left: 50%;
   top: 100%;
@@ -2719,18 +2738,18 @@ div.popmark::before, ul.popmark::before, li.popmark::before {
   border-right: 0.1rem solid;
   border-color: inherit;
   background-color: inherit; }
-div.popmark.popmark-bl::before, ul.popmark.popmark-bl::before, li.popmark.popmark-bl::before {
+.popmark.popmark-bl::before {
   left: calc(0% + 0.8rem); }
-div.popmark.popmark-br::before, ul.popmark.popmark-br::before, li.popmark.popmark-br::before {
+.popmark.popmark-br::before {
   left: calc(100% - 0.8rem); }
-div.popmark.popmark-t::before, ul.popmark.popmark-t::before, li.popmark.popmark-t::before {
+.popmark.popmark-t::before {
   top: 0;
   -webkit-transform: rotate(-45deg) translate(-50%, -50%);
   -moz-transform: rotate(-45deg) translate(-50%, -50%);
   -o-transform: rotate(-45deg) translate(-50%, -50%);
   -ms-transform: rotate(-45deg) translate(-50%, -50%);
   transform: rotate(-45deg) translate(-50%, -50%); }
-div.popmark.popmark-tl::before, ul.popmark.popmark-tl::before, li.popmark.popmark-tl::before {
+.popmark.popmark-tl::before {
   top: 0;
   left: 0.8rem;
   -webkit-transform: rotate(-45deg) translate(-50%, -50%);
@@ -2738,7 +2757,7 @@ div.popmark.popmark-tl::before, ul.popmark.popmark-tl::before, li.popmark.popmar
   -o-transform: rotate(-45deg) translate(-50%, -50%);
   -ms-transform: rotate(-45deg) translate(-50%, -50%);
   transform: rotate(-45deg) translate(-50%, -50%); }
-div.popmark.popmark-tr::before, ul.popmark.popmark-tr::before, li.popmark.popmark-tr::before {
+.popmark.popmark-tr::before {
   top: 0;
   left: calc(100% - 0.8rem);
   -webkit-transform: rotate(-45deg) translate(-50%, -50%);
@@ -2746,7 +2765,7 @@ div.popmark.popmark-tr::before, ul.popmark.popmark-tr::before, li.popmark.popmar
   -o-transform: rotate(-45deg) translate(-50%, -50%);
   -ms-transform: rotate(-45deg) translate(-50%, -50%);
   transform: rotate(-45deg) translate(-50%, -50%); }
-div.popmark.popmark-r::before, ul.popmark.popmark-r::before, li.popmark.popmark-r::before {
+.popmark.popmark-r::before {
   top: 50%;
   left: 100%;
   -webkit-transform: rotate(45deg) translate(-50%, -50%);
@@ -2754,7 +2773,7 @@ div.popmark.popmark-r::before, ul.popmark.popmark-r::before, li.popmark.popmark-
   -o-transform: rotate(45deg) translate(-50%, -50%);
   -ms-transform: rotate(45deg) translate(-50%, -50%);
   transform: rotate(45deg) translate(-50%, -50%); }
-div.popmark.popmark-rt::before, ul.popmark.popmark-rt::before, li.popmark.popmark-rt::before {
+.popmark.popmark-rt::before {
   top: calc(0% + 0.8rem);
   left: 100%;
   -webkit-transform: rotate(45deg) translate(-50%, -50%);
@@ -2762,7 +2781,7 @@ div.popmark.popmark-rt::before, ul.popmark.popmark-rt::before, li.popmark.popmar
   -o-transform: rotate(45deg) translate(-50%, -50%);
   -ms-transform: rotate(45deg) translate(-50%, -50%);
   transform: rotate(45deg) translate(-50%, -50%); }
-div.popmark.popmark-rb::before, ul.popmark.popmark-rb::before, li.popmark.popmark-rb::before {
+.popmark.popmark-rb::before {
   top: calc(100% - 0.8rem);
   left: 100%;
   -webkit-transform: rotate(45deg) translate(-50%, -50%);
@@ -2770,7 +2789,7 @@ div.popmark.popmark-rb::before, ul.popmark.popmark-rb::before, li.popmark.popmar
   -o-transform: rotate(45deg) translate(-50%, -50%);
   -ms-transform: rotate(45deg) translate(-50%, -50%);
   transform: rotate(45deg) translate(-50%, -50%); }
-div.popmark.popmark-l::before, ul.popmark.popmark-l::before, li.popmark.popmark-l::before {
+.popmark.popmark-l::before {
   left: 0;
   top: 50%;
   -webkit-transform: rotate(-135deg) translate(-50%, -50%);
@@ -2778,7 +2797,7 @@ div.popmark.popmark-l::before, ul.popmark.popmark-l::before, li.popmark.popmark-
   -o-transform: rotate(-135deg) translate(-50%, -50%);
   -ms-transform: rotate(-135deg) translate(-50%, -50%);
   transform: rotate(-135deg) translate(-50%, -50%); }
-div.popmark.popmark-lt::before, ul.popmark.popmark-lt::before, li.popmark.popmark-lt::before {
+.popmark.popmark-lt::before {
   left: 0;
   top: calc(0% + 0.8rem);
   -webkit-transform: rotate(-135deg) translate(-50%, -50%);
@@ -2786,7 +2805,7 @@ div.popmark.popmark-lt::before, ul.popmark.popmark-lt::before, li.popmark.popmar
   -o-transform: rotate(-135deg) translate(-50%, -50%);
   -ms-transform: rotate(-135deg) translate(-50%, -50%);
   transform: rotate(-135deg) translate(-50%, -50%); }
-div.popmark.popmark-lb::before, ul.popmark.popmark-lb::before, li.popmark.popmark-lb::before {
+.popmark.popmark-lb::before {
   left: 0;
   top: calc(100% - 0.8rem);
   -webkit-transform: rotate(-135deg) translate(-50%, -50%);

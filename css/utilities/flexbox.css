@@ -11,6 +11,9 @@
 .flex-center {
   justify-content: center; }
 
+.flex-end {
+  justify-content: flex-end; }
+
 .flex-between {
   justify-content: space-between; }
 
@@ -19,9 +22,6 @@
 
 .flex-even {
   justify-content: space-evenly; }
-
-.flex-end {
-  justify-content: flex-end; }
 
 .flex-cross-start {
   align-items: flex-start; }
