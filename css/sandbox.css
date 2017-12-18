@@ -1682,6 +1682,7 @@ input[type="reset"].button {
       color: #383838; }
 
 div.buttons-bar {
+  font-size: 1.6rem;
   padding: 0.6rem; }
   div.buttons-bar::after {
     content: '';
@@ -1690,6 +1691,7 @@ div.buttons-bar {
   div.buttons-bar.flex .button {
     width: 100%; }
   div.buttons-bar .button {
+    font-size: inherit;
     float: left;
     margin: 0; }
   div.buttons-bar > .button:first-child {
