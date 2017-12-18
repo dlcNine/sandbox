@@ -2,17 +2,16 @@
   display: flex !important;
 }
 
-.flex-row-wrap {
-  display: flex !important;
-  flex-flow: row wrap;
-}
-
 .flex-start {
   justify-content: flex-start;
 }
 
 .flex-center {
   justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
 }
 
 .flex-between {
@@ -25,10 +24,6 @@
 
 .flex-even {
   justify-content: space-evenly;
-}
-
-.flex-end {
-  justify-content: flex-end;
 }
 
 .flex-cross-start {

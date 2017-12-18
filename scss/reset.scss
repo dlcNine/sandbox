@@ -74,6 +74,12 @@ table {
 }
 
 /* ==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==================================== */
 b, strong, .text-bold {
   font-weight: bold;
 }

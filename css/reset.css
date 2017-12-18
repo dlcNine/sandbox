@@ -61,6 +61,10 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
+* {
+  box-sizing: border-box; }
+
+/* ==================================== */
 b, strong, .text-bold {
   font-weight: bold; }
 

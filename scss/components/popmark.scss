@@ -3,7 +3,7 @@
 $popmark-height-width: 1rem;
 $popmark-extra-offset: 0.8rem;
 
-div.popmark, ul.popmark, li.popmark {
+.popmark {
   &::before {
     position: absolute;
     left: 50%;
