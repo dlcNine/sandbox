@@ -65,19 +65,16 @@ table {
   box-sizing: border-box; }
 
 /* ==================================== */
-b, strong, .text-bold {
+b, strong {
   font-weight: bold; }
 
-.text-normal {
-  font-weight: normal; }
-
-em, .text-italic {
+em {
   font-style: italic; }
 
-del, .text-del {
+del {
   text-decoration: line-through; }
 
-ins, .text-underline {
+ins {
   text-decoration: underline; }
 
 sub {
@@ -913,6 +910,10 @@ a.a:focus, a:focus {
 .flex {
   display: flex !important; }
 
+.flex-row-wrap {
+  display: flex !important;
+  flex-flow: row wrap; }
+
 .flex-start {
   justify-content: flex-start; }
 
@@ -1015,6 +1016,25 @@ a.a:focus, a:focus {
 
 .text-lowercase {
   text-transform: lowercase !important; }
+
+/* ====================================================== */
+.text-thin {
+  font-weight: lighter; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-del {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
 
 /* ====================================================== */
 .text-nowrap {

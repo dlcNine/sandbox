@@ -2,6 +2,11 @@
   display: flex !important;
 }
 
+.flex-row-wrap {
+  display: flex !important;
+  flex-flow: row wrap;
+}
+
 .flex-start {
   justify-content: flex-start;
 }

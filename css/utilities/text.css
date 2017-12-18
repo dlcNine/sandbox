@@ -27,6 +27,25 @@
   text-transform: lowercase !important; }
 
 /* ====================================================== */
+.text-thin {
+  font-weight: lighter; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-del {
+  text-decoration: line-through; }
+
+.text-underline {
+  text-decoration: underline; }
+
+/* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
 

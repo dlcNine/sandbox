@@ -65,19 +65,16 @@ table {
   box-sizing: border-box; }
 
 /* ==================================== */
-b, strong, .text-bold {
+b, strong {
   font-weight: bold; }
 
-.text-normal {
-  font-weight: normal; }
-
-em, .text-italic {
+em {
   font-style: italic; }
 
-del, .text-del {
+del {
   text-decoration: line-through; }
 
-ins, .text-underline {
+ins {
   text-decoration: underline; }
 
 sub {
