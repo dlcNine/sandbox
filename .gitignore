@@ -2,6 +2,7 @@
 index.html
 dev-helper.css
 .sass-cache/
+node_modules/
 css/*.css.map
 css/utilities/*.css.map
 css/layout/*.css.map

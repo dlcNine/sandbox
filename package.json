@@ -1,0 +1,29 @@
+{
+  "name": "sandbox",
+  "version": "0.1.0",
+  "description": "A responsive css framework centered on ease of use and scalability.",
+  "main": "scss/sandbox.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlcNine/sandbox.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "responsive",
+    "scalable"
+  ],
+  "author": "Dan Cross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlcNine/sandbox/issues"
+  },
+  "homepage": "https://github.com/dlcNine/sandbox#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.3",
+    "postcss-cli": "^4.1.1"
+  }
+}
