@@ -4,7 +4,10 @@
   "description": "A responsive css framework centered on ease of use and scalability.",
   "main": "scss/sandbox.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-compressed": "scss scss/sandbox.scss css/sandbox-min.css --style compressed",
+    "build-autoprefix": "node_modules/.bin/postcss css/sandbox-min.css --use autoprefixer --output css/sandbox-min.css",
+    "build": "npm run build-compressed && npm run build-autoprefix"
   },
   "repository": {
     "type": "git",
