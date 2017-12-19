@@ -1,5 +1,4 @@
 @import "../colors.scss";
-@import "../mixins.scss";
 
 $icon-color: $dark-gray;
 $icon-focus-color: $medium-black;
@@ -11,7 +10,7 @@ div.icons-wrapper {
   span.left-icon, span.right-icon {
     position: absolute;
     top: 50%;
-    @include translate-2d(0%, -50%);
+    transform: translate(0%, -50%);
     color: $icon-color;
 
     i {

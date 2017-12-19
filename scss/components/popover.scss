@@ -1,5 +1,5 @@
 @import "../colors.scss";
-@import "../mixins.scss";
+// @import "../mixins.scss";
 
 $popover-background-color: $white;
 $popover-shadow-color: $light-gray;
@@ -12,7 +12,8 @@ div.popover {
   position: absolute;
   bottom: 100%;
   left: 0;
-  @include translate-2d(0%, calc(0% - #{$popover-extra-offset}));
+  transform: translate(0%, calc(0% - #{$popover-extra-offset}));
+  // @include translate-2d(0%, calc(0% - #{$popover-extra-offset}));
   background-color: $popover-background-color;
   border: 0.1rem solid $popover-border-color;
   border-radius: $popover-radius;
@@ -34,38 +35,45 @@ div.popover {
 
   &.align-center {
     left: 50%;
-    @include translate-2d(-50%, calc(0% - #{$popover-extra-offset}));
+    transform: translate(-50%, calc(0% - #{$popover-extra-offset}));
+    // @include translate-2d(-50%, calc(0% - #{$popover-extra-offset}));
   }
 
   &.align-right {
     left: 100%;
-    @include translate-2d(-100%, calc(0% - #{$popover-extra-offset}));
+    transform: translate(-100%, calc(0%, - #{$popover-extra-offset}));
+    // @include translate-2d(-100%, calc(0% - #{$popover-extra-offset}));
   }
 
   &.on-bottom {
     bottom: 0;
-    @include translate-2d(0%, calc(100% + #{$popover-extra-offset}));
+    transform: translate(0%, calc(100% + #{$popover-extra-offset}));
+    // @include translate-2d(0%, calc(100% + #{$popover-extra-offset}));
 
     &.align-center {
       left: 50%;
-      @include translate-2d(-50%, calc(100% + #{$popover-extra-offset}));
+      transform: translate(-50%, calc(100% + #{$popover-extra-offset}));
+      // @include translate-2d(-50%, calc(100% + #{$popover-extra-offset}));
     }
 
     &.align-right {
       left: 100%;
-      @include translate-2d(-100%, calc(100% + #{$popover-extra-offset}));
+      transform: translate(-100%, calc(100% + #{$popover-extra-offset}));
+      // @include translate-2d(-100%, calc(100% + #{$popover-extra-offset}));
     }
   }
 
   &.on-left {
     bottom: initial;
     top: 0;
-    @include translate-2d(calc(-100% - #{$popover-extra-offset}), 0%);
+    transform: translate(calc(-100% - #{$popover-extra-offset}), 0%);
+    // @include translate-2d(calc(-100% - #{$popover-extra-offset}), 0%);
 
     &.align-center {
       top: 50%;
       left: 0;
-      @include translate-2d(calc(-100% - #{$popover-extra-offset}), -50%);
+      transform: translate(calc(-100% - #{$popover-extra-offset}), -50%);
+      // @include translate-2d(calc(-100% - #{$popover-extra-offset}), -50%);
     }
 
     &.align-bottom {
@@ -78,11 +86,13 @@ div.popover {
     bottom: initial;
     top: 0;
     left: 100%;
-    @include translate-2d(calc(0% + #{$popover-extra-offset}), 0%);
+    transform: translate(calc(0% + #{$popover-extra-offset}), 0%);
+    // @include translate-2d(calc(0% + #{$popover-extra-offset}), 0%);
 
     &.align-center {
       top: 50%;
-      @include translate-2d(calc(0% + #{$popover-extra-offset}), -50%);
+      transform: translate(calc(0% + #{$popover-extra-offset}), -50%);
+      // @include translate-2d(calc(0% + #{$popover-extra-offset}), -50%);
     }
 
     &.align-bottom {
