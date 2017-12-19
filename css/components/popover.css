@@ -1,7 +1,6 @@
 div.popover {
   position: absolute;
   bottom: 100%;
-  left: 0;
   transform: translate(0%, calc(0% - 1rem));
   background-color: white;
   border: 0.1rem solid #d8d8d8;
@@ -20,7 +19,7 @@ div.popover {
     transform: translate(-50%, calc(0% - 1rem)); }
   div.popover.align-right {
     left: 100%;
-    transform: translate(-100%, calc(0%, - 1rem)); }
+    transform: translate(-100%, calc(0% - 1rem)); }
   div.popover.on-bottom {
     bottom: 0;
     transform: translate(0%, calc(100% + 1rem)); }

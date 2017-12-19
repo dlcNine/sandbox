@@ -1,29 +1,13 @@
 @import "../colors.scss";
-@import "../mixins.scss";
 
 $loading-height-width: 1em;
 $loading-margin: 0rem 0.8rem;
 $loading-border-color: $white;
 $loading-border-width: 0.0625em;
 
-@-webkit-keyframes revolution {
-  0% { @include rotate-2d(0deg); }
-  100% { @include rotate-2d(360deg); }
-}
-
-@-moz-keyframes revolution {
-  0% { @include rotate-2d(0deg); }
-  100% { @include rotate-2d(360deg); }
-}
-
-@-o-keyframes revolution {
-  0% { @include rotate-2d(0deg); }
-  100% { @include rotate-2d(360deg); }
-}
-
 @keyframes revolution {
-  0% { @include rotate-2d(0deg); }
-  100% { @include rotate-2d(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 span.loading {
@@ -38,7 +22,7 @@ span.loading {
     border: $loading-border-width solid $loading-border-color;
     border-bottom-color: transparent;
     border-left-color: transparent;
-    @include animation(revolution, 550ms, linear, 0s, infinite, normal);
+    animation: revolution 550ms linear 0s infinite normal;
   }
 
   &.theme-dark::before {
@@ -47,10 +31,10 @@ span.loading {
   }
 
   &.slow::before {
-    @include animation-duration(1s);
+    animation-duration: 1s;
   }
 
   &.reverse::before {
-    @include animation-direction(reverse);
+    animation-direction: reverse;
   }
 }

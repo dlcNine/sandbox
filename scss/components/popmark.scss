@@ -1,5 +1,3 @@
-@import "../mixins.scss";
-
 $popmark-height-width: 1rem;
 $popmark-extra-offset: 0.8rem;
 
@@ -8,8 +6,8 @@ $popmark-extra-offset: 0.8rem;
     position: absolute;
     left: 50%;
     top: 100%;
-    @include rotate-translate-2d(135deg, -50%, -50%);
-    @include transform-origin(0%, 0%);
+    transform: rotate(135deg) translate(-50%, -50%);
+    transform-origin: 0% 0%;
     content: '';
     width: $popmark-height-width;
     height: $popmark-height-width;
@@ -29,54 +27,54 @@ $popmark-extra-offset: 0.8rem;
 
   &.popmark-t::before {
     top: 0;
-    @include rotate-translate-2d(-45deg, -50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
   }
 
   &.popmark-tl::before {
     top: 0;
     left: $popmark-extra-offset;
-    @include rotate-translate-2d(-45deg, -50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
   }
 
   &.popmark-tr::before {
     top: 0;
     left: calc(100% - #{$popmark-extra-offset});
-    @include rotate-translate-2d(-45deg, -50%, -50%);
+    transform: rotate(-45deg) translate(-50%, -50%);
   }
 
   &.popmark-r::before {
     top: 50%;
     left: 100%;
-    @include rotate-translate-2d(45deg, -50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
   }
 
   &.popmark-rt::before {
     top: calc(0% + #{$popmark-extra-offset});
     left: 100%;
-    @include rotate-translate-2d(45deg, -50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
   }
 
   &.popmark-rb::before {
     top: calc(100% - #{$popmark-extra-offset});
     left: 100%;
-    @include rotate-translate-2d(45deg, -50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
   }
 
   &.popmark-l::before {
     left: 0;
     top: 50%;
-    @include rotate-translate-2d(-135deg, -50%, -50%);
+    transform: rotate(-135deg) translate(-50%, -50%);
   }
 
   &.popmark-lt::before {
     left: 0;
     top: calc(0% + #{$popmark-extra-offset});
-    @include rotate-translate-2d(-135deg, -50%, -50%);
+    transform: rotate(-135deg) translate(-50%, -50%);
   }
 
   &.popmark-lb::before {
     left: 0;
     top: calc(100% - #{$popmark-extra-offset});
-    @include rotate-translate-2d(-135deg, -50%, -50%);
+    transform: rotate(-135deg) translate(-50%, -50%);
   }
 }
