@@ -24,6 +24,7 @@
   "homepage": "https://github.com/dlcNine/sandbox#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.3",
+    "postcss": "^6.0.14",
     "postcss-cli": "^4.1.1"
   }
 }
