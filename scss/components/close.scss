@@ -1,5 +1,4 @@
 @import "../colors.scss";
-@import "../mixins.scss";
 
 $close-height-width: 1em;
 $close-radius: 0.125em;
@@ -46,15 +45,15 @@ button.close {
     position: absolute;
     top: 50%;
     left: 50%;
-    @include transform-origin(0%, 0%);
+    transform-origin: 0% 0%;
   }
 
   &::before {
-    @include rotate-translate-2d(45deg, -50%, -50%);
+    transform: rotate(45deg) translate(-50%, -50%);
   }
 
   &::after {
-    @include rotate-translate-2d(135deg, -50%, -50%);
+    transform: rotate(135deg) translate(-50%, -50%);
   }
 
   &.theme-dark {

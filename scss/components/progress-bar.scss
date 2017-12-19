@@ -19,7 +19,7 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: $dark-gray;
-    // @include transition(width, 300ms);
+    // transition: width 300ms;
   }
 
   div.progress.theme-primary {
