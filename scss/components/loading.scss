@@ -34,7 +34,11 @@ span.loading {
     animation-duration: 1s;
   }
 
-  &.reverse::before {
+  &.reversed::before {
     animation-direction: reverse;
+  }
+
+  &.paused::before {
+    animation-play-state: paused;
   }
 }

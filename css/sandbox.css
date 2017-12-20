@@ -2740,8 +2740,10 @@ span.loading.theme-dark::before {
   border-top-color: #4c4c4c; }
 span.loading.slow::before {
   animation-duration: 1s; }
-span.loading.reverse::before {
+span.loading.reversed::before {
   animation-direction: reverse; }
+span.loading.paused::before {
+  animation-play-state: paused; }
 
 table.table {
   width: 100%;
