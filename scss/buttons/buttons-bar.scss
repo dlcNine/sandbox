@@ -8,8 +8,12 @@ div.buttons-bar {
     display: block;
   }
 
-  &.flex .button {
-    width: 100%;
+  &.flex {
+    display: flex !important;
+
+    .button {
+      width: 100%;
+    }
   }
 
   .button {

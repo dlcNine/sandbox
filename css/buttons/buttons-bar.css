@@ -5,8 +5,10 @@ div.buttons-bar {
     content: '';
     clear: both;
     display: block; }
-  div.buttons-bar.flex .button {
-    width: 100%; }
+  div.buttons-bar.flex {
+    display: flex !important; }
+    div.buttons-bar.flex .button {
+      width: 100%; }
   div.buttons-bar .button {
     font-size: inherit;
     float: left;

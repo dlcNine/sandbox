@@ -1,3 +1,4 @@
+/* ============ mandatory ============ */
 a, abbr, address, area, article, aside, audio, b,
 base, bdi, bdo, blockquote, body, br, button,
 canvas, caption, cite, code, col, colgroup, datalist,
@@ -243,8 +244,7 @@ span.snippet {
   display: inline-block;
   border-radius: 0.1875em;
   padding: 0em 0.375em;
-  background-color: #e6e6e6;
-  color: #e53c27; }
+  background-color: #e6e6e6; }
 
 /* ====================================================== */
 a.a:link {
@@ -1717,8 +1717,10 @@ div.buttons-bar {
     content: '';
     clear: both;
     display: block; }
-  div.buttons-bar.flex .button {
-    width: 100%; }
+  div.buttons-bar.flex {
+    display: flex !important; }
+    div.buttons-bar.flex .button {
+      width: 100%; }
   div.buttons-bar .button {
     font-size: inherit;
     float: left;
@@ -2150,9 +2152,6 @@ div.menu {
   border: 0.1rem solid #d7d7d7;
   border-radius: 0.4rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem #e6e6e6; }
-  div.menu .button {
-    margin-top: 0;
-    margin-bottom: 0; }
   div.menu div.menu-header, div.menu div.menu-item, div.menu div.menu-footer {
     background-color: white;
     padding: 1rem;

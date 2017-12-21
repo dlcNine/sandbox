@@ -13,11 +13,6 @@ div.menu {
   border-radius: $menu-radius;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem $menu-shadow-color;
 
-  .button {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
   div.menu-header, div.menu-item, div.menu-footer {
     background-color: $menu-item-background-color;
     padding: $menu-item-padding;
