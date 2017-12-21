@@ -2,9 +2,6 @@ div.menu {
   border: 0.1rem solid #d7d7d7;
   border-radius: 0.4rem;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem #e6e6e6; }
-  div.menu .button {
-    margin-top: 0;
-    margin-bottom: 0; }
   div.menu div.menu-header, div.menu div.menu-item, div.menu div.menu-footer {
     background-color: white;
     padding: 1rem;
