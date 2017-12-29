@@ -15,10 +15,6 @@ div.card {
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem $card-shadow-color;
   background-color: $card-background-color;
 
-  hr {
-    border-color: $card-border-color;
-  }
-
   div.card-header, div.card-content, div.card-footer {
     padding: $card-item-padding;
 
@@ -39,11 +35,14 @@ div.card {
   }
 
   div.card-content {
-    border-radius: $card-content-radius;
+    border-bottom: 0.1rem solid $card-border-color;
+
+    &:only-child {
+      border-radius: $card-content-radius;
+    }
   }
 
   div.card-footer {
     border-radius: $card-footer-radius;
-    border-top: 0.1rem solid $card-border-color;
   }
 }
