@@ -1,19 +1,24 @@
 @import "../colors.scss";
 
 $code-background-color: $white-gray;
-$code-padding: 0.75em 0.75em 0.75em 1em;
+$code-padding: 1.5em 1.5em 1.5em 1.75em;
+$code-radius: 0.25em;
+$code-box-shadow: 0em 0em 0.125em 0.0625em $medium-white inset;
 $code-line-color: $medium-black;
 $code-line-margin: 0.375em 0em 0.375em 0.875em;
-$code-line-hover-background-color: $medium-white;
 $code-line-number-color: $light-gray;
-$code-line-hover-line-number-color: $light-black;
+$code-line-number-margin-left: 0.5em;
+$code-line-hover-line-number-color: $white-black;
+$code-nested-margin-left: 1em; 
 $code-nested-border-color: $light-gray;
 
 ol.code {
   font-family: menlo, monaco, monospace;
   background-color: $code-background-color;
+  box-shadow: $code-box-shadow;
   counter-reset: line-number 0;
   padding: $code-padding;
+  border-radius: $code-radius;
   line-height: 1;
   position: relative;
 
@@ -25,21 +30,18 @@ ol.code {
     &::before {
       position: absolute;
       left: 0;
+      margin-left: $code-line-number-margin-left;
       color: $code-line-number-color;
       content: counter(line-number);
     }
 
-    &:hover {
-      background-color: $code-line-hover-background-color;
-
-      &::before {
-        color: $code-line-hover-line-number-color;
-      }
+    &:hover::before {
+      color: $code-line-hover-line-number-color;
     }
   }
 
   & ol.code-nested, ol.code-nested ol.code-nested {
-    margin-left: 1em;
+    margin-left: $code-nested-margin-left;
     border-left: 0.1rem solid $code-nested-border-color;
   }
 }
