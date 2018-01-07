@@ -1,7 +1,7 @@
 {
   "name": "sandbox",
   "version": "0.1.0",
-  "description": "A responsive css framework centered on ease of use and scalability.",
+  "description": "A responsive, scalable, and easy to use CSS framework.",
   "main": "scss/sandbox.scss",
   "scripts": {
     "test": "echo \"This is a test\"",
