@@ -1,0 +1,26 @@
+.background-lred { background-color: rgb(242, 85, 65); }
+.background-mred { background-color: rgb(229, 60, 39); }
+.background-lyellow { background-color: rgb(244, 244, 73); }
+.background-myellow { background-color: rgb(232, 232, 25); }
+.background-lgreen { background-color: rgb(98, 214, 72); }
+.background-mgreen { background-color: rgb(84, 196, 58); }
+.background-lblue { background-color: rgb(84, 171, 247); }
+.background-mblue { background-color: rgb(62, 157, 239); }
+
+.background-lwhite { background-color: rgb(245, 245, 245); }
+.background-mwhite { background-color: rgb(230, 230, 230); }
+.background-lgray { background-color: rgb(216, 216, 216); }
+.background-mgray { background-color: rgb(191, 191, 191); }
+.background-lblack { background-color: rgb(99, 99, 99); }
+.background-mblack { background-color: rgb(76, 76, 76); }
+
+
+.rds-rounded { border-radius: 0.4rem; }
+
+.filler { height: 2.4rem; }
+
+.demo-box {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+

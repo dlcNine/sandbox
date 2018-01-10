@@ -7,7 +7,8 @@
     "test": "echo \"This is a test\"",
     "build-compressed": "scss scss/sandbox.scss dist/sandbox-min.css --style compressed",
     "build-autoprefix": "node_modules/.bin/postcss dist/sandbox-min.css --use autoprefixer --map true --output dist/sandbox-min.css",
-    "build": "npm run build-compressed && npm run build-autoprefix"
+    "copy-to-docs": "cp dist/sandbox-min.css docs/css/",
+    "build": "npm run build-compressed && npm run build-autoprefix && npm run copy-to-docs"
   },
   "repository": {
     "type": "git",
