@@ -103,7 +103,7 @@
     <div class="container pad-t-4 pad-b-4">
       <div class="small-12 push-2-medium medium-8 large-4 text-x-center">
         <h2 class="tc h2">Modular</h2>
-        <p class="tc p">Sandbox is written in SCSS and is structured so you can choose what you'll use.</p>
+        <p class="tc p">Sandbox is written in SCSS and is structured so that you can choose what you'll use.</p>
       </div>
       <div class="small-12 push-2-medium medium-8 large-4 text-x-center">
         <h2 class="tc h2">Customizable</h2>
@@ -121,30 +121,67 @@
     
   </div>
   <div class="pad-2">
-    <div class="container">
+    <div class="container pad-t-4 pad-b-4">
       <div class="default-12 large-6">
-        <div class="message theme-caution mgn-t-0">
+        <div class="message theme-info mgn-t-0">
           <div class="message-header">
-            <p class="t p">Caution message</p>
+            <p class="t p">Pro tip</p>
           </div>
           <div class="message-body">
-            <p class="t p-alt">Hey Einstein, I'm on your side!</p>
+            <p class="t p-alt">Licking doorknobs is illegal on other planets.</p>
           </div>
         </div>
       </div>
       <div class="default-12 large-6">
         <ol class="code t p-alt">
-          <li class="line"><span class="text-blue">&ltdiv</span> <span class="text-green">class=</span><span class="text-red">"message theme-caution"</span><span class="text-blue">&gt</span></li>
+          <li class="line">
+            <span class="text-blue">&ltdiv</span> 
+            <span class="text-violet">class=</span><span class="text-indigo">"message theme-info"</span><span class="text-blue">&gt</span>
+          </li>
           <ol class="code-nested">
-            <li class="line">&ltdiv class="message-header"&gt</li>
+            <li class="line">
+              <span class="text-blue">&ltdiv</span>
+              <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+            </li>
             <ol class="code-nested">
-              <li class="line">&ltp class="t p"&gtCaution message&lt/p&gt</li>
+              <li class="line">
+                <span class="text-blue">&ltp</span>
+                <span class="text-violet">class=</span>
+                <span class="text-indigo">"t p"</span>
+                <span class="text-blue">&gt</span>Pro tip
+                <span class="text-blue">&lt/p&gt</span>
+              </li>
             </ol>
-            <li class="line">&lt/div&gt</li>
-            <li class="line">&ltdiv class="message-body"&gt</li>
+            <li class="line"><span class="text-blue">&lt/div&gt</span></li>
+            <li class="line"><span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span></li>
             <ol class="code-nested">
-              <li class="line">&ltp class="t p-alt"&gtHey Einstein, I'm on your side!&lt/p&gt</li>
+              <li class="line"><span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Licking doorknobs is illegal on other planets.<span class="text-blue">&lt/p&gt</span></li>
             </ol>
+            <li class="line"><span class="text-blue">&lt/div&gt</span></li>
+          </ol>
+          <li class="line"><span class="text-blue">&lt/div&gt</span></li>
+        </ol>
+      </div>
+    </div>
+    <div class="container">
+      <div class="default-12 large-6">
+        <div class="message theme-danger mgn-t-0">
+          <div class="message-header flex flex-between flex-cross-center">
+            <p class="t p">Running low on bread and milk!</p>
+            <button class="close h3 theme-dark no-background no-shadow"></button>
+          </div>
+        </div>
+      </div>
+      <div class="default-12 large-6">
+        <ol class="code t p-alt">
+          <li class="line">&ltdiv class="message theme-danger"&gt</li>
+          <ol class="code-nested">
+            <li class="line">&ltdiv class="message-header flex flex-between flex-cross-center"&gt</li>
+            <ol class="code-nested">
+              <li class="line">&ltp class="t p"&gtRunning low on bread and milk!&lt/p&gt</li>
+              <li class="line">&ltbutton class="close h3 theme-dark no-background no-shadow"&gt&lt/button&gt</li>
+            </ol>
+
             <li class="line">&lt/div&gt</li>
           </ol>
           <li class="line">&lt/div&gt</li>
@@ -152,6 +189,8 @@
         
       </div>
     </div>
+
+
   </div>
   <div class="banner size-large"></div>
 
