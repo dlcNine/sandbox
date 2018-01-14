@@ -1,5 +1,13 @@
 .relative {
-  position: relative;
+  position: relative !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.absolute {
+  position: absolute !important;
 }
 
 *[class*="position-"] {

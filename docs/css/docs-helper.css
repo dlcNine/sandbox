@@ -1,26 +1,25 @@
-.background-lred { background-color: rgb(242, 85, 65); }
-.background-mred { background-color: rgb(229, 60, 39); }
+.demo-lred { background-color: rgb(242, 85, 65); }
+.demo-mred { background-color: rgb(229, 60, 39); }
+.demo-lorange { background-color: rgb(239, 191, 47); }
+.demo-morange { background-color: rgb(226, 175, 22); }
+.demo-lyellow { background-color: rgb(244, 244, 73); }
+.demo-myellow { background-color: rgb(232, 232, 25); }
+.demo-lgreen { background-color: rgb(98, 214, 72); }
+.demo-mgreen { background-color: rgb(84, 196, 58); }
+.demo-lblue { background-color: rgb(84, 171, 247); }
+.demo-mblue { background-color: rgb(62, 157, 239); }
 
-.background-lorange { background-color: rgb(239, 191, 47); }
-.background-morange { background-color: rgb(226, 175, 22); }
-.background-lyellow { background-color: rgb(244, 244, 73); }
-.background-myellow { background-color: rgb(232, 232, 25); }
-.background-lgreen { background-color: rgb(98, 214, 72); }
-.background-mgreen { background-color: rgb(84, 196, 58); }
-.background-lblue { background-color: rgb(84, 171, 247); }
-.background-mblue { background-color: rgb(62, 157, 239); }
-
-.background-lwhite { background-color: rgb(245, 245, 245); }
-.background-mwhite { background-color: rgb(230, 230, 230); }
-.background-lgray { background-color: rgb(216, 216, 216); }
-.background-mgray { background-color: rgb(191, 191, 191); }
-.background-lblack { background-color: rgb(99, 99, 99); }
-.background-mblack { background-color: rgb(76, 76, 76); }
+.demo-lwhite { background-color: rgb(245, 245, 245); }
+.demo-mwhite { background-color: rgb(230, 230, 230); }
+.demo-lgray { background-color: rgb(216, 216, 216); }
+.demo-mgray { background-color: rgb(191, 191, 191); }
+.demo-lblack { background-color: rgb(99, 99, 99); }
+.demo-mblack { background-color: rgb(76, 76, 76); }
 
 
-.rds-rounded { border-radius: 0.4rem; }
+.demo-rds-rounded { border-radius: 0.4rem; }
 
-.filler { height: 2.4rem; }
+.demo-filler { height: 2.4rem; }
 
 .demo-box {
   height: 2.4rem;

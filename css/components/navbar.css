@@ -2,7 +2,7 @@ div.navbar {
   padding: 1.2rem; }
   div.navbar.fixed-top {
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     top: 0;
     width: 100%; }
   div.navbar div.navbar-item {
