@@ -29,3 +29,24 @@
 .demo-card-header-height {
   height: 25rem;
 }
+
+.demo-navbar-menu-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.demo-navbar-menu-link:active, .demo-navbar-menu-link:focus {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

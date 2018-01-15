@@ -6,15 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sandbox</title>
-  <!-- Sandbox css -->
-  {% include sandbox-include.html %}
-  <!-- docs-helper css -->
-  {% include docs-helper-include.html %}
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- css includes -->
+  {% include css-links.html %}
 </head>
 <body>
-  <div class="pad-2 pad-t-4 pad-b-4 mgn-b-4">
+  <div class="pad-2 pad-t-3 pad-b-4 mgn-b-4">
     <h1 class="tc huge-1 text-x-center">Sandbox</h1>
     <div class="container">
       <div class="small-12 default-6">
@@ -25,13 +21,21 @@
       <div class="small-12 default-6">
         <div class="container-buttons">
           <div class="default-12">
-            <a href="" class="button h2 theme-primary">Get Sandbox</a>
+            <a href="" class="button h2 theme-primary">
+              Get Sandbox
+            </a>
           </div>
           <div class="default-12">
-            <a href="" class="button h2 theme-info">Docs</a>
+            <a href=" {{ 'docs/overview.html' | absolute_url }}" class="button h2 theme-info">
+              <i class="fa fa-book"></i>
+              Docs
+            </a>
           </div>
           <div class="default-12">
-            <a href="https://github.com/dlcNine/sandbox" target="_blank" class="button h2 theme-dark">Github</a>
+            <a href="https://github.com/dlcNine/sandbox" target="_blank" class="button h2 theme-dark">
+              <i class="fa fa-github"></i>
+              Github
+            </a>
           </div>
         </div>
       </div>
@@ -93,7 +97,7 @@
       </div>
       <div class="large-4 default-12">
         <h2 class="tc h2">Responsive</h2>
-        <p class="tc p">The grid classes, a variety of the utility classes, and the typography classes are responsive (so that component and text sizes can be set per breakpoint).</p>
+        <p class="tc p">The grid classes, a variety of the utility classes, and the font-size classes are responsive (so that component and text sizes can be set per breakpoint).</p>
       </div>
     </div>
     <hr>
@@ -252,7 +256,7 @@
     <h2 class="t h2 text-white">Versatile</h2>
   </div>
   <div class="pad-2">
-    <div class="container">
+    <div class="container pad-b-4">
       <div class="mgn-t-3 mgn-b-4 text-x-center">
         <h2 class="tc h2">Play your way</h2>
         <p class="tc p">Combine components and utilities to create all kinds of things.</p>
@@ -267,7 +271,10 @@
               <p class="help absent">(555)867-5309</p>
             </div>
             <div class="field">
-              <label for="" class="label">Password</label>
+              <div>
+                <label for="" class="label">Password</label>
+                <a href="" class="a t h5 to-right">Forgot password?</a>
+              </div>
               <input type="password" name="password" class="textfield">
               <p class="help absent">Use a remembrall</p>
             </div>
@@ -397,41 +404,19 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="default-12">
-        <div class="box no-shadow pad-b-0 pad-l-0 pad-r-0">
-          <div class="flex flex-around tc p mgn-b-1">
-            <span class="">
-              <i class="fa fa-clock-o"></i>
-              271 commits
-            </span>
-            <span class="">
-              <i class="fa fa-share-alt"></i>
-              2 branches
-            </span>
-            <span class="">
-              <i class="fa fa-tag"></i>
-              1 release
-            </span>
-            <span class="">
-              <i class="fa fa-users"></i>
-              1 contributor
-            </span>
-          </div>
-          <div class="progress-bar h6 mgn-b-0 rds-tl-0 rds-tr-0">
-            <div class="progress theme-primary rds-br-0" style="width: 33.3333%;">
-            </div>
-            <div class="progress theme-danger rds-bl-0 rds-br-0" style="width: 33.3333%;">
-            </div>
-            <div class="progress theme-caution rds-bl-0" style="width: 33.3333%;">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-  <div class="banner size-large">
-    
+  <div class="pad-2">
+    <h2 class="tc h2 text-x-center mgn-b-1">Build your castle</h2>
+      <div class="flex flex-center">
+        <a href="" class="button theme-primary h2 h3-small">Get Sandbox</a>
+        <a href=" {{ 'docs/overview.html' | absolute_url }} " class="button theme-info h2 h3-small">
+          <i class="fa fa-book"></i>
+          Docs
+        </a>
+      </div>
+  </div>
+  <div class="banner size-medium demo-mblack relative">
+    <p class="t p text-white text-thin text-gray position-center-center">Sandbox. Built by dlcNine.</p>
   </div>
 
 
