@@ -6,7 +6,7 @@ ul.list-menu li.list-item, ul.list-menu li.list-label {
   border-radius: 0.125em; }
   ul.list-menu li.list-item a.list-a, ul.list-menu li.list-label a.list-a {
     display: block;
-    padding: 0.1875em 0.875em;
+    padding: 0.25em 0.875em;
     color: inherit;
     text-decoration: none; }
     ul.list-menu li.list-item a.list-a:hover, ul.list-menu li.list-item a.list-a:focus, ul.list-menu li.list-label a.list-a:hover, ul.list-menu li.list-label a.list-a:focus {
@@ -21,6 +21,8 @@ ul.list-menu li.list-item, ul.list-menu li.list-label {
 ul.list-menu li.list-label {
   font-weight: bold;
   color: #636363; }
+  ul.list-menu li.list-label a.list-a {
+    padding: 0.5em 0.875em; }
 ul.list-menu.theme-light li.list-item:not(.active) a.list-a:hover,
 ul.list-menu.theme-light li.list-label:not(.active) a.list-a:hover {
   color: #383838; }
@@ -32,20 +34,18 @@ ul.list-menu.theme-light li.list-label:not(.active):hover {
   background-color: rgba(245, 245, 245, 0.9); }
 ul.list-menu.theme-light li.list-item:not(.active) {
   color: #4c4c4c; }
-ul.list-menu.theme-dark {
-  background-color: #4c4c4c; }
-  ul.list-menu.theme-dark hr {
-    border-color: #939393; }
-  ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover, ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:focus,
-  ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover,
-  ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:focus {
-    color: white; }
-  ul.list-menu.theme-dark li.list-item:not(.active):hover,
-  ul.list-menu.theme-dark li.list-label:not(.active):hover {
-    background-color: rgba(99, 99, 99, 0.6); }
-  ul.list-menu.theme-dark li.list-item:not(.active) {
-    color: #bfbfbf; }
-  ul.list-menu.theme-dark li.list-label:not(.active) {
-    color: #d8d8d8; }
+ul.list-menu.theme-dark hr {
+  border-color: #939393; }
+ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover, ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:focus,
+ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover,
+ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:focus {
+  color: white; }
+ul.list-menu.theme-dark li.list-item:not(.active):hover,
+ul.list-menu.theme-dark li.list-label:not(.active):hover {
+  background-color: rgba(99, 99, 99, 0.6); }
+ul.list-menu.theme-dark li.list-item:not(.active) {
+  color: #bfbfbf; }
+ul.list-menu.theme-dark li.list-label:not(.active) {
+  color: #d8d8d8; }
 
 /*# sourceMappingURL=list-menu.css.map */
