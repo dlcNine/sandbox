@@ -1,6 +1,6 @@
 <div class="navbar demo-lblue relative">
   <div class="navbar-item">
-    <a href="" id="side-menu-button" class="t h4 demo-navbar-menu-link">
+    <a href="" id="demo-side-menu-button" class="t h4 demo-navbar-menu-link">
       <span class="icon">
         <i class="fa fa-bars"></i></span>
       Menu
@@ -11,13 +11,13 @@
   </div>
 </div>
 <script>
-  const sideMenuButton = document.querySelector("#side-menu-button");
-  sideMenuButton.addEventListener("click", function(event){
+  const demoSideMenuButton = document.querySelector("#demo-side-menu-button");
+  demoSideMenuButton.addEventListener("click", function(event){
     event.preventDefault();
-    const sideMenu = document.querySelector("#side-menu");
-    if (sideMenu.classList.contains("side-menu-reveal"))
-      sideMenu.classList.remove("side-menu-reveal");
+    const demoSideMenu = document.querySelector("#demo-side-menu");
+    if (demoSideMenu.classList.contains("demo-side-menu-reveal"))
+      demoSideMenu.classList.remove("demo-side-menu-reveal");
     else 
-      sideMenu.classList.add("side-menu-reveal");
+      demoSideMenu.classList.add("demo-side-menu-reveal");
   });
 </script>
