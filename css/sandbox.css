@@ -2466,21 +2466,19 @@ ul.list-menu.theme-light li.list-label:not(.active):hover {
   background-color: rgba(245, 245, 245, 0.9); }
 ul.list-menu.theme-light li.list-item:not(.active) {
   color: #4c4c4c; }
-ul.list-menu.theme-dark {
-  background-color: #4c4c4c; }
-  ul.list-menu.theme-dark hr {
-    border-color: #939393; }
-  ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover, ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:focus,
-  ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover,
-  ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:focus {
-    color: white; }
-  ul.list-menu.theme-dark li.list-item:not(.active):hover,
-  ul.list-menu.theme-dark li.list-label:not(.active):hover {
-    background-color: rgba(99, 99, 99, 0.6); }
-  ul.list-menu.theme-dark li.list-item:not(.active) {
-    color: #bfbfbf; }
-  ul.list-menu.theme-dark li.list-label:not(.active) {
-    color: #d8d8d8; }
+ul.list-menu.theme-dark hr {
+  border-color: #939393; }
+ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:hover, ul.list-menu.theme-dark li.list-item:not(.active) a.list-a:focus,
+ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:hover,
+ul.list-menu.theme-dark li.list-label:not(.active) a.list-a:focus {
+  color: white; }
+ul.list-menu.theme-dark li.list-item:not(.active):hover,
+ul.list-menu.theme-dark li.list-label:not(.active):hover {
+  background-color: rgba(99, 99, 99, 0.6); }
+ul.list-menu.theme-dark li.list-item:not(.active) {
+  color: #bfbfbf; }
+ul.list-menu.theme-dark li.list-label:not(.active) {
+  color: #d8d8d8; }
 
 div.banner {
   height: 12rem; }

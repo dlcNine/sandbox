@@ -11,7 +11,6 @@ $list-item-active-hover-color: $light-white;
 $list-item-active-background-color: $medium-blue-thick;
 $list-label-color: $light-black;
 $list-label-padding: 0.5em 0.875em;
-$list-menu-dark-background-color: $medium-black;
 
 ul.list-menu {
   &.indent-sublists ul.list-menu, 
@@ -81,7 +80,6 @@ ul.list-menu {
   }
 
   &.theme-dark {
-    background-color: $list-menu-dark-background-color;
     
     hr {
       border-color: $dark-gray;
