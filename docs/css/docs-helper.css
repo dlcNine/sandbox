@@ -39,6 +39,14 @@
   text-decoration: none;
 }
 
+div#side-menu {
+  transform: translate(-100%, 0%);
+  transition: transform 500ms;
+}
+
+.side-menu-reveal {
+  transform: translate(0%, 0%) !important;
+}
 
 
 

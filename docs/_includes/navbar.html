@@ -1,0 +1,23 @@
+<div class="navbar demo-lblue relative">
+  <div class="navbar-item">
+    <a href="" id="side-menu-button" class="t h4 demo-navbar-menu-link">
+      <span class="icon">
+        <i class="fa fa-bars"></i></span>
+      Menu
+    </a>
+  </div>
+  <div class="navbar-item position-center-center">
+    <h1 class="t h3 text-white">Sandbox</h1>
+  </div>
+</div>
+<script>
+  const sideMenuButton = document.querySelector("#side-menu-button");
+  sideMenuButton.addEventListener("click", function(event){
+    event.preventDefault();
+    const sideMenu = document.querySelector("#side-menu");
+    if (sideMenu.classList.contains("side-menu-reveal"))
+      sideMenu.classList.remove("side-menu-reveal");
+    else 
+      sideMenu.classList.add("side-menu-reveal");
+  });
+</script>
