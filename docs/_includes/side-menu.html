@@ -1,6 +1,6 @@
-<div id="side-menu" class="fixed small-10 medium-5 large-3 demo-mblack height-1 z-30 pad-2 overflow-auto">
-  <button id="side-menu-close" class="close to-right theme-dark h2"></button>
-  <ul class="t h4 list-menu indent-sublists theme-dark mgn-t-4">
+<div id="demo-side-menu" class="fixed small-10 medium-5 large-3 demo-mblack height-1 z-30 pad-2 overflow-auto">
+  <button id="demo-side-menu-close" class="close to-right theme-dark h2 mgn-b-1"></button>
+  <ul class="t h4 list-menu indent-sublists theme-dark mgn-t-1">
     <li class="list-label">
       <a href="" class="list-a">Basics</a>
     </li>
@@ -178,9 +178,38 @@
   </ul>
 </div>
 <script>
-  const sideMenu = document.querySelector("#side-menu");
-  const sideMenuClose = document.querySelector("#side-menu-close");
-  sideMenuClose.addEventListener("click", function(){
-    sideMenu.classList.remove("side-menu-reveal");
+  const demoSideMenu = document.querySelector("#demo-side-menu");
+  const demoSideMenuClose = document.querySelector("#demo-side-menu-close");
+  const demoSideMenuLabelAnchors = document.querySelectorAll("div#demo-side-menu li.list-label a.list-a");
+
+  // remove demo-side-menu from being in frame
+  demoSideMenuClose.addEventListener("click", function(){
+    demoSideMenu.classList.remove("demo-side-menu-reveal");
   });
+
+  // toggle display of sublists
+  demoSideMenuLabelAnchors.forEach(function(anchor){
+    anchor.addEventListener("click", function(event){
+      event.preventDefault();
+      const nextListMenu = anchor.parentElement.nextElementSibling;
+      if (!nextListMenu.classList.contains("absent"))
+        nextListMenu.classList.add("absent");
+      else
+        nextListMenu.classList.remove("absent");
+    });
+  });
+
+
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
