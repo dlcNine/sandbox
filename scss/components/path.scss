@@ -1,11 +1,13 @@
 @import "../colors.scss";
 
 $path-color: $link-unvisited;
-$path-separator-padding: 0em 0.25em;
+$path-padding: 0.5em;
+$path-separator-padding: 0em 0.125em;
 $path-separator-color: $light-black;
 
 ul.path {
   line-height: 1;
+  padding: $path-padding;
 
   li.step {
     display: inline;

@@ -6,6 +6,7 @@ $code-border: 0.1rem solid $medium-white;
 $code-radius: 0.25em;
 $code-line-color: $medium-black;
 $code-line-margin: 0.375em 0em 0.375em 0.875em;
+$code-line-height: 1.2;
 $code-line-number-color: $light-gray;
 $code-line-number-margin-left: 0.5em;
 $code-line-hover-line-number-color: $white-black;
@@ -19,7 +20,7 @@ ol.code {
   padding: $code-padding;
   border: $code-border;
   border-radius: $code-radius;
-  line-height: 1;
+  line-height: $code-line-height;
   position: relative;
 
   li.line {
