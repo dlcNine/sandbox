@@ -10,5 +10,11 @@ img.responsive {
 img.fill-width {
   width: 100%;
   height: auto; }
+img.fit-contain {
+  object-fit: contain; }
+img.fit-cover {
+  object-fit: cover; }
+img.fit-none {
+  object-fit: none; }
 
 /*# sourceMappingURL=img.css.map */
