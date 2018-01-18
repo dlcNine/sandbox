@@ -1,4 +1,4 @@
 # sandbox
-A responsive CSS framework centered around floated elements, the position property, and relative units (rem and em).
+A responsive, lightweight and easy to use CSS framework.
 
 Documentation coming soon. 

@@ -1,4 +1,6 @@
 ul.ul {
+  line-height: 1.5;
+
   &.square {
     list-style: square inside;
   }
@@ -13,6 +15,7 @@ ul.ul {
 }
 
 ol.ol {
+  line-height: 1.5;
 
   &.numbers {
     list-style: decimal inside;

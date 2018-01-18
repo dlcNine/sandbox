@@ -1,0 +1,105 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-Reset</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side menu -->
+  {% include side-menu.html %}
+  <!-- side menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center pad-4 pad-3-small">Reset</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="large-8 default-12">
+        <h2 class="tc h2">Description</h2>
+        <p class="tc p mgn-b-1">Sandbox has its own reset.scss file which is used to reduce styling inconsistencies between browsers.</p>
+        <p class="tc p">Most notably you'll see that the root element, <span class="snippet text-blue">html</span>, has its font-size property set to 62.5%. Here's why:</p>
+        <div class="pad-1">
+          <p class="tc p mgn-b-1">Most browsers have a default font-size of 16px. Since Sandbox uses rem units, the default 1rem would be equal to 16px.</p>
+          <p class="tc p mgn-b-2">Working in units of 16 is not very easy. It'd be much easier to work in units of 10.</p>
+          <p class="tc p text-x-center mgn-b-2"><span class="snippet">62.5% of 16 is equal to 10</span></p>
+          <p class="tc p">Now when we use 1rem it will be equal to 10px, which saves us a fair amount of headache.</p>
+        </div>
+        <p class="tc p">Also note that <span class="snippet text-blue">html</span> sets its height to 100% (of the viewport) and <span class="snippet text-blue">body</span> sets its height to 100% (of <span class="snippet text-blue">html</span>). This comes into play when using the height utilities.
+      </div>
+      <div class="large-4 default-12">
+        <ol class="code mgn-t-1 p-alt">
+          <li class="line"><span class="text-gray">// inside reset.scss</span></li>
+          <li class="line"><span class="text-blue">html</span> {</li>
+          <ol class="code-nested">
+            <li class="line"><span class="text-green">font-size:</span> 62.5%;</li>
+            <li class="line"><span class="text-green">height:</span> 100%;</li>
+          </ol>
+          <li class="line">}</li>
+          <li class="line"><span class="text-blue">body</span> {</li>
+          <ol class="code-nested">
+            <li class="line"><span class="text-green">line-height:</span> 1;</li>
+            <li class="line"><span class="text-green">height:</span> 100%;</li>
+          </ol>
+          <li class="line">}</li>
+        </ol>
+      </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="" class="button p theme-dark mgn-0">previous</a>
+      <a href="{{ 'docs/basics/typography.html' | absolute_url }}"class="button p theme-dark mgn-0">next</a>
+    </div>
+
+
+
+  <!-- end div.pad-4 -->
+  </div>
+
+    
+
+
+      
+
+</body>
+</html>

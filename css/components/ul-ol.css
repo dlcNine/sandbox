@@ -1,20 +1,24 @@
-ul.ul.square {
-  list-style: square inside; }
-ul.ul.circle-solid {
-  list-style: disc inside; }
-ul.ul.circle-hollow {
-  list-style: circle inside; }
+ul.ul {
+  line-height: 1.5; }
+  ul.ul.square {
+    list-style: square inside; }
+  ul.ul.circle-solid {
+    list-style: disc inside; }
+  ul.ul.circle-hollow {
+    list-style: circle inside; }
 
-ol.ol.numbers {
-  list-style: decimal inside; }
-ol.ol.alpha-lower {
-  list-style: lower-alpha inside; }
-ol.ol.alpha-upper {
-  list-style: upper-alpha inside; }
-ol.ol.roman-lower {
-  list-style: lower-roman inside; }
-ol.ol.roman-upper {
-  list-style: upper-roman inside; }
+ol.ol {
+  line-height: 1.5; }
+  ol.ol.numbers {
+    list-style: decimal inside; }
+  ol.ol.alpha-lower {
+    list-style: lower-alpha inside; }
+  ol.ol.alpha-upper {
+    list-style: upper-alpha inside; }
+  ol.ol.roman-lower {
+    list-style: lower-roman inside; }
+  ol.ol.roman-upper {
+    list-style: upper-roman inside; }
 
 ul.ul ul.ul, ul.ul ol.ol,
 ol.ol ol.ol, ol.ol ul.ul {

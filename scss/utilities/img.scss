@@ -24,4 +24,16 @@ img {
     width: 100%;
     height: auto;
   }
+
+  &.fit-contain {
+    object-fit: contain;
+  }
+
+  &.fit-cover {
+    object-fit: cover;
+  }
+
+  &.fit-none {
+    object-fit: none;
+  }
 }

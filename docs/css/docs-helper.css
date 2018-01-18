@@ -11,11 +11,13 @@
 
 .demo-lwhite { background-color: rgb(245, 245, 245); }
 .demo-mwhite { background-color: rgb(230, 230, 230); }
+
+.demo-wgray { background-color: rgb(249, 249, 249); }
 .demo-lgray { background-color: rgb(216, 216, 216); }
 .demo-mgray { background-color: rgb(191, 191, 191); }
+
 .demo-lblack { background-color: rgb(99, 99, 99); }
 .demo-mblack { background-color: rgb(76, 76, 76); }
-
 
 .demo-rds-rounded { border-radius: 0.4rem; }
 

@@ -43,7 +43,6 @@ html {
 
 body {
   line-height: 1;
-  font-size: 100%;
   height: 100%; }
 
 ol, ul {
@@ -1116,6 +1115,12 @@ img.responsive {
 img.fill-width {
   width: 100%;
   height: auto; }
+img.fit-contain {
+  object-fit: contain; }
+img.fit-cover {
+  object-fit: cover; }
+img.fit-none {
+  object-fit: none; }
 
 /* ============ layout ============ */
 div[class*="small-"], div[class*="medium-"],
@@ -2877,23 +2882,27 @@ ul.path {
       ul.path li.step a.path-a:hover, ul.path li.step a.path-a:focus {
         text-decoration: underline; }
 
-ul.ul.square {
-  list-style: square inside; }
-ul.ul.circle-solid {
-  list-style: disc inside; }
-ul.ul.circle-hollow {
-  list-style: circle inside; }
+ul.ul {
+  line-height: 1.5; }
+  ul.ul.square {
+    list-style: square inside; }
+  ul.ul.circle-solid {
+    list-style: disc inside; }
+  ul.ul.circle-hollow {
+    list-style: circle inside; }
 
-ol.ol.numbers {
-  list-style: decimal inside; }
-ol.ol.alpha-lower {
-  list-style: lower-alpha inside; }
-ol.ol.alpha-upper {
-  list-style: upper-alpha inside; }
-ol.ol.roman-lower {
-  list-style: lower-roman inside; }
-ol.ol.roman-upper {
-  list-style: upper-roman inside; }
+ol.ol {
+  line-height: 1.5; }
+  ol.ol.numbers {
+    list-style: decimal inside; }
+  ol.ol.alpha-lower {
+    list-style: lower-alpha inside; }
+  ol.ol.alpha-upper {
+    list-style: upper-alpha inside; }
+  ol.ol.roman-lower {
+    list-style: lower-roman inside; }
+  ol.ol.roman-upper {
+    list-style: upper-roman inside; }
 
 ul.ul ul.ul, ul.ul ol.ol,
 ol.ol ol.ol, ol.ol ul.ul {
