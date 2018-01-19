@@ -57,7 +57,7 @@
 
 
 .demo-swatch {
-  height: 8.4rem;
+  height: 9.6rem;
 }
 
 .demo-filler { height: 2.4rem; }
@@ -82,7 +82,7 @@
 
 div#demo-side-menu {
   transform: translate(-100%, 0%);
-  transition: transform 500ms;
+  transition: transform 400ms;
 }
 
 .demo-side-menu-reveal {
