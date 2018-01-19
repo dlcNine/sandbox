@@ -56,6 +56,8 @@ table.table {
     text-decoration: underline; }
     table.table th a.table-a:hover, table.table th a.table-a:focus, table.table td a.table-a:hover, table.table td a.table-a:focus {
       color: #2771d1; }
+  table.table tr {
+    background-color: white; }
   table.table tr.theme-primary {
     color: #f4faff;
     background-color: #3e9def !important; }
