@@ -60,11 +60,26 @@
   height: 9.6rem;
 }
 
-.demo-filler { height: 2.4rem; }
+.demo-zeroing-pad {
+  padding: 4.8rem;
+}
+
+.demo-zeroing-mgn {
+  margin: 4.8rem;
+}
+
+.demo-zeroing-bdr {
+  border: 0.4rem solid rgb(84, 171, 247);
+  background-color: rgb(229, 60, 39);
+}
+
+.demo-zeroing-rds {
+  border-radius: 0.75em;
+}
 
 .demo-box {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 4.8rem;
+  width: 4.8rem;
 }
 
 .demo-card-header-height {
