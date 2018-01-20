@@ -101,6 +101,10 @@ table.table {
     }
   }
 
+  tr {
+    background-color: $white;
+  }
+
   tr.theme-primary {
     color: $white-blue;
     background-color: $medium-blue !important;

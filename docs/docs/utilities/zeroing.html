@@ -1,0 +1,217 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-Zeroing</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Zeroing</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background text-indigo">.pad-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.pad-t-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.pad-b-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.pad-l-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.pad-r-0</span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background text-indigo">.mgn-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.mgn-t-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.mgn-b-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.mgn-l-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.mgn-r-0</span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background text-indigo">.bdr-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.bdr-t-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.bdr-b-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.bdr-l-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.bdr-r-0</span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background text-indigo">.rds-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.rds-tl-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.rds-tr-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.rds-bl-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.rds-br-0</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.rds-inherit</span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li><span class="snippet no-background text-indigo">.no-background</span></li>
+              <li><span class="snippet no-background text-indigo">.no-shadow</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">Above, <span class="snippet p-alt text-indigo">.pad</span> stands for padding, <span class="snippet p-alt text-indigo">.mgn</span> stands for margin, <span class="snippet p-alt text-indigo">.bdr</span> stands for border, and <span class="snippet p-alt text-indigo">.rds</span> stands for radius (referring to the border-radius property). The t stands for top, b for bottom, l for left, and r for right.</p>
+      <p class="tc p mgn-b-1">The zeroing classes all follow a similar pattern. Using one of the classes without specifying a side, (t, b, l, r), will zero out all sides. If you want to zero out multiple specific sides, simply apply mutliple classes with the desired sides.</p>
+    </div>
+    <div class="container">
+      <div class="default-12 large-6 mgn-b-2">
+        <h2 class="tc h2">Padding playground</h2>
+        <p class="tc p mgn-b-1">Open up the developer tools and inspect the blue box below. Find the .cls tab and toggle the <span class="snippet p-alt text-indigo">.pad-*</span> classes to see their effects.</p>
+        <div class="demo-zeroing-pad pad-0 pad-t-0 pad-b-0 pad-l-0 pad-r-0 demo-lblue demo-rds-1 clearfix">
+          <div class="demo-box demo-mblack demo-rds-1 to-right"></div>
+          <div class="demo-box demo-mred demo-rds-1"></div>
+        </div>
+      </div>
+      <div class="default-12 large-6 mgn-b-2">
+        <h2 class="tc h2">Margin playground</h2>
+        <p class="tc p mgn-b-1">Open up the developer tools and inspect the red box below. Find the .cls tab and toggle the <span class="snippet p-alt text-indigo">.mgn-*</span> classes to see their effects.</p>
+        <div class="demo-zeroing-pad pad-0 pad-t-0 pad-b-0 pad-l-0 pad-r-0 demo-lblue demo-rds-1 clearfix">
+          <div class="demo-box demo-mred demo-rds-1 to-left demo-zeroing-mgn mgn-0 mgn-t-0 mgn-b-0 mgn-l-0 mgn-r-0"></div>
+          <div class="demo-box demo-mblack demo-rds-1 to-left"></div>
+        </div>
+      </div>
+      <div class="default-12 large-6 mgn-b-2">
+        <h2 class="tc h2">Border playground</h2>
+        <p class="tc p mgn-b-1">Open up the developer tools and inspect the red box below. Find the .cls tab and toggle the <span class="snippet p-alt text-indigo">.bdr-*</span> classes to see their effects.</p>
+        <div class="flex flex-center">
+          <div class="demo-box demo-rds-1 demo-zeroing-bdr bdr-0 bdr-t-0 bdr-b-0 bdr-l-0 bdr-r-0"></div>
+        </div>
+      </div>
+      <div class="default-12 large-6 mgn-b-2">
+        <h2 class="tc h2">Radius playground</h2>
+        <p class="tc p mgn-b-1">Open up the developer tools and inspect the red box below. Find the .cls tab and toggle the <span class="snippet p-alt text-indigo">.rds-*</span> classes to see their effects.</p>
+        <div class="flex flex-center">
+          <div class="demo-box demo-zeroing-rds demo-mred rds-0 rds-tl-0 rds-tr-0 rds-bl-0 rds-br-0"></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Others</h2>
+      <div class="container">
+        <div class="small-12 medium-6 large-4">
+          <h3 class="tc h3"><span class="snippet p-alt text-indigo">.no-background</span></h3>
+          <p class="tc p">Use this class to set the background property to none.</p>
+        </div>
+        <div class="small-12 medium-6 large-4">
+          <h3 class="tc h3"><span class="snippet p-alt text-indigo">.no-shadow</span></h3>
+          <p class="tc p">Use this class to set the box-shadow property to none.</p>
+        </div>
+        <div class="small-12 medium-6 large-4">
+          <h3 class="tc h3"><span class="snippet p-alt text-indigo">.rds-inherit</span></h3>
+          <p class="tc p">Use this class to inherit the border-radius property from the parent.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="{{ 'docs/basics/typography.html' | absolute_url }}" class="button p theme-dark mgn-0">previous</a>
+      <a href="" class="button p theme-dark mgn-0">next</a>
+    </div>
+
+
+
+
+  </div>
+
+
+</body>
+</html>

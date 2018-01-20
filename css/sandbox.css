@@ -219,25 +219,6 @@ scale ratio : 1.3333
   .h6-large {
     font-size: 1rem !important; } }
 /* ====================================================== */
-.vw-1 {
-  font-size: 1vw !important; }
-
-.vw-2 {
-  font-size: 2vw !important; }
-
-.vw-3 {
-  font-size: 3vw !important; }
-
-.vw-4 {
-  font-size: 4vw !important; }
-
-.vw-5 {
-  font-size: 5vw !important; }
-
-.vw-6 {
-  font-size: 6vw !important; }
-
-/* ====================================================== */
 span.snippet {
   font-family: menlo, monaco, monospace;
   display: inline-block;
@@ -2846,6 +2827,8 @@ table.table {
     text-decoration: underline; }
     table.table th a.table-a:hover, table.table th a.table-a:focus, table.table td a.table-a:hover, table.table td a.table-a:focus {
       color: #2771d1; }
+  table.table tr {
+    background-color: white; }
   table.table tr.theme-primary {
     color: #f4faff;
     background-color: #3e9def !important; }
