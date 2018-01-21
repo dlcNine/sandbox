@@ -60,7 +60,7 @@ input[type="reset"].button {
   a.button.theme-caution, button.button.theme-caution,
   input[type="submit"].button.theme-caution,
   input[type="reset"].button.theme-caution {
-    color: #82820a;
+    color: #6f6f10;
     background-color: #e8e819; }
     a.button.theme-caution:hover, button.button.theme-caution:hover,
     input[type="submit"].button.theme-caution:hover,
@@ -69,7 +69,7 @@ input[type="reset"].button {
     a.button.theme-caution:active, button.button.theme-caution:active,
     input[type="submit"].button.theme-caution:active,
     input[type="reset"].button.theme-caution:active {
-      background-color: #82820a;
+      background-color: #6f6f10;
       color: #fcfcef; }
     a.button.theme-caution:focus:not(:active), button.button.theme-caution:focus:not(:active),
     input[type="submit"].button.theme-caution:focus:not(:active),
