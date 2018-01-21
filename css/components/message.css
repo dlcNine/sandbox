@@ -37,10 +37,10 @@ div.message {
     border-color: #e8e819;
     background-color: #fcfcef; }
     div.message.theme-caution .message-header {
-      color: #82820a;
+      color: #6f6f10;
       background-color: #e8e819; }
     div.message.theme-caution .message-body {
-      color: #82820a; }
+      color: #6f6f10; }
   div.message.theme-danger {
     border-color: #e53c27;
     background-color: #fff8f7; }

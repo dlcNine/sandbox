@@ -24,13 +24,13 @@
       border-color: #3f962a;
       color: #3f962a; }
   .button.outlined.theme-caution {
-    color: #82820a;
+    color: #6f6f10;
     border-color: #e8e819; }
     .button.outlined.theme-caution:hover {
       border-color: #f4f449; }
     .button.outlined.theme-caution:active {
-      border-color: #82820a;
-      color: #82820a; }
+      border-color: #6f6f10;
+      color: #6f6f10; }
   .button.outlined.theme-danger {
     color: #e53c27;
     border-color: #e53c27; }

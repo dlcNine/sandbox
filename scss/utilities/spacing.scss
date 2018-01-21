@@ -1,5 +1,5 @@
 $spacing: 4.8rem;
-$field-padding: 0.6rem;
+$field-spacing: 0.6rem;
 
 .mgn-1 { 
   margin: $spacing * (1/4) !important;
@@ -85,6 +85,28 @@ $field-padding: 0.6rem;
 
 .mgn-r-4 { 
   margin-right: $spacing !important;
+}
+
+/* ==================================== */
+
+.mgn-field {
+  margin: $field-spacing !important;
+}
+
+.mgn-t-field { 
+  margin-top: $field-spacing !important;
+}
+
+.mgn-b-field { 
+  margin-bottom: $field-spacing !important;
+}
+
+.mgn-l-field { 
+  margin-left: $field-spacing !important;
+}
+
+.mgn-r-field { 
+  margin-right: $field-spacing !important;
 }
 
 /* ==================================== */
@@ -178,23 +200,23 @@ $field-padding: 0.6rem;
 /* ==================================== */
 
 .pad-field {
-  padding: $field-padding !important;
+  padding: $field-spacing !important;
 }
 
 .pad-t-field { 
-  padding-top: $field-padding !important;
+  padding-top: $field-spacing !important;
 }
 
 .pad-b-field { 
-  padding-bottom: $field-padding !important;
+  padding-bottom: $field-spacing !important;
 }
 
 .pad-l-field { 
-  padding-left: $field-padding !important;
+  padding-left: $field-spacing !important;
 }
 
 .pad-r-field { 
-  padding-right: $field-padding !important;
+  padding-right: $field-spacing !important;
 }
 
 /* ====================================================== */
