@@ -77,6 +77,11 @@
   border-radius: 0.75em;
 }
 
+.demo-overflow-container {
+  max-height: 10rem;
+  max-width: 30rem;
+}
+
 .demo-box {
   height: 4.8rem;
   width: 4.8rem;

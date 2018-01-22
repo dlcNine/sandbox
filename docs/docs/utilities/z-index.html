@@ -101,7 +101,7 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">The z-index classes come into play when working with an element that has had its position property set (to something other than static). The z-index property will have no effect on static or unpositioned elements.</p>
+      <p class="tc p mgn-b-1">The z-index classes come into play when working with an element that has had its position property set (to something other than static). The z-index property will have no effect on static or non-positioned elements.</p>
       <p class="tc p mgn-b-1">The general idea is that positioned elements with a higher z-index value will appear above other positioned elements with a lower z-index value (or ones that don't have a z-index set). This also depends on the stacking context and source order that the element is in.</p>
       <p class="tc p mgn-b-1">Typically an element that has a higher source order (higher up in the html) will appear above an element with a lower source order (lower down in the html).</p>
       <p class="tc p mgn-b-1">If two positioned elements from different stacking contexts overlap eachother (let's say that <span class="snippet p-alt">b</span> overlaps <span class="snippet p-alt">a</span>), setting the z-index on <span class="snippet p-alt">a</span> to 9000 won't have the desired effect of putting it on top. You must go to the beginning of <span class="snippet p-alt">a</span>'s stacking context and set the z-index there (this is usually where the position property was first set).</p>
