@@ -1021,7 +1021,7 @@ a.a:focus, a:focus {
 .text-left {
   text-align: left !important; }
 
-.text-x-center {
+.text-center {
   text-align: center !important; }
 
 .text-right {
@@ -1059,7 +1059,7 @@ a.a:focus, a:focus {
 .text-italic {
   font-style: italic; }
 
-.text-del {
+.text-line-through {
   text-decoration: line-through; }
 
 .text-underline {
@@ -1068,9 +1068,6 @@ a.a:focus, a:focus {
 /* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
-
-.text-overflow-ellipsis {
-  text-overflow: ellipsis; }
 
 /* ====================================================== */
 .text-red {

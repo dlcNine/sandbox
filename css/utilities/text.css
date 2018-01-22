@@ -1,7 +1,7 @@
 .text-left {
   text-align: left !important; }
 
-.text-x-center {
+.text-center {
   text-align: center !important; }
 
 .text-right {
@@ -39,7 +39,7 @@
 .text-italic {
   font-style: italic; }
 
-.text-del {
+.text-line-through {
   text-decoration: line-through; }
 
 .text-underline {
@@ -48,9 +48,6 @@
 /* ====================================================== */
 .text-nowrap {
   white-space: nowrap; }
-
-.text-overflow-ellipsis {
-  text-overflow: ellipsis; }
 
 /* ====================================================== */
 .text-red {
