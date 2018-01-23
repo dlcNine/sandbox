@@ -1,6 +1,8 @@
 @import "../colors.scss";
 
 $image-shadow-color: $light-gray;
+$image-circular: 50%;
+$image-rounded: 0.8rem;
 
 img {
   &.shadow {
@@ -8,11 +10,11 @@ img {
   }
 
   &.circular {
-    border-radius: 50%;
+    border-radius: $image-circular;
   }
 
   &.rounded {
-    border-radius: 0.8rem;
+    border-radius: $image-rounded;
   }
 
   &.responsive {
