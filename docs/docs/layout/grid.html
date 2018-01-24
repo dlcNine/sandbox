@@ -1,0 +1,219 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-grid</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Grid</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-info">it is the grid</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.container</span>
+                </span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.clearfix
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.</span><span>[breakpoint]</span><span class="text-indigo">-</span><span>[#]</span>
+                </span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.default-</span><span>[#]</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.push-</span><span>[#]</span><span class="text-indigo">-</span><span>[breakpoint]</span>
+                </span>
+              </li>
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.push-</span><span>[#]</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-3">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.new-line</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">Sandbox uses a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
+      <p class="tc p mgn-b-1">All div.container actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the container's boundaries). If you want to use some other block level element to house the grid columns, just apply the .clearfix class to it.</p>
+      <p class="tc p mgn-b-1">The grid columns are simply block level elements with some padding, a set width (a percentage based the [#] you used), that are floated to the left.</p>
+
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12 pad-0 pad-b-1">
+          <div class="small-12 medium-6 large-4">
+            <div class="demo-grid-height demo-rds-1 demo-lred relative">
+              <h3 class="t h3 text-white position-center-center">
+                <span class="absent-medium absent-large">small-12</span>
+                <span class="absent-small absent-large">medium-6</span>
+                <span class="absent-small absent-medium">large-4</span>
+              </h3>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4">
+            <div class="demo-grid-height demo-rds-1 demo-lgreen relative">
+              <h3 class="t h3 text-white position-center-center">
+                <span class="absent-medium absent-large">small-12</span>
+                <span class="absent-small absent-large">medium-6</span>
+                <span class="absent-small absent-medium">large-4</span>
+              </h3>
+            </div>
+          </div>
+          <div class="small-12 medium-6 large-4">
+            <div class="demo-grid-height demo-rds-1 demo-lblue relative">
+              <h3 class="t h3 text-white position-center-center">
+                <span class="absent-medium absent-large">small-12</span>
+                <span class="absent-small absent-large">medium-6</span>
+                <span class="absent-small absent-medium">large-4</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 pad-0">
+          <ol class="code p-alt">
+            <li class="line"><span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt</span></li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt</span><span class="text-gray"> &lt!-- your content here --&gt</span> <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt</span><span class="text-gray"> &lt!-- your content here --&gt</span> <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt</span><span class="text-gray"> &lt!-- your content here --&gt</span> <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+            <li class="line"><span class="text-blue">&lt/div&gt</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="default-12 large-6">
+        <h2 class="tc h2">Breakpoints</h2>
+        <p class="tc p mgn-b-1">There are three breakpoints that can be plugged into [breakpoint]. These breakpoints are small, medium, and large. The table below shows when each breakpoint becomes active.</p>
+        <table class="table t p slim">
+          <thead>
+            <tr class="theme-dark">
+              <th>Name</th>
+              <th>rem</th>
+              <th>px</th>
+            </tr>
+          </thead>
+          <tbody class="tc striped-even row-hover">
+            <tr>
+              <td>small</td>
+              <td>&lt= 26.25rem</td>
+              <td>&lt= 420px</td>
+            </tr>
+            <tr>
+              <td>medium</td>
+              <td>&gt= 26.3125rem and &lt= 48rem</td>
+              <td>&gt= 421px and &lt= 768px</td>
+            </tr>
+            <tr>
+              <td>large</td>
+              <td>&gt= 48.0625rem</td>
+              <td>&gt= 769px</td>
+            </tr>
+            <tr>
+              <td>default</td>
+              <td>not responsive</td>
+              <td>not responsive</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="default-12 large-6">
+        <h2 class="tc h2">Units</h2>
+        <p class="tc p"></p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</body>
+</html>
