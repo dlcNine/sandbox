@@ -1,9 +1,9 @@
-$gutter: 1.2rem;
+$padding: 1.2rem;
 
 div[class*="small-"], div[class*="medium-"],
 div[class*="large-"], div[class*="default-"] {
   float: left;
-  padding: $gutter;
+  padding: $padding;
 }
 
 div.container::after, .clearfix::after {

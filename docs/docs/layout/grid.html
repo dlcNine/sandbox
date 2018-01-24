@@ -113,7 +113,10 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p">Sandbox uses a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
+      <p class="tc p mgn-b-1">Sandbox uses a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
+      <p class="tc p mgn-b-1">All div.container actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the container's boundaries). If you want to use some other block level element to house the grid columns, just apply the .clearfix class to it.</p>
+      <p class="tc p mgn-b-1">The grid columns are simply block level elements with some padding, a set width (a percentage based the [#] you used), that are floated to the left.</p>
+
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Structure</h2>
@@ -163,16 +166,8 @@
             </ol>
             <li class="line"><span class="text-blue">&lt/div&gt</span></li>
           </ol>
-          
-
-
-
-
-
-
         </div>
       </div>
-      
     </div>
     <div class="container">
       <div class="default-12 large-6">
