@@ -113,10 +113,9 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">Sandbox uses a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
-      <p class="tc p mgn-b-1">All div.container actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the container's boundaries). If you want to use some other block level element to house the grid columns, just apply the .clearfix class to it.</p>
-      <p class="tc p mgn-b-1">The grid columns are simply block level elements with some padding, a set width (a percentage based the [#] you used), that are floated to the left.</p>
-
+      <p class="tc p mgn-b-1">Sandbox provides a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
+      <p class="tc p mgn-b-1">All that <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container</span></span> actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the container's boundaries). If you want to use some other block level element to house the grid columns, just apply the <span class="snippet p-alt text-indigo">.clearfix</span> class to it.</p>
+      <p class="tc p mgn-b-1">The grid columns are simply block level elements with some padding, and a set width (a percentage based the <span class="snippet p-alt">[#]</span> you used) that are floated to the left.</p>
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Structure</h2>
@@ -169,47 +168,218 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="default-12 large-6">
-        <h2 class="tc h2">Breakpoints</h2>
-        <p class="tc p mgn-b-1">There are three breakpoints that can be plugged into [breakpoint]. These breakpoints are small, medium, and large. The table below shows when each breakpoint becomes active.</p>
-        <table class="table t p slim">
-          <thead>
-            <tr class="theme-dark">
-              <th>Name</th>
-              <th>rem</th>
-              <th>px</th>
-            </tr>
-          </thead>
-          <tbody class="tc striped-even row-hover">
-            <tr>
-              <td>small</td>
-              <td>&lt= 26.25rem</td>
-              <td>&lt= 420px</td>
-            </tr>
-            <tr>
-              <td>medium</td>
-              <td>&gt= 26.3125rem and &lt= 48rem</td>
-              <td>&gt= 421px and &lt= 768px</td>
-            </tr>
-            <tr>
-              <td>large</td>
-              <td>&gt= 48.0625rem</td>
-              <td>&gt= 769px</td>
-            </tr>
-            <tr>
-              <td>default</td>
-              <td>not responsive</td>
-              <td>not responsive</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="default-12 large-6">
-        <h2 class="tc h2">Units</h2>
-        <p class="tc p"></p>
+    <div class="pad-1">
+      <div class="message theme-danger">
+        <div class="message-header">
+          <p class="t p">CSS Selector</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt">Any <span class="snippet p-alt text-blue">div</span> element whose class list contains <span class="snippet p-alt text-indigo">small-</span> or <span class="snippet p-alt text-indigo">medium-</span> or <span class="snippet p-alt text-indigo">large-</span> or <span class="snippet p-alt text-indigo">default-</span> will be floated to the left, and have padding applied. Keep this in mind when expanding Sandbox with your own classes.
+          </p>
+        </div>
       </div>
     </div>
+    <div class="pad-1">
+      <h2 class="tc h2">12 Unit Grid</h2>
+      <p class="tc p mgn-b-1">Sandbox's grid is split into 12 equal units. Each <span class="snippet p-alt">[#]</span> you plug in (from 1 - 12) sets the width property to a percentage based on that number out of 12. This width percentage is in relation to the parent element.</p>
+      <div class="container">
+        <div class="default-12 pad-0 absent-small absent-medium">
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+          <div class="default-1">
+            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+              <h3 class="t h3 text-white position-center-center">1</h3>
+            </div>
+          </div>
+        </div>
+        <div class="default-1 absent-small absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">1</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-2 absent-small">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">2</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-3 absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-4 absent-small">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">4</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-5 absent-small absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">5</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-6">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">6</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="default-7 absent-small absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">7</h3>
+          </div>
+        </div>
+        <div class="default-8 absent-small">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">8</h3>
+          </div>
+        </div>
+        <div class="default-9 absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">9</h3>
+          </div>
+        </div>
+        <div class="default-10 absent-small">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">10</h3>
+          </div>
+        </div>
+        <div class="default-11 absent-small absent-medium">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">11</h3>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">12</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Pushing</h2>
+      <p class="tc p mgn-b-1">The <span class="snippet p-alt"><span class="text-indigo">.push-</span>[#]</span>, and <span class="snippet p-alt"><span class="text-indigo">.push-</span>[#]<span class="text-indigo">-</span>[breakpoint]</span> classes are used to push a grid column to the right by the <span class="snippet p-alt">[#]</span> specified (<span class="snippet p-alt">[#]</span> being from 1 - 12). Sandbox does this by setting the margin-left property to the relevant percentage.</p>
+      <div class="container">
+        <div class="default-3">
+          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="push-3 default-3">
+          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="push-6 default-3">
+          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="new-line"></div>
+        <div class="push-9 default-3">
+          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Stacking and Wrapping</h2>
+      <p class="tc p mgn-b-1">Floated elements, such as the grid columns, will stack one next to the other, so long as there's enough room for them to fit within that line. If there's not enough room for the floated element to fit, it will wrap onto the next line.</p>
+      <div class="container">
+        <div class="default-3">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="default-3">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="default-6">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">6</h3>
+          </div>
+        </div>
+        <div class="default-3">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="default-3">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">3</h3>
+          </div>
+        </div>
+        <div class="default-7">
+          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+            <h3 class="t h3 text-white position-center-center">7</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    div.pad-1
+
 
 
 
