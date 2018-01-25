@@ -4,3 +4,4 @@ dev-helper.css
 .sass-cache/
 node_modules/
 docs/_site
+docs/style-guide.html

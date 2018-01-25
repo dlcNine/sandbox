@@ -86,6 +86,10 @@
   height: 10rem;
 }
 
+.demo-grid-height-smaller {
+  height: 5rem;
+}
+
 .demo-box {
   height: 4.8rem;
   width: 4.8rem;
@@ -93,6 +97,10 @@
 
 .demo-card-header-height {
   height: 25rem;
+}
+
+.demo-break-all {
+  word-break: break-all;
 }
 
 .demo-navbar-menu-link {
