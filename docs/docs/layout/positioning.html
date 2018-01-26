@@ -84,16 +84,74 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">Use the positioning utilities to set an element's position property to the respective value.</p>
+      <p class="tc p">Use the positioning utilities to set an element's position property to the respective value.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Positioning presets</h2>
       <p class="tc p mgn-b-1">
         The <span class="snippet p-alt"><span class="text-indigo">.position-</span>[x]<span class="text-indigo">-</span>[y]</span> classes use preset top, bottom, left, and right values to position an element (absolute) in relation to its most recently positioned ancenstor.
       </p>
       <p class="tc p mgn-b-1">
         The values that can be plugged into <span class="snippet p-alt">[x]</span> are: <span class="snippet p-alt">left</span>, <span class="snippet p-alt">center</span>, <span class="snippet p-alt">right</span>.
       </p>
-      <p class="tc p">
-        The values that can be plugged into <span class="snippet p-alt">[y]</span> are: <span class="snippet p-alt">top</span>, <span class="snippet p-alt">center</span>, <span class="snippet p-alt">bottom.</span>
+      <p class="tc p mgn-b-1">
+        The values that can be plugged into <span class="snippet p-alt">[y]</span> are: <span class="snippet p-alt">top</span>, <span class="snippet p-alt">center</span>, <span class="snippet p-alt">bottom</span>.
       </p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="banner h1 demo-lgreen demo-rds-1 relative">
+            <div class="demo-box demo-rds-1 demo-lred position-left-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-left-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-left-bottom"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-bottom"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-bottom"></div>
+            
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <ol class="code p-alt">
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"banner size-medium relative"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+            </ol>
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
     <div class="pad-1">
       <div class="message theme-danger">
@@ -104,6 +162,10 @@
           <p class="t p-alt">Any element whose class list contains <span class="snippet p-alt text-indigo">position-</span> will have its position property set to absolute. Keep this in mind when expanding Sandbox with your own classes.</p>
         </div>
       </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./grid.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./height.html" class="button p theme-dark mgn-0">next</a>
     </div>
 
 

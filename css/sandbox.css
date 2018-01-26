@@ -2480,13 +2480,8 @@ ul.list-menu.theme-dark li.list-label:not(.active) {
   color: #d8d8d8; }
 
 div.banner {
-  height: 12rem; }
-  div.banner.size-small {
-    height: 8rem; }
-  div.banner.size-medium {
-    height: 34rem; }
-  div.banner.size-large {
-    height: 54rem; }
+  font-size: 1.6rem;
+  height: 7.5em; }
 
 div.card {
   border: 0.1rem solid #e6e6e6;
