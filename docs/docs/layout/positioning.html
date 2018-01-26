@@ -1,0 +1,171 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-positioning</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Positioning</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-caution">utilities</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="small-12 default-6">
+            <ul class="ul circle-hollow p-alt demo-break-all">
+              <li>
+                <span class="snippet no-background text-indigo">.relative</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.fixed</span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.absolute</span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 default-6">
+            <ul class="ul circle-hollow p-alt demo-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-indigo">.position-</span>[x]<span class="text-indigo">-</span>[y]</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">Use the positioning utilities to set an element's position property to the respective value.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Positioning presets</h2>
+      <p class="tc p mgn-b-1">
+        The <span class="snippet p-alt"><span class="text-indigo">.position-</span>[x]<span class="text-indigo">-</span>[y]</span> classes use preset top, bottom, left, and right values to position an element (absolute) in relation to its most recently positioned ancenstor.
+      </p>
+      <p class="tc p mgn-b-1">
+        The values that can be plugged into <span class="snippet p-alt">[x]</span> are: <span class="snippet p-alt">left</span>, <span class="snippet p-alt">center</span>, <span class="snippet p-alt">right</span>.
+      </p>
+      <p class="tc p mgn-b-1">
+        The values that can be plugged into <span class="snippet p-alt">[y]</span> are: <span class="snippet p-alt">top</span>, <span class="snippet p-alt">center</span>, <span class="snippet p-alt">bottom</span>.
+      </p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="banner h1 demo-lgreen demo-rds-1 relative">
+            <div class="demo-box demo-rds-1 demo-lred position-left-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-left-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-left-bottom"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-center-bottom"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-top"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-center"></div>
+            <div class="demo-box demo-rds-1 demo-lred position-right-bottom"></div>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <ol class="code p-alt">
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"banner h1 relative"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-left-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-center-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-top"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-center"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box position-right-bottom"</span><span class="text-blue">&gt&lt/div&gt</span>
+              </li>
+            </ol>
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <div class="message theme-danger">
+        <div class="message-header">
+          <p class="t p">CSS Selector</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt">Any element whose class list contains <span class="snippet p-alt text-indigo">position-</span> will have its position property set to absolute. Keep this in mind when expanding Sandbox with your own classes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./grid.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./height.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+</body>
+</html>

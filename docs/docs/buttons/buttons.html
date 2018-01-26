@@ -1,0 +1,239 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-buttons</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Buttons</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+        <span class="stamp theme-light">light</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-info">inline-block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="small-12 default-6">
+            <ul class="ul circle-hollow p-alt demo-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">a</span><span class="text-indigo">.button</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">button</span><span class="text-indigo">.button</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">input</span>[type="submit"]<span class="text-indigo">.button</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">input</span>[type="reset"]<span class="text-indigo">.button</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 default-6">
+            <ul class="ul circle-hollow p-alt demo-break-all">
+              <li>
+                <span class="snippet no-background text-indigo">.button.wide</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">Apply the <span class="snippet p-alt text-indigo">.button</span> class to the specified elements in order to have Sandbox's button styling applied.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Wide</h2>
+      <p class="tc p mgn-b-2">Use the <span class="snippet p-alt text-indigo">.wide</span> class on a <span class="snippet p-alt text-indigo">.button</span> to have its display set to block, and also take up the full width available.</p>
+      <button class="button theme-primary wide">I'm a wide button</button>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Theme classes</h2>
+      <p class="tc p mgn-b-1">Apply one of the <span class="snippet p-alt text-indigo">.theme-*</span> classes for the desired styling.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <button class="button">default</button>
+          <button class="button theme-primary">primary</button>
+          <button class="button theme-info">info</button>
+          <button class="button theme-caution">caution</button>
+          <button class="button theme-danger">danger</button>
+          <button class="button theme-light">light</button>
+          <button class="button theme-dark">dark</button>
+        </div>
+        <div class="default-12 large-6">
+          <ol class="code p-alt demo-break-all">
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button"</span><span class="text-blue">&gt</span>default<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-primary"</span><span class="text-blue">&gt</span>primary<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-info"</span><span class="text-blue">&gt</span>info<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-caution"</span><span class="text-blue">&gt</span>caution<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-danger"</span><span class="text-blue">&gt</span>danger<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-light"</span><span class="text-blue">&gt</span>light<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-dark"</span><span class="text-blue">&gt</span>dark<span class="text-blue">&lt/button&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font size scaling</h2>
+      <p class="tc p mgn-b-1">Apply the font-size classes to adjust the size of the buttons.</p>
+      <div class="container">
+        <div class="default-12">
+          <button class="button h6">sizes</button>
+          <button class="button h5">sizes</button>
+          <button class="button p-alt">sizes</button>
+          <button class="button h4">sizes</button>
+          <button class="button h3">sizes</button>
+          <button class="button h2">sizes</button>
+          <button class="button h1 absent-small">sizes</button>
+          <button class="button huge-2 absent-small absent-medium">sizes</button>
+          <button class="button huge-1 absent-small absent-medium">sizes</button>
+        </div>
+        <div class="default-12">
+          <ol class="code p-alt demo-break-all">
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h6"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h5"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button p-alt"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h4"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h3"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h2"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line absent-small">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h1"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line absent-small absent-medium">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button huge-2"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line absent-small absent-medium">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button huge-1"</span><span class="text-blue">&gt</span>sizes<span class="text-blue">&lt/button&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$button-padding</td>
+            <td>0.375em 0.75em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$button-margin</td>
+            <td>0.6rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$button-radius</td>
+            <td>0.1875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$button-focus-shadow-spread</td>
+            <td>0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$button-font-family</td>
+            <td>sans-serif</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="../layout/height.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./outlined-buttons.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+</html>
