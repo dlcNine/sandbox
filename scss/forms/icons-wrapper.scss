@@ -1,7 +1,7 @@
 @import "../colors.scss";
 
-$icon-color: $dark-gray;
-$icon-focus-color: $medium-black;
+$icons-wrapper-icons-color: $dark-gray;
+$icons-wrapper-icons-focus-color: $medium-black;
 
 div.icons-wrapper {
   position: relative;
@@ -11,7 +11,7 @@ div.icons-wrapper {
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
-    color: $icon-color;
+    color: $icons-wrapper-icons-color;
 
     i {
       font-size: inherit;
@@ -32,7 +32,7 @@ div.icons-wrapper {
     padding-right: 2em;
 
     &:focus ~ span.left-icon, &:focus ~ span.right-icon {
-      color: $icon-focus-color;
+      color: $icons-wrapper-icons-focus-color;
     }
   }
 }
