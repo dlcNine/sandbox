@@ -1,5 +1,8 @@
+$ul-ol-line-height: 1.5;
+$ul-ol-indentation: 0.875em;
+
 ul.ul {
-  line-height: 1.5;
+  line-height: $ul-ol-line-height;
 
   &.square {
     list-style: square inside;
@@ -15,7 +18,7 @@ ul.ul {
 }
 
 ol.ol {
-  line-height: 1.5;
+  line-height: $ul-ol-line-height;
 
   &.numbers {
     list-style: decimal inside;
@@ -40,5 +43,5 @@ ol.ol {
 
 ul.ul ul.ul, ul.ul ol.ol, 
 ol.ol ol.ol, ol.ol ul.ul {
-  margin-left: 0.875em;
+  margin-left: $ul-ol-indentation;
 }

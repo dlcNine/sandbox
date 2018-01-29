@@ -1,9 +1,9 @@
-$padding: 1.2rem;
+$grid-column-padding: 1.2rem;
 
 div[class*="small-"], div[class*="medium-"],
 div[class*="large-"], div[class*="default-"] {
   float: left;
-  padding: $padding;
+  padding: $grid-column-padding;
 }
 
 div.container::after, .clearfix::after {

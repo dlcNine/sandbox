@@ -1,0 +1,127 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-outlined-buttons</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Outlined-Buttons</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+        <span class="stamp theme-light">light</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-info">inline-block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12">
+            <ul class="ul circle-hollow p-alt demo-break-all">
+              <li>
+                <span class="snippet no-background text-indigo">.button.outlined</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">Apply the <span class="snippet p-alt text-indigo">.outlined</span> class to an appropriate element with the <span class="snippet p-alt text-indigo">.button</span> class, in order to have its outlined styling applied.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Theme classes</h2>
+      <p class="tc p mgn-b-1">Apply one of the <span class="snippet p-alt text-indigo">.theme-*</span> classes for the desired styling.</p>
+      <div class="container">
+        <div class="default-12 large-4">
+          <button class="button outlined">default</button>
+          <button class="button theme-primary outlined">primary</button>
+          <button class="button theme-info outlined">info</button>
+          <button class="button theme-caution outlined">caution</button>
+          <button class="button theme-danger outlined">danger</button>
+          <button class="button theme-light outlined">light</button>
+          <button class="button theme-dark outlined">dark</button>
+        </div>
+        <div class="default-12 large-8">
+          <ol class="code p-alt demo-break-all">
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button outlined"</span><span class="text-blue">&gt</span> default <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-primary outlined"</span><span class="text-blue">&gt</span> primary <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-info outlined"</span><span class="text-blue">&gt</span> info <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-caution outlined"</span><span class="text-blue">&gt</span> caution <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-danger outlined"</span><span class="text-blue">&gt</span> danger <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-light outlined"</span><span class="text-blue">&gt</span> light <span class="text-blue">&lt/button&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-dark  outlined"</span><span class="text-blue">&gt</span> dark <span class="text-blue">&lt/button&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./buttons.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./buttons-bar.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+</body>
+</html>

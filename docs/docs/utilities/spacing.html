@@ -178,8 +178,8 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">The spacing utility classes have <strong>four levels</strong> which can be plugged into <span class="snippet p-alt">[#]</span>. The levels are <span class="snippet p-alt">1, 2, 3, 4</span>. The value of each level is a fraction of the <span class="snippet p-alt text-red">$spacing</span> variable that is set, which has a value of 4.8rem.</p>
-      <p class="tc p">For example, the value used by <span class="snippet p-alt text-indigo">.mgn-1</span> would be 1.2rem, since <span class="snippet p-alt">1/4 * 4.8 is equal to 1.2</span>.</p>
+      <p class="tc p mgn-b-1">The spacing utility classes have <strong>four levels</strong> which can be plugged into <span class="snippet p-alt">[#]</span>. The levels are <span class="snippet p-alt">1, 2, 3, 4</span>. The value of each level is a multiple of the <span class="snippet p-alt text-red">$spacing</span> variable that is set, which has a value of 1.2rem.</p>
+      <p class="tc p">For example, the value used by <span class="snippet p-alt text-indigo">.mgn-3</span> would be 3.6rem, since <span class="snippet p-alt">3 * 1.2 is equal to 3.6</span>.</p>
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Margin playground</h2>
@@ -322,10 +322,10 @@
         <tbody class="tc striped-even row-hover">
           <tr>
             <td class="text-red">$spacing</td>
-            <td>4.8rem</td>
+            <td>1.2rem</td>
           </tr>
           <tr>
-            <td class="text-red demo-rds-bl-1">$field-spacing</td>
+            <td class="text-red demo-rds-bl-1">$spacing-field</td>
             <td class="demo-rds-br-1">0.6rem</td>
           </tr>
         </tbody>
