@@ -1,0 +1,216 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-controls-textfield</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Controls-Textfield</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-info">block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">input</span><span class="text-indigo">.textfield</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">The <span class="snippet p-alt text-indigo">.textfield</span> class is meant to be used on <span class="snippet p-alt text-blue">input</span> element types which render as textfields, such as: <span class="snippet p-alt">email</span>, <span class="snippet p-alt">number</span>, <span class="snippet p-alt">password</span>, <span class="snippet p-alt">search</span>, <span class="snippet p-alt">tel</span>, <span class="snippet p-alt">text</span>, and <span class="snippet p-alt">url</span>.</p>
+      <div class="container">
+        <div class="default-12">
+          <input type="email" placeholder="email" class="textfield">
+          <input type="number" placeholder="number" class="textfield">
+          <input type="password" placeholder="password" class="textfield">
+          <input type="search" placeholder="search" class="textfield">
+          <input type="tel" placeholder="tel" class="textfield">
+          <input type="text" placeholder="text" class="textfield">
+          <input type="url" placeholder="url" class="textfield">
+        </div>
+        <div class="default-12">
+          <ol class="code p-alt text-break-all">
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="email" placeholder="email" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="number" placeholder="number" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="password" placeholder="password" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="search" placeholder="search" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="tel" placeholder="tel" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="url" placeholder="url" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-Size scaling</h2>
+      <p class="tc p">The suggested <span class="snippet p-alt text-blue">input</span> element types with the <span class="snippet p-alt text-indigo">.textfield</span> class can be scaled by applying any of the font-size classes to them.</p>
+      <div class="container">
+        <div class="default-12">
+          <input type="text" placeholder="text" class="textfield h6">
+          <input type="text" placeholder="text" class="textfield h5">
+          <input type="text" placeholder="text" class="textfield p-alt">
+          <input type="text" placeholder="text" class="textfield h4">
+          <input type="text" placeholder="text" class="textfield h3">
+          <input type="text" placeholder="text" class="textfield h2">
+          <input type="text" placeholder="text" class="textfield h1">
+        </div>
+        <div class="default-12">
+          <ol class="code p-alt text-break-all">
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h6"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h5"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield p-alt"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h4"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h3"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h2"</span><span class="text-blue">&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltinput</span> type="text" placeholder="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield h1"</span><span class="text-blue">&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$control-padding</td>
+            <td>0.375em 0.625em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-margin</td>
+            <td>0.8rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-radius</td>
+            <td>0.1875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-border-color</td>
+            <td class="text-red">$light-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-hover-border-color</td>
+            <td class="text-red">$medium-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-font-family</td>
+            <td>sans-serif</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-color</td>
+            <td class="text-red">$black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-border-color</td>
+            <td class="text-red">$medium-blue</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-shadow-color</td>
+            <td class="text-red">$light-blue-thin</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$control-focus-shadow-spread</td>
+            <td class="demo-rds-br-1">0.125em</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="../buttons/container-buttons.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+</body>
+</html>
