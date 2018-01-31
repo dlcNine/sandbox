@@ -1,0 +1,16 @@
+@import "../../colors.scss";
+@import "./control-variables.scss";
+
+$textarea-min-height: 10rem;
+$textarea-max-height: 40rem;
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: $textarea-min-height;
+  max-height: $textarea-max-height;
+
+  &.no-resize {
+    resize: none;
+  }
+}

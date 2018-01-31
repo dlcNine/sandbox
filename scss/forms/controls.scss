@@ -1,20 +1,20 @@
 @import "../colors.scss";
 
-$control-padding: 0.375em 0.625em;
-$control-margin: 0.8rem 0rem;
-$control-radius: 0.1875em;
-$control-border-color: $light-gray;
-$control-hover-border-color: $medium-gray;
-$control-font-family: sans-serif;
-$control-color: $black;
-$control-background-color: $white;
-$control-focus-border-color: $medium-blue;
-$control-focus-shadow-color: $light-blue-thin;
-$control-focus-shadow-spread: 0.125em;
-$textarea-min-height: 10rem;
-$textarea-max-height: 40rem;
-$label-checkbox-radio-padding: 0.375em 0em;
-$label-checkbox-radio-margin-right: 0.625rem;
+// $control-padding: 0.375em 0.625em;
+// $control-margin: 0.8rem 0rem;
+// $control-radius: 0.1875em;
+// $control-border-color: $light-gray;
+// $control-hover-border-color: $medium-gray;
+// $control-font-family: sans-serif;
+// $control-color: $black;
+// $control-background-color: $white;
+// $control-focus-border-color: $medium-blue;
+// $control-focus-shadow-color: $light-blue-thin;
+// $control-focus-shadow-spread: 0.125em;
+// $textarea-min-height: 10rem;
+// $textarea-max-height: 40rem;
+// $label-checkbox-radio-padding: 0.375em 0em;
+// $label-checkbox-radio-margin-right: 0.625rem;
 
 input.textfield, textarea {
   font-size: 1.6rem;

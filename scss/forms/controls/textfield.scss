@@ -1,0 +1,27 @@
+@import "../../colors.scss";
+@import "./control-variables.scss";
+
+
+input.textfield, textarea {
+  font-size: 1.6rem;
+  font-family: $control-font-family;
+  line-height: 1;
+  display: block;
+  width: 100%;
+  padding: $control-padding;
+  border: 0.1rem solid $control-border-color;
+  margin: $control-margin;
+  border-radius: $control-radius;
+  color: $control-color;
+  background-color: $control-background-color;
+
+  &:hover {
+    border-color: $control-hover-border-color;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $control-focus-border-color;
+    box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+  }
+}
