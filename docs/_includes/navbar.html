@@ -17,9 +17,6 @@
   demoSideMenuButton.addEventListener("click", function(event){
     event.preventDefault();
     const demoSideMenu = document.querySelector("#demo-side-menu");
-    if (demoSideMenu.classList.contains("demo-side-menu-reveal"))
-      demoSideMenu.classList.remove("demo-side-menu-reveal");
-    else 
-      demoSideMenu.classList.add("demo-side-menu-reveal");
+    demoSideMenu.classList.toggle("demo-side-menu-reveal");
   });
 </script>
