@@ -1,6 +1,8 @@
 @import "../../colors.scss";
 @import "./control-variables.scss";
 
+$textarea-min-height: 10rem;
+$textarea-max-height: 40rem;
 
 input.textfield, textarea {
   font-size: 1.6rem;
@@ -23,5 +25,16 @@ input.textfield, textarea {
     outline: none;
     border-color: $control-focus-border-color;
     box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+  }
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: $textarea-min-height;
+  max-height: $textarea-max-height;
+
+  &.no-resize {
+    resize: none;
   }
 }
