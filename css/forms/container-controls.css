@@ -7,7 +7,7 @@ div.container-controls {
   div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
   div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
     padding: 0; }
-  div.container-controls input.textfield, div.container-controls div.select, div.container-controls textarea {
+  div.container-controls input.textfield, div.container-controls div.select, div.container-controls textarea.textarea {
     margin: 0; }
   div.container-controls > div:first-child {
     padding-right: 0.6rem; }

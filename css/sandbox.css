@@ -86,10 +86,6 @@ sup {
 hr {
   border-top: 0.1rem solid #d7d7d7; }
 
-*[disabled] {
-  opacity: 0.5;
-  cursor: default !important; }
-
 /*
 scale ratio : 1.3333
 */
@@ -1791,7 +1787,7 @@ div.container-buttons {
     display: block; }
 
 /* ============ forms ============ */
-input.textfield, textarea {
+input.textfield, textarea.textarea {
   font-size: 1.6rem;
   font-family: sans-serif;
   line-height: 1;
@@ -1803,9 +1799,9 @@ input.textfield, textarea {
   margin: 0.8rem 0rem;
   color: #383838;
   background-color: white; }
-  input.textfield:hover, textarea:hover {
+  input.textfield:hover, textarea.textarea:hover {
     border-color: #bfbfbf; }
-  input.textfield:focus, textarea:focus {
+  input.textfield:focus, textarea.textarea:focus {
     outline: none;
     border-color: #3e9def;
     box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
@@ -1857,12 +1853,12 @@ div.select {
       height: 16.6rem; }
 
 /* ==================================== */
-textarea {
+textarea.textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
-  textarea.no-resize {
+  textarea.textarea.no-resize {
     resize: none; }
 
 /* ==================================== */
@@ -1893,9 +1889,9 @@ form div.field {
   form div.field.required .label::after {
     content: ' * ';
     color: #e53c27; }
-  form div.field.theme-primary input.textfield, form div.field.theme-primary textarea {
+  form div.field.theme-primary input.textfield, form div.field.theme-primary textarea.textarea {
     border-color: #3e9def; }
-    form div.field.theme-primary input.textfield:focus, form div.field.theme-primary textarea:focus {
+    form div.field.theme-primary input.textfield:focus, form div.field.theme-primary textarea.textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   form div.field.theme-primary div.select {
     border-color: #3e9def; }
@@ -1903,9 +1899,9 @@ form div.field {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
     color: #3e9def; }
-  form div.field.theme-info input.textfield, form div.field.theme-info textarea {
+  form div.field.theme-info input.textfield, form div.field.theme-info textarea.textarea {
     border-color: #54c43a; }
-    form div.field.theme-info input.textfield:focus, form div.field.theme-info textarea:focus {
+    form div.field.theme-info input.textfield:focus, form div.field.theme-info textarea.textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
   form div.field.theme-info div.select {
     border-color: #54c43a; }
@@ -1913,9 +1909,9 @@ form div.field {
       box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
   form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
     color: #54c43a; }
-  form div.field.theme-caution input.textfield, form div.field.theme-caution textarea {
+  form div.field.theme-caution input.textfield, form div.field.theme-caution textarea.textarea {
     border-color: #e8e819; }
-    form div.field.theme-caution input.textfield:focus, form div.field.theme-caution textarea:focus {
+    form div.field.theme-caution input.textfield:focus, form div.field.theme-caution textarea.textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
   form div.field.theme-caution div.select {
     border-color: #e8e819; }
@@ -1925,9 +1921,9 @@ form div.field {
     color: #6f6f10; }
   form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
     color: #e8e819; }
-  form div.field.theme-danger input.textfield, form div.field.theme-danger textarea {
+  form div.field.theme-danger input.textfield, form div.field.theme-danger textarea.textarea {
     border-color: #e53c27; }
-    form div.field.theme-danger input.textfield:focus, form div.field.theme-danger textarea:focus {
+    form div.field.theme-danger input.textfield:focus, form div.field.theme-danger textarea.textarea:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
   form div.field.theme-danger div.select {
     border-color: #e53c27; }
@@ -1963,7 +1959,7 @@ div.container-controls {
   div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
   div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
     padding: 0; }
-  div.container-controls input.textfield, div.container-controls div.select, div.container-controls textarea {
+  div.container-controls input.textfield, div.container-controls div.select, div.container-controls textarea.textarea {
     margin: 0; }
   div.container-controls > div:first-child {
     padding-right: 0.6rem; }

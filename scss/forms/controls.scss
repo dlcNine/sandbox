@@ -16,7 +16,7 @@ $textarea-max-height: 40rem;
 $label-checkbox-radio-padding: 0.375em 0em;
 $label-checkbox-radio-margin-right: 0.625rem;
 
-input.textfield, textarea {
+input.textfield, textarea.textarea {
   font-size: 1.6rem;
   font-family: $control-font-family;
   line-height: 1;
@@ -115,7 +115,7 @@ div.select {
 
 /* ==================================== */
 
-textarea {
+textarea.textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: $textarea-min-height;

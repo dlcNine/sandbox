@@ -33,7 +33,7 @@ form div.field {
   }
 
   &.theme-primary {
-    input.textfield, textarea {
+    input.textfield, textarea.textarea {
       border-color: $medium-blue;
 
       &:focus {
@@ -55,7 +55,7 @@ form div.field {
   }
 
   &.theme-info {
-    input.textfield, textarea {
+    input.textfield, textarea.textarea {
       border-color: $medium-green;
 
       &:focus {
@@ -77,7 +77,7 @@ form div.field {
   }
 
   &.theme-caution {
-    input.textfield, textarea {
+    input.textfield, textarea.textarea {
       border-color: $medium-yellow;
 
       &:focus {
@@ -103,7 +103,7 @@ form div.field {
   }
 
   &.theme-danger {
-    input.textfield, textarea {
+    input.textfield, textarea.textarea {
       border-color: $medium-red;
 
       &:focus {
