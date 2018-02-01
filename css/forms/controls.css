@@ -20,7 +20,8 @@ input.textfield, textarea.textarea {
 /* ==================================== */
 div.select {
   font-size: 1.6rem;
-  position: relative; }
+  position: relative;
+  margin: 0.8rem 0rem; }
   div.select:not(.multiple)::before {
     content: '';
     position: absolute;
@@ -52,7 +53,6 @@ div.select {
     font-family: sans-serif;
     color: #383838;
     display: block;
-    margin: 0.8rem 0rem;
     padding: 0.375em 0.625em;
     width: 100%;
     background: white;

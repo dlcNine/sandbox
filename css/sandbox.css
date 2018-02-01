@@ -1809,7 +1809,8 @@ input.textfield, textarea.textarea {
 /* ==================================== */
 div.select {
   font-size: 1.6rem;
-  position: relative; }
+  position: relative;
+  margin: 0.8rem 0rem; }
   div.select:not(.multiple)::before {
     content: '';
     position: absolute;
@@ -1841,7 +1842,6 @@ div.select {
     font-family: sans-serif;
     color: #383838;
     display: block;
-    margin: 0.8rem 0rem;
     padding: 0.375em 0.625em;
     width: 100%;
     background: white;
@@ -2718,7 +2718,7 @@ ol.code {
   line-height: 1.2;
   position: relative; }
   ol.code li.line {
-    margin: 0.375em 0em 0.375em 0.875em;
+    margin: 0.375em 0.375em 0.375em 0.875em;
     counter-increment: line-number;
     color: #4c4c4c; }
     ol.code li.line::before {

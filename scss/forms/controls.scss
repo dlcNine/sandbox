@@ -46,6 +46,7 @@ input.textfield, textarea.textarea {
 div.select {
   font-size: 1.6rem;
   position: relative;
+  margin: $control-margin;
 
   &:not(.multiple)::before {
     content: '';
@@ -82,7 +83,6 @@ div.select {
     font-family: $control-font-family;
     color: $control-color;
     display: block;
-    margin: $control-margin;
     padding: $control-padding;
     width: 100%;
     background: $control-background-color;
