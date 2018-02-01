@@ -99,10 +99,6 @@
   height: 25rem;
 }
 
-.demo-break-all {
-  word-break: break-all;
-}
-
 .demo-navbar-menu-link {
   text-decoration: none;
   color: rgb(255, 255, 255);

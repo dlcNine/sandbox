@@ -1,4 +1,4 @@
-input.textfield, textarea {
+input.textfield, textarea.textarea {
   font-size: 1.6rem;
   font-family: sans-serif;
   line-height: 1;
@@ -10,9 +10,9 @@ input.textfield, textarea {
   margin: 0.8rem 0rem;
   color: #383838;
   background-color: white; }
-  input.textfield:hover, textarea:hover {
+  input.textfield:hover, textarea.textarea:hover {
     border-color: #bfbfbf; }
-  input.textfield:focus, textarea:focus {
+  input.textfield:focus, textarea.textarea:focus {
     outline: none;
     border-color: #3e9def;
     box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5); }
@@ -64,12 +64,12 @@ div.select {
       height: 16.6rem; }
 
 /* ==================================== */
-textarea {
+textarea.textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 10rem;
   max-height: 40rem; }
-  textarea.no-resize {
+  textarea.textarea.no-resize {
     resize: none; }
 
 /* ==================================== */

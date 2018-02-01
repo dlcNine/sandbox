@@ -88,6 +88,20 @@
       <li class="list-item">
         <a href="" class="list-a">controls</a>
       </li>
+      <ul class="list-menu theme-dark absent">
+        <li class="list-item">
+          <a href="{{ 'docs/forms/controls-textfield.html' | absolute_url }}" class="list-a">texfield</a>
+        </li>
+        <li class="list-item">
+          <a href="{{ 'docs/forms/controls-select.html' | absolute_url }}" class="list-a">select</a>
+        </li>
+        <li class="list-item">
+          <a href="" class="list-a">textarea</a>
+        </li>
+        <li class="list-item">
+          <a href="" class="list-a">checkbox and radio</a>
+        </li>
+      </ul>
       <li class="list-item">
         <a href="" class="list-a">fields</a>
       </li>
@@ -184,24 +198,30 @@
   </ul>
 </div>
 <script>
-  const demoSideMenu = document.querySelector("#demo-side-menu");
   const demoSideMenuClose = document.querySelector("#demo-side-menu-close");
-  const demoSideMenuLabelAnchors = document.querySelectorAll("div#demo-side-menu li.list-label a.list-a");
+  const demoSideMenuListA = document.querySelectorAll("div#demo-side-menu ul.list-menu a.list-a");
+  function isElementThis(actual, expected, expectedClass){
+    return (actual.tagName.toLowerCase() === expected && actual.classList.contains(expectedClass));
+  }
   demoSideMenuClose.addEventListener("click", function(){
-    demoSideMenu.classList.remove("demo-side-menu-reveal");
+    document.querySelector("#demo-side-menu").classList.remove("demo-side-menu-reveal");
   });
-  demoSideMenuLabelAnchors.forEach(function(anchor){
-    anchor.addEventListener("click", function(event){
-      event.preventDefault();
-      const nextListMenu = anchor.parentElement.nextElementSibling;
-      if (!nextListMenu.classList.contains("absent"))
-        nextListMenu.classList.add("absent");
-      else
-        nextListMenu.classList.remove("absent");
+
+  demoSideMenuListA.forEach(function(aElement){
+    aElement.addEventListener("click", function(event){
+      if (event.target.getAttribute("href") === ''){
+        event.preventDefault();
+        const parent = event.target.parentElement;
+        const nextUncle = parent.nextElementSibling;
+        if (isElementThis(parent, "li", "list-label") && isElementThis(nextUncle, "ul", "list-menu")){
+          nextUncle.classList.toggle("absent");
+        }
+        else if (isElementThis(parent, "li", "list-item") && isElementThis(nextUncle, "ul", "list-menu")){
+          nextUncle.classList.toggle("absent");
+        }
+      }
     });
   });
-
-
 </script>
 
 

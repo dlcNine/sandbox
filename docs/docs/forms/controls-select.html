@@ -1,0 +1,150 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-controls-select</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Controls-Select</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display</span>
+        <span class="stamp theme-info">block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="small-12 medium-6 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.select</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.select.size-small</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.select.size-medium</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.select.size-large</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="small-12 medium-6 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div<span class="text-indigo">.select.multiple</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div<span class="text-indigo">.select.focused</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">Sandbox uses div.select as a wrapper for the select element. This allows Sandbox to style the select element to be more consistent with other controls such as the input.textfield.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="select mgn-t-0">
+            <select name="birds">
+              <option value="chicken">chicken</option>
+              <option value="duck">duck</option>
+              <option value="turkey">turkey</option>
+            </select>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <ol class="code p-alt text-break-all">
+            <li class="line"><span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span></li>
+            <ol class="code-nested">
+              <li class="line"><span class="text-blue">&ltselect&gt</span></li>
+              <ol class="code-nested">
+                <li class="line"><span class="text-blue">&ltoption</span> value="chicken"<span class="text-blue">&gt</span>chicken<span class="text-blue">&lt/option&gt</span></li>
+                <li class="line"><span class="text-blue">&ltoption</span> value="duck"<span class="text-blue">&gt</span>duck<span class="text-blue">&lt/option&gt</span></li>
+                <li class="line"><span class="text-blue">&ltoption</span> value="turkey"<span class="text-blue">&gt</span>turkey<span class="text-blue">&lt/option&gt</span></li>
+              </ol>
+              <li class="line"><span class="text-blue">&lt/select&gt</span></li>
+            </ol>
+            <li class="line"><span class="text-blue">&lt/div&gt</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Size classes</h2>
+      <p class="tc p mgn-b-1">Unlike input.textfield, the div.select wrapper uses size-* classes to resize the element. The size-* classes are not responsive.</p>
+      <div class="container">
+        <div class="default-12 large-6"></div>
+        <div class="default-12 large-6"></div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Recommended JavaScript</h2>
+      <p class="tc p">Since div.select is a wrapper for the select element, there is some recommended JavaScript to run in order to have the element behave as the other bordered controls do when they have focus.</p>
+    </div>
+    
+
+
+
+
+  </div>
+
+
+
+</body>
+</html>
