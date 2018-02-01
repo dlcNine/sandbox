@@ -21,22 +21,23 @@ input.textfield, textarea.textarea {
 div.select {
   font-size: 1.6rem;
   position: relative; }
-  div.select::before {
+  div.select:not(.multiple)::before {
     content: '';
     position: absolute;
     height: 1.875em;
     width: 2em;
     right: 0.1rem;
-    top: 0.1rem;
+    top: 50%;
+    transform: translate(0%, -50%);
     border-radius: 0.1875em;
     background-color: white;
     pointer-events: none; }
-  div.select::after {
+  div.select:not(.multiple)::after {
     content: '';
     position: absolute;
     width: 0.5em;
     height: 0.5em;
-    right: 1rem;
+    right: 0.75em;
     top: 50%;
     border-radius: 0.0625em;
     transform-origin: 25% 25%;
@@ -47,12 +48,12 @@ div.select {
     appearance: none;
     -webkit-appearance: none;
     font-size: inherit;
-    line-height: 1;
+    line-height: 1.175;
     font-family: sans-serif;
     color: #383838;
     display: block;
     margin: 0.8rem 0rem;
-    padding: 0.4375em 0.625em;
+    padding: 0.375em 0.625em;
     width: 100%;
     background: white;
     border: 0.1rem solid #d8d8d8;
