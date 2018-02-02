@@ -9,7 +9,7 @@ $field-help-font-size: 1.2rem;
 $field-help-margin: 0.25em 0em;
 $field-required-asterisk-color: $medium-red;
 
-form div.field {
+div.field {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: $field-padding;
@@ -33,18 +33,10 @@ form div.field {
   }
 
   &.theme-primary {
-    input.textfield, textarea.textarea {
+    input.textfield, textarea.textarea, div.select select {
       border-color: $medium-blue;
 
       &:focus {
-        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-blue-thin inset;
-      }
-    }
-
-    div.select {
-      border-color: $medium-blue;
-
-      &.focused {
         box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-blue-thin inset;
       }
     }
@@ -55,18 +47,10 @@ form div.field {
   }
 
   &.theme-info {
-    input.textfield, textarea.textarea {
+    input.textfield, textarea.textarea, div.select select {
       border-color: $medium-green;
 
       &:focus {
-        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-green-thin inset;
-      }
-    }
-
-    div.select {
-      border-color: $medium-green;
-
-      &.focused {
         box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-green-thin inset;
       }
     }
@@ -77,18 +61,10 @@ form div.field {
   }
 
   &.theme-caution {
-    input.textfield, textarea.textarea {
+    input.textfield, textarea.textarea, div.select select {
       border-color: $medium-yellow;
 
       &:focus {
-        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $medium-yellow-thin inset;
-      }
-    }
-
-    div.select {
-      border-color: $medium-yellow;
-
-      &.focused {
         box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $medium-yellow-thin inset;
       }
     }
@@ -103,18 +79,10 @@ form div.field {
   }
 
   &.theme-danger {
-    input.textfield, textarea.textarea {
+    input.textfield, textarea.textarea, div.select select {
       border-color: $medium-red;
 
       &:focus {
-        box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-red-thin inset;
-      }
-    }
-
-    div.select {
-      border-color: $medium-red;
-
-      &.focused {
         box-shadow: 0em 0em 0em $field-control-focus-shadow-spread $light-red-thin inset;
       }
     }

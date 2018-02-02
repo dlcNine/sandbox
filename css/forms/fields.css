@@ -1,60 +1,44 @@
-form div.field {
+div.field {
   font-size: 1.6rem;
   font-family: sans-serif;
   padding: 0.6rem;
   margin: 0.2rem 0rem; }
-  form div.field .label {
+  div.field .label {
     color: #383838;
     font-size: 1.4rem;
     font-weight: bold; }
-  form div.field .help {
+  div.field .help {
     color: #383838;
     font-size: 1.2rem;
     margin: 0.25em 0em; }
-  form div.field.required .label::after {
+  div.field.required .label::after {
     content: ' * ';
     color: #e53c27; }
-  form div.field.theme-primary input.textfield, form div.field.theme-primary textarea.textarea {
+  div.field.theme-primary input.textfield, div.field.theme-primary textarea.textarea, div.field.theme-primary div.select select {
     border-color: #3e9def; }
-    form div.field.theme-primary input.textfield:focus, form div.field.theme-primary textarea.textarea:focus {
+    div.field.theme-primary input.textfield:focus, div.field.theme-primary textarea.textarea:focus, div.field.theme-primary div.select select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
-  form div.field.theme-primary div.select {
-    border-color: #3e9def; }
-    form div.field.theme-primary div.select.focused {
-      box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
-  form div.field.theme-primary .help, form div.field.theme-primary label.checkbox, form div.field.theme-primary label.radio {
+  div.field.theme-primary .help, div.field.theme-primary label.checkbox, div.field.theme-primary label.radio {
     color: #3e9def; }
-  form div.field.theme-info input.textfield, form div.field.theme-info textarea.textarea {
+  div.field.theme-info input.textfield, div.field.theme-info textarea.textarea, div.field.theme-info div.select select {
     border-color: #54c43a; }
-    form div.field.theme-info input.textfield:focus, form div.field.theme-info textarea.textarea:focus {
+    div.field.theme-info input.textfield:focus, div.field.theme-info textarea.textarea:focus, div.field.theme-info div.select select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
-  form div.field.theme-info div.select {
-    border-color: #54c43a; }
-    form div.field.theme-info div.select.focused {
-      box-shadow: 0em 0em 0em 0.125em rgba(119, 216, 97, 0.5) inset; }
-  form div.field.theme-info .help, form div.field.theme-info label.checkbox, form div.field.theme-info label.radio {
+  div.field.theme-info .help, div.field.theme-info label.checkbox, div.field.theme-info label.radio {
     color: #54c43a; }
-  form div.field.theme-caution input.textfield, form div.field.theme-caution textarea.textarea {
+  div.field.theme-caution input.textfield, div.field.theme-caution textarea.textarea, div.field.theme-caution div.select select {
     border-color: #e8e819; }
-    form div.field.theme-caution input.textfield:focus, form div.field.theme-caution textarea.textarea:focus {
+    div.field.theme-caution input.textfield:focus, div.field.theme-caution textarea.textarea:focus, div.field.theme-caution div.select select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
-  form div.field.theme-caution div.select {
-    border-color: #e8e819; }
-    form div.field.theme-caution div.select.focused {
-      box-shadow: 0em 0em 0em 0.125em rgba(232, 232, 25, 0.5) inset; }
-  form div.field.theme-caution .help {
+  div.field.theme-caution .help {
     color: #6f6f10; }
-  form div.field.theme-caution label.checkbox, form div.field.theme-caution label.radio {
+  div.field.theme-caution label.checkbox, div.field.theme-caution label.radio {
     color: #e8e819; }
-  form div.field.theme-danger input.textfield, form div.field.theme-danger textarea.textarea {
+  div.field.theme-danger input.textfield, div.field.theme-danger textarea.textarea, div.field.theme-danger div.select select {
     border-color: #e53c27; }
-    form div.field.theme-danger input.textfield:focus, form div.field.theme-danger textarea.textarea:focus {
+    div.field.theme-danger input.textfield:focus, div.field.theme-danger textarea.textarea:focus, div.field.theme-danger div.select select:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
-  form div.field.theme-danger div.select {
-    border-color: #e53c27; }
-    form div.field.theme-danger div.select.focused {
-      box-shadow: 0em 0em 0em 0.125em rgba(242, 100, 82, 0.5) inset; }
-  form div.field.theme-danger .help, form div.field.theme-danger label.checkbox, form div.field.theme-danger label.radio {
+  div.field.theme-danger .help, div.field.theme-danger label.checkbox, div.field.theme-danger label.radio {
     color: #e53c27; }
 
 /*# sourceMappingURL=fields.css.map */
