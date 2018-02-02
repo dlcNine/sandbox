@@ -1,0 +1,218 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-controls-textarea</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Controls-Textarea</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">textarea</span><span class="text-indigo">.textarea</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">textarea</span><span class="text-indigo">.textarea.no-resize</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">The <span class="snippet p-alt"><span class="text-blue">textarea</span><span class="text-indigo">.textarea</span></span> element shares styling with the <span class="snippet p-alt"><span class="text-blue">input</span><span class="text-indigo">.textfield</span></span> element, such as being styled to take up the full width that's available. It also sets restrictions for maximum and minimum height.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="default-12">
+        <textarea class="textarea mgn-t-0" placeholder="textarea"></textarea>
+      </div>
+      <div class="default-12">
+        <ol class="code p-alt text-nowrap overflow-x-auto">
+          <li class="line">
+            <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea"</span> placeholder="textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">No-resize</h2>
+      <p class="tc p">Use the <span class="snippet p-alt text-indigo">.no-resize</span> class on a <span class="snippet p-alt"><span class="text-blue">textarea</span><span class="text-indigo">.textrea</span></span> to remove the resizing handle.</p>
+      <div class="container">
+        <div class="default-12">
+          <textarea class="textarea no-resize" placeholder="no resize"></textarea>
+        </div>
+        <div class="default-12">
+          <ol class="code p-alt text-nowrap overflow-x-auto">
+            <li class="line">
+              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea no-resize"</span> placeholder="no resize"<span class="text-blue">&gt&lt/textarea&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font size scaling</h2>
+      <p class="tc p">Since the height and width of a <span class="snippet p-alt"><span class="text-blue">textarea</span><span class="text-indigo">.textarea</span></span> are preset, using a font-size class on it will mainly alter the border-radius and the font-size itself.</p>
+      <div class="container">
+        <div class="default-12">
+          <textarea class="textarea h6" placeholder="h6 textarea"></textarea>
+          <textarea class="textarea" placeholder="regular textarea"></textarea>
+          <textarea class="textarea h1" placeholder="h1 textarea"></textarea>
+        </div>
+        <div class="default-12">
+          <ol class="code p-alt text-nowrap overflow-x-auto">
+            <li class="line">
+              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h6"</span> placeholder="h6 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h4"</span> placeholder="regular textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h1"</span> placeholder="h1 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$control-padding</td>
+            <td>0.375em 0.625em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-margin</td>
+            <td>0.8rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-radius</td>
+            <td>0.1875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-border-color</td>
+            <td class="text-red">$light-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-hover-border-color</td>
+            <td class="text-red">$medium-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-font-family</td>
+            <td>sans-serif</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-color</td>
+            <td class="text-red">$black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-border-color</td>
+            <td class="text-red">$medium-blue</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-shadow-color</td>
+            <td class="text-red">$light-blue-thin</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$control-focus-shadow-spread</td>
+            <td class="demo-rds-br-1">0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$textarea-min-height</td>
+            <td class="demo-rds-br-1">10rem</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$textarea-max-height</td>
+            <td class="demo-rds-br-1">40rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./controls-select.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./controls-checkbox-radio.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+
+    
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>

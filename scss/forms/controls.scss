@@ -108,6 +108,7 @@ textarea.textarea {
   max-width: 100%;
   min-height: $textarea-min-height;
   max-height: $textarea-max-height;
+  line-height: 1.5;
 
   &.no-resize {
     resize: none;

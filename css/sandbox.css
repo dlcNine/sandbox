@@ -1859,7 +1859,8 @@ textarea.textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 10rem;
-  max-height: 40rem; }
+  max-height: 40rem;
+  line-height: 1.5; }
   textarea.textarea.no-resize {
     resize: none; }
 
