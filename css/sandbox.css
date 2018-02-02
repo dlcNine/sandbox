@@ -1870,10 +1870,10 @@ label.checkbox, label.radio {
   color: #383838;
   font-family: sans-serif;
   display: inline-block;
-  padding: 0.375em 0em;
-  margin-right: 0.625rem; }
+  padding: 0.375em 0.625em;
+  margin: 0.8rem 0rem; }
   label.checkbox input[type="checkbox"], label.checkbox input[type="radio"], label.radio input[type="checkbox"], label.radio input[type="radio"] {
-    margin-right: 0.2rem;
+    margin-right: 0.125em;
     border-radius: 0.1875em; }
 
 div.field {

@@ -14,8 +14,6 @@ $control-focus-shadow-spread: 0.125em;
 $select-arrow-color: $light-black;
 $textarea-min-height: 10rem;
 $textarea-max-height: 40rem;
-$label-checkbox-radio-padding: 0.375em 0em;
-$label-checkbox-radio-margin-right: 0.625rem;
 
 input.textfield, textarea.textarea {
   font-size: 1.6rem;
@@ -122,11 +120,11 @@ label.checkbox, label.radio {
   color: $control-color;
   font-family: sans-serif;
   display: inline-block;
-  padding: $label-checkbox-radio-padding;
-  margin-right: $label-checkbox-radio-margin-right;
+  padding: $control-padding;
+  margin: $control-margin;
 
   input[type="checkbox"], input[type="radio"] {
-    margin-right: 0.2rem;
+    margin-right: 0.125em;
     border-radius: 0.1875em;
   }
 }
