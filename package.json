@@ -1,6 +1,6 @@
 {
   "name": "sandbox",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A responsive, scalable, and easy to use CSS framework.",
   "main": "scss/sandbox.scss",
   "scripts": {
