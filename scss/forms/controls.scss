@@ -89,6 +89,10 @@ div.select {
     border: 0.1rem solid $control-border-color;
     border-radius: $control-radius;
 
+    &:hover {
+      border-color: $control-hover-border-color;
+    }
+
     &:focus {
       outline: none;
       border-color: $control-focus-border-color;

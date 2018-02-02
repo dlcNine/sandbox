@@ -74,7 +74,7 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p">Sandbox uses a customized <span class="snippet p-alt text-blue">select</span> element, wrapped by the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class adds some additional styling to complete the <span class="snippet p-alt text-blue">select</span> element.</p>
+      <p class="tc p">Sandbox uses a customized <span class="snippet p-alt text-blue">select</span> element, wrapped by the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class adds some additional styling to complete the <span class="snippet p-alt text-blue">select</span> element. This element is also styled to take up the full width available.</p>
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Structure</h2>
@@ -121,8 +121,8 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Multiple</h2>
-      <p class="tc p mgn-b-1">Apply the <span class="snippet p-alt">multiple</span> attribute to the <span class="snippet p-alt text-blue">select</span> element and the <span class="snippet p-alt text-indigo">.multiple</span> class to <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> in order to choose multiple options from the <span class="snippet p-alt text-blue">select</span> element at once.</p>
-      <p class="tc p">By setting the size attribute on the <span class="snippet p-alt text-blue">select</span> element you can specify how many options you wish to be visible.</p>
+      <p class="tc p mgn-b-1">Apply the <span class="snippet p-alt">multiple</span> attribute to the <span class="snippet p-alt text-blue">select</span> element and use <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select.multiple</span></span> in order to choose multiple options from the <span class="snippet p-alt text-blue">select</span> element at once.</p>
+      <p class="tc p">By setting the <span class="snippet p-alt">size</span> attribute on the <span class="snippet p-alt text-blue">select</span> element (that has the <span class="snippet p-alt">multiple</span> attribute) you can specify how many options you want to be visible.</p>
       <div class="container">
         <div class="default-12 large-6">
           <div class="select multiple">
@@ -166,7 +166,7 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Font size scaling</h2>
-      <p class="tc p">Applying the font-size classes to div.select will scale the element, which will also match the size of a scaled input.textfield (except for the largest and smallest sizes).</p>
+      <p class="tc p">Applying the font-size classes to <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> will scale the element, which will also match the size of a scaled <span class="snippet p-alt"><span class="text-blue">input</span><span class="text-indigo">.textfield</span></span> (except for the largest and smallest sizes).</p>
       <div class="container">
         <div class="default-6">
           <input type="text" placeholder="h5" class="textfield h5">
@@ -232,7 +232,10 @@
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-gray">&lt!-- options --&gt</span>
+                  <span class="text-blue">&ltoption</span> value="h5"<span class="text-blue">&gt</span>h5<span class="text-blue">&lt/option&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltoption</span> value="t-bone"<span class="text-blue">&gt</span>t-bone<span class="text-blue">&lt/option&gt</span>
                 </li>
               </ol>
               <li class="line">
@@ -242,7 +245,6 @@
             <li class="line">
               <span class="text-blue">&lt/div&gt</span>
             </li>
-
             <li class="line">
               <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select p-alt"</span><span class="text-blue">&gt</span>
             </li>
@@ -252,7 +254,10 @@
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-gray">&lt!-- options --&gt</span>
+                  <span class="text-blue">&ltoption</span> value="p-alt"<span class="text-blue">&gt</span>p-alt<span class="text-blue">&lt/option&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltoption</span> value="porterhouse"<span class="text-blue">&gt</span>porterhouse<span class="text-blue">&lt/option&gt</span>
                 </li>
               </ol>
               <li class="line">
@@ -262,29 +267,104 @@
             <li class="line">
               <span class="text-blue">&lt/div&gt</span>
             </li>
-            <li class="line"><span class="text-&lt!-- etc... --&gt</li>
-
-
-
-
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select h4"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltselect&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltoption</span> value="h4"<span class="text-blue">&gt</span>h4<span class="text-blue">&lt/option&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltoption</span> value="ribeye"<span class="text-blue">&gt</span>ribeye<span class="text-blue">&lt/option&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/select&gt</span>
+              </li>
+            </ol>
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+            <li class="line">
+              <span class="text-gray">&lt!-- etc... --&gt</span>
+            </li>
           </ol>
         </div>
-
       </div>
-
-
-
-
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$control-padding</td>
+            <td>0.375em 0.625em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-margin</td>
+            <td>0.8rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-radius</td>
+            <td>0.1875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-border-color</td>
+            <td class="text-red">$light-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-hover-border-color</td>
+            <td class="text-red">$medium-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-font-family</td>
+            <td>sans-serif</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-color</td>
+            <td class="text-red">$black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-border-color</td>
+            <td class="text-red">$medium-blue</td>
+          </tr>
+          <tr>
+            <td class="text-red">$control-focus-shadow-color</td>
+            <td class="text-red">$light-blue-thin</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$control-focus-shadow-spread</td>
+            <td class="demo-rds-br-1">0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$select-arrow-color</td>
+            <td class="text-red demo-rds-br-1">$light-black</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
 
 
-
-
-
-
-
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./controls-textfield.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./controls-textarea.html" class="button p theme-dark mgn-0">next</a>
+    </div>
   </div>
-  
 </body>
 </html>
