@@ -50,32 +50,17 @@
     return (tagName + '>') === convertOpeningTagNameToClosing(stack[stack.length - 1]);
   }
 
-  function removeClosingAngleBracketIfAny(tagName){
-    let tagNameArray = tagName.split('');
-    let indexOfAngleBracket = tagNameArray.indexOf('>');
-    if (indexOfAngleBracket > -1){
-      tagNameArray.splice(indexOfAngleBracket, 1);
-    }
-    return tagNameArray.join('');
-  }
-
-  copyButtons.forEach(function(button){
-    button.addEventListener("click", function(event){
-      const parent = event.target.parentElement;
-      const allListItems = parent.querySelectorAll("li.line");
-      const code = [];
-      let stack = [];
-
-      allListItems.forEach(function(line){
+  function formatAllLines(allLines){
+    const code = [];
+    const stack = [];
+    allLines.forEach(function(line){
         line = line.innerText;
         let indentedLine;
         let tagName;
-
         if (stack.length > 0){
           indentedLine = indent(line, stack.length);
         }
-
-        tagName = removeClosingAngleBracketIfAny(line.split(' ')[0]);
+        tagName = line.split(' ')[0].replace(/>/, '');
         if ((stack.length > 0) && currentClosesStackTop(tagName, stack)){
           stack.pop();
           indentedLine = indent(line, stack.length);
@@ -83,22 +68,24 @@
         else if (!isSelfClosing(tagName) && !tagClosesOnSameLine(line)){
           stack.push(tagName);
         }
-
-        // code.push((indentedLine !== undefined) ? indentedLine + "\n" : line + "\n");
+        code.push((indentedLine !== undefined) ? indentedLine + "&#10;" : line + "&#10;");
       });
+    return code.join('');
+  }
+
+  copyButtons.forEach(function(button){
+    button.addEventListener("click", function(event){
+      const parent = event.target.parentElement;
+      const allLines = parent.querySelectorAll("li.line");
+      const codeString = formatAllLines(allLines);
+      const temp = document.createElement("textarea");
+
+      temp.className = "demo-copy-target";
+      temp.innerHTML = codeString;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand("copy");
+      temp.remove();
     });
   });
-
-      // let temp = document.createElement("textarea");
-
-
-      // temp.innerText = codeString;
-      // temp.className = "fixed demo-outta-here";
-
-      // document.body.appendChild(temp);
-      // temp.select();
-      // document.execCommand("copy");
-      // temp.remove();
-  //   });
-  // });
 </script>

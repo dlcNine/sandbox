@@ -100,6 +100,7 @@
 }
 
 .demo-copy-target {
+  white-space: pre-wrap;
   position: fixed;
   left: -900%;
   top: -900%;
