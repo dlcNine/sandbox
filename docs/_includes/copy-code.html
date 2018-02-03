@@ -1,5 +1,5 @@
 <script>
-  let copyButtons = document.querySelectorAll("ol.code button.demo-copy-button");
+  let copyButtons = document.querySelectorAll("div.relative button.demo-copy-button");
 
   function isSelfClosing(tagName){
     switch(tagName){
@@ -82,8 +82,8 @@
 
   copyButtons.forEach(function(button){
     button.addEventListener("click", function(event){
-      const parent = event.target.parentElement;
-      const allLines = parent.querySelectorAll("li.line");
+      const codeContainer = event.target.nextElementSibling;
+      const allLines = codeContainer.querySelectorAll("li.line");
       const codeString = formatAllLines(allLines);
       const temp = document.createElement("textarea");
 
@@ -93,6 +93,7 @@
       temp.select();
       document.execCommand("copy");
       temp.remove();
+      console.log("code copied");
     });
   });
 </script>
