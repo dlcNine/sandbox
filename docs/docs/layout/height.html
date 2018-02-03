@@ -146,27 +146,30 @@
           </div>
         </div>
         <div class="default-12 large-6">
-          <ol class="code p-alt text-nowrap overflow-x-auto">
-            <li class="line">
-              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"banner h1"</span><span class="text-blue">&gt</span>
-            </li>
-            <ol class="code-nested">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
-                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"height-1-small height-2-3-medium height-1-3-large"</span><span class="text-blue">&gt</span>
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"banner h1"</span><span class="text-blue">&gt</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-gray">&lt!-- content --&gt</span>
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"height-1-small height-2-3-medium height-1-3-large"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt!-- content --&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
                 </li>
               </ol>
               <li class="line">
                 <span class="text-blue">&lt/div&gt</span>
               </li>
             </ol>
-            <li class="line">
-              <span class="text-blue">&lt/div&gt</span>
-            </li>
-          </ol>
+          </div>
         </div>
       </div>
     </div>
@@ -175,5 +178,8 @@
       <a href="../buttons/buttons.html" class="button p theme-dark mgn-0">next</a>
     </div>
   </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
 </body>
 </html>
