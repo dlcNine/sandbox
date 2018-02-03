@@ -28,7 +28,7 @@
 
   function tagClosesOnSameLine(line){
     const tagName = line.split(' ')[0].slice(1);
-    return line.includes("</" + tagName);
+    return (tagName === "!--") ? line.includes("-->") : line.includes("</" + tagName); 
   }
 
   function indent(line, iterations) {
@@ -47,7 +47,12 @@
   }
 
   function currentClosesStackTop(tagName, stack){
-    return (tagName + '>') === convertOpeningTagNameToClosing(stack[stack.length - 1]);
+    if (tagName === "--"){
+      return (stack[stack.length - 1] === "!--");
+    }
+    else {
+      return (tagName + '>') === convertOpeningTagNameToClosing(stack[stack.length - 1]);
+    }
   }
 
   function formatAllLines(allLines){
@@ -65,8 +70,10 @@
           stack.pop();
           indentedLine = indent(line, stack.length);
         }
-        else if (!isSelfClosing(tagName) && !tagClosesOnSameLine(line)){
-          stack.push(tagName);
+        else if (tagName.includes('<')){
+          if (!isSelfClosing(tagName) && !tagClosesOnSameLine(line)){
+            stack.push(tagName);
+          } 
         }
         code.push((indentedLine !== undefined) ? indentedLine + "&#10;" : line + "&#10;");
       });
