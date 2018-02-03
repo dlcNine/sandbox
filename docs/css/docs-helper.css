@@ -99,13 +99,11 @@
   height: 25rem;
 }
 
-.demo-copy-button{
-
-}
-
-.demo-outta-here {
+.demo-copy-target {
+  white-space: pre-wrap;
+  position: fixed;
   left: -900%;
-  top: 0;
+  top: -900%;
 }
 
 .demo-navbar-menu-link {

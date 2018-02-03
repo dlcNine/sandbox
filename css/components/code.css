@@ -2,7 +2,7 @@ ol.code {
   font-family: menlo, monaco, monospace;
   background-color: #f9f9f9;
   counter-reset: line-number 0;
-  padding: 1.5em 1.5em 1.5em 1.75em;
+  padding: 1.75em;
   border: 0.1rem solid #e6e6e6;
   border-radius: 0.25em;
   line-height: 1.2;

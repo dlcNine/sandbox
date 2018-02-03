@@ -82,11 +82,14 @@
         <textarea class="textarea mgn-t-0" placeholder="textarea"></textarea>
       </div>
       <div class="default-12">
-        <ol class="code p-alt text-nowrap overflow-x-auto">
-          <li class="line">
-            <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea"</span> placeholder="textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
-          </li>
-        </ol>
+        <div class="relative">
+          <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+          <ol class="code p-alt text-nowrap overflow-x-auto">
+            <li class="line">
+              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea"</span> placeholder="textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
     <div class="pad-1">
@@ -97,11 +100,14 @@
           <textarea class="textarea no-resize" placeholder="no resize"></textarea>
         </div>
         <div class="default-12">
-          <ol class="code p-alt text-nowrap overflow-x-auto">
-            <li class="line">
-              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea no-resize"</span> placeholder="no resize"<span class="text-blue">&gt&lt/textarea&gt</span>
-            </li>
-          </ol>
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea no-resize"</span> placeholder="no resize"<span class="text-blue">&gt&lt/textarea&gt</span>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
@@ -115,17 +121,20 @@
           <textarea class="textarea h1" placeholder="h1 textarea"></textarea>
         </div>
         <div class="default-12">
-          <ol class="code p-alt text-nowrap overflow-x-auto">
-            <li class="line">
-              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h6"</span> placeholder="h6 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
-            </li>
-            <li class="line">
-              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h4"</span> placeholder="regular textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
-            </li>
-            <li class="line">
-              <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h1"</span> placeholder="h1 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
-            </li>
-          </ol>
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h6"</span> placeholder="h6 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h4"</span> placeholder="regular textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lttextarea</span> <span class="text-violet">class=</span><span class="text-indigo">"textarea h1"</span> placeholder="h1 textarea"<span class="text-blue">&gt&lt/textarea&gt</span>
+              </li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>
@@ -200,5 +209,8 @@
       <a href="./controls-checkbox-radio.html" class="button p theme-dark mgn-0">next</a>
     </div>
   </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
 </body>
 </html>

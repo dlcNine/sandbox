@@ -1,28 +1,99 @@
 <script>
-  // let copyButtons = document.querySelectorAll("ol.code button.demo-copy-button");
+  let copyButtons = document.querySelectorAll("div.relative button.demo-copy-button");
 
-  // copyButtons.forEach(function(button){
-  //   button.addEventListener("click", function(event){
-  //     const parent = event.target.parentElement;
+  function isSelfClosing(tagName){
+    switch(tagName){
+      case "<area":
+      case "<base":
+      case "<br":
+      case "<col":
+      case "<command":
+      case "<embed":
+      case "<hr":
+      case "<img":
+      case "<input":
+      case "<keygen":
+      case "<link":
+      case "<menuitem":
+      case "<meta":
+      case "<param":
+      case "<source":
+      case "<track":
+      case "<wbr":
+        return true;
+      default:
+        return false;
+    }
+  }
 
+  function tagClosesOnSameLine(line){
+    const tagName = line.split(' ')[0].slice(1);
+    return (tagName === "!--") ? line.includes("-->") : line.includes("</" + tagName); 
+  }
 
-  //     const allListItems = parent.querySelectorAll("li.line");
-  //     const code = [];
-  //     allListItems.forEach(function(line){
-  //       code.push(line.innerText + '\n');
-  //     });
-  //     const codeString = code.join('');
+  function indent(line, iterations) {
+    let totalIndent = '';
+    for (let index = 0; index < iterations; index++){
+      totalIndent += "  ";
+    }
+    return totalIndent + line;
+  }
 
-  //     let temp = document.createElement("textarea");
+  function convertOpeningTagNameToClosing(tagName){
+    let tagNameArray = tagName.split('');
+    tagNameArray.splice(1, 0, '/');
+    tagNameArray.splice(tagNameArray.length, 0, '>');
+    return tagNameArray.join('');
+  }
 
+  function currentClosesStackTop(tagName, stack){
+    if (tagName === "--"){
+      return (stack[stack.length - 1] === "!--");
+    }
+    else {
+      return (tagName + '>') === convertOpeningTagNameToClosing(stack[stack.length - 1]);
+    }
+  }
 
-  //     temp.innerText = codeString;
-  //     temp.className = "fixed demo-outta-here";
+  function formatAllLines(allLines){
+    const code = [];
+    const stack = [];
+    allLines.forEach(function(line){
+        line = line.innerText;
+        let indentedLine;
+        let tagName;
+        if (stack.length > 0){
+          indentedLine = indent(line, stack.length);
+        }
+        tagName = line.split(' ')[0].replace(/>/, '');
+        if ((stack.length > 0) && currentClosesStackTop(tagName, stack)){
+          stack.pop();
+          indentedLine = indent(line, stack.length);
+        }
+        else if (tagName.includes('<')){
+          if (!isSelfClosing(tagName) && !tagClosesOnSameLine(line)){
+            stack.push(tagName);
+          } 
+        }
+        code.push((indentedLine !== undefined) ? indentedLine + "&#10;" : line + "&#10;");
+      });
+    return code.join('');
+  }
 
-  //     document.body.appendChild(temp);
-  //     temp.select();
-  //     document.execCommand("copy");
-  //     temp.remove();
-  //   });
-  // });
+  copyButtons.forEach(function(button){
+    button.addEventListener("click", function(event){
+      const codeContainer = event.target.nextElementSibling;
+      const allLines = codeContainer.querySelectorAll("li.line");
+      const codeString = formatAllLines(allLines);
+      const temp = document.createElement("textarea");
+
+      temp.className = "demo-copy-target";
+      temp.innerHTML = codeString;
+      document.body.appendChild(temp);
+      temp.select();
+      document.execCommand("copy");
+      temp.remove();
+      console.log("code copied");
+    });
+  });
 </script>

@@ -125,25 +125,28 @@
       <p class="tc p mgn-b-1">The <span class="snippet p-alt text-indigo">.flex-cross-</span> classes are used to indicate what to do with the nested items along the cross axis (the axis forming a 90 degree angle with the main axis).</p>
       <div class="container">
         <div class="default-12 large-6">
-          <ol class="code p-alt text-nowrap overflow-x-auto">
-            <li class="line">
-              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"flex flex-around flex-cross-center"</span><span class="text-blue">&gt</span>
-            </li>
-            <ol class="code-nested">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
-                <span class="text-blue">&lth5</span> <span class="text-violet">class=</span><span class="text-indigo">"t h5 text-white"</span><span class="text-blue">&gt</span>text<span class="text-blue">&lt/h5&gt</span>
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"flex flex-around flex-cross-center"</span><span class="text-blue">&gt</span>
               </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth5</span> <span class="text-violet">class=</span><span class="text-indigo">"t h5 text-white"</span><span class="text-blue">&gt</span>text<span class="text-blue">&lt/h5&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h3"</span><span class="text-blue">&gt</span>button<span class="text-blue">&lt/button&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box demo-mred"</span><span class="text-blue">&gt&lt/div&gt</span>
+                </li>
+              </ol>
               <li class="line">
-                <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button h3"</span><span class="text-blue">&gt</span>button<span class="text-blue">&lt/button&gt</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"demo-box demo-mred"</span><span class="text-blue">&gt&lt/div&gt</span>
+                <span class="text-blue">&lt/div&gt</span>
               </li>
             </ol>
-            <li class="line">
-              <span class="text-blue">&lt/div&gt</span>
-            </li>
-          </ol>
+          </div>
         </div>
         <div class="default-12 large-6">
           <div class="flex flex-around flex-cross-center demo-lblue pad-1 demo-rds-1">
@@ -158,13 +161,9 @@
       <a href="./display.html" class="button p theme-dark mgn-0">previous</a>
       <a href="./float.html" class="button p theme-dark mgn-0">next</a>
     </div>
-
-
-
-
-
-
-
   </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
 </body>
 </html>

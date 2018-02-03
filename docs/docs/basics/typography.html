@@ -287,14 +287,17 @@
       <p class="tc p mgn-b-1">The font-size classes are responsive. Simply plug in a desired breakpoint into <span class="snippet p-alt">[breakpoint]</span>. Drag the width of your browser to see the example.</p>
       <div class="container">
         <div class="default-12 large-8">
-          <ol class="code p-alt text-nowrap overflow-x-auto">
-            <li class="line"><span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-info h1-small h3-medium h5-large"</span><span class="text-blue">&gt</span></li>
-            <ol class="code-nested">
-              <li class="line">Loading</li>
-              <li class="line"><span class="text-blue">&ltspan</span> <span class="text-violet">class=</span><span class="text-indigo">"loading"</span><span class="text-blue">&gt&lt/span&gt</span></li>
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line"><span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-info h1-small h3-medium h5-large"</span><span class="text-blue">&gt</span></li>
+              <ol class="code-nested">
+                <li class="line">Loading</li>
+                <li class="line"><span class="text-blue">&ltspan</span> <span class="text-violet">class=</span><span class="text-indigo">"loading"</span><span class="text-blue">&gt&lt/span&gt</span></li>
+              </ol>
+              <li class="line"><span class="text-blue">&lt/button&gt</span></li>
             </ol>
-            <li class="line"><span class="text-blue">&lt/button&gt</span></li>
-          </ol>
+          </div>
         </div>
         <div class="default-12 large-4">
           <button class="button theme-info h5-large h3-medium h1-small block-center">
@@ -327,5 +330,8 @@
       <a href="../utilities/zeroing.html" class="button p theme-dark mgn-0">next</a>
     </div>
   </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
 </body>
 </html>
