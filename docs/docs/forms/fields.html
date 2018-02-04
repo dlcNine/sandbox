@@ -1,0 +1,143 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-fields</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Fields</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-caution">they can</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">div.field</span>
+              </li>
+              <li>
+                <span class="snippet no-background">div.field.required</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">.label</span>
+              </li>
+              <li>
+                <span class="snippet no-background">.help</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">A div.field is an element that groups together a .label describing what the field is for, an input element (or textarea), and a .help for optional help text. A div.field, as well as input elements in general, are put inside of a form element.</p>
+      <!-- <p class="tc p">A div.field is a block level element, which also has a specific padding value. A div.field can be combined with the grid column classes to create a grid layout of fields.</p> -->
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12">
+          <div class="field">
+            <label class="label">First name</label>
+            <input type="text" class="textfield" name="firstName" placeholder="first name">
+            <p class="help">Please enter your first name</p>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">&ltdiv class="field"&gt</li>
+              <ol class="code-nested">
+                <li class="line">&ltlabel class="label"&gtFirst name&lt/label&gt</li>
+                <li class="line">&ltinput type="text" class="textfield" name="firstName" placeholder="first name"&gt</li>
+                <li class="line">&ltp class="help"&gtPlease enter your first name&lt/p&gt</li>
+              </ol>
+              <li class="line">&lt/div&gt</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Required</h2>
+      <p class="tc p">Using the .required class on a div.field puts an asterisk after the .label. Don't forget to use the required attribute on the input element within.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="field required">
+            <label for="" class="label">Last name</label>
+            <input type="text" class="textfield" name="lastName" placeholder="last name" required>
+            <p class="help">Please enter your last name</p>
+          </div>
+        </div>
+        <div class="default-12"></div>
+      </div>
+    </div>
+
+    <div class="banner huge-1"></div>
+
+
+  </div>
+  
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
