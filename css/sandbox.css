@@ -1932,38 +1932,23 @@ div.field.container-field {
   display: flex;
   align-items: baseline; }
 
-div.container-controls {
-  margin: 0.8rem 0rem; }
-  div.container-controls::after {
-    content: '';
-    clear: both;
-    display: block; }
-  div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
-  div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
-    padding: 0; }
-  div.container-controls input.textfield, div.container-controls div.select select, div.container-controls textarea.textarea {
-    margin: 0; }
-  div.container-controls > div:first-child {
-    padding-right: 0.6rem; }
-  div.container-controls > div:last-child {
-    padding-left: 0.6rem; }
-  div.container-controls > div:not(:first-child):not(:last-child) {
-    padding: 0rem 0.6rem; }
-
-div.controls-inline {
-  margin: 0.6rem 0rem; }
-  div.controls-inline input {
-    margin: 0;
-    display: inline;
-    width: initial;
-    margin-right: 0.9rem; }
-  div.controls-inline label.checkbox input[type="checkbox"], div.controls-inline label.checkbox input[type="radio"], div.controls-inline label.radio input[type="checkbox"], div.controls-inline label.radio input[type="radio"] {
-    margin-right: 0.2rem; }
+div.container-controls::after {
+  content: '';
+  clear: both;
+  display: block; }
+div.container-controls > div[class*="small-"], div.container-controls > div[class*="medium-"], div.container-controls > div[class*="large-"], div.container-controls > div[class*="default-"] {
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
+  div.container-controls > div[class*="small-"]:first-child, div.container-controls > div[class*="medium-"]:first-child, div.container-controls > div[class*="large-"]:first-child, div.container-controls > div[class*="default-"]:first-child {
+    padding-left: 0; }
+  div.container-controls > div[class*="small-"]:last-child, div.container-controls > div[class*="medium-"]:last-child, div.container-controls > div[class*="large-"]:last-child, div.container-controls > div[class*="default-"]:last-child {
+    padding-right: 0; }
 
 div.addons-wrapper {
   font-size: 1.6rem;
+  font-family: sans-serif;
   display: flex;
-  margin: 0.8rem 0rem; }
+  margin: 0rem 0rem 0.6rem 0rem; }
   div.addons-wrapper > div:first-child, div.addons-wrapper > div:first-child input, div.addons-wrapper > input:first-child {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em;
@@ -2000,7 +1985,7 @@ div.addons-wrapper {
     font-size: inherit;
     margin: 0;
     width: 100%; }
-    div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select select:focus, div.addons-wrapper div.select select.focused, div.addons-wrapper div.icons-wrapper:focus, div.addons-wrapper div.icons-wrapper.focused {
+    div.addons-wrapper input:focus, div.addons-wrapper div.select select:focus, div.addons-wrapper div.icons-wrapper:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   div.addons-wrapper div.icons-wrapper input.textfield {
     height: 100%; }
