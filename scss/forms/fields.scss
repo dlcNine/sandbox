@@ -1,32 +1,30 @@
 @import "../colors.scss";
 
 $field-control-focus-shadow-spread: 0.125em;
-$field-padding: 0.6rem;
-$field-margin: 0.2rem 0rem;
+$field-margin-bottom: 1rem;
 $field-label-help-color: $black;
-$field-label-font-size: 1.4rem;
+$field-label-font-size: 1.6rem;
+$field-label-margin-bottom: 0.4rem;
 $field-help-font-size: 1.2rem;
 $field-font-family: sans-serif;
-$field-help-margin: 0.25em 0em;
 $field-required-asterisk-color: $medium-red;
 
 div.field {
   font-size: 1.6rem;
   line-height: 1;
   font-family: $field-font-family;
-  padding: $field-padding;
-  margin: $field-margin;
+  margin-bottom: $field-margin-bottom;
 
-  .label {
+  p.label {
     color: $field-label-help-color;
-    font-size: $field-label-font-size;    
+    font-size: $field-label-font-size;
     font-weight: bold;
+    margin-bottom: $field-label-margin-bottom;
   }
 
-  .help {
+  p.help {
     color: $field-label-help-color;
     font-size: $field-help-font-size;
-    margin: $field-help-margin;
   }
 
   &.required .label::after {

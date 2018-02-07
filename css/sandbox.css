@@ -1800,7 +1800,7 @@ input.textfield, textarea.textarea {
   padding: 0.375em 0.625em;
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.1875em;
-  margin: 0.8rem 0rem;
+  margin: 0rem 0rem 0.6rem 0rem;
   color: #383838;
   background-color: white; }
   input.textfield:hover, textarea.textarea:hover {
@@ -1814,7 +1814,7 @@ input.textfield, textarea.textarea {
 div.select {
   font-size: 1.6rem;
   position: relative;
-  margin: 0.8rem 0rem; }
+  margin: 0rem 0rem 0.6rem 0rem; }
   div.select:not(.multiple)::before {
     content: '';
     position: absolute;
@@ -1875,7 +1875,8 @@ label.checkbox, label.radio {
   font-family: sans-serif;
   display: inline-block;
   padding: 0.375em 0.625em;
-  margin: 0.8rem 0rem; }
+  padding-left: 0;
+  margin: 0rem 0rem 0.6rem 0rem; }
   label.checkbox input[type="checkbox"], label.checkbox input[type="radio"], label.radio input[type="checkbox"], label.radio input[type="radio"] {
     margin-right: 0.125em;
     border-radius: 0.1875em; }
@@ -1884,16 +1885,15 @@ div.field {
   font-size: 1.6rem;
   line-height: 1;
   font-family: sans-serif;
-  padding: 0.6rem;
-  margin: 0.2rem 0rem; }
-  div.field .label {
+  margin-bottom: 1rem; }
+  div.field p.label {
     color: #383838;
-    font-size: 1.4rem;
-    font-weight: bold; }
-  div.field .help {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem; }
+  div.field p.help {
     color: #383838;
-    font-size: 1.2rem;
-    margin: 0.25em 0em; }
+    font-size: 1.2rem; }
   div.field.required .label::after {
     content: ' * ';
     color: #e53c27; }

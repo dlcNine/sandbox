@@ -2,16 +2,15 @@ div.field {
   font-size: 1.6rem;
   line-height: 1;
   font-family: sans-serif;
-  padding: 0.6rem;
-  margin: 0.2rem 0rem; }
-  div.field .label {
+  margin-bottom: 1rem; }
+  div.field p.label {
     color: #383838;
-    font-size: 1.4rem;
-    font-weight: bold; }
-  div.field .help {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem; }
+  div.field p.help {
     color: #383838;
-    font-size: 1.2rem;
-    margin: 0.25em 0em; }
+    font-size: 1.2rem; }
   div.field.required .label::after {
     content: ' * ';
     color: #e53c27; }
