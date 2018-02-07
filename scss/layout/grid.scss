@@ -12,6 +12,11 @@ div.container::after, .clearfix::after {
   display: block;
 }
 
+div.container.negate-sides, .clearfix.negate-sides {
+  margin-left: -1 * $grid-column-padding;
+  margin-right: -1 * $grid-column-padding;
+}
+
 div.new-line {
   float: left;
   width: 100%;

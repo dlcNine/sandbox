@@ -1126,6 +1126,10 @@ div.container::after, .clearfix::after {
   clear: both;
   display: block; }
 
+div.container.negate-sides, .clearfix.negate-sides {
+  margin-left: -1.2rem;
+  margin-right: -1.2rem; }
+
 div.new-line {
   float: left;
   width: 100%; }
