@@ -6,7 +6,7 @@ input[type="reset"].button {
   display: inline-block;
   line-height: 1;
   padding: 0.375em 0.75em;
-  margin: 0.6rem;
+  margin: 0rem 0.6rem 0.6rem 0rem;
   border-radius: 0.1875em;
   text-align: center;
   color: #636363;

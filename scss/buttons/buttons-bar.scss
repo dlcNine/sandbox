@@ -1,6 +1,8 @@
+$buttons-bar-padding: 0rem 0.6rem 0.6rem 0rem;
+
 div.buttons-bar {
   font-size: 1.6rem;
-  padding: 0.6rem;
+  padding: $buttons-bar-padding;
 
   &::after {
     content: '';

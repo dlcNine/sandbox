@@ -1566,7 +1566,7 @@ input[type="reset"].button {
   display: inline-block;
   line-height: 1;
   padding: 0.375em 0.75em;
-  margin: 0.6rem;
+  margin: 0rem 0.6rem 0.6rem 0rem;
   border-radius: 0.1875em;
   text-align: center;
   color: #636363;
@@ -1749,7 +1749,7 @@ a.button:link {
 
 div.buttons-bar {
   font-size: 1.6rem;
-  padding: 0.6rem; }
+  padding: 0rem 0.6rem 0.6rem 0rem; }
   div.buttons-bar::after {
     content: '';
     clear: both;
@@ -1771,20 +1771,24 @@ div.buttons-bar {
   div.buttons-bar > .button:not(:first-child):not(:last-child) {
     border-radius: 0em; }
 
-div.container-buttons {
-  padding: 0.3rem; }
-  div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
-  div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
-    padding: 0.3rem; }
-    div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
-    div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
-      display: block;
-      width: 100%;
-      margin: 0; }
-  div.container-buttons::after {
-    content: '';
-    clear: both;
-    display: block; }
+div.container-buttons div[class*="default-"]:first-child, div.container-buttons div[class*="small-"]:first-child,
+div.container-buttons div[class*="medium-"]:first-child, div.container-buttons div[class*="large-"]:first-child {
+  padding: 0rem 0.3rem 0.6rem 0rem; }
+div.container-buttons div[class*="default-"]:last-child, div.container-buttons div[class*="small-"]:last-child,
+div.container-buttons div[class*="medium-"]:last-child, div.container-buttons div[class*="large-"]:last-child {
+  padding: 0rem 0rem 0.6rem 0.3rem; }
+div.container-buttons div[class*="default-"]:not(:first-child):not(:last-child), div.container-buttons div[class*="small-"]:not(:first-child):not(:last-child),
+div.container-buttons div[class*="medium-"]:not(:first-child):not(:last-child), div.container-buttons div[class*="large-"]:not(:first-child):not(:last-child) {
+  padding: 0rem 0.3rem 0.6rem 0.3rem; }
+div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
+div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
+  display: block;
+  width: 100%;
+  margin: 0; }
+div.container-buttons::after {
+  content: '';
+  clear: both;
+  display: block; }
 
 /* ============ forms ============ */
 input.textfield, textarea.textarea {
@@ -1878,6 +1882,7 @@ label.checkbox, label.radio {
 
 div.field {
   font-size: 1.6rem;
+  line-height: 1;
   font-family: sans-serif;
   padding: 0.6rem;
   margin: 0.2rem 0rem; }
