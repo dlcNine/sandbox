@@ -1126,6 +1126,10 @@ div.container::after, .clearfix::after {
   clear: both;
   display: block; }
 
+div.container.negate-sides, .clearfix.negate-sides {
+  margin-left: -1.2rem;
+  margin-right: -1.2rem; }
+
 div.new-line {
   float: left;
   width: 100%; }
@@ -1566,7 +1570,7 @@ input[type="reset"].button {
   display: inline-block;
   line-height: 1;
   padding: 0.375em 0.75em;
-  margin: 0.6rem;
+  margin: 0rem 0.6rem 0.6rem 0rem;
   border-radius: 0.1875em;
   text-align: center;
   color: #636363;
@@ -1749,7 +1753,7 @@ a.button:link {
 
 div.buttons-bar {
   font-size: 1.6rem;
-  padding: 0.6rem; }
+  padding: 0rem 0.6rem 0.6rem 0rem; }
   div.buttons-bar::after {
     content: '';
     clear: both;
@@ -1772,10 +1776,10 @@ div.buttons-bar {
     border-radius: 0em; }
 
 div.container-buttons {
-  padding: 0.3rem; }
+  margin-right: -0.6rem; }
   div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
   div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
-    padding: 0.3rem; }
+    padding: 0rem 0.6rem 0.6rem 0rem; }
     div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
     div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
       display: block;
@@ -1796,7 +1800,7 @@ input.textfield, textarea.textarea {
   padding: 0.375em 0.625em;
   border: 0.1rem solid #d8d8d8;
   border-radius: 0.1875em;
-  margin: 0.8rem 0rem;
+  margin: 0rem 0rem 0.6rem 0rem;
   color: #383838;
   background-color: white; }
   input.textfield:hover, textarea.textarea:hover {
@@ -1810,7 +1814,7 @@ input.textfield, textarea.textarea {
 div.select {
   font-size: 1.6rem;
   position: relative;
-  margin: 0.8rem 0rem; }
+  margin: 0rem 0rem 0.6rem 0rem; }
   div.select:not(.multiple)::before {
     content: '';
     position: absolute;
@@ -1871,24 +1875,29 @@ label.checkbox, label.radio {
   font-family: sans-serif;
   display: inline-block;
   padding: 0.375em 0.625em;
-  margin: 0.8rem 0rem; }
+  padding-left: 0;
+  margin: 0rem 0rem 0.6rem 0rem; }
   label.checkbox input[type="checkbox"], label.checkbox input[type="radio"], label.radio input[type="checkbox"], label.radio input[type="radio"] {
     margin-right: 0.125em;
     border-radius: 0.1875em; }
 
+form.clearfix > div[class*="small-"], form.clearfix > div[class*="medium-"], form.clearfix > div[class*="large-"], form.clearfix > div[class*="default-"] {
+  padding-top: 0rem;
+  padding-bottom: 0.6rem; }
+
 div.field {
   font-size: 1.6rem;
+  line-height: 1;
   font-family: sans-serif;
-  padding: 0.6rem;
-  margin: 0.2rem 0rem; }
-  div.field .label {
+  margin-bottom: 1rem; }
+  div.field p.label {
     color: #383838;
-    font-size: 1.4rem;
-    font-weight: bold; }
-  div.field .help {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem; }
+  div.field p.help {
     color: #383838;
-    font-size: 1.2rem;
-    margin: 0.25em 0em; }
+    font-size: 1.2rem; }
   div.field.required .label::after {
     content: ' * ';
     color: #e53c27; }
@@ -1919,56 +1928,27 @@ div.field {
   div.field.theme-danger .help, div.field.theme-danger label.checkbox, div.field.theme-danger label.radio {
     color: #e53c27; }
 
-div.container-field-horizontal::after {
+div.field.container-field {
+  display: flex;
+  align-items: baseline; }
+
+div.container-controls::after {
   content: '';
   clear: both;
   display: block; }
-div.container-field-horizontal > div[class*="default-"], div.container-field-horizontal > div[class*="small-"], div.container-field-horizontal > div[class*="medium-"], div.container-field-horizontal > div[class*="large-"] {
-  padding: 0; }
-  div.container-field-horizontal > div[class*="default-"].field-label, div.container-field-horizontal > div[class*="small-"].field-label, div.container-field-horizontal > div[class*="medium-"].field-label, div.container-field-horizontal > div[class*="large-"].field-label {
-    padding-right: 0.6rem;
-    position: relative;
-    top: 0.8rem; }
-  div.container-field-horizontal > div[class*="default-"].field-body, div.container-field-horizontal > div[class*="small-"].field-body, div.container-field-horizontal > div[class*="medium-"].field-body, div.container-field-horizontal > div[class*="large-"].field-body {
-    padding-left: 0.6rem; }
-    div.container-field-horizontal > div[class*="default-"].field-body *:first-child, div.container-field-horizontal > div[class*="default-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="small-"].field-body *:first-child, div.container-field-horizontal > div[class*="small-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="medium-"].field-body *:first-child, div.container-field-horizontal > div[class*="medium-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="large-"].field-body *:first-child, div.container-field-horizontal > div[class*="large-"].field-body div.controls-inline input.textfield {
-      margin-top: 0; }
-    div.container-field-horizontal > div[class*="default-"].field-body label.checkbox, div.container-field-horizontal > div[class*="default-"].field-body label.radio, div.container-field-horizontal > div[class*="small-"].field-body label.checkbox, div.container-field-horizontal > div[class*="small-"].field-body label.radio, div.container-field-horizontal > div[class*="medium-"].field-body label.checkbox, div.container-field-horizontal > div[class*="medium-"].field-body label.radio, div.container-field-horizontal > div[class*="large-"].field-body label.checkbox, div.container-field-horizontal > div[class*="large-"].field-body label.radio {
-      position: relative;
-      top: 0.3rem; }
-
-div.container-controls {
-  margin: 0.8rem 0rem; }
-  div.container-controls::after {
-    content: '';
-    clear: both;
-    display: block; }
-  div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
-  div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
-    padding: 0; }
-  div.container-controls input.textfield, div.container-controls div.select select, div.container-controls textarea.textarea {
-    margin: 0; }
-  div.container-controls > div:first-child {
-    padding-right: 0.6rem; }
-  div.container-controls > div:last-child {
-    padding-left: 0.6rem; }
-  div.container-controls > div:not(:first-child):not(:last-child) {
-    padding: 0rem 0.6rem; }
-
-div.controls-inline {
-  margin: 0.6rem 0rem; }
-  div.controls-inline input {
-    margin: 0;
-    display: inline;
-    width: initial;
-    margin-right: 0.9rem; }
-  div.controls-inline label.checkbox input[type="checkbox"], div.controls-inline label.checkbox input[type="radio"], div.controls-inline label.radio input[type="checkbox"], div.controls-inline label.radio input[type="radio"] {
-    margin-right: 0.2rem; }
+div.container-controls > div[class*="small-"], div.container-controls > div[class*="medium-"], div.container-controls > div[class*="large-"], div.container-controls > div[class*="default-"] {
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
+  div.container-controls > div[class*="small-"]:first-child, div.container-controls > div[class*="medium-"]:first-child, div.container-controls > div[class*="large-"]:first-child, div.container-controls > div[class*="default-"]:first-child {
+    padding-left: 0; }
+  div.container-controls > div[class*="small-"]:last-child, div.container-controls > div[class*="medium-"]:last-child, div.container-controls > div[class*="large-"]:last-child, div.container-controls > div[class*="default-"]:last-child {
+    padding-right: 0; }
 
 div.addons-wrapper {
   font-size: 1.6rem;
+  font-family: sans-serif;
   display: flex;
-  margin: 0.8rem 0rem; }
+  margin: 0rem 0rem 0.6rem 0rem; }
   div.addons-wrapper > div:first-child, div.addons-wrapper > div:first-child input, div.addons-wrapper > input:first-child {
     border-top-left-radius: 0.1875em;
     border-bottom-left-radius: 0.1875em;
@@ -2005,7 +1985,7 @@ div.addons-wrapper {
     font-size: inherit;
     margin: 0;
     width: 100%; }
-    div.addons-wrapper input:focus, div.addons-wrapper input.focused, div.addons-wrapper div.select select:focus, div.addons-wrapper div.select select.focused, div.addons-wrapper div.icons-wrapper:focus, div.addons-wrapper div.icons-wrapper.focused {
+    div.addons-wrapper input:focus, div.addons-wrapper div.select select:focus, div.addons-wrapper div.icons-wrapper:focus {
       box-shadow: 0em 0em 0em 0.125em rgba(104, 182, 249, 0.5) inset; }
   div.addons-wrapper div.icons-wrapper input.textfield {
     height: 100%; }
@@ -2311,7 +2291,7 @@ span.stamp {
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.6rem; }
+  margin: 0rem 0.6rem 0.6rem 0rem; }
   div.stamp-bar::after {
     content: '';
     clear: both;
@@ -2843,7 +2823,7 @@ table.table {
 
 ul.path {
   line-height: 1;
-  padding: 0.5em; }
+  padding: 0em 0.625em 0.375em 0em; }
   ul.path li.step {
     display: inline;
     color: #2771d1; }

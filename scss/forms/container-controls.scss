@@ -1,32 +1,22 @@
-$container-controls-margin: 0.8rem 0rem;
-
 div.container-controls {
-  margin: $container-controls-margin;
-
   &::after {
     content: '';
     clear: both;
     display: block;
   }
 
-  div[class*="default-"], div[class*="small-"], 
-  div[class*="medium-"], div[class*="large-"] {
-    padding: 0;
-  }
+  & > div[class*="small-"], & > div[class*="medium-"],
+  & > div[class*="large-"], & > div[class*="default-"] {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+   
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
 
-  input.textfield, div.select select, textarea.textarea {
-    margin: 0;
-  }
-
-  & > div:first-child {
-    padding-right: 0.6rem;
-  }
-
-  & > div:last-child {
-    padding-left: 0.6rem;
-  }
-
-  & > div:not(:first-child):not(:last-child) {
-    padding: 0rem 0.6rem;
   }
 }

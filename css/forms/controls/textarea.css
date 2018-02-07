@@ -1,9 +1,0 @@
-textarea {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 10rem;
-  max-height: 40rem; }
-  textarea.no-resize {
-    resize: none; }
-
-/*# sourceMappingURL=textarea.css.map */

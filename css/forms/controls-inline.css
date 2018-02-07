@@ -1,11 +1,3 @@
-div.controls-inline {
-  margin: 0.6rem 0rem; }
-  div.controls-inline input {
-    margin: 0;
-    display: inline;
-    width: initial;
-    margin-right: 0.9rem; }
-  div.controls-inline label.checkbox input[type="checkbox"], div.controls-inline label.checkbox input[type="radio"], div.controls-inline label.radio input[type="checkbox"], div.controls-inline label.radio input[type="radio"] {
-    margin-right: 0.2rem; }
+
 
 /*# sourceMappingURL=controls-inline.css.map */

@@ -3,14 +3,16 @@
 $addon-control-radius: 0.1875em;
 $addon-control-focus-shadow-spread: 0.125em;
 $addon-control-focus-shadow-color: $light-blue-thin;
-$addon-control-margin: 0.8rem 0rem;
+$addon-control-margin: 0rem 0rem 0.6rem 0rem;
 $addon-padding: 0.375em 0.625em;
 $addon-border-color: $light-gray;
 $addon-background-color: $light-white;
 $addon-color: $white-black;
+$addon-font-family: sans-serif;
 
 div.addons-wrapper {
   font-size: 1.6rem;
+  font-family: $addon-font-family;
   display: flex;
   margin: $addon-control-margin;
 
@@ -73,7 +75,7 @@ div.addons-wrapper {
     margin: 0;
     width: 100%;
 
-    &:focus, &.focused {
+    &:focus {
       box-shadow: 0em 0em 0em $addon-control-focus-shadow-spread $addon-control-focus-shadow-color inset;
     }
   }

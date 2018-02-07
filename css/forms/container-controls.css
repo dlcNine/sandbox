@@ -1,19 +1,13 @@
-div.container-controls {
-  margin: 0.8rem 0rem; }
-  div.container-controls::after {
-    content: '';
-    clear: both;
-    display: block; }
-  div.container-controls div[class*="default-"], div.container-controls div[class*="small-"],
-  div.container-controls div[class*="medium-"], div.container-controls div[class*="large-"] {
-    padding: 0; }
-  div.container-controls input.textfield, div.container-controls div.select select, div.container-controls textarea.textarea {
-    margin: 0; }
-  div.container-controls > div:first-child {
-    padding-right: 0.6rem; }
-  div.container-controls > div:last-child {
-    padding-left: 0.6rem; }
-  div.container-controls > div:not(:first-child):not(:last-child) {
-    padding: 0rem 0.6rem; }
+div.container-controls::after {
+  content: '';
+  clear: both;
+  display: block; }
+div.container-controls > div[class*="small-"], div.container-controls > div[class*="medium-"], div.container-controls > div[class*="large-"], div.container-controls > div[class*="default-"] {
+  padding-top: 0rem;
+  padding-bottom: 0rem; }
+  div.container-controls > div[class*="small-"]:first-child, div.container-controls > div[class*="medium-"]:first-child, div.container-controls > div[class*="large-"]:first-child, div.container-controls > div[class*="default-"]:first-child {
+    padding-left: 0; }
+  div.container-controls > div[class*="small-"]:last-child, div.container-controls > div[class*="medium-"]:last-child, div.container-controls > div[class*="large-"]:last-child, div.container-controls > div[class*="default-"]:last-child {
+    padding-right: 0; }
 
 /*# sourceMappingURL=container-controls.css.map */
