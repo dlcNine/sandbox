@@ -1,7 +1,7 @@
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.6rem; }
+  margin: 0rem 0.6rem 0.6rem 0rem; }
   div.stamp-bar::after {
     content: '';
     clear: both;

@@ -2291,7 +2291,7 @@ span.stamp {
 div.stamp-bar {
   font-size: 1.6rem;
   display: inline-block;
-  margin: 0.6rem; }
+  margin: 0rem 0.6rem 0.6rem 0rem; }
   div.stamp-bar::after {
     content: '';
     clear: both;
@@ -2823,7 +2823,7 @@ table.table {
 
 ul.path {
   line-height: 1;
-  padding: 0.5em; }
+  padding: 0em 0.625em 0.375em 0em; }
   ul.path li.step {
     display: inline;
     color: #2771d1; }
