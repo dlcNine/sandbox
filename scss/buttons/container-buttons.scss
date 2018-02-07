@@ -1,22 +1,9 @@
-$container-buttons-first-padding: 0rem 0.3rem 0.6rem 0rem;
-$container-buttons-last-padding: 0rem 0rem 0.6rem 0.3rem;
-$container-buttons-middle-padding: 0rem 0.3rem 0.6rem 0.3rem;
-
 div.container-buttons {
+  margin-right: -0.6rem;
+
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
-
-    &:first-child {
-      padding: $container-buttons-first-padding;
-    }
-
-    &:last-child {
-      padding: $container-buttons-last-padding;
-    }
-
-    &:not(:first-child):not(:last-child) {
-      padding: $container-buttons-middle-padding;
-    }
+    padding: 0rem 0.6rem 0.6rem 0rem;
 
     .button {
       display: block;
