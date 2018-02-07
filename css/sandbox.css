@@ -1924,24 +1924,6 @@ div.field {
   div.field.theme-danger .help, div.field.theme-danger label.checkbox, div.field.theme-danger label.radio {
     color: #e53c27; }
 
-div.container-field-horizontal::after {
-  content: '';
-  clear: both;
-  display: block; }
-div.container-field-horizontal > div[class*="default-"], div.container-field-horizontal > div[class*="small-"], div.container-field-horizontal > div[class*="medium-"], div.container-field-horizontal > div[class*="large-"] {
-  padding: 0; }
-  div.container-field-horizontal > div[class*="default-"].field-label, div.container-field-horizontal > div[class*="small-"].field-label, div.container-field-horizontal > div[class*="medium-"].field-label, div.container-field-horizontal > div[class*="large-"].field-label {
-    padding-right: 0.6rem;
-    position: relative;
-    top: 0.8rem; }
-  div.container-field-horizontal > div[class*="default-"].field-body, div.container-field-horizontal > div[class*="small-"].field-body, div.container-field-horizontal > div[class*="medium-"].field-body, div.container-field-horizontal > div[class*="large-"].field-body {
-    padding-left: 0.6rem; }
-    div.container-field-horizontal > div[class*="default-"].field-body *:first-child, div.container-field-horizontal > div[class*="default-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="small-"].field-body *:first-child, div.container-field-horizontal > div[class*="small-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="medium-"].field-body *:first-child, div.container-field-horizontal > div[class*="medium-"].field-body div.controls-inline input.textfield, div.container-field-horizontal > div[class*="large-"].field-body *:first-child, div.container-field-horizontal > div[class*="large-"].field-body div.controls-inline input.textfield {
-      margin-top: 0; }
-    div.container-field-horizontal > div[class*="default-"].field-body label.checkbox, div.container-field-horizontal > div[class*="default-"].field-body label.radio, div.container-field-horizontal > div[class*="small-"].field-body label.checkbox, div.container-field-horizontal > div[class*="small-"].field-body label.radio, div.container-field-horizontal > div[class*="medium-"].field-body label.checkbox, div.container-field-horizontal > div[class*="medium-"].field-body label.radio, div.container-field-horizontal > div[class*="large-"].field-body label.checkbox, div.container-field-horizontal > div[class*="large-"].field-body label.radio {
-      position: relative;
-      top: 0.3rem; }
-
 div.container-controls {
   margin: 0.8rem 0rem; }
   div.container-controls::after {

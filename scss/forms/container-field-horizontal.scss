@@ -1,33 +1,38 @@
-div.container-field-horizontal {
-
-  &::after {
-    content: '';
-    clear: both;
-    display: block;
-  }
-
-  & > div[class*="default-"], & > div[class*="small-"], 
-  & > div[class*="medium-"], & > div[class*="large-"] {
-    padding: 0;
-
-    &.field-label {
-      padding-right: 0.6rem;
-      position: relative;
-      top: 0.8rem;
-    }
-
-    &.field-body {
-      padding-left: 0.6rem;
-
-      *:first-child, div.controls-inline input.textfield {
-        margin-top: 0;
-      }
-
-      label.checkbox, label.radio {
-        position: relative;
-        top: 0.3rem;
-      }
-    }
-  }
+div.field.container {
 
 }
+
+// div.field.container-field-horizontal {
+
+//   &::after {
+//     content: '';
+//     clear: both;
+//     display: block;
+//   }
+
+//   & > div[class*="default-"], & > div[class*="small-"], 
+//   & > div[class*="medium-"], & > div[class*="large-"] {
+//     padding: 0;
+
+//     &.field-label {
+//       padding-right: 0.6rem;
+//       position: relative;
+//       top: 0.8rem;
+//     }
+
+//     &.field-body {
+//       padding-left: 0.6rem;
+
+//       *:first-child, div.controls-inline input.textfield {
+//         margin-top: 0;
+//       }
+
+//       label.checkbox, label.radio {
+//         position: relative;
+//         top: 0.3rem;
+//       }
+//     }
+//   }
+
+// }
+
