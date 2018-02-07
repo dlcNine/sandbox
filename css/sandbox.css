@@ -1924,6 +1924,10 @@ div.field {
   div.field.theme-danger .help, div.field.theme-danger label.checkbox, div.field.theme-danger label.radio {
     color: #e53c27; }
 
+div.field.container-field {
+  display: flex;
+  align-items: baseline; }
+
 div.container-controls {
   margin: 0.8rem 0rem; }
   div.container-controls::after {
