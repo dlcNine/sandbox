@@ -8,6 +8,15 @@ $field-label-margin-bottom: 0.4rem;
 $field-help-font-size: 1.2rem;
 $field-font-family: sans-serif;
 $field-required-asterisk-color: $medium-red;
+$form-grid-column-padding-bottom: 0.6rem;
+
+form.clearfix {
+  & > div[class*="small-"], & > div[class*="medium-"],
+  & > div[class*="large-"], & > div[class*="default-"] {
+    padding-top: 0rem;
+    padding-bottom: $form-grid-column-padding-bottom;
+  }
+}
 
 div.field {
   font-size: 1.6rem;

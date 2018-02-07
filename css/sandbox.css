@@ -1881,6 +1881,10 @@ label.checkbox, label.radio {
     margin-right: 0.125em;
     border-radius: 0.1875em; }
 
+form.clearfix > div[class*="small-"], form.clearfix > div[class*="medium-"], form.clearfix > div[class*="large-"], form.clearfix > div[class*="default-"] {
+  padding-top: 0rem;
+  padding-bottom: 0.6rem; }
+
 div.field {
   font-size: 1.6rem;
   line-height: 1;
