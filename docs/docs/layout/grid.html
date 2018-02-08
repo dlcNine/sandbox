@@ -22,7 +22,7 @@
     <div class="pad-1">
       <h2 class="tc h2">Specs</h2>
       <div class="stamp-bar t h5">
-        <span class="stamp theme-light">responsive</span>
+        <span class="stamp theme-light">breakpoints</span>
         <span class="stamp theme-info">yes</span>
       </div>
       <div class="stamp-bar t h5">
@@ -38,7 +38,7 @@
         <span class="stamp theme-danger">no</span>
       </div>
       <div class="stamp-bar t h5">
-        <span class="stamp theme-light">uses grid</span>
+        <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-info">it is the grid</span>
       </div>
       <div class="stamp-bar t h5">
@@ -68,6 +68,15 @@
               </li>
               <li>
                 <span class="snippet no-background text-indigo">.clearfix
+                </span>
+              </li>
+              <li>
+                <span class="snippet no-background">
+                  <span class="text-blue">div</span><span class="text-indigo">.container.negate-sides</span>
+                </span>
+              </li>
+              <li>
+                <span class="snippet no-background text-indigo">.clearfix.negate-sides
                 </span>
               </li>
             </ul>
@@ -151,7 +160,7 @@
         </div>
         <div class="default-12 pad-0">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt</span>
@@ -447,7 +456,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container"&gt</span>
@@ -474,6 +483,158 @@
       </div>
     </div>
     <div class="pad-1">
+      <h2 class="tc h2">Negate sides</h2>
+      <p class="tc p mgn-b-1">Sometimes you may want to use the grid sytem inside of an element that already has padding applied. In the example below, the padding from the grid columns is causing the content to not line up along the left side.</p>
+      <div class="pad-2 demo-lgreen demo-rds-1 mgn-b-2">
+        <div class="demo-lwhite demo-rds-1">
+          <h3 class="tc h3">Lorem ipsum dolor sit amet.</h3>
+          <div class="container">
+            <div class="default-4 demo-rds-tl-1 demo-rds-bl-1">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+            <div class="default-4">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+            <div class="default-4 demo-rds-tr-1 demo-rds-br-1">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative mgn-b-1">
+        <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+        <ol class="code p-alt text-nowrap overflow-x-auto">
+          <li class="line">
+            <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"pad-2"</span><span class="text-blue">&gt</span>
+          </li>
+          <ol class="code-nested">
+            <li class="line">
+              <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum dolor sit amet.<span class="text-blue">&lt/h3<span class="text-blue">&gt</span></span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"<span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+          </ol>
+          <li class="line">
+            <span class="text-blue">&lt/div&gt</span>
+          </li>
+        </ol>
+      </div>
+      <p class="tc p mgn-b-1">Use the <span class="snippet p-alt text-indigo">.negate-sides</span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container</span></span> or an element that has the <span class="snippet p-alt text-indigo">.clearfix</span> class to nullify the padding from the grid columns that touch the left and right sides of the container. Sandbox does this by using negative margins on the sides of the container.</p>
+      <div class="pad-2 demo-lgreen demo-rds-1 mgn-b-2">
+        <div class="demo-lwhite demo-rds-1">
+          <h3 class="tc h3">Lorem ipsum dolor sit amet.</h3>
+          <div class="container negate-sides">
+            <div class="default-4 demo-rds-tl-1 demo-rds-bl-1">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+            <div class="default-4">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+            <div class="default-4 demo-rds-tr-1 demo-rds-br-1">
+              <h3 class="tc h3">Lorem ipsum.</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative mgn-b-1">
+        <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+        <ol class="code p-alt text-nowrap overflow-x-auto">
+          <li class="line">
+            <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"pad-2"</span><span class="text-blue">&gt</span>
+          </li>
+          <ol class="code-nested">
+            <li class="line">
+              <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum dolor sit amet.<span class="text-blue">&lt/h3<span class="text-blue">&gt</span></span>
+            </li>
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container negate-sides"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"<span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt</span>Lorem ipsum.<span class="text-blue">&lt/h3&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+          </ol>
+          <li class="line">
+            <span class="text-blue">&lt/div&gt</span>
+          </li>
+        </ol>
+      </div>
+      <p class="tc p">This is advantageous when you want to use a large number of grid columns, without having to use zeroing utility classes everywhere.</p>
+    </div>
+    <div class="pad-1">
       <h2 class="tc h2">Nesting</h2>
       <p class="tc p mgn-b-1">Grid column classes can be nested directly within each other. Remember that grid column widths are percentage based in relation to the parent element, and also that grid column padding will stack up.</p>
       <p class="tc p mgn-b-1">Note that in this example the color is being applied to the grid column itself, rather than its content area.</p>
@@ -492,7 +653,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10">copy</button>
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt</span>

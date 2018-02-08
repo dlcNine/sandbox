@@ -1,5 +1,4 @@
 $spacing: 1.2rem;
-$spacing-field: 0.6rem;
 
 .mgn-1 { 
   margin: $spacing !important;
@@ -89,28 +88,6 @@ $spacing-field: 0.6rem;
 
 /* ==================================== */
 
-.mgn-field {
-  margin: $spacing-field !important;
-}
-
-.mgn-t-field { 
-  margin-top: $spacing-field !important;
-}
-
-.mgn-b-field { 
-  margin-bottom: $spacing-field !important;
-}
-
-.mgn-l-field { 
-  margin-left: $spacing-field !important;
-}
-
-.mgn-r-field { 
-  margin-right: $spacing-field !important;
-}
-
-/* ==================================== */
-
 .pad-1 { 
   padding: $spacing !important;
 }
@@ -195,28 +172,6 @@ $spacing-field: 0.6rem;
 
 .pad-r-4 { 
   padding-right: $spacing * 4 !important;
-}
-
-/* ==================================== */
-
-.pad-field {
-  padding: $spacing-field !important;
-}
-
-.pad-t-field { 
-  padding-top: $spacing-field !important;
-}
-
-.pad-b-field { 
-  padding-bottom: $spacing-field !important;
-}
-
-.pad-l-field { 
-  padding-left: $spacing-field !important;
-}
-
-.pad-r-field { 
-  padding-right: $spacing-field !important;
 }
 
 /* ====================================================== */

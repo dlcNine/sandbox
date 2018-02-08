@@ -62,22 +62,6 @@
   margin-right: 4.8rem !important; }
 
 /* ==================================== */
-.mgn-field {
-  margin: 0.6rem !important; }
-
-.mgn-t-field {
-  margin-top: 0.6rem !important; }
-
-.mgn-b-field {
-  margin-bottom: 0.6rem !important; }
-
-.mgn-l-field {
-  margin-left: 0.6rem !important; }
-
-.mgn-r-field {
-  margin-right: 0.6rem !important; }
-
-/* ==================================== */
 .pad-1 {
   padding: 1.2rem !important; }
 
@@ -140,22 +124,6 @@
 
 .pad-r-4 {
   padding-right: 4.8rem !important; }
-
-/* ==================================== */
-.pad-field {
-  padding: 0.6rem !important; }
-
-.pad-t-field {
-  padding-top: 0.6rem !important; }
-
-.pad-b-field {
-  padding-bottom: 0.6rem !important; }
-
-.pad-l-field {
-  padding-left: 0.6rem !important; }
-
-.pad-r-field {
-  padding-right: 0.6rem !important; }
 
 /* ====================================================== */
 /* <= 420px */
