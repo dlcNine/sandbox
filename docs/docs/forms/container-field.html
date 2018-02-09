@@ -1,0 +1,178 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-container-field</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Container-field</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">flex</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">div.field.container-field</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">Use the .container-field class on a div.field when you want to create a horizontal form with the p.label on one side, and the control and p.help on the other.</p>
+      <p class="tc p">The idea is that the div.field.container-field itself, becomes the housing for the grid columns to be used within.</p>
+    </div>
+    <div class="pad-1">
+      <div class="message theme-info">
+        <div class="message-header">
+          <p class="t p">The <span class="snippet p-alt text-indigo">container-</span> classes</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt">In Sandbox, any of the built in classes that start with <span class="snippet p-alt text-indigo">container-</span> are already clearfixed (or set to flex in this case), and are intended to have the grid column classes used within them.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <form class="clearfix negate-sides">
+        <div class="field container-field">
+          <div class="default-4">
+            <p class="label text-right">First name</p>
+          </div>
+          <div class="default-8">
+            <input type="text" class="textfield" placeholder="John">
+            <p class="help absent">Enter your first name</p>
+          </div>
+        </div>
+        <div class="field container-field">
+          <div class="default-4">
+            <p class="label text-right">Bio</p>
+          </div>
+          <div class="default-8">
+            <textarea class="textarea" placeholder="quick blurb about you"></textarea>
+            <p class="help absent">Blurb away</p>
+          </div>
+        </div>
+        <div class="field container-field">
+          <div class="default-4">
+            <p class="label text-right">Stuff</p>
+          </div>
+          <div class="default-8">
+            <label class="checkbox">
+              <input type="checkbox" name="stuff" value="shoes">
+              Shoes
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="stuff" value="bag">
+              Bag
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="stuff" value="laptop">
+              Laptop
+            </label>
+            <p class="help absent">Do you have your things?</p>
+          </div>
+        </div>
+        <div class="field container-field">
+          <div class="default-4">
+            <p class="label text-right">Ready to go</p>
+          </div>
+          <div class="default-8">
+            <label class="radio">
+              <input type="radio" name="readyToGo" value="yes">
+              yes
+            </label>
+            <label class="radio">
+              <input type="radio" name="readyToGo" value="no">
+              no
+            </label>
+            <p class="help absent">Ready to go?</p>
+          </div>
+        </div>
+        <div class="field container-field">
+          <div class="default-4">
+            <p class="label text-right">Mode of transportation</p>
+          </div>
+          <div class="default-8">
+            <div class="select">
+              <select name="transportation">
+                <option value="walking">walking</option>
+                <option value="biking">biking</option>
+                <option value="car">car</option>
+              </select>
+            </div>
+            <p class="help absent">What mode of transportation?</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+
+
+
+
+
+
+  </div>
+
+
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>

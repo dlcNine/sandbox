@@ -1,0 +1,565 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-addons-wrapper</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Addons-wrapper</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">flex</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background "><span class="text-blue">div</span><span class="text-indigo">.addons-wrapper</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background "><span class="text-blue">div</span><span class="text-indigo">.left-addon</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background "><span class="text-blue">div</span><span class="text-indigo">.right-addon</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background "><span class="text-blue">div</span><span class="text-indigo">.left-addon.has-button</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background "><span class="text-blue">div</span><span class="text-indigo">.right-addon.has-button</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">Use a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.addons-wrapper</span></span> to set some additional information to the left, right or both sides of an <span class="snippet p-alt"><span class="text-blue">input</span><span class="text-indigo">.textfield</span></span> or a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span>.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12">
+          <div class="addons-wrapper">
+            <div class="left-addon">www.</div>
+            <input type="text" class="textfield" placeholder="website.com">
+          </div>
+          <div class="addons-wrapper">
+            <input type="number" class="textfield" placeholder="1">
+            <div class="right-addon">.00</div>
+          </div>
+          <div class="addons-wrapper">
+            <div class="left-addon">www.</div>
+            <div class="select">
+              <select name="" id="">
+                <option value="online">online</option>
+                <option value="website">website</option>
+                <option value="internet">internet</option>
+              </select>
+            </div>
+            <div class="right-addon">.com</div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon"</span><span class="text-blue">&gt</span>www.<span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span> placeholder="website.com"<span class="text-blue">&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltinput</span> type="number" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span> placeholder="1"<span class="text-blue">&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon"</span><span class="text-blue">&gt</span>.00<span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon"</span><span class="text-blue">&gt</span>www.<span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltselect&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="online"<span class="text-blue">&gt</span>online<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="website"<span class="text-blue">&gt</span>website<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="internet"<span class="text-blue">&gt</span>internet<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/select&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon"</span><span class="text-blue">&gt</span>.com<span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Has button</h2>
+      <p class="tc p">Using the <span class="snippet p-alt text-indigo">.has-button</span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.left-addon</span></span> or a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.right-addon</span></span>, and using one of the specified elements that can use <span class="snippet p-alt text-indigo">.button</span> inside of the addon, will fill that addon with the button.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="addons-wrapper">
+            <div class="left-addon has-button">
+              <button class="button theme-primary">select</button>
+            </div>
+            <input type="text" class="textfield" placeholder="something">
+          </div>
+          <div class="addons-wrapper">
+            <input type="text" class="textfield" placeholder="search term">
+            <div class="right-addon has-button">
+              <button class="button theme-info">search</button>
+            </div>
+          </div>
+          <div class="addons-wrapper">
+            <div class="left-addon has-button">
+              <button class="button">previous</button>
+            </div>
+            <div class="select">
+              <select>
+                <option value="choice">choice</option>
+                <option value="other choice">other choice</option>
+              </select>
+            </div>
+            <div class="right-addon has-button">
+              <button class="button">next</button>
+            </div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon has-button"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-primary"</span><span class="text-blue">&gt</span>select<span class="text-blue">&lt/button&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span> placeholder="something"<span class="text-blue">&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span> placeholder="search term"<span class="text-blue">&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon has-button"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-info"</span><span class="text-blue">&gt</span>search<span class="text-blue">&lt/button&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon has-button"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button"</span><span class="text-blue">&gt</span>previous<span class="text-blue">&lt/button&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltselect&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="choice"<span class="text-blue">&gt</span>choice<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="other choice"<span class="text-blue">&gt</span>other choice<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/select&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon has-button"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltbutton</span> <span class="text-violet">class=</span><span class="text-indigo">"button"</span><span class="text-blue">&gt</span>next<span class="text-blue">&lt/button&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-size scaling</h2>
+      <p class="tc p">Apply any of the font-size classes to a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.addons-wrapper</span></span> to have its children inherit the specified font-size.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="addons-wrapper h5">
+            <div class="left-addon">www.</div>
+            <div class="select">
+              <select name="" id="">
+                <option value="online">online</option>
+                <option value="website">website</option>
+                <option value="internet">internet</option>
+              </select>
+            </div>
+            <div class="right-addon">.com</div>
+          </div>
+          <div class="addons-wrapper h3">
+            <div class="left-addon">www.</div>
+            <div class="select">
+              <select name="" id="">
+                <option value="online">online</option>
+                <option value="website">website</option>
+                <option value="internet">internet</option>
+              </select>
+            </div>
+            <div class="right-addon">.com</div>
+          </div>
+          <div class="addons-wrapper h1">
+            <div class="left-addon">www.</div>
+            <div class="select">
+              <select name="" id="">
+                <option value="online">online</option>
+                <option value="website">website</option>
+                <option value="internet">internet</option>
+              </select>
+            </div>
+            <div class="right-addon">.com</div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper h5"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon"</span><span class="text-blue">&gt</span>www.<span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltselect&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="online"<span class="text-blue">&gt</span>online<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="website"<span class="text-blue">&gt</span>website<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="internet"<span class="text-blue">&gt</span>internet<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/select&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon"</span><span class="text-blue">&gt</span>.com<span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper h3"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon"</span><span class="text-blue">&gt</span>www.<span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltselect&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="online"<span class="text-blue">&gt</span>online<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="website"<span class="text-blue">&gt</span>website<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="internet"<span class="text-blue">&gt</span>internet<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/select&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon"</span><span class="text-blue">&gt</span>.com<span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"addons-wrapper h1"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"left-addon"</span><span class="text-blue">&gt</span>www.<span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltselect&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="online"<span class="text-blue">&gt</span>online<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="website"<span class="text-blue">&gt</span>website<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltoption</span> value="internet"<span class="text-blue">&gt</span>internet<span class="text-blue">&lt/option&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/select&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"right-addon"</span><span class="text-blue">&gt</span>.com<span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$addon-control-radius</td>
+            <td>0.1875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-control-focus-shadow-spread</td>
+            <td>0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-control-focus-shadow-color</td>
+            <td class="text-red">$light-blue-thin</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-control-margin</td>
+            <td>0rem 0rem 0.6rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-padding</td>
+            <td>0.375em 0.625em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-border-color</td>
+            <td class="text-red">$light-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-background-color</td>
+            <td class="text-red">$light-white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$addon-color</td>
+            <td class="text-red">$white-black</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$addon-font-family</td>
+            <td class="demo-rds-br-1">sans-serif</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./icons-wrapper.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./fields.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+
+    
+
+
+
+
+
+  </div>
+
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>

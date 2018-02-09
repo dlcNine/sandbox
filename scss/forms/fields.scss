@@ -1,7 +1,7 @@
 @import "../colors.scss";
 
 $field-control-focus-shadow-spread: 0.125em;
-$field-margin-bottom: 1.5rem;
+$field-margin-bottom: 1.8rem;
 $field-label-help-color: $black;
 $field-label-font-size: 1.6rem;
 $field-label-margin-bottom: 0.4rem;
@@ -9,7 +9,7 @@ $field-help-font-size: 1.2rem;
 $field-font-family: sans-serif;
 $field-required-asterisk-color: $medium-red;
 
-form.clearfix {
+form.clearfix, div.field.container-field {
   & > div[class*="small-"], & > div[class*="medium-"],
   & > div[class*="large-"], & > div[class*="default-"] {
     padding-top: 0rem;
