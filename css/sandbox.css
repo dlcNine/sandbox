@@ -61,7 +61,7 @@ table {
   border-spacing: 0; }
 
 /* ==================================== */
-* {
+*, *::before, *::after {
   box-sizing: border-box; }
 
 /* ==================================== */
@@ -1744,12 +1744,14 @@ div.buttons-bar {
     border-radius: 0em; }
 
 div.container-buttons {
+  font-size: 1.6rem;
   margin-right: -0.6rem; }
   div.container-buttons div[class*="default-"], div.container-buttons div[class*="small-"],
   div.container-buttons div[class*="medium-"], div.container-buttons div[class*="large-"] {
     padding: 0rem 0.6rem 0.6rem 0rem; }
     div.container-buttons div[class*="default-"] .button, div.container-buttons div[class*="small-"] .button,
     div.container-buttons div[class*="medium-"] .button, div.container-buttons div[class*="large-"] .button {
+      font-size: inherit;
       display: block;
       width: 100%;
       margin: 0; }
@@ -1851,13 +1853,13 @@ label.checkbox, label.radio {
 
 form.clearfix > div[class*="small-"], form.clearfix > div[class*="medium-"], form.clearfix > div[class*="large-"], form.clearfix > div[class*="default-"] {
   padding-top: 0rem;
-  padding-bottom: 0.6rem; }
+  padding-bottom: 0rem; }
 
 div.field {
   font-size: 1.6rem;
   line-height: 1;
   font-family: sans-serif;
-  margin-bottom: 1rem; }
+  margin-bottom: 1.5rem; }
   div.field p.label {
     color: #383838;
     font-size: 1.6rem;

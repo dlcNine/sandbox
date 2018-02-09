@@ -1,11 +1,16 @@
+$container-buttons-grid-column-padding: 0rem 0.6rem 0.6rem 0rem;
+$container-buttons-negate-right: 0.6rem;
+
 div.container-buttons {
-  margin-right: -0.6rem;
+  font-size: 1.6rem;
+  margin-right: -1 * $container-buttons-negate-right;
 
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {
-    padding: 0rem 0.6rem 0.6rem 0rem;
+    padding: $container-buttons-grid-column-padding;
 
     .button {
+      font-size: inherit;
       display: block;
       width: 100%;
       margin: 0;
