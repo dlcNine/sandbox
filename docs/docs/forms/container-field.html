@@ -75,7 +75,8 @@
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
       <p class="tc p mgn-b-1">Use the .container-field class on a div.field when you want to create a horizontal form with the p.label on one side, and the control and p.help on the other.</p>
-      <p class="tc p">The idea is that the div.field.container-field itself, becomes the housing for the grid columns to be used within.</p>
+      <p class="tc p mgn-b-1">The idea is that the div.field.container-field itself, becomes the housing for the grid columns to be used within.</p>
+      <p class="tc p">Specific styling from the fields.scss file is also applied to the div.field.container-field.</p>
     </div>
     <div class="pad-1">
       <div class="message theme-info">
@@ -89,77 +90,237 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Structure</h2>
-      <form class="clearfix negate-sides">
-        <div class="field container-field">
-          <div class="default-4">
-            <p class="label text-right">First name</p>
-          </div>
-          <div class="default-8">
-            <input type="text" class="textfield" placeholder="John">
-            <p class="help absent">Enter your first name</p>
-          </div>
-        </div>
-        <div class="field container-field">
-          <div class="default-4">
-            <p class="label text-right">Bio</p>
-          </div>
-          <div class="default-8">
-            <textarea class="textarea" placeholder="quick blurb about you"></textarea>
-            <p class="help absent">Blurb away</p>
-          </div>
-        </div>
-        <div class="field container-field">
-          <div class="default-4">
-            <p class="label text-right">Stuff</p>
-          </div>
-          <div class="default-8">
-            <label class="checkbox">
-              <input type="checkbox" name="stuff" value="shoes">
-              Shoes
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" name="stuff" value="bag">
-              Bag
-            </label>
-            <label class="checkbox">
-              <input type="checkbox" name="stuff" value="laptop">
-              Laptop
-            </label>
-            <p class="help absent">Do you have your things?</p>
-          </div>
-        </div>
-        <div class="field container-field">
-          <div class="default-4">
-            <p class="label text-right">Ready to go</p>
-          </div>
-          <div class="default-8">
-            <label class="radio">
-              <input type="radio" name="readyToGo" value="yes">
-              yes
-            </label>
-            <label class="radio">
-              <input type="radio" name="readyToGo" value="no">
-              no
-            </label>
-            <p class="help absent">Ready to go?</p>
-          </div>
-        </div>
-        <div class="field container-field">
-          <div class="default-4">
-            <p class="label text-right">Mode of transportation</p>
-          </div>
-          <div class="default-8">
-            <div class="select">
-              <select name="transportation">
-                <option value="walking">walking</option>
-                <option value="biking">biking</option>
-                <option value="car">car</option>
-              </select>
+      <div class="container">
+        <div class="default-12 pad-0">
+          <form class="clearfix negate-sides">
+            <div class="field container-field">
+              <div class="default-4">
+                <p class="label text-right">First name</p>
+              </div>
+              <div class="default-8">
+                <input type="text" class="textfield" placeholder="John">
+                <p class="help absent">Enter your first name</p>
+              </div>
             </div>
-            <p class="help absent">What mode of transportation?</p>
+            <div class="field container-field">
+              <div class="default-4">
+                <p class="label text-right">Bio</p>
+              </div>
+              <div class="default-8">
+                <textarea class="textarea" placeholder="quick blurb about you"></textarea>
+                <p class="help absent">Blurb away</p>
+              </div>
+            </div>
+            <div class="field container-field">
+              <div class="default-4">
+                <p class="label text-right">Stuff</p>
+              </div>
+              <div class="default-8">
+                <label class="checkbox">
+                  <input type="checkbox" name="stuff" value="shoes">
+                  Shoes
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="stuff" value="bag">
+                  Bag
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="stuff" value="laptop">
+                  Laptop
+                </label>
+                <p class="help absent">Do you have your things?</p>
+              </div>
+            </div>
+            <div class="field container-field">
+              <div class="default-4">
+                <p class="label text-right">Ready to go</p>
+              </div>
+              <div class="default-8">
+                <label class="radio">
+                  <input type="radio" name="readyToGo" value="yes">
+                  yes
+                </label>
+                <label class="radio">
+                  <input type="radio" name="readyToGo" value="no">
+                  no
+                </label>
+                <p class="help absent">Ready to go?</p>
+              </div>
+            </div>
+            <div class="field container-field">
+              <div class="default-4">
+                <p class="label text-right">Mode of transportation</p>
+              </div>
+              <div class="default-8">
+                <div class="select">
+                  <select name="transportation">
+                    <option value="walking">walking</option>
+                    <option value="biking">biking</option>
+                    <option value="car">car</option>
+                  </select>
+                </div>
+                <p class="help absent">What mode of transportation?</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="default-12 pad-0">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-cutton h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">&ltform class="clearfix negate-sides"&gt</li>
+              <ol class="code-nested">
+
+                <li class="line">&lt!-- textfield --&gt</li>
+                <li class="line">&ltdiv class="field container-field"&gt</li>
+                <ol class="code-nested">
+                  <li class="line">&ltdiv class="default-4"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltp class="label text-right"&gtFirst name&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                  <li class="line">&ltdiv class="default-8"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltinput type="text" class="textfield" placeholder="John"&gt</li>
+                    <li class="line">&ltp class="help absent"&gtEnter your first name&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                </ol>
+                <li class="line">&lt/div&gt</li>
+                <li class="line">&lt!-- end textfield --&gt</li>
+
+                <li class="line">&lt!-- textarea --&gt</li>
+                <li class="line">&ltdiv class="field container-field"&gt</li>
+                <ol class="code-nested">
+                  <li class="line">&ltdiv class="default-4"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltp class="label text-right"&gtBio&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                  <li class="line">&ltdiv class="default-8"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&lttextarea class="textarea" placeholder="quick blurb about you"&gt&lt/textarea&gt</li>
+                    <li class="line">&ltp class="help absent"&gtBlurb away&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                </ol>
+                <li class="line">&lt/div&gt</li>
+                <li class="line">&lt!-- end textarea --&gt</li>
+
+                <li class="line">&lt!-- checkboxes --&gt</li>
+                <li class="line">&ltdiv class="field container-field"&gt</li>
+                <ol class="code-nested">
+                  <li class="line">&ltdiv class="default-4"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltp class="label text-right"&gtStuff&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                  <li class="line">&ltdiv class="default-8"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltlabel class="checkbox"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltinput type="checkbox" name="stuff" value="shoes"&gt</li>
+                      <li class="line">Shoes</li>
+                    </ol>
+                    <li class="line">&lt/label&gt</li>
+                    <li class="line">&ltlabel class="checkbox"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltinput type="checkbox" name="stuff" value="bag"&gt</li>
+                      <li class="line">Bag</li>
+                    </ol>
+                    <li class="line">&lt/label&gt</li>
+                    <li class="line">&ltlabel class="checkbox"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltinput type="checkbox" name="stuff" value="laptop"&gt</li>
+                      <li class="line">Laptop</li>
+                    </ol>
+                    <li class="line">&lt/label&gt</li>
+                    <li class="line">&ltp class="help absent"&gtDo you have your things?&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                </ol>
+                <li class="line">&lt/div&gt</li>
+                <li class="line">&lt!-- end checkboxes --&gt</li>
+
+                <li class="line">&lt!-- radio --&gt</li>
+                <li class="line">&ltdiv class="field container-field"&gt</li>
+                <ol class="code-nested">
+                  <li class="line">&ltdiv class="default-4"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltp class="label text-right"&gtReady to go&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                  <li class="line">&ltdiv class="default-8"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltlabel class="radio"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltinput type="radio" name="readyToGo" value="yes"&gt</li>
+                      <li class="line">yes</li>
+                    </ol>
+                    <li class="line">&lt/label&gt</li>
+                    <li class="line">&ltlabel class="radio"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltinput type="radio" name="readyToGo" value="no"&gt</li>
+                      <li class="line">no</li>
+                    </ol>
+                    <li class="line">&lt/label&gt</li>
+                    <li class="line">&ltp class="help absent"&gtReady to go?&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                </ol>
+                <li class="line">&lt/div&gt</li>
+                <li class="line">&lt!-- end radio --&gt</li>
+
+                <li class="line">&lt!-- select --&gt</li>
+                <li class="line">&ltdiv class="field container-field"&gt</li>
+                <ol class="code-nested">
+                  <li class="line">&ltdiv class="default-4"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltp class="label text-right"&gtMode of transportation&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                  <li class="line">&ltdiv class="default-8"&gt</li>
+                  <ol class="code-nested">
+                    <li class="line">&ltdiv class="select"&gt</li>
+                    <ol class="code-nested">
+                      <li class="line">&ltselect name="transportation"&gt</li>
+                      <ol class="code-nested">
+                        <li class="line">&ltoption value="walking"&gtwalking&lt/option&gt</li>
+                        <li class="line">&ltoption value="biking"&gtbiking&lt/option&gt</li>
+                        <li class="line">&ltoption value="car"&gtcar&lt/option&gt</li>
+                      </ol>
+                      <li class="line">&lt/select&gt</li>
+                    </ol>
+                    <li class="line">&lt/div&gt</li>
+                    <li class="line">&ltp class="help absent"&gtWhat mode of transportation?&lt/p&gt</li>
+                  </ol>
+                  <li class="line">&lt/div&gt</li>
+                </ol>
+                <li class="line">&lt/div&gt</li>
+                <li class="line">&lt!-- end select --&gt</li>
+
+
+
+
+
+
+
+
+              <!-- end nested in form -->
+              </ol>
+
+
+
+
+
+
+              <li class="line">&lt/form&gt</li>
+            </ol>
           </div>
         </div>
-      </form>
+      </div>
+
+
     </div>
     
 
