@@ -65,7 +65,7 @@
           <div class="default-12">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
-                <span class="snippet no-background">div.field.container-field</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.field.container-field</span></span>
               </li>
             </ul>
           </div>
@@ -74,9 +74,9 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">Use the .container-field class on a div.field when you want to create a horizontal form with the p.label on one side, and the control and p.help on the other.</p>
-      <p class="tc p mgn-b-1">The idea is that the div.field.container-field itself, becomes the housing for the grid columns to be used within.</p>
-      <p class="tc p">Specific styling from the fields.scss file is also applied to the div.field.container-field.</p>
+      <p class="tc p mgn-b-1">Use the <span class="snippet p-alt text-indigo">.container-field</span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> when you want to create a horizontal form with the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span> on one side, and the control and <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.help</span></span> on the other.</p>
+      <p class="tc p mgn-b-1">The idea is that the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field.container-field</span></span> itself, becomes the housing for the grid columns to be used within.</p>
+      <p class="tc p">Specific styling from the fields.scss file is also applied to the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field.container-field</span></span>.</p>
     </div>
     <div class="pad-1">
       <div class="message theme-info">
@@ -454,18 +454,192 @@
     </div>
     <div class="pad-1">
       <h2 class="tc h2">Theme classes</h2>
-      <p class="tc p">Apply any of the specified theme classes to the div.field.container-field in order to have that theme's styles applied<</p>
+      <p class="tc p mgn-b-1">Apply one of the specified theme classes to the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field.container-field</span></span> in order to have that theme's styles applied.</p>
+      <div class="container negate-sides">
+        <div class="default-12 pad-0">
+          <div class="field container-field theme-primary">
+            <div class="default-4">
+              <p class="label text-right">Primary</p>
+            </div>
+            <div class="default-8">
+              <input type="text" class="textfield">
+              <p class="help">Enter your first name</p>
+            </div>
+          </div>
+          <div class="field container-field theme-info">
+            <div class="default-4">
+              <p class="label text-right">Info</p>
+            </div>
+            <div class="default-8">
+              <input type="text" class="textfield">
+              <p class="help">Enter your first name</p>
+            </div>
+          </div>
+          <div class="field container-field theme-caution">
+            <div class="default-4">
+              <p class="label text-right">Caution</p>
+            </div>
+            <div class="default-8">
+              <input type="text" class="textfield">
+              <p class="help">Enter your first name</p>
+            </div>
+          </div>
+          <div class="field container-field theme-danger">
+            <div class="default-4">
+              <p class="label text-right">Danger</p>
+            </div>
+            <div class="default-8">
+              <input type="text" class="textfield">
+              <p class="help">Enter your first name</p>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 pad-0">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"field container-field theme-primary"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"label text-right"</span><span class="text-blue">&gt</span>Primary<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-8"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"help"</span><span class="text-blue">&gt</span>Enter your first name<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"field container-field theme-info"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"label text-right"</span><span class="text-blue">&gt</span>Info<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-8"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"help"</span><span class="text-blue">&gt</span>Enter your first name<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"field container-field theme-caution"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"label text-right"</span><span class="text-blue">&gt</span>Caution<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-8"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"help"</span><span class="text-blue">&gt</span>Enter your first name<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"field container-field theme-danger"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"label text-right"</span><span class="text-blue">&gt</span>Danger<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"default-8"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltinput</span> type="text" <span class="text-violet">class=</span><span class="text-indigo">"textfield"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"help"</span><span class="text-blue">&gt</span>Enter your first name<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
-    
-
-
-
-
-
-
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./fields.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="../components/modal.html" class="button p theme-dark mgn-0">next</a>
+    </div>
   </div>
-
-
   <!-- copy-code -->
   {% include copy-code.html %}
   <!-- end copy-code -->
