@@ -1,0 +1,247 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-modal</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <div id="modal" class="modal-backdrop absent">
+    <div class="position-center-center small-11 medium-9 large-7">
+      <div class="modal">
+        <h2 class="tc h2 text-center">Hello modal.</h2>
+        <p class="tc p text-center mgn-b-1">Fill this modal with whatever content you see fit.</p>
+      </div>
+    </div>
+  </div>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Modal</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-caution">optional</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-info">fixed</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-info">25</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.modal-backdrop</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.modal</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">body</span><span class="text-indigo">.modal-present</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">A modal is an overlay that can be used to obscure the rest of the body content, and instead focus on something else. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal-backdrop</span></span> is what does the obscuring, has its position set to fixed, and a z-index of 25.</p>
+      <p class="tc p">Inside of the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal-backdrop</span></span> is where you can use a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal</span></span>, although in actuality you could put whatever you wanted inside of the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal-backdrop</span></span>. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal</span></span> is like a blank canvas for you to fill with whatever content you see fit. Use a combination of the positioning and grid column classes in conjunction with the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal</span></span> for fine tuned control of it.</p>
+    </div>
+    <div class="pad-1">
+      <div class="message theme-info">
+        <div class="message-header">
+          <p class="t p">Markup</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt">It's best to have the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.modal-backdrop</span></span> as the first child of the body element, in an effort to avoid z-index issues with other elements.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2 mgn-b-1">Demonstration</h2>
+      <button id="toggleModal" class="button theme-primary h3 block-center">Launch modal</button>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2 mgn-b-1">Structure</h2>
+      <div class="relative mgn-b-1">
+        <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+        <ol class="code p-alt text-nowrap overflow-x-auto">
+          <li class="line">
+            <span class="text-blue">&ltdiv</span> id="modal" <span class="text-violet">class=</span><span class="text-indigo">"modal-backdrop"</span><span class="text-blue">&gt</span>
+          </li>
+          <ol class="code-nested">
+            <li class="line">
+              <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"position-center-center small-11 medium-9 large-7"</span><span class="text-blue">&gt</span>
+            </li>
+            <ol class="code-nested">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"modal"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lth2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2 text-center"</span><span class="text-blue">&gt</span>Hello modal.<span class="text-blue">&lt/h2&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"tc p text-center"</span><span class="text-blue">&gt</span>Fill this modal with whatever content you see fit.<span class="text-blue">&lt/p&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+
+            <li class="line">
+              <span class="text-blue">&lt/div&gt</span>
+            </li>
+          </ol>
+          <li class="line">
+            <span class="text-blue">&lt/div&gt</span>
+          </li>
+        </ol>
+      </div>
+      <div class="message theme-primary">
+        <div class="message-header">
+          <p class="t p">Implementation</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt mgn-b-1">Remember that Sandbox does not come with any JavaScript, so that you can implement the way you want to. The JS impelmentation used to launch this page's specific modal was:</p>
+          <div class="relative">
+            <!-- <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button> -->
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">const modal = document.querySelector("#modal");</li>
+              <li class="line">const toggleModal = document.querySelector("#toggleModal");</li>
+              <li class="line">toggleModal.addEventListener("click", function(e){</li>
+              <ol class="code-nested">
+                <li class="line">modal.classList.toggle("absent");</li>
+                <li class="line">document.body.classList.toggle("modal-present");</li>
+              </ol>
+              <li class="line">});</li>
+
+              <li class="line">modal.addEventListener("click", function(e){</li>
+              <ol class="code-nested">
+                <li class="line">if (e.target.className === "modal-backdrop"){</li>
+                <ol class="code-nested">
+                  <li class="line">modal.classList.toggle("absent");</li>
+                  <li class="line">document.body.classList.toggle("modal-present");</li>
+                </ol>
+                <li class="line">}</li>
+              </ol>
+              <li class="line">});</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Modal present</h2>
+      <p class="tc p mgn-b-1">Using the <span class="snippet p-alt text-indigo">.modal-present</span> class on the <span class="snippet p-alt text-blue">body</span> element makes it so that the user can no longer scroll the page. Consider using it while your modal is present.</p>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$modal-backdrop-background-color</td>
+            <td class="text-red">$black-thick</td>
+          </tr>
+          <tr>
+            <td class="text-red">$modal-backdrop-padding</td>
+            <td>2.4rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$modal-padding</td>
+            <td>2.4rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$modal-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$modal-radius</td>
+            <td class=" demo-rds-br-1">0.5rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="../forms/container-field.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./box.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- modal toggle -->
+  <script>
+    const modal = document.querySelector("#modal");
+    const toggleModal = document.querySelector("#toggleModal");
+    toggleModal.addEventListener("click", function(e){
+      modal.classList.toggle("absent");
+      document.body.classList.toggle("modal-present");
+    });
+    modal.addEventListener("click", function(e){
+      if (e.target.className === "modal-backdrop"){
+        modal.classList.toggle("absent");
+        document.body.classList.toggle("modal-present");
+      }
+    });
+  </script>
+  <!-- end modal toggle -->
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>

@@ -85,16 +85,16 @@
       <div class="container">
         <div class="default-12 pad-0">
           <div class="default-12">
-            <label for="keys" class="checkbox">
-              <input id="keys" type="checkbox">
+            <label class="checkbox">
+              <input type="checkbox" name="things" value="keys">
               keys
             </label>
-            <label for="phone" class="checkbox">
-              <input id="phone" type="checkbox">
+            <label class="checkbox">
+              <input type="checkbox" name="things" value="phone">
               phone
             </label>
-            <label for="wallet" class="checkbox">
-              <input id="wallet" type="checkbox">
+            <label class="checkbox">
+              <input type="checkbox" name="things" value="wallet">
               wallet
             </label>
           </div>
@@ -103,11 +103,11 @@
               <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
               <ol class="code p-alt text-nowrap overflow-x-auto">
                 <li class="line">
-                  <span class="text-blue">&ltlabel</span> for="keys" <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&ltinput</span> id="keys" type="checkbox"<span class="text-blue">&gt</span>
+                    <span class="text-blue">&ltinput</span> type="checkbox" name="things" value="keys"<span class="text-blue">&gt</span>
                   </li>
                   <li class="line">keys</li>
                 </ol>
@@ -115,11 +115,11 @@
                   <span class="text-blue">&lt/label&gt</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&ltlabel</span> for="phone" <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&ltinput</span> id="phone" type="checkbox"<span class="text-blue">&gt</span>
+                    <span class="text-blue">&ltinput</span> type="checkbox" name="things" value="phone"<span class="text-blue">&gt</span>
                   </li>
                   <li class="line">phone</li>
                 </ol>
@@ -127,11 +127,11 @@
                   <span class="text-blue">&lt/label&gt</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&ltlabel</span> for="wallet" <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"checkbox"</span><span class="text-blue">&gt</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&ltinput</span> id="wallet" type="checkbox"<span class="text-blue">&gt</span>
+                    <span class="text-blue">&ltinput</span> type="checkbox" name="things" value="wallet"<span class="text-blue">&gt</span>
                   </li>
                   <li class="line">wallet</li>
                 </ol>
@@ -144,12 +144,12 @@
         </div>
         <div class="default-12 pad-0">
           <div class="default-12">
-            <label for="radio1" class="radio">
-              <input type="radio" id="radio1" name="radio" value="on">
+            <label class="radio">
+              <input type="radio" name="status" value="on">
               on
             </label>
-            <label for="radio2" class="radio">
-              <input type="radio" id="radio2" name="radio" value="off">
+            <label class="radio">
+              <input type="radio" name="status" value="off">
               off
             </label>
           </div>
@@ -158,11 +158,11 @@
               <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
               <ol class="code p-alt text-nowrap overflow-x-auto">
                 <li class="line">
-                  <span class="text-blue">&ltlabel</span> for="on" <span class="text-violet">class=</span><span class="text-indigo">"radio"</span><span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"radio"</span><span class="text-blue">&gt</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&ltinput</span> id="on" type="radio" name="status" value="on"<span class="text-blue">&gt</span>
+                    <span class="text-blue">&ltinput</span> type="radio" name="status" value="on"<span class="text-blue">&gt</span>
                   </li>
                   <li class="line">on</li>
                 </ol>
@@ -170,11 +170,11 @@
                   <span class="text-blue">&lt/label&gt</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&ltlabel</span> for="off" <span class="text-violet">class=</span><span class="text-indigo">"radio"</span><span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"radio"</span><span class="text-blue">&gt</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&ltinput</span> id="off" type="radio" name="status" value="off"<span class="text-blue">&gt</span>
+                    <span class="text-blue">&ltinput</span> type="radio" name="status" value="off"<span class="text-blue">&gt</span>
                   </li>
                   <li class="line">off</li>
                 </ol>
@@ -191,26 +191,26 @@
       <h2 class="tc h2">Vertical</h2>
       <p class="tc p mgn-b-1">To have the <span class="snippet p-alt"><span class="text-blue">label</span><span class="text-indigo">.checkbox</span></span> and <span class="snippet p-alt"><span class="text-blue">label</span><span class="text-indigo">.radio</span></span> wrappers stack vertically, use the <span class="snippet p-alt text-indigo">.block</span> utility class on them.</p>
       <div class="container">
-        <div class="small-12 default-6">
-          <label for="stacked" class="checkbox block">
-            <input id="stacked" type="checkbox">
+        <div class="small-12 default-4">
+          <label class="checkbox block">
+            <input type="checkbox" name="stacked" value="stacked">
             stacked
           </label>
-          <label for="vertically" class="radio block">
-            <input id="vertically" type="radio">
+          <label class="radio block">
+            <input type="radio" name="vertically" value="vertically">
             vertically
           </label>
         </div>
-        <div class="small-12 default-6">
+        <div class="small-12 default-8">
           <div class="relative">
             <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
-                <span class="text-blue">&ltlabel</span> for="stacked" <span class="text-violet">class=</span><span class="text-indigo">"checkbox block"</span><span class="text-blue">&gt</span>
+                <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"checkbox block"</span><span class="text-blue">&gt</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&ltinput</span> id="stacked" type="checkbox"<span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltinput</span> type="checkbox" name="stacked" value="stacked"<span class="text-blue">&gt</span>
                 </li>
                 <li class="line">stacked</li>
               </ol>
@@ -218,11 +218,11 @@
                 <span class="text-blue">&lt/label&gt</span>
               </li>
               <li class="line">
-                <span class="text-blue">&ltlabel</span> for="vertically" <span class="text-violet">class=</span><span class="text-indigo">"radio block"</span><span class="text-blue">&gt</span>
+                <span class="text-blue">&ltlabel</span> <span class="text-violet">class=</span><span class="text-indigo">"radio block"</span><span class="text-blue">&gt</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&ltinput</span> id="vertically" type="radio"<span class="text-blue">&gt</span>
+                  <span class="text-blue">&ltinput</span> type="radio" name="vertically" value="vertically"<span class="text-blue">&gt</span>
                 </li>
                 <li class="line">vertically</li>
               </ol>
