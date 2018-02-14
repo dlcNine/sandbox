@@ -1,0 +1,765 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-tabs</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Tabs</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">ul.tabs</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">li.tab</span>
+              </li>
+              <li>
+                <span class="snippet no-background">li.tab.active</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">a.tab-a</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">Use a ul.tabs to group together a collection of elements used for navigation. For additional control, combine the ul.tabs with some of the flexbox utility classes.</p>
+      <p class="tc p">Use the .active class on a li.tab to indicate the active tab.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12 large-6">
+          <ul class="tabs">
+            <li class="tab">
+              <a href="" class="tab-a">hard</a>
+            </li>
+            <li class="tab active">
+              <a href="" class="tab-a">alternative</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">progressive</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">punk</a>
+            </li>
+          </ul>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>hard<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab active"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>alternative<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>progressive<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>punk<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/ul&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Flexbox utilities</h2>
+      <p class="tc p">Try some of the flexbox utility classes on the ul.tabs for more control.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="box no-shadow">
+            <ul class="tabs flex flex-start">
+              <li class="tab">
+                <a href="" class="tab-a">using</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">flex</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">start</a>
+              </li>
+            </ul>
+            <ul class="tabs flex flex-center">
+              <li class="tab">
+                <a href="" class="tab-a">using</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">flex</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">center</a>
+              </li>
+            </ul>
+            <ul class="tabs flex flex-end">
+              <li class="tab">
+                <a href="" class="tab-a">using</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">flex</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">end</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs flex flex-start"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>using<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>flex<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>start<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/ul&gt</span>
+              </li>
+
+              <li class="line">
+                <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs flex flex-center"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>using<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>flex<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>center<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/ul&gt</span>
+              </li>
+
+
+              <li class="line">
+                <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs flex flex-end"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>using<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>flex<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>end<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/ul&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Theme classes</h2>
+      <p class="tc p">Use the .theme-dark class on the ul.tabs in order to have that style applied. A colored background has been used to help show the theme's styling.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="banner h5 demo-rds-1 demo-lblack pad-1">
+            <ul class="tabs theme-dark">
+              <li class="tab">
+                <a href="" class="tab-a">using</a>
+              </li>
+              <li class="tab active">
+                <a href="" class="tab-a">theme</a>
+              </li>
+              <li class="tab">
+                <a href="" class="tab-a">dark</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs theme-dark"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>using<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab active"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>theme<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>dark<span class="text-blue">&lt/a&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/li&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/ul&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-size scaling</h2>
+      <p class="tc p">Use any of the font-size classes on the ul.tabs to have its children inherit the font-size specified.</p>
+      <div class="container">
+        <div class="default-12">
+          <ul class="tabs h5">
+            <li class="tab">
+              <a href="" class="tab-a">font</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">size</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">scaling</a>
+            </li>
+          </ul>
+          <ul class="tabs">
+            <li class="tab">
+              <a href="" class="tab-a">font</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">size</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">scaling</a>
+            </li>
+          </ul>
+          <ul class="tabs h3">
+            <li class="tab">
+              <a href="" class="tab-a">font</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">size</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">scaling</a>
+            </li>
+          </ul>
+          <ul class="tabs h2">
+            <li class="tab">
+              <a href="" class="tab-a">font</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">size</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">scaling</a>
+            </li>
+          </ul>
+          <ul class="tabs h1">
+            <li class="tab">
+              <a href="" class="tab-a">font</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">size</a>
+            </li>
+            <li class="tab">
+              <a href="" class="tab-a">scaling</a>
+            </li>
+          </ul>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-t-1 mgn-r-2">copy</button>
+            <ol class="code overflow-auto text-nowrap">
+              <div class="banner huge-2">
+                <div class="p-alt pad-l-1">
+                  <li class="line">
+                    <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs h5"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>font<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>size<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>scaling<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/ul&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>font<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>size<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>scaling<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/ul&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs h3"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>font<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>size<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>scaling<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/ul&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs h2"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>font<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>size<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>scaling<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/ul&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs h1"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>font<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>size<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltli</span> <span class="text-violet">class=</span><span class="text-indigo">"tab"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lta</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"tab-a"</span><span class="text-blue">&gt</span>scaling<span class="text-blue">&lt/a&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/li&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/ul&gt</span>
+                  </li>
+                </div>
+              </div>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$tab-padding</td>
+            <td>0.5em 0.875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-radius</td>
+            <td>0.1875em 0.1875em 0em 0em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-bottom-border-width</td>
+            <td>0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-color</td>
+            <td class="text-red">$light-black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-hover-color</td>
+            <td class="text-red">$medium-black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-a-focus-color</td>
+            <td class="text-red">$medium-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-hover-border-color</td>
+            <td class="text-red">$dark-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-active-color</td>
+            <td class="text-red">$medium-blue</td>
+          </tr>
+          <tr>
+            <td class="text-red">$tab-active-border-color</td>
+            <td class="text-red">$medium-blue</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$tab-font-family</td>
+            <td class=" demo-rds-br-1">sans-serif</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./message.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./menu.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
