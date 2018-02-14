@@ -1,0 +1,787 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-message</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Message</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+        <span class="stamp theme-light">light</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">div.message</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">div.message-header</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">div.message-body</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">A versatile message that can be used to grab attention and convey information. Choose to use just the div.message-header within the div.message, or just the div.message-body within div.messsage, or choose to use both.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="message mgn-t-0">
+            <div class="message-header">
+              <p class="t p">Just header</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="message-body">
+              <p class="t p-alt">Just body</p>
+            </div>
+          </div>
+          <div class="message">
+            <div class="message-header">
+              <p class="t p">Both</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, laboriosam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Just header<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Just body<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message"</span><span class="text-blue">&gt</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Both<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, laboriosam.<span class="text-blue">&lt/p&gt</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt/div&gt</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt/div&gt</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Theme classes</h2>
+      <p class="tc p">Apply one of the specified .theme- classes to the div.message to have that theme's styles applied.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="message theme-primary">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-info">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-caution">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-danger">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-light">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-dark">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+          </div>
+          <div class="message theme-primary">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-info">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-caution">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-danger">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-light">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-dark">
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+          <div class="message theme-primary">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+           <div class="message theme-info">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+           <div class="message theme-caution">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+           <div class="message theme-danger">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+           <div class="message theme-light">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+           <div class="message theme-dark">
+            <div class="message-header">
+              <p class="t p">Lorem</p>
+            </div>
+            <div class="message-body">
+              <p class="t p-alt">Lorem ipsum dolor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-t-0 mgn-r-2">copy</button>
+            <ol class="code overflow-auto text-no-wrap">
+              <div class="banner huge-2">
+                <div class="p-alt pad-l-1">
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-primary"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-info"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-caution"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-danger"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-light"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-dark"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-primary"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-info"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-caution"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-danger"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-light"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-dark"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-primary"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-info"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-caution"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-danger"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-light"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message theme-dark"</span><span class="text-blue">&gt</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-header"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt</span>Lorem<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&ltdiv</span> <span class="text-violet">class=</span><span class="text-indigo">"message-body"</span><span class="text-blue">&gt</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&ltp</span> <span class="text-violet">class=</span><span class="text-indigo">"t p-alt"</span><span class="text-blue">&gt</span>Lorem ipsum dolor.<span class="text-blue">&lt/p&gt</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt/div&gt</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt/div&gt</span>
+                  </li>
+                </div>
+                <!-- end font-size wrapper -->
+              </div>
+              <!-- end banner -->
+            </ol>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$message-radius</td>
+            <td>0.4rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$message-margin</td>
+            <td>0.6rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$message-header-padding</td>
+            <td>0.4rem 1.2rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$message-header-radius</td>
+            <td>0.2rem 0.2rem 0rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$message-header-only-child-radius</td>
+            <td>0.2rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$message-body-padding</td>
+            <td>1rem 1.8rem</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$message-body-radius</td>
+            <td class=" demo-rds-br-1">0.3rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./box.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./tabs.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
