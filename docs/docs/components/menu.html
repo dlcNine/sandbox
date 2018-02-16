@@ -1,0 +1,250 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-menu</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Menu</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.menu</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.menu-header</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.menu-item</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.menu-footer</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">a</span><span class="text-indigo">.menu-a</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">A bordered menu which can house navigational links and any other content you want. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.menu-header</span></span> and <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.menu-footer</span></span> have a border-radius applied while the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.menu-item</span></span> does not.</p>
+      <p class="tc p">This component will take up the full width available to it.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="small-8 medium-5 large-4">
+          <div class="menu">
+            <div class="menu-header">
+              <h3 class="tc h3">Grocery sections</h3>
+            </div>
+            <div class="menu-item">
+              <a href="" class="p-alt menu-a">Meat</a>
+            </div>
+            <div class="menu-item">
+              <a href="" class="p-alt menu-a">Produce</a>
+            </div>
+            <div class="menu-item">
+              <a href="" class="p-alt menu-a">Dried</a>
+            </div>
+            <div class="menu-footer">
+              <a href="" class="p-alt menu-a">Other...</a>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 large-8">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu-header"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;h3</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h3"</span><span class="text-blue">&gt;</span>Grocery sections<span class="text-blue">&lt;/h3&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu-item"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;a</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"p-alt menu-a"</span><span class="text-blue">&gt;</span>Meat<span class="text-blue">&lt;/a&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu-item"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;a</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"p-alt menu-a"</span><span class="text-blue">&gt;</span>Produce<span class="text-blue">&lt;/a&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu-item"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;a</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"p-alt menu-a"</span><span class="text-blue">&gt;</span>Dried<span class="text-blue">&lt;/a&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"menu-footer"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;a</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"p-alt menu-a"</span><span class="text-blue">&gt;</span>Other...<span class="text-blue">&lt;/a&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Values</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$menu-border-color</td>
+            <td class="text-red">$dark-white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-radius</td>
+            <td>0.4rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-shadow-color</td>
+            <td class="text-red">$medium-white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-item-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-item-padding</td>
+            <td>1rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-header-radius</td>
+            <td>0.3rem 0.3rem 0rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-footer-radius</td>
+            <td>0rem 0rem 0.3rem 0.3rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$menu-font-family</td>
+            <td>sans-serif</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./tabs.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./icon.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>

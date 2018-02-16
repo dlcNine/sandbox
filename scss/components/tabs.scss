@@ -21,6 +21,10 @@ ul.tabs {
     display: block;
   }
 
+  &.flex::after {
+    display: none;
+  }
+
   li.tab {
     float: left;
     text-align: center;

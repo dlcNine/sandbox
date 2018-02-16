@@ -1,0 +1,252 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-icon</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Icon</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">inline-block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default 12">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><spanc class="text-indigo">.icon</spanc></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">The <span class="snippet p-alt"><span class="text-blue">span</span><span class="text-indigo">.icon</span></span> is a wrapper to be used around an icon, if you want to give it some additional width. This can help normalize the space between an icon and text.</p>
+    </div>
+    <div class="pad-1">
+      <div class="message theme-caution">
+        <div class="message-header">
+          <p class="t p">Font Awesome</p>
+        </div>
+        <div class="message-body">
+          <p class="t p-alt">The examples below use the Font Awesome icon library. If you want to try the examples yourself, ensure that you've linked in the <a class="a" href="https://www.bootstrapcdn.com/fontawesome/" target="_blank">Font Awesome cdn</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-6">
+          <h2 class="tc h2">
+            <i class="fa fa-save"></i>
+            save
+          </h2>
+          <h2 class="tc h2">
+            <span class="icon">
+              <i class="fa fa-save"></i>
+            </span>
+            save
+          </h2>
+        </div>
+        <div class="default-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;h2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;i</span> <span class="text-violet">class=</span><span class="text-indigo">"fa fa-save"</span><span class="text-blue">&gt;&lt;/i&gt;</span>
+                </li>
+                <li class="line">save</li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/h2&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;h2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"icon"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;i</span> <span class="text-violet">class=</span><span class="text-indigo">"fa fa-save"</span><span class="text-blue">&gt;&lt;/i&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">save</li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/h2&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-size scaling</h2>
+      <p class="tc p">While you can apply any of the font-size classes to a <span class="snippet p-alt"><span class="text-blue">span</span><span class="text-indigo">.icon</span></span> to scale it, it's intended to be scaled by the font-size it inherits from its parent element.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Size class scaling</h2>
+      <p class="tc p">Use one of the three size classes to adjust the width value used by <span class="snippet p-alt"><span class="text-blue">span</span><span class="text-indigo">.icon</span></span>.</p>
+      <div class="container">
+        <div class="default-6">
+          <h2 class="tc h2">
+            <span class="icon size-1">
+              <i class="fa fa-save"></i>
+            </span>
+            save
+          </h2>
+          <h2 class="tc h2">
+            <span class="icon size-2">
+              <i class="fa fa-save"></i>
+            </span>
+            save
+          </h2>
+          <h2 class="tc h2">
+            <span class="icon size-3">
+              <i class="fa fa-save"></i>
+            </span>
+            save
+          </h2>
+        </div>
+        <div class="default-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;h2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"icon size-1"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;i</span> <span class="text-violet">class=</span><span class="text-indigo">"fa fa-save"</span><span class="text-blue">&gt;&lt;/i&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">save</li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/h2&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;h2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"icon size-2"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;i</span> <span class="text-violet">class=</span><span class="text-indigo">"fa fa-save"</span><span class="text-blue">&gt;&lt;/i&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">save</li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/h2&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;h2</span> <span class="text-violet">class=</span><span class="text-indigo">"tc h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"icon size-3"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;i</span> <span class="text-violet">class=</span><span class="text-indigo">"fa fa-save"</span><span class="text-blue">&gt;&lt;/i&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">save</li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/h2&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./menu.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./close.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
