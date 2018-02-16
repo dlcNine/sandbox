@@ -6,6 +6,10 @@
   float: right !important;
 }
 
+.no-float {
+  float: none !important;
+}
+
 .clear-left {
   clear: left !important;
 }
@@ -18,6 +22,3 @@
   clear: both !important;
 }
 
-.no-float {
-  float: none;
-}

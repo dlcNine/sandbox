@@ -30,13 +30,13 @@
         <span class="stamp theme-danger">no</span>
       </div>
       <div class="stamp-bar t h5">
-        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-light">size classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
       <div class="stamp-bar t h5">
-        <span class="stamp theme-light">size class scaling</span>
+        <span class="stamp theme-light">font-size scaling</span>
         <span class="stamp theme-danger">no</span>
-      </div>
+      </div> 
       <div class="stamp-bar t h5">
         <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-danger">no</span>
@@ -70,19 +70,33 @@
       </div>
       <div class="large-4 default-12">
         <ol class="code mgn-t-1 p-alt text-nowrap overflow-x-auto">
-          <li class="line"><span class="text-gray">/* inside reset.scss */</span></li>
-          <li class="line"><span class="text-blue">html</span> {</li>
+          <li class="line">
+            <span class="text-gray">/* inside reset.scss */</span>
+          </li>
+          <li class="line">
+            <span class="text-blue">html</span> &lcub;
+          </li>
           <ol class="code-nested">
-            <li class="line"><span class="text-green">font-size:</span> 62.5%;</li>
-            <li class="line"><span class="text-green">height:</span> 100%;</li>
+            <li class="line">
+              <span class="text-green">font-size:</span> 62.5%;
+            </li>
+            <li class="line">
+              <span class="text-green">height:</span> 100%;
+            </li>
           </ol>
-          <li class="line">}</li>
-          <li class="line"><span class="text-blue">body</span> {</li>
+          <li class="line">&rcub;</li>
+          <li class="line">
+            <span class="text-blue">body</span> &lcub;
+          </li>
           <ol class="code-nested">
-            <li class="line"><span class="text-green">line-height:</span> 1;</li>
-            <li class="line"><span class="text-green">height:</span> 100%;</li>
+            <li class="line">
+              <span class="text-green">line-height:</span> 1;
+            </li>
+            <li class="line">
+              <span class="text-green">height:</span> 100%;
+            </li>
           </ol>
-          <li class="line">}</li>
+          <li class="line">&rcub;</li>
         </ol>
       </div>
     </div>
