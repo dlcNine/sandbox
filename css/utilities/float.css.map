@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,eAAe;;AAGxB,SAAU;EACR,KAAK,EAAE,gBAAgB;;AAGzB,WAAY;EACV,KAAK,EAAE,eAAe;;AAGxB,YAAa;EACX,KAAK,EAAE,gBAAgB;;AAGzB,WAAY;EACV,KAAK,EAAE,eAAe",
-"sources": ["../../scss/utilities/float.scss"],
-"names": [],
-"file": "float.css"
-}

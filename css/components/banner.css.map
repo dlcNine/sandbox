@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAAW;EACT,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,KAAK",
-"sources": ["../../scss/components/banner.scss"],
-"names": [],
-"file": "banner.css"
-}
