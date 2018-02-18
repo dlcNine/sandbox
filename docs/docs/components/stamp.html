@@ -1,0 +1,257 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-stamp</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Stamp</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+        <span class="stamp theme-light">light</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">span.stamp</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">span.stamp.round</span>
+              </li>
+              <li>
+                <span class="snippet no-background">span.stamp.has-link</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background">a.stamp-a</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p mgn-b-1">A span.stamp can be used to distinguish a specific piece of text from the rest of the text surrounding it, or even on its own.</p>
+      <p class="tc p">By default, a span.stamp will inherit the font-size of its most recently set ancestor.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12">
+          <p class="t p mgn-b-1">Lorem ipsum dolor sit amet, <span class="stamp">consectetur</span> adipisicing.</p>
+          <span class="stamp t p">Hello world</span>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;p</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt;</span>Lorem ipsum dolor sit amet, <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp"</span><span class="text-blue">&gt;</span>consectetur<span class="text-blue">&lt;/span&gt;</span> adipisicing.<span class="text-blue">&lt;/p&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp t p"</span><span class="text-blue">&gt;</span>Hello world<span class="text-blue">&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Round</h2>
+      <p class="tc p">Use the .round class on a span.stamp to round its edges even further.</p>
+      <div class="container">
+        <div class="small-12 large-6">
+          <span class="stamp t p">stamp</span>
+          <span class="stamp t p round">stamp</span>
+        </div>
+        <div class="small-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp t p"</span><span class="text-blue">&gt;</span>stamp<span class="text-blue">&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp t p round"</span><span class="text-blue">&gt;</span>stamp<span class="text-blue">&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Has link</h2>
+      <p class="tc p">Use the .has-link class on a span.stamp, and an a.stamp-a within it when you want to put a text link inside of a stamp.</p>
+      <div class="container">
+        <div class="small-12 default-6">
+          <span class="stamp t p has-link">
+            <a href="" class="stamp-a">link</a>
+          </span>
+        </div>
+        <div class="small-12 default-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp t p has-link"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;a</span> href="" <span class="text-violet">class=</span><span class="text-indigo">"stamp-a"</span><span class="text-blue">&gt;</span>link<span class="text-blue">&lt;/a&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Theme classes</h2>
+      <p class="tc p">Use any of the specified theme classes on a span.stamp to have that theme's stlyes applied</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <p class="t p">
+            <span class="stamp theme-primary">primary</span>
+            <span class="stamp theme-info">info</span>
+            <span class="stamp theme-caution">caution</span>
+            <span class="stamp theme-danger">danger</span>
+            <span class="stamp theme-light">light</span>
+            <span class="stamp theme-dark">dark</span>
+          </p>          
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line"><span class="text-blue">&lt;p</span> <span class="text-violet">class=</span><span class="text-indigo">"t p"</span><span class="text-blue">&gt;</span></li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-primary"</span><span class="text-blue">&gt;</span>primary<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>info<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-caution"</span><span class="text-blue">&gt;</span>caution<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-danger"</span><span class="text-blue">&gt;</span>danger<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>light<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-dark"</span><span class="text-blue">&gt;</span>dark<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line"><span class="text-blue">&lt;/p&gt;</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-size scaling</h2>
+      <p class="tc p">Typically a span.stamp will inherit its font-size from a parent element, however, you could manually apply a font-size class to it to scale it.</p>
+      <div class="container">
+        <div class="small-12 default-6">
+          <p class="p mgn-b-1"><span class="stamp t h6">stamp</span></p>
+          <p class="p mgn-b-1"><span class="stamp t h5">stamp</span></p>
+          <p class="p mgn-b-1"><span class="stamp t p-alt">stamp</span></p>
+          <p class="p mgn-b-1"><span class="stamp t h4">stamp</span></p>
+          <p class="p mgn-b-1"><span class="stamp t h3">stamp</span></p>
+          <p class="p mgn-b-2"><span class="stamp t h2">stamp</span></p>
+          <p class="p mgn-b-2"><span class="stamp t h1">stamp</span></p>
+          <p class="p mgn-b-2"><span class="stamp t huge-2">stamp</span></p>
+          <p class="p mgn-b-2"><span class="stamp t huge-1">stamp</span></p>
+          
+        </div>
+        <div class="small-12 default-6">
+          
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+  </div>
+  
+
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
