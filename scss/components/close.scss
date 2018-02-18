@@ -2,8 +2,8 @@
 
 $close-height-width: 1em;
 $close-radius: 0.125em;
-$close-focus-spread: 0.125em;
 $close-xmark-height: 0.5em;
+$close-xmark-border-width: 0.0625em;
 
 button.close {
   font-size: 1.6rem;
@@ -23,9 +23,9 @@ button.close {
     }
   }
 
-  &:focus:not(:active) {
+  &:focus:not(:active){
+    background-color: $light-white;
     outline: none;
-    box-shadow: 0em 0em 0em $close-focus-spread $light-blue;
   }
 
   &:active {
@@ -40,7 +40,7 @@ button.close {
   &::before, &::after {
     content: '';
     background-color: $dark-gray;
-    border: 0.1rem solid $dark-gray;
+    border-right: $close-xmark-border-width solid $dark-gray;
     height: $close-xmark-height;
     position: absolute;
     top: 50%;
@@ -71,6 +71,11 @@ button.close {
         background-color: $medium-white;
         border-color: $medium-white;
       }
+    }
+
+    &:focus:not(:active){
+      background-color: $medium-black;
+      outline: none;
     }
 
     &:active {
