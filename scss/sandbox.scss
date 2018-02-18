@@ -1,8 +1,7 @@
-@import "./colors.scss";
-
-/* ============ mandatory ============ */
-@import "./reset.scss";
-@import "./typography.scss";
+/* ============ base ============ */
+@import "./base/colors.scss";
+@import "./base/reset.scss";
+@import "./base/typography.scss";
 
 /* ============ utilities ============ */
 @import "./utilities/zeroing.scss";
