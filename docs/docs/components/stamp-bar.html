@@ -1,0 +1,356 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox-stamp-bar</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner relative demo-wgray">
+    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Stamp-bar</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2 class="tc h2">Specs</h2>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">inline-block</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar t h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.stamp-bar</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-6">
+            <ul class="ul circle-hollow p-alt text-break-all">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><span class="text-indigo">.stamp.has-close</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Description</h2>
+      <p class="tc p">A <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.stamp-bar</span></span> is a wrapper used around multiple stamps that you want to group together, such as those used in the <strong>Specs</strong> sections of this documentation.</p>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Structure</h2>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="stamp-bar t">
+            <span class="stamp">theme classes</span>
+            <span class="stamp theme-primary">primary</span>
+            <span class="stamp theme-danger">danger</span>
+          </div>
+          <div class="stamp-bar t">
+            <span class="stamp theme-light">breakpoints</span>
+            <span class="stamp theme-danger">no</span>
+          </div>
+          <div class="stamp-bar t">
+            <span class="stamp theme-dark">solo stamp</span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp"</span><span class="text-blue">&gt;</span>theme classes<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-primary"</span><span class="text-blue">&gt;</span>primary<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-danger"</span><span class="text-blue">&gt;</span>danger<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>breakpoints<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-danger"</span><span class="text-blue">&gt;</span>no<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-dark"</span><span class="text-blue">&gt;</span>solo stamp<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Has close</h2>
+      <p class="tc p mgn-b-1">If you want to use a <span class="snippet p-alt"><span class="text-blue">button</span><span class="text-indigo">.close</span></span> inside of a <span class="snippet p-alt"><span class="text-blue">span</span><span class="text-indigo">.stamp</span></span> that's within a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.stamp-bar</span></span>, use the <span class="snippet p-alt"><span class="text-indigo">.has-close</span></span> class on that <span class="snippet p-alt"><span class="text-blue">span</span><span class="text-indigo">.stamp</span></span>.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="stamp-bar t">
+            <span class="stamp theme-dark">stamp</span>
+            <span class="stamp theme-light has-close">
+              <button class="close h3 no-background"></button>
+            </span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-dark"</span><span class="text-blue">&gt;</span>stamp<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light has-close"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"close h3 no-background"</span><span class="text-blue">&gt;&lt;/button&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2 class="tc h2">Font-size scaling</h2>
+      <p class="tc p">Apply any of the font-size classes to a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.stamp-bar</span></span> in order to have its children iherit that font-size.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="stamp-bar t h6 block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+          <div class="stamp-bar t h5 block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+          <div class="stamp-bar t block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+          <div class="stamp-bar t h3 block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+          <div class="stamp-bar t h2 block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+          <div class="stamp-bar t h1 block">
+            <span class="stamp theme-light">font-size</span>
+            <span class="stamp theme-info">scaling</span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t h6"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t h5"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t h3"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp-bar t h1"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-light"</span><span class="text-blue">&gt;</span>font-size<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"stamp theme-info"</span><span class="text-blue">&gt;</span>scaling<span class="text-blue">&lt;/span&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2 class="tc h2">Variables</h2>
+      <table class="table t p slim">
+        <thead class="border-rows tc">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="tc striped-even row-hover">
+          <tr>
+            <td class="text-red">$stamp-bar-margin</td>
+            <td>0rem 0.6rem 0.6rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$stamp-bar-inner-stamp-padding</td>
+            <td>0.25em 0.375em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$stamp-bar-only-stamp-radius</td>
+            <td class="demo-rds-br-1">0.1875em</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./stamp.html" class="button p theme-dark mgn-0">previous</a>
+      <a href="./images.html" class="button p theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
