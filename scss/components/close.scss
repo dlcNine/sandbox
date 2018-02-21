@@ -13,33 +13,26 @@ button.close {
   position: relative;
   background-color: $medium-white;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $light-white;
+    outline: none;
     cursor: pointer;
 
     &::before, &::after {
-      background-color: $light-black;
       border-color: $light-black;
     }
-  }
-
-  &:focus:not(:active){
-    background-color: $light-white;
-    outline: none;
   }
 
   &:active {
     outline: none;
     
     &::before, &::after {
-      background-color: $black;
       border-color: $black;
     }
   }
 
   &::before, &::after {
     content: '';
-    background-color: $dark-gray;
     border-right: $close-xmark-border-width solid $dark-gray;
     height: $close-xmark-height;
     position: absolute;
@@ -60,15 +53,14 @@ button.close {
     background-color: $light-black;
 
     &::before, &::after {
-      background-color: $medium-gray;
       border-color: $medium-gray;
     }
 
-    &:hover {
+    &:hover, &:focus {
       background-color: $medium-black;
+      outline: none;
 
       &::before, &::after {
-        background-color: $medium-white;
         border-color: $medium-white;
       }
     }
@@ -80,7 +72,6 @@ button.close {
 
     &:active {
       &::before, &::after {
-        background-color: $white;
         border-color: $white;
       }
     }

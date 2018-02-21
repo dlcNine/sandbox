@@ -1,7 +1,7 @@
 @import "../base/colors.scss";
 
 $progress-bar-height: 0.75em;
-$progress-bar-radius: 0.1875em;
+$progress-bar-radius: 0.125em;
 $progress-bar-margin: 0.6rem 0rem;
 
 div.progress-bar {
@@ -13,6 +13,10 @@ div.progress-bar {
   margin: $progress-bar-margin;
 
   div.progress {
+    font-size: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
     height: 100%;
     min-width: 0%;
