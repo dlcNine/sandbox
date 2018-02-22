@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="pseudoBody" class="pseudo-body modal-backdrop absent">
-    <div class="position-center-center large-8 medium-9 small-10">
+    <div class="absolute center-center large-8 medium-9 small-10">
       <div class="modal">
         <h2 class="tc h2 text-center">Hello modal</h2>
         <div class="tc p text-center">Fill this modal with whatever content you see fit.</div>
@@ -24,7 +24,7 @@
   {% include navbar.html %}
   <!-- end navbar -->
   <div class="banner relative demo-wgray">
-    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Modal</h1>
+    <h1 class="tc h1 absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Modal</h1>
   </div>
   <div class="pad-4 pad-2-small">
     <div class="pad-1">
@@ -131,14 +131,14 @@
     <div class="pad-1">
       <h2 class="tc h2 mgn-b-1">Structure</h2>
       <div class="relative mgn-b-1">
-        <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+        <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
         <ol class="code p-alt text-nowrap overflow-x-auto">
           <li class="line">
             <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"pseudo-body modal-backdrop"</span><span class="text-blue">&gt;</span>
           </li>
           <ol class="code-nested">
             <li class="line">
-              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"position-center-center small-10 medium-9 large-8"</span><span class="text-blue">&gt;</span>
+              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"absolute center-center small-10 medium-9 large-8"</span><span class="text-blue">&gt;</span>
             </li>
             <ol class="code-nested">
               <li class="line">
@@ -169,7 +169,7 @@
         <div class="message-body">
           <p class="t p-alt mgn-b-1">Remember that Sandbox does not come with any JavaScript, so that you can implement your way. However, the rudimentary implementation used for this page's modal example is provided below:</p>
           <div class="relative">
-            <!-- <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0"></button> -->
+            <!-- <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0"></button> -->
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">const pseudoBody = document.querySelector("#pseudoBody");</li>
               <li class="line">const togglePseudoBody = document.querySelector("#togglePseudoBody");</li>
