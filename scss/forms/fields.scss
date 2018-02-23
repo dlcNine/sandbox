@@ -6,7 +6,6 @@ $field-label-help-color: $black;
 $field-label-font-size: 1.6rem;
 $field-label-margin-bottom: 0.4rem;
 $field-help-font-size: 1.2rem;
-$field-font-family: sans-serif;
 $field-required-asterisk-color: $medium-red;
 
 form.clearfix, div.field.container-field {
@@ -19,8 +18,6 @@ form.clearfix, div.field.container-field {
 
 div.field {
   font-size: 1.6rem;
-  line-height: 1;
-  font-family: $field-font-family;
   margin-bottom: $field-margin-bottom;
 
   p.label {

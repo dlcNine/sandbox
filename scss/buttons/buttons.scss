@@ -4,19 +4,15 @@ $button-padding: 0.375em 0.75em;
 $button-margin: 0rem 0.6rem 0.6rem 0rem;
 $button-radius: 0.1875em;
 $button-focus-shadow-spread: 0.125em;
-$button-font-family: sans-serif;
 
 a.button, button.button, 
 input[type="submit"].button, 
 input[type="reset"].button {
   font-size: 1.6rem;
-  font-family: $button-font-family;
   display: inline-block;
-  line-height: 1;
   padding: $button-padding;
   margin: $button-margin;
   border-radius: $button-radius;
-  text-align: center;
 
   color: $light-black;
   background-color: $medium-gray;
