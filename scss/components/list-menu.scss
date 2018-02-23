@@ -13,6 +13,7 @@ $list-label-color: $light-black;
 $list-label-padding: 0.5em 0.875em;
 
 ul.list-menu {
+  font-size: 1.6rem;
   &.indent-sublists ul.list-menu, 
   &.indent-immediate > li.list-item, 
   &.indent-immediate > li.list-label {
@@ -20,7 +21,6 @@ ul.list-menu {
   }
 
   li.list-item, li.list-label {
-    line-height: 1;
     color: $list-item-color;
     border-radius: $list-item-radius;
 

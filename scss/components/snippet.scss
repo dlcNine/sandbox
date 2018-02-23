@@ -1,0 +1,13 @@
+@import "../base/colors.scss";
+
+$snippet-radius: 0.1875em;
+$snippet-padding: 0em 0.375em;
+$snippet-background-color: $medium-white;
+
+span.snippet {
+  font-family: menlo, monaco, monospace;
+  display: inline-block;
+  border-radius: $snippet-radius;
+  padding: $snippet-padding;
+  background-color: $snippet-background-color;
+}

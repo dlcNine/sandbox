@@ -1,7 +1,7 @@
 /* ============ base ============ */
 @import "./base/colors.scss";
 @import "./base/reset.scss";
-@import "./base/typography.scss";
+@import "./base/font-sizes.scss";
 
 /* ============ utilities ============ */
 @import "./utilities/zeroing.scss";
@@ -52,6 +52,7 @@
 @import "./components/dropdown.scss";
 @import "./components/popover.scss";
 @import "./components/popmark.scss";
+@import "./components/snippet.scss";
 @import "./components/code.scss";
 @import "./components/loading.scss";
 @import "./components/table.scss";

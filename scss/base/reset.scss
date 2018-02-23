@@ -108,6 +108,34 @@ hr {
   border-top: 0.1rem solid $dark-white;
 }
 
+/* ==================================== */
+
+a.a {
+  &:link {
+    color: $link-unvisited;
+    text-decoration: none;
+  }
+
+  &:hover:not(:visited) {
+    color: $link-hover;
+    outline: none;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $link-visited;
+
+    &:hover {
+      color: $link-visited-hover;
+    }
+  }
+}
+
+a.a:focus, a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
 
 
 

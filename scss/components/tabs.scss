@@ -9,11 +9,9 @@ $tab-a-focus-color: $medium-gray;
 $tab-hover-border-color: $dark-gray;
 $tab-active-color: $medium-blue;
 $tab-active-border-color: $medium-blue;
-$tab-font-family: sans-serif;
 
 ul.tabs {
   font-size: 1.6rem;
-  font-family: $tab-font-family;
 
   &::after {
     content: '';
@@ -30,7 +28,6 @@ ul.tabs {
     text-align: center;
     padding: $tab-padding;
     border-radius: $tab-radius;
-    line-height: 1;
     color: $tab-color;
     border-bottom: $tab-bottom-border-width solid transparent;
 
