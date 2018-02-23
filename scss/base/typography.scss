@@ -7,18 +7,44 @@ scale ratio : 1.3333
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, 
   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
   "Segoe UI Symbol";
-  color: inherit;
   line-height: 1.5;
-}
-
-.tc {
-  @extend .t;
-  color: $black;
 }
 
 .lh-1 {
   line-height: 1 !important;
 }
+
+/* ====================================================== */
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+ font-size: 2.1rem;
+}
+
+h4, p {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, p, h5, h6 {
+  @extend .t;
+}
+
+/* ====================================================== */
 
 .huge-1 {
   font-size: 6.7rem !important;
