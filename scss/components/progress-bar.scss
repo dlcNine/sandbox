@@ -8,7 +8,6 @@ div.progress-bar {
   font-size: 1.6rem;
   height: $progress-bar-height;
   background-color: $light-gray;
-  color: $white-gray;
   border-radius: $progress-bar-radius;
   margin: $progress-bar-margin;
 
@@ -19,6 +18,7 @@ div.progress-bar {
     max-width: 100%;
     border-radius: inherit;
     background-color: $dark-gray;
+    color: $white-gray;
     // transition: width 300ms;
   }
 
