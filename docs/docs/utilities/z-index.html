@@ -16,47 +16,47 @@
   {% include navbar.html %}
   <!-- end navbar -->
   <div class="banner relative demo-wgray">
-    <h1 class="tc h1 absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Z-index</h1>
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Z-index</h1>
   </div>
   <div class="pad-4 pad-2-small">
     <div class="pad-1">
-      <h2 class="tc h2">Specs</h2>
-      <div class="stamp-bar t h5">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">breakpoints</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">theme classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">size classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">font-size scaling</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">variables</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">display set</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">position set</span>
         <span class="stamp theme-danger">no</span>
       </div>
     </div>
     <hr>
     <div class="pad-1">
-      <h2 class="tc h2">Class overview</h2>
+      <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
           <div class="default-12">
@@ -100,23 +100,17 @@
       </div>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">The z-index classes come into play when working with an element that has had its position property set (to something other than static). The z-index property will have no effect on static or non-positioned elements.</p>
-      <p class="tc p mgn-b-1">The general idea is that positioned elements with a higher z-index value will appear above other positioned elements with a lower z-index value (or ones that don't have a z-index set). This also depends on the stacking context and source order that the element is in.</p>
-      <p class="tc p mgn-b-1">Typically an element that has a higher source order (higher up in the html) will appear above an element with a lower source order (lower down in the html).</p>
-      <p class="tc p mgn-b-1">If two positioned elements from different stacking contexts overlap eachother (let's say that <span class="snippet p-alt">b</span> overlaps <span class="snippet p-alt">a</span>), setting the z-index on <span class="snippet p-alt">a</span> to 9000 won't have the desired effect of putting it on top. You must go to the beginning of <span class="snippet p-alt">a</span>'s stacking context and set the z-index there (this is usually where the position property was first set).</p>
-      <p class="tc p">For a more in depth look at the z-index property, check out this article: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index" target="_blank" class="a">Understanding CSS z-index</a></p>
+      <h2>Description</h2>
+      <p class="mgn-b-1">The z-index classes come into play when working with an element that has had its position property set (to something other than static). The z-index property will have no effect on static or non-positioned elements.</p>
+      <p class="mgn-b-1">The general idea is that positioned elements with a higher z-index value will appear above other positioned elements with a lower z-index value (or ones that don't have a z-index set). This also depends on the stacking context and source order that the element is in.</p>
+      <p class="mgn-b-1">Typically an element that has a higher source order (higher up in the html) will appear above an element with a lower source order (lower down in the html).</p>
+      <p class="mgn-b-1">If two positioned elements from different stacking contexts overlap eachother (let's say that <span class="snippet p-alt">b</span> overlaps <span class="snippet p-alt">a</span>), setting the z-index on <span class="snippet p-alt">a</span> to 9000 won't have the desired effect of putting it on top. You must go to the beginning of <span class="snippet p-alt">a</span>'s stacking context and set the z-index there (this is usually where the position property was first set).</p>
+      <p>For a more in depth look at the z-index property, check out this article: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index" target="_blank" class="a">Understanding CSS z-index</a></p>
     </div>
     <div class="flex flex-between pad-1 t-2">
       <a href="./float.html" class="button p theme-dark mgn-0">previous</a>
       <a href="./overflow.html" class="button p theme-dark mgn-0">next</a>
     </div>
-
-
-
-
-
-
   </div>
 </body>
 </html>
