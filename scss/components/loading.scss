@@ -11,25 +11,28 @@ $loading-border-width: 0.0625em;
 }
 
 span.loading {
+  display: inline-block;
+  margin: 0rem 0.6rem;
+
   &::before {
     content: '';
     display: inline-block;
-    vertical-align: sub;
-    height: $loading-height-width;
-    width: $loading-height-width;
-    margin: $loading-margin;
-    border-radius: 50%;
-    border: $loading-border-width solid $loading-border-color;
+    height: 0.875em;
+    width: 0.875em;
+    border: 0.0625em solid $white;
     border-bottom-color: transparent;
     border-left-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    top: 0.0625em;
     animation: revolution 550ms linear 0s infinite normal;
   }
 
   &.theme-dark::before {
-    border-right-color: $medium-black;
     border-top-color: $medium-black;
+    border-right-color: $medium-black;
   }
-
+  
   &.slow::before {
     animation-duration: 1s;
   }
