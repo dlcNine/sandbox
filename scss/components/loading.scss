@@ -1,9 +1,9 @@
 @import "../base/colors.scss";
 
-$loading-height-width: 1em;
-$loading-margin: 0rem 0.8rem;
-$loading-border-color: $white;
+$loading-margin: 0rem 0.6rem;
+$loading-height-width: 0.875em;
 $loading-border-width: 0.0625em;
+$loading-border-color: $white;
 
 @keyframes revolution {
   0% { transform: rotate(0deg); }
@@ -12,14 +12,14 @@ $loading-border-width: 0.0625em;
 
 span.loading {
   display: inline-block;
-  margin: 0rem 0.6rem;
+  margin: $loading-margin;
 
   &::before {
     content: '';
     display: inline-block;
-    height: 0.875em;
-    width: 0.875em;
-    border: 0.0625em solid $white;
+    height: $loading-height-width;
+    width: $loading-height-width;
+    border: $loading-border-width solid $loading-border-color;
     border-bottom-color: transparent;
     border-left-color: transparent;
     border-radius: 50%;
