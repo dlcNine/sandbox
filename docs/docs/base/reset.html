@@ -16,40 +16,40 @@
   {% include navbar.html %}
   <!-- navbar -->
   <div class="banner relative demo-wgray">
-    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Reset</h1>
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Reset</h1>
   </div>
   <div class="pad-4 pad-2-small">
     <div class="pad-1">
-      <h2 class="tc h2">Specs</h2>
-      <div class="stamp-bar t h5">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">breakpoints</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">theme classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">size classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">font-size scaling</span>
         <span class="stamp theme-danger">no</span>
       </div> 
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">variables</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">display set</span>
         <span class="stamp theme-caution">for resetting</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">position set</span>
         <span class="stamp theme-danger">no</span>
       </div>
@@ -57,16 +57,17 @@
     <hr>
     <div class="container">
       <div class="large-8 default-12">
-        <h2 class="tc h2">Description</h2>
-        <p class="tc p mgn-b-1">Sandbox has its own reset.scss file which is used to reduce styling inconsistencies between browsers.</p>
-        <p class="tc p">Most notably you'll see that the root element, <span class="snippet p-alt text-blue">html</span>, has its font-size property set to 62.5%. Here's why:</p>
+        <h2>Description</h2>
+        <p class="mgn-b-1">Sandbox has its own reset.scss file which is used to reduce styling inconsistencies between browsers.</p>
+        <p>Most notably you'll see that the root element, <span class="snippet p-alt text-blue">html</span>, has its font-size property set to 62.5%. Here's why:</p>
         <div class="pad-1">
-          <p class="tc p mgn-b-1">Most browsers have a default font-size of 16px. Since Sandbox uses rem units, the default 1rem would be equal to 16px.</p>
-          <p class="tc p mgn-b-2">Working in units of 16 by default is not very easy. It'd be much easier to work in units of 10.</p>
-          <p class="tc p text-center mgn-b-2"><span class="snippet">62.5% of 16 is equal to 10</span></p>
-          <p class="tc p">Now when we use 1rem it will be equal to 10px, which makes it easier when choosing what rem value we want to work with.</p>
+          <p class="mgn-b-1">Most browsers have a default font-size of 16px. Since Sandbox uses rem units, the default 1rem would be equal to 16px.</p>
+          <p class="mgn-b-2">Working in units of 16 by default is not very easy. It'd be much easier to work in units of 10.</p>
+          <p class="text-center mgn-b-2"><span class="snippet">62.5% of 16 is equal to 10</span></p>
+          <p>Now when we use 1rem it will be equal to 10px, which makes it easier when choosing what rem value we want to work with.</p>
         </div>
-        <p class="tc p">Also note that <span class="snippet p-alt text-blue">html</span> sets its height to 100% (of the viewport) and <span class="snippet p-alt text-blue">body</span> sets its height to 100% (of <span class="snippet p-alt text-blue">html</span>). This comes into play when using the <a href="../layout/height.html" class="a">height classes</a>.
+        <p>Also note that <span class="snippet p-alt text-blue">html</span> sets its height to 100% (of the viewport) and <span class="snippet p-alt text-blue">body</span> sets its height to 100% (of <span class="snippet p-alt text-blue">html</span>). This comes into play when using the <a href="../layout/height.html" class="a">height classes</a>.
+        </p>
       </div>
       <div class="large-4 default-12">
         <ol class="code mgn-t-1 p-alt text-nowrap overflow-x-auto">
@@ -102,9 +103,8 @@
     </div>
     <div class="flex flex-between pad-1 pad-t-2">
       <a href="./colors.html" class="button p theme-dark mgn-0">previous</a>
-      <a href="./typography.html" class="button p theme-dark mgn-0">next</a>
+      <a href="./font-sizes.html" class="button p theme-dark mgn-0">next</a>
     </div>
-  <!-- end div.pad-4 -->
   </div>
 </body>
 </html>

@@ -16,50 +16,50 @@
   {% include navbar.html %}
   <!-- end navbar -->
   <div class="banner relative demo-wgray">
-    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Fields</h1>
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Fields</h1>
   </div>
   <div class="pad-4 pad-2-small">
     <div class="pad-1">
-      <h2 class="tc h2">Specs</h2>
-      <div class="stamp-bar t h5">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">breakpoints</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">theme classes</span>
         <span class="stamp theme-primary">primary</span>
         <span class="stamp theme-info">info</span>
         <span class="stamp theme-caution">caution</span>
         <span class="stamp theme-danger">danger</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">size classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">font-size scaling</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-caution">optional</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">variables</span>
         <span class="stamp theme-info">yes</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">display set</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">position set</span>
         <span class="stamp theme-danger">no</span>
       </div>
     </div>
     <hr>
     <div class="pad-1">
-      <h2 class="tc h2">Class overview</h2>
+      <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
           <div class="default-12 large-6">
@@ -86,12 +86,12 @@
       </div>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Description</h2>
-      <p class="tc p mgn-b-1">A <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> is an element that groups together a <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span>, describing the what the field is for, a control element (<span class="snippet p-alt text-blue">input</span>, <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span>, <span class="snippet p-alt"><span class="text-blue">textarea</span><span class="text-indigo">.textarea</span></span>, etc...), and a <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.help</span></span> for optional help text. A <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span>, as well as other <span class="snippet p-alt text-blue">input</span> elements, should live inside of a <span class="snippet p-alt text-blue">form</span> element.</p>
-      <p class="tc p">Note that the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span>, and the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.help</span></span> have font-family and font-size styling preset.</p>
+      <h2>Description</h2>
+      <p class="mgn-b-1">A <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> is an element that groups together a <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span>, describing the what the field is for, a control element (<span class="snippet p-alt text-blue">input</span>, <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span>, <span class="snippet p-alt"><span class="text-blue">textarea</span><span class="text-indigo">.textarea</span></span>, etc...), and a <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.help</span></span> for optional help text. A <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span>, as well as other <span class="snippet p-alt text-blue">input</span> elements, should live inside of a <span class="snippet p-alt text-blue">form</span> element.</p>
+      <p>Note that the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span>, and the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.help</span></span> have font-family and font-size styling preset.</p>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Structure</h2>
+      <h2>Structure</h2>
       <div class="container">
         <div class="default-12">
           <form>
@@ -104,7 +104,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&lt;form&gt;</span>
@@ -137,8 +137,8 @@
       </div>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Required field</h2>
-      <p class="tc p mgn-b-1">Use the <span class="snippet p-alt"><span class="text-indigo">.required</span></span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> to have an asterisk placed after the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span> to indicate that the field is required. Don't forget to apply the <span class="snippet p-alt">required</span> attribute to the control itself.</p>
+      <h2>Required field</h2>
+      <p class="mgn-b-1">Use the <span class="snippet p-alt"><span class="text-indigo">.required</span></span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> to have an asterisk placed after the <span class="snippet p-alt"><span class="text-blue">p</span><span class="text-indigo">.label</span></span> to indicate that the field is required. Don't forget to apply the <span class="snippet p-alt">required</span> attribute to the control itself.</p>
       <div class="container">
         <div class="default-12">
           <form>
@@ -157,7 +157,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&lt;form&gt;</span>
@@ -212,8 +212,8 @@
       </div>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Fields and the grid</h2>
-      <p class="tc p">Use the grid columns in conjunction with <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> in order to create a grid based form. The idea is to use the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> as the content of the grid columns.</p>
+      <h2>Fields and the grid</h2>
+      <p>Use the grid columns in conjunction with <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> in order to create a grid based form. The idea is to use the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> as the content of the grid columns.</p>
       <div class="container">
         <div class="default-12">
           <form class="clearfix negate-sides">
@@ -266,7 +266,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line">
                 <span class="text-blue">&lt;form</span> <span class="text-violet">class=</span><span class="text-indigo">"clearfix negate-sides"</span><span class="text-blue">&gt;</span>
@@ -455,8 +455,8 @@
       </div>
     </div>
     <div class="pad-1">
-      <h2 class="tc h2">Theme classes</h2>
-      <p class="tc p">Apply the specified theme classes to a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> in order to have that theme's styles applied.</p>
+      <h2>Theme classes</h2>
+      <p>Apply the specified theme classes to a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.field</span></span> in order to have that theme's styles applied.</p>
       <div class="container">
         <div class="default-12">
           <form>
@@ -484,7 +484,7 @@
         </div>
         <div class="default-12">
           <div class="relative">
-            <button class="button outlined position-right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
               <li class="line"><span class="text-blue">&lt;form&gt;</span></li>
               <ol class="code-nested">
@@ -573,15 +573,15 @@
     </div>
     <hr>
     <div class="pad-1">
-      <h2 class="tc h2">Variables</h2>
+      <h2>Variables</h2>
       <table class="table p slim">
-        <thead class="border-rows tc">
+        <thead class="border-rows">
           <tr>
             <th>Variable Identifier</th>
             <th>Value</th>
           </tr>
         </thead>
-        <tbody class="tc striped-even row-hover">
+        <tbody class="striped-even row-hover">
           <tr>
             <td class="text-red">$field-control-focus-shadow-spread</td>
             <td>0.125em</td>
@@ -618,8 +618,8 @@
       </table>
     </div>
     <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./addons-wrapper.html" class="button p theme-dark mgn-0">previous</a>
-      <a href="./container-field.html" class="button p theme-dark mgn-0">next</a>
+      <a href="./addons-wrapper.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./container-field.html" class="button theme-dark mgn-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

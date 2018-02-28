@@ -16,50 +16,116 @@
   {% include navbar.html %}
   <!-- end navbar -->
   <div class="banner relative demo-wgray">
-    <h1 class="tc h1 position-left-center mgn-l-4 mgn-l-2-small pad-l-1">Progress-bar</h1>
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Progress-bar</h1>
   </div>
   <div class="pad-4 pad-2-small">
     <div class="pad-1">
-      <h2 class="tc h2">Specs</h2>
-      <div class="stamp-bar t h5">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">breakpoints</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp theme-primary">primary</span>
+        <span class="stamp theme-info">info</span>
+        <span class="stamp theme-caution">caution</span>
+        <span class="stamp theme-danger">danger</span>
+        <span class="stamp theme-light">light</span>
+        <span class="stamp theme-dark">dark</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">size classes</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">font-size scaling</span>
         <span class="stamp theme-info">yes</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">uses grid within</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">variables</span>
         <span class="stamp theme-info">yes</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">display set</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">position set</span>
         <span class="stamp theme-danger">no</span>
       </div>
-      <div class="stamp-bar t h5">
+      <div class="stamp-bar h5">
         <span class="stamp theme-light">z-index set</span>
         <span class="stamp theme-danger">no</span>
       </div>
     </div>
     <hr>
+    <div class="pad-1">
+      <h2>Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt">
+              <li><span class="snippet no-background">div.progress-bar</span></li>
+            </ul>
+          </div>
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt">
+              <li><span class="snippet no-background">div.progress</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Description</h2>
+      <p>A progress bar which can be used to indicate completion status.</p>
+    </div>
+    <div class="pad-1">
+      <h2>Structure</h2>
+      <div class="container">
+        <div class="small-12 default-6">
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="small-12 default-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">&lt;div class="progress-bar"&gt;</li>
+              <ol class="code-nested">
+                <li class="line">&lt;div class="progress" style="width: 65%;"&gt;&lt;/div&gt;</li>
+              </ol>
+              <li class="line">&lt;/div&gt;</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Utilities</h2>
+      <p>The div.progress is just a block level element that is floated to the left. Use some of the utility classes to control the placement of content within the div.progress.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="progress-bar">
+            <div class="progress relative" style="width: 20%;">
+              <span class="loading h6 absolute center-center"></span>
+            </div>
+          </div>
+        </div>
+        <div class="default-12"></div>
+      </div>
+    </div>
     
+
+
+
+
 
   </div>
 

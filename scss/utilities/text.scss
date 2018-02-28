@@ -74,6 +74,10 @@
   word-break: break-all;
 }
 
+.lh-1 {
+  line-height: 1 !important;
+}
+
 /* ====================================================== */
 
 .text-red {
@@ -102,6 +106,10 @@
 
 .text-violet {
   color: $violet !important;
+}
+
+.text-black {
+  color: $black !important;
 }
 
 .text-gray {

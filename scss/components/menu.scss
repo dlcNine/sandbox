@@ -7,13 +7,11 @@ $menu-item-background-color: $white;
 $menu-item-padding: 1rem;
 $menu-header-radius: 0.3rem 0.3rem 0rem 0rem;
 $menu-footer-radius: 0rem 0rem 0.3rem 0.3rem;
-$menu-font-family: sans-serif;
 
 div.menu {
   border: 0.1rem solid $menu-border-color;
   border-radius: $menu-radius;
   box-shadow: 0.1rem 0.1rem 0.2rem 0rem $menu-shadow-color;
-  font-family: $menu-font-family;
 
   div.menu-header, div.menu-item, div.menu-footer {
     background-color: $menu-item-background-color;

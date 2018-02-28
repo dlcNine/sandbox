@@ -5,8 +5,6 @@ $control-margin: 0rem 0rem 0.6rem 0rem;
 $control-radius: 0.1875em;
 $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
-$control-font-family: sans-serif;
-$control-color: $black;
 $control-background-color: $white;
 $control-focus-border-color: $medium-blue;
 $control-focus-shadow-color: $light-blue-thin;
@@ -17,15 +15,12 @@ $textarea-max-height: 40rem;
 
 input.textfield, textarea.textarea {
   font-size: 1.6rem;
-  font-family: $control-font-family;
-  line-height: 1;
   display: block;
   width: 100%;
   padding: $control-padding;
   border: 0.1rem solid $control-border-color;
   border-radius: $control-radius;
   margin: $control-margin;
-  color: $control-color;
   background-color: $control-background-color;
 
   &:hover {
@@ -78,8 +73,6 @@ div.select {
     -webkit-appearance: none;
     font-size: inherit;
     line-height: 1.175;
-    font-family: $control-font-family;
-    color: $control-color;
     display: block;
     padding: $control-padding;
     width: 100%;
@@ -117,8 +110,6 @@ textarea.textarea {
 
 label.checkbox, label.radio {
   font-size: 1.6rem;
-  color: $control-color;
-  font-family: $control-font-family;
   display: inline-block;
   padding: $control-padding;
   padding-left: 0;
