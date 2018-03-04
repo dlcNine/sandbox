@@ -1,6 +1,8 @@
 @import "../base/colors.scss";
 
 $list-menu-indentation: 0.625em;
+$list-label-color: $light-black;
+$list-label-padding: 0.5em 0.875em;
 $list-item-padding: 0.25em 0.875em;
 $list-item-radius: 0.125em;
 $list-item-color: $white-black;
@@ -9,8 +11,6 @@ $list-item-hover-background-color: $light-white-thick;
 $list-item-active-color: $white;
 $list-item-active-hover-color: $light-white;
 $list-item-active-background-color: $medium-blue-thick;
-$list-label-color: $light-black;
-$list-label-padding: 0.5em 0.875em;
 
 ul.list-menu {
   font-size: 1.6rem;

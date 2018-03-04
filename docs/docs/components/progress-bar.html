@@ -70,12 +70,12 @@
         <div class="message-body clearfix">
           <div class="default-12 large-6">
             <ul class="ul circle-hollow p-alt">
-              <li><span class="snippet no-background">div.progress-bar</span></li>
+              <li><span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.progress-bar</span></span></li>
             </ul>
           </div>
           <div class="default-12 large-6">
             <ul class="ul circle-hollow p-alt">
-              <li><span class="snippet no-background">div.progress</span></li>
+              <li><span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.progress</span></span></li>
             </ul>
           </div>
         </div>
@@ -97,11 +97,17 @@
           <div class="relative">
             <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
-              <li class="line">&lt;div class="progress-bar"&gt;</li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
               <ol class="code-nested">
-                <li class="line">&lt;div class="progress" style="width: 65%;"&gt;&lt;/div&gt;</li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 65%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
               </ol>
-              <li class="line">&lt;/div&gt;</li>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
             </ol>
           </div>
         </div>
@@ -109,7 +115,7 @@
     </div>
     <div class="pad-1">
       <h2>Utilities</h2>
-      <p>The div.progress is just a block level element that is floated to the left. Use some of the utility classes to control the placement of content within the div.progress.</p>
+      <p>The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.progress</span></span> is just a block level element with a background-color, that is floated to the left. Use some of the utility classes to control the placement of content within the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.progress</span></span>.</p>
       <div class="container">
         <div class="default-12">
           <div class="progress-bar">
@@ -118,17 +124,333 @@
             </div>
           </div>
         </div>
-        <div class="default-12"></div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress relative"</span> style="width: 20%;"<span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading h6 absolute center-center"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="progress-bar">
+            <div class="progress flex flex-center flex-cross-center" style="width: 35%;">
+              <span class="loading h6"></span>
+            </div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress flex flex-center flex-cross-center"</span> style="width: 35%;"<span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading h6"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
-    
-
-
-
-
-
+    <div class="pad-1">
+      <h2>Multiple</h2>
+      <p>You can put multiple <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.progress</span></span> elements within a single <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.progress-bar</span></span>.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="progress-bar">
+            <div class="progress theme-primary" style="width: 25%;"></div>
+            <div class="progress theme-caution" style="width: 25%;"></div>
+            <div class="progress theme-info" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-primary"</span> style="width: 25%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-caution"</span> style="width: 25%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-info"</span> style="width: 50%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Theme classes</h2>
+      <p>Apply any of the above mentioned theme classes to the <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.progress</span></span> to have that themes styles applied.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="progress-bar">
+            <div class="progress theme-primary" style="width: 15%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress theme-info" style="width: 30%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress theme-caution" style="width: 45%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress theme-danger" style="width: 60%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress theme-light" style="width: 75%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress theme-dark" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-primary"</span> style="width: 15%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-info"</span> style="width: 30%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-caution"</span> style="width: 45%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-danger"</span> style="width: 60%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-light"</span> style="width: 75%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress theme-dark"</span> style="width: 90%;"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Font-size scaling</h2>
+      <p>Use any of the font-size classes on the <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.progress-bar</span></span> to scale the element.</p>
+      <div class="container">
+        <div class="default-12">
+          <div class="progress-bar h6">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+          <div class="progress-bar h5">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+          <div class="progress-bar h3">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+          <div class="progress-bar h2">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+          <div class="progress-bar h1">
+            <div class="progress" style="width: 25%;"></div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar h6"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar h5"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar h3"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress-bar h1"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"progress"</span> style="width: 25%"<span class="text-blue">&gt;&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table p slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$progress-bar-height</td>
+            <td>0.75em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$progress-bar-radius</td>
+            <td>0.125em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$progress-bar-margin</td>
+            <td>0.6rem 0rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./images.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./list-menu.html" class="button theme-dark mgn-0">next</a>
+    </div>
   </div>
-
   <!-- copy-code -->
   {% include copy-code.html %}
   <!-- end copy-code -->
