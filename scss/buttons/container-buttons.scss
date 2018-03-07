@@ -1,9 +1,13 @@
 $container-buttons-grid-column-padding: 0rem 0.6rem 0.6rem 0rem;
-$container-buttons-negate-right: 0.6rem;
+$container-buttons-negate-padding: 0.6rem;
 
 div.container-buttons {
   font-size: 1.6rem;
-  margin-right: -1 * $container-buttons-negate-right;
+  margin-right: -1 * $container-buttons-negate-padding;
+
+  &.negate-bottom {
+    margin-bottom: -1 * $container-buttons-negate-padding;
+  }
 
   div[class*="default-"], div[class*="small-"], 
   div[class*="medium-"], div[class*="large-"] {

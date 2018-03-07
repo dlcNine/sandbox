@@ -1,23 +1,22 @@
-<div class="navbar demo-lblue relative">
-  <div class="navbar-item mgn-r-0">
-    <a href="" id="demo-side-menu-button" class="h4 demo-navbar-menu-link">
-      <span class="icon">
-        <i class="fa fa-bars"></i>
-      </span>
-      Menu
-    </a>
-  </div>
-  <div class="navbar-item absolute center-center">
-    <a href="{{ 'index.html' | absolute_url }}">
-      <h3 class="text-white">Sandbox</h3>
-    </a>
-  </div>
+<div class="navbar theme-dark demo-lblue">
+  <ul class="navbar-items relative flex flex-between flex-cross-center">
+    <li class="navbar-item">
+      <a href="" id="demo-side-menu-button" class="navbar-a">
+        <span class="icon"><i class="fa fa-bars"></i></span>
+        Menu
+      </a>
+    </li>
+    <li class="navbar-item h3 absolute center-center">
+      <a href="{{ 'index.html' | absolute_url }}" class="navbar-a">Sandbox</a>
+    </li>
+  </ul>
 </div>
+
 <script>
   const demoSideMenuButton = document.querySelector("#demo-side-menu-button");
+  const demoSideMenu = document.querySelector("#demo-side-menu");
   demoSideMenuButton.addEventListener("click", function(event){
     event.preventDefault();
-    const demoSideMenu = document.querySelector("#demo-side-menu");
     demoSideMenu.classList.toggle("demo-side-menu-reveal");
   });
 </script>
