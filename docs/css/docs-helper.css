@@ -106,15 +106,6 @@
   top: -900%;
 }
 
-.demo-navbar-menu-link {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.demo-navbar-menu-link:active, .demo-navbar-menu-link:focus {
-  text-decoration: none;
-}
-
 div#demo-side-menu {
   transform: translate(-100%, 0%);
   transition: transform 400ms;

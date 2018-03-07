@@ -24,6 +24,10 @@ div.navbar {
       margin-right: $navbar-item-margin-right;
       color: $navbar-item-color;
 
+      &:last-child {
+        margin-right: 0;
+      }
+
       a.navbar-a {
         color: inherit;
         text-decoration: none;
