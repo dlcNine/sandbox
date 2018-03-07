@@ -65,32 +65,32 @@
         <div class="message-body clearfix">
           <div class="default-12 large-4">
             <ul class="ul circle-hollow p-alt">
-              <li><span class="snippet no-background">div.card</span></li>
+              <li><span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card</span></span></li>
             </ul>
           </div>
           <div class="default-12 large-4">
             <ul class="ul circle-hollow p-alt">
               <li>
-                <span class="snippet no-background">div.card-header</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-header</span></span>
               </li>
               <li>
-                <span class="snippet no-background">div.card-content</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-content</span></span>
               </li>
               <li>
-                <span class="snippet no-background">div.card-footer</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-footer</span></span>
               </li>
             </ul>
           </div>
           <div class="default-12 large-4">
             <ul class="ul circle-hollow p-alt">
               <li>
-                <span class="snippet no-background">div.card-header.has-hero-image</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-header.has-hero-image</span></span>
               </li>
               <li>
-                <span class="snippet no-background">div.card-content.has-hero-image</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-content.has-hero-image</span></span>
               </li>
               <li>
-                <span class="snippet no-background">div.card-footer.has-hero-image</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.card-footer.has-hero-image</span></span>
               </li>
             </ul>
           </div>
@@ -99,8 +99,9 @@
     </div>
     <div class="pad-1">
       <h2>Description</h2>
-      <p class="mgn-b-1">A div.card is an element which can be used to organize different sections of content into a single place. Use a div.card-header, one or mulitple div.card-content, or a div.card-footer within the div.card to organize content into different sections.</p>
-      <p>You can put any content you want inside of a div.card-header, div.card-content, or div.card-footer.</p>
+      <p class="mgn-b-1">A <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card</span></span> is an element which can be used to organize different sections of content into a single place. Use a <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-header</span></span>, one or mulitple <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-content</span></span>, or a <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-footer</span></span> within the <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card</span></span> to organize content into different sections.</p>
+      <p class="mgn-b-1">You can put any content you want inside of a <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-header</span></span>, <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-content</span></span>, or <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-footer</span></span>.</p>
+      <p>There's no requirement for what's nested inside of <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card</span></span>, so use the <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-header</span></span>, <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-content</span></span>, or <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-footer</span></span> as you see fit.</p>
     </div>
     <div class="pad-1">
       <h2>Structure</h2>
@@ -133,64 +134,314 @@
           <div class="relative">
             <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
             <ol class="code p-alt text-nowrap overflow-x-auto">
-              <li class="line">&lt;div class="card"&gt;</li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card"</span><span class="text-blue">&gt;</span>
+              </li>
               <ol class="code-nested">
-
-                <li class="line">&lt;div class="card-header"&gt;</li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-header"</span><span class="text-blue">&gt;</span>
+                </li>
                 <ol class="code-nested">
-                  <li class="line">&lt;h3&gt;Invitation &lt;span class="text-gray"&gt;Apr 1, 2050&lt;/span&gt;&lt;/h3&gt;</li>
+                  <li class="line">
+                    <span class="text-blue">&lt;h3&gt;</span>Invitation <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"h5 text-gray"</span><span class="text-blue">&gt;</span>Apr 1, 2050<span class="text-blue">&lt;/span&gt;&lt;/h3&gt;</span>
+                  </li>
                 </ol>
-                <li class="line">&lt;/div&gt;</li>
-
-                <li class="line">&lt;div class="card-content"&gt;</li>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-content"</span><span class="text-blue">&gt;</span>
+                </li>
                 <ol class="code-nested">
-                  <li class="line">&lt;p class="mgn-b-1"&gt;&lt;!-- lorem ipsum --&gt;&lt;/p&gt;</li>
-                  <li class="line">&lt;p&gt;&lt;!-- lorem ipsum --&gt;&lt;/p&gt;</li>
+                  <li class="line">
+                    <span class="text-blue">&lt;p</span> <span class="text-violet">class=</span><span class="text-indigo">"mgn-b-1"</span><span class="text-blue">&gt;</span><span class="text-gray">&lt;!-- lorem ipsum --&gt;</span><span class="text-blue">&lt;/p&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;p&gt;</span><span class="text-gray">&lt;!-- lorem ipsum --&gt;</span><span class="text-blue">&lt;/p&gt;</span>
+                  </li>
                 </ol>
-                <li class="line">&lt;/div&gt;</li>
-
-                <li class="line">&lt;div class="card-footer"&gt;</li>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-footer"</span><span class="text-blue">&gt;</span>
+                </li>
                 <ol class="code-nested">
-                  <li class="line">&lt;div class="container-buttons"&gt;</li>
+                  <li class="line">
+                    <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container-buttons negate-bottom"</span><span class="text-blue">&gt;</span>
+                  </li>
                   <ol class="code-nested">
-
-                    <li class="line">&lt;div class="small-12 default-6 pad-b-0"&gt;</li>
+                    <li class="line">
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 default-6"</span><span class="text-blue">&gt;</span>
+                    </li>
                     <ol class="code-nested">
-                      <li class="line">&lt;button class="button theme-primary"&gt;Accept&lt;/button&gt;</li>
+                      <li class="line">
+                        <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button theme-primary"</span><span class="text-blue">&gt;</span>Accept<span class="text-blue">&lt;/button&gt;</span>
+                      </li>
                     </ol>
-                    <li class="line">&lt;/div&gt;</li>
-
-                    <li class="line">&lt;div class="small-12 default-6 pad-b-0"&gt;</li>
+                    <li class="line">
+                      <span class="text-blue">&lt;/div&gt;</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 default-6"</span><span class="text-blue">&gt;</span>
+                    </li>
                     <ol class="code-nested">
-                      <li class="line">&lt;button class="button"&gt;Decline&lt;/button&gt;</li>
+                      <li class="line">
+                        <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button"</span><span class="text-blue">&gt;</span>Decline<span class="text-blue">&lt;/button&gt;</span>
+                      </li>
                     </ol>
-                    <li class="line">&lt;/div&gt;</li>
-
-
+                    <li class="line">
+                      <span class="text-blue">&lt;/div&gt;</span>
+                    </li>
                   </ol>
-                  <li class="line">&lt;/div&gt;</li>
+                  <li class="line">
+                    <span class="text-blue">&lt;/div&gt;</span>
+                  </li>
                 </ol>
-                <li class="line">&lt;/div&gt;</li>
-
-
-
-
-
-
-
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
               </ol>
-              <li class="line">&lt;/div&gt;</li>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
             </ol>
           </div>
         </div>
       </div>
     </div>
-    
-
-
-
+    <div class="pad-1">
+      <h2>Has hero image</h2>
+      <p>Using the <span class="snippet text-indigo">.has-hero-image</span> class on a <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-header</span></span> or <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-content</span></span>, or <span class="snippet"><span class="text-blue">div</span><span class="text-indigo">.card-footer</span></span> will completely fill the element with the image.</p>
+      <div class="container">
+        <div class="default-12 large-4">
+          <div class="card">
+            <div class="card-header has-hero-image">
+              <div class="demo-card-header-height relative demo-lgray rds-inherit">
+                <p class="huge-2 text-gray absolute center-center">(^-^)</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, tempore.</p>
+            </div>
+            <div class="card-footer">
+              <h3>John Dough</h3>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 large-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>John Dough</h3>
+            </div>
+            <div class="card-content has-hero-image">
+              <div class="demo-card-header-height relative demo-lgray rds-inherit">
+                <p class="huge-2 text-gray absolute center-center">(^-^)</p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, eius.</p>
+            </div>
+          </div>
+        </div>
+        <div class="default-12 large-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>John Dough</h3>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, earum.</p>
+            </div>
+            <div class="card-footer has-hero-image">
+              <div class="demo-card-header-height relative demo-lgray rds-inherit">
+                <p class="huge-2 text-gray absolute center-center">(^-^)</p>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="default-12">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code p-alt text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-header has-hero-image"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;img</span> src="path/to/image" alt="happy face"<span class="text-blue">&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-content"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-footer"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-header"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-content has-hero-image"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;img</span> src="path/to/image" alt="happy face"<span class="text-blue">&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-footer"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-header"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-content"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-gray">&lt;!-- content --&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"card-footer has-hero-image"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;img</span> src="path/to/image" alt="happy face"<span class="text-blue">&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/div&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/div&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$card-border-color</td>
+            <td class="text-red">$medium-white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-radius</td>
+            <td>0.5rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-shadow-color</td>
+            <td class="text-red">$light-white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-background-color</td>
+            <td class="text-red">$white</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-item-padding</td>
+            <td>2rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-header-radius</td>
+            <td>0.4rem 0.4rem 0rem 0rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$card-content-radius</td>
+            <td>0.4rem</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$card-footer-radius</td>
+            <td class="demo-rds-br-1">0rem 0rem 0.4rem 0.4rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./banner.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./navbar.html" class="button theme-dark mgn-0">next</a>
+    </div>
   </div>
-
   <!-- copy-code -->
   {% include copy-code.html %}
   <!-- end copy-code -->
