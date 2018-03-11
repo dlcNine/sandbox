@@ -108,7 +108,7 @@
 
 div#demo-side-menu {
   transform: translate(-125%, 0%);
-  transition: transform 575ms;
+  transition: transform 550ms;
 }
 
 .demo-side-menu-reveal {
