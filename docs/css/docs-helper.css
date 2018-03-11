@@ -107,8 +107,8 @@
 }
 
 div#demo-side-menu {
-  transform: translate(-100%, 0%);
-  transition: transform 400ms;
+  transform: translate(-125%, 0%);
+  transition: transform 550ms;
 }
 
 .demo-side-menu-reveal {

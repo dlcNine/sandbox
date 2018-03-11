@@ -1,7 +1,8 @@
 @import "../base/colors.scss";
 
+$popover-color: $black;
 $popover-background-color: $white;
-$popover-shadow-color: $light-gray;
+$popover-shadow-color: $medium-white;
 $popover-border-color: $light-gray;
 $popover-radius: 0.4rem;
 $popover-padding: 1.2rem;
@@ -10,24 +11,26 @@ $popover-extra-offset: 1rem;
 div.popover {
   position: absolute;
   bottom: 100%;
+  z-index: 25;
+  color: $popover-color;
   transform: translate(0%, calc(0% - #{$popover-extra-offset}));
   background-color: $popover-background-color;
   border: 0.1rem solid $popover-border-color;
   border-radius: $popover-radius;
   padding: $popover-padding;
-  width: 16rem;
+  width: 20rem;
   box-shadow: 0.1rem 0.1rem 0.1rem $popover-shadow-color;
 
-  &.size-small {
-    width: 12rem;
+  &.size-1 {
+    width: 30rem;
   }
 
-  &.size-medium {
-    width: 25rem;
+  &.size-2 {
+    width: 40rem;
   }
 
-  &.size-large {
-    width: 36rem;
+  &.size-3 {
+    width: 50rem;
   }
 
   &.align-center {
@@ -87,16 +90,5 @@ div.popover {
       top: initial;
       bottom: 0;
     }
-  }
-
-  &.width-auto {
-    width: auto;
-    white-space: nowrap;
-  }
-
-  &.theme-dark {
-    color: $white-gray;
-    border-color: $light-gray;
-    background-color: $medium-black;
   }
 }
