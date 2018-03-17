@@ -7,21 +7,30 @@ $code-radius: 0.25em;
 $code-line-color: $medium-black;
 $code-line-margin: 0.375em 0.375em 0.375em 0.875em;
 $code-line-height: 1.2;
+$code-pre-line-height: 1.5;
 $code-line-number-color: $light-gray;
 $code-line-number-margin-left: 0.5em;
 $code-line-hover-line-number-color: $white-black;
 $code-nested-margin-left: 1em; 
 $code-nested-border-color: $light-gray;
 
-ol.code {
+pre.code, ol.code {
+  font-size: 1.4rem;
   font-family: menlo, monaco, monospace;
   background-color: $code-background-color;
-  counter-reset: line-number 0;
   padding: $code-padding;
   border: $code-border;
   border-radius: $code-radius;
-  line-height: $code-line-height;
+}
+
+pre.code {
+  line-height: $code-pre-line-height;
+}
+
+ol.code {
+  counter-reset: line-number 0;
   position: relative;
+  line-height: $code-line-height;
 
   li.line {
     margin: $code-line-margin;
