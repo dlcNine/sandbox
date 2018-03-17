@@ -1,0 +1,242 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox loading</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner h5 relative demo-wgray">
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Loading</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-dark">dark</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-info">inline-block</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><span class="text-indigo">.loading</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><span class="text-indigo">.loading.slow</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><span class="text-indigo">.loading.reversed</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">span</span><span class="text-indigo">.loading.paused</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Description</h2>
+      <p>A reusable, rotating loading icon.</p>
+    </div>
+    <div class="pad-1">
+      <h2>Structure</h2>
+      <p>The default border-color for the <span class="snippet"><span class="text-blue">span</span><span class="text-indigo">.loading</span></span> is <span class="text-red">$white</span>, so a colored background is used for visibility.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="demo-lblue demo-rds-1 pad-1">
+            <span class="loading"></span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Modifiers</h2>
+      <p>Use the <span class="snippet text-indigo">.slow</span>, <span class="snippet text-indigo">.reversed</span>, or the <span class="snippet text-indigo">.paused</span> classes on a <span class="snippet"><span class="text-blue">span</span><span class="text-indigo">.loading</span></span> to modify its behavior.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="demo-lblue demo-rds-1 pad-1">
+            <span class="loading slow"></span>
+            <span class="loading reversed"></span>
+            <span class="loading paused"></span>
+            <span class="loading slow reversed"></span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading slow"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading reversed"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading paused"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading slow reversed"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Theme classes</h2>
+      <p>Use the <span class="snippet text-indigo">.theme-dark</span> class on a <span class="snippet"><span class="text-blue">span</span><span class="text-indigo">.loading</span></span> to have that theme's styles applied.</p>
+      <div class="container">
+        <div class="default-6">
+          <span class="loading theme-dark"></span>
+        </div>
+        <div class="default-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading theme-dark"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Font-size scaling</h2>
+      <p>Use any of the font-size classes on a <span class="snippet"><span class="text-blue">span</span><span class="text-indigo">.loading</span></span> to scale the element.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <div class="demo-lblue demo-rds-1 pad-1">
+            <span class="loading"></span>
+            <span class="loading h3"></span>
+            <span class="loading h2"></span>
+            <span class="loading h1"></span>
+            <span class="loading huge-2"></span>
+            <span class="loading huge-1"></span>
+          </div>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading h3"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading h2"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading h1"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading huge-2"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;span</span> <span class="text-violet">class=</span><span class="text-indigo">"loading huge-1"</span><span class="text-blue">&gt;&lt;/span&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$loading-margin</td>
+            <td>0rem 0.6rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$loading-height-width</td>
+            <td>0.875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$loading-border-width</td>
+            <td>0.0625em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$loading-border-color</td>
+            <td class="text-red demo-rds-br-1">$white</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./code.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./table.html" class="button theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
