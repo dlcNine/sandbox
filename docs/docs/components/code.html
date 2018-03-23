@@ -1,0 +1,321 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox code</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner h5 relative demo-wgray">
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">Code</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-info">relative</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Class overview</h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span>
+              </li>
+              <li>
+                <span class="snippet no-background"><span class="text-blue">ol</span><span class="text-indigo">.code-nested</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">li</span><span class="text-indigo">.line</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-4">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background"><span class="text-blue">pre</span><span class="text-indigo">.code</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Description</h2>
+      <p class="mgn-b-1">Use the <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span> element when you want to demonstrate a portion of code. Each individual line of code is written within an <span class="snippet"><span class="text-blue">li</span><span class="text-indigo">.line</span></span> element, and will have a line number generated for it.</p>
+      <p>The generated line number is positioned absolute, meaning that it is placed in relation to its most recently positioned ancestor (<span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span>). The <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span> has its position set to relative.</p>
+    </div>
+    <div class="pad-1">
+      <div class="message theme-info">
+        <div class="message-header">
+          <p>HTML Character Entities</p>
+        </div>
+        <div class="message-body">
+          <p class="p-alt">Be sure to replace the appropriate characters with their HTML character entity equivalent. A list of HTML entities can be found <a class="a" href="https://dev.w3.org/html5/html-author/charref" target="_blank">here</a>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Structure</h2>
+      <div class="container">
+        <div class="default-6">
+          <ol class="code">
+            <li class="line">&lt;span class="loading"&gt;&lt;/span&gt;</li>
+          </ol>
+        </div>
+        <div class="default-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"code"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;span class="loading"&gt;&lt;/span&gt;<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ol&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Nesting</h2>
+      <p>Use the <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code-nested</span></span> within an <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span> to create a section of code which will be nested (via margin-left). You can continue nesting by using an <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code-nested</span></span> within other <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code-nested</span></span> elements.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <ol class="code">
+            <li class="line">&lt;div class="buttons-bar"&gt;</li>
+            <ol class="code-nested">
+              <li class="line">&lt;button class="button"&gt;one&lt;/button&gt;</li>
+              <li class="line">&lt;button class="button"&gt;two&lt;/button&gt;</li>
+            </ol>
+            <li class="line">&lt;/div&gt;</li>
+          </ol>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"code"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;div class="buttons-bar"&gt;<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"code-nested"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;button class="button"&gt;one&lt;/button&gt;<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;button class="button"&gt;two&lt;/button&gt;<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/ol&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;/div&gt;<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ol&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Preformatted code</h2>
+      <p class="mgn-b-1">If you want to demonstrate a portion of code without having to write as many HTML tags, you can use the <span class="snippet"><span class="text-blue">pre</span><span class="text-indigo">.code</span></span> element. (Line numbers and nesting lines are not generated).</p>
+      <p>The formatting of the text placed within a <span class="snippet text-blue">pre</span> element is preserved exactly as is.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <pre class="code">
+this
+  is
+    preformatted
+</pre>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;pre</span> <span class="text-violet">class=</span><span class="text-indigo">"code"</span><span class="text-blue">&gt;</span>
+              </li>
+                <li class="line">
+                  <span class="text-gray">&lt;!-- preformatted text here --&gt;</span>
+                </li>
+              <li class="line">
+                <span class="text-blue">&lt;/pre&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Font-size scaling</h2>
+      <p>Apply any of the font-size classes to an <span class="snippet"><span class="text-blue">ol</span><span class="text-indigo">.code</span></span> or a <span class="snippet"><span class="text-blue">pre</span><span class="text-indigo">.code</span></span> to scale the element and its children.</p>
+      <div class="container">
+        <div class="default-6">
+          <ol class="code h3">
+            <li class="line">&lt;span class="loading"&gt;&lt;/span&gt;</li>
+          </ol>
+        </div>
+        <div class="default-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"code h3"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li</span> <span class="text-violet">class=</span><span class="text-indigo">"line"</span><span class="text-blue">&gt;</span>&lt;span class="loading"&gt;&lt;/span&gt;<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ol&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$code-background-color</td>
+            <td class="text-red">$white-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-padding</td>
+            <td>1.75em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-border</td>
+            <td>0.1rem solid <span class="text-red">$medium-white</span></td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-radius</td>
+            <td>0.25em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-color</td>
+            <td class="text-red">$medium-black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-margin</td>
+            <td>0.375em 0.375em 0.375em 0.875em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-height</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-pre-line-height</td>
+            <td>1.5</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-number-color</td>
+            <td class="text-red">$light-gray</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-number-margin-left</td>
+            <td>0.5em</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-line-hover-line-number-color</td>
+            <td class="text-red">$white-black</td>
+          </tr>
+          <tr>
+            <td class="text-red">$code-nested-margin-left</td>
+            <td>1em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$code-nested-border-color</td>
+            <td class="text-red demo-rds-br-1">$light-gray</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="./snippet.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./loading.html" class="button theme-dark mgn-0">next</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>

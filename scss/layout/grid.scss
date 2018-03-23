@@ -1,7 +1,17 @@
 $grid-column-padding: 1.2rem;
 
-div[class*="small-"], div[class*="medium-"],
-div[class*="large-"], div[class*="default-"] {
+div.default-1, div.default-2, div.default-3, div.default-4, 
+div.default-5, div.default-6, div.default-7, div.default-8, 
+div.default-9, div.default-10, div.default-11, div.default-12, 
+div.small-1, div.small-2, div.small-3, div.small-4, 
+div.small-5, div.small-6, div.small-7, div.small-8, 
+div.small-9, div.small-10, div.small-11, div.small-12, 
+div.medium-1, div.medium-2, div.medium-3, div.medium-4, 
+div.medium-5, div.medium-6, div.medium-7, div.medium-8, 
+div.medium-9, div.medium-10, div.medium-11, div.medium-12, 
+div.large-1, div.large-2, div.large-3, div.large-4, 
+div.large-5, div.large-6, div.large-7, div.large-8, 
+div.large-9, div.large-10, div.large-11, div.large-12 {
   float: left;
   padding: $grid-column-padding;
 }
@@ -124,8 +134,8 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* <= 420px */
-@media screen and (max-width: 26.25rem) {
+/* <= 425px */
+@media screen and (max-width: 26.5625rem) {
   div.small-1 {
     width: 8.333333333333334%;
   }
@@ -227,8 +237,8 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* >= 421px && <= 768px */
-@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+/* >= 426px && <= 768px */
+@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
   div.medium-1 {
     width: 8.333333333333334%;
   }
