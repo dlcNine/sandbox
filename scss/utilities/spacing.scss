@@ -176,8 +176,8 @@ $spacing: 1.2rem;
 
 /* ====================================================== */
 
-/* <= 420px */
-@media screen and (max-width: 26.25rem) {
+/* <= 425px */
+@media screen and (max-width: 26.5625rem) {
   .mgn-1-small { 
     margin: $spacing !important;
   }
@@ -356,8 +356,8 @@ $spacing: 1.2rem;
 
 /* ====================================================== */
 
-/* >= 421px && <= 768px */
-@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+/* >= 426px && <= 768px */
+@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
   .mgn-1-medium { 
     margin: $spacing !important;
   }

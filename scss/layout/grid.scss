@@ -124,8 +124,8 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* <= 420px */
-@media screen and (max-width: 26.25rem) {
+/* <= 425px */
+@media screen and (max-width: 26.5625rem) {
   div.small-1 {
     width: 8.333333333333334%;
   }
@@ -227,8 +227,8 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* >= 421px && <= 768px */
-@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+/* >= 426px && <= 768px */
+@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
   div.medium-1 {
     width: 8.333333333333334%;
   }

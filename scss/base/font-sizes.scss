@@ -70,8 +70,8 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-/* <= 420px */
-@media screen and (max-width: 26.25rem) {
+/* <= 425px */
+@media screen and (max-width: 26.5625rem) {
   .huge-1-small {
     font-size: 6.7rem !important;
   }
@@ -111,8 +111,8 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-/* >= 421px && <= 768px */
-@media screen and (min-width: 26.3125rem) and (max-width: 48rem) {
+/* >= 426px && <= 768px */
+@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
   .huge-1-medium {
     font-size: 6.7rem !important;
   }
