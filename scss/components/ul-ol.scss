@@ -1,9 +1,14 @@
 $ul-ol-line-height: 1.5;
 $ul-ol-indentation: 0.875em;
+$ul-ol-margin-bottom: 0.6rem;
+
+ul.ul, ol.ol {
+  font-size: 1.6rem;
+  line-height: $ul-ol-line-height;
+  margin-bottom: $ul-ol-margin-bottom;
+}
 
 ul.ul {
-  line-height: $ul-ol-line-height;
-
   &.square {
     list-style: square inside;
   }
@@ -18,8 +23,6 @@ ul.ul {
 }
 
 ol.ol {
-  line-height: $ul-ol-line-height;
-
   &.numbers {
     list-style: decimal inside;
   }
@@ -43,5 +46,7 @@ ol.ol {
 
 ul.ul ul.ul, ul.ul ol.ol, 
 ol.ol ol.ol, ol.ol ul.ul {
+  font-size: inherit;
   margin-left: $ul-ol-indentation;
+  margin-bottom: 0;
 }

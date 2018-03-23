@@ -1,0 +1,457 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox ul ol</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner h5 relative demo-wgray">
+    <h1 class="absolute left-center mgn-l-4 mgn-l-2-small pad-l-1">ul and ol</h1>
+  </div>
+  <div class="pad-4 pad-2-small">
+    <div class="pad-1">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">z-index set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2></h2>
+      <div class="message">
+        <div class="message-body clearfix">
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">ul.ul</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ul.ul.square</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ul.ul.circle-solid</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ul.ul.circle-hollow</span>
+              </li>
+            </ul>
+          </div>
+          <div class="default-12 large-6">
+            <ul class="ul circle-hollow p-alt">
+              <li>
+                <span class="snippet no-background">ol.ol</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ol.ol.numbers</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ol.ol.alpha-lower</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ol.ol.alpha-upper</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ol.ol.roman-lower</span>
+              </li>
+              <li>
+                <span class="snippet no-background">ol.ol.roman-upper</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Description</h2>
+      <p>Unordered and ordered list elements which can be repeatedly nested.</p>
+    </div>
+    <div class="pad-1">
+      <h2>Structure</h2>
+      <div class="container">
+        <div class="default-12 large-6">
+          <ul class="ul">
+            <li>ul default</li>
+            <ul class="ul square">
+              <li>square</li>
+              <ul class="ul circle-solid">
+                <li>circle solid</li>
+                <ul class="ul circle-hollow">
+                  <li>circle hollow</li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+          <ol class="ol">
+            <li>ol default</li>
+            <ol class="ol numbers">
+              <li>numbers</li>
+              <ol class="ol alpha-lower">
+                <li>alpha lower</li>
+                <ol class="ol alpha-upper">
+                  <li>alpha upper</li>
+                  <ol class="ol roman-lower">
+                    <li>roman-lower</li>
+                    <ol class="ol roman-upper">
+                      <li>roman-upper</li>
+                    </ol>
+                  </ol>
+                </ol>
+              </ol>
+            </ol>
+          </ol>
+        </div>
+        <div class="default-12 large-6">
+
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li&gt;</span>ul default<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul square"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;li&gt;</span>square<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul circle-solid"</span><span class="text-blue">&gt;</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&lt;li&gt;</span>circle solid<span class="text-blue">&lt;/li&gt;</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul circle-hollow"</span><span class="text-blue">&gt;</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lt;li&gt;</span>circle hollow<span class="text-blue">&lt;/li&gt;</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt;/ul&gt;</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt;/ul&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/ul&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ul&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li&gt;</span>ol default<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol numbers"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;li&gt;</span>numbers<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol alpha-lower"</span><span class="text-blue">&gt;</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&lt;li&gt;</span>alpha lower<span class="text-blue">&lt;/li&gt;</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol alpha-upper"</span><span class="text-blue">&gt;</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lt;li&gt;</span>alpha upper<span class="text-blue">&lt;/li&gt;</span>
+                      </li>
+                      <li class="line">
+                        <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol roman-lower"</span><span class="text-blue">&gt;</span>
+                      </li>
+                      <ol class="code-nested">
+                        <li class="line">
+                          <span class="text-blue">&lt;li&gt;</span>roman-lower<span class="text-blue">&lt;/li&gt;</span>
+                        </li>
+                        <li class="line">
+                          <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol roman-upper"</span><span class="text-blue">&gt;</span>
+                        </li>
+                        <ol class="code-nested">
+                          <li class="line">
+                            <span class="text-blue">&lt;li&gt;</span>roman-upper<span class="text-blue">&lt;/li&gt;</span>
+                          </li>
+                        </ol>
+                        <li class="line">
+                          <span class="text-blue">&lt;/ol&gt;</span>
+                        </li>
+                      </ol>
+                      <li class="line">
+                        <span class="text-blue">&lt;/ol&gt;</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt;/ol&gt;</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt;/ol&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/ol&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ol&gt;</span>
+              </li>
+            </ol>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="pad-1">
+      <h2>Font-size scaling</h2>
+      <p>Apply any of the font-size classes to a ul.ul or ol.ol to scale the element and its children.</p>
+      <div class="container">
+        <div class="default-12 large-6">
+          <ul class="ul h2">
+            <li>ul default</li>
+            <ul class="ul square">
+              <li>square</li>
+              <ul class="ul circle-solid">
+                <li>circle solid</li>
+                <ul class="ul circle-hollow">
+                  <li>circle hollow</li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+          <ol class="ol h2">
+            <li>ol default</li>
+            <ol class="ol numbers">
+              <li>numbers</li>
+              <ol class="ol alpha-lower">
+                <li>alpha lower</li>
+                <ol class="ol alpha-upper">
+                  <li>alpha upper</li>
+                  <ol class="ol roman-lower">
+                    <li>roman-lower</li>
+                    <ol class="ol roman-upper">
+                      <li>roman-upper</li>
+                    </ol>
+                  </ol>
+                </ol>
+              </ol>
+            </ol>
+          </ol>
+        </div>
+        <div class="default-12 large-6">
+          <div class="relative">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
+            <ol class="code text-nowrap overflow-x-auto">
+              <li class="line">
+                <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li&gt;</span>ul default<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul square"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;li&gt;</span>square<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul circle-solid"</span><span class="text-blue">&gt;</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&lt;li&gt;</span>circle solid<span class="text-blue">&lt;/li&gt;</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"ul circle-hollow"</span><span class="text-blue">&gt;</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lt;li&gt;</span>circle hollow<span class="text-blue">&lt;/li&gt;</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt;/ul&gt;</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt;/ul&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/ul&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ul&gt;</span>
+              </li>
+              <li class="line">
+                <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol h2"</span><span class="text-blue">&gt;</span>
+              </li>
+              <ol class="code-nested">
+                <li class="line">
+                  <span class="text-blue">&lt;li&gt;</span>ol default<span class="text-blue">&lt;/li&gt;</span>
+                </li>
+                <li class="line">
+                  <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol numbers"</span><span class="text-blue">&gt;</span>
+                </li>
+                <ol class="code-nested">
+                  <li class="line">
+                    <span class="text-blue">&lt;li&gt;</span>numbers<span class="text-blue">&lt;/li&gt;</span>
+                  </li>
+                  <li class="line">
+                    <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol alpha-lower"</span><span class="text-blue">&gt;</span>
+                  </li>
+                  <ol class="code-nested">
+                    <li class="line">
+                      <span class="text-blue">&lt;li&gt;</span>alpha lower<span class="text-blue">&lt;/li&gt;</span>
+                    </li>
+                    <li class="line">
+                      <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol alpha-upper"</span><span class="text-blue">&gt;</span>
+                    </li>
+                    <ol class="code-nested">
+                      <li class="line">
+                        <span class="text-blue">&lt;li&gt;</span>alpha upper<span class="text-blue">&lt;/li&gt;</span>
+                      </li>
+                      <li class="line">
+                        <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol roman-lower"</span><span class="text-blue">&gt;</span>
+                      </li>
+                      <ol class="code-nested">
+                        <li class="line">
+                          <span class="text-blue">&lt;li&gt;</span>roman-lower<span class="text-blue">&lt;/li&gt;</span>
+                        </li>
+                        <li class="line">
+                          <span class="text-blue">&lt;ol</span> <span class="text-violet">class=</span><span class="text-indigo">"ol roman-upper"</span><span class="text-blue">&gt;</span>
+                        </li>
+                        <ol class="code-nested">
+                          <li class="line">
+                            <span class="text-blue">&lt;li&gt;</span>roman-upper<span class="text-blue">&lt;/li&gt;</span>
+                          </li>
+                        </ol>
+                        <li class="line">
+                          <span class="text-blue">&lt;/ol&gt;</span>
+                        </li>
+                      </ol>
+                      <li class="line">
+                        <span class="text-blue">&lt;/ol&gt;</span>
+                      </li>
+                    </ol>
+                    <li class="line">
+                      <span class="text-blue">&lt;/ol&gt;</span>
+                    </li>
+                  </ol>
+                  <li class="line">
+                    <span class="text-blue">&lt;/ol&gt;</span>
+                  </li>
+                </ol>
+                <li class="line">
+                  <span class="text-blue">&lt;/ol&gt;</span>
+                </li>
+              </ol>
+              <li class="line">
+                <span class="text-blue">&lt;/ol&gt;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$ul-ol-line-height</td>
+            <td>1.5</td>
+          </tr>
+          <tr>
+            <td class="text-red">$ul-ol-indentation</td>
+            <td>0.875em</td>
+          </tr>
+          <tr>
+            <td class="text-red demo-rds-bl-1">$ul-ol-margin-bottom</td>
+            <td class=" demo-rds-br-1">0.6rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-start pad-1 pad-t-2">
+      <a href="./path.html" class="button theme-dark">previous</a>
+    </div>
+  </div>
+  <!-- copy-code -->
+  {% include copy-code.html %}
+  <!-- end copy-code -->
+</body>
+</html>
