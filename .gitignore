@@ -1,8 +1,7 @@
 .DS_Store
 test.html
-dev-helper.css
+css/dev-helper.css
 .sass-cache/
 node_modules/
-docs/_site
-docs/style-guide.html
-spacing-cheatsheet.rtf
+_site/
+style-guide.html
