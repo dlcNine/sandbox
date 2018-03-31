@@ -1,3 +1,5 @@
+@import "../base/breakpoint-values.scss";
+
 $grid-column-padding: 1.2rem;
 
 div.default-1, div.default-2, div.default-3, div.default-4, 
@@ -134,8 +136,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* <= 425px */
-@media screen and (max-width: 26.5625rem) {
+@media screen and (max-width: $breakpoint-small) {
   div.small-1 {
     width: 8.333333333333334%;
   }
@@ -237,8 +238,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* >= 426px && <= 768px */
-@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
+@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
   div.medium-1 {
     width: 8.333333333333334%;
   }
@@ -340,8 +340,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-/* >= 769px */
-@media screen and (min-width: 48.0625rem) {
+@media screen and (min-width: $breakpoint-large) {
   div.large-1 {
     width: 8.333333333333334%;
   }

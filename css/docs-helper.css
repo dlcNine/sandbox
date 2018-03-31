@@ -42,7 +42,7 @@
 .demo-lgreen-thin { background-color: rgba(119, 216, 97, 0.5); }
 .demo-myellow-thin { background-color: rgba(232, 232, 25, 0.5); }
 .demo-lred-thin { background-color: rgba(242, 100, 82, 0.5); }
-.demo-lwhite-thin { background-color: rgba(245, 245, 245, 0.3); }
+.demo-dwhite-thin { background-color: rgba(215, 215, 215, 0.25); }
 .demo-lwhite-thick { background-color: rgba(245, 245, 245, 0.9); }
 .demo-lblack-thick { background-color: rgba(99, 99, 99, 0.6); }
 .demo-black-thick { background-color: rgba(30, 30, 33, 0.8); }

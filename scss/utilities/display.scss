@@ -1,3 +1,5 @@
+@import "../base/breakpoint-values.scss";
+
 .block {
   display: block !important;
 }
@@ -25,8 +27,7 @@
 
 /* ====================================================== */
 
-/* <= 425px */
-@media screen and (max-width: 26.5625rem) {
+@media screen and (max-width: $breakpoint-small) {
   .absent-small {
     display: none !important;
   }
@@ -36,8 +37,7 @@
   }
 }
 
-/* >= 426px && <= 768px */
-@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
+@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
   .absent-medium {
     display: none !important;
   }
@@ -47,8 +47,7 @@
   }
 }
 
-/* >= 769px */
-@media screen and (min-width: 48.0625rem) {
+@media screen and (min-width: $breakpoint-large) {
   .absent-large {
     display: none !important;
   }
