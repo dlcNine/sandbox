@@ -1,3 +1,5 @@
+@import "./breakpoint-values.scss";
+
 /*
 scale ratio : 1.3333
 */
@@ -70,8 +72,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-/* <= 425px */
-@media screen and (max-width: 26.5625rem) {
+@media screen and (max-width: $breakpoint-small) {
   .huge-1-small {
     font-size: 6.7rem !important;
   }
@@ -111,8 +112,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-/* >= 426px && <= 768px */
-@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
+@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
   .huge-1-medium {
     font-size: 6.7rem !important;
   }
@@ -152,8 +152,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-/* >= 769px */
-@media screen and (min-width: 48.0625rem) {
+@media screen and (min-width: $breakpoint-large) {
   .huge-1-large {
     font-size: 6.7rem !important;
   }

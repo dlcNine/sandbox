@@ -1,0 +1,97 @@
+---
+---
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox breakpoint values</title>
+  {% include css-links.html %}
+</head>
+<body>
+  <!-- side-menu -->
+  {% include side-menu.html %}
+  <!-- end side-menu -->
+  <!-- navbar -->
+  {% include navbar.html %}
+  <!-- end navbar -->
+  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
+    <h1 class="mgn-l-2-large">Breakpoint Values</h1>
+  </div>
+  <div class="pad-2 pad-4-large">
+    <div class="pad-1">
+      <h2>Specs</h2>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">breakpoints</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">theme classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">size classes</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">font-size scaling</span>
+        <span class="stamp theme-danger">no</span>
+      </div> 
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">uses grid within</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">variables</span>
+        <span class="stamp theme-info">yes</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">display set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+      <div class="stamp-bar h5">
+        <span class="stamp theme-light">position set</span>
+        <span class="stamp theme-danger">no</span>
+      </div>
+    </div>
+    <hr>
+    <div class="pad-1">
+      <h2>Description</h2>
+      <p>If you are customizing Sandbox, you can easily alter the breakpoint values used by changing the values assigned to the the variables within this file.</p>
+    </div>
+    <div class="pad-1">
+      <h2>Variables</h2>
+      <table class="table slim">
+        <thead class="border-rows">
+          <tr>
+            <th>Variable Identifier</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody class="striped-even row-hover">
+          <tr>
+            <td class="text-red">$breakpoint-small</td>
+            <td>26.5625rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$breakpoint-medium-lower</td>
+            <td>26.625rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$breakpoint-medium-upper</td>
+            <td>48rem</td>
+          </tr>
+          <tr>
+            <td class="text-red">$breakpoint-large</td>
+            <td>48.0625rem</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex flex-between pad-1 pad-t-2">
+      <a href="../overview.html" class="button theme-dark mgn-0">previous</a>
+      <a href="./colors.html" class="button theme-dark mgn-0">next</a>
+    </div>
+  </div>
+</body>
+</html>

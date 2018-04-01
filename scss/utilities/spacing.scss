@@ -1,3 +1,5 @@
+@import "../base/breakpoint-values.scss";
+
 $spacing: 1.2rem;
 
 .mgn-1 { 
@@ -176,8 +178,7 @@ $spacing: 1.2rem;
 
 /* ====================================================== */
 
-/* <= 425px */
-@media screen and (max-width: 26.5625rem) {
+@media screen and (max-width: $breakpoint-small) {
   .mgn-1-small { 
     margin: $spacing !important;
   }
@@ -356,8 +357,7 @@ $spacing: 1.2rem;
 
 /* ====================================================== */
 
-/* >= 426px && <= 768px */
-@media screen and (min-width: 26.625rem) and (max-width: 48rem) {
+@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
   .mgn-1-medium { 
     margin: $spacing !important;
   }
@@ -536,8 +536,7 @@ $spacing: 1.2rem;
 
 /* ====================================================== */
 
-/* >= 769px */
-@media screen and (min-width: 48.0625rem) {
+@media screen and (min-width: $breakpoint-large) {
   .mgn-1-large { 
     margin: $spacing !important;
   }
