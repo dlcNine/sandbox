@@ -33,7 +33,7 @@ input[type="reset"].button {
     outline: none;
   }
 
-  &.theme-primary {
+  &.primary {
     color: $white-blue;
     background-color: $medium-blue;
 
@@ -46,7 +46,7 @@ input[type="reset"].button {
     }
   }
 
-  &.theme-info {
+  &.info {
     color: $white-green;
     background-color: $medium-green;
 
@@ -63,7 +63,7 @@ input[type="reset"].button {
     }
   }
 
-  &.theme-caution {
+  &.caution {
     color: $dark-yellow;
     background-color: $medium-yellow;
 
@@ -81,7 +81,7 @@ input[type="reset"].button {
     }
   }
 
-  &.theme-danger {
+  &.danger {
     color: $white-red;
     background-color: $medium-red;
 
@@ -98,7 +98,7 @@ input[type="reset"].button {
     }
   }
 
-  &.theme-light {
+  &.light {
     color: $light-black;
     background-color: $medium-white;
 
@@ -111,7 +111,7 @@ input[type="reset"].button {
     }
   }
 
-  &.theme-dark {
+  &.dark {
     color: $white;
     background-color: $medium-black;
 

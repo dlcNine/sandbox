@@ -34,7 +34,7 @@ span.stamp {
     }
   }
 
-  &.theme-primary {
+  &.primary {
     background-color: $medium-blue;
 
     &.has-link:hover {
@@ -42,7 +42,7 @@ span.stamp {
     }
   }
 
-  &.theme-info {
+  &.info {
     background-color: $medium-green;
 
     &.has-link:hover {
@@ -50,7 +50,7 @@ span.stamp {
     }
   }
 
-  &.theme-caution {
+  &.caution {
     background-color: $medium-yellow;
     color: $dark-yellow;
 
@@ -59,7 +59,7 @@ span.stamp {
     }
   }
 
-  &.theme-danger {
+  &.danger {
     background-color: $medium-red;
 
     &.has-link:hover {
@@ -67,7 +67,7 @@ span.stamp {
     }
   }
 
-  &.theme-light {
+  &.light {
     background-color: $medium-white;
     color: $light-black;
 
@@ -76,7 +76,7 @@ span.stamp {
     }
   }
 
-  &.theme-dark {
+  &.dark {
     background-color: $medium-black;
 
     &.has-link:hover {

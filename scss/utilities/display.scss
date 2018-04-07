@@ -28,31 +28,31 @@
 /* ====================================================== */
 
 @media screen and (max-width: $breakpoint-small) {
-  .absent-small {
+  .absent-sm {
     display: none !important;
   }
 
-  .invisible-small {
+  .invisible-sm {
     visibility: hidden !important;
   }
 }
 
 @media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
-  .absent-medium {
+  .absent-md {
     display: none !important;
   }
 
-  .invisible-medium {
+  .invisible-md {
     visibility: hidden !important;
   }
 }
 
 @media screen and (min-width: $breakpoint-large) {
-  .absent-large {
+  .absent-lg {
     display: none !important;
   }
 
-  .invisible-large {
+  .invisible-lg {
     visibility: hidden !important;
   }
 }

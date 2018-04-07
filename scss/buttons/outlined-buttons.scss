@@ -14,7 +14,7 @@
     color: $light-black;
   }
 
-  &.theme-primary {
+  &.primary {
     color: $medium-blue;
     border-color: $medium-blue;
 
@@ -28,7 +28,7 @@
     }
   }
 
-  &.theme-info {
+  &.info {
     color: $medium-green;
     border-color: $medium-green;
 
@@ -42,7 +42,7 @@
     }
   }
 
-  &.theme-caution {
+  &.caution {
     color: $dark-yellow;
     border-color: $medium-yellow;
 
@@ -56,7 +56,7 @@
     }
   }
 
-  &.theme-danger {
+  &.danger {
     color: $medium-red;
     border-color: $medium-red;
 
@@ -70,7 +70,7 @@
     }
   }
 
-  &.theme-light {
+  &.light {
     color: $light-black;
     border-color: $medium-white;
 
@@ -84,7 +84,7 @@
     }
   }
 
-  &.theme-dark {
+  &.dark {
     color: $light-black;
     border-color: $medium-black;
 

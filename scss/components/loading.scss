@@ -28,7 +28,7 @@ span.loading {
     animation: revolution 550ms linear 0s infinite normal;
   }
 
-  &.theme-dark::before {
+  &.dark::before {
     border-top-color: $medium-black;
     border-right-color: $medium-black;
   }

@@ -37,32 +37,32 @@ div.progress-bar {
     // transition: width 300ms;
   }
 
-  div.progress.theme-primary {
+  div.progress.primary {
     background-color: $medium-blue;
     color: $white-blue;
   }
 
-  div.progress.theme-info {
+  div.progress.info {
     background-color: $medium-green;
     color: $white-green;
   }
 
-  div.progress.theme-caution {
+  div.progress.caution {
     background-color: $medium-yellow;
     color: $dark-yellow;
   }
 
-  div.progress.theme-danger {
+  div.progress.danger {
     background-color: $medium-red;
     color: $white-red;
   }
 
-  div.progress.theme-light {
+  div.progress.light {
     background-color: $light-white;
     color: $light-black;
   }
 
-  div.progress.theme-dark {
+  div.progress.dark {
     background-color: $medium-black;
     color: $white;
   }

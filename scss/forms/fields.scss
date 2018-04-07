@@ -7,19 +7,8 @@ $field-label-margin-bottom: 0.4rem;
 $field-help-font-size: 1.2rem;
 $field-required-asterisk-color: $medium-red;
 
-form.clearfix, div.field.container-field {
-  & > div.default-1, & > div.default-2, & > div.default-3, & > div.default-4, 
-  & > div.default-5, & > div.default-6, & > div.default-7, & > div.default-8, 
-  & > div.default-9, & > div.default-10, & > div.default-11, & > div.default-12, 
-  & > div.small-1, & > div.small-2, & > div.small-3, & > div.small-4, 
-  & > div.small-5, & > div.small-6, & > div.small-7, & > div.small-8, 
-  & > div.small-9, & > div.small-10, & > div.small-11, & > div.small-12, 
-  & > div.medium-1, & > div.medium-2, & > div.medium-3, & > div.medium-4, 
-  & > div.medium-5, & > div.medium-6, & > div.medium-7, & > div.medium-8, 
-  & > div.medium-9, & > div.medium-10, & > div.medium-11, & > div.medium-12, 
-  & > div.large-1, & > div.large-2, & > div.large-3, & > div.large-4, 
-  & > div.large-5, & > div.large-6, & > div.large-7, & > div.large-8, 
-  & > div.large-9, & > div.large-10, & > div.large-11, & > div.large-12 {
+form.clearfix, div.field.grid-field {
+  div[class*="unit-"]{
     padding-top: 0rem;
     padding-bottom: 0rem;
   }
@@ -43,7 +32,7 @@ div.field {
     color: $field-required-asterisk-color;
   }
 
-  &.theme-primary {
+  &.primary {
     input.textfield, textarea.textarea, div.select select {
       border-color: $medium-blue;
 
@@ -57,7 +46,7 @@ div.field {
     }
   }
 
-  &.theme-info {
+  &.info {
     input.textfield, textarea.textarea, div.select select {
       border-color: $medium-green;
 
@@ -71,7 +60,7 @@ div.field {
     }
   }
 
-  &.theme-caution {
+  &.caution {
     input.textfield, textarea.textarea, div.select select {
       border-color: $medium-yellow;
 
@@ -89,7 +78,7 @@ div.field {
     }
   }
 
-  &.theme-danger {
+  &.danger {
     input.textfield, textarea.textarea, div.select select {
       border-color: $medium-red;
 

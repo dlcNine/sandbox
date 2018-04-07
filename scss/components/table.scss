@@ -53,33 +53,33 @@ table.table {
     background-color: $table-row-hover-color !important;
   }
 
-  thead.row-hover tr.theme-primary:hover, 
-  tbody.row-hover tr.theme-primary:hover,
-  tfoot.row-hover tr.theme-primary:hover {
+  thead.row-hover tr.primary:hover, 
+  tbody.row-hover tr.primary:hover,
+  tfoot.row-hover tr.primary:hover {
     background-color: $light-blue !important;
   }
 
-  thead.row-hover tr.theme-info:hover, 
-  tbody.row-hover tr.theme-info:hover,
-  tfoot.row-hover tr.theme-info:hover {
+  thead.row-hover tr.info:hover, 
+  tbody.row-hover tr.info:hover,
+  tfoot.row-hover tr.info:hover {
     background-color: $light-green !important;
   }
 
-  thead.row-hover tr.theme-caution:hover, 
-  tbody.row-hover tr.theme-caution:hover,
-  tfoot.row-hover tr.theme-caution:hover {
+  thead.row-hover tr.caution:hover, 
+  tbody.row-hover tr.caution:hover,
+  tfoot.row-hover tr.caution:hover {
     background-color: $light-yellow !important;
   }
 
-  thead.row-hover tr.theme-danger:hover, 
-  tbody.row-hover tr.theme-danger:hover,
-  tfoot.row-hover tr.theme-danger:hover {
+  thead.row-hover tr.danger:hover, 
+  tbody.row-hover tr.danger:hover,
+  tfoot.row-hover tr.danger:hover {
     background-color: $light-red !important;
   }
 
-  thead.row-hover tr.theme-dark:hover, 
-  tbody.row-hover tr.theme-dark:hover,
-  tfoot.row-hover tr.theme-dark:hover {
+  thead.row-hover tr.dark:hover, 
+  tbody.row-hover tr.dark:hover,
+  tfoot.row-hover tr.dark:hover {
     background-color: $light-black !important;
   }
 
@@ -98,27 +98,27 @@ table.table {
     background-color: $white;
   }
 
-  tr.theme-primary {
+  tr.primary {
     color: $white-blue;
     background-color: $medium-blue !important;
   }
 
-  tr.theme-info {
+  tr.info {
     color: $white-green;
     background-color: $medium-green !important;
   }
 
-  tr.theme-caution {
+  tr.caution {
     color: $dark-yellow;
     background-color: $medium-yellow !important;
   }
 
-  tr.theme-danger {
+  tr.danger {
     color: $white-red;
     background-color: $medium-red !important;
   }
 
-  tr.theme-dark {
+  tr.dark {
     color: $white;
     background-color: $medium-black !important;
 

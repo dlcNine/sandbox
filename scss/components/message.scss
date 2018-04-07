@@ -34,7 +34,7 @@ div.message {
     background-color: inherit;
   }
 
-  &.theme-primary {
+  &.primary {
     border-color: $medium-blue;
     background-color: $white-blue;
 
@@ -48,7 +48,7 @@ div.message {
     }
   }
 
-  &.theme-info {
+  &.info {
     border-color: $medium-green;
     background-color: $white-green;
 
@@ -62,7 +62,7 @@ div.message {
     }
   }
 
-  &.theme-caution {
+  &.caution {
     border-color: $medium-yellow;
     background-color: $white-yellow;
 
@@ -76,7 +76,7 @@ div.message {
     }
   }
 
-  &.theme-danger {
+  &.danger {
     border-color: $medium-red;
     background-color: $white-red;
 
@@ -90,7 +90,7 @@ div.message {
     }
   }
 
-  &.theme-light {
+  &.light {
     border-color: $medium-white;
     background-color: $white;
 
@@ -104,7 +104,7 @@ div.message {
     }
   }
 
-  &.theme-dark {
+  &.dark {
     border-color: $medium-black;
     background-color: $light-white;
 

@@ -25,79 +25,79 @@
 }
 
 @media screen and (max-width: $breakpoint-small) {
-  .w-1-3-small {
+  .w-1-3-sm {
     width: 33.333333333333336%;
   }
 
-  .w-2-3-small {
+  .w-2-3-sm {
     width: 66.66666666666667%;
   }
 
-  .w-1-4-small {
+  .w-1-4-sm {
     width: 25%;
   }
 
-  .w-1-2-small {
+  .w-1-2-sm {
     width: 50%;
   }
 
-  .w-3-4-small {
+  .w-3-4-sm {
     width: 75%;
   }
 
-  .w-1-small {
+  .w-1-sm {
     width: 100%;
   }
 }
 
 @media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
-  .w-1-3-medium {
+  .w-1-3-md {
     width: 33.333333333333336%;
   }
 
-  .w-2-3-medium {
+  .w-2-3-md {
     width: 66.66666666666667%;
   }
 
-  .w-1-4-medium {
+  .w-1-4-md {
     width: 25%;
   }
 
-  .w-1-2-medium {
+  .w-1-2-md {
     width: 50%;
   }
 
-  .w-3-4-medium {
+  .w-3-4-md {
     width: 75%;
   }
 
-  .w-1-medium {
+  .w-1-md {
     width: 100%;
   }
 }
 
 @media screen and (min-width: $breakpoint-large) {
-  .w-1-3-large {
+  .w-1-3-lg {
     width: 33.333333333333336%;
   }
 
-  .w-2-3-large {
+  .w-2-3-lg {
     width: 66.66666666666667%;
   }
 
-  .w-1-4-large {
+  .w-1-4-lg {
     width: 25%;
   }
 
-  .w-1-2-large {
+  .w-1-2-lg {
     width: 50%;
   }
 
-  .w-3-4-large {
+  .w-3-4-lg {
     width: 75%;
   }
 
-  .w-1-large {
+  .w-1-lg {
     width: 100%;
   }
 }

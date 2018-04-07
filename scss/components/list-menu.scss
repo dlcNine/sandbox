@@ -58,7 +58,7 @@ ul.list-menu {
     }
   }
 
-  &.theme-light {
+  &.light {
     li.list-item:not(.active), 
     li.list-label:not(.active) {
       a.list-a:hover {
@@ -79,7 +79,7 @@ ul.list-menu {
     }
   }
 
-  &.theme-dark {
+  &.dark {
     
     hr {
       border-color: $dark-gray;

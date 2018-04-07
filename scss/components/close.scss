@@ -49,7 +49,7 @@ button.close {
     transform: rotate(135deg) translate(-50%, -50%);
   }
 
-  &.theme-dark {
+  &.dark {
     background-color: $light-black;
 
     &::before, &::after {

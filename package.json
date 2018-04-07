@@ -14,7 +14,7 @@
     "open-scss-buttons": "open -a 'Sublime Text' scss/buttons/*.scss",
     "open-scss-forms": "open -a 'Sublime Text' scss/forms/*.scss",
     "open-scss-components": "open -a 'Sublime Text' scss/components/*.scss",
-    "open-sandbox": "npm run open-root && npm run open-scss && npm run open-scss-base && npm run open-scss-utilities && npm run open-scss-layout && npm run open-scss-buttons && npm run open-scss-forms && npm run open-scss-components"
+    "open-sandbox": "npm run open-root && npm run open-scss-base && npm run open-scss-utilities && npm run open-scss-layout && npm run open-scss-buttons && npm run open-scss-forms && npm run open-scss-components"
   },
   "repository": {
     "type": "git",
