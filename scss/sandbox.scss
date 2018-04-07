@@ -8,17 +8,18 @@
 @import "./utilities/zeroing.scss";
 @import "./utilities/spacing.scss";
 @import "./utilities/display.scss";
-@import "./utilities/flexbox.scss";
 @import "./utilities/float.scss";
 @import "./utilities/z-index.scss";
 @import "./utilities/overflow.scss";
+@import "./utilities/height.scss";
+@import "./utilities/width.scss";
 @import "./utilities/text.scss";
 @import "./utilities/img.scss";
 
 /* ============ layout ============ */
 @import "./layout/grid.scss";
 @import "./layout/positioning.scss";
-@import "./layout/height.scss";
+@import "./layout/flexbox.scss";
 
 /* ============ buttons ============ */
 @import "./buttons/buttons.scss";

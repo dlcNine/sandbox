@@ -41,27 +41,27 @@
 /* ====================================================== */
 
 .text-thin {
-  font-weight: lighter;
+  font-weight: lighter !important;
 }
 
 .text-normal {
-  font-weight: normal;
+  font-weight: normal !important;
 }
 
 .text-bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .text-italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .text-line-through {
-  text-decoration: line-through;
+  text-decoration: line-through !important;
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 /* ====================================================== */
