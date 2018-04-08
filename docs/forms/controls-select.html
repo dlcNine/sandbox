@@ -15,51 +15,51 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Controls-Select</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Controls-Select</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-info">block</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp info">block</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-info">relative</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp info">relative</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="default-12">
+          <div class="unit-12">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.select</span></span>
@@ -72,15 +72,15 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
       <p>Sandbox uses a customized <span class="snippet p-alt text-blue">select</span> element, wrapped by the <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class. The <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> class adds some additional styling to complete the <span class="snippet p-alt text-blue">select</span> element. This element is also styled to take up the full width available.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Structure</h2>
-      <div class="container">
-        <div class="default-12 large-6">
-          <div class="select mgn-t-0">
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
+          <div class="select mt-0">
             <select name="wood">
               <option value="eggs">eggs</option>
               <option value="bacon">bacon</option>
@@ -88,10 +88,10 @@
             </select>
           </div>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"select"</span><span class="text-blue">&gt;</span>
               </li>
@@ -122,12 +122,12 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Multiple</h2>
-      <p class="mgn-b-1">Apply the <span class="snippet p-alt">multiple</span> attribute to the <span class="snippet p-alt text-blue">select</span> element and use <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select.multiple</span></span> in order to choose multiple options from the <span class="snippet p-alt text-blue">select</span> element at once.</p>
+      <p class="mb-1">Apply the <span class="snippet p-alt">multiple</span> attribute to the <span class="snippet p-alt text-blue">select</span> element and use <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select.multiple</span></span> in order to choose multiple options from the <span class="snippet p-alt text-blue">select</span> element at once.</p>
       <p>By setting the <span class="snippet p-alt">size</span> attribute on the <span class="snippet p-alt text-blue">select</span> element (that has the <span class="snippet p-alt">multiple</span> attribute) you can specify how many options you want to be visible.</p>
-      <div class="container">
-        <div class="default-12 large-6">
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
           <div class="select multiple">
             <select multiple size="3">
               <option value="hickory">hickory</option>
@@ -140,10 +140,10 @@
             </select>
           </div>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"select multiple"</span><span class="text-blue">&gt;</span>
               </li>
@@ -170,20 +170,20 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Font size scaling</h2>
       <p>Applying the font-size classes to <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.select</span></span> will scale the element, which will also match the size of a scaled <span class="snippet p-alt"><span class="text-blue">input</span><span class="text-indigo">.textfield</span></span> (except for the largest and smallest sizes).</p>
-      <div class="container">
-        <div class="default-6">
+      <div class="grid">
+        <div class="unit-6">
           <input type="text" placeholder="h5" class="textfield h5">
           <input type="text" placeholder="p-alt" class="textfield p-alt">
           <input type="text" placeholder="h4" class="textfield h4">
           <input type="text" placeholder="h3" class="textfield h3">
           <input type="text" placeholder="h2" class="textfield h2">
           <input type="text" placeholder="h1" class="textfield h1">
-          <input type="text" placeholder="huge-2" class="textfield huge-2 absent-small absent-medium">
+          <input type="text" placeholder="huge-2" class="textfield huge-2 absent-sm absent-md">
         </div>
-        <div class="default-6">
+        <div class="unit-6">
           <div class="select h5">
             <select name="">
               <option value="h5">h5</option>
@@ -220,17 +220,17 @@
               <option value="flank">flank</option>
             </select>
           </div>
-          <div class="select huge-2 absent-small absent-medium">
+          <div class="select huge-2 absent-sm absent-md">
             <select name="">
               <option value="huge-2">huge-2</option>
               <option value="sirloin">sirloin</option>
             </select>
           </div>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"select h5"</span><span class="text-blue">&gt;</span>
               </li>
@@ -306,7 +306,7 @@
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Variables</h2>
       <table class="table p slim">
         <thead class="border-rows">
@@ -361,15 +361,15 @@
             <td>0.125em</td>
           </tr>
           <tr>
-            <td class="text-red demo-rds-bl-1">$select-arrow-color</td>
-            <td class="text-red demo-rds-br-1">$light-black</td>
+            <td class="text-red rbl">$select-arrow-color</td>
+            <td class="text-red rbr">$light-black</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./controls-textfield.html" class="button theme-dark mgn-0">previous</a>
-      <a href="./controls-textarea.html" class="button theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./controls-textfield.html" class="button dark m-0">previous</a>
+      <a href="./controls-textarea.html" class="button dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->
