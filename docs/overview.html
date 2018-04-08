@@ -15,23 +15,23 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Overview</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Overview</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1 mgn-b-2">
+  <div class="p-2 p-4-lg">
+    <div class="p-1 mb-2">
       <h2>Structure</h2>
       <p>The structure of this documentation resembles Sandbox's actual directory structure. Each page (except for this one) relates to a file in Sandbox, and contains information pertaining to that file.</p>
     </div>
-    <div class="container">
-      <div class="default-12 large-6">
+    <div class="grid">
+      <div class="unit-12 unit-6-lg">
         <h2>Breakpoints</h2>
         <p>Sandbox provides three responsive breakpoints: <span class="snippet p-alt">small</span>, <span class="snippet p-alt">medium</span>, <span class="snippet p-alt">large</span>. The table shows when each breakpoint becomes active, based on the width of the current device or browser.</p>
       </div>
-      <div class="default-12 large-6">
+      <div class="unit-12 unit-6-lg">
         <table class="table">
           <thead>
-            <tr class="theme-dark p">
+            <tr class="dark p">
               <th>Breakpoint</th>
               <th>rem</th>
               <th>px</th>
@@ -49,58 +49,60 @@
               <td>&gt;= 426px and &lt;= 768px</td>
             </tr>
             <tr>
-              <td class="demo-rds-bl-1">large</td>
+              <td class="rbl">large</td>
               <td>&gt;= 48.0625rem</td>
-              <td class="demo-rds-br-1">&gt;= 769px</td>
+              <td class="rbr">&gt;= 769px</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>CSS Selector Syntax</h2>
-      <p class="mgn-b-1">This documentation uses CSS selector syntax to describe the classes and elements used. For example:</p>
-      <p class="mgn-b-1"><span class="snippet p-alt text-blue">div</span> means a <span class="snippet p-alt text-blue">&lt;div&gt;</span> element.</p>
-      <p class="mgn-b-1"><span class="snippet p-alt text-indigo">.blue</span> means the blue class</p>
-      <p class="mgn-b-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.blue</span></span> means a <span class="snippet p-alt"><span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"blue"</span><span class="text-blue">&gt;</span></span></p>
-      <p class="mgn-b-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.blue.round</span></span> means a <span class="snippet p-alt"><span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"blue round"</span><span class="text-blue">&gt;</span></span></p>
-      <p class="mgn-b-1"><span class="snippet p-alt"><span class="text-blue">input</span>[type="password"]</span> means <span class="snippet p-alt"><span class="text-blue">&lt;input</span> type="password"<span class="text-blue">&gt;</span></span></p>
-      <p class="mgn-b-1"><span class="snippet p-alt"><span class="text-blue">input</span>[type="password"]<span class="text-indigo">.blue</span></span> means <span class="snippet p-alt"><span class="text-blue">&lt;input</span> type="password" <span class="text-violet">class=</span><span class="text-indigo">"blue"</span><span class="text-blue">&gt;</span></span></p>
+      <p class="mb-1">This documentation uses CSS selector syntax to describe the classes and elements used. For example:</p>
+      <p class="mb-1"><span class="snippet p-alt text-blue">div</span> means a <span class="snippet p-alt text-blue">&lt;div&gt;</span> element.</p>
+      <p class="mb-1"><span class="snippet p-alt text-indigo">.blue</span> means the blue class</p>
+      <p class="mb-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.blue</span></span> means a <span class="snippet p-alt"><span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"blue"</span><span class="text-blue">&gt;</span></span></p>
+      <p class="mb-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.blue.round</span></span> means a <span class="snippet p-alt"><span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"blue round"</span><span class="text-blue">&gt;</span></span></p>
+      <p class="mb-1"><span class="snippet p-alt"><span class="text-blue">input</span>[type="password"]</span> means <span class="snippet p-alt"><span class="text-blue">&lt;input</span> type="password"<span class="text-blue">&gt;</span></span></p>
+      <p class="mb-1"><span class="snippet p-alt"><span class="text-blue">input</span>[type="password"]<span class="text-indigo">.blue</span></span> means <span class="snippet p-alt"><span class="text-blue">&lt;input</span> type="password" <span class="text-violet">class=</span><span class="text-indigo">"blue"</span><span class="text-blue">&gt;</span></span></p>
     </div>
-    <div class="pad-1">
+
+
+    <div class="p-1">
       <h2>CSS 101</h2>
       <p>The following are some basic terms and ideas that will be used through the documentation.</p>
-      <div class="container">
-        <div class="default-12 large-6 pad-0">
-          <div class="default-12">
-            <div class="demo-lwhite demo-rds-1 pad-1">
-              <h3 class="mgn-b-1">Display Property</h3>
-              <p class="mgn-b-1"><strong>block</strong> level elements start on a new line, and take up the full width available.</p>
-              <p class="mgn-b-1"><strong>inline</strong> level elements do not start on a new line, and only take up as much room as they need.</p>
-              <p class="mgn-b-1"><strong>inline-block</strong> level elements, are formatted as blocks on the inside, and inline on the outside.</p>
+      <div class="grid">
+        <div class="unit-12 unit-6-lg p-0">
+          <div class="unit-12">
+            <div class="demo-lwhite r p-1">
+              <h3 class="mb-1">Display Property</h3>
+              <p class="mb-1"><strong>block</strong> level elements start on a new line, and take up the full width available.</p>
+              <p class="mb-1"><strong>inline</strong> level elements do not start on a new line, and only take up as much room as they need.</p>
+              <p class="mb-1"><strong>inline-block</strong> level elements, are formatted as blocks on the inside, and inline on the outside.</p>
             </div>
           </div>
-          <div class="default-12">
-            <div class="demo-lwhite demo-rds-1 pad-1">
-              <h3 class="mgn-b-1">Rem and Em</h3>
-              <p class="mgn-b-1"><strong>rem</strong> is a relative unit that can be thought of as a multiplier of the font-size of the root element (the html element). Assuming the font-size of the html element is 16px, 1rem would be equal to 16px.</p>
-              <p class="mgn-b-1"><strong>em</strong> is a relative unit that can also be thought of as a multiplier of the font-size of the current element itself, or the font-size of its most recently set ancestor (if the element itself didn't have a font-size set). If the element's font-size is set to 24px, 1em would be equal to 24px.</p>
+          <div class="unit-12">
+            <div class="demo-lwhite r p-1">
+              <h3 class="mb-1">Rem and Em</h3>
+              <p class="mb-1"><strong>rem</strong> is a relative unit that can be thought of as a multiplier of the font-size of the root element (the html element). Assuming the font-size of the html element is 16px, 1rem would be equal to 16px.</p>
+              <p class="mb-1"><strong>em</strong> is a relative unit that can also be thought of as a multiplier of the font-size of the current element itself, or the font-size of its most recently set ancestor (if the element itself didn't have a font-size set). If the element's font-size is set to 24px, 1em would be equal to 24px.</p>
             </div>
           </div>
         </div>
-        <div class="default-12 large-6">
-          <div class="demo-lwhite demo-rds-1 pad-1">
-            <h3 class="mgn-b-1">Position Property</h3>
-            <p class="mgn-b-1"><strong>static</strong> is the default setting for the position property. A static positioned element is included in the page flow. Using the top, bottom, left, right properties will have no effect on a static positioned element.</p>
-            <p class="mgn-b-1"><strong>relative</strong> means that an element's position can be adjusted in relation to its normal position by using the top, bottom, left, and right properties. A relative positioned element is included in the page flow.</p>
-            <p class="mgn-b-1"><strong>absolute</strong> means that an element can be positioned in relation to its most recently positioned ancestor (a static positioned ancestor does not count), by using the top, bottom, left, right properties. An absolute positioned element is removed from the page flow.</p>
-            <p class="mgn-b-1"><strong>fixed</strong> means that an element can be positioned in relation to the viewport by using the top, bottom, left, and right properties. A fixed positioned element is removed from normal page flow.</p>
+        <div class="unit-12 unit-6-lg">
+          <div class="demo-lwhite r p-1">
+            <h3 class="mb-1">Position Property</h3>
+            <p class="mb-1"><strong>static</strong> is the default setting for the position property. A static positioned element is included in the page flow. Using the top, bottom, left, right properties will have no effect on a static positioned element.</p>
+            <p class="mb-1"><strong>relative</strong> means that an element's position can be adjusted in relation to its normal position by using the top, bottom, left, and right properties. A relative positioned element is included in the page flow.</p>
+            <p class="mb-1"><strong>absolute</strong> means that an element can be positioned in relation to its most recently positioned ancestor (a static positioned ancestor does not count), by using the top, bottom, left, right properties. An absolute positioned element is removed from the page flow.</p>
+            <p class="mb-1"><strong>fixed</strong> means that an element can be positioned in relation to the viewport by using the top, bottom, left, and right properties. A fixed positioned element is removed from normal page flow.</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex flex-end pad-1 pad-t-2">
-      <a href="./base/breakpoint-values.html" class="button p theme-dark mgn-0">next</a>
+    <div class="flex flex-end p-1 pt-2">
+      <a href="./base/breakpoint-values.html" class="button p dark m-0">next</a>
     </div>
   </div>
 </body>
