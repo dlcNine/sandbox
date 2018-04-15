@@ -15,62 +15,62 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Tabs</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Tabs</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-dark">dark</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp dark">dark</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">z-index set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">z-index set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span>
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background"><span class="text-blue">li</span><span class="text-indigo">.tab</span></span>
@@ -80,7 +80,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background"><span class="text-blue">a</span><span class="text-indigo">.tab-a</span></span>
@@ -90,15 +90,15 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
-      <p class="mgn-b-1">Use a <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> to group together a collection of elements used for navigation. For additional control, combine the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> with the flexbox utility classes.</p>
-      <p class="tc p">Use the <span class="snippet p-alt text-indigo">.active</span> class on a <span class="snippet p-alt"><span class="text-blue">li</span><span class="text-indigo">.tab</span></span> to indicate the active tab.</p>
+      <p class="mb-1">Use a <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> to group together a collection of elements used for navigation. For additional control, combine the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> with the flexbox utility classes.</p>
+      <p>Use the <span class="snippet p-alt text-indigo">.active</span> class on a <span class="snippet p-alt"><span class="text-blue">li</span><span class="text-indigo">.tab</span></span> to indicate the active tab.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Structure</h2>
-      <div class="container">
-        <div class="default-12 large-6">
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
           <ul class="tabs">
             <li class="tab">
               <a href="" class="tab-a">hard</a>
@@ -114,10 +114,10 @@
             </li>
           </ul>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs"</span><span class="text-blue">&gt;</span>
               </li>
@@ -175,13 +175,13 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Flexbox utilities</h2>
       <p>Use the flexbox utility classes on the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> for more control.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <div class="box no-shadow">
-            <ul class="tabs flex flex-start mgn-b-1">
+            <ul class="tabs flex flex-start mb-1">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -192,7 +192,7 @@
                 <a href="" class="tab-a">start</a>
               </li>
             </ul>
-            <ul class="tabs flex flex-center mgn-b-1">
+            <ul class="tabs flex flex-center mb-1">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -203,7 +203,7 @@
                 <a href="" class="tab-a">center</a>
               </li>
             </ul>
-            <ul class="tabs flex flex-end mgn-b-1">
+            <ul class="tabs flex flex-end mb-1">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -214,7 +214,7 @@
                 <a href="" class="tab-a">end</a>
               </li>
             </ul>
-            <ul class="tabs flex flex-between mgn-b-1">
+            <ul class="tabs flex flex-between mb-1">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -225,7 +225,7 @@
                 <a href="" class="tab-a">between</a>
               </li>
             </ul>
-            <ul class="tabs flex flex-around mgn-b-1">
+            <ul class="tabs flex flex-around mb-1">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -249,12 +249,12 @@
             </ul>
           </div>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-t-0 mgn-t-1 mgn-r-2">copy</button>
-            <ol class="code overflow-auto text-nowrap">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code o-auto text-nowrap">
               <div class="banner huge-2">
-                <div class="p-alt pad-l-1">
+                <div class="p-alt pl-1">
                   <li class="line">
                     <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs flex flex-start"</span><span class="text-blue">&gt;</span>
                   </li>
@@ -508,13 +508,13 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Theme classes</h2>
-      <p>Use the <span class="snippet p-alt text-indigo">.theme-dark</span> class on the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> in order to have that style applied. A colored background has been used to help show the theme's styling.</p>
-      <div class="container">
-        <div class="default-12 large-6">
-          <div class="banner h5 demo-rds-1 demo-lblack pad-1">
-            <ul class="tabs theme-dark">
+      <p>Use the <span class="snippet p-alt text-indigo">.dark</span> class on the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> in order to have that style applied. A colored background has been used to help show the theme's styling.</p>
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
+          <div class="banner h5 r demo-lblack p-1">
+            <ul class="tabs dark">
               <li class="tab">
                 <a href="" class="tab-a">using</a>
               </li>
@@ -527,12 +527,12 @@
             </ul>
           </div>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs theme-dark"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs dark"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -577,11 +577,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Font-size scaling</h2>
       <p>Use any of the font-size classes on the <span class="snippet p-alt"><span class="text-blue">ul</span><span class="text-indigo">.tabs</span></span> to have its children inherit the font-size specified.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <ul class="tabs h5">
             <li class="tab">
               <a href="" class="tab-a">font</a>
@@ -638,12 +638,12 @@
             </li>
           </ul>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-t-1 mgn-r-2">copy</button>
-            <ol class="code overflow-auto text-nowrap">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code o-auto text-nowrap">
               <div class="banner huge-2">
-                <div class="p-alt pad-l-1">
+                <div class="p-alt pl-1">
                   <li class="line">
                     <span class="text-blue">&lt;ul</span> <span class="text-violet">class=</span><span class="text-indigo">"tabs h5"</span><span class="text-blue">&gt;</span>
                   </li>
@@ -857,7 +857,7 @@
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Variables</h2>
       <table class="table p slim">
         <thead class="border-rows">
@@ -904,15 +904,15 @@
             <td class="text-red">$medium-blue</td>
           </tr>
           <tr>
-            <td class="text-red demo-rds-bl-1">$tab-font-family</td>
-            <td class=" demo-rds-br-1">sans-serif</td>
+            <td class="text-red rbl">$tab-font-family</td>
+            <td class="rbr">sans-serif</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./message.html" class="button theme-dark mgn-0">previous</a>
-      <a href="./menu.html" class="button theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./message.html" class="button dark m-0">previous</a>
+      <a href="./menu.html" class="button dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->
