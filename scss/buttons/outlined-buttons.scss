@@ -3,7 +3,6 @@
 .button.outlined {
   background-color: transparent !important;
   border: 0.1rem solid $medium-gray;
-  color: $light-black;
 
   &:hover {
     border-color: $light-gray;
@@ -11,7 +10,7 @@
 
   &:active {
     border-color: $dark-gray;
-    color: $light-black;
+    color: $alpha-faint;
   }
 
   &.primary {
@@ -71,7 +70,7 @@
   }
 
   &.light {
-    color: $light-black;
+    color: $alpha-faint;
     border-color: $medium-white;
 
     &:hover {
@@ -80,12 +79,11 @@
 
     &:active {
       border-color: $medium-gray;
-      color: $light-black;
     }
   }
 
   &.dark {
-    color: $light-black;
+    color: $alpha-faint;
     border-color: $medium-black;
 
     &:hover {
@@ -94,7 +92,7 @@
 
     &:active {
       border-color: $black;
-      color: $black;
+      color: $alpha-black;
     }
   }
 }

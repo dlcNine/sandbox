@@ -40,7 +40,7 @@
 
 /* ====================================================== */
 
-.text-thin {
+.text-lighter {
   font-weight: lighter !important;
 }
 
@@ -109,13 +109,13 @@
 }
 
 .text-black {
-  color: $black !important;
+  color: $alpha-black !important;
 }
 
-.text-gray {
-  color: $dark-gray !important;
+.text-faint {
+  color: $alpha-faint !important;
 }
 
 .text-white {
-  color: $white !important;
+  color: $alpha-white !important;
 }

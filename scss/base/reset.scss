@@ -52,7 +52,7 @@ body {
   line-height: 1;
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
-  color: $black;
+  color: $alpha-black;
 }
 
 ol, ul {
@@ -106,7 +106,7 @@ sup {
 }
 
 hr {
-  border-top: 0.1rem solid $dark-white;
+  border-top: 0.1rem solid $alpha-faintest;
 }
 
 /* ==================================== */

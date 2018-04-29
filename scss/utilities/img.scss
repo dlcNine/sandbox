@@ -1,12 +1,11 @@
 @import "../base/colors.scss";
 
-$image-shadow-color: $dark-white-thin;
 $image-circular: 50%;
 $image-rounded: 0.8rem;
 
 img {
   &.shadow {
-    box-shadow: 0.1rem 0.1rem 0.2rem 0rem $image-shadow-color;
+    box-shadow: 0rem 0rem 0.5rem 0rem $alpha-fainter;
   }
 
   &.circular {

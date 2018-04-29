@@ -14,7 +14,7 @@ input[type="reset"].button {
   margin: $button-margin;
   border-radius: $button-radius;
   text-align: center;
-  color: $light-black;
+  color: $alpha-faint;
   background-color: $medium-gray;
 
   &:hover {
@@ -24,7 +24,7 @@ input[type="reset"].button {
 
   &:active {
     background-color: $dark-gray;
-    color: $white-gray;
+    color: $alpha-white;
     outline: none;
   }
   
@@ -34,7 +34,7 @@ input[type="reset"].button {
   }
 
   &.primary {
-    color: $white-blue;
+    color: $alpha-white;
     background-color: $medium-blue;
 
     &:hover {
@@ -47,7 +47,7 @@ input[type="reset"].button {
   }
 
   &.info {
-    color: $white-green;
+    color: $alpha-white;
     background-color: $medium-green;
 
     &:hover {
@@ -64,7 +64,7 @@ input[type="reset"].button {
   }
 
   &.caution {
-    color: $dark-yellow;
+    color: $alpha-faint;
     background-color: $medium-yellow;
 
     &:hover {
@@ -73,7 +73,7 @@ input[type="reset"].button {
 
     &:active {
       background-color: $dark-yellow;
-      color: $white-yellow;
+      color: $alpha-white;
     }
 
     &:focus:not(:active) {
@@ -82,7 +82,7 @@ input[type="reset"].button {
   }
 
   &.danger {
-    color: $white-red;
+    color: $alpha-white;
     background-color: $medium-red;
 
     &:hover {
@@ -99,7 +99,7 @@ input[type="reset"].button {
   }
 
   &.light {
-    color: $light-black;
+    color: $alpha-faint;
     background-color: $medium-white;
 
     &:hover {
@@ -112,7 +112,7 @@ input[type="reset"].button {
   }
 
   &.dark {
-    color: $white;
+    color: $alpha-white;
     background-color: $medium-black;
 
     &:hover {
