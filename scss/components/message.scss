@@ -17,7 +17,7 @@ div.message {
   div.message-header {
     border-radius: $message-header-radius;
     padding: $message-header-padding;
-    color: $white-gray;
+    color: $alpha-white;
     border-color: inherit;
     background-color: $dark-gray;
 
@@ -39,7 +39,6 @@ div.message {
     background-color: $white-blue;
 
     .message-header {
-      color: $white-blue;
       background-color: $medium-blue;
     }
 
@@ -53,7 +52,6 @@ div.message {
     background-color: $white-green;
 
     .message-header {
-      color: $white-green;
       background-color: $medium-green;
     }
 
@@ -67,7 +65,7 @@ div.message {
     background-color: $white-yellow;
 
     .message-header {
-      color: $dark-yellow;
+      color: $alpha-faint;
       background-color: $medium-yellow;
     }
 
@@ -81,7 +79,6 @@ div.message {
     background-color: $white-red;
 
     .message-header {
-      color: $white-red;
       background-color: $medium-red;
     }
 
@@ -95,7 +92,7 @@ div.message {
     background-color: $white;
 
     .message-header {
-      color: $light-black;
+      color: $alpha-faint;
       background-color: $medium-white;
     }
 
@@ -109,7 +106,6 @@ div.message {
     background-color: $light-white;
 
     .message-header {
-      color: $white;
       background-color: $medium-black;
     }
 

@@ -3,10 +3,10 @@
 $tab-padding: 0.5em 0.875em;
 $tab-radius: 0.1875em 0.1875em 0em 0em;
 $tab-bottom-border-width: 0.125em;
-$tab-color: $light-black;
-$tab-hover-color: $medium-black;
-$tab-a-focus-color: $medium-gray;
-$tab-hover-border-color: $dark-gray;
+$tab-color: $alpha-faint;
+$tab-hover-color: $alpha-black;
+$tab-a-focus-color: $alpha-black;
+$tab-hover-border-color: $alpha-black;
 $tab-active-color: $medium-blue;
 $tab-active-border-color: $medium-blue;
 
@@ -50,6 +50,10 @@ ul.tabs {
       color: $tab-active-color;
       border-color: $tab-active-border-color;
       font-weight: bold;
+
+      a.tab-a:focus {
+        color: $tab-active-color;
+      }
     }
   }
 
