@@ -33,37 +33,33 @@ div.progress-bar {
     min-width: 0%;
     max-width: 100%;
     background-color: $dark-gray;
-    color: $white-gray;
+    color: $alpha-white;
     // transition: width 300ms;
   }
 
   div.progress.primary {
     background-color: $medium-blue;
-    color: $white-blue;
   }
 
   div.progress.info {
     background-color: $medium-green;
-    color: $white-green;
   }
 
   div.progress.caution {
     background-color: $medium-yellow;
-    color: $dark-yellow;
+    color: $alpha-faint;
   }
 
   div.progress.danger {
     background-color: $medium-red;
-    color: $white-red;
   }
 
   div.progress.light {
     background-color: $light-white;
-    color: $light-black;
+    color: $alpha-faint;
   }
 
   div.progress.dark {
     background-color: $medium-black;
-    color: $white;
   }
 }

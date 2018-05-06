@@ -2,7 +2,6 @@
 
 $dropdown-border-color: $light-gray;
 $dropdown-background-color: $white;
-$dropdown-shadow-color: $dark-white-thin;
 $dropdown-radius: 0.4rem;
 $dropdown-padding: 0.8rem 0rem;
 $dropdown-extra-offset: 0.6rem;
@@ -20,7 +19,6 @@ ul.dropdown {
   transform: translate(0%, calc(100% + #{$dropdown-extra-offset}));
   border: 0.1rem solid $dropdown-border-color;
   border-radius: $dropdown-radius;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $dropdown-shadow-color;
   width: 18rem;
   padding: $dropdown-padding;
   background-color: $dropdown-background-color;

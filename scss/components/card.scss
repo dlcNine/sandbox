@@ -2,7 +2,6 @@
 
 $card-border-color: $light-gray;
 $card-radius: 0.5rem;
-$card-shadow-color: $dark-white-thin;
 $card-background-color: $white;
 $card-item-padding: 2rem;
 $card-header-radius: 0.4rem 0.4rem 0rem 0rem;
@@ -12,7 +11,6 @@ $card-footer-radius: 0rem 0rem 0.4rem 0.4rem;
 div.card {
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $card-shadow-color;
   background-color: $card-background-color;
 
   div.card-header, div.card-content, div.card-footer {

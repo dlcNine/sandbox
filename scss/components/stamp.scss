@@ -11,7 +11,7 @@ span.stamp {
   margin: $stamp-margin;
   border-radius: $stamp-radius;
   background-color: $medium-gray;
-  color: $white;
+  color: $alpha-white;
 
   &.round {
     border-radius: 1em;
@@ -52,7 +52,7 @@ span.stamp {
 
   &.caution {
     background-color: $medium-yellow;
-    color: $dark-yellow;
+    color: $alpha-faint;
 
     &.has-link:hover {
       background-color: $light-yellow;
@@ -69,7 +69,7 @@ span.stamp {
 
   &.light {
     background-color: $medium-white;
-    color: $light-black;
+    color: $alpha-faint;
 
     &.has-link:hover {
       background-color: $light-white;

@@ -1,15 +1,15 @@
 @import "../base/colors.scss";
 
 $list-menu-indentation: 0.625em;
-$list-label-color: $light-black;
+$list-label-color: $alpha-faint;
 $list-label-padding: 0.5em 0.875em;
 $list-item-padding: 0.25em 0.875em;
 $list-item-radius: 0.125em;
-$list-item-color: $white-black;
-$list-item-hover-color: $black;
+$list-item-color: $alpha-fainter;
+$list-item-hover-color: $alpha-black;
 $list-item-hover-background-color: $light-white-thick;
-$list-item-active-color: $white;
-$list-item-active-hover-color: $light-white;
+$list-item-active-color: $alpha-white;
+$list-item-active-hover-color: $white;
 $list-item-active-background-color: $medium-blue-thick;
 
 ul.list-menu {
