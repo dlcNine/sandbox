@@ -1,31 +1,33 @@
 @import "../base/colors.scss";
 
-$stamp-padding: 0em 0.375em 0.125em 0.375em;
-$stamp-has-link-padding: 0.125em 0.375em;
-$stamp-margin: 0em 0.125em;
-$stamp-radius: 0.1875em;
+$tag-padding: 0em 0.375em 0.125em 0.375em;
+$tag-has-link-padding: 0.125em 0.375em;
+$tag-margin: 0em 0.125em;
 
-span.stamp {
+span.tag {
   font-size: 1em;
-  padding: $stamp-padding;
-  margin: $stamp-margin;
-  border-radius: $stamp-radius;
+  padding: $tag-padding;
+  margin: $tag-margin;
   background-color: $medium-gray;
   color: $alpha-white;
+
+  &.rounded {
+    border-radius: 0.1875em;
+  }
 
   &.round {
     border-radius: 1em;
   }
 
   &.has-link {
-    padding: $stamp-has-link-padding;
+    padding: $tag-has-link-padding;
   }
 
   &.has-link:hover {
     background-color: $light-gray;
   }
 
-  a.stamp-a {
+  a.tag-a {
     color: inherit;
     text-decoration: none;
 

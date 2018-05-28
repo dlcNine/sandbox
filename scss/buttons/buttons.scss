@@ -1,8 +1,7 @@
 @import "../base/colors.scss";
 
 $button-padding: 0.5em 1.25em;
-$button-margin: 0rem 0.6rem 0.6rem 0rem;
-$button-radius: 0.1875em;
+$button-margin: 0.6rem;
 $button-focus-shadow-spread: 0.125em;
 
 a.button, button.button, 
@@ -11,8 +10,7 @@ input[type="reset"].button {
   font-size: 1.6rem;
   display: inline-block;
   padding: $button-padding;
-  margin: $button-margin;
-  border-radius: $button-radius;
+  margin-bottom: $button-margin;
   text-align: center;
   color: $alpha-faint;
   background-color: $medium-gray;
@@ -34,9 +32,6 @@ input[type="reset"].button {
   }
 
   &.primary {
-    color: $alpha-white;
-    background-color: $medium-blue;
-
     &:hover {
       background-color: $light-blue;
     }
@@ -47,9 +42,6 @@ input[type="reset"].button {
   }
 
   &.info {
-    color: $alpha-white;
-    background-color: $medium-green;
-
     &:hover {
       background-color: $light-green;
     }
@@ -64,9 +56,6 @@ input[type="reset"].button {
   }
 
   &.caution {
-    color: $alpha-faint;
-    background-color: $medium-yellow;
-
     &:hover {
       background-color: $light-yellow;
     }
@@ -82,9 +71,6 @@ input[type="reset"].button {
   }
 
   &.danger {
-    color: $alpha-white;
-    background-color: $medium-red;
-
     &:hover {
       background-color: $light-red;
     }
@@ -99,9 +85,6 @@ input[type="reset"].button {
   }
 
   &.light {
-    color: $alpha-faint;
-    background-color: $medium-white;
-
     &:hover {
       background-color: $light-white;
     }
@@ -112,9 +95,6 @@ input[type="reset"].button {
   }
 
   &.dark {
-    color: $alpha-white;
-    background-color: $medium-black;
-
     &:hover {
       background-color: $light-black;
     }

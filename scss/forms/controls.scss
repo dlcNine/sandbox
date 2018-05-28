@@ -1,8 +1,7 @@
 @import "../base/colors.scss";
 
 $control-padding: 0.375em 0.625em;
-$control-margin: 0rem 0rem 0.6rem 0rem;
-$control-radius: 0.1875em;
+$control-margin: 0.6rem;
 $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
 $control-background-color: $white;
@@ -19,8 +18,7 @@ input.textfield, textarea.textarea {
   width: 100%;
   padding: $control-padding;
   border: 0.1rem solid $control-border-color;
-  border-radius: $control-radius;
-  margin: $control-margin;
+  margin-bottom: $control-margin;
   background-color: $control-background-color;
 
   &:hover {
@@ -39,38 +37,9 @@ input.textfield, textarea.textarea {
 div.select {
   font-size: 1.6rem;
   position: relative;
-  margin: $control-margin;
-
-  &:not(.multiple)::before {
-    content: '';
-    position: absolute;
-    height: 1.5em;
-    width: 1.5em;
-    right: 0.1875em;
-    top: 50%;
-    transform: translate(0%, -50%);
-    border-radius: $control-radius;
-    background-color: $control-background-color;
-    pointer-events: none;
-  }
-
-  &:not(.multiple)::after {
-    content: '';
-    position: absolute;
-    width: 0.5em;
-    height: 0.5em;
-    right: 0.75em;
-    top: 50%;
-    border-radius: 0.0625em;
-    transform-origin: 25% 25%;
-    transform: translate(0%, -50%) rotate(-45deg);
-    background: linear-gradient(45deg, $select-arrow-color 50%, transparent 50%);
-    pointer-events: none;
-  }
+  margin-bottom: $control-margin;
 
   select {
-    appearance: none;
-    -webkit-appearance: none;
     font-size: inherit;
     line-height: 1;
     display: block;
@@ -78,7 +47,7 @@ div.select {
     width: 100%;
     background: $control-background-color;
     border: 0.1rem solid $control-border-color;
-    border-radius: $control-radius;
+    border-radius: 0;
 
     &:hover {
       border-color: $control-hover-border-color;
@@ -117,6 +86,5 @@ label.checkbox, label.radio {
 
   input[type="checkbox"], input[type="radio"] {
     margin-right: 0.125em;
-    border-radius: 0.1875em;
   }
 }

@@ -1,8 +1,8 @@
-$buttons-bar-margin: 0rem 0.6rem 0.6rem 0rem;
+$buttons-bar-margin: 0.6rem;
 
 div.buttons-bar {
   font-size: 1.6rem;
-  margin: $buttons-bar-margin;
+  margin-bottom: $buttons-bar-margin;
 
   &::after {
     content: '';
@@ -22,19 +22,5 @@ div.buttons-bar {
     font-size: inherit;
     float: left;
     margin: 0;
-  }
-
-  & > .button:first-child {
-    border-top-right-radius: 0em;
-    border-bottom-right-radius: 0em;
-  }
-
-  & > .button:last-child {
-    border-top-left-radius: 0em;
-    border-bottom-left-radius: 0em;
-  }
-
-  & > .button:not(:first-child):not(:last-child) {
-    border-radius: 0em;
   }
 }

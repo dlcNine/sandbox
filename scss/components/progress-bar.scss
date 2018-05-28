@@ -1,31 +1,13 @@
 @import "../base/colors.scss";
 
 $progress-bar-height: 0.75em;
-$progress-bar-radius: 0.125em;
 $progress-bar-margin: 0.6rem 0rem;
 
 div.progress-bar {
   font-size: 1.6rem;
   height: $progress-bar-height;
   background-color: $light-gray;
-  border-radius: $progress-bar-radius;
   margin: $progress-bar-margin;
-
-  div.progress:first-child {
-    border-radius: $progress-bar-radius 0em 0em $progress-bar-radius;
-  }
-
-  div.progress:last-child {
-    border-radius: 0em $progress-bar-radius $progress-bar-radius 0em;
-  }
-
-  div.progress:not(:first-child):not(:last-child) {
-    border-radius: 0em;
-  }
-
-  div.progress:only-child {
-    border-radius: inherit;
-  }
 
   div.progress {
     float: left;

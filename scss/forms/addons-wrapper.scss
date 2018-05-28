@@ -1,6 +1,5 @@
 @import "../base/colors.scss";
 
-$addon-control-radius: 0.1875em;
 $addon-control-focus-shadow-spread: 0.125em;
 $addon-control-focus-shadow-color: $light-blue-thin;
 $addon-control-margin: 0rem 0rem 0.6rem 0rem;
@@ -13,33 +12,6 @@ div.addons-wrapper {
   font-size: 1.6rem;
   display: flex;
   margin: $addon-control-margin;
-
-  & > div:first-child,
-  & > div:first-child input,  
-  & > input:first-child,
-  & > div.select select {
-    border-top-left-radius: $addon-control-radius;
-    border-bottom-left-radius: $addon-control-radius;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  & > div:last-child,
-  & > div:last-child input,  
-  & > input:last-child,
-  & > div.select select {
-    border-top-right-radius: $addon-control-radius;
-    border-bottom-right-radius: $addon-control-radius;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  & > div:not(:first-child):not(:last-child), 
-  & > div:not(:first-child):not(:last-child) input, 
-  & > input:not(:first-child):not(:last-child),
-  & > div.select:not(:first-child):not(:last-child) select {
-    border-radius: 0;
-  }
 
   div.left-addon, div.right-addon {
     padding: $addon-padding;
@@ -56,7 +28,6 @@ div.addons-wrapper {
       .button {
         white-space: nowrap;
         font-size: inherit;
-        border-radius: inherit;
         margin: 0;
         height: 100%;
       }

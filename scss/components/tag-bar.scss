@@ -1,0 +1,35 @@
+$tag-bar-margin: 0rem 0.6rem 0.6rem 0rem;
+$tag-bar-inner-tag-padding: 0.25em 0.375em;
+
+div.tag-bar {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: $tag-bar-margin;
+
+  &::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  span.tag {
+    font-size: inherit;
+    padding: $tag-bar-inner-tag-padding;
+    float: left;
+    margin: 0;
+
+    &.has-close {
+      position: relative;
+      padding: 0;
+      height: 1.5em;
+      width: 1.875em;
+
+      button.close {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

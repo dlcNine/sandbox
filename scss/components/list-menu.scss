@@ -4,7 +4,6 @@ $list-menu-indentation: 0.625em;
 $list-label-color: $alpha-faint;
 $list-label-padding: 0.5em 0.875em;
 $list-item-padding: 0.25em 0.875em;
-$list-item-radius: 0.125em;
 $list-item-color: $alpha-fainter;
 $list-item-hover-color: $alpha-black;
 $list-item-hover-background-color: $light-white-thick;
@@ -22,7 +21,6 @@ ul.list-menu {
 
   li.list-item, li.list-label {
     color: $list-item-color;
-    border-radius: $list-item-radius;
 
     a.list-a {
       display: block;

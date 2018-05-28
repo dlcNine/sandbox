@@ -1,7 +1,6 @@
 @import "../base/colors.scss";
 
 $tab-padding: 0.5em 0.875em;
-$tab-radius: 0.1875em 0.1875em 0em 0em;
 $tab-bottom-border-width: 0.125em;
 $tab-color: $alpha-faint;
 $tab-hover-color: $alpha-black;
@@ -27,7 +26,6 @@ ul.tabs {
     float: left;
     text-align: center;
     padding: $tab-padding;
-    border-radius: $tab-radius;
     color: $tab-color;
     border-bottom: $tab-bottom-border-width solid transparent;
 

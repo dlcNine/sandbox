@@ -1,7 +1,7 @@
 @import "../base/colors.scss";
 
 $close-height-width: 1em;
-$close-radius: 0.125em;
+// $close-radius: 0.125em;
 $close-xmark-height: 0.5em;
 $close-xmark-border-width: 0.0625em;
 
@@ -9,7 +9,7 @@ button.close {
   font-size: 1.6rem;
   height: $close-height-width;
   width: $close-height-width;
-  border-radius: $close-radius;
+  // border-radius: $close-radius;
   position: relative;
   background-color: $medium-white;
 

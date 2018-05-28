@@ -3,15 +3,15 @@
 $modal-backdrop-color: $black-thick;
 $modal-padding: 2.4rem;
 $modal-background-color: $white;
-$modal-radius: 0.5rem;
 
-div.pseudo-body {
+div.overlay {
   position: fixed;
   z-index: 55;
   top: 0;
   left: 0;
   height: 100.1%;
   width: 100%;
+  overflow-x: hidden;
   overflow-y: auto;
 
   &.modal-backdrop {
@@ -21,10 +21,9 @@ div.pseudo-body {
   div.modal {
     padding: $modal-padding;
     background-color: $modal-background-color;
-    border-radius: $modal-radius;
   }
 }
 
-body.pseudo-body-present {
+body.overlay-present {
   overflow: hidden;
 }
