@@ -72,7 +72,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .huge-1-sm {
     font-size: 6.7rem !important;
   }
@@ -112,7 +112,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .huge-1-md {
     font-size: 6.7rem !important;
   }
@@ -152,7 +152,7 @@ h1, h2, h3, h4, p, h5, h6 {
 
 /* ====================================================== */
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $lg-and-up) {
   .huge-1-lg {
     font-size: 6.7rem !important;
   }

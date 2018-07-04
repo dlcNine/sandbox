@@ -3,9 +3,9 @@
 @import "./base/colors.scss";
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
-@import "./base/themes.scss";
 
 /* ============ utilities ============ */
+/*
 @import "./utilities/zeroing.scss";
 @import "./utilities/borders.scss";
 @import "./utilities/spacing.scss";
@@ -17,50 +17,57 @@
 @import "./utilities/width.scss";
 @import "./utilities/text.scss";
 @import "./utilities/img.scss";
+*/
 
 /* ============ layout ============ */
+/*
 @import "./layout/grid.scss";
 @import "./layout/positioning.scss";
 @import "./layout/flexbox.scss";
+/*
 
 /* ============ buttons ============ */
+/*
 @import "./buttons/buttons.scss";
 @import "./buttons/outlined-buttons.scss";
 @import "./buttons/buttons-bar.scss";
 @import "./buttons/grid-buttons.scss";
+*/
 
 /* ============ forms ============ */
+/*
 @import "./forms/controls.scss";
 @import "./forms/fields.scss";
 @import "./forms/grid-field.scss";
 @import "./forms/addons-wrapper.scss";
 @import "./forms/icons-wrapper.scss";
+/*
 
 /* ============ components ============ */
-@import "./components/modal.scss";
-@import "./components/box.scss";
+// @import "./components/modal.scss";
+// @import "./components/box.scss";
 // @import "./components/message.scss"; // delete
-@import "./components/tabs.scss";
+// @import "./components/tabs.scss";
 // @import "./components/menu.scss";
 // @import "./components/icon.scss"; // delete this
-@import "./components/close.scss";
-@import "./components/tag.scss";
-@import "./components/tag-bar.scss";
-@import "./components/images.scss";
-@import "./components/progress-bar.scss";
-@import "./components/list-menu.scss";
-@import "./components/banner.scss";
+// @import "./components/close.scss";
+// @import "./components/tag.scss";
+// @import "./components/tag-bar.scss";
+// @import "./components/images.scss";
+// @import "./components/progress-bar.scss";
+// @import "./components/list-menu.scss";
+// @import "./components/banner.scss";
 // @import "./components/card.scss"; // delete this
-@import "./components/navbar.scss";
-@import "./components/dropdown.scss";
+// @import "./components/navbar.scss";
+// @import "./components/dropdown.scss";
 // @import "./components/popover.scss";
-@import "./components/arrow.scss";
-@import "./components/snippet.scss";
-@import "./components/code.scss";
-@import "./components/loading.scss";
-@import "./components/table.scss";
-@import "./components/path.scss";
-@import "./components/ul-ol.scss";
+// @import "./components/arrow.scss";
+// @import "./components/snippet.scss";
+// @import "./components/code.scss";
+// @import "./components/loading.scss";
+// @import "./components/table.scss";
+// @import "./components/path.scss";
+// @import "./components/ul-ol.scss";
 
 
 
