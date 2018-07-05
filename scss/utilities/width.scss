@@ -24,7 +24,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .w-1-3-sm {
     width: 33.333333333333336%;
   }
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .w-1-3-md {
     width: 33.333333333333336%;
   }
@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $lg-and-up) {
   .w-1-3-lg {
     width: 33.333333333333336%;
   }

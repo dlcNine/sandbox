@@ -12,11 +12,6 @@
   display: inline-block !important;
 }
 
-.block-center {
-  display: block !important;
-  margin: auto !important;
-}
-
 .absent {
   display: none !important;
 }
@@ -27,7 +22,7 @@
 
 /* ====================================================== */
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .absent-sm {
     display: none !important;
   }
@@ -37,7 +32,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .absent-md {
     display: none !important;
   }
@@ -47,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $lg-and-up) {
   .absent-lg {
     display: none !important;
   }

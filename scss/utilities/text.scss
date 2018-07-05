@@ -12,15 +12,15 @@
   text-align: right !important;
 }
 
-.text-top {
+.va-top {
   vertical-align: top !important;
 }
 
-.text-y-center {
+.va-middle {
   vertical-align: middle !important;
 }
 
-.text-bottom {
+.va-bottom {
   vertical-align: bottom !important;
 }
 
@@ -40,38 +40,42 @@
 
 /* ====================================================== */
 
-.text-lighter {
+.fw-lighter {
   font-weight: lighter !important;
 }
 
-.text-normal {
+.fw-normal {
   font-weight: normal !important;
 }
 
-.text-bold {
+.fw-bold {
   font-weight: bold !important;
 }
 
-.text-italic {
+.fs-italic {
   font-style: italic !important;
 }
 
-.text-line-through {
+.td-line-through {
   text-decoration: line-through !important;
 }
 
-.text-underline {
+.td-underline {
   text-decoration: underline !important;
+}
+
+.td-overline {
+  text-decoration: overline !important;
 }
 
 /* ====================================================== */
 
-.text-nowrap {
-  white-space: nowrap;
+.ws-nowrap {
+  white-space: nowrap !important;
 }
 
-.text-break-all {
-  word-break: break-all;
+.wb-all {
+  word-break: break-all !important;
 }
 
 .lh-1 {
@@ -80,42 +84,23 @@
 
 /* ====================================================== */
 
-.text-red {
-  color: $medium-red !important;
-}
-
-.text-orange {
-  color: $orange !important;
-}
-
-.text-yellow {
-  color: $yellow !important;
-}
-
-.text-green {
-  color: $medium-green !important;
-}
-
-.text-blue {
-  color: $medium-blue !important;
-}
-
-.text-indigo {
-  color: $indigo !important;
-}
-
-.text-violet {
-  color: $violet !important;
-}
-
 .text-black {
   color: $alpha-black !important;
 }
 
-.text-faint {
-  color: $alpha-faint !important;
+.text-muted {
+  color: $alpha-light-black !important;
+}
+
+.text-white-muted {
+  color: $alpha-dark-white !important;
 }
 
 .text-white {
   color: $alpha-white !important;
 }
+
+
+
+
+

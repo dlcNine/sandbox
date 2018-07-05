@@ -4,10 +4,6 @@ $image-circular: 50%;
 $image-rounded: 0.8rem;
 
 img {
-  &.shadow {
-    box-shadow: 0rem 0rem 0.5rem 0rem $alpha-fainter;
-  }
-
   &.circular {
     border-radius: $image-circular;
   }
