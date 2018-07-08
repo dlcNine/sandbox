@@ -125,7 +125,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   div.unit-1-sm {
     width: 8.333333333333334%;
   }
@@ -227,7 +227,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   div.unit-1-md {
     width: 8.333333333333334%;
   }
@@ -329,7 +329,7 @@ div.push-12 {
 
 /* ====================================================== */
 
-@media screen and (min-width: $breakpoint-large) {
+@media screen and (min-width: $lg-and-up) {
   div.unit-1-lg {
     width: 8.333333333333334%;
   }
