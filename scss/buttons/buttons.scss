@@ -1,119 +1,68 @@
 @import "../base/colors.scss";
+@import "../base/mixins.scss";
 
-$button-padding: 0.5em 1.25em;
-$button-margin: 0.6rem;
-$button-focus-shadow-spread: 0.125em;
+$button-padding: 0.375em 0.75em;
+$border-radius: 0.1875em;
+$button-min-width: 8.2rem;
 
-a.button, button.button, 
-input[type="submit"].button, 
-input[type="reset"].button {
+a.button, button.button, input.button {
   font-size: 1.6rem;
+  min-width: $button-min-width;
   display: inline-block;
-  padding: $button-padding;
-  margin-bottom: $button-margin;
   text-align: center;
-  color: $alpha-faint;
-  background-color: $medium-gray;
+  padding: $button-padding;
+  border-width: 0.125em;
+  border-style: solid;
+  border-radius: $border-radius;
 
   &:hover {
-    background-color: $light-gray;
     cursor: pointer;
   }
 
-  &:active {
-    background-color: $dark-gray;
-    color: $alpha-white;
-    outline: none;
-  }
-  
-  &:focus:not(:active) {
-    box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-blue-thin;
-    outline: none;
+  &:active, &:focus {
+    outline: none !important;
   }
 
   &.primary {
-    &:hover {
-      background-color: $light-blue;
-    }
+    @include button-states($light-blue, $dark-blue);
+  }
 
-    &:active {
-      background-color: $dark-blue;
-    }
+  &.secondary {
+    @include button-states($light-gray, $dark-gray);
   }
 
   &.info {
-    &:hover {
-      background-color: $light-green;
-    }
-
-    &:active {
-      background-color: $dark-green;
-    }
-
-    &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-green-thin;
-    }
+   @include button-states($light-green, $dark-green);
   }
 
   &.caution {
-    &:hover {
-      background-color: $light-yellow;
-    }
-
-    &:active {
-      background-color: $dark-yellow;
-      color: $alpha-white;
-    }
-
-    &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $medium-yellow-thin;
-    }
+    @include button-states($light-yellow, $dark-yellow);
   }
 
   &.danger {
-    &:hover {
-      background-color: $light-red;
-    }
-
-    &:active {
-      background-color: $dark-red;
-    }
-
-    &:focus:not(:active) {
-      box-shadow: 0rem 0rem 0rem $button-focus-shadow-spread $light-red-thin;
-    }
+    @include button-states($light-red, $dark-red);
   }
 
   &.light {
-    &:hover {
-      background-color: $light-white;
-    }
-
-    &:active {
-      background-color: $dark-white;
-    }
+    @include button-states($light-white, $dark-white);
   }
 
   &.dark {
-    &:hover {
-      background-color: $light-black;
-    }
-
-    &:active {
-      background-color: $black;
-    }
+    @include button-states($light-black, $black);
   }
+
+
 }
 
 /* ==================================== */
 
-a.button:link {
-  text-decoration: none;
-}
+// a.button:link {
+//   text-decoration: none;
+// }
 
-.button.wide {
-  display: block;
-  width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+// .button.wide {
+//   display: block;
+//   width: 100%;
+//   margin-left: 0 !important;
+//   margin-right: 0 !important;
+// }

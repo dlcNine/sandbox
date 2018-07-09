@@ -1,8 +1,10 @@
 /* ============ base ============ */
 @import "./base/breakpoint-values.scss";
 @import "./base/colors.scss";
+@import "./base/mixins.scss";
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
+@import "./base/themes.scss";
 
 /* ============ utilities ============ */
 
@@ -24,12 +26,10 @@
 @import "./layout/flexbox.scss";
 
 /* ============ buttons ============ */
-/*
 @import "./buttons/buttons.scss";
-@import "./buttons/outlined-buttons.scss";
-@import "./buttons/buttons-bar.scss";
-@import "./buttons/grid-buttons.scss";
-*/
+// @import "./buttons/outlined-buttons.scss";
+// @import "./buttons/buttons-bar.scss";
+// @import "./buttons/grid-buttons.scss";
 
 /* ============ forms ============ */
 /*
@@ -53,7 +53,7 @@
 // @import "./components/images.scss";
 // @import "./components/progress-bar.scss";
 // @import "./components/list-menu.scss";
-// @import "./components/banner.scss";
+@import "./components/banner.scss";
 // @import "./components/card.scss"; // delete this
 // @import "./components/navbar.scss";
 // @import "./components/dropdown.scss";

@@ -1,0 +1,38 @@
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.primary, .info, .danger, .dark {
+  color: $alpha-white;
+}
+
+.secondary, .caution, .light {
+  color: $alpha-black;
+}
+
+.primary {
+  @include build-color($medium-blue);
+}
+
+.secondary {
+  @include build-color($medium-gray);
+}
+
+.info {
+  @include build-color($medium-green);
+}
+
+.caution {
+  @include build-color($medium-yellow);
+}
+
+.danger {
+  @include build-color($medium-red);
+}
+
+.light {
+  @include build-color($medium-white);
+}
+
+.dark {
+  @include build-color($medium-black);
+}
