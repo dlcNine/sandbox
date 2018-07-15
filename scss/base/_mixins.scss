@@ -1,3 +1,9 @@
+@mixin clearfix() {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 @mixin build-color($color) {
   border-color: $color;
   background-color: $color;
@@ -12,7 +18,16 @@
    @include build-color($dark-color);
   }
 
-  &:focus {
+  &:focus:not([disabled]):not(.disabled) {
     border-color: $dark-color;
   }
 }
+
+@mixin button-outlined($text-color, $hover-text-color) {
+  color: $text-color;
+
+  &:hover {
+    color: $hover-text-color;
+  }
+}
+

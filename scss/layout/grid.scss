@@ -1,4 +1,5 @@
 @import "../base/breakpoint-values.scss";
+@import "../base/mixins.scss";
 
 $unit-padding: 1.2rem;
 
@@ -8,9 +9,7 @@ div[class*="unit-"]{
 }
 
 div.grid::after, .clearfix::after {
-  content: '';
-  clear: both;
-  display: block;
+  @include clearfix();
 }
 
 div.grid.negate-sides, .clearfix.negate-sides {

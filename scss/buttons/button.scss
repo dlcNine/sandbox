@@ -2,18 +2,18 @@
 @import "../base/mixins.scss";
 
 $button-padding: 0.375em 0.75em;
-$border-radius: 0.1875em;
-$button-min-width: 8.2rem;
+$button-border-width: 0.125em;
+$button-border-radius: 0.1875em;
 
 a.button, button.button, input.button {
   font-size: 1.6rem;
-  min-width: $button-min-width;
   display: inline-block;
   text-align: center;
   padding: $button-padding;
-  border-width: 0.125em;
+  border-width: $button-border-width;
   border-style: solid;
-  border-radius: $border-radius;
+  border-radius: $button-border-radius;
+  transition: all 125ms;
 
   &:hover {
     cursor: pointer;
@@ -50,19 +50,20 @@ a.button, button.button, input.button {
   &.dark {
     @include button-states($light-black, $black);
   }
-
-
 }
 
 /* ==================================== */
 
-// a.button:link {
-//   text-decoration: none;
-// }
+a.button:link {
+  text-decoration: none;
+}
 
-// .button.wide {
-//   display: block;
-//   width: 100%;
-//   margin-left: 0 !important;
-//   margin-right: 0 !important;
-// }
+.button[disabled], .button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.button.wide {
+  display: block;
+  width: 100%;
+}

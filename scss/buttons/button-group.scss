@@ -1,0 +1,46 @@
+@import "../base/mixins.scss";
+
+div.button-group {
+  font-size: 1.6rem;
+
+  &::after {
+    @include clearfix();
+  }
+
+  &.flex {
+    display: flex !important;
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  .button {
+    font-size: inherit;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: -0.125em;
+    }
+
+    &:active, &:focus {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+}
