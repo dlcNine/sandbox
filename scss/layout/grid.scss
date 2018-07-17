@@ -17,6 +17,17 @@ div.grid.negate-sides, .clearfix.negate-sides {
   margin-right: -1 * $unit-padding;
 }
 
+div.grid.slim {
+  div[class*="unit-"] {
+    padding: 0.5 * $unit-padding;
+  }
+
+  &.negate-sides, .clearfix.negate-sides {
+    margin-left: -0.5 * $unit-padding;
+    margin-right: -0.5 * $unit-padding;
+  }
+}
+
 div.new-line {
   float: left;
   width: 100%;
