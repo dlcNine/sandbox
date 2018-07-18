@@ -3,7 +3,7 @@
 
 $unit-padding: 1.2rem;
 
-div[class*="unit-"]{
+div[class*="unit-"] {
   float: left;
   padding: $unit-padding;
 }
@@ -12,19 +12,15 @@ div.grid::after, .clearfix::after {
   @include clearfix();
 }
 
-div.grid.negate-sides, .clearfix.negate-sides {
-  margin-left: -1 * $unit-padding;
-  margin-right: -1 * $unit-padding;
-}
+div.grid {
+  margin: -1 * $unit-padding;
 
-div.grid.slim {
-  div[class*="unit-"] {
-    padding: 0.5 * $unit-padding;
-  }
+  &.slim {
+    margin: -0.5 * $unit-padding;
 
-  &.negate-sides, .clearfix.negate-sides {
-    margin-left: -0.5 * $unit-padding;
-    margin-right: -0.5 * $unit-padding;
+    div[class*="unit-"] {
+      padding: 0.5 * $unit-padding;
+    }
   }
 }
 
@@ -136,6 +132,16 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+  div.grid.slim-sm {
+    margin: -0.5 * $unit-padding;
+
+    div[class*="unit-"] {
+      padding: 0.5 * $unit-padding;
+    }
+  }
+
+  /* ==================================== */
+
   div.unit-1-sm {
     width: 8.333333333333334%;
   }
@@ -238,6 +244,16 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  div.grid.slim-md {
+    margin: -0.5 * $unit-padding;
+
+    div[class*="unit-"] {
+      padding: 0.5 * $unit-padding;
+    }
+  }
+
+  /* ==================================== */
+
   div.unit-1-md {
     width: 8.333333333333334%;
   }
@@ -340,6 +356,16 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $lg-and-up) {
+  div.grid.slim-lg {
+    margin: -0.5 * $unit-padding;
+
+    div[class*="unit-"] {
+      padding: 0.5 * $unit-padding;
+    }
+  }
+
+  /* ==================================== */
+
   div.unit-1-lg {
     width: 8.333333333333334%;
   }
