@@ -4,6 +4,22 @@
   display: block;
 }
 
+@mixin slim-cancel($spacing) {
+  margin: -1 * $spacing;
+
+  div[class*="unit-"] {
+    padding: $spacing;
+  }
+}
+
+@mixin slim-responsive($spacing) {
+  margin: -0.5 * $spacing;
+
+  div[class*="unit-"] {
+    padding: 0.5 * $spacing;
+  }
+}
+
 @mixin build-color($color) {
   border-color: $color;
   background-color: $color;

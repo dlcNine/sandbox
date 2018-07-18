@@ -133,19 +133,11 @@ div.push-12 {
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   div.grid.slim.no-slim-sm {
-    margin: -1 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: $unit-padding;
-    }
+    @include slim-cancel($unit-padding);
   }
 
   div.grid.slim-sm {
-    margin: -0.5 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: 0.5 * $unit-padding;
-    }
+    @include slim-responsive($unit-padding);
   }
 
   /* ==================================== */
@@ -253,19 +245,11 @@ div.push-12 {
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   div.grid.slim.no-slim-md {
-    margin: -1 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: $unit-padding;
-    }
+    @include slim-cancel($unit-padding);
   }
 
   div.grid.slim-md {
-    margin: -0.5 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: 0.5 * $unit-padding;
-    }
+    @include slim-responsive($unit-padding);
   }
 
   /* ==================================== */
@@ -373,19 +357,11 @@ div.push-12 {
 
 @media screen and (min-width: $lg-and-up) {
   div.grid.slim.no-slim-lg {
-    margin: -1 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: $unit-padding;
-    }
+    @include slim-cancel($unit-padding);
   }
 
   div.grid.slim-lg {
-    margin: -0.5 * $unit-padding;
-
-    div[class*="unit-"] {
-      padding: 0.5 * $unit-padding;
-    }
+    @include slim-responsive($unit-padding);
   }
 
   /* ==================================== */
