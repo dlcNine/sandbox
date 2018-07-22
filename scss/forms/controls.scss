@@ -6,85 +6,116 @@ $control-border-color: $light-gray;
 $control-hover-border-color: $medium-gray;
 $control-background-color: $white;
 $control-focus-border-color: $medium-blue;
-$control-focus-shadow-color: $light-blue-thin;
+$control-focus-shadow-color: $light-blue;
 $control-focus-shadow-spread: 0.125em;
-$select-arrow-color: $light-black;
 $textarea-min-height: 10rem;
 $textarea-max-height: 40rem;
 
-input.textfield, textarea.textarea {
+// OLD
+// input.textfield, textarea.textarea {
+//   font-size: 1.6rem;
+//   display: block;
+//   width: 100%;
+//   padding: $control-padding;
+//   border: 0.1rem solid $control-border-color;
+//   margin-bottom: $control-margin;
+//   background-color: $control-background-color;
+
+//   &:hover {
+//     border-color: $control-hover-border-color;
+//   }
+
+//   &:focus {
+//     outline: none;
+//     border-color: $control-focus-border-color;
+//     box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+//   }
+// }
+// END OLD
+
+// NEW 
+
+// END NEW
+
+/* ==================================== */
+
+// NEW
+input.control, select.control {
   font-size: 1.6rem;
+  height: 2.25em;
   display: block;
+  padding: 0rem 1rem;
   width: 100%;
-  padding: $control-padding;
-  border: 0.1rem solid $control-border-color;
-  margin-bottom: $control-margin;
-  background-color: $control-background-color;
+  color: $alpha-black;
+  background-color: transparent;
+  border: 0.1rem solid $medium-white;
+  border-radius: 0.5rem;
+  transition: all 125ms;
 
   &:hover {
-    border-color: $control-hover-border-color;
+    border-color: $dark-white;
   }
 
   &:focus {
     outline: none;
-    border-color: $control-focus-border-color;
-    box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+    box-shadow: 0 0 0 0.125em $alpha-light-blue;
   }
 }
+// END NEW
+
+// OLD
+// div.select {
+//   font-size: 1.6rem;
+//   position: relative;
+//   margin-bottom: $control-margin;
+
+//   select {
+//     font-size: inherit;
+//     line-height: 1;
+//     display: block;
+//     padding: $control-padding;
+//     width: 100%;
+//     background: $control-background-color;
+//     border: 0.1rem solid $control-border-color;
+//     border-radius: 0;
+
+//     &:hover {
+//       border-color: $control-hover-border-color;
+//     }
+
+//     &:focus {
+//       outline: none;
+//       border-color: $control-focus-border-color;
+//       box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+//     }
+//   }
+// }
+// END OLD
 
 /* ==================================== */
 
-div.select {
-  font-size: 1.6rem;
-  position: relative;
-  margin-bottom: $control-margin;
+// textarea.textarea {
+//   min-width: 100%;
+//   max-width: 100%;
+//   min-height: $textarea-min-height;
+//   max-height: $textarea-max-height;
+//   line-height: 1.5;
 
-  select {
-    font-size: inherit;
-    line-height: 1;
-    display: block;
-    padding: $control-padding;
-    width: 100%;
-    background: $control-background-color;
-    border: 0.1rem solid $control-border-color;
-    border-radius: 0;
-
-    &:hover {
-      border-color: $control-hover-border-color;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: $control-focus-border-color;
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
-    }
-  }
-}
+//   &.no-resize {
+//     resize: none;
+//   }
+// }
 
 /* ==================================== */
 
-textarea.textarea {
-  min-width: 100%;
-  max-width: 100%;
-  min-height: $textarea-min-height;
-  max-height: $textarea-max-height;
-  line-height: 1.5;
+// label.checkbox, label.radio {
+//   font-size: 1.6rem;
+//   display: inline-block;
+//   padding: $control-padding;
+//   padding-left: 0;
+//   margin: $control-margin;
 
-  &.no-resize {
-    resize: none;
-  }
-}
-
-/* ==================================== */
-
-label.checkbox, label.radio {
-  font-size: 1.6rem;
-  display: inline-block;
-  padding: $control-padding;
-  padding-left: 0;
-  margin: $control-margin;
-
-  input[type="checkbox"], input[type="radio"] {
-    margin-right: 0.125em;
-  }
-}
+//   input[type="checkbox"], input[type="radio"] {
+//     margin-right: 0.125em;
+//   }
+// }
