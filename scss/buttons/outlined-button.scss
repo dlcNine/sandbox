@@ -2,33 +2,33 @@
 @import "../base/colors.scss";
 
 .button.outlined {
-  background-color: transparent;
+  background-color: transparent !important;
 
   &.primary {
-    @include button-outlined($medium-blue, $alpha-white);
+    @include button-outlined($medium-blue, $light-blue, $dark-blue);
   }
 
   &.secondary {
-    @include button-outlined($alpha-black, $alpha-black);
+    @include button-outlined($dark-gray, $dark-gray, $dark-gray);
   }
 
   &.info {
-    @include button-outlined($medium-green, $alpha-white);
+    @include button-outlined($medium-green, $light-green, $dark-green);
   }
 
   &.caution {
-    @include button-outlined($medium-yellow, $alpha-white);
+    @include button-outlined($medium-yellow, $light-yellow, $dark-yellow);
   }
 
   &.danger {
-    @include button-outlined($medium-red, $alpha-white);
+    @include button-outlined($medium-red, $light-red, $dark-red);
   }
 
   &.light {
-    @include button-outlined($alpha-black, $alpha-black);
+    @include button-outlined($alpha-light-black, $alpha-light-black, $alpha-light-black);
   }
 
   &.dark {
-    @include button-outlined($alpha-black, $alpha-white);
+    @include button-outlined($medium-black, $light-black, $black);
   }
 }

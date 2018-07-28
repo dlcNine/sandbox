@@ -39,11 +39,15 @@
   }
 }
 
-@mixin button-outlined($text-color, $hover-text-color) {
+@mixin button-outlined($text-color, $hover-text-color, $active-text-color) {
   color: $text-color;
 
   &:hover {
     color: $hover-text-color;
+  }
+
+  &:active {
+    color: $active-text-color;
   }
 }
 
