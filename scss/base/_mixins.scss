@@ -20,22 +20,22 @@
   }
 }
 
-@mixin build-color($color) {
+@mixin border-background-color($color) {
   border-color: $color;
   background-color: $color;
 }
 
-@mixin button-states($light-color, $dark-color) {
+@mixin button-default($light-color, $dark-color, $shadow-color) {
   &:hover {
-    @include build-color($light-color);
+    @include border-background-color($light-color);
   }
 
   &:active {
-   @include build-color($dark-color);
+   @include border-background-color($dark-color);
   }
 
-  &:focus:not([disabled]):not(.disabled) {
-    border-color: $dark-color;
+  &:focus:not(:hover):not(.disabled):not([disabled]) {
+    box-shadow: 0 0 0 0.1875em $shadow-color;
   }
 }
 

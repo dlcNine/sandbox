@@ -10,29 +10,29 @@
 }
 
 .primary {
-  @include build-color($medium-blue);
+  @include border-background-color($medium-blue);
 }
 
 .secondary {
-  @include build-color($medium-gray);
+  @include border-background-color($medium-gray);
 }
 
 .info {
-  @include build-color($medium-green);
+  @include border-background-color($medium-green);
 }
 
 .caution {
-  @include build-color($medium-yellow);
+  @include border-background-color($medium-yellow);
 }
 
 .danger {
-  @include build-color($medium-red);
+  @include border-background-color($medium-red);
 }
 
 .light {
-  @include build-color($medium-white);
+  @include border-background-color($medium-white);
 }
 
 .dark {
-  @include build-color($medium-black);
+  @include border-background-color($medium-black);
 }

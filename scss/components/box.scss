@@ -1,25 +1,25 @@
-@import "../base/colors.scss";
+// @import "../base/colors.scss";
 
-$box-background-color: $white;
-$box-padding: 1.6rem;
+// $box-background-color: $white;
+// $box-padding: 1.6rem;
 
-div.box {
-  background-color: $box-background-color;
-  box-shadow: 0rem 0rem 0.1rem $alpha-fainter;
+// div.box {
+//   background-color: $box-background-color;
+//   box-shadow: 0rem 0rem 0.1rem $alpha-fainter;
 
-  div.box-header, div.box-body, div.box-footer {
-    padding: $box-padding;
+//   div.box-header, div.box-body, div.box-footer {
+//     padding: $box-padding;
 
-    &.has-hero-image {
-      padding: 0;
+//     &.has-hero-image {
+//       padding: 0;
 
-      img {
-        width: 100%;
-        display: block;
-      }
-    }
+//       img {
+//         width: 100%;
+//         display: block;
+//       }
+//     }
 
-  }
+//   }
 
 
-}
+// }

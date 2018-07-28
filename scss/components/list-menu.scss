@@ -1,105 +1,105 @@
-@import "../base/colors.scss";
+// @import "../base/colors.scss";
 
-$list-menu-indentation: 0.625em;
-$list-label-color: $alpha-faint;
-$list-label-padding: 0.5em 0.875em;
-$list-item-padding: 0.25em 0.875em;
-$list-item-color: $alpha-fainter;
-$list-item-hover-color: $alpha-black;
-$list-item-hover-background-color: $light-white-thick;
-$list-item-active-color: $alpha-white;
-$list-item-active-hover-color: $white;
-$list-item-active-background-color: $medium-blue-thick;
+// $list-menu-indentation: 0.625em;
+// $list-label-color: $alpha-faint;
+// $list-label-padding: 0.5em 0.875em;
+// $list-item-padding: 0.25em 0.875em;
+// $list-item-color: $alpha-fainter;
+// $list-item-hover-color: $alpha-black;
+// $list-item-hover-background-color: $light-white-thick;
+// $list-item-active-color: $alpha-white;
+// $list-item-active-hover-color: $white;
+// $list-item-active-background-color: $medium-blue-thick;
 
-ul.list-menu {
-  font-size: 1.6rem;
-  &.indent-sublists ul.list-menu, 
-  &.indent-immediate > li.list-item, 
-  &.indent-immediate > li.list-label {
-    margin-left: $list-menu-indentation;
-  }
+// ul.list-menu {
+//   font-size: 1.6rem;
+//   &.indent-sublists ul.list-menu, 
+//   &.indent-immediate > li.list-item, 
+//   &.indent-immediate > li.list-label {
+//     margin-left: $list-menu-indentation;
+//   }
 
-  li.list-item, li.list-label {
-    color: $list-item-color;
+//   li.list-item, li.list-label {
+//     color: $list-item-color;
 
-    a.list-a {
-      display: block;
-      padding: $list-item-padding;
-      color: inherit;
-      text-decoration: none;
+//     a.list-a {
+//       display: block;
+//       padding: $list-item-padding;
+//       color: inherit;
+//       text-decoration: none;
       
-      &:hover, &:focus {
-        color: $list-item-hover-color;
-      }
-    }
+//       &:hover, &:focus {
+//         color: $list-item-hover-color;
+//       }
+//     }
 
-    &:hover {
-      background-color: $list-item-hover-background-color;
-    }
+//     &:hover {
+//       background-color: $list-item-hover-background-color;
+//     }
 
-    &.active {
-      color: $list-item-active-color;
-      background-color: $list-item-active-background-color;
+//     &.active {
+//       color: $list-item-active-color;
+//       background-color: $list-item-active-background-color;
 
-      a.list-a:hover {
-        color: $list-item-active-hover-color;
-      }
-    }
-  }
+//       a.list-a:hover {
+//         color: $list-item-active-hover-color;
+//       }
+//     }
+//   }
 
-  li.list-label {
-    font-weight: bold;
-    color: $list-label-color;
+//   li.list-label {
+//     font-weight: bold;
+//     color: $list-label-color;
 
-    a.list-a {
-      padding: $list-label-padding;
-    }
-  }
+//     a.list-a {
+//       padding: $list-label-padding;
+//     }
+//   }
 
-  &.light {
-    li.list-item:not(.active), 
-    li.list-label:not(.active) {
-      a.list-a:hover {
-        color: $black;
-      }
+//   &.light {
+//     li.list-item:not(.active), 
+//     li.list-label:not(.active) {
+//       a.list-a:hover {
+//         color: $black;
+//       }
 
-      a.list-a:focus:not(:hover) {
-        color: $medium-gray;
-      }
+//       a.list-a:focus:not(:hover) {
+//         color: $medium-gray;
+//       }
 
-      &:hover {
-        background-color: $light-white-thick;
-      }
-    }
+//       &:hover {
+//         background-color: $light-white-thick;
+//       }
+//     }
 
-    li.list-item:not(.active) {
-      color: $medium-black;
-    }
-  }
+//     li.list-item:not(.active) {
+//       color: $medium-black;
+//     }
+//   }
 
-  &.dark {
+//   &.dark {
     
-    hr {
-      border-color: $dark-gray;
-    }
+//     hr {
+//       border-color: $dark-gray;
+//     }
 
-    li.list-item:not(.active), 
-    li.list-label:not(.active) {
-      a.list-a:hover, a.list-a:focus {
-        color: $white;
-      }
+//     li.list-item:not(.active), 
+//     li.list-label:not(.active) {
+//       a.list-a:hover, a.list-a:focus {
+//         color: $white;
+//       }
 
-      &:hover {
-        background-color: $light-black-thick;
-      }
-    }
+//       &:hover {
+//         background-color: $light-black-thick;
+//       }
+//     }
 
-    li.list-item:not(.active) {
-      color: $medium-gray;
-    }
+//     li.list-item:not(.active) {
+//       color: $medium-gray;
+//     }
 
-    li.list-label:not(.active) {
-      color: $light-gray;
-    }
-  }
-}
+//     li.list-label:not(.active) {
+//       color: $light-gray;
+//     }
+//   }
+// }

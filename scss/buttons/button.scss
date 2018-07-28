@@ -4,6 +4,7 @@
 $button-padding: 0.375em 0.75em;
 $button-border-width: 0.0625em;
 $button-border-radius: 0.1875em;
+$button-round-radius: 2em;
 
 a.button, button.button, input.button {
   font-size: 1.6rem;
@@ -23,32 +24,36 @@ a.button, button.button, input.button {
     outline: none !important;
   }
 
+  &.round {
+    border-radius: $button-round-radius;
+  }
+
   &.primary {
-    @include button-states($light-blue, $dark-blue);
+    @include button-default($light-blue, $dark-blue, $alpha-light-blue);
   }
 
   &.secondary {
-    @include button-states($light-gray, $dark-gray);
+    @include button-default($light-gray, $dark-gray, $alpha-light-blue);
   }
 
   &.info {
-   @include button-states($light-green, $dark-green);
+   @include button-default($light-green, $dark-green, $alpha-light-green);
   }
 
   &.caution {
-    @include button-states($light-yellow, $dark-yellow);
+    @include button-default($light-yellow, $dark-yellow, $alpha-light-yellow);
   }
 
   &.danger {
-    @include button-states($light-red, $dark-red);
+    @include button-default($light-red, $dark-red, $alpha-light-red);
   }
 
   &.light {
-    @include button-states($light-white, $dark-white);
+    @include button-default($light-white, $dark-white, $alpha-light-blue);
   }
 
   &.dark {
-    @include button-states($light-black, $black);
+    @include button-default($light-black, $black, $alpha-light-blue);
   }
 }
 
@@ -59,7 +64,7 @@ a.button:link {
 }
 
 .button[disabled], .button.disabled {
-  opacity: 0.5;
+  opacity: 0.55;
   pointer-events: none;
 }
 

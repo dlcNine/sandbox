@@ -47,7 +47,11 @@ $alpha-dark-white: rgba(255, 255, 255, 0.5);
 $alpha-white: rgba(255, 255, 255, 0.9);
 
 // alpha theme colors
-$alpha-light-blue: rgba(84, 171, 247, 0.75);
+$alpha-theme-value: 0.5;
+$alpha-light-blue: rgba(84, 171, 247, $alpha-theme-value);
+$alpha-light-green: rgba(98, 214, 72, $alpha-theme-value);
+$alpha-light-yellow: rgba(244, 244, 73, $alpha-theme-value);
+$alpha-light-red: rgba(242, 85, 65, $alpha-theme-value);
 
 
 

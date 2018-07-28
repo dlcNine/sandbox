@@ -1,78 +1,78 @@
-@import "../base/colors.scss";
+// @import "../base/colors.scss";
 
-$tab-padding: 0.5em 0.875em;
-$tab-bottom-border-width: 0.125em;
-$tab-color: $alpha-faint;
-$tab-hover-color: $alpha-black;
-$tab-a-focus-color: $alpha-black;
-$tab-hover-border-color: $alpha-black;
-$tab-active-color: $medium-blue;
-$tab-active-border-color: $medium-blue;
+// $tab-padding: 0.5em 0.875em;
+// $tab-bottom-border-width: 0.125em;
+// $tab-color: $alpha-faint;
+// $tab-hover-color: $alpha-black;
+// $tab-a-focus-color: $alpha-black;
+// $tab-hover-border-color: $alpha-black;
+// $tab-active-color: $medium-blue;
+// $tab-active-border-color: $medium-blue;
 
-ul.tabs {
-  font-size: 1.6rem;
+// ul.tabs {
+//   font-size: 1.6rem;
 
-  &::after {
-    content: '';
-    clear: both;
-    display: block;
-  }
+//   &::after {
+//     content: '';
+//     clear: both;
+//     display: block;
+//   }
 
-  &.flex::after {
-    display: none;
-  }
+//   &.flex::after {
+//     display: none;
+//   }
 
-  li.tab {
-    float: left;
-    text-align: center;
-    padding: $tab-padding;
-    color: $tab-color;
-    border-bottom: $tab-bottom-border-width solid transparent;
+//   li.tab {
+//     float: left;
+//     text-align: center;
+//     padding: $tab-padding;
+//     color: $tab-color;
+//     border-bottom: $tab-bottom-border-width solid transparent;
 
-    a.tab-a, a.tab-a:hover {
-      color: inherit;
-      text-decoration: none;
-    }
+//     a.tab-a, a.tab-a:hover {
+//       color: inherit;
+//       text-decoration: none;
+//     }
 
-    a.tab-a:focus {
-      color: $tab-a-focus-color;
-    }
+//     a.tab-a:focus {
+//       color: $tab-a-focus-color;
+//     }
 
-    &:hover {
-      cursor: pointer;
-      color: $tab-hover-color;
-      border-color: $tab-hover-border-color;
-    }
+//     &:hover {
+//       cursor: pointer;
+//       color: $tab-hover-color;
+//       border-color: $tab-hover-border-color;
+//     }
 
-    &.active {
-      color: $tab-active-color;
-      border-color: $tab-active-border-color;
-      font-weight: bold;
+//     &.active {
+//       color: $tab-active-color;
+//       border-color: $tab-active-border-color;
+//       font-weight: bold;
 
-      a.tab-a:focus {
-        color: $tab-active-color;
-      }
-    }
-  }
+//       a.tab-a:focus {
+//         color: $tab-active-color;
+//       }
+//     }
+//   }
 
-  &.dark {
-    li.tab:not(.active) {
-      color: $medium-gray;
+//   &.dark {
+//     li.tab:not(.active) {
+//       color: $medium-gray;
 
-      &:hover {
-        color: $light-white;
-        border-color: $medium-white;
-      }
+//       &:hover {
+//         color: $light-white;
+//         border-color: $medium-white;
+//       }
 
-      a.tab-a:focus {
-        color: $light-white;
-      }
-    }
+//       a.tab-a:focus {
+//         color: $light-white;
+//       }
+//     }
 
-    li.tab.active {
-      background-color: $light-white;
-      color: $medium-black;
-      border-color: $dark-gray;
-    }
-  }
-}
+//     li.tab.active {
+//       background-color: $light-white;
+//       color: $medium-black;
+//       border-color: $dark-gray;
+//     }
+//   }
+// }

@@ -1,47 +1,47 @@
-@import "../base/colors.scss";
+// @import "../base/colors.scss";
 
-$progress-bar-height: 0.75em;
-$progress-bar-margin: 0.6rem 0rem;
+// $progress-bar-height: 0.75em;
+// $progress-bar-margin: 0.6rem 0rem;
 
-div.progress-bar {
-  font-size: 1.6rem;
-  height: $progress-bar-height;
-  background-color: $light-gray;
-  margin: $progress-bar-margin;
+// div.progress-bar {
+//   font-size: 1.6rem;
+//   height: $progress-bar-height;
+//   background-color: $light-gray;
+//   margin: $progress-bar-margin;
 
-  div.progress {
-    float: left;
-    height: 100%;
-    min-width: 0%;
-    max-width: 100%;
-    background-color: $dark-gray;
-    color: $alpha-white;
-    // transition: width 300ms;
-  }
+//   div.progress {
+//     float: left;
+//     height: 100%;
+//     min-width: 0%;
+//     max-width: 100%;
+//     background-color: $dark-gray;
+//     color: $alpha-white;
+//     // transition: width 300ms;
+//   }
 
-  div.progress.primary {
-    background-color: $medium-blue;
-  }
+//   div.progress.primary {
+//     background-color: $medium-blue;
+//   }
 
-  div.progress.info {
-    background-color: $medium-green;
-  }
+//   div.progress.info {
+//     background-color: $medium-green;
+//   }
 
-  div.progress.caution {
-    background-color: $medium-yellow;
-    color: $alpha-faint;
-  }
+//   div.progress.caution {
+//     background-color: $medium-yellow;
+//     color: $alpha-faint;
+//   }
 
-  div.progress.danger {
-    background-color: $medium-red;
-  }
+//   div.progress.danger {
+//     background-color: $medium-red;
+//   }
 
-  div.progress.light {
-    background-color: $light-white;
-    color: $alpha-faint;
-  }
+//   div.progress.light {
+//     background-color: $light-white;
+//     color: $alpha-faint;
+//   }
 
-  div.progress.dark {
-    background-color: $medium-black;
-  }
-}
+//   div.progress.dark {
+//     background-color: $medium-black;
+//   }
+// }
