@@ -1,17 +1,81 @@
 @import "../base/colors.scss";
 
-$control-padding: 0.375em 0.625em;
-$control-margin: 0.6rem;
-$control-border-color: $light-gray;
-$control-hover-border-color: $medium-gray;
+// NEW
+$control-color: $alpha-black;
+$control-border-color: $medium-white;
+$control-hover-border-color: $dark-white;
 $control-background-color: $white;
-$control-focus-border-color: $medium-blue;
-$control-focus-shadow-color: $light-blue;
-$control-focus-shadow-spread: 0.125em;
-$textarea-min-height: 10rem;
-$textarea-max-height: 40rem;
+$control-box-shadow-color: $alpha-light-blue;
+$control-border-radius: 0.125em;
+
+$control-textbox-height: 2.25em;
+$control-textbox-padding: 0rem 1rem;
+
+$control-textarea-min-height: 10rem;
+$control-textarea-max-height: 40rem;
+$control-textarea-padding: 1rem;
+$control-textarea-line-height: 1.5;
+
+
+input.textbox, select.textbox, textarea.textbox {
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+  color: $control-color;
+  background-color: $control-background-color;
+  border: 0.1rem solid $control-border-color;
+  border-radius: $control-border-radius;
+  transition: all 125ms;
+
+  &:hover {
+    border-color: $control-hover-border-color;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 $control-border-radius $control-box-shadow-color;
+  }
+
+  &[readonly] {
+
+  }
+
+  &[disabled] {
+
+  }
+
+}
+
+input.textbox, select.textbox {
+  height: $control-textbox-height;
+  padding: $control-textbox-padding;
+}
+
+textarea.textbox {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: $control-textarea-min-height;
+  max-height: $control-textarea-max-height;
+  padding: $control-textarea-padding;
+  line-height: $control-textarea-line-height;
+
+  &.no-resize {
+    resize: none;
+  }
+
+}
+
+// label.checkbox
+
+// label.radio
+
+
+// END NEW
 
 // OLD
+// $textarea-min-height: 10rem;
+// $textarea-max-height: 40rem;
+
 // input.textfield, textarea.textarea {
 //   font-size: 1.6rem;
 //   display: block;
@@ -31,39 +95,12 @@ $textarea-max-height: 40rem;
 //     box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
 //   }
 // }
-// END OLD
 
-// NEW 
-
-// END NEW
 
 /* ==================================== */
 
-// NEW
-input.control, select.control {
-  font-size: 1.6rem;
-  height: 2.25em;
-  display: block;
-  padding: 0rem 1rem;
-  width: 100%;
-  color: $alpha-black;
-  background-color: transparent;
-  border: 0.1rem solid $medium-white;
-  border-radius: 0.5rem;
-  transition: all 125ms;
 
-  &:hover {
-    border-color: $dark-white;
-  }
 
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 0.125em $alpha-light-blue;
-  }
-}
-// END NEW
-
-// OLD
 // div.select {
 //   font-size: 1.6rem;
 //   position: relative;
@@ -90,7 +127,7 @@ input.control, select.control {
 //     }
 //   }
 // }
-// END OLD
+
 
 /* ==================================== */
 
@@ -119,3 +156,4 @@ input.control, select.control {
 //     margin-right: 0.125em;
 //   }
 // }
+// END OLD
