@@ -33,15 +33,20 @@ input.textbox, select.textbox, textarea.textbox {
 
   &:focus {
     outline: none;
+    border-color: $control-hover-border-color;
     box-shadow: 0 0 0 $control-border-radius $control-box-shadow-color;
   }
 
-  &[readonly] {
+  &[readonly], &[disabled] {
+    background-color: $white-gray;
+    border-color: $control-hover-border-color;
+    cursor: not-allowed;
+    box-shadow: none;
 
   }
 
   &[disabled] {
-
+    opacity: 0.5;
   }
 
 }
@@ -49,6 +54,10 @@ input.textbox, select.textbox, textarea.textbox {
 input.textbox, select.textbox {
   height: $control-textbox-height;
   padding: $control-textbox-padding;
+}
+
+select.textbox[multiple] {
+  height: auto;
 }
 
 textarea.textbox {
@@ -66,6 +75,10 @@ textarea.textbox {
 }
 
 // label.checkbox
+
+
+
+
 
 // label.radio
 
