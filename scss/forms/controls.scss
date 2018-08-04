@@ -3,18 +3,22 @@
 // NEW
 $control-color: $alpha-black;
 $control-border-color: $medium-white;
+$control-border-width: 0.1rem;
 $control-hover-border-color: $dark-white;
 $control-background-color: $white;
 $control-box-shadow-color: $alpha-light-blue;
 $control-border-radius: 0.125em;
+$control-spacing: 1rem;
 
 $control-textbox-height: 2.25em;
-$control-textbox-padding: 0rem 1rem;
 
 $control-textarea-min-height: 10rem;
 $control-textarea-max-height: 40rem;
-$control-textarea-padding: 1rem;
 $control-textarea-line-height: 1.5;
+
+$control-switch-track-height: 0.5em;
+$control-switch-track-width: 2.2em;
+$control-switch-box-size: 1.2em;
 
 
 input.textbox, select.textbox, textarea.textbox {
@@ -23,7 +27,7 @@ input.textbox, select.textbox, textarea.textbox {
   width: 100%;
   color: $control-color;
   background-color: $control-background-color;
-  border: 0.1rem solid $control-border-color;
+  border: $control-border-width solid $control-border-color;
   border-radius: $control-border-radius;
   transition: all 125ms;
 
@@ -53,7 +57,7 @@ input.textbox, select.textbox, textarea.textbox {
 
 input.textbox, select.textbox {
   height: $control-textbox-height;
-  padding: $control-textbox-padding;
+  padding: 0rem $control-spacing;
 }
 
 select.textbox[multiple] {
@@ -65,7 +69,7 @@ textarea.textbox {
   max-width: 100%;
   min-height: $control-textarea-min-height;
   max-height: $control-textarea-max-height;
-  padding: $control-textarea-padding;
+  padding: $control-spacing;
   line-height: $control-textarea-line-height;
 
   &.no-resize {
@@ -74,13 +78,64 @@ textarea.textbox {
 
 }
 
-// label.checkbox
+label.checkbox, label.radio {
+  font-size: 1.6rem;
+  display: inline-block;
+  height: $control-textbox-height;
+  line-height: $control-textbox-height;
 
+  input[type="checkbox"], input[type="radio"] {
+    height: 100%;
+    margin-right: 1rem;
+  }
 
+  span.text {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
 
+label.checkbox.switch, label.radio.switch {
+  input[type="checkbox"], input[type="radio"] {
+    display: none;
+  }
 
+  input[type="checkbox"] + i, input[type="radio"] + i {
+    display: inline-block;
+    height: $control-switch-track-height;
+    width: $control-switch-track-width;
+    margin-right: $control-spacing;
+    background-color: $control-hover-border-color;
+    border-radius: $control-border-radius;
+    position: relative;
+    transition: all 200ms;
 
-// label.radio
+    &::before {
+      content: '';
+      height: $control-switch-box-size;
+      width: $control-switch-box-size;
+      background-color: $control-background-color;
+      border: $control-border-width solid $control-border-color;
+      border-radius: inherit;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: inherit;
+    }
+
+  }
+
+  input[type="checkbox"]:checked + i, input[type="radio"]:checked + i {
+    background-color: $light-blue;
+
+    &::before {
+      left: 100%;
+      transform: translate(-98%, -50%);
+    }
+  }
+
+}
 
 
 // END NEW
