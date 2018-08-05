@@ -1,6 +1,5 @@
 @import "../base/colors.scss";
 
-// NEW
 $control-color: $alpha-black;
 $control-border-color: $medium-white;
 $control-border-width: 0.1rem;
@@ -86,7 +85,7 @@ label.checkbox, label.radio {
 
   input[type="checkbox"], input[type="radio"] {
     height: 100%;
-    margin-right: 1rem;
+    margin-right: 0.5 * $control-spacing;
   }
 
   span.text {
@@ -136,92 +135,3 @@ label.checkbox.switch, label.radio.switch {
   }
 
 }
-
-
-// END NEW
-
-// OLD
-// $textarea-min-height: 10rem;
-// $textarea-max-height: 40rem;
-
-// input.textfield, textarea.textarea {
-//   font-size: 1.6rem;
-//   display: block;
-//   width: 100%;
-//   padding: $control-padding;
-//   border: 0.1rem solid $control-border-color;
-//   margin-bottom: $control-margin;
-//   background-color: $control-background-color;
-
-//   &:hover {
-//     border-color: $control-hover-border-color;
-//   }
-
-//   &:focus {
-//     outline: none;
-//     border-color: $control-focus-border-color;
-//     box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
-//   }
-// }
-
-
-/* ==================================== */
-
-
-
-// div.select {
-//   font-size: 1.6rem;
-//   position: relative;
-//   margin-bottom: $control-margin;
-
-//   select {
-//     font-size: inherit;
-//     line-height: 1;
-//     display: block;
-//     padding: $control-padding;
-//     width: 100%;
-//     background: $control-background-color;
-//     border: 0.1rem solid $control-border-color;
-//     border-radius: 0;
-
-//     &:hover {
-//       border-color: $control-hover-border-color;
-//     }
-
-//     &:focus {
-//       outline: none;
-//       border-color: $control-focus-border-color;
-//       box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
-//     }
-//   }
-// }
-
-
-/* ==================================== */
-
-// textarea.textarea {
-//   min-width: 100%;
-//   max-width: 100%;
-//   min-height: $textarea-min-height;
-//   max-height: $textarea-max-height;
-//   line-height: 1.5;
-
-//   &.no-resize {
-//     resize: none;
-//   }
-// }
-
-/* ==================================== */
-
-// label.checkbox, label.radio {
-//   font-size: 1.6rem;
-//   display: inline-block;
-//   padding: $control-padding;
-//   padding-left: 0;
-//   margin: $control-margin;
-
-//   input[type="checkbox"], input[type="radio"] {
-//     margin-right: 0.125em;
-//   }
-// }
-// END OLD

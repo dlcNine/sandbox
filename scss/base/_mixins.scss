@@ -51,3 +51,26 @@
   }
 }
 
+@mixin field-theme($light-color, $medium-color, $box-shadow-spread, $box-shadow-color) {
+  background-color: inherit;
+  color: inherit;
+
+  input.textbox, select.textbox, textarea.textbox {
+    border-color: $light-color;
+
+    &:focus {
+      box-shadow: 0 0 0 $box-shadow-spread $box-shadow-color;
+    }
+  }
+
+  p.help {
+    color: $medium-color;
+  }
+}
+
+
+
+
+
+
+
