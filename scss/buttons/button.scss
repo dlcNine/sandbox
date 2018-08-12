@@ -21,6 +21,7 @@ a.button, button.button, input.button {
 
   &:active, &:focus {
     outline: none !important;
+    z-index: 5;
   }
 
   &.primary {
