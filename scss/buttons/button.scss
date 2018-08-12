@@ -4,7 +4,6 @@
 $button-padding: 0.375em 0.75em;
 $button-border-width: 0.0625em;
 $button-border-radius: 0.1875em;
-$button-round-radius: 2em;
 
 a.button, button.button, input.button {
   font-size: 1.6rem;
@@ -22,10 +21,6 @@ a.button, button.button, input.button {
 
   &:active, &:focus {
     outline: none !important;
-  }
-
-  &.round {
-    border-radius: $button-round-radius;
   }
 
   &.primary {

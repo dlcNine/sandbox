@@ -1,7 +1,7 @@
 @import "../base/mixins.scss";
 
 $buttons-button-border-width: 0.0625em;
-$buttons-button-round-radius: 2em;
+$buttons-button-round-radius: 20em;
 
 div.buttons {
   font-size: 1.6rem;
@@ -18,7 +18,7 @@ div.buttons {
     }
   }
 
-  &.round {
+  &.r-round {
     .button:first-child {
       border-top-left-radius: $buttons-button-round-radius;
       border-bottom-left-radius: $buttons-button-round-radius;

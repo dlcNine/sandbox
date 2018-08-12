@@ -23,6 +23,18 @@
 /* ====================================================== */
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+  .block-sm {
+    display: block !important;
+  }
+
+  .inline-sm {
+    display: inline !important;
+  }
+
+  .inline-block-sm {
+    display: inline-block !important;
+  }
+
   .absent-sm {
     display: none !important;
   }
@@ -33,6 +45,18 @@
 }
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .block-md {
+    display: block !important;
+  }
+
+  .inline-md {
+    display: inline !important;
+  }
+
+  .inline-block-md {
+    display: inline-block !important;
+  }
+
   .absent-md {
     display: none !important;
   }
@@ -43,6 +67,18 @@
 }
 
 @media screen and (min-width: $lg-and-up) {
+  .block-lg {
+    display: block !important;
+  }
+
+  .inline-lg {
+    display: inline !important;
+  }
+
+  .inline-block-lg {
+    display: inline-block !important;
+  }
+
   .absent-lg {
     display: none !important;
   }
@@ -51,3 +87,8 @@
     visibility: hidden !important;
   }
 }
+
+
+
+
+

@@ -43,3 +43,19 @@ $borders-radius: 0.25em;
 .rbr {
   border-bottom-right-radius: $borders-radius !important;
 }
+
+.r-inherit { 
+  border-radius: inherit !important;
+}
+
+.r-round { 
+  border-radius: 20em !important;
+}
+
+
+
+
+
+
+
+
