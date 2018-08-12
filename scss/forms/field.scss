@@ -9,6 +9,17 @@ $field-input-shadow-spread: 0.125em;
 $field-required-asterisk-color: $light-red;
 
 div.field {
+  &.horizontal {
+    display: flex;
+    align-items: baseline;
+
+    label.checkbox:not(.switch), label.radio:not(.switch) {
+      input[type="checkbox"], input[type="radio"] {
+        height: initial;
+      }
+    }
+  }
+
   label.label {
     font-size: 1.6rem;
     display: block;
@@ -44,3 +55,10 @@ div.field {
     @include field-theme($light-red, $medium-red, $field-input-shadow-spread, $alpha-light-red);
   }
 }
+
+
+
+
+
+
+
