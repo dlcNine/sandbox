@@ -8,11 +8,11 @@ div[class*="unit-"] {
   padding: $unit-padding;
 }
 
-div.grid::after, .clearfix::after {
+.grid::after, .clearfix::after {
   @include clearfix();
 }
 
-div.grid {
+.grid {
   margin: -1 * $unit-padding;
 
   &.slim {
@@ -132,11 +132,11 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
-  div.grid.slim.no-slim-sm {
+  .grid.slim.no-slim-sm {
     @include slim-cancel($unit-padding);
   }
 
-  div.grid.slim-sm {
+  .grid.slim-sm {
     @include slim-responsive($unit-padding);
   }
 
@@ -244,11 +244,11 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
-  div.grid.slim.no-slim-md {
+  .grid.slim.no-slim-md {
     @include slim-cancel($unit-padding);
   }
 
-  div.grid.slim-md {
+  .grid.slim-md {
     @include slim-responsive($unit-padding);
   }
 
@@ -356,11 +356,11 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $lg-and-up) {
-  div.grid.slim.no-slim-lg {
+  .grid.slim.no-slim-lg {
     @include slim-cancel($unit-padding);
   }
 
-  div.grid.slim-lg {
+  .grid.slim-lg {
     @include slim-responsive($unit-padding);
   }
 

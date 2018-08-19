@@ -29,6 +29,7 @@ input.textbox, select.textbox, textarea.textbox {
   border: $control-border-width solid $control-border-color;
   border-radius: $control-border-radius;
   transition: all 125ms;
+  z-index: 5;
 
   &:hover {
     border-color: $control-hover-border-color;
@@ -38,7 +39,6 @@ input.textbox, select.textbox, textarea.textbox {
     outline: none;
     border-color: $control-hover-border-color;
     box-shadow: 0 0 0 $control-border-radius $control-box-shadow-color;
-    z-index: 5;
   }
 
   &[readonly], &[disabled] {
@@ -46,7 +46,6 @@ input.textbox, select.textbox, textarea.textbox {
     border-color: $control-hover-border-color;
     cursor: not-allowed;
     box-shadow: none;
-
   }
 
   &[disabled] {

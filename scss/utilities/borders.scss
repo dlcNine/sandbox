@@ -3,6 +3,7 @@
 $borders-width: 0.1rem;
 $borders-color: $medium-white;
 $borders-radius: 0.25em;
+$borders-round: 200em;
 
 .b {
   border: $borders-width solid $borders-color !important;
@@ -49,7 +50,7 @@ $borders-radius: 0.25em;
 }
 
 .r-round { 
-  border-radius: 20em !important;
+  border-radius: $borders-round !important;
 }
 
 
