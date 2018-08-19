@@ -1,29 +1,27 @@
-// @import "../base/colors.scss";
+@import "../base/colors.scss";
 
-// $modal-backdrop-color: $black-thick;
-// $modal-padding: 2.4rem;
-// $modal-background-color: $white;
+$overlay-tint-color: $alpha-light-black;
+$modal-padding: 2rem;
+$modal-border-radius: 0.25em;
+$modal-background-color: $white;
 
-// div.overlay {
-//   position: fixed;
-//   z-index: 55;
-//   top: 0;
-//   left: 0;
-//   height: 100.1%;
-//   width: 100%;
-//   overflow-x: hidden;
-//   overflow-y: auto;
+div.overlay {
+  position: fixed;
+  z-index: 55;
+  top: 0;
+  left: 0;
+  height: 100.1%;
+  width: 100%;
+  overflow-y: auto;
 
-//   &.modal-backdrop {
-//     background-color: $modal-backdrop-color;
-//   }
+  &.tint {
+    background-color: $overlay-tint-color;
+  }
 
-//   div.modal {
-//     padding: $modal-padding;
-//     background-color: $modal-background-color;
-//   }
-// }
-
-// body.overlay-present {
-//   overflow: hidden;
-// }
+  div.modal {
+    font-size: 1.6rem;
+    padding: $modal-padding;
+    border-radius: $modal-border-radius;
+    background-color: $modal-background-color;
+  }
+}
