@@ -1,0 +1,30 @@
+$square-size: 1em;
+$square-size-x2: 2em;
+$square-size-x3: 3em;
+$square-size-x4: 4em;
+
+figure.square {
+  font-size: 1.6rem;
+  height: $square-size;
+  width: $square-size;
+
+  &.x2 {
+    height: $square-size-x2;
+    width: $square-size-x2;
+  }
+
+  &.x3 {
+    height: $square-size-x3;
+    width: $square-size-x3;
+  }
+
+  &.x4 {
+    height: $square-size-x4;
+    width: $square-size-x4;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
