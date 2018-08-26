@@ -19,6 +19,7 @@
 @import "./utilities/width.scss";
 @import "./utilities/text.scss";
 @import "./utilities/img.scss";
+@import "./utilities/animation.scss";
 
 /* ============ layout ============ */
 @import "./layout/grid.scss";
@@ -43,8 +44,8 @@
 // @import "./components/tabs.scss";
 // @import "./components/menu.scss";
 @import "./components/close.scss";
-// @import "./components/tag.scss";
-// @import "./components/tag-bar.scss";
+@import "./components/tag.scss";
+// @import "./components/tags.scss";
 @import "./components/square.scss";
 @import "./components/progress-bar.scss";
 // @import "./components/list-menu.scss";

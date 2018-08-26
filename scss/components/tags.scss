@@ -1,0 +1,16 @@
+@import "../base/mixins.scss";
+
+span.tags {
+  font-size: 1.6rem;
+  display: inline-block;
+
+  span.tag {
+    float: left;
+
+    @include child-rounding-rules();
+  }
+}
+// END NEW
+
+
+
