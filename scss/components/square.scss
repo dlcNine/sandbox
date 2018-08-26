@@ -8,19 +8,36 @@ figure.square {
   height: $square-size;
   width: $square-size;
 
+  &.text {
+    text-align: center;
+    line-height: $square-size;
+  }
+
   &.x2 {
     height: $square-size-x2;
     width: $square-size-x2;
+
+    &.text {
+      line-height: $square-size-x2;
+    }
   }
 
   &.x3 {
     height: $square-size-x3;
     width: $square-size-x3;
+
+    &.text {
+      line-height: $square-size-x3;
+    }
   }
 
   &.x4 {
     height: $square-size-x4;
     width: $square-size-x4;
+
+    &.text {
+      line-height: $square-size-x4;
+    }
   }
 
   img {

@@ -1,47 +1,45 @@
-// @import "../base/colors.scss";
+@import "../base/colors.scss";
 
-// $progress-bar-height: 0.75em;
-// $progress-bar-margin: 0.6rem 0rem;
+$progress-bar-height: 1em;
+$progress-bar-radius: 0.125em;
+$progress-dash-size: 0.5em 0.25em;
+$progress-dash-moving-speed: 3000ms;
 
-// div.progress-bar {
-//   font-size: 1.6rem;
-//   height: $progress-bar-height;
-//   background-color: $light-gray;
-//   margin: $progress-bar-margin;
+@keyframes moving-dashes {
+  0% {
+    background-position: 0em;
+  }
 
-//   div.progress {
-//     float: left;
-//     height: 100%;
-//     min-width: 0%;
-//     max-width: 100%;
-//     background-color: $dark-gray;
-//     color: $alpha-white;
-//     // transition: width 300ms;
-//   }
+  100% {
+    background-position: 4em;
+  }
+}
 
-//   div.progress.primary {
-//     background-color: $medium-blue;
-//   }
+div.progress-bar {
+  font-size: 1.6rem;
+  height: $progress-bar-height;
+  background-color: $light-gray;
+  border-radius: $progress-bar-radius;
+  overflow: hidden;
 
-//   div.progress.info {
-//     background-color: $medium-green;
-//   }
+  div.progress {
+    float: left;
+    height: 100%;
+    min-width: 0%;
+    max-width: 100%;
+    text-align: center;
+    line-height: 100%;
+    transition: width 200ms;
 
-//   div.progress.caution {
-//     background-color: $medium-yellow;
-//     color: $alpha-faint;
-//   }
+    &.dashed {
+      background-image: linear-gradient(90deg, $alpha-dark-white 50%, transparent 50%);
+      background-size: $progress-dash-size;
+      background-repeat: repeat-x;
+      background-position: 50% 50%;
 
-//   div.progress.danger {
-//     background-color: $medium-red;
-//   }
-
-//   div.progress.light {
-//     background-color: $light-white;
-//     color: $alpha-faint;
-//   }
-
-//   div.progress.dark {
-//     background-color: $medium-black;
-//   }
-// }
+      &.moving {
+        animation: moving-dashes $progress-dash-moving-speed linear 0s infinite;
+      }
+    }
+  }
+}
