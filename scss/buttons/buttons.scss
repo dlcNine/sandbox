@@ -1,9 +1,9 @@
 @import "../base/mixins.scss";
 
 $buttons-button-border-width: 0.0625em;
-$buttons-button-round-radius: 20em;
+$buttons-button-round-radius: 200em;
 
-div.buttons {
+span.buttons {
   font-size: 1.6rem;
 
   &::after {
@@ -30,6 +30,12 @@ div.buttons {
     }
   }
 
+  &.r-0 {
+    .button {
+      border-radius: 0;
+    }
+  }
+
   .button {
     font-size: inherit;
     float: left;
@@ -38,23 +44,7 @@ div.buttons {
       margin-right: -1 * $buttons-button-border-width;
     }
 
-    &:active, &:focus {
-      position: relative;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
-    }
-
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
+    @include child-radius-rules();
   }
 
 }
