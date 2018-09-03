@@ -5,7 +5,6 @@ $card-part-padding: 1.6rem;
 $card-radius: 0.4rem;
 $card-part-radius: 0.3rem;
 
-// NEW
 div.card {
   font-size: 1.6rem;
   border: 0.1rem solid $card-border-color;
@@ -37,4 +36,3 @@ div.card {
     border-radius: 0rem 0rem $card-part-radius $card-part-radius;
   }
 }
-// END NEW
