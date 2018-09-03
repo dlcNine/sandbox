@@ -1,0 +1,40 @@
+@import "../base/colors.scss";
+
+$card-border-color: $medium-white;
+$card-part-padding: 1.6rem;
+$card-radius: 0.4rem;
+$card-part-radius: 0.3rem;
+
+// NEW
+div.card {
+  font-size: 1.6rem;
+  border: 0.1rem solid $card-border-color;
+  border-radius: $card-radius;
+
+  div.card-header, div.card-body, div.card-footer {
+    padding: $card-part-padding;
+
+    &.hero {
+      padding: 0;
+
+      img {
+        width: 100%;
+        display: block;
+        border-radius: inherit;
+      }
+    }
+  }
+
+  div.card-header {
+    border-radius: $card-part-radius $card-part-radius 0rem 0rem;
+  }
+
+  div.card-body:only-child {
+    border-radius: $card-part-radius;
+  }
+
+  div.card-footer {
+    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
+  }
+}
+// END NEW

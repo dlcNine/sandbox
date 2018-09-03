@@ -5,7 +5,7 @@
   color: $alpha-white;
 }
 
-.secondary, .caution, .light {
+.secondary, .caution, .light, .white {
   color: $alpha-black;
 }
 
@@ -30,7 +30,11 @@
 }
 
 .light {
-  @include border-background-color($medium-white);
+  @include border-background-color($light-white);
+}
+
+.white {
+  @include border-background-color($white);
 }
 
 .dark {

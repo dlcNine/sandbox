@@ -20,6 +20,10 @@ span.tag {
       text-decoration: underline;
     }
   }
+
+  button.close {
+    font-size: $tag-font-size;
+  }
 }
 
 

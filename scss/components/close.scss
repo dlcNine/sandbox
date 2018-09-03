@@ -2,7 +2,7 @@
 
 $close-size: 1em;
 $close-radius: 0.125em;
-$close-xmark-height: 0.5em;
+$close-xmark-size: 0.5em;
 $close-xmark-border-width: 0.0625em;
 
 button.close {
@@ -35,7 +35,7 @@ button.close {
   &::before, &::after {
     content: '';
     border-right: $close-xmark-border-width solid $dark-gray;
-    height: $close-xmark-height;
+    height: $close-xmark-size;
     position: absolute;
     top: 50%;
     left: 50%;
