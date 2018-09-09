@@ -1,14 +1,20 @@
 @import "../base/colors.scss";
 
 $card-border-color: $medium-white;
-$card-part-padding: 1.6rem;
 $card-radius: 0.4rem;
+$card-part-padding: 2rem;
 $card-part-radius: 0.3rem;
 
 div.card {
   font-size: 1.6rem;
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
+
+  &.r-0 {
+    div.card-header, div.card-body, div.card-footer {
+      border-radius: 0;
+    }
+  }
 
   div.card-header, div.card-body, div.card-footer {
     padding: $card-part-padding;
