@@ -1,5 +1,84 @@
-// @import "../base/colors.scss";
+@import "../base/colors.scss";
 
+// NEW
+$dropdown-background-color: $white;
+$dropdown-border-radius: 0.3rem;
+$dropdown-border-color: $medium-white;
+$dropdown-min-width: 15rem;
+$dropdown-a-hover-color: $alpha-hover-item;
+
+div.dropdown-wrapper {
+  display: inline-block;
+  position: relative;
+
+  // .trigger:focus {
+
+  // }
+
+  div.dropdown {
+    font-size: 1.6rem;
+    position: absolute;
+    z-index: 25;
+    min-width: 16rem;
+    background-color: $dropdown-background-color;
+    border: 0.1rem solid $dropdown-border-color;
+    border-radius: $dropdown-border-radius;
+    padding: 1rem 0rem;
+    white-space: nowrap;
+
+    &.align-right {
+      right: 0;
+    }
+
+    &.on-top {
+      bottom: 100%;
+    }
+
+    // &.on-right {
+    // }
+
+    div.dropdown-item, a.dropdown-a {
+      padding: 0.8rem;
+    }
+
+    a.dropdown-a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: $dropdown-a-hover-color;
+      }
+    }
+
+    div.divider {
+      border-top: 0.1rem solid $dropdown-border-color;
+    }
+
+    // nested dropdowns
+    div.dropdown-wrapper {
+      display: block;
+
+      div.dropdown {
+        padding: 0;
+        top: 0;
+        left: 100%;
+        // transform: translate(100%, 0%);
+      }
+    }
+    
+
+
+
+
+
+  }
+
+  
+}
+// END NEW
+
+// OLD
 // $dropdown-border-color: $light-gray;
 // $dropdown-background-color: $white;
 // $dropdown-radius: 0.4rem;
@@ -114,3 +193,14 @@
 //     }
 //   }
 // }
+// END OLD
+
+
+
+
+
+
+
+
+
+
