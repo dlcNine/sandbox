@@ -2,11 +2,13 @@ $square-size: 1em;
 $square-size-x2: 2em;
 $square-size-x3: 3em;
 $square-size-x4: 4em;
+$square-border-radius: 0.25em;
 
 figure.square {
   font-size: 1.6rem;
   height: $square-size;
   width: $square-size;
+  border-radius: $square-border-radius;
 
   &.text {
     text-align: center;
@@ -43,5 +45,6 @@ figure.square {
   img {
     height: 100%;
     width: 100%;
+    border-radius: inherit;
   }
 }
