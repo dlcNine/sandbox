@@ -6,6 +6,7 @@ $dropdown-border-radius: 0.3rem;
 $dropdown-border-color: $medium-white;
 $dropdown-min-width: 15rem;
 $dropdown-a-hover-color: $alpha-hover-item;
+$dropdown-item-padding: 0.8rem;
 
 div.dropdown-wrapper {
   display: inline-block;
@@ -23,7 +24,7 @@ div.dropdown-wrapper {
     background-color: $dropdown-background-color;
     border: 0.1rem solid $dropdown-border-color;
     border-radius: $dropdown-border-radius;
-    padding: 1rem 0rem;
+    padding: 0.6rem 0rem;
     white-space: nowrap;
 
     &.align-right {
@@ -34,11 +35,19 @@ div.dropdown-wrapper {
       bottom: 100%;
     }
 
-    // &.on-right {
-    // }
+    &.on-right {
+      left: 100%;
+      top: 0;
+    }
+
+    &.on-left {
+      right: 100%;
+      top: 0;
+    }
+
 
     div.dropdown-item, a.dropdown-a {
-      padding: 0.8rem;
+      padding: $dropdown-item-padding;
     }
 
     a.dropdown-a {
@@ -51,7 +60,7 @@ div.dropdown-wrapper {
       }
     }
 
-    div.divider {
+    div.dropdown-divider {
       border-top: 0.1rem solid $dropdown-border-color;
     }
 
@@ -60,11 +69,11 @@ div.dropdown-wrapper {
       display: block;
 
       div.dropdown {
-        padding: 0;
-        top: 0;
-        left: 100%;
-        // transform: translate(100%, 0%);
+        &.on-right, &.on-left {
+          top: -1 * $dropdown-item-padding;
+        }
       }
+
     }
     
 
