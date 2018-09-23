@@ -1,130 +1,54 @@
-// @import "../base/colors.scss";
+@import "../base/colors.scss";
 
-// $table-caption-padding: 0.5em 0em;
-// $table-td-th-padding: 0.75em;
-// $table-slim-padding: 0.375em;
-// $table-border-color: $light-gray;
-// $table-stripe-background-color: $table-striped;
-// $table-row-hover-color: $medium-white;
+$table-item-padding: 0.75em;
+$table-less-padding: 0.5em;
+$table-border-color: $medium-white;
+$table-row-hover-color: $alpha-dark-gray;
 
-// table.table {
-//   font-size: 1.6rem;
-//   width: 100%;
+// NEW
+table.table {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: left;
 
-//   caption {
-//     padding: $table-caption-padding;
-//   }
+  th, td {
+    padding: $table-item-padding;
+  }
 
-//   th {
-//     font-weight: bold;
-//     text-align: left;
-//   }
+  th {
+    font-weight: bold;
+  }
 
-//   td, th {
-//     padding: $table-td-th-padding;
-//     vertical-align: middle;
-//   }
+  &.thin th, &.thin td {
+    padding: $table-less-padding;
+  }
 
-//   &.slim th, &.slim td {
-//     padding: $table-slim-padding;
-//   }
+  &.striped-odd tbody tr:nth-child(odd), &.striped-even tbody tr:nth-child(even) {
+    background-color: $alpha-gray;
+  }
 
-//   &.border-all th, &.border-all td {
-//     border: 0.1rem solid $table-border-color;
-//   }
+  &.border-all td, &.border-all th {
+    border: 0.1rem solid $table-border-color;
+  }
 
-//   thead.striped-odd tr:nth-child(odd), 
-//   thead.striped-even tr:nth-child(even),
-//   tbody.striped-odd tr:nth-child(odd),
-//   tbody.striped-even tr:nth-child(even), 
-//   tfoot.striped-odd tr:nth-child(odd),
-//   tfoot.striped-even tr:nth-child(even)  {
-//     background-color: $table-stripe-background-color;
-//   }
+  &.border-bottoms tr:not(:last-child) {
+    border-bottom: 0.1rem solid $table-border-color;
+  }
 
-//   thead.border-rows tr, tbody.border-rows tr, 
-//   tfoot.border-rows tr:not(:last-of-type), 
-//   tr.border-row {
-//     border-bottom: 0.1rem solid $table-border-color;
-//   }
+  &.row-hover tbody tr:hover, &.row-hover.striped-odd tbody tr:hover, &.row-hover.striped-even tbody tr:hover {
+    background-color: $table-row-hover-color;
+  }
+}
+// END NEW
 
-//   thead.row-hover tr:hover, tbody.row-hover tr:hover, 
-//   tfoot.row-hover tr:hover,  {
-//     background-color: $table-row-hover-color !important;
-//   }
 
-//   thead.row-hover tr.primary:hover, 
-//   tbody.row-hover tr.primary:hover,
-//   tfoot.row-hover tr.primary:hover {
-//     background-color: $light-blue !important;
-//   }
 
-//   thead.row-hover tr.info:hover, 
-//   tbody.row-hover tr.info:hover,
-//   tfoot.row-hover tr.info:hover {
-//     background-color: $light-green !important;
-//   }
 
-//   thead.row-hover tr.caution:hover, 
-//   tbody.row-hover tr.caution:hover,
-//   tfoot.row-hover tr.caution:hover {
-//     background-color: $light-yellow !important;
-//   }
 
-//   thead.row-hover tr.danger:hover, 
-//   tbody.row-hover tr.danger:hover,
-//   tfoot.row-hover tr.danger:hover {
-//     background-color: $light-red !important;
-//   }
 
-//   thead.row-hover tr.dark:hover, 
-//   tbody.row-hover tr.dark:hover,
-//   tfoot.row-hover tr.dark:hover {
-//     background-color: $light-black !important;
-//   }
 
-//   th a.table-a, td a.table-a {
-//     color: inherit;
-//     cursor: pointer;
-//     text-decoration: underline;
 
-//     &:hover, &:focus {
-//       color: $link-unvisited;
-//     }
-//   }
 
-//   tr {
-//     color: $black;
-//     background-color: $white;
-//   }
 
-//   tr.primary {
-//     color: $white-blue;
-//     background-color: $medium-blue !important;
-//   }
 
-//   tr.info {
-//     color: $white-green;
-//     background-color: $medium-green !important;
-//   }
 
-//   tr.caution {
-//     color: $dark-yellow;
-//     background-color: $medium-yellow !important;
-//   }
-
-//   tr.danger {
-//     color: $white-red;
-//     background-color: $medium-red !important;
-//   }
-
-//   tr.dark {
-//     color: $white;
-//     background-color: $medium-black !important;
-
-//     a.table-a:hover, a.table-a:focus {
-//       color: $dark-white;
-//     }
-//   }
-
-// }
