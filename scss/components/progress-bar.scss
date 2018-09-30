@@ -1,21 +1,9 @@
 @import "../base/colors.scss";
+@import "../base/mixins.scss";
 
 $progress-bar-height: 1em;
 $progress-bar-radius: 0.125em;
 $progress-bar-background-color: $light-gray;
-$progress-dot-size: 0.5em 0.25em;
-$progress-dot-color: $alpha-dark-white;
-$progress-dot-moving-speed: 550ms;
-
-@keyframes moving-dots {
-  0% {
-    background-position: 0em 50%;
-  }
-
-  100% {
-    background-position: 0.5em 50%;
-  }
-}
 
 div.progress-bar {
   font-size: 1.6rem;
@@ -24,23 +12,27 @@ div.progress-bar {
   border-radius: $progress-bar-radius;
   overflow: hidden;
 
+  &::after {
+    @include clearfix();
+  }
+
   div.progress {
+    float: left;
     height: 100%;
     min-width: 0%;
     max-width: 100%;
     text-align: center;
-    line-height: 100%;
     transition: width 200ms;
-
-    &.dotted {
-      background-image: linear-gradient(90deg, $progress-dot-color 50%, transparent 50%);
-      background-size: $progress-dot-size;
-      background-repeat: repeat-x;
-      background-position: 50% 50%;
-
-      &.moving {
-        animation: moving-dots $progress-dot-moving-speed linear 0s infinite;
-      }
-    }
   }
+
 }
+
+
+
+
+
+
+
+
+
+

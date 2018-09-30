@@ -60,11 +60,11 @@ div.dropdown {
     top: 0;
   }
 
-  div.dropdown-item, a.dropdown-a {
+  div.dropdown-item, a.dropdown-item {
     padding: $dropdown-item-padding;
   }
 
-  a.dropdown-a {
+  a.dropdown-item {
     color: inherit;
     text-decoration: none;
     display: block;
@@ -90,7 +90,6 @@ div.dropdown {
   }
 
 }
-
 
 
 
