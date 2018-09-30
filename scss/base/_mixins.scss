@@ -4,7 +4,7 @@
   display: block;
 }
 
-@mixin slim-cancel($spacing) {
+@mixin tight-cancel($spacing) {
   margin: -1 * $spacing;
 
   div[class*="unit-"] {
@@ -12,7 +12,7 @@
   }
 }
 
-@mixin slim-responsive($spacing) {
+@mixin tight-responsive($spacing) {
   margin: -0.5 * $spacing;
 
   div[class*="unit-"] {

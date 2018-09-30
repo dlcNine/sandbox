@@ -16,7 +16,7 @@ div[class*="unit-"] {
 .grid {
   margin: -1 * $unit-padding;
 
-  &.slim {
+  &.tight {
     margin: -0.5 * $unit-padding;
 
     div[class*="unit-"] {
@@ -133,12 +133,12 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
-  .grid.slim.no-slim-sm {
-    @include slim-cancel($unit-padding);
+  .grid.tight.not-tight-sm {
+    @include tight-cancel($unit-padding);
   }
 
-  .grid.slim-sm {
-    @include slim-responsive($unit-padding);
+  .grid.tight-sm {
+    @include tight-responsive($unit-padding);
   }
 
   /* ==================================== */
@@ -245,12 +245,12 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
-  .grid.slim.no-slim-md {
-    @include slim-cancel($unit-padding);
+  .grid.tight.not-tight-md {
+    @include tight-cancel($unit-padding);
   }
 
-  .grid.slim-md {
-    @include slim-responsive($unit-padding);
+  .grid.tight-md {
+    @include tight-responsive($unit-padding);
   }
 
   /* ==================================== */
@@ -357,12 +357,12 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $lg-and-up) {
-  .grid.slim.no-slim-lg {
-    @include slim-cancel($unit-padding);
+  .grid.tight.not-tight-lg {
+    @include tight-cancel($unit-padding);
   }
 
-  .grid.slim-lg {
-    @include slim-responsive($unit-padding);
+  .grid.tight-lg {
+    @include tight-responsive($unit-padding);
   }
 
   /* ==================================== */
