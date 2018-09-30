@@ -11,7 +11,7 @@ $dropdown-z-index: 25;
 
 $reveal-transition-speed: 150ms;
 
-div.reveal-wrapper {
+.reveal-wrapper {
   display: inline-block;
   position: relative;
 
@@ -41,16 +41,21 @@ div.dropdown {
   border-radius: $dropdown-border-radius;
   padding: 0.6rem 0rem;
   white-space: nowrap;
+  left: 0;
+  top: 100%;
   
   &.align-right {
     right: 0;
+    left: initial;
   }
 
   &.on-top {
     bottom: 100%;
+    top: initial;
   }
 
   &.on-left {
+    left: initial;
     right: 100%;
     top: 0;
   }
