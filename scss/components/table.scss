@@ -1,11 +1,13 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
 $table-item-padding: 0.75em;
-$table-less-padding: 0.5em;
-$table-border-color: $medium-white;
+$table-tight-padding: 0.5em;
+$table-tighter-padding: 0.25em;
+$table-border-color: $G-border-color;
+$table-row-stripe-color: $alpha-gray;
 $table-row-hover-color: $alpha-dark-gray;
 
-// NEW
 table.table {
   font-size: 1.6rem;
   width: 100%;
@@ -19,28 +21,32 @@ table.table {
     font-weight: bold;
   }
 
-  &.thin th, &.thin td {
-    padding: $table-less-padding;
+  &.tight th, &.tight td {
+    padding: $table-tight-padding;
   }
 
-  &.striped-odd tbody tr:nth-child(odd), &.striped-even tbody tr:nth-child(even) {
-    background-color: $alpha-gray;
+  &.tighter th, &.tighter td {
+    padding: $table-tighter-padding;
   }
 
-  &.border-all td, &.border-all th {
+  &.border-all th, &.border-all td,
+  .border-all th, .border-all td {
     border: 0.1rem solid $table-border-color;
   }
 
-  &.border-bottoms tr:not(:last-child) {
+  &.border-bottoms tr, .border-bottoms tr {
     border-bottom: 0.1rem solid $table-border-color;
   }
 
-  &.row-hover tbody tr:hover, &.row-hover.striped-odd tbody tr:hover, &.row-hover.striped-even tbody tr:hover {
+  &.striped-odd tr:nth-child(odd), &.striped-even tr:nth-child(even),
+  .striped-odd tr:nth-child(odd), .striped-even tr:nth-child(even) {
+    background-color: $table-row-stripe-color;
+  }
+
+  &.row-hover tr:hover, .row-hover tr:hover {
     background-color: $table-row-hover-color;
   }
 }
-// END NEW
-
 
 
 

@@ -1,13 +1,13 @@
 /* ============ base ============ */
 @import "./base/breakpoint-values.scss";
 @import "./base/colors.scss";
+@import "./base/global-variables.scss";
 @import "./base/mixins.scss";
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
 @import "./base/themes.scss";
 
 /* ============ utilities ============ */
-
 @import "./utilities/zeroing.scss";
 @import "./utilities/borders.scss";
 @import "./utilities/spacing.scss";
