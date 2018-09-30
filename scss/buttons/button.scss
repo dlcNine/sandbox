@@ -1,5 +1,6 @@
 @import "../base/colors.scss";
 @import "../base/mixins.scss";
+@import "../base/global-variables";
 
 $button-padding: 0.375em 0.75em;
 $button-border-width: 0.0625em;
@@ -60,7 +61,7 @@ a.button:link {
 }
 
 .button[disabled] {
-  opacity: 0.5;
+  opacity: $G-disabled-opacity;
   pointer-events: none;
 }
 

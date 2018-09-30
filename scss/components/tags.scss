@@ -1,7 +1,8 @@
 @import "../base/mixins.scss";
+@import "../base/global-variables";
 
 $tags-font-size: 0.75em;
-$tags-tag-round-radius: 200em;
+$tags-tag-round-radius: $G-radius-round;
 
 span.tags {
   font-size: $tags-font-size;

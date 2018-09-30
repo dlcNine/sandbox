@@ -1,7 +1,8 @@
+@import "../base/global-variables.scss";
 @import "../base/mixins.scss";
 
 $buttons-button-border-width: 0.0625em;
-$buttons-button-round-radius: 200em;
+$buttons-button-round-radius: $G-radius-round;
 
 div.buttons {
   font-size: 1.6rem;

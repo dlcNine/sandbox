@@ -1,6 +1,7 @@
 @import "../base/breakpoint-values.scss";
+@import "../base/global-variables.scss";
 
-$spacing: 1.2rem;
+$spacing: $G-grid-spacing;
 
 .mx-auto {
   margin-left: auto !important;

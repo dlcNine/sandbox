@@ -1,9 +1,10 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
 $addon-height: 2.25em;
 $addon-border-width: 0.1rem;
 $addon-background-color: $light-white;
-$addon-border-color: $medium-white;
+$addon-border-color: $G-border-color;
 $addon-spacing: 1rem;
 $addon-border-radius: 0.25em;
 

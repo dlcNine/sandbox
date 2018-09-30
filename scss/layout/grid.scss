@@ -1,7 +1,8 @@
 @import "../base/breakpoint-values.scss";
+@import "../base/global-variables.scss";
 @import "../base/mixins.scss";
 
-$unit-padding: 1.2rem;
+$unit-padding: $G-grid-spacing;
 
 div[class*="unit-"] {
   float: left;

@@ -1,7 +1,8 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
 $control-color: $alpha-black;
-$control-border-color: $medium-white;
+$control-border-color: $G-border-color;
 $control-border-width: 0.1rem;
 $control-hover-border-color: $dark-white;
 $control-background-color: $white;
@@ -49,7 +50,7 @@ input.textbox, select.textbox, textarea.textbox {
   }
 
   &[disabled] {
-    opacity: 0.5;
+    opacity: $G-disabled-opacity;
   }
 
 }
