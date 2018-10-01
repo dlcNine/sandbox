@@ -1,0 +1,71 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+@import "../base/global-variables";
+
+$button-padding: 0.375em 0.75em;
+$button-border-width: 0.0625em;
+$button-border-radius: $G-button-border-radius;
+
+a.button, button.button, input.button {
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  padding: $button-padding;
+  border-width: $button-border-width;
+  border-style: solid;
+  border-radius: $button-border-radius;
+  transition: all 125ms;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active, &:focus {
+    outline: none !important;
+    z-index: 5;
+  }
+
+  &.primary {
+    @include button-default($light-blue, $dark-blue, $alpha-light-blue);
+  }
+
+  &.secondary {
+    @include button-default($light-gray, $dark-gray, $alpha-light-blue);
+  }
+
+  &.info {
+   @include button-default($light-green, $dark-green, $alpha-light-green);
+  }
+
+  &.caution {
+    @include button-default($light-yellow, $dark-yellow, $alpha-light-yellow);
+  }
+
+  &.danger {
+    @include button-default($light-red, $dark-red, $alpha-light-red);
+  }
+
+  &.light {
+    @include button-default($light-white, $dark-white, $alpha-light-blue);
+  }
+
+  &.dark {
+    @include button-default($light-black, $black, $alpha-light-blue);
+  }
+}
+
+/* ==================================== */
+
+a.button:link {
+  text-decoration: none;
+}
+
+.button[disabled] {
+  opacity: $G-disabled-opacity;
+  pointer-events: none;
+}
+
+.button.wide {
+  display: block;
+  width: 100%;
+}

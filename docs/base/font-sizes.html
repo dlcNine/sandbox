@@ -15,51 +15,51 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Font-sizes</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Font-sizes</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-info">it is the scale</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp info">it is the scale</span>
       </div> 
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background text-indigo">.huge-1</span>
@@ -93,7 +93,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-indigo">.huge-1-</span>[breakpoint]</span>
@@ -127,7 +127,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background text-blue">h1</span>
@@ -155,11 +155,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
-      <p class="mgn-b-1">Sandbox uses a font scale of 1.3333 with a base font-size of 1.6rem. The font-size classes will override the font-size of any element they are used on.</p>
-      <div class="container">
-        <div class="default-6">
+      <p class="mb-1">Sandbox uses a font scale of 1.3333 with a base font-size of 1.6rem. The font-size classes will override the font-size of any element they are used on.</p>
+      <div class="grid">
+        <div class="unit-6">
           <p class="text-right huge-1">Lorem</p>
           <p class="text-right huge-2">Lorem</p>
           <p class="text-right h1">Lorem</p>
@@ -170,7 +170,7 @@
           <p class="text-right h5">Lorem</p>
           <p class="text-right h6">Lorem</p>
         </div>
-        <div class="default-6">
+        <div class="unit-6">
           <p class="text-indigo huge-1">.huge-1</p>
           <p class="text-indigo huge-2">.huge-2</p>
           <p class="text-indigo h1">.h1</p>
@@ -182,12 +182,12 @@
           <p class="text-indigo h6">.h6</p>
         </div>
       </div>
-      <p class="mgn-b-1">Two font-size classes which don't actually fit the scale are provided, since they are common font-sizes to have.</p>
+      <p class="mb-1">Two font-size classes which don't actually fit the scale are provided, since they are common font-sizes to have.</p>
       <table class="table">
         <thead>
-          <tr class="theme-dark p">
-            <th class="demo-rds-tl-1">Font-size class</th>
-            <th class="demo-rds-tr-1">Value</th>
+          <tr class="dark p">
+            <th class="rtl">Font-size class</th>
+            <th class="rtr">Value</th>
           </tr>
         </thead>
         <tbody class="p-alt striped-odd row-hover">
@@ -234,22 +234,22 @@
         </tbody>
       </table>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Breakpoints</h2>
-      <p class="mgn-b-1">The font-size classes are responsive. Simply plug one of the three breakpoints into <span class="snippet p-alt">[breakpoint]</span> to have that font-size become active during that breakpoint. Reduce or expand the browser width to see it in action.</p>
-      <div class="container">
-        <div class="default-12">
-          <button class="block-center button theme-info p-alt-large h3-medium h1-small">
+      <p class="mb-1">The font-size classes are responsive. Simply plug one of the three breakpoints into <span class="snippet p-alt">[breakpoint]</span> to have that font-size become active during that breakpoint. Reduce or expand the browser width to see it in action.</p>
+      <div class="grid">
+        <div class="unit-12">
+          <button class="block-center button info p-alt-lg h3-md h1-sm">
             loading 
             <span class="loading"></span>
           </button>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button block-center theme-info  h1-small h3-medium p-alt-large"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button block-center info  h1-sm h3-md p-alt-lg"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">loading</li>
@@ -265,11 +265,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Heading elements</h2>
       <p>The heading elements, as well as the <span class="snippet p-alt text-blue">p</span> element, have the related font-size already applied to them, as well as a line-height of 1.5.</p>
-      <div class="container">
-        <div class="small-12 large-6">
+      <div class="grid">
+        <div class="unit-12-sm unit-6-lg">
           <h1>Lorem.</h1>
           <h2>Lorem.</h2>
           <h3>Lorem.</h3>
@@ -278,10 +278,10 @@
           <h5>Lorem.</h5>
           <h6>Lorem.</h6>
         </div>
-        <div class="small-12 large-6">
+        <div class="unit-12-sm unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;h1&gt;</span>Lorem.<span class="text-blue">&lt;/h1&gt;</span>
               </li>
@@ -308,9 +308,9 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./reset.html" class="button p theme-dark mgn-0">previous</a>
-      <a href="../utilities/zeroing.html" class="button p theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./reset.html" class="button p dark m-0">previous</a>
+      <a href="../utilities/zeroing.html" class="button p dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

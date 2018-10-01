@@ -1,130 +1,60 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
-$table-caption-padding: 0.5em 0em;
-$table-td-th-padding: 0.75em;
-$table-slim-padding: 0.375em;
-$table-border-color: $light-gray;
-$table-stripe-background-color: $table-striped;
-$table-row-hover-color: $medium-white;
+$table-item-padding: 0.75em;
+$table-tight-padding: 0.5em;
+$table-tighter-padding: 0.25em;
+$table-border-color: $G-border-color;
+$table-row-stripe-color: $alpha-gray;
+$table-row-hover-color: $alpha-dark-gray;
 
 table.table {
   font-size: 1.6rem;
   width: 100%;
+  text-align: left;
 
-  caption {
-    padding: $table-caption-padding;
+  th, td {
+    padding: $table-item-padding;
   }
 
   th {
     font-weight: bold;
-    text-align: left;
   }
 
-  td, th {
-    padding: $table-td-th-padding;
-    vertical-align: middle;
+  &.tight th, &.tight td {
+    padding: $table-tight-padding;
   }
 
-  &.slim th, &.slim td {
-    padding: $table-slim-padding;
+  &.tighter th, &.tighter td {
+    padding: $table-tighter-padding;
   }
 
-  &.border-all th, &.border-all td {
+  &.border-all th, &.border-all td,
+  .border-all th, .border-all td {
     border: 0.1rem solid $table-border-color;
   }
 
-  thead.striped-odd tr:nth-child(odd), 
-  thead.striped-even tr:nth-child(even),
-  tbody.striped-odd tr:nth-child(odd),
-  tbody.striped-even tr:nth-child(even), 
-  tfoot.striped-odd tr:nth-child(odd),
-  tfoot.striped-even tr:nth-child(even)  {
-    background-color: $table-stripe-background-color;
-  }
-
-  thead.border-rows tr, tbody.border-rows tr, 
-  tfoot.border-rows tr:not(:last-of-type), 
-  tr.border-row {
+  &.border-bottoms tr, .border-bottoms tr {
     border-bottom: 0.1rem solid $table-border-color;
   }
 
-  thead.row-hover tr:hover, tbody.row-hover tr:hover, 
-  tfoot.row-hover tr:hover,  {
-    background-color: $table-row-hover-color !important;
+  &.striped-odd tr:nth-child(odd), &.striped-even tr:nth-child(even),
+  .striped-odd tr:nth-child(odd), .striped-even tr:nth-child(even) {
+    background-color: $table-row-stripe-color;
   }
 
-  thead.row-hover tr.theme-primary:hover, 
-  tbody.row-hover tr.theme-primary:hover,
-  tfoot.row-hover tr.theme-primary:hover {
-    background-color: $light-blue !important;
+  &.row-hover tr:hover, .row-hover tr:hover {
+    background-color: $table-row-hover-color;
   }
-
-  thead.row-hover tr.theme-info:hover, 
-  tbody.row-hover tr.theme-info:hover,
-  tfoot.row-hover tr.theme-info:hover {
-    background-color: $light-green !important;
-  }
-
-  thead.row-hover tr.theme-caution:hover, 
-  tbody.row-hover tr.theme-caution:hover,
-  tfoot.row-hover tr.theme-caution:hover {
-    background-color: $light-yellow !important;
-  }
-
-  thead.row-hover tr.theme-danger:hover, 
-  tbody.row-hover tr.theme-danger:hover,
-  tfoot.row-hover tr.theme-danger:hover {
-    background-color: $light-red !important;
-  }
-
-  thead.row-hover tr.theme-dark:hover, 
-  tbody.row-hover tr.theme-dark:hover,
-  tfoot.row-hover tr.theme-dark:hover {
-    background-color: $light-black !important;
-  }
-
-  th a.table-a, td a.table-a {
-    color: inherit;
-    cursor: pointer;
-    text-decoration: underline;
-
-    &:hover, &:focus {
-      color: $link-unvisited;
-    }
-  }
-
-  tr {
-    color: $black;
-    background-color: $white;
-  }
-
-  tr.theme-primary {
-    color: $white-blue;
-    background-color: $medium-blue !important;
-  }
-
-  tr.theme-info {
-    color: $white-green;
-    background-color: $medium-green !important;
-  }
-
-  tr.theme-caution {
-    color: $dark-yellow;
-    background-color: $medium-yellow !important;
-  }
-
-  tr.theme-danger {
-    color: $white-red;
-    background-color: $medium-red !important;
-  }
-
-  tr.theme-dark {
-    color: $white;
-    background-color: $medium-black !important;
-
-    a.table-a:hover, a.table-a:focus {
-      color: $dark-white;
-    }
-  }
-
 }
+
+
+
+
+
+
+
+
+
+
+

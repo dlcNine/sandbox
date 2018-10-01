@@ -1,8 +1,5 @@
-// 425px
-$breakpoint-small: 26.5625rem;
-// 426px
-$breakpoint-medium-lower: 26.625rem;
-// 768px
-$breakpoint-medium-upper: 48rem;
-// 769px
-$breakpoint-large: 48.0625rem;
+$sm-lower: 26.5625rem; // 425px
+$sm-upper: 48rem; // 768px
+$md-lower: 48.0625rem; // 769px
+$md-upper: 64rem; // 1024px
+$lg-and-up: 64.0625rem; // 1025px

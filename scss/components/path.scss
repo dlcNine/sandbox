@@ -1,37 +1,37 @@
-@import "../base/colors.scss";
+// @import "../base/colors.scss";
 
-$path-color: $link-unvisited;
-$path-padding: 0em 0.625em 0em 0em;
-$path-separator-padding: 0em 0.125em;
-$path-separator-color: $light-black;
-$path-step-margin-bottom: 0.6rem;
+// $path-color: $link-unvisited;
+// $path-padding: 0em 0.625em 0em 0em;
+// $path-separator-padding: 0em 0.125em;
+// $path-separator-color: $light-black;
+// $path-step-margin-bottom: 0.6rem;
 
-ul.path {
-  font-size: 1.6rem;
-  padding: $path-padding;
+// ul.path {
+//   font-size: 1.6rem;
+//   padding: $path-padding;
 
-  li.step {
-    display: inline-block;
-    color: $path-color;
-    margin-bottom: $path-step-margin-bottom;
+//   li.step {
+//     display: inline-block;
+//     color: $path-color;
+//     margin-bottom: $path-step-margin-bottom;
 
-    &:not(:last-child)::after {
-      content: " / ";
-      padding: $path-separator-padding;
-      color: $path-separator-color;
-    }
+//     &:not(:last-child)::after {
+//       content: " / ";
+//       padding: $path-separator-padding;
+//       color: $path-separator-color;
+//     }
 
-    &:last-child {
-      color: $path-separator-color;
-    }
+//     &:last-child {
+//       color: $path-separator-color;
+//     }
 
-    a.path-a {
-      color: inherit;
-      text-decoration: none;
+//     a.path-a {
+//       color: inherit;
+//       text-decoration: none;
 
-      &:hover, &:focus {
-        text-decoration: underline;
-      }
-    }
-  }
-}
+//       &:hover, &:focus {
+//         text-decoration: underline;
+//       }
+//     }
+//   }
+// }

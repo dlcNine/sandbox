@@ -15,51 +15,51 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Flexbox</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Flexbox</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-caution">utilities</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp caution">utilities</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="small-12 medium-6 large-4">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background text-indigo">.flex</span>
@@ -69,7 +69,7 @@
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-6 large-4">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background text-indigo">.flex-start</span>
@@ -91,7 +91,7 @@
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-6 large-4">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background text-indigo">.flex-cross-start</span>
@@ -113,21 +113,21 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
-      <p class="mgn-b-1">Sandbox offers a selection of Flexbox functionality as utility classes. For an in depth look at what Flexbox is about, check out the article: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="a">A Complete Guide to Flexbox</a>.</p>
+      <p class="mb-1">Sandbox offers a selection of Flexbox functionality as utility classes. For an in depth look at what Flexbox is about, check out the article: <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="a">A Complete Guide to Flexbox</a>.</p>
       <p>The gist of the article is that Flexbox has settings for two types of elements, a flex container, and flex items (child elements of a flex container). Sandbox provides utility classes for the flex container only, but if you wanted to, you could expand with your own utility classes.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Usage</h2>
-      <p class="mgn-b-1">Use either the <span class="snippet p-alt text-indigo">.flex</span> or <span class="snippet p-alt text-indigo">.flex-row-wrap</span> classes to specify a flex container on a block level element.</p>
-      <p class="mgn-b-1">The <span class="snippet p-alt text-indigo">.flex-</span> classes are used to indicate what to do with nested items along the main axis.</p>
-      <p class="mgn-b-1">The <span class="snippet p-alt text-indigo">.flex-cross-</span> classes are used to indicate what to do with the nested items along the cross axis (the axis forming a 90 degree angle with the main axis).</p>
-      <div class="container">
-        <div class="default-12 large-6">
+      <p class="mb-1">Use either the <span class="snippet p-alt text-indigo">.flex</span> or <span class="snippet p-alt text-indigo">.flex-row-wrap</span> classes to specify a flex container on a block level element.</p>
+      <p class="mb-1">The <span class="snippet p-alt text-indigo">.flex-</span> classes are used to indicate what to do with nested items along the main axis.</p>
+      <p class="mb-1">The <span class="snippet p-alt text-indigo">.flex-cross-</span> classes are used to indicate what to do with the nested items along the cross axis (the axis forming a 90 degree angle with the main axis).</p>
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"flex flex-around flex-cross-center"</span><span class="text-blue">&gt;</span>
               </li>
@@ -148,18 +148,18 @@
             </ol>
           </div>
         </div>
-        <div class="default-12 large-6">
-          <div class="flex flex-around flex-cross-center demo-lblue pad-1 demo-rds-1">
+        <div class="unit-12 unit-6-lg">
+          <div class="flex flex-around flex-cross-center demo-lblue p-1 r">
             <h5 class="text-white">text</h5>
             <button class="button h3">button</button>
-            <div class="demo-box demo-rds-1 demo-mred"></div>
+            <div class="demo-box r demo-mred"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./display.html" class="button p theme-dark mgn-0">previous</a>
-      <a href="./float.html" class="button p theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./display.html" class="button p dark m-0">previous</a>
+      <a href="./float.html" class="button p dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

@@ -1,24 +1,26 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
-$card-border-color: $light-gray;
-$card-radius: 0.5rem;
-$card-shadow-color: $dark-white-thin;
-$card-background-color: $white;
-$card-item-padding: 2rem;
-$card-header-radius: 0.4rem 0.4rem 0rem 0rem;
-$card-content-radius: 0.4rem;
-$card-footer-radius: 0rem 0rem 0.4rem 0.4rem;
+$card-border-color: $G-border-color;
+$card-radius: 0.4rem;
+$card-part-padding: 1.6rem;
+$card-part-radius: 0.3rem;
 
 div.card {
+  font-size: 1.6rem;
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
-  box-shadow: 0.1rem 0.1rem 0.2rem 0rem $card-shadow-color;
-  background-color: $card-background-color;
 
-  div.card-header, div.card-content, div.card-footer {
-    padding: $card-item-padding;
+  &.r-0 {
+    div.card-header, div.card-body, div.card-footer {
+      border-radius: 0;
+    }
+  }
 
-    &.has-hero-image {
+  div.card-header, div.card-body, div.card-footer {
+    padding: $card-part-padding;
+
+    &.hero {
       padding: 0;
 
       img {
@@ -30,21 +32,14 @@ div.card {
   }
 
   div.card-header {
-    border-radius: $card-header-radius;
-    border-bottom: 0.1rem solid $card-border-color;
+    border-radius: $card-part-radius $card-part-radius 0rem 0rem;
   }
 
-  div.card-content {
-    border-bottom: 0.1rem solid $card-border-color;
-
-    &:only-child {
-      border-bottom: none;
-      border-radius: $card-content-radius;
-
-    }
+  div.card-body:only-child {
+    border-radius: $card-part-radius;
   }
 
   div.card-footer {
-    border-radius: $card-footer-radius;
+    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
   }
 }

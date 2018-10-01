@@ -1,26 +1,26 @@
-$popmark-height-width: 0.8rem;
-// $popmark-extra-offset: 2rem;
+$arrow-height-width: 0.8rem;
+// $arrow-extra-offset: 2rem;
 
-span.popmark {
+span.arrow {
   display: inline-block;
   position: absolute;
   left: 50%;
   top: calc(100% + 0.1rem);
   transform: rotate(135deg) translate(-50%, -50%);
   transform-origin: 0% 0%;
-  width: $popmark-height-width;
-  height: $popmark-height-width;
+  width: $arrow-height-width;
+  height: $arrow-height-width;
   border-top: 0.1rem solid;
   border-right: 0.1rem solid;
   border-color: inherit;
   background-color: inherit;
 
   // &.bottom-left {
-  //   left: calc(0% + #{$popmark-extra-offset});
+  //   left: calc(0% + #{$arrow-extra-offset});
   // }
 
   // &.bottom-right {
-  //   left: calc(100% - #{$popmark-extra-offset});
+  //   left: calc(100% - #{$arrow-extra-offset});
   // }
 
   &.on-top {
@@ -30,13 +30,13 @@ span.popmark {
 
   // &.top-left {
   //   top: calc(0% - 0.1rem);
-  //   left: $popmark-extra-offset;
+  //   left: $arrow-extra-offset;
   //   transform: rotate(-45deg) translate(-50%, -50%);
   // }
 
   // &.top-right {
   //   top: calc(0% - 0.1rem);
-  //   left: calc(100% - #{$popmark-extra-offset});
+  //   left: calc(100% - #{$arrow-extra-offset});
   //   transform: rotate(-45deg) translate(-50%, -50%);
   // }
 
@@ -48,13 +48,13 @@ span.popmark {
 
   // &.left-top {
   //   left: calc(0% - 0.1rem);
-  //   top: calc(0% + #{$popmark-extra-offset});
+  //   top: calc(0% + #{$arrow-extra-offset});
   //   transform: rotate(-135deg) translate(-50%, -50%);
   // }
 
   // &.left-bottom {
   //   left: calc(0% - 0.1rem);
-  //   top: calc(100% - #{$popmark-extra-offset});
+  //   top: calc(100% - #{$arrow-extra-offset});
   //   transform: rotate(-135deg) translate(-50%, -50%);
   // }
 
@@ -65,13 +65,13 @@ span.popmark {
   }
 
   // &.right-top {
-  //   top: calc(0% + #{$popmark-extra-offset});
+  //   top: calc(0% + #{$arrow-extra-offset});
   //   left: calc(100% + 0.1rem);
   //   transform: rotate(45deg) translate(-50%, -50%);
   // }
 
   // &.right-bottom {
-  //   top: calc(100% - #{$popmark-extra-offset});
+  //   top: calc(100% - #{$arrow-extra-offset});
   //   left: calc(100% + 0.1rem);
   //   transform: rotate(45deg) translate(-50%, -50%);
   // }

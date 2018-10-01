@@ -1,0 +1,32 @@
+@import "../base/colors.scss";
+
+$tag-font-size: 0.75em;
+$tag-padding: 0.25em 0.5em;
+$tag-border-radius: 0.25em;
+
+span.tag {
+  font-size: $tag-font-size;
+  display: inline-block;
+  padding: $tag-padding;
+  line-height: 1;
+  border-radius: $tag-border-radius;
+  vertical-align: text-bottom;
+
+  a.tag-a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button.close {
+    font-size: $tag-font-size;
+  }
+}
+
+
+
+
+

@@ -1,52 +1,69 @@
-$ul-ol-line-height: 1.5;
 $ul-ol-indentation: 0.875em;
-$ul-ol-margin-bottom: 0.6rem;
+$ul-ol-li-padding: 0.25em;
 
 ul.ul, ol.ol {
   font-size: 1.6rem;
-  line-height: $ul-ol-line-height;
-  margin-bottom: $ul-ol-margin-bottom;
+  list-style-position: inside;
+
+  &.p-0 li {
+      padding: 0rem;
+  }
+
+  li {
+    padding: $ul-ol-li-padding;
+  }
+  
 }
 
 ul.ul {
   &.square {
-    list-style: square inside;
+    list-style-type: square;
   }
 
-  &.circle-solid {
-    list-style: disc inside;
+  &.disc {
+    list-style-type: disc;
   }
 
-  &.circle-hollow {
-    list-style: circle inside;
+  &.circle {
+    list-style-type: circle;
   }
 }
 
 ol.ol {
-  &.numbers {
-    list-style: decimal inside;
+  &.decimal {
+    list-style-type: decimal;
   }
 
-  &.alpha-lower {
-    list-style: lower-alpha inside;
+  &.lower-alpha {
+    list-style-type: lower-alpha;
   }
 
-  &.alpha-upper {
-    list-style: upper-alpha inside;
+  &.upper-alpha {
+    list-style-type: upper-alpha;
   }
 
-  &.roman-lower {
-    list-style: lower-roman inside;
+  &.lower-roman {
+    list-style-type: lower-roman;
   }
 
-  &.roman-upper {
-    list-style: upper-roman inside;
+  &.upper-roman {
+    list-style-type: upper-roman;
   }
 }
 
 ul.ul ul.ul, ul.ul ol.ol, 
 ol.ol ol.ol, ol.ol ul.ul {
-  font-size: inherit;
   margin-left: $ul-ol-indentation;
-  margin-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+

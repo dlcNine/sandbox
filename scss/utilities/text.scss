@@ -12,16 +12,24 @@
   text-align: right !important;
 }
 
-.text-top {
+.va-top {
   vertical-align: top !important;
 }
 
-.text-y-center {
+.va-middle {
   vertical-align: middle !important;
 }
 
-.text-bottom {
+.va-bottom {
   vertical-align: bottom !important;
+}
+
+.va-text-top {
+  vertical-align: text-top !important;
+}
+
+.va-text-bottom {
+  vertical-align: text-bottom !important;
 }
 
 /* ====================================================== */
@@ -40,39 +48,35 @@
 
 /* ====================================================== */
 
-.text-thin {
-  font-weight: lighter;
+.fw-lighter {
+  font-weight: lighter !important;
 }
 
-.text-normal {
-  font-weight: normal;
+.fw-normal {
+  font-weight: normal !important;
 }
 
-.text-bold {
-  font-weight: bold;
+.fw-bold {
+  font-weight: bold !important;
 }
 
-.text-italic {
-  font-style: italic;
+.fs-italic {
+  font-style: italic !important;
 }
 
 .text-line-through {
-  text-decoration: line-through;
+  text-decoration: line-through !important;
 }
 
 .text-underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
+}
+
+.text-overline {
+  text-decoration: overline !important;
 }
 
 /* ====================================================== */
-
-.text-nowrap {
-  white-space: nowrap;
-}
-
-.text-break-all {
-  word-break: break-all;
-}
 
 .lh-1 {
   line-height: 1 !important;
@@ -80,42 +84,23 @@
 
 /* ====================================================== */
 
-.text-red {
-  color: $medium-red !important;
-}
-
-.text-orange {
-  color: $orange !important;
-}
-
-.text-yellow {
-  color: $yellow !important;
-}
-
-.text-green {
-  color: $medium-green !important;
-}
-
-.text-blue {
-  color: $medium-blue !important;
-}
-
-.text-indigo {
-  color: $indigo !important;
-}
-
-.text-violet {
-  color: $violet !important;
-}
-
 .text-black {
-  color: $black !important;
+  color: $alpha-black !important;
 }
 
-.text-gray {
-  color: $dark-gray !important;
+.text-muted {
+  color: $alpha-light-black !important;
+}
+
+.text-white-muted {
+  color: $alpha-dark-white !important;
 }
 
 .text-white {
-  color: $white !important;
+  color: $alpha-white !important;
 }
+
+
+
+
+

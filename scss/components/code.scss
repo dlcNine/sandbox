@@ -3,7 +3,6 @@
 $code-background-color: $white-gray;
 $code-padding: 1.75em;
 $code-border: 0.1rem solid $medium-white;
-$code-radius: 0.25em;
 $code-line-color: $medium-black;
 $code-line-margin: 0.375em 0.375em 0.375em 0.875em;
 $code-line-height: 1.2;
@@ -20,7 +19,6 @@ pre.code, ol.code {
   background-color: $code-background-color;
   padding: $code-padding;
   border: $code-border;
-  border-radius: $code-radius;
 }
 
 pre.code {

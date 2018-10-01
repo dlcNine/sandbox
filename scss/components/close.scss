@@ -1,17 +1,18 @@
 @import "../base/colors.scss";
 
-$close-height-width: 1em;
+$close-size: 1em;
 $close-radius: 0.125em;
-$close-xmark-height: 0.5em;
+$close-xmark-size: 0.5em;
 $close-xmark-border-width: 0.0625em;
 
 button.close {
   font-size: 1.6rem;
-  height: $close-height-width;
-  width: $close-height-width;
+  height: $close-size;
+  width: $close-size;
   border-radius: $close-radius;
   position: relative;
   background-color: $medium-white;
+  transition: all 125ms;
 
   &:hover, &:focus {
     background-color: $light-white;
@@ -34,7 +35,7 @@ button.close {
   &::before, &::after {
     content: '';
     border-right: $close-xmark-border-width solid $dark-gray;
-    height: $close-xmark-height;
+    height: $close-xmark-size;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +50,7 @@ button.close {
     transform: rotate(135deg) translate(-50%, -50%);
   }
 
-  &.theme-dark {
+  &.dark {
     background-color: $light-black;
 
     &::before, &::after {
@@ -65,7 +66,7 @@ button.close {
       }
     }
 
-    &:focus:not(:active){
+    &:focus {
       background-color: $medium-black;
       outline: none;
     }

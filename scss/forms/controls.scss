@@ -1,27 +1,36 @@
 @import "../base/colors.scss";
+@import "../base/global-variables.scss";
 
-$control-padding: 0.375em 0.625em;
-$control-margin: 0rem 0rem 0.6rem 0rem;
-$control-radius: 0.1875em;
-$control-border-color: $light-gray;
-$control-hover-border-color: $medium-gray;
+$control-color: $alpha-black;
+$control-border-color: $G-border-color;
+$control-border-width: 0.1rem;
+$control-hover-border-color: $dark-white;
 $control-background-color: $white;
-$control-focus-border-color: $medium-blue;
-$control-focus-shadow-color: $light-blue-thin;
-$control-focus-shadow-spread: 0.125em;
-$select-arrow-color: $light-black;
-$textarea-min-height: 10rem;
-$textarea-max-height: 40rem;
+$control-box-shadow-color: $alpha-light-blue;
+$control-border-radius: 0.125em;
+$control-spacing: 1rem;
 
-input.textfield, textarea.textarea {
+$control-textbox-height: 2.25em;
+
+$control-textarea-min-height: 10rem;
+$control-textarea-max-height: 40rem;
+$control-textarea-line-height: 1.5;
+
+$control-switch-track-height: 0.5em;
+$control-switch-track-width: 2.2em;
+$control-switch-box-size: 1.2em;
+
+
+input.textbox, select.textbox, textarea.textbox {
   font-size: 1.6rem;
   display: block;
   width: 100%;
-  padding: $control-padding;
-  border: 0.1rem solid $control-border-color;
-  border-radius: $control-radius;
-  margin: $control-margin;
+  color: $control-color;
   background-color: $control-background-color;
+  border: $control-border-width solid $control-border-color;
+  border-radius: $control-border-radius;
+  transition: all 125ms;
+  z-index: 5;
 
   &:hover {
     border-color: $control-hover-border-color;
@@ -29,94 +38,100 @@ input.textfield, textarea.textarea {
 
   &:focus {
     outline: none;
-    border-color: $control-focus-border-color;
-    box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
+    border-color: $control-hover-border-color;
+    box-shadow: 0 0 0 $control-border-radius $control-box-shadow-color;
   }
+
+  &[readonly], &[disabled] {
+    background-color: $white-gray;
+    border-color: $control-hover-border-color;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  &[disabled] {
+    opacity: $G-disabled-opacity;
+  }
+
 }
 
-/* ==================================== */
-
-div.select {
-  font-size: 1.6rem;
-  position: relative;
-  margin: $control-margin;
-
-  &:not(.multiple)::before {
-    content: '';
-    position: absolute;
-    height: 1.5em;
-    width: 1.5em;
-    right: 0.1875em;
-    top: 50%;
-    transform: translate(0%, -50%);
-    border-radius: $control-radius;
-    background-color: $control-background-color;
-    pointer-events: none;
-  }
-
-  &:not(.multiple)::after {
-    content: '';
-    position: absolute;
-    width: 0.5em;
-    height: 0.5em;
-    right: 0.75em;
-    top: 50%;
-    border-radius: 0.0625em;
-    transform-origin: 25% 25%;
-    transform: translate(0%, -50%) rotate(-45deg);
-    background: linear-gradient(45deg, $select-arrow-color 50%, transparent 50%);
-    pointer-events: none;
-  }
-
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    font-size: inherit;
-    line-height: 1.175;
-    display: block;
-    padding: $control-padding;
-    width: 100%;
-    background: $control-background-color;
-    border: 0.1rem solid $control-border-color;
-    border-radius: $control-radius;
-
-    &:hover {
-      border-color: $control-hover-border-color;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: $control-focus-border-color;
-      box-shadow: 0em 0em 0em $control-focus-shadow-spread $control-focus-shadow-color;
-    }
-  }
+input.textbox, select.textbox {
+  height: $control-textbox-height;
+  padding: 0rem $control-spacing;
 }
 
-/* ==================================== */
+select.textbox[multiple] {
+  height: auto;
+}
 
-textarea.textarea {
+textarea.textbox {
   min-width: 100%;
   max-width: 100%;
-  min-height: $textarea-min-height;
-  max-height: $textarea-max-height;
-  line-height: 1.5;
+  min-height: $control-textarea-min-height;
+  max-height: $control-textarea-max-height;
+  padding: $control-spacing;
+  line-height: $control-textarea-line-height;
 
   &.no-resize {
     resize: none;
   }
 }
 
-/* ==================================== */
-
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
-  padding: $control-padding;
-  padding-left: 0;
-  margin: $control-margin;
+  height: $control-textbox-height;
+  line-height: $control-textbox-height;
 
   input[type="checkbox"], input[type="radio"] {
-    margin-right: 0.125em;
-    border-radius: 0.1875em;
+    height: 100%;
+    margin-right: 0.5 * $control-spacing;
   }
+
+  span.text {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+label.checkbox.switch, label.radio.switch {
+  input[type="checkbox"], input[type="radio"] {
+    display: none;
+  }
+
+  input[type="checkbox"] + i, input[type="radio"] + i {
+    display: inline-block;
+    height: $control-switch-track-height;
+    width: $control-switch-track-width;
+    margin-right: $control-spacing;
+    background-color: $control-hover-border-color;
+    border-radius: $control-border-radius;
+    position: relative;
+    transition: all 200ms;
+
+    &::before {
+      content: '';
+      height: $control-switch-box-size;
+      width: $control-switch-box-size;
+      background-color: $control-background-color;
+      border: $control-border-width solid $control-border-color;
+      border-radius: inherit;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(0%, -50%);
+      transition: inherit;
+    }
+
+  }
+
+  input[type="checkbox"]:checked + i, input[type="radio"]:checked + i {
+    background-color: $light-blue;
+
+    &::before {
+      left: 100%;
+      transform: translate(-98%, -50%);
+    }
+  }
+
 }
