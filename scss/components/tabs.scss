@@ -19,16 +19,16 @@ ul.tabs:not(.vertical) {
     li.tab {
         float: left;
 
+        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+            color: $alpha-black;
+        }
+
         a.tab-a {
             display: block;
             padding: $tab-a-y-padding $tab-a-x-padding;
             color: $tab-text-color;
             text-decoration: none;
             border: 0.1rem solid transparent;
-
-            &:hover, &:focus, &.active {
-                color: $alpha-black;
-            }
 
             &:focus {
                 outline: none;
@@ -37,14 +37,14 @@ ul.tabs:not(.vertical) {
         }
     }
 
-    &.underline li.tab a.tab-a {
-        &:hover, &:focus, &.active {
+    &.underline li.tab {
+        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
             text-decoration: underline;
         }
     }
 
-    &.border-bottom li.tab a.tab-a {
-        &:hover, &:focus, &.active {
+    &.border-bottom li.tab {
+        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
             border-bottom: 0.1rem solid $tab-a-hover-background-color;
         }
     }
@@ -58,12 +58,14 @@ ul.tabs:not(.vertical) {
             border-radius: $G-radius-round;
         }
 
-        li.tab a.tab-a {
-            border-radius: $tab-a-border-radius;
-
-            &:hover, &:focus, &.active {
+        li.tab {
+            &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
                 background-color: $tab-a-hover-background-color;
                 color: $alpha-white;
+            }
+
+            a.tab-a {
+                border-radius: $tab-a-border-radius;
             }
         }
     }
@@ -78,6 +80,11 @@ ul.tabs:not(.vertical) {
 
             margin-bottom: -0.1rem;
 
+            &.active a.tab-a {
+                border: 0.1rem solid $G-border-active-color;
+                border-bottom: 0.1rem solid $white;
+            }
+
             a.tab-a {
                 border-radius: $tab-a-border-radius;
                 border-radius: $tab-a-border-radius $tab-a-border-radius 0em 0em;
@@ -86,16 +93,12 @@ ul.tabs:not(.vertical) {
                     border: 0.1rem solid $G-border-color;
                     border-bottom: 0.1rem solid $white;
                 }
-
-                 &.active {
-                    border: 0.1rem solid $G-border-active-color;
-                    border-bottom: 0.1rem solid $white;
-                }
             }
         }
     }
 
-    
+
+
 }
 
 
