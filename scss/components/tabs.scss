@@ -12,6 +12,10 @@ $tabs-vertical-a-padding: 0.25em;
 $tabs-vertical-nested-margin-left: 1em;
 
 ul.tabs:not(.vertical), ul.tabs.vertical {
+    li.tab.reveal-wrapper, li.tab-item.reveal-wrapper {
+        display: block;
+    }
+
     li.tab a.tab-a {
         display: block;
         color: $tab-text-color;
@@ -151,6 +155,10 @@ ul.tabs.vertical {
     }
 
     &.solid li.tab {
+        a.tab-a {
+            border-radius: $tab-a-border-radius;
+        }
+        
         &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
             background-color: $tab-a-hover-background-color;
             color: $alpha-white;
