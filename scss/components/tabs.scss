@@ -6,8 +6,10 @@ $tab-text-color: $alpha-light-black;
 $tab-a-x-padding: 1em;
 $tab-a-y-padding: 0.5em;
 $tab-a-border-radius: 0.25em;
-
 $tab-a-hover-background-color: $light-blue;
+
+$tabs-vertical-a-padding: 0.25em;
+$tabs-vertical-nested-margin-left: 1em;
 
 ul.tabs:not(.vertical), ul.tabs.vertical {
     li.tab a.tab-a {
@@ -18,12 +20,6 @@ ul.tabs:not(.vertical), ul.tabs.vertical {
 
         &:focus {
             outline: none;
-        }
-    }
-
-    &.underline li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
-            text-decoration: underline;
         }
     }
 }
@@ -55,11 +51,11 @@ ul.tabs:not(.vertical) {
         padding: $tab-a-y-padding $tab-a-x-padding;
     }
 
-    // &.underline li.tab {
-    //     &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
-    //         text-decoration: underline;
-    //     }
-    // }
+    &.underline li.tab {
+        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+            text-decoration: underline;
+        }
+    }
 
     &.border-bottom li.tab {
         &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
@@ -116,13 +112,15 @@ ul.tabs:not(.vertical) {
     }
 }
 
-$tabs-vertical-a-padding: 0.25em;
-
 ul.tabs.vertical {
     font-size: 1.6rem;
 
+    ul.tabs.vertical {
+        font-size: inherit;
+    }
+
     li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
             color: $alpha-black;
         }
 
@@ -137,49 +135,28 @@ ul.tabs.vertical {
     }
 
     &.indent-nested li.tab ul.tabs.vertical {
-        margin-left: 1em;
+        margin-left: $tabs-vertical-nested-margin-left;
     }
 
-    // &.underline li.tab {
-    //     &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
-    //         text-decoration: underline;
-    //     }
-    // }
+    &.underline li.tab {
+        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+            text-decoration: underline;
+        }
+    }
 
     &.border-left li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
             border-left: 0.1rem solid $tab-a-hover-background-color;
         }
     }
 
-    &.border-right li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
-            border-right: 0.1rem solid $tab-a-hover-background-color;
+    &.solid li.tab {
+        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+            background-color: $tab-a-hover-background-color;
+            color: $alpha-white;
         }
     }
 
-
-    // this 
-    &.solid {
-        &.r-0 li.tab a.tab-a {
-            border-radius: 0;
-        }
-
-        &.r-round li.tab a.tab-a {
-            border-radius: $G-radius-round;
-        }
-
-        li.tab {
-            &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
-                background-color: $tab-a-hover-background-color;
-                color: $alpha-white;
-            }
-
-            a.tab-a {
-                border-radius: $tab-a-border-radius;
-            }
-        }
-    }
 }
 
 
