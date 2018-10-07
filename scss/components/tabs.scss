@@ -16,6 +16,10 @@ ul.tabs:not(.vertical) {
         @include clearfix();
     }
 
+    &.flex::after {
+        display: none;
+    }
+
     li.tab {
         float: left;
 
@@ -35,6 +39,10 @@ ul.tabs:not(.vertical) {
             }
 
         }
+    }
+
+    li.tab-item {
+        padding: $tab-a-y-padding $tab-a-x-padding;
     }
 
     &.underline li.tab {
