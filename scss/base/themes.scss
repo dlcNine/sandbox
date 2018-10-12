@@ -10,7 +10,7 @@
 }
 
 .primary {
-  @include border-background-color($medium-blue);
+  @include border-background-color($medium-primary);
 }
 
 .secondary {
@@ -18,15 +18,15 @@
 }
 
 .info {
-  @include border-background-color($medium-green);
+  @include border-background-color($medium-info);
 }
 
 .caution {
-  @include border-background-color($medium-yellow);
+  @include border-background-color($medium-caution);
 }
 
 .danger {
-  @include border-background-color($medium-red);
+  @include border-background-color($medium-danger);
 }
 
 .light {

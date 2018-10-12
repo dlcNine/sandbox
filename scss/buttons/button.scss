@@ -26,31 +26,31 @@ a.button, button.button, input.button {
   }
 
   &.primary {
-    @include button-default($light-blue, $dark-blue, $alpha-light-blue);
+    @include button-default($light-primary, $dark-primary, $alpha-light-primary);
   }
 
   &.secondary {
-    @include button-default($light-gray, $dark-gray, $alpha-light-blue);
+    @include button-default($light-gray, $dark-gray, $alpha-light-primary);
   }
 
   &.info {
-   @include button-default($light-green, $dark-green, $alpha-light-green);
+   @include button-default($light-info, $dark-info, $alpha-light-info);
   }
 
   &.caution {
-    @include button-default($light-yellow, $dark-yellow, $alpha-light-yellow);
+    @include button-default($light-caution, $dark-caution, $alpha-light-caution);
   }
 
   &.danger {
-    @include button-default($light-red, $dark-red, $alpha-light-red);
+    @include button-default($light-danger, $dark-danger, $alpha-light-danger);
   }
 
   &.light {
-    @include button-default($light-white, $dark-white, $alpha-light-blue);
+    @include button-default($light-white, $dark-white, $alpha-light-primary);
   }
 
   &.dark {
-    @include button-default($light-black, $black, $alpha-light-blue);
+    @include button-default($light-black, $black, $alpha-light-primary);
   }
 }
 
