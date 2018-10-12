@@ -4,7 +4,7 @@
 
 $button-padding: 0.375em 0.75em;
 $button-border-width: 0.0625em;
-$button-border-radius: $G-button-border-radius;
+$button-border-radius: $BUTTON_BORDER_RADIUS;
 
 a.button, button.button, input.button {
   font-size: 1.6rem;
@@ -61,7 +61,7 @@ a.button:link {
 }
 
 .button[disabled] {
-  opacity: $G-disabled-opacity;
+  opacity: $DISABLED_OPACITY;
   pointer-events: none;
 }
 

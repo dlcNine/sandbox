@@ -73,7 +73,7 @@ ul.tabs:not(.vertical) {
         }
 
         &.r-round li.tab a.tab-a {
-            border-radius: $G-radius-round;
+            border-radius: $RADIUS_ROUND;
         }
 
         li.tab {
@@ -89,7 +89,7 @@ ul.tabs:not(.vertical) {
     }
 
     &.borders {
-        border-bottom: 0.1rem solid $G-border-color;
+        border-bottom: 0.1rem solid $BORDER_COLOR;
 
         li.tab {
             &:not(:last-child) {
@@ -99,7 +99,7 @@ ul.tabs:not(.vertical) {
             margin-bottom: -0.1rem;
 
             &.active a.tab-a {
-                border: 0.1rem solid $G-border-active-color;
+                border: 0.1rem solid $BORDER_ACTIVE_COLOR;
                 border-bottom: 0.1rem solid $white;
             }
 
@@ -108,7 +108,7 @@ ul.tabs:not(.vertical) {
                 border-radius: $tab-a-border-radius $tab-a-border-radius 0em 0em;
 
                 &:hover, &:focus {
-                    border: 0.1rem solid $G-border-color;
+                    border: 0.1rem solid $BORDER_COLOR;
                     border-bottom: 0.1rem solid $white;
                 }
             }

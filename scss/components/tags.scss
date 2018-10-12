@@ -2,7 +2,7 @@
 @import "../base/global-variables";
 
 $tags-font-size: 0.75em;
-$tags-tag-round-radius: $G-radius-round;
+$tags-tag-round-radius: $RADIUS_ROUND;
 
 span.tags {
   font-size: $tags-font-size;

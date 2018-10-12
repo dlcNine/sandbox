@@ -2,7 +2,7 @@
 @import "../base/global-variables.scss";
 @import "../base/mixins.scss";
 
-$unit-padding: $G-grid-spacing;
+$unit-padding: $GRID_SPACING;
 
 div[class*="unit-"] {
   float: left;
