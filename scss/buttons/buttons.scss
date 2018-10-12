@@ -2,7 +2,7 @@
 @import "../base/mixins.scss";
 
 $buttons-button-border-width: 0.0625em;
-$buttons-button-round-radius: $G-radius-round;
+$buttons-button-round-radius: $RADIUS_ROUND;
 
 div.buttons {
   font-size: 1.6rem;
@@ -36,7 +36,7 @@ div.buttons {
   }
 
   & > .reveal-wrapper {
-    border-radius: $G-button-border-radius;
+    border-radius: $BUTTON_BORDER_RADIUS;
   }
 
   & > .button, & > .reveal-wrapper, & > .reveal-wrapper > .button {

@@ -5,7 +5,7 @@
   background-color: transparent !important;
 
   &.primary {
-    @include button-outlined($medium-blue, $light-blue, $dark-blue);
+    @include button-outlined($medium-primary, $light-primary, $dark-primary);
   }
 
   &.secondary {
@@ -13,15 +13,15 @@
   }
 
   &.info {
-    @include button-outlined($medium-green, $light-green, $dark-green);
+    @include button-outlined($medium-info, $light-info, $dark-info);
   }
 
   &.caution {
-    @include button-outlined($medium-yellow, $light-yellow, $dark-yellow);
+    @include button-outlined($medium-caution, $light-caution, $dark-caution);
   }
 
   &.danger {
-    @include button-outlined($medium-red, $light-red, $dark-red);
+    @include button-outlined($medium-danger, $light-danger, $dark-danger);
   }
 
   &.light {

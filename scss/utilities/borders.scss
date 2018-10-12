@@ -2,9 +2,9 @@
 @import "../base/global-variables.scss";
 
 $borders-width: 0.1rem;
-$borders-color: $G-border-color;
+$borders-color: $BORDER_COLOR;
 $borders-radius: 0.25em;
-$borders-round: $G-radius-round;
+$borders-round: $RADIUS_ROUND;
 
 .b {
   border: $borders-width solid $borders-color !important;

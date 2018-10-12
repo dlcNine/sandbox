@@ -2,11 +2,11 @@
 @import "../base/global-variables.scss";
 
 $control-color: $alpha-black;
-$control-border-color: $G-border-color;
+$control-border-color: $BORDER_COLOR;
 $control-border-width: 0.1rem;
-$control-hover-border-color: $G-border-active-color;
+$control-hover-border-color: $BORDER_ACTIVE_COLOR;
 $control-background-color: $white;
-$control-box-shadow-color: $alpha-light-blue;
+$control-box-shadow-color: $alpha-light-primary;
 $control-border-radius: 0.125em;
 $control-spacing: 1rem;
 
@@ -50,7 +50,7 @@ input.textbox, select.textbox, textarea.textbox {
   }
 
   &[disabled] {
-    opacity: $G-disabled-opacity;
+    opacity: $DISABLED_OPACITY;
   }
 
 }
@@ -126,7 +126,7 @@ label.checkbox.switch, label.radio.switch {
   }
 
   input[type="checkbox"]:checked + i, input[type="radio"]:checked + i {
-    background-color: $light-blue;
+    background-color: $light-primary;
 
     &::before {
       left: 100%;
