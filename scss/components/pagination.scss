@@ -21,7 +21,7 @@ ul.pagination {
         }
 
         &[disabled] a.page-a {
-            opacity: $DISABLED-OPACITY;
+            opacity: $DISABLED_OPACITY;
             pointer-events: none;
         }
 

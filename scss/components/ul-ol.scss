@@ -1,16 +1,21 @@
 $ul-ol-indentation: 0.875em;
 $ul-ol-li-padding: 0.25em;
+$ul-ol-li-padding-tight: 0.125em;
 
 ul.ul, ol.ol {
   font-size: 1.6rem;
   list-style-position: inside;
 
-  &.p-0 li {
-      padding: 0rem;
-  }
-
   li {
     padding: $ul-ol-li-padding;
+  }
+
+  &.tight li {
+    padding: $ul-ol-li-padding-tight;
+  }
+
+  &.p-0 li {
+      padding: 0rem;
   }
   
 }

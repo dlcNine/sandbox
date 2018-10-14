@@ -3,11 +3,12 @@
 
 $popover-padding: 1rem;
 $popover-min-width: 5rem;
+$popover-border-color: $BORDER_COLOR;
 $popover-background-color: $white;
 $popover-border-radius: 0.25em;
 
 .popover {
-    border: 0.1rem solid $BORDER-COLOR;
+    border: 0.1rem solid $popover-border-color;
     background-color: $popover-background-color;
 }
 
