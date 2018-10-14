@@ -92,13 +92,23 @@
   color: $alpha-light-black !important;
 }
 
-.text-white-muted {
-  color: $alpha-dark-white !important;
+.text-gray {
+  color: $alpha-gray;
+}
+
+.text-gray-muted {
+  color: $alpha-light-gray;
 }
 
 .text-white {
   color: $alpha-white !important;
 }
+
+.text-white-muted {
+  color: $alpha-dark-white !important;
+}
+
+
 
 
 

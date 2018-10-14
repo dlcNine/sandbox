@@ -16,7 +16,8 @@ span.tag {
     color: inherit;
     text-decoration: none;
 
-    &:hover {
+    &:hover, &:focus {
+      outline: none;
       text-decoration: underline;
     }
   }

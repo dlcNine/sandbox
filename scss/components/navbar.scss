@@ -5,18 +5,10 @@ $navbar-padding: 1em;
 $navbar-item-padding: 0.5em;
 $navbar-item-border-radius: 0.25em;
 
-div.navbar {
+.navbar {
   font-size: 1.6rem;
   z-index: 25;
   padding: $navbar-padding;
-
-  &::after {
-    @include clearfix();
-  }
-
-  &.flex::after {
-    display: none;
-  }
 
   &.fixed-top {
     position: fixed;
@@ -24,12 +16,8 @@ div.navbar {
     width: 100%;
   }
 
-  div.navbar-item, a.navbar-item, & > .reveal-wrapper {
-    display: block;
-    float: left;
-  }
-
   div.navbar-item, a.navbar-item {
+    display: inline-block;
     padding: $navbar-item-padding;
     border-radius: $navbar-item-border-radius;
 

@@ -19,10 +19,15 @@ $black: rgb(52, 52, 52);
 // alpha colors
 $alpha-black: rgba(0, 0, 0, 0.8);
 $alpha-light-black: rgba(0, 0, 0, 0.3);
+
+$alpha-gray: rgba(144, 144, 144, 0.2);
+$alpha-light-gray: rgba(144, 144, 144, 0.1);
+
+
 $alpha-white: rgba(255, 255, 255, 0.9);
-$alpha-dark-white: rgba(255, 255, 255, 0.5);
-$alpha-gray: rgba(144, 144, 144, 0.1);
-$alpha-dark-gray: rgba(144, 144, 144, 0.2);
+$alpha-dark-white: rgba(255, 255, 255, 0.6);
+
+
 
 // primary
 $white-primary: rgb(244, 250, 255);
