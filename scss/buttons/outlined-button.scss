@@ -3,13 +3,10 @@
 
 .button.outlined {
   background-color: transparent !important;
+  @include button-outlined($dark-gray, $dark-gray, $dark-gray);
 
   &.primary {
     @include button-outlined($medium-primary, $light-primary, $dark-primary);
-  }
-
-  &.secondary {
-    @include button-outlined($dark-gray, $dark-gray, $dark-gray);
   }
 
   &.info {

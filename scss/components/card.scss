@@ -6,6 +6,10 @@ $card-radius: 0.4rem;
 $card-part-padding: 1.6rem;
 $card-part-radius: 0.3rem;
 
+.card {
+  background-color: $white;
+}
+
 div.card {
   font-size: 1.6rem;
   border: 0.1rem solid $card-border-color;

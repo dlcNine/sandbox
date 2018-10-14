@@ -5,7 +5,6 @@
 @import "./base/mixins.scss";
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
-@import "./base/themes.scss";
 
 /* ============ utilities ============ */
 @import "./utilities/zeroing.scss";
@@ -57,6 +56,9 @@
 @import "./components/table.scss";
 @import "./components/trail.scss";
 @import "./components/ul-ol.scss";
+
+/* ============ themes ============ */
+@import "./base/themes.scss";
 
 
 
