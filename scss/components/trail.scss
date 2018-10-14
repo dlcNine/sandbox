@@ -2,6 +2,7 @@
 
 $trail-color: $alpha-light-black;
 $trail-hover-color: $alpha-black;
+$trail-last-child-color: $light-primary;
 $trail-separator-x-spacing: 0.25em;
 
 ul.trail {
@@ -22,7 +23,7 @@ ul.trail {
         }
 
         &:last-child a.step-a {
-            color: $light-primary;
+            color: $trail-last-child-color;
         }
 
         &:not(:last-child)::after {
