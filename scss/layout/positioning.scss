@@ -1,3 +1,7 @@
+.static {
+  position: static !important;
+}
+
 .relative {
   position: relative !important;
 }
@@ -8,6 +12,10 @@
 
 .absolute {
   position: absolute !important;
+}
+
+.sticky {
+  position: sticky !important;
 }
 
 .left-top {

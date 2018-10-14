@@ -49,13 +49,6 @@
 
 .demo-middle-gray { background-color: rgb(188, 188, 188); }
 
-.demo-rds-1 { border-radius: 0.4rem; }
-.demo-rds-tl-1 { border-top-left-radius: 0.4rem; }
-.demo-rds-tr-1 { border-top-right-radius: 0.4rem; }
-.demo-rds-bl-1 { border-bottom-left-radius: 0.4rem; }
-.demo-rds-br-1 { border-bottom-right-radius: 0.4rem; }
-
-
 .demo-swatch {
   height: 9.6rem;
 }

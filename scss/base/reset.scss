@@ -51,8 +51,8 @@ html {
 body {
   line-height: 1;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
-  color: $black;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $alpha-black;
 }
 
 ol, ul {
@@ -106,40 +106,8 @@ sup {
 }
 
 hr {
-  border-top: 0.1rem solid $dark-white;
+  border-top: 0.1rem solid $light-white;
 }
-
-/* ==================================== */
-
-a.a {
-  &:link {
-    color: $link-unvisited;
-    text-decoration: none;
-  }
-
-  &:hover:not(:visited) {
-    color: $link-hover;
-    outline: none;
-    text-decoration: underline;
-  }
-
-  &:visited {
-    color: $link-visited;
-
-    &:hover {
-      color: $link-visited-hover;
-    }
-  }
-}
-
-a.a:focus, a:focus {
-  outline: none;
-  text-decoration: underline;
-}
-
-
-
-
 
 
 

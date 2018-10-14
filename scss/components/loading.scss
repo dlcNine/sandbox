@@ -1,47 +1,58 @@
+@import "../base/global-variables.scss";
 @import "../base/colors.scss";
 
-$loading-margin: 0rem 0.6rem;
-$loading-height-width: 0.875em;
-$loading-border-width: 0.0625em;
-$loading-border-color: $white;
+$loading-border-color: $medium-gray;
+$loading-size: 1em;
+$loading-size-x2: 2em;
+$loading-size-x3: 3em;
+$loading-size-x4: 4em;
 
 @keyframes revolution {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.loading {
+  border-color: $loading-border-color;
 }
 
 span.loading {
   display: inline-block;
-  margin: $loading-margin;
+  position: relative;
+  width: $loading-size;
+  height: $loading-size;
 
-  &::before {
-    content: '';
-    display: inline-block;
-    height: $loading-height-width;
-    width: $loading-height-width;
-    border: $loading-border-width solid $loading-border-color;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-radius: 50%;
-    position: relative;
-    top: 0.0625em;
-    animation: revolution 550ms linear 0s infinite normal;
+  &.x2 {
+    font-size: $loading-size-x2;
   }
 
-  &.theme-dark::before {
-    border-top-color: $medium-black;
-    border-right-color: $medium-black;
+  &.x3 {
+    font-size: $loading-size-x3;
+  }
+
+  &.x4 {
+    font-size: $loading-size-x4;
   }
   
-  &.slow::before {
-    animation-duration: 1s;
-  }
+  &::before {
+    position: absolute;
+    content: '';
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: inherit;
+    border-radius: $RADIUS_ROUND;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    width: $loading-size;
+    height: $loading-size;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: revolution 550ms linear 0ms infinite normal;
 
-  &.reversed::before {
-    animation-direction: reverse;
-  }
-
-  &.paused::before {
-    animation-play-state: paused;
   }
 }

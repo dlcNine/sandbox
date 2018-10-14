@@ -15,59 +15,59 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Table</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Table</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-primary">primary</span>
-        <span class="stamp theme-info">info</span>
-        <span class="stamp theme-caution">caution</span>
-        <span class="stamp theme-danger">danger</span>
-        <span class="stamp theme-dark">dark</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp primary">primary</span>
+        <span class="stamp info">info</span>
+        <span class="stamp caution">caution</span>
+        <span class="stamp danger">danger</span>
+        <span class="stamp dark">dark</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">z-index set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">z-index set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">table</span><span class="text-indigo">.table</span></span>
@@ -80,7 +80,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">thead</span><span class="text-indigo">.striped-odd</span></span>
@@ -96,7 +96,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">tbody</span><span class="text-indigo">.striped-odd</span></span>
@@ -112,7 +112,7 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">tfoot</span><span class="text-indigo">.striped-odd</span></span>
@@ -128,14 +128,14 @@
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">tr</span><span class="text-indigo">.border-row</span></span>
               </li>
             </ul>
           </div>
-          <div class="default-12 large-4">
+          <div class="unit-12 unit-4-lg">
             <ul class="ul circle-hollow p-alt">
               <li>
                 <span class="snippet no-background"><span class="text-blue">a</span><span class="text-indigo">.table-a</span></span>
@@ -145,14 +145,14 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
       <p>A styled table element which takes up the full width available to it.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Structure</h2>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -176,10 +176,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -265,11 +265,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Slim</h2>
       <p>Use the <span class="snippet text-indigo">.slim</span> class on a <span class="snippet"><span class="text-blue">table</span><span class="text-indigo">.table</span></span> to reduce padding used per table cell.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table slim">
             <thead>
               <tr>
@@ -293,10 +293,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table slim"</span><span class="text-blue">&gt;</span>
               </li>
@@ -382,11 +382,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Border all</h2>
       <p>Use the <span class="snippet text-indigo">.border-all</span> class on a <span class="snippet"><span class="text-blue">table</span><span class="text-indigo">.table</span></span> to have a border applied to all table cells.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table border-all">
             <thead>
               <tr>
@@ -410,10 +410,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table border-all"</span><span class="text-blue">&gt;</span>
               </li>
@@ -499,11 +499,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Striping</h2>
       <p>Use the <span class="snippet text-indigo">.striped-even</span> class or the <span class="snippet text-indigo">.striped-odd</span> class on a <span class="snippet text-blue">thead</span>, <span class="snippet text-blue">tbody</span>, or <span class="snippet text-blue">tfoot</span> element to have an alternating background color per row.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -527,10 +527,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -616,11 +616,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Border rows</h2>
-      <p class="mgn-b-1">Use the <span class="snippet text-indigo">.border-rows</span> class on a <span class="snippet text-blue">thead</span>, <span class="snippet text-blue">tbody</span>, or <span class="snippet text-blue">tfoot</span> element to apply a bottom border to all rows. When the <span class="snippet text-indigo">.border-rows</span> class is used on a <span class="snippet text-blue">tfoot</span> element, all but the last row will receive a bottom border.</p>
-      <div class="container">
-        <div class="default-12">
+      <p class="mb-1">Use the <span class="snippet text-indigo">.border-rows</span> class on a <span class="snippet text-blue">thead</span>, <span class="snippet text-blue">tbody</span>, or <span class="snippet text-blue">tfoot</span> element to apply a bottom border to all rows. When the <span class="snippet text-indigo">.border-rows</span> class is used on a <span class="snippet text-blue">tfoot</span> element, all but the last row will receive a bottom border.</p>
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -644,10 +644,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -733,11 +733,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Border row</h2>
       <p>Use the <span class="snippet text-indigo">.border-row</span> class on individual <span class="snippet text-blue">tr</span> elements to apply a bottom border to that row.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -761,10 +761,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -850,11 +850,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Row Hover</h2>
       <p>Use the <span class="snippet text-indigo">.row-hover</span> class on a <span class="snippet text-blue">thead</span>, <span class="snippet text-blue">tbody</span>, or <span class="snippet text-blue">tfoot</span> element to have hover state styling applied for the rows within.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -878,10 +878,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -966,13 +966,12 @@
           </div>
         </div>
       </div>
-
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Table a element</h2>
       <p>Use an <span class="snippet"><span class="text-blue">a</span><span class="text-indigo">.table-a</span></span> for text content within a <span class="snippet text-blue">td</span>, or <span class="snippet text-blue">th</span> element to have it inherit its parent's color property and set an underline.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -996,10 +995,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -1085,12 +1084,12 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Theme classes</h2>
-      <p class="mgn-b-1">Use any of the specified theme classes on a <span class="snippet text-blue">tr</span> element to have that theme's styling applied.</p>
+      <p class="mb-1">Use any of the specified theme classes on a <span class="snippet text-blue">tr</span> element to have that theme's styling applied.</p>
       <p>Any <span class="snippet text-blue">tr</span> with a theme class applied that is a child of a <span class="snippet"><span class="text-blue">thead</span><span class="text-indigo">.row-hover</span></span>, <span class="snippet"><span class="text-blue">tbody</span><span class="text-indigo">.row-hover</span></span>, or <span class="snippet"><span class="text-blue">tfoot</span><span class="text-indigo">.row-hover</span></span> will have theme related hover styling.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table">
             <thead>
               <tr>
@@ -1099,33 +1098,33 @@
               </tr>
             </thead>
             <tbody class="row-hover">
-              <tr class="theme-primary">
+              <tr class="primary">
                 <td>Hank</td>
                 <td>40</td>
               </tr>
-              <tr class="theme-info">
+              <tr class="info">
                 <td>Hilda</td>
                 <td>62</td>
               </tr>
-              <tr class="theme-caution">
+              <tr class="caution">
                 <td>Howard</td>
                 <td>58</td>
               </tr>
-              <tr class="theme-danger">
+              <tr class="danger">
                 <td>Henrietta</td>
                 <td>49</td>
               </tr>
-              <tr class="theme-dark">
+              <tr class="dark">
                 <td>Hugo</td>
                 <td>45</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table"</span><span class="text-blue">&gt;</span>
               </li>
@@ -1157,7 +1156,7 @@
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"theme-primary"</span><span class="text-blue">&gt;</span></span>
+                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"primary"</span><span class="text-blue">&gt;</span></span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
@@ -1171,7 +1170,7 @@
                     <span class="text-blue">&lt;/tr&gt;</span>
                   </li>
                   <li class="line">
-                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"theme-info"</span><span class="text-blue">&gt;</span></span>
+                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"info"</span><span class="text-blue">&gt;</span></span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
@@ -1185,7 +1184,7 @@
                     <span class="text-blue">&lt;/tr&gt;</span>
                   </li>
                   <li class="line">
-                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"theme-caution"</span><span class="text-blue">&gt;</span></span>
+                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"caution"</span><span class="text-blue">&gt;</span></span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
@@ -1199,7 +1198,7 @@
                     <span class="text-blue">&lt;/tr&gt;</span>
                   </li>
                   <li class="line">
-                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"theme-danger"</span><span class="text-blue">&gt;</span></span>
+                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"danger"</span><span class="text-blue">&gt;</span></span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
@@ -1213,7 +1212,7 @@
                     <span class="text-blue">&lt;/tr&gt;</span>
                   </li>
                   <li class="line">
-                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"theme-dark"</span><span class="text-blue">&gt;</span></span>
+                    <span class="text-blue">&lt;tr</span> <span class="text-violet">class=</span><span class="text-indigo">"dark"</span><span class="text-blue">&gt;</span></span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
@@ -1239,11 +1238,11 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Font-size scaling</h2>
       <p>Apply any of the font-size classes to a <span class="snippet"><span class="text-blue">table</span><span class="text-indigo">.table</span></span> to scale the element and its children.</p>
-      <div class="container">
-        <div class="default-12">
+      <div class="grid">
+        <div class="unit-12">
           <table class="table h2">
             <thead>
               <tr>
@@ -1267,10 +1266,10 @@
             </tbody>
           </table>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code text-nowrap ox-auto">
               <li class="line">
                 <span class="text-blue">&lt;table</span> <span class="text-violet">class=</span><span class="text-indigo">"table h2"</span><span class="text-blue">&gt;</span>
               </li>
@@ -1357,7 +1356,7 @@
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Variables</h2>
       <table class="table slim">
         <thead class="border-rows">
@@ -1388,15 +1387,15 @@
             <td class="text-red">$table-striped</td>
           </tr>
           <tr>
-            <td class="text-red demo-rds-bl-1">$table-row-hover-color</td>
-            <td class="text-red demo-rds-br-1">$medium-white</td>
+            <td class="text-red rbl">$table-row-hover-color</td>
+            <td class="text-red rbr">$medium-white</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./loading.html" class="button theme-dark mgn-0">previous</a>
-      <a href="./path.html" class="button theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./loading.html" class="button dark m-0">previous</a>
+      <a href="./path.html" class="button dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

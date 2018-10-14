@@ -1,22 +1,6 @@
 @import "../base/colors.scss";
 
-$image-shadow-color: $dark-white-thin;
-$image-circular: 50%;
-$image-rounded: 0.8rem;
-
 img {
-  &.shadow {
-    box-shadow: 0.1rem 0.1rem 0.2rem 0rem $image-shadow-color;
-  }
-
-  &.circular {
-    border-radius: $image-circular;
-  }
-
-  &.rounded {
-    border-radius: $image-rounded;
-  }
-
   &.responsive {
     max-width: 100%;
     height: auto;

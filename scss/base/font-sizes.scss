@@ -20,15 +20,15 @@ h4, p {
   font-size: 1.6rem;
 }
 
-h5 {
+h5, small {
   font-size: 1.2rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
-h1, h2, h3, h4, p, h5, h6 {
+h1, h2, h3, h4, p, h5, h6, small {
   line-height: 1.5;
 }
 
@@ -67,126 +67,126 @@ h1, h2, h3, h4, p, h5, h6 {
 }
 
 .h6 {
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
 }
 
 /* ====================================================== */
 
-@media screen and (max-width: $breakpoint-small) {
-  .huge-1-small {
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+  .huge-1-sm {
     font-size: 6.7rem !important;
   }
 
-  .huge-2-small {
+  .huge-2-sm {
     font-size: 5.1rem !important;
   }
 
-  .h1-small {
+  .h1-sm {
     font-size: 3.8rem !important;
   }
 
-  .h2-small {
+  .h2-sm {
     font-size: 2.8rem !important;
   }
 
-  .h3-small {
+  .h3-sm {
    font-size: 2.1rem !important;
   }
 
-  .h4-small, .p-small {
+  .h4-sm, .p-sm {
     font-size: 1.6rem !important;
   }
 
-  .p-alt-small {
+  .p-alt-sm {
     font-size: 1.4rem !important;
   }
 
-  .h5-small {
+  .h5-sm {
     font-size: 1.2rem !important;
   }
 
-  .h6-small {
-    font-size: 1rem !important;
-  }
-}
-
-/* ====================================================== */
-
-@media screen and (min-width: $breakpoint-medium-lower) and (max-width: $breakpoint-medium-upper) {
-  .huge-1-medium {
-    font-size: 6.7rem !important;
-  }
-
-  .huge-2-medium {
-    font-size: 5.1rem !important;
-  }
-
-  .h1-medium {
-    font-size: 3.8rem !important;
-  }
-
-  .h2-medium {
-    font-size: 2.8rem !important;
-  }
-
-  .h3-medium {
-   font-size: 2.1rem !important;
-  }
-
-  .h4-medium, .p-medium {
-    font-size: 1.6rem !important;
-  }
-
-  .p-alt-medium {
-    font-size: 1.4rem !important;
-  }
-
-  .h5-medium {
-    font-size: 1.2rem !important;
-  }
-
-  .h6-medium {
-    font-size: 1rem !important;
+  .h6-sm {
+    font-size: 0.9rem !important;
   }
 }
 
 /* ====================================================== */
 
-@media screen and (min-width: $breakpoint-large) {
-  .huge-1-large {
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .huge-1-md {
     font-size: 6.7rem !important;
   }
 
-  .huge-2-large {
+  .huge-2-md {
     font-size: 5.1rem !important;
   }
 
-  .h1-large {
+  .h1-md {
     font-size: 3.8rem !important;
   }
 
-  .h2-large {
+  .h2-md {
     font-size: 2.8rem !important;
   }
 
-  .h3-large {
+  .h3-md {
    font-size: 2.1rem !important;
   }
 
-  .h4-large, .p-large {
+  .h4-md, .p-md {
     font-size: 1.6rem !important;
   }
 
-  .p-alt-large {
+  .p-alt-md {
     font-size: 1.4rem !important;
   }
 
-  .h5-large {
+  .h5-md {
     font-size: 1.2rem !important;
   }
 
-  .h6-large {
-    font-size: 1rem !important;
+  .h6-md {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* ====================================================== */
+
+@media screen and (min-width: $lg-and-up) {
+  .huge-1-lg {
+    font-size: 6.7rem !important;
+  }
+
+  .huge-2-lg {
+    font-size: 5.1rem !important;
+  }
+
+  .h1-lg {
+    font-size: 3.8rem !important;
+  }
+
+  .h2-lg {
+    font-size: 2.8rem !important;
+  }
+
+  .h3-lg {
+   font-size: 2.1rem !important;
+  }
+
+  .h4-lg, .p-lg {
+    font-size: 1.6rem !important;
+  }
+
+  .p-alt-lg {
+    font-size: 1.4rem !important;
+  }
+
+  .h5-lg {
+    font-size: 1.2rem !important;
+  }
+
+  .h6-lg {
+    font-size: 0.9rem !important;
   }
 }
 

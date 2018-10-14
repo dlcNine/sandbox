@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox-container-buttons</title>
+  <title>Sandbox-grid-buttons</title>
   {% include css-links.html %}
 </head>
 <body>
@@ -15,109 +15,109 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Container-Buttons</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">grid-Buttons</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="default-12">
+          <div class="unit-12">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
-                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.container-buttons</span></span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.grid-buttons</span></span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
-      <p>Use a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container-buttons</span></span> to arrange buttons using the grid column classes.</p>
+      <p>Use a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.grid-buttons</span></span> to arrange buttons using the grid column classes.</p>
     </div>
-    <div class="pad-1">
-      <div class="message theme-info">
+    <div class="p-1">
+      <div class="message info">
         <div class="message-header">
-          <p>The <span class="snippet p-alt text-indigo">container-</span> classes</p>
+          <p>The <span class="snippet p-alt text-indigo">grid-</span> classes</p>
         </div>
         <div class="message-body">
-          <p class="p-alt">In Sandbox, any of the built in classes that start with <span class="snippet p-alt text-indigo">container-</span> are already clearfixed, and are intended to have the grid column classes used within them.</p>
+          <p class="p-alt">In Sandbox, any of the built in classes that start with <span class="snippet p-alt text-indigo">grid-</span> are already clearfixed, and are intended to have the grid column classes used within them.</p>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Structure</h2>
-      <div class="container">
-        <div class="default-12 large-6">
-          <div class="container-buttons">
-            <div class="small-6 medium-12 large-4">
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
+          <div class="grid-buttons">
+            <div class="unit-6-sm unit-12-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-4">
+            <div class="unit-6-sm unit-4-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-4">
+            <div class="unit-6-sm unit-4-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-6">
+            <div class="unit-6-sm unit-4-md unit-6-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-6 large-6">
+            <div class="unit-6-sm unit-6-md unit-6-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-6 large-12">
+            <div class="unit-6-sm unit-6-md unit-12-lg">
               <button class="button">button</button>
             </div>
           </div>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container-buttons"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid-buttons"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-12 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-12-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -128,7 +128,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -139,7 +139,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -150,7 +150,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-6"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-6-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -161,7 +161,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-6 large-6"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-6-md unit-6-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -172,7 +172,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-6 large-12"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-6-md unit-12-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -191,42 +191,42 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Font-Size scaling</h2>
-      <p class="mgn-b-1">Apply any of the font-size classes to <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container-buttons</span></span> to have its children inherit the font-size specified.</p>
-      <div class="container">
-        <div class="default-12 large-6">
-          <div class="container-buttons h2">
-            <div class="small-6 medium-12 large-4">
+      <p class="mb-1">Apply any of the font-size classes to <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.grid-buttons</span></span> to have its children inherit the font-size specified.</p>
+      <div class="grid">
+        <div class="unit-12 unit-6-lg">
+          <div class="grid-buttons h2">
+            <div class="unit-6-sm unit-12-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-4">
+            <div class="unit-6-sm unit-4-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-4">
+            <div class="unit-6-sm unit-4-md unit-4-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-4 large-6">
+            <div class="unit-6-sm unit-4-md unit-6-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-6 large-6">
+            <div class="unit-6-sm unit-6-md unit-6-lg">
               <button class="button">button</button>
             </div>
-            <div class="small-6 medium-6 large-12">
+            <div class="unit-6-sm unit-6-md unit-12-lg">
               <button class="button">button</button>
             </div>
           </div>
         </div>
-        <div class="default-12 large-6">
+        <div class="unit-12 unit-6-lg">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container-buttons h2"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid-buttons h2"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-12 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-12-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -237,7 +237,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -248,7 +248,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-4"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-4-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -259,7 +259,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-4 large-6"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-4-md unit-6-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -270,7 +270,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-6 large-6"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-6-md unit-6-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -281,7 +281,7 @@
                   <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-6 medium-6 large-12"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-6-sm unit-6-md unit-12-lg"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -301,7 +301,7 @@
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Variables</h2>
       <table class="table p slim">
         <thead class="border-rows">
@@ -312,19 +312,19 @@
         </thead>
         <tbody class="striped-even row-hover">
           <tr>
-            <td class="text-red">$container-buttons-grid-column-padding</td>
+            <td class="text-red">$grid-buttons-grid-column-padding</td>
             <td>0rem 0.6rem 0.6rem 0rem</td>
           </tr>
           <tr>
-            <td class="text-red demo-rds-bl-1">$container-buttons-negate-right</td>
-            <td class=" demo-rds-br-1">0.6rem</td>
+            <td class="text-red rbl">$grid-buttons-negate-right</td>
+            <td class="rbr">0.6rem</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="./buttons-bar.html" class="button theme-dark mgn-0">previous</a>
-      <a href="../forms/controls-textfield.html" class="button theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="./buttons-bar.html" class="button dark m-0">previous</a>
+      <a href="../forms/controls-textfield.html" class="button dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

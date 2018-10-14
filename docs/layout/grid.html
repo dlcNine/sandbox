@@ -15,55 +15,55 @@
   <!-- navbar -->
   {% include navbar.html %}
   <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pad-l-3">
-    <h1 class="mgn-l-2-large">Grid</h1>
+  <div class="banner demo-wgray flex flex-cross-center pl-3">
+    <h1 class="ml-2-lg">Grid</h1>
   </div>
-  <div class="pad-2 pad-4-large">
-    <div class="pad-1">
+  <div class="p-2 p-4-lg">
+    <div class="p-1">
       <h2>Specs</h2>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">breakpoints</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">breakpoints</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">theme classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">theme classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">size classes</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">size classes</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">font-size scaling</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">font-size scaling</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">uses grid within</span>
-        <span class="stamp theme-info">it is the grid</span>
+        <span class="stamp light">uses grid within</span>
+        <span class="stamp info">it is the grid</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">variables</span>
-        <span class="stamp theme-info">yes</span>
+        <span class="stamp light">variables</span>
+        <span class="stamp info">yes</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">display set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">display set</span>
+        <span class="stamp danger">no</span>
       </div>
       <div class="stamp-bar h5">
-        <span class="stamp theme-light">position set</span>
-        <span class="stamp theme-danger">no</span>
+        <span class="stamp light">position set</span>
+        <span class="stamp danger">no</span>
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Class overview</h2>
       <div class="message">
         <div class="message-body clearfix">
-          <div class="small-12 medium-6 large-3">
+          <div class="unit-12-sm unit-6-md unit-3-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background">
-                  <span class="text-blue">div</span><span class="text-indigo">.container</span>
+                  <span class="text-blue">div</span><span class="text-indigo">.grid</span>
                 </span>
               </li>
               <li>
@@ -72,7 +72,7 @@
               </li>
               <li>
                 <span class="snippet no-background">
-                  <span class="text-blue">div</span><span class="text-indigo">.container.negate-sides</span>
+                  <span class="text-blue">div</span><span class="text-indigo">.grid.negate-sides</span>
                 </span>
               </li>
               <li>
@@ -81,7 +81,7 @@
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-6 large-3">
+          <div class="unit-12-sm unit-6-md unit-3-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background">
@@ -89,12 +89,12 @@
                 </span>
               </li>
               <li>
-                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.default-</span><span>[#]</span>
+                <span class="snippet no-background"><span class="text-blue">div</span><span class="text-indigo">.unit-</span><span>[#]</span>
                 </span>
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-6 large-3">
+          <div class="unit-12-sm unit-6-md unit-3-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background">
@@ -108,7 +108,7 @@
               </li>
             </ul>
           </div>
-          <div class="small-12 medium-6 large-3">
+          <div class="unit-12-sm unit-6-md unit-3-lg">
             <ul class="ul circle-hollow p-alt text-break-all">
               <li>
                 <span class="snippet no-background">
@@ -120,60 +120,60 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Description</h2>
-      <p class="mgn-b-1">Sandbox provides a float based responsive grid system. Only two ingredients are required to build a responsive layout: a container, and grid columns within it.</p>
-      <p class="mgn-b-1">All that <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container</span></span> actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the container's boundaries). If you want to use some other block level element to house the grid columns, just apply the <span class="snippet p-alt text-indigo">.clearfix</span> class to it.</p>
-      <p class="mgn-b-1">The grid columns are block level elements with some padding (set with the <span class="snippet p-alt text-red">$grid-column-padding</span> variable), and a set width which are floated to the left. The width of a grid column is a percentage based on the <span class="snippet p-alt">[#]</span> you used.</p>
+      <p class="mb-1">Sandbox provides a float based responsive grid system. Only two ingredients are required to build a responsive layout: a grid, and grid columns within it.</p>
+      <p class="mb-1">All that <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.grid</span></span> actually is, is a block level element that has clearfix code applied to it (to ensure that the floated elements within it don't exceed the grid's boundaries). If you want to use some other block level element to house the grid columns, just apply the <span class="snippet p-alt text-indigo">.clearfix</span> class to it.</p>
+      <p class="mb-1">The grid columns are block level elements with some padding (set with the <span class="snippet p-alt text-red">$grid-column-padding</span> variable), and a set width which are floated to the left. The width of a grid column is a percentage based on the <span class="snippet p-alt">[#]</span> you used.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Structure</h2>
-      <div class="container">
-        <div class="default-12 pad-0 pad-b-1">
-          <div class="small-12 medium-6 large-4">
-            <div class="demo-grid-height demo-rds-1 demo-lred relative">
+      <div class="grid">
+        <div class="unit-12 p-0 pb-1">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
+            <div class="demo-grid-height r demo-lred relative">
               <h3 class="text-white absolute center-center">
-                <span class="absent-medium absent-large">small-12</span>
-                <span class="absent-small absent-large">medium-6</span>
-                <span class="absent-small absent-medium">large-4</span>
+                <span class="absent-md absent-lg">unit-12-sm</span>
+                <span class="absent-sm absent-lg">unit-6-md</span>
+                <span class="absent-sm absent-md">unit-4-lg</span>
               </h3>
             </div>
           </div>
-          <div class="small-12 medium-6 large-4">
-            <div class="demo-grid-height demo-rds-1 demo-lgreen relative">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
+            <div class="demo-grid-height r demo-lgreen relative">
               <h3 class="text-white absolute center-center">
-                <span class="absent-medium absent-large">small-12</span>
-                <span class="absent-small absent-large">medium-6</span>
-                <span class="absent-small absent-medium">large-4</span>
+                <span class="absent-md absent-lg">unit-12-sm</span>
+                <span class="absent-sm absent-lg">unit-6-md</span>
+                <span class="absent-sm absent-md">unit-4-lg</span>
               </h3>
             </div>
           </div>
-          <div class="small-12 medium-6 large-4">
-            <div class="demo-grid-height demo-rds-1 demo-lblue relative">
+          <div class="unit-12-sm unit-6-md unit-4-lg">
+            <div class="demo-grid-height r demo-lblue relative">
               <h3 class="text-white absolute center-center">
-                <span class="absent-medium absent-large">small-12</span>
-                <span class="absent-small absent-large">medium-6</span>
-                <span class="absent-small absent-medium">large-4</span>
+                <span class="absent-md absent-lg">unit-12-sm</span>
+                <span class="absent-sm absent-lg">unit-6-md</span>
+                <span class="absent-sm absent-md">unit-4-lg</span>
               </h3>
             </div>
           </div>
         </div>
-        <div class="default-12 pad-0">
+        <div class="unit-12 p-0">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12-sm unit-6-md unit-4-lg"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12-sm unit-6-md unit-4-lg"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
                 </li>
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-6 large-4"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12-sm unit-6-md unit-4-lg"</span><span class="text-blue">&gt;</span><span class="text-gray"> &lt;!-- your content here --&gt;</span> <span class="text-blue">&lt;/div&gt;</span>
                 </li>
               </ol>
               <li class="line">
@@ -184,273 +184,273 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>12 Unit Grid</h2>
-      <p class="mgn-b-1">Sandbox's grid is split into 12 equal units. Each <span class="snippet p-alt">[#]</span> you plug in (from 1 - 12) sets the width property to a percentage based on that number out of 12. This width percentage is in relation to the parent element.</p>
-      <div class="container">
-        <div class="default-12 pad-0 absent-small absent-medium">
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+      <p class="mb-1">Sandbox's grid is split into 12 equal units. Each <span class="snippet p-alt">[#]</span> you plug in (from 1 - 12) sets the width property to a percentage based on that number out of 12. This width percentage is in relation to the parent element.</p>
+      <div class="grid">
+        <div class="unit-12 p-0 absent-sm absent-md">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
-          <div class="default-1">
-            <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+          <div class="unit-1">
+            <div class="demo-grid-height-smaller demo-lblue r relative">
               <h3 class="text-white absolute center-center">1</h3>
             </div>
           </div>
         </div>
-        <div class="default-1 absent-small absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-1 absent-sm absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">1</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-2 absent-small">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-2 absent-sm">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">2</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-3 absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-3 absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-4 absent-small">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-4 absent-sm">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">4</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-5 absent-small absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-5 absent-sm absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">5</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-6">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-6">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">6</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-7 absent-small absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-7 absent-sm absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">7</h3>
           </div>
         </div>
-        <div class="default-8 absent-small">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-8 absent-sm">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">8</h3>
           </div>
         </div>
-        <div class="default-9 absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-9 absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">9</h3>
           </div>
         </div>
-        <div class="default-10 absent-small">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-10 absent-sm">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">10</h3>
           </div>
         </div>
-        <div class="default-11 absent-small absent-medium">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-11 absent-sm absent-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">11</h3>
           </div>
         </div>
-        <div class="default-12">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+        <div class="unit-12">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">12</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Pushing</h2>
-      <p class="mgn-b-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.push-</span>[#]</span>, and <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.push-</span>[#]<span class="text-indigo">-</span>[breakpoint]</span> are used to push a grid column to the right by the <span class="snippet p-alt">[#]</span> specified (<span class="snippet p-alt">[#]</span> being from 1 - 12). Sandbox does this by setting the margin-left property to the relevant percentage.</p>
-      <div class="container">
-        <div class="default-3">
-          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+      <p class="mb-1"><span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.push-</span>[#]</span>, and <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.push-</span>[#]<span class="text-indigo">-</span>[breakpoint]</span> are used to push a grid column to the right by the <span class="snippet p-alt">[#]</span> specified (<span class="snippet p-alt">[#]</span> being from 1 - 12). Sandbox does this by setting the margin-left property to the relevant percentage.</p>
+      <div class="grid">
+        <div class="unit-3">
+          <div class="demo-grid-height-smaller demo-lgreen r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="push-3 default-3">
-          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+        <div class="push-3 unit-3">
+          <div class="demo-grid-height-smaller demo-lgreen r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="push-6 default-3">
-          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+        <div class="push-6 unit-3">
+          <div class="demo-grid-height-smaller demo-lgreen r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="push-9 default-3">
-          <div class="demo-grid-height-smaller demo-lgreen demo-rds-1 relative">
+        <div class="push-9 unit-3">
+          <div class="demo-grid-height-smaller demo-lgreen r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Stacking and Wrapping</h2>
-      <p class="mgn-b-1">Floated elements, such as the grid columns, will stack one next to the other, so long as there's enough room for them to fit within that line. If there's not enough room for the floated element to fit, it will wrap onto the next line.</p>
-      <div class="container">
-        <div class="default-3">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+      <p class="mb-1">Floated elements, such as the grid columns, will stack one next to the other, so long as there's enough room for them to fit within that line. If there's not enough room for the floated element to fit, it will wrap onto the next line.</p>
+      <div class="grid">
+        <div class="unit-3">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
-        <div class="default-3">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+        <div class="unit-3">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
-        <div class="default-6">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+        <div class="unit-6">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">6</h3>
           </div>
         </div>
-        <div class="default-3">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+        <div class="unit-3">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
-        <div class="default-3">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+        <div class="unit-3">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">3</h3>
           </div>
         </div>
-        <div class="default-7">
-          <div class="demo-grid-height-smaller demo-lred demo-rds-1 relative">
+        <div class="unit-7">
+          <div class="demo-grid-height-smaller demo-lred r relative">
             <h3 class="text-white absolute center-center">7</h3>
           </div>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Manual new-line</h2>
-      <p class="mgn-b-1">Sometimes floated elements misbehave, and don't go onto a new line when we expect them to. This may occur due to differing grid column heights. To remedy this, use <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.new-line</span></span> to force everything beneath it to start on a new line.</p>
-      <div class="container">
-        <div class="default-6">
-          <div class="demo-lgreen demo-rds-1 pad-1">
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias, velit omnis. Obcaecati expedita, provident autem perferendis. Porro nemo repellendus eos nulla laboriosam nobis, quisquam, <span class="absent-small">perferendis dignissimos libero accusantium sit soluta eveniet voluptatum placeat fugiat ab, corrupti enim ducimus? Enim officia natus nisi maxime id expedita velit amet at laudantium.</span></p>
+      <p class="mb-1">Sometimes floated elements misbehave, and don't go onto a new line when we expect them to. This may occur due to differing grid column heights. To remedy this, use <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.new-line</span></span> to force everything beneath it to start on a new line.</p>
+      <div class="grid">
+        <div class="unit-6">
+          <div class="demo-lgreen r p-1">
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias, velit omnis. Obcaecati expedita, provident autem perferendis. Porro nemo repellendus eos nulla laboriosam nobis, quisquam, <span class="absent-sm">perferendis dignissimos libero accusantium sit soluta eveniet voluptatum placeat fugiat ab, corrupti enim ducimus? Enim officia natus nisi maxime id expedita velit amet at laudantium.</span></p>
           </div>
         </div>
-        <div class="default-6">
-          <div class="demo-lgreen demo-rds-1 pad-1">
+        <div class="unit-6">
+          <div class="demo-lgreen r p-1">
             <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aspernatur maiores consequatur, porro <span class="absent-small">magnam laudantium ullam! Maiores dicta culpa assumenda, ea suscipit quasi minus voluptatibus vitae, est, quidem adipisci deleniti.</span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aspernatur maiores consequatur, porro <span class="absent-sm">magnam laudantium ullam! Maiores dicta culpa assumenda, ea suscipit quasi minus voluptatibus vitae, est, quidem adipisci deleniti.</span>
             </p>
           </div>
         </div>
-        <div class="default-6">
-          <div class="demo-lred demo-rds-1 pad-1">
+        <div class="unit-6">
+          <div class="demo-lred r p-1">
             <p class="text-white text-underline">This grid column is supposed to wrap onto the next line.</p>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint eius <span class="absent-small">maxime atque numquam consectetur minus dolores dolore itaque consequuntur. Esse error numquam quaerat asperiores nihil, mollitia nulla expedita vero!</span></p>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint eius <span class="absent-sm">maxime atque numquam consectetur minus dolores dolore itaque consequuntur. Esse error numquam quaerat asperiores nihil, mollitia nulla expedita vero!</span></p>
           </div>
         </div>
       </div>
       <hr>
-      <div class="container">
-        <div class="default-6">
-          <div class="demo-lgreen demo-rds-1 pad-1">
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias, velit omnis. Obcaecati expedita, provident autem perferendis. Porro nemo repellendus eos nulla laboriosam nobis, quisquam, <span class="absent-small">perferendis dignissimos libero accusantium sit soluta eveniet voluptatum placeat fugiat ab, corrupti enim ducimus? Enim officia natus nisi maxime id expedita velit amet at laudantium.</span></p>
+      <div class="grid">
+        <div class="unit-6">
+          <div class="demo-lgreen r p-1">
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia alias, velit omnis. Obcaecati expedita, provident autem perferendis. Porro nemo repellendus eos nulla laboriosam nobis, quisquam, <span class="absent-sm">perferendis dignissimos libero accusantium sit soluta eveniet voluptatum placeat fugiat ab, corrupti enim ducimus? Enim officia natus nisi maxime id expedita velit amet at laudantium.</span></p>
           </div>
         </div>
-        <div class="default-6">
-          <div class="demo-lgreen demo-rds-1 pad-1">
+        <div class="unit-6">
+          <div class="demo-lgreen r p-1">
             <p class="text-white">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aspernatur maiores consequatur, porro <span class="absent-small">magnam laudantium ullam! Maiores dicta culpa assumenda, ea suscipit quasi minus voluptatibus vitae, est, quidem adipisci deleniti.</span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aspernatur maiores consequatur, porro <span class="absent-sm">magnam laudantium ullam! Maiores dicta culpa assumenda, ea suscipit quasi minus voluptatibus vitae, est, quidem adipisci deleniti.</span>
             </p>
           </div>
         </div>
         <div class="new-line"></div>
-        <div class="default-6">
-          <div class="demo-lred demo-rds-1 pad-1">
+        <div class="unit-6">
+          <div class="demo-lred r p-1">
             <p class="text-white text-underline">This grid column now wraps onto the next line thanks to div.new-line</p>
-            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint eius <span class="absent-small">maxime atque numquam consectetur minus dolores dolore itaque consequuntur. Esse error numquam quaerat asperiores nihil, mollitia nulla expedita vero!</span></p>
+            <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint eius <span class="absent-sm">maxime atque numquam consectetur minus dolores dolore itaque consequuntur. Esse error numquam quaerat asperiores nihil, mollitia nulla expedita vero!</span></p>
           </div>
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Default</h2>
-      <p class="mgn-b-1">As the name implies, <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.default-</span>[#]</span> can be used to specify a grid column width that isn't bound to a breakpoint. A breakpoint-specific grid column class may still be applied, and will only be active during that breakpoint.</p>
-      <div class="container">
-        <div class="default-12 medium-9">
-          <div class="demo-grid-height-smaller demo-lblue demo-rds-1 relative">
+      <p class="mb-1">As the name implies, <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.unit-</span>[#]</span> can be used to specify a grid column width that isn't bound to a breakpoint. A breakpoint-specific grid column class may still be applied, and will only be active during that breakpoint.</p>
+      <div class="grid">
+        <div class="unit-12 unit-9-md">
+          <div class="demo-grid-height-smaller demo-lblue r relative">
             <h3 class="text-white absolute center-center">
-              <span class="absent-small absent-large">medium-9</span>
-              <span class="absent-medium">default-12</span>
+              <span class="absent-sm absent-lg">unit-9-md</span>
+              <span class="absent-md">unit-12</span>
             </h3>
           </div>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container"&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid"&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-12 medium-9"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12 unit-9-md"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
@@ -469,41 +469,41 @@
         </div>
       </div>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Negate sides</h2>
-      <p class="mgn-b-1">Sometimes you may want to use the grid sytem inside of an element that already has padding applied. In the example below, the padding from the grid columns is causing the content to not line up along the left side.</p>
-      <div class="pad-2 demo-lgreen demo-rds-1 mgn-b-2">
-        <div class="demo-lwhite demo-rds-1">
+      <p class="mb-1">Sometimes you may want to use the grid sytem inside of an element that already has padding applied. In the example below, the padding from the grid columns is causing the content to not line up along the left side.</p>
+      <div class="p-2 demo-lgreen r mb-2">
+        <div class="demo-lwhite r">
           <h3>Lorem ipsum dolor sit amet.</h3>
-          <div class="container">
-            <div class="default-4 demo-rds-tl-1 demo-rds-bl-1">
+          <div class="grid">
+            <div class="unit-4 rtl rbl">
               <h3>Lorem ipsum.</h3>
             </div>
-            <div class="default-4">
+            <div class="unit-4">
               <h3>Lorem ipsum.</h3>
             </div>
-            <div class="default-4 demo-rds-tr-1 demo-rds-br-1">
+            <div class="unit-4 rtr rbr">
               <h3>Lorem ipsum.</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="relative mgn-b-1">
-        <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-        <ol class="code p-alt text-nowrap overflow-x-auto">
+      <div class="relative mb-1">
+        <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+        <ol class="code p-alt text-nowrap ox-auto">
           <li class="line">
-            <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"pad-2"</span><span class="text-blue">&gt;</span>
+            <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"p-2"</span><span class="text-blue">&gt;</span>
           </li>
           <ol class="code-nested">
             <li class="line">
               <span class="text-blue">&lt;h3&gt;</span>Lorem ipsum dolor sit amet.<span class="text-blue">&lt;/h3<span class="text-blue">&gt;</span></span>
             </li>
             <li class="line">
-              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt;</span>
+              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid"</span><span class="text-blue">&gt;</span>
             </li>
             <ol class="code-nested">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -514,7 +514,7 @@
                 <span class="text-blue">&lt;/div&gt;</span>
               </li>
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -525,7 +525,7 @@
                 <span class="text-blue">&lt;/div&gt;</span>
               </li>
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"<span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"<span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -545,39 +545,39 @@
           </li>
         </ol>
       </div>
-      <p class="mgn-b-1">Use the <span class="snippet p-alt text-indigo">.negate-sides</span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.container</span></span> or an element that has the <span class="snippet p-alt text-indigo">.clearfix</span> class to nullify the padding from the grid columns that touch the left and right sides of the container. Sandbox does this by using negative margins on the sides of the container.</p>
-      <div class="pad-2 demo-lgreen demo-rds-1 mgn-b-2">
-        <div class="demo-lwhite demo-rds-1">
+      <p class="mb-1">Use the <span class="snippet p-alt text-indigo">.negate-sides</span> class on a <span class="snippet p-alt"><span class="text-blue">div</span><span class="text-indigo">.grid</span></span> or an element that has the <span class="snippet p-alt text-indigo">.clearfix</span> class to nullify the padding from the grid columns that touch the left and right sides of the grid. Sandbox does this by using negative margins on the sides of the grid.</p>
+      <div class="p-2 demo-lgreen r mb-2">
+        <div class="demo-lwhite r">
           <h3>Lorem ipsum dolor sit amet.</h3>
-          <div class="container negate-sides">
-            <div class="default-4 demo-rds-tl-1 demo-rds-bl-1">
+          <div class="grid negate-sides">
+            <div class="unit-4 rtl rbl">
               <h3>Lorem ipsum.</h3>
             </div>
-            <div class="default-4">
+            <div class="unit-4">
               <h3>Lorem ipsum.</h3>
             </div>
-            <div class="default-4 demo-rds-tr-1 demo-rds-br-1">
+            <div class="unit-4 rtr rbr">
               <h3>Lorem ipsum.</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="relative mgn-b-1">
-        <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-        <ol class="code p-alt text-nowrap overflow-x-auto">
+      <div class="relative mb-1">
+        <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+        <ol class="code p-alt text-nowrap ox-auto">
           <li class="line">
-            <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"pad-2"</span><span class="text-blue">&gt;</span>
+            <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"p-2"</span><span class="text-blue">&gt;</span>
           </li>
           <ol class="code-nested">
             <li class="line">
               <span class="text-blue">&lt;h3&gt;</span>Lorem ipsum dolor sit amet.<span class="text-blue">&lt;/h3<span class="text-blue">&gt;</span></span>
             </li>
             <li class="line">
-              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container negate-sides"</span><span class="text-blue">&gt;</span>
+              <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid negate-sides"</span><span class="text-blue">&gt;</span>
             </li>
             <ol class="code-nested">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -588,7 +588,7 @@
                 <span class="text-blue">&lt;/div&gt;</span>
               </li>
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -599,7 +599,7 @@
                 <span class="text-blue">&lt;/div&gt;</span>
               </li>
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-4"<span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4"<span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
@@ -621,64 +621,64 @@
       </div>
       <p>This is advantageous when you want to use a large number of grid columns, without having to use zeroing utility classes everywhere.</p>
     </div>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Nesting</h2>
-      <p class="mgn-b-1">Grid column classes can be nested directly within each other. Remember that grid column widths are percentage based in relation to the parent element, and also that grid column padding will stack up.</p>
-      <p class="mgn-b-1">Note that in this example the color is being applied to the grid column itself, rather than its content area.</p>
-      <div class="container">
-        <div class="default-12 demo-lred demo-rds-1">
-          <div class="small-12 medium-10 large-8 demo-orange demo-rds-1">
-            <div class="small-4 medium-2 large-6 demo-yellow demo-rds-1"></div>
-            <div class="small-4 medium-8 large-3 demo-lgreen demo-rds-1"></div>
-            <div class="small-4 medium-2 large-3 demo-lblue demo-rds-1"></div>
+      <p class="mb-1">Grid column classes can be nested directly within each other. Remember that grid column widths are percentage based in relation to the parent element, and also that grid column padding will stack up.</p>
+      <p class="mb-1">Note that in this example the color is being applied to the grid column itself, rather than its content area.</p>
+      <div class="grid">
+        <div class="unit-12 demo-lred r">
+          <div class="unit-12-sm unit-10-md unit-8-lg demo-orange r">
+            <div class="unit-4-sm unit-2-md unit-6-lg demo-yellow r"></div>
+            <div class="unit-4-sm unit-8-md unit-3-lg demo-lgreen r"></div>
+            <div class="unit-4-sm unit-2-md unit-3-lg demo-lblue r"></div>
           </div>
-          <div class="small-12 medium-10 large-8 demo-yellow demo-rds-1">
-            <div class="small-4 medium-5 large-4 demo-lgreen demo-rds-1"></div>
-            <div class="small-4 medium-2 large-6 demo-lblue demo-rds-1"></div>
-            <div class="small-4 medium-5 large-2 demo-indigo demo-rds-1"></div>
+          <div class="unit-12-sm unit-10-md unit-8-lg demo-yellow r">
+            <div class="unit-4-sm unit-5-md unit-4-lg demo-lgreen r"></div>
+            <div class="unit-4-sm unit-2-md unit-6-lg demo-lblue r"></div>
+            <div class="unit-4-sm unit-5-md unit-2-lg demo-indigo r"></div>
           </div>
         </div>
-        <div class="default-12">
+        <div class="unit-12">
           <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 mgn-0">copy</button>
-            <ol class="code p-alt text-nowrap overflow-x-auto">
+            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
+            <ol class="code p-alt text-nowrap ox-auto">
               <li class="line">
-                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"container"</span><span class="text-blue">&gt;</span>
+                <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"grid"</span><span class="text-blue">&gt;</span>
               </li>
               <ol class="code-nested">
                 <li class="line">
-                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"default-12"</span><span class="text-blue">&gt;</span>
+                  <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12"</span><span class="text-blue">&gt;</span>
                 </li>
                 <ol class="code-nested">
                   <li class="line">
-                    <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-10 large-8"</span><span class="text-blue">&gt;</span>
+                    <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12-sm unit-10-md unit-8-lg"</span><span class="text-blue">&gt;</span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-2 large-6"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-2-md unit-6-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-8 large-3"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-8-md unit-3-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-2 large-3"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-2-md unit-3-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                   </ol>
                   <li class="line">
                     <span class="text-blue">&lt;/div&gt;</span>
                   </li>
                   <li class="line">
-                    <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-12 medium-10 large-8"</span><span class="text-blue">&gt;</span>
+                    <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-12-sm unit-10-md unit-8-lg"</span><span class="text-blue">&gt;</span>
                   </li>
                   <ol class="code-nested">
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-5 large-4"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-5-md unit-4-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-2 large-6"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-2-md unit-6-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                     <li class="line">
-                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"small-4 medium-5 large-2"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
+                      <span class="text-blue">&lt;div</span> <span class="text-violet">class=</span><span class="text-indigo">"unit-4-sm unit-5-md unit-2-lg"</span><span class="text-blue">&gt;&lt;/div&gt;</span>
                     </li>
                   </ol>
                   <li class="line">
@@ -698,7 +698,7 @@
       </div>
     </div>
     <hr>
-    <div class="pad-1">
+    <div class="p-1">
       <h2>Variables</h2>
       <table class="table p slim">
         <thead class="border-rows">
@@ -709,15 +709,15 @@
         </thead>
         <tbody class="striped-even row-hover">
           <tr>
-            <td class="text-red demo-rds-bl-1">$grid-column-padding</td>
-            <td class="demo-rds-br-1">1.2rem</td>
+            <td class="text-red rbl">$grid-column-padding</td>
+            <td class="rbr">1.2rem</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="flex flex-between pad-1 pad-t-2">
-      <a href="../utilities/img.html" class="button p theme-dark mgn-0">previous</a>
-      <a href="./positioning.html" class="button p theme-dark mgn-0">next</a>
+    <div class="flex flex-between p-1 pt-2">
+      <a href="../utilities/img.html" class="button p dark m-0">previous</a>
+      <a href="./positioning.html" class="button p dark m-0">next</a>
     </div>
   </div>
   <!-- copy-code -->

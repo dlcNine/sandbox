@@ -1,0 +1,31 @@
+@import "../base/mixins.scss";
+@import "../base/colors.scss";
+
+.button.outlined {
+  background-color: transparent !important;
+  @include button-outlined($dark-gray, $dark-gray, $dark-gray);
+
+  &.primary {
+    @include button-outlined($medium-primary, $light-primary, $dark-primary);
+  }
+
+  &.info {
+    @include button-outlined($medium-info, $light-info, $dark-info);
+  }
+
+  &.caution {
+    @include button-outlined($medium-caution, $light-caution, $dark-caution);
+  }
+
+  &.danger {
+    @include button-outlined($medium-danger, $light-danger, $dark-danger);
+  }
+
+  &.light {
+    @include button-outlined($alpha-light-black, $alpha-light-black, $alpha-light-black);
+  }
+
+  &.dark {
+    @include button-outlined($medium-black, $light-black, $black);
+  }
+}

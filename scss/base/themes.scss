@@ -1,0 +1,38 @@
+@import "./colors.scss";
+@import "./mixins.scss";
+
+.primary, .info, .danger, .dark {
+  color: $alpha-white;
+}
+
+.caution, .light, .white {
+  color: $alpha-black;
+}
+
+.primary {
+  @include border-background-color($medium-primary);
+}
+
+.info {
+  @include border-background-color($medium-info);
+}
+
+.caution {
+  @include border-background-color($medium-caution);
+}
+
+.danger {
+  @include border-background-color($medium-danger);
+}
+
+.light {
+  @include border-background-color($light-white);
+}
+
+.white {
+  @include border-background-color($white);
+}
+
+.dark {
+  @include border-background-color($medium-black);
+}

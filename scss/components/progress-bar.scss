@@ -1,30 +1,24 @@
 @import "../base/colors.scss";
+@import "../base/mixins.scss";
 
-$progress-bar-height: 0.75em;
+$progress-bar-height: 1em;
 $progress-bar-radius: 0.125em;
-$progress-bar-margin: 0.6rem 0rem;
+$progress-bar-background-color: $light-gray;
+$progress-background-color: $dark-gray;
+
+.progress {
+  background-color: $progress-background-color;
+}
 
 div.progress-bar {
   font-size: 1.6rem;
   height: $progress-bar-height;
-  background-color: $light-gray;
+  background-color: $progress-bar-background-color;
   border-radius: $progress-bar-radius;
-  margin: $progress-bar-margin;
+  overflow: hidden;
 
-  div.progress:first-child {
-    border-radius: $progress-bar-radius 0em 0em $progress-bar-radius;
-  }
-
-  div.progress:last-child {
-    border-radius: 0em $progress-bar-radius $progress-bar-radius 0em;
-  }
-
-  div.progress:not(:first-child):not(:last-child) {
-    border-radius: 0em;
-  }
-
-  div.progress:only-child {
-    border-radius: inherit;
+  &::after {
+    @include clearfix();
   }
 
   div.progress {
@@ -32,38 +26,18 @@ div.progress-bar {
     height: 100%;
     min-width: 0%;
     max-width: 100%;
-    background-color: $dark-gray;
-    color: $white-gray;
-    // transition: width 300ms;
+    text-align: center;
+    transition: width 200ms;
   }
 
-  div.progress.theme-primary {
-    background-color: $medium-blue;
-    color: $white-blue;
-  }
-
-  div.progress.theme-info {
-    background-color: $medium-green;
-    color: $white-green;
-  }
-
-  div.progress.theme-caution {
-    background-color: $medium-yellow;
-    color: $dark-yellow;
-  }
-
-  div.progress.theme-danger {
-    background-color: $medium-red;
-    color: $white-red;
-  }
-
-  div.progress.theme-light {
-    background-color: $light-white;
-    color: $light-black;
-  }
-
-  div.progress.theme-dark {
-    background-color: $medium-black;
-    color: $white;
-  }
 }
+
+
+
+
+
+
+
+
+
+

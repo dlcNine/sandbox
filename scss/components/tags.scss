@@ -1,0 +1,41 @@
+@import "../base/mixins.scss";
+@import "../base/global-variables";
+
+$tags-font-size: 0.75em;
+$tags-tag-round-radius: $RADIUS_ROUND;
+
+span.tags {
+  font-size: $tags-font-size;
+  display: inline-block;
+  vertical-align: text-bottom;
+
+  &::after {
+    @include clearfix();
+  }
+
+  &.r-round {
+    span.tag:first-child {
+      border-top-left-radius: $tags-tag-round-radius;
+      border-bottom-left-radius: $tags-tag-round-radius;
+    }
+    span.tag:last-child {
+      border-top-right-radius: $tags-tag-round-radius;
+      border-bottom-right-radius: $tags-tag-round-radius;
+    }
+  }
+
+  &.r-0 {
+    span.tag {
+      border-radius: 0;
+    }
+  }
+
+  span.tag {
+    font-size: inherit;
+    float: left;
+
+    @include child-radius-rules();
+  }
+}
+
+

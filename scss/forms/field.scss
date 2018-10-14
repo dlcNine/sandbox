@@ -1,0 +1,64 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+
+$field-help-font-size: 1.2rem;
+$field-label-spacing: 1rem;
+$field-help-spacing: 0.5rem;
+$field-input-shadow-spread: 0.125em;
+
+$field-required-asterisk-color: $light-danger;
+
+div.field {
+  &.horizontal {
+    display: flex;
+    align-items: baseline;
+
+    label.checkbox:not(.switch), label.radio:not(.switch) {
+      input[type="checkbox"], input[type="radio"] {
+        height: initial;
+      }
+    }
+  }
+
+  label.label {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: $field-label-spacing;
+  }
+
+  &.required label.label::after {
+    font-size: $field-help-font-size;
+    content: ' * ';
+    vertical-align: top;
+    color: $field-required-asterisk-color;
+  }  
+
+  p.help {
+    font-size: $field-help-font-size;
+    margin-top: $field-help-spacing;
+    margin-bottom: 0;
+  }
+
+  &.primary {
+    @include field-theme($light-primary, $medium-primary, $field-input-shadow-spread, $alpha-light-primary);
+  }
+
+  &.info {
+    @include field-theme($light-info, $medium-info, $field-input-shadow-spread, $alpha-light-info);
+  }
+
+  &.caution {
+    @include field-theme($light-caution, $medium-caution, $field-input-shadow-spread, $alpha-light-caution);
+  }
+
+  &.danger {
+    @include field-theme($light-danger, $medium-danger, $field-input-shadow-spread, $alpha-light-danger);
+  }
+}
+
+
+
+
+
+
+
