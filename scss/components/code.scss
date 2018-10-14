@@ -1,55 +1,30 @@
 @import "../base/colors.scss";
 
-$code-background-color: $white-gray;
-$code-padding: 1.75em;
-$code-border: 0.1rem solid $medium-white;
-$code-line-color: $medium-black;
-$code-line-margin: 0.375em 0.375em 0.375em 0.875em;
-$code-line-height: 1.2;
-$code-pre-line-height: 1.5;
-$code-line-number-color: $light-gray;
-$code-line-number-margin-left: 0.5em;
-$code-line-hover-line-number-color: $white-black;
-$code-nested-margin-left: 1em; 
-$code-nested-border-color: $light-gray;
+$code-background-color: $alpha-light-gray;
+$code-border-radius: 0.25em;
+$code-padding: 1em;
+$snippet-padding: 0.25em;
 
-pre.code, ol.code {
-  font-size: 1.6rem;
+pre.code, span.snippet {
   font-family: monospace;
   background-color: $code-background-color;
-  padding: $code-padding;
-  border: $code-border;
+  border-radius: $code-border-radius;
 }
 
 pre.code {
-  line-height: $code-pre-line-height;
-}
+  font-size: 1.6rem;
+  line-height: 1.5;
+  border-radius: $code-border-radius;
+  white-space: pre-wrap;
+  padding: $code-padding;
 
-ol.code {
-  counter-reset: line-number 0;
-  position: relative;
-  line-height: $code-line-height;
-
-  li.line {
-    margin: $code-line-margin;
-    counter-increment: line-number;
-    color: $code-line-color;
-
-    &::before {
-      position: absolute;
-      left: 0;
-      margin-left: $code-line-number-margin-left;
-      color: $code-line-number-color;
-      content: counter(line-number);
-    }
-
-    &:hover::before {
-      color: $code-line-hover-line-number-color;
-    }
-  }
-
-  & ol.code-nested, ol.code-nested ol.code-nested {
-    margin-left: $code-nested-margin-left;
-    border-left: 0.1rem solid $code-nested-border-color;
+  code {
+    display: block;
   }
 }
+
+span.snippet {
+  display: inline-block;
+  padding: $snippet-padding;
+}
+

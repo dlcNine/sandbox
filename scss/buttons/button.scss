@@ -4,7 +4,16 @@
 
 $button-padding: 0.375em 0.75em;
 $button-border-width: 0.0625em;
+$button-color: $alpha-black;
 $button-border-radius: $BUTTON_BORDER_RADIUS;
+$button-default-build-color: $medium-gray;
+
+.button {
+  color: $button-color;
+  background-color: $button-default-build-color;
+  border-color: $button-default-build-color;
+  @include button-default($light-gray, $dark-gray, $alpha-light-primary);
+}
 
 a.button, button.button, input.button {
   font-size: 1.6rem;
@@ -27,10 +36,6 @@ a.button, button.button, input.button {
 
   &.primary {
     @include button-default($light-primary, $dark-primary, $alpha-light-primary);
-  }
-
-  &.secondary {
-    @include button-default($light-gray, $dark-gray, $alpha-light-primary);
   }
 
   &.info {

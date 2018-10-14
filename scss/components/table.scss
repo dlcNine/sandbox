@@ -5,8 +5,12 @@ $table-item-padding: 0.75em;
 $table-tight-padding: 0.5em;
 $table-tighter-padding: 0.25em;
 $table-border-color: $BORDER_COLOR;
-$table-row-stripe-color: $alpha-gray;
-$table-row-hover-color: $alpha-dark-gray;
+$table-row-stripe-color: $alpha-light-gray;
+$table-row-hover-color: $alpha-gray;
+
+.table {
+  background-color: $white;
+}
 
 table.table {
   font-size: 1.6rem;

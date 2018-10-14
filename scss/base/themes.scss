@@ -5,16 +5,12 @@
   color: $alpha-white;
 }
 
-.secondary, .caution, .light, .white {
+.caution, .light, .white {
   color: $alpha-black;
 }
 
 .primary {
   @include border-background-color($medium-primary);
-}
-
-.secondary {
-  @include border-background-color($medium-gray);
 }
 
 .info {

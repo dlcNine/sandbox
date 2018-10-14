@@ -5,7 +5,6 @@
 @import "./base/mixins.scss";
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
-@import "./base/themes.scss";
 
 /* ============ utilities ============ */
 @import "./utilities/zeroing.scss";
@@ -37,7 +36,6 @@
 @import "./forms/addons.scss";
 @import "./forms/icons.scss";
 
-
 /* ============ components ============ */
 @import "./components/modal.scss";
 @import "./components/card.scss";
@@ -48,17 +46,19 @@
 @import "./components/square.scss";
 @import "./components/progress-bar.scss";
 @import "./components/banner.scss";
-// make some type of list content component
+@import "./components/list-items.scss";
+@import "./components/pagination.scss";
 @import "./components/navbar.scss";
 @import "./components/dropdown.scss";
-// @import "./components/popover.scss";
-// @import "./components/arrow.scss";
-// @import "./components/snippet.scss";
-// @import "./components/code.scss";
-// @import "./components/loading.scss";
+@import "./components/popover.scss";
+@import "./components/code.scss";
+@import "./components/loading.scss";
 @import "./components/table.scss";
-// @import "./components/path.scss";
+@import "./components/trail.scss";
 @import "./components/ul-ol.scss";
+
+/* ============ themes ============ */
+@import "./base/themes.scss";
 
 
 

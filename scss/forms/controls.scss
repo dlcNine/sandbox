@@ -1,7 +1,6 @@
 @import "../base/colors.scss";
 @import "../base/global-variables.scss";
 
-$control-color: $alpha-black;
 $control-border-color: $BORDER_COLOR;
 $control-border-width: 0.1rem;
 $control-hover-border-color: $BORDER_ACTIVE_COLOR;
@@ -25,7 +24,7 @@ input.textbox, select.textbox, textarea.textbox {
   font-size: 1.6rem;
   display: block;
   width: 100%;
-  color: $control-color;
+  color: inherit;
   background-color: $control-background-color;
   border: $control-border-width solid $control-border-color;
   border-radius: $control-border-radius;

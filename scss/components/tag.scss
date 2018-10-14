@@ -3,6 +3,11 @@
 $tag-font-size: 0.75em;
 $tag-padding: 0.25em 0.5em;
 $tag-border-radius: 0.25em;
+$tag-background-color: $medium-gray;
+
+.tag {
+  background-color: $tag-background-color;
+}
 
 span.tag {
   font-size: $tag-font-size;
@@ -16,7 +21,8 @@ span.tag {
     color: inherit;
     text-decoration: none;
 
-    &:hover {
+    &:hover, &:focus {
+      outline: none;
       text-decoration: underline;
     }
   }

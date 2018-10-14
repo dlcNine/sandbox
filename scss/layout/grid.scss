@@ -133,7 +133,7 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
-  .grid.tight.not-tight-sm {
+  .grid.tight.no-tight-sm {
     @include tight-cancel($unit-padding);
   }
 
@@ -245,7 +245,7 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
-  .grid.tight.not-tight-md {
+  .grid.tight.no-tight-md {
     @include tight-cancel($unit-padding);
   }
 
@@ -357,7 +357,7 @@ div.push-12 {
 /* ====================================================== */
 
 @media screen and (min-width: $lg-and-up) {
-  .grid.tight.not-tight-lg {
+  .grid.tight.no-tight-lg {
     @include tight-cancel($unit-padding);
   }
 
