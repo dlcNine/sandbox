@@ -37,7 +37,6 @@
 @import "./forms/addons.scss";
 @import "./forms/icons.scss";
 
-
 /* ============ components ============ */
 @import "./components/modal.scss";
 @import "./components/card.scss";
@@ -48,7 +47,7 @@
 @import "./components/square.scss";
 @import "./components/progress-bar.scss";
 @import "./components/banner.scss";
-// make some type of list content component
+@import "./components/list-items.scss";
 @import "./components/pagination.scss";
 @import "./components/navbar.scss";
 @import "./components/dropdown.scss";
