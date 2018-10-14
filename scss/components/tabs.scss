@@ -12,10 +12,6 @@ $tabs-vertical-a-padding: 0.25em;
 $tabs-vertical-nested-margin-left: 1em;
 
 ul.tabs:not(.vertical), ul.tabs.vertical {
-    li.tab.reveal-wrapper, li.tab-item.reveal-wrapper {
-        display: block;
-    }
-
     li.tab a.tab-a {
         display: block;
         color: $tab-text-color;
@@ -31,16 +27,8 @@ ul.tabs:not(.vertical), ul.tabs.vertical {
 ul.tabs:not(.vertical) {
     font-size: 1.6rem;
 
-    &::after {
-        @include clearfix();
-    }
-
-    &.flex::after {
-        display: none;
-    }
-
     li.tab {
-        float: left;
+        display: inline-block;
 
         &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
             color: $alpha-black;
@@ -166,14 +154,5 @@ ul.tabs.vertical {
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 
