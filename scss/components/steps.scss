@@ -1,16 +1,16 @@
 @import "../base/colors.scss";
 
-$trail-color: $alpha-light-black;
-$trail-hover-color: $alpha-black;
-$trail-last-child-color: $light-primary;
-$trail-separator-x-spacing: 0.25em;
+$steps-color: $alpha-light-black;
+$steps-hover-color: $alpha-black;
+$steps-last-child-color: $light-primary;
+$steps-separator-x-spacing: 0.25em;
 
-ul.trail {
+ul.steps {
     font-size: 1.6rem;
 
     li.step {
         display: inline-block;
-        color: $trail-color;
+        color: $steps-color;
 
         a.step-a {
             text-decoration: none;
@@ -18,17 +18,17 @@ ul.trail {
 
             &:hover, &:focus {
                 outline: none;
-                color: $trail-hover-color;
+                color: $steps-hover-color;
             }
         }
 
         &:last-child a.step-a {
-            color: $trail-last-child-color;
+            color: $steps-last-child-color;
         }
 
         &:not(:last-child)::after {
             content: '/';
-            margin: 0rem $trail-separator-x-spacing;
+            margin: 0rem $steps-separator-x-spacing;
         }
     }
 }

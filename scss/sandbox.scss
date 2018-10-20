@@ -6,20 +6,6 @@
 @import "./base/reset.scss";
 @import "./base/font-sizes.scss";
 
-/* ============ utilities ============ */
-@import "./utilities/zeroing.scss";
-@import "./utilities/borders.scss";
-@import "./utilities/spacing.scss";
-@import "./utilities/display.scss";
-@import "./utilities/float.scss";
-@import "./utilities/z-index.scss";
-@import "./utilities/overflow.scss";
-@import "./utilities/height.scss";
-@import "./utilities/width.scss";
-@import "./utilities/text.scss";
-@import "./utilities/img.scss";
-@import "./utilities/animation.scss";
-
 /* ============ layout ============ */
 @import "./layout/grid.scss";
 @import "./layout/positioning.scss";
@@ -54,8 +40,22 @@
 @import "./components/code.scss";
 @import "./components/loading.scss";
 @import "./components/table.scss";
-@import "./components/trail.scss";
+@import "./components/steps.scss";
 @import "./components/ul-ol.scss";
+
+/* ============ utilities ============ */
+@import "./utilities/spacing.scss";
+@import "./utilities/borders.scss";
+@import "./utilities/display.scss";
+@import "./utilities/float.scss";
+@import "./utilities/z-index.scss";
+@import "./utilities/overflow.scss";
+@import "./utilities/height.scss";
+@import "./utilities/width.scss";
+@import "./utilities/text.scss";
+@import "./utilities/img.scss";
+@import "./utilities/animation.scss";
+@import "./utilities/zeroing.scss";
 
 /* ============ themes ============ */
 @import "./base/themes.scss";

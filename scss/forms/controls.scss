@@ -24,7 +24,7 @@ input.textbox, select.textbox, textarea.textbox {
   font-size: 1.6rem;
   display: block;
   width: 100%;
-  color: inherit;
+  color: $FONT_COLOR;
   background-color: $control-background-color;
   border: $control-border-width solid $control-border-color;
   border-radius: $control-border-radius;

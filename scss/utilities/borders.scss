@@ -6,6 +6,12 @@ $borders-color: $BORDER_COLOR;
 $borders-radius: 0.25em;
 $borders-round: $RADIUS_ROUND;
 
+hr {
+  border-top: 0.1rem solid $light-white;
+}
+
+// ---
+
 .b {
   border: $borders-width solid $borders-color !important;
 }
@@ -25,6 +31,8 @@ $borders-round: $RADIUS_ROUND;
 .br {
   border-right: $borders-width solid $borders-color !important;
 }
+
+// ---
 
 .r {
   border-radius: $borders-radius !important;
@@ -53,6 +61,8 @@ $borders-round: $RADIUS_ROUND;
 .r-round { 
   border-radius: $borders-round !important;
 }
+
+
 
 
 
