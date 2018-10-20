@@ -12,6 +12,9 @@ $button-default-build-color: $medium-gray;
   color: $button-color;
   background-color: $button-default-build-color;
   border-color: $button-default-build-color;
+}
+
+.button, .button.outlined {
   @include button-default($light-gray, $dark-gray, $alpha-light-primary);
 }
 
@@ -19,18 +22,19 @@ a.button, button.button, input.button {
   font-size: 1.6rem;
   display: inline-block;
   text-align: center;
+  line-height: 1;
   padding: $button-padding;
   border-width: $button-border-width;
   border-style: solid;
   border-radius: $button-border-radius;
-  transition: all 125ms;
+  transition: all 175ms;
 
   &:hover {
     cursor: pointer;
   }
 
   &:active, &:focus {
-    outline: none !important;
+    outline: none;
     z-index: 5;
   }
 
@@ -51,7 +55,7 @@ a.button, button.button, input.button {
   }
 
   &.light {
-    @include button-default($light-white, $dark-white, $alpha-light-primary);
+    @include button-default($white-gray, $medium-white, $alpha-light-primary);
   }
 
   &.dark {
