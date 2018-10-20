@@ -10,8 +10,7 @@ $button-default-build-color: $medium-gray;
 
 .button {
   color: $button-color;
-  background-color: $button-default-build-color;
-  border-color: $button-default-build-color;
+  @include border-background-color($button-default-build-color);
 }
 
 .button, .button.outlined {

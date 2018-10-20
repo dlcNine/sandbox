@@ -12,18 +12,23 @@ ul.steps {
         display: inline-block;
         color: $steps-color;
 
+        &:last-child {
+            color: $steps-last-child-color;
+        }
+
         a.step-a {
             text-decoration: none;
             color: inherit;
 
-            &:hover, &:focus {
+            &:focus {
                 outline: none;
-                color: $steps-hover-color;
             }
         }
 
-        &:last-child a.step-a {
-            color: $steps-last-child-color;
+        &:not(:last-child) a.step-a {
+            &:hover, &:focus {
+                color: $steps-hover-color;
+            }
         }
 
         &:not(:last-child)::after {
