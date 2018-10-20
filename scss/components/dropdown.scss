@@ -74,7 +74,8 @@ div.dropdown {
     text-decoration: none;
     display: block;
 
-    &:hover {
+    &:hover, &:focus {
+      outline: none;
       background-color: $dropdown-a-hover-color;
     }
   }

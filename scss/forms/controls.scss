@@ -5,11 +5,12 @@ $control-border-color: $BORDER_COLOR;
 $control-border-width: 0.1rem;
 $control-hover-border-color: $BORDER_ACTIVE_COLOR;
 $control-background-color: $white;
+$control-shadow-spread: $CONTROL_SHADOW_SPREAD;
 $control-box-shadow-color: $alpha-light-primary;
 $control-border-radius: 0.125em;
 $control-spacing: 1rem;
 
-$control-textbox-height: 2.25em;
+$control-height: $CONTROL_HEIGHT;
 
 $control-textarea-min-height: 10rem;
 $control-textarea-max-height: 40rem;
@@ -18,7 +19,6 @@ $control-textarea-line-height: 1.5;
 $control-switch-track-height: 0.5em;
 $control-switch-track-width: 2.2em;
 $control-switch-box-size: 1.2em;
-
 
 input.textbox, select.textbox, textarea.textbox {
   font-size: 1.6rem;
@@ -38,7 +38,7 @@ input.textbox, select.textbox, textarea.textbox {
   &:focus {
     outline: none;
     border-color: $control-hover-border-color;
-    box-shadow: 0 0 0 $control-border-radius $control-box-shadow-color;
+    box-shadow: 0 0 0 $control-shadow-spread $control-box-shadow-color;
   }
 
   &[readonly], &[disabled] {
@@ -55,7 +55,7 @@ input.textbox, select.textbox, textarea.textbox {
 }
 
 input.textbox, select.textbox {
-  height: $control-textbox-height;
+  height: $control-height;
   padding: 0rem $control-spacing;
 }
 
@@ -79,17 +79,16 @@ textarea.textbox {
 label.checkbox, label.radio {
   font-size: 1.6rem;
   display: inline-block;
-  height: $control-textbox-height;
-  line-height: $control-textbox-height;
+  height: $control-height;
+  line-height: $control-height;
 
   input[type="checkbox"], input[type="radio"] {
-    height: 100%;
     margin-right: 0.5 * $control-spacing;
-  }
 
-  span.text {
-    display: inline-block;
-    vertical-align: top;
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: $DISABLED_OPACITY;
+    }
   }
 }
 
@@ -131,6 +130,11 @@ label.checkbox.switch, label.radio.switch {
       left: 100%;
       transform: translate(-98%, -50%);
     }
+  }
+
+  input[type="checkbox"][disabled] + i, input[type="radio"][disabled] + i {
+    cursor: not-allowed;
+    opacity: $DISABLED_OPACITY;
   }
 
 }

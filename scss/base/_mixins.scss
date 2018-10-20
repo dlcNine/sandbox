@@ -1,3 +1,5 @@
+@import "./global-variables.scss";
+
 @mixin clearfix() {
   content: '';
   clear: both;
@@ -35,7 +37,7 @@
   }
 
   &:focus:not([disabled]) {
-    box-shadow: 0 0 0 0.1875em $shadow-color;
+    box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $shadow-color;
   }
 }
 

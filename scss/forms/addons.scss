@@ -1,7 +1,7 @@
 @import "../base/colors.scss";
 @import "../base/global-variables.scss";
 
-$addon-height: 2.25em;
+$addon-height: $CONTROL_HEIGHT;
 $addon-border-width: 0.1rem;
 $addon-background-color: $light-white;
 $addon-border-color: $BORDER_COLOR;
