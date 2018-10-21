@@ -49,15 +49,15 @@
   }
 }
 
-@mixin field-theme($light-color, $medium-color, $box-shadow-spread, $box-shadow-color) {
+@mixin field-theme($light-color, $medium-color, $box-shadow-color) {
   background-color: inherit;
-  color: inherit;
+  color: $FONT_COLOR;
 
   input.textbox, select.textbox, textarea.textbox {
     border-color: $light-color;
 
     &:focus {
-      box-shadow: 0 0 0 $box-shadow-spread $box-shadow-color;
+      box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $box-shadow-color;
     }
   }
 

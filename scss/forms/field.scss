@@ -4,7 +4,6 @@
 $field-help-font-size: 1.2rem;
 $field-label-spacing: 1rem;
 $field-help-spacing: 0.5rem;
-$field-input-shadow-spread: 0.125em;
 
 $field-required-asterisk-color: $light-danger;
 
@@ -12,12 +11,6 @@ div.field {
   &.horizontal {
     display: flex;
     align-items: baseline;
-
-    label.checkbox:not(.switch), label.radio:not(.switch) {
-      input[type="checkbox"], input[type="radio"] {
-        height: initial;
-      }
-    }
   }
 
   label.label {
@@ -40,19 +33,19 @@ div.field {
   }
 
   &.primary {
-    @include field-theme($light-primary, $medium-primary, $field-input-shadow-spread, $alpha-light-primary);
+    @include field-theme($light-primary, $medium-primary, $alpha-light-primary);
   }
 
   &.info {
-    @include field-theme($light-info, $medium-info, $field-input-shadow-spread, $alpha-light-info);
+    @include field-theme($light-info, $medium-info, $alpha-light-info);
   }
 
   &.caution {
-    @include field-theme($light-caution, $medium-caution, $field-input-shadow-spread, $alpha-light-caution);
+    @include field-theme($light-caution, $medium-caution, $alpha-light-caution);
   }
 
   &.danger {
-    @include field-theme($light-danger, $medium-danger, $field-input-shadow-spread, $alpha-light-danger);
+    @include field-theme($light-danger, $medium-danger, $alpha-light-danger);
   }
 }
 
