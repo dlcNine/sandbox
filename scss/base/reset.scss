@@ -1,4 +1,5 @@
 @import "./colors.scss";
+@import "./global-variables.scss";
 
 a, abbr, address, area, article, aside, audio, b, 
 base, bdi, bdo, blockquote, body, br, button, 
@@ -20,28 +21,19 @@ tfoot, th, thead, time, tr, track, u, ul, var, video, wbr {
   vertical-align: baseline;
 }
 
-/* 
-omitted from above:
-  head, link, meta, script, source, style, 
-  title
-*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-/* HTML5 block elements */
 article, aside, audio, canvas, details, embed, figcaption, figure, 
 footer, header, main, meter, nav, picture, ruby, section, 
 summary, video {
   display: block;
 }
 
-/*HTML5 inline elements */
 bdi, datalist, mark, output, progress, rp, rt, time, wbr {
   display: inline;
 }
-
-/* 
-omitted from HTML5 elements:
-  dialog, menuitem, source, track, 
-*/
 
 html {
   font-size: 62.5%;
@@ -51,8 +43,8 @@ html {
 body {
   line-height: 1;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: $alpha-black;
+  font-family: $FONT_STACK;
+  color: $FONT_COLOR;
 }
 
 ol, ul {
@@ -74,13 +66,6 @@ table {
   border-spacing: 0;
 }
 
-/* ==================================== */
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-/* ==================================== */
 b, strong {
   font-weight: bold;
 }
@@ -89,24 +74,12 @@ em {
   font-style: italic;
 }
 
-del {
-  text-decoration: line-through;
-}
-
-ins {
-  text-decoration: underline;
-}
-
 sub {
   vertical-align: sub;
 }
 
 sup {
   vertical-align: super;
-}
-
-hr {
-  border-top: 0.1rem solid $light-white;
 }
 
 

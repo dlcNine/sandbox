@@ -20,12 +20,12 @@ ul.pagination {
             color: $pagination-active-color;
         }
 
-        &[disabled] a.page-a {
+        &.disabled a.page-a {
             opacity: $DISABLED_OPACITY;
             pointer-events: none;
         }
 
-        &:not([disabled]) a.page-a {
+        &:not(.disabled):not(.active) a.page-a {
             &:hover, &:focus {
                 color: $pagination-hover-color;
             }

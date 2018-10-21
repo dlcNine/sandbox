@@ -74,7 +74,8 @@ div.dropdown {
     text-decoration: none;
     display: block;
 
-    &:hover {
+    &:hover, &:focus {
+      outline: none;
       background-color: $dropdown-a-hover-color;
     }
   }
@@ -83,7 +84,6 @@ div.dropdown {
     border-top: 0.1rem solid $dropdown-border-color;
   }
 
-  // nested dropdowns
   div.dropdown {
     &.on-right, &.on-left {
       top: -1 * $dropdown-item-padding;

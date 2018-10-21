@@ -1,6 +1,6 @@
 @import "../base/colors.scss";
 
-$overlay-tint-color: $alpha-light-black;
+$overlay-background-color: $alpha-light-black;
 $modal-padding: 1.25em;
 $modal-border-radius: 0.25em;
 $modal-background-color: $white;
@@ -13,10 +13,7 @@ div.overlay {
   height: 100.1%;
   width: 100%;
   overflow-y: auto;
-
-  &.tint {
-    background-color: $overlay-tint-color;
-  }
+  background-color: $overlay-background-color;
 
   div.modal {
     font-size: 1.6rem;

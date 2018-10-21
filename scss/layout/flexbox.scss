@@ -2,10 +2,7 @@
   display: flex !important;
 }
 
-.flex-row-wrap {
-  display: flex !important;
-  flex-flow: row wrap;
-}
+// ---
 
 .flex-start {
   justify-content: flex-start;
@@ -30,6 +27,8 @@
 .flex-even {
   justify-content: space-evenly;
 }
+
+// ---
 
 .flex-cross-start {
   align-items: flex-start;

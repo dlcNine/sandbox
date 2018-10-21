@@ -1,3 +1,5 @@
+@import "./global-variables.scss";
+
 @mixin clearfix() {
   content: '';
   clear: both;
@@ -34,32 +36,28 @@
    @include border-background-color($dark-color);
   }
 
-  &:focus:not(:hover):not([disabled]) {
-    box-shadow: 0 0 0 0.1875em $shadow-color;
+  &:focus:not([disabled]) {
+    box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $shadow-color;
   }
 }
 
-@mixin button-outlined($text-color, $hover-text-color, $active-text-color) {
+@mixin button-outlined($text-color, $hover-text-color) {
   color: $text-color;
 
   &:hover {
     color: $hover-text-color;
   }
-
-  &:active {
-    color: $active-text-color;
-  }
 }
 
-@mixin field-theme($light-color, $medium-color, $box-shadow-spread, $box-shadow-color) {
+@mixin field-theme($light-color, $medium-color, $box-shadow-color) {
   background-color: inherit;
-  color: inherit;
+  color: $FONT_COLOR;
 
   input.textbox, select.textbox, textarea.textbox {
     border-color: $light-color;
 
     &:focus {
-      box-shadow: 0 0 0 $box-shadow-spread $box-shadow-color;
+      box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $box-shadow-color;
     }
   }
 

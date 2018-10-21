@@ -12,6 +12,10 @@
   text-align: right !important;
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 .va-top {
   vertical-align: top !important;
 }
@@ -32,7 +36,7 @@
   vertical-align: text-bottom !important;
 }
 
-/* ====================================================== */
+// --- 
 
 .text-capitalize {
   text-transform: capitalize !important;
@@ -46,7 +50,7 @@
   text-transform: lowercase !important;
 }
 
-/* ====================================================== */
+// ---
 
 .fw-lighter {
   font-weight: lighter !important;
@@ -76,13 +80,13 @@
   text-decoration: overline !important;
 }
 
-/* ====================================================== */
+// ---
 
 .lh-1 {
   line-height: 1 !important;
 }
 
-/* ====================================================== */
+// ---
 
 .text-black {
   color: $alpha-black !important;
