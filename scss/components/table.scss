@@ -19,6 +19,7 @@ table.table {
 
   th, td {
     padding: $table-item-padding;
+    vertical-align: middle;
   }
 
   th {

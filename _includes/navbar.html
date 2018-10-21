@@ -1,22 +1,21 @@
-<div class="navbar bb">
-  <ul class="navbar-items relative flex flex-between flex-cross-center">
-    <li class="navbar-item">
-      <a href="" id="demo-side-menu-button" class="navbar-a">
-        <span class="icon"><i class="fa fa-bars"></i></span>
-        Menu
-      </a>
-    </li>
-    <li class="navbar-item h3 absolute center-center">
-      <a href="{{ 'index.html' | absolute_url }}" class="navbar-a">Sandbox</a>
-    </li>
-  </ul>
-</div>
+<nav class="navbar flex flex-between flex-cross center">
+    <div>
+        <div class="navbar-item">
+            <button id="menuButton" class="button primary outlined">menu</button>
+        </div>
+        <a href="" class="navbar-item">two</a>
+    </div>
+    <div>
+        
+    </div>
+</nav>
+<script type="text/javascript">
+    const menuButton = document.querySelector('#menuButton');
+    menuButton.addEventListener('click', function(e){
+        // find sideMenu
+        // toggle .in class
+        const sideMenu = document.querySelector('#sideMenu');
+        sideMenu.classList.toggle('in');
+    });
 
-<script>
-  const demoSideMenuButton = document.querySelector("#demo-side-menu-button");
-  const demoSideMenu = document.querySelector("#demo-side-menu");
-  demoSideMenuButton.addEventListener("click", function(event){
-    event.preventDefault();
-    demoSideMenu.classList.toggle("demo-side-menu-reveal");
-  });
 </script>
