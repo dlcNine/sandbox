@@ -3,19 +3,21 @@
         <div class="navbar-item">
             <button id="menuButton" class="button primary outlined">menu</button>
         </div>
-        <a href="" class="navbar-item">two</a>
+        <a href="/index.html" class="navbar-item">Landing Page</a>
     </div>
     <div>
         
     </div>
 </nav>
 <script type="text/javascript">
-    const menuButton = document.querySelector('#menuButton');
-    menuButton.addEventListener('click', function(e){
-        // find sideMenu
-        // toggle .in class
-        const sideMenu = document.querySelector('#sideMenu');
-        sideMenu.classList.toggle('in');
-    });
+    (function(){
+        const menuButton = document.querySelector('#menuButton');
+
+        menuButton.addEventListener('click', function(e){
+            const sideMenu = document.querySelector('#sideMenu');
+            sideMenu.classList.toggle('in');
+        });
+    })();
+    
 
 </script>

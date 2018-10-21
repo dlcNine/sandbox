@@ -14,10 +14,12 @@ div[class*="unit-"] {
 }
 
 .grid {
-  margin: -1 * $unit-padding;
+  margin-left: -1 * $unit-padding;
+  margin-right: -1 * $unit-padding;
 
   &.tight {
-    margin: -0.5 * $unit-padding;
+    margin-left: -0.5 * $unit-padding;
+    margin-right: -0.5 * $unit-padding;
 
     div[class*="unit-"] {
       padding: 0.5 * $unit-padding;

@@ -11,58 +11,47 @@
 <body>
     {% include side-menu.html %}
     {% include navbar.html %}
-    <div class="grid m-0">
-        <div class="unit-10 push-1 p-0">
-            <h1>Breakpoint Values</h1>
-            <hr class="mb-2">
-            <div class="grid">
-                <div class="unit-6">
-                    <p class="mb-2">Sandbox comes with 3 responsive breakpoints out of the box, as shown in the table.</p>
-                    <p class="mb-2">If you're customizing sandbox, these breakpoint ranges can easily be changed by plugging in your own desired values into the related sass variables and running a build.</p>
-                </div>
-                <div class="unit-6">
-                    <table class="table border-bottoms">
-                    <thead class="striped-odd">
-                        <tr>
-                            <th>Breakpoint</th>
-                            <th>Range</th>
-                            <th>Range in pixels</th>
-                            <th>Suffix</th>
-                        </tr>
-                    </thead>
-                    <tbody class="striped-even">
-                        <tr>
-                            <td>small</td>
-                            <td>&ge; 0rem &amp;&amp; &le; 48rem</td>
-                            <td>&ge; 0px &amp;&amp; &le; 768px</td>
-                            <td><span class="snippet">-sm</span></td>
-                        </tr>
-                        <tr>
-                            <td>medium</td>
-                            <td>&ge; 48.0625rem &amp;&amp; &le; 64rem</td>
-                            <td>&ge; 769px &amp;&amp; &le; 1024px</td>
-                            <td><span class="snippet">-md</span></td>
-                        </tr>
-                        <tr>
-                            <td>large</td>
-                            <td>&ge; 64.0625rem</td>
-                            <td>&ge; 1025px</td>
-                            <td><span class="snippet">-lg</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
+    <div class="no-float unit-10 p-0 push-1">
+        <h1>Breakpoint Values</h1>
+        <hr class="mb-2">
+        <div class="grid">
+            <div class="unit-6 unit-12-sm">
+                <p class="mb-2">Sandbox comes with 3 responsive breakpoints out of the box, as shown in the table.</p>
+                <p class="mb-2">If you're customizing sandbox, these breakpoint ranges can easily be changed by plugging in your own desired values into the related sass variables and running a build.</p>
             </div>
-         
-                
-
-            
-            
-
-
-            
+            <div class="unit-6 unit-12-sm">
+                <table class="table border-bottoms">
+                <thead class="striped-odd">
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Range</th>
+                        <th>Range in pixels</th>
+                        <th>Class Suffix</th>
+                    </tr>
+                </thead>
+                <tbody class="striped-even">
+                    <tr>
+                        <td>small</td>
+                        <td>&ge; 0rem &amp;&amp; &le; 48rem</td>
+                        <td>&ge; 0px &amp;&amp; &le; 768px</td>
+                        <td><span class="snippet">-sm</span></td>
+                    </tr>
+                    <tr>
+                        <td>medium</td>
+                        <td>&ge; 48.0625rem &amp;&amp; &le; 64rem</td>
+                        <td>&ge; 769px &amp;&amp; &le; 1024px</td>
+                        <td><span class="snippet">-md</span></td>
+                    </tr>
+                    <tr>
+                        <td>large</td>
+                        <td>&ge; 64.0625rem</td>
+                        <td>&ge; 1025px</td>
+                        <td><span class="snippet">-lg</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
         </div>
     </div>
-
 </body>
 </html>

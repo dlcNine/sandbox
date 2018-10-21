@@ -1,243 +1,97 @@
 ---
 ---
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox-Colors</title>
-  {% include css-links.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    {% include css-links.html %}
 </head>
 <body>
-  <!-- side menu -->
-  {% include side-menu.html %}
-  <!-- end side menu -->
-  <!-- navbar -->
-  {% include navbar.html %}
-  <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pl-3">
-    <h1 class="ml-2-lg">Colors</h1>
-  </div>
-  <div class="p-2 p-4-lg">
-    <div class="p-1">
-      <h2>Specs</h2>
-      <div class="stamp-bar h5">
-        <span class="stamp light">breakpoints</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">theme classes</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">size classes</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">font-size scaling</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">uses grid within</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">variables</span>
-        <span class="stamp info">yes</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">display set</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">position set</span>
-        <span class="stamp danger">no</span>
-      </div>
-    </div>
-    <hr>
-    <div class="p-1">
-      <h2>Description</h2>
-      <p>The following are all the colors used in Sandbox, presented on a middle-gray background.</p>
-    </div>
-  </div>
-  <div class="demo-middle-gray p-2 p-4-lg">
-    <div class="grid">
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-white relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom ">$white: rgb(255, 255, 255)</span>
+    {% include navbar.html %}
+    {% include side-menu.html %}
+    <main>
+        <div class="no-float unit-10 push-1 b">
+            <h1>Colors</h1>
+            <hr class="mb-2">
+            <p class="mb-2">The following colors are used in sandbox.</p>
+
+            <div class="grid">
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(255, 255, 255);;"></div>
+                    <div class="p-2" style="background-color:rgb(245, 245, 245);;"></div>
+                    <div class="p-2" style="background-color:rgb(230, 230, 230);;"></div>
+                    <div class="p-2" style="background-color:rgb(215, 215, 215);;"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(249, 249, 249);;"></div>
+                    <div class="p-2" style="background-color:rgb(216, 216, 216);;"></div>
+                    <div class="p-2" style="background-color:rgb(201, 201, 201);;"></div>
+                    <div class="p-2" style="background-color:rgb(147, 147, 147);;"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(122, 122, 122);;"></div>
+                    <div class="p-2" style="background-color:rgb(99, 99, 99);;"></div>
+                    <div class="p-2" style="background-color:rgb(76, 76, 76);;"></div>
+                    <div class="p-2" style="background-color:rgb(52, 52, 52);;"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(244, 250, 255);"></div>
+                    <div class="p-2" style="background-color:rgb(84, 171, 247);"></div>
+                    <div class="p-2" style="background-color:rgb(62, 157, 239);"></div>
+                    <div class="p-2" style="background-color:rgb(40, 126, 201);"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(246, 255, 244);"></div>
+                    <div class="p-2" style="background-color:rgb(98, 214, 72);"></div>
+                    <div class="p-2" style="background-color:rgb(84, 196, 58);"></div>
+                    <div class="p-2" style="background-color:rgb(63, 150, 42);"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(252, 252, 239);"></div>
+                    <div class="p-2" style="background-color:rgb(244, 244, 73);"></div>
+                    <div class="p-2" style="background-color:rgb(232, 232, 25);"></div>
+                    <div class="p-2" style="background-color:rgb(111, 111, 16);"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgb(255, 248, 247);"></div>
+                    <div class="p-2" style="background-color:rgb(242, 85, 65);"></div>
+                    <div class="p-2" style="background-color:rgb(229, 60, 39);"></div>
+                    <div class="p-2" style="background-color:rgb(198, 44, 23);"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgba(84, 171, 247, 0.5);"></div>
+                    <div class="p-2" style="background-color:rgba(98, 214, 72, 0.5);"></div>
+                    <div class="p-2" style="background-color:rgba(244, 244, 73, 0.5);"></div>
+                    <div class="p-2" style="background-color:rgba(242, 85, 65, 0.5);"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgba(0, 0, 0, 0.8);;"></div>
+                    <div class="p-2" style="background-color:rgba(0, 0, 0, 0.3);;"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgba(144, 144, 144, 0.2);;"></div>
+                    <div class="p-2" style="background-color:rgba(144, 144, 144, 0.1);;"></div>
+                </div>
+                <div class="unit-3">
+                    <div class="p-2" style="background-color:rgba(255, 255, 255, 0.9);;"></div>
+                    <div class="p-2" style="background-color:rgba(255, 255, 255, 0.65);;"></div>
+                </div>
+            </div>
+            <footer>
+                <ul class="pagination">
+                    <li class="page">
+                        <a href="" class="page-a">Previous</a>
+                    </li>
+                    <li class="page">
+                        <a href="" class="page-a">Next</a>
+                    </li>
+                </ul>
+            </footer>
         </div>
-        <div class="demo-swatch demo-lwhite relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$light-white: rgb(245, 245, 245)</span>
-        </div>
-        <div class="demo-swatch demo-mwhite relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$medium-white: rgb(230, 230, 230)</span>
-        </div>
-        <div class="demo-swatch demo-dwhite relative rbl rbr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$dark-white: rgb(215, 215, 215)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wgray relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$white-gray: rgb(249, 249, 249)</span>
-        </div>
-        <div class="demo-swatch demo-lgray relative">
-          <span class="h6 m-1 absolute right-bottom">$light-gray: rgb(216, 216, 216)</span>
-        </div>
-        <div class="demo-swatch demo-mgray relative">
-          <span class="h6 m-1 absolute right-bottom">$medium-gray: rgb(191, 191, 191)</span>
-        </div>
-        <div class="demo-swatch demo-dgray relative rbl rbr">
-          <span class="h6 m-1 absolute right-bottom">$dark-gray: rgb(147, 147, 147)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wblack relative rtl rtr">
-          <span class="h6 m-1 absolute right-bottom">$white-black: rgb(122, 122, 122)</span>
-        </div>
-        <div class="demo-swatch demo-lblack relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$light-black: rgb(99, 99, 99)</span>
-        </div>
-        <div class="demo-swatch demo-mblack relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$medium-black: rgb(76, 76, 76)</span>
-        </div>
-        <div class="demo-swatch demo-black relative rbl rbr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$black: rgb(52, 52, 52)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wblue relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$white-blue: rgb(244, 250, 255)</span>
-        </div>
-        <div class="demo-swatch demo-lblue relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-blue: rgb(84, 171, 247)</span>
-        </div>
-        <div class="demo-swatch demo-mblue relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$medium-blue: rgb(62, 157, 239)</span>
-        </div>
-        <div class="demo-swatch demo-dblue relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$dark-blue: rgb(40, 126, 201)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wgreen relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$white-green: rgb(246, 255, 244)</span>
-        </div>
-        <div class="demo-swatch demo-lgreen relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-green: rgb(98, 214, 72)</span>
-        </div>
-        <div class="demo-swatch demo-mgreen relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$medium-green: rgb(84, 196, 58)</span>
-        </div>
-        <div class="demo-swatch demo-dgreen relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$dark-green: rgb(63, 150, 42)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wyellow relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$white-yellow: rgb(252, 252, 239)</span>
-        </div>
-        <div class="demo-swatch demo-lyellow relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$light-yellow: rgb(244, 244, 73)</span>
-        </div>
-        <div class="demo-swatch demo-myellow relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$medium-yellow: rgb(232, 232, 25)</span>
-        </div>
-        <div class="demo-swatch demo-dyellow relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$dark-yellow: rgb(111, 111, 16)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-wred relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$white-red: rgb(255, 248, 247)</span>
-        </div>
-        <div class="demo-swatch demo-lred relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-red: rgb(242, 85, 65)</span>
-        </div>
-        <div class="demo-swatch demo-mred relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$medium-red: rgb(229, 60, 39)</span>
-        </div>
-        <div class="demo-swatch demo-dred relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$dark-red: rgb(198, 44, 23)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-orange relative rtl rtr">
-          <span class="text-white h6 m-1 absolute right-bottom">$orange: rgb(247, 169, 45)</span>
-        </div>
-        <div class="demo-swatch demo-yellow relative">
-          <span class="text-gray h6 m-1 absolute right-bottom">$yellow: rgb(234, 231, 24)</span>
-        </div>
-        <div class="demo-swatch demo-indigo relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$indigo: rgb(143, 79, 195)</span>
-        </div>
-        <div class="demo-swatch demo-violet relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$violet: rgb(212, 111, 210)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-link-unvisited relative rtl rtr">
-          <span class="text-white h6 m-1 absolute right-bottom">$link-unvisited: rgb(39, 113, 209)</span>
-        </div>
-        <div class="demo-swatch demo-link-hover relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$link-hover: rgb(8, 80, 175)</span>
-        </div>
-        <div class="demo-swatch demo-link-visited relative">
-          <span class="text-white h6 m-1 absolute right-bottom">$link-visited: rgb(103, 71, 173)</span>
-        </div>
-        <div class="demo-swatch demo-link-visited-hover relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$link-visited-hover: rgb(67, 39, 130)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-table-striped relative r">
-          <span class="text-gray h6 m-1 absolute right-bottom">$table-striped: rgb(240, 240, 240)</span>
-        </div>
-      </div>
-      <div class="new-line"></div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-lgreen-thin relative r">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-green-thin: rgba(119, 216, 97, 0.5)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-myellow-thin relative r">
-          <span class="text-white h6 m-1 absolute right-bottom">$medium-yellow-thin: rgba(232, 232, 25, 0.5)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-lred-thin relative r">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-red-thin: rgba(242, 100, 82, 0.5)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-lblue-thin relative rtl rtr">
-          <span class="text-white h6 m-1 absolute right-bottom">$light-blue-thin: rgba(104, 182, 249, 0.5)</span>
-        </div>
-        <div class="demo-swatch demo-mblue-thick relative rbl rbr">
-          <span class="text-white h6 m-1 absolute right-bottom">$medium-blue-thick: rgba(62, 157, 239, 0.8)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-lwhite-thick relative rtl rtr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$light-white-thick: rgba(245, 245, 245, 0.9)</span>
-        </div>
-        <div class="demo-swatch demo-dwhite-thin relative rbl rbr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$dark-white-thin: rgba(215, 215, 215, 0.25)</span>
-        </div>
-      </div>
-      <div class="unit-12-sm unit-6-md unit-4-lg">
-        <div class="demo-swatch demo-lblack-thick relative rtl rtr">
-          <span class="h6 m-1 absolute right-bottom">$light-black-thick: rgba(99, 99, 99, 0.6)</span>
-        </div>
-        <div class="demo-swatch demo-black-thick relative rbl rbr">
-          <span class="text-gray h6 m-1 absolute right-bottom">$black-thick: rgba(30, 30, 33, 0.8)</span>
-        </div>
-      </div>
-    </div>
-    <div class="flex flex-between p-1 pt-2">
-      <a href="./breakpoint-values.html" class="button p dark m-0">previous</a>
-      <a href="./reset.html" class="button p dark m-0">next</a>
-    </div>
-  </div>
+    </main>
+    
+    
 </body>
 </html>

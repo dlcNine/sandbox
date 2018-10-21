@@ -7,7 +7,8 @@
 }
 
 @mixin tight-cancel($spacing) {
-  margin: -1 * $spacing;
+  margin-left: -1 * $spacing;
+  margin-right: -1 * $spacing;
 
   div[class*="unit-"] {
     padding: $spacing;
@@ -15,7 +16,8 @@
 }
 
 @mixin tight-responsive($spacing) {
-  margin: -0.5 * $spacing;
+  margin-left: -0.5 * $spacing;
+  margin-right: -0.5 * $spacing;
 
   div[class*="unit-"] {
     padding: 0.5 * $spacing;

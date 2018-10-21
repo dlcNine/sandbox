@@ -1,14 +1,14 @@
-<div id="sideMenu" class="light p-2 fixed z-10 w-1-4 h-1 left-top oy-auto">
+<aside id="sideMenu" class="light p-2 fixed z-10 w-1-4 h-1 left-top oy-auto">
     <button id="closeSideMenu"class="close dark to-right"></button>
     <ul class="tabs vertical indent-nested clear-right">
         <li class="tab">
             <a href="" class="tab-a">Base</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
-                    <a href="" class="tab-a">Breakpoint Values</a>
+                    <a href="/docs/base/breakpoint-values.html" class="tab-a">Breakpoint Values</a>
                 </li>
                 <li class="tab">
-                    <a href="" class="tab-a">Colors</a>
+                    <a href="/docs/base/colors.html" class="tab-a">Colors</a>
                 </li>
                 <li class="tab">
                     <a href="" class="tab-a">Global Variables</a>
@@ -29,7 +29,7 @@
         </li>
         <li class="tab">
             <a href="" class="tab-a">Utilities</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
                     <a href="" class="tab-a">Spacing</a>
                 </li>
@@ -70,7 +70,7 @@
         </li>
         <li class="tab">
             <a href="" class="tab-a">Layout</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
                     <a href="" class="tab-a">Grid</a>
                 </li>
@@ -84,7 +84,7 @@
         </li>
         <li class="tab">
             <a href="" class="tab-a">Buttons</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
                     <a href="" class="tab-a">Button</a>
                 </li>
@@ -98,7 +98,7 @@
         </li>
         <li class="tab">
             <a href="" class="tab-a">Forms</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
                     <a href="" class="tab-a">Controls</a>
                 </li>
@@ -115,7 +115,7 @@
         </li>
         <li class="tab">
             <a href="" class="tab-a">Components</a>
-            <ul class="tabs vertical">
+            <ul class="tabs vertical absent">
                 <li class="tab">
                     <a href="" class="tab-a">Modal</a>
                 </li>
@@ -176,12 +176,24 @@
             </ul>
         </li>
     </ul>
-    
-</div>
+</aside>
 <script type="text/javascript">
-    const closeSideMenu = document.querySelector('#closeSideMenu');
-    closeSideMenu.addEventListener('click', function(e){
+    (function(){
+        const closeSideMenu = document.querySelector('#closeSideMenu');
         const sideMenu = document.querySelector('#sideMenu');
-        sideMenu.classList.toggle('in');
-    });
+
+        closeSideMenu.addEventListener('click', function(e){
+            sideMenu.classList.toggle('in');
+        });
+
+        sideMenu.addEventListener('click', function(e){
+            const target = e.target;
+            const sibling = e.target.nextElementSibling;
+
+            if (target.tagName.toLowerCase() === 'a' && target.classList.contains('tab-a') && sibling) {
+                e.preventDefault();
+                sibling.classList.toggle('absent');
+            }
+        });
+    })();
 </script>
