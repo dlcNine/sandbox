@@ -23,11 +23,8 @@ $alpha-light-black: rgba(0, 0, 0, 0.3);
 $alpha-gray: rgba(144, 144, 144, 0.2);
 $alpha-light-gray: rgba(144, 144, 144, 0.1);
 
-
 $alpha-white: rgba(255, 255, 255, 0.9);
 $alpha-dark-white: rgba(255, 255, 255, 0.65);
-
-
 
 // primary
 $white-primary: rgb(244, 250, 255);
@@ -59,6 +56,10 @@ $alpha-light-primary: rgba(84, 171, 247, $alpha-theme-value);
 $alpha-light-info: rgba(98, 214, 72, $alpha-theme-value);
 $alpha-light-caution: rgba(244, 244, 73, $alpha-theme-value);
 $alpha-light-danger: rgba(242, 85, 65, $alpha-theme-value);
+
+// link colors
+$link-unvisited: cornflowerblue;
+$link-visited: mediumpurple;
 
 
 

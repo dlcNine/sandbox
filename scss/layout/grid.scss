@@ -30,7 +30,7 @@ div.new-line {
   width: 100%;
 }
 
-/* ====================================================== */
+// ---
 
 div.unit-1 {
   width: 8.333333333333334%;
@@ -80,7 +80,7 @@ div.unit-12 {
   width: 100%;
 }
 
-/* ==================================== */
+// ---
 
 div.push-1 {
   margin-left: 8.333333333333334%;
@@ -130,8 +130,6 @@ div.push-12 {
   margin-left: 100%;
 }
 
-/* ====================================================== */
-
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .grid.tight.no-tight-sm {
     @include tight-cancel($unit-padding);
@@ -141,7 +139,7 @@ div.push-12 {
     @include tight-responsive($unit-padding);
   }
 
-  /* ==================================== */
+  // ---
 
   div.unit-1-sm {
     width: 8.333333333333334%;
@@ -191,7 +189,7 @@ div.push-12 {
     width: 100%;
   }
 
-  /* ==================================== */
+  // ---
 
   div.push-1-sm {
     margin-left: 8.333333333333334%;
@@ -242,8 +240,6 @@ div.push-12 {
   }
 }
 
-/* ====================================================== */
-
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .grid.tight.no-tight-md {
     @include tight-cancel($unit-padding);
@@ -253,7 +249,7 @@ div.push-12 {
     @include tight-responsive($unit-padding);
   }
 
-  /* ==================================== */
+  // ---
 
   div.unit-1-md {
     width: 8.333333333333334%;
@@ -303,7 +299,7 @@ div.push-12 {
     width: 100%;
   }
 
-  /* ==================================== */
+  // ---
 
   div.push-1-md {
     margin-left: 8.333333333333334%;
@@ -354,8 +350,6 @@ div.push-12 {
   }
 }
 
-/* ====================================================== */
-
 @media screen and (min-width: $lg-and-up) {
   .grid.tight.no-tight-lg {
     @include tight-cancel($unit-padding);
@@ -365,7 +359,7 @@ div.push-12 {
     @include tight-responsive($unit-padding);
   }
 
-  /* ==================================== */
+  // ---
 
   div.unit-1-lg {
     width: 8.333333333333334%;
@@ -415,7 +409,7 @@ div.push-12 {
     width: 100%;
   }
 
-  /* ==================================== */
+  // ---
 
   div.push-1-lg {
     margin-left: 8.333333333333334%;

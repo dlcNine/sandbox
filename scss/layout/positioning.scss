@@ -1,7 +1,3 @@
-.static {
-  position: static !important;
-}
-
 .relative {
   position: relative !important;
 }
@@ -18,6 +14,12 @@
   position: sticky !important;
 }
 
+.static {
+  position: static !important;
+}
+
+// ---
+
 .left-top {
   left: 0;
   top: 0;
@@ -33,6 +35,8 @@
   left: 0;
   bottom: 0;
 }
+
+// ---
 
 .center-top {
   left: 50%;
@@ -51,6 +55,8 @@
   bottom: 0;
   transform: translate(-50%, 0%);
 }
+
+// ---
 
 .right-top {
   right: 0;

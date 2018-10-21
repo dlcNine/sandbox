@@ -1,35 +1,35 @@
-.o-hidden {
-  overflow: hidden;
-}
-
 .o-scroll {
-  overflow: scroll;
+  overflow: scroll !important;
 }
 
 .o-auto {
-  overflow: auto;
+  overflow: auto !important;
 }
 
-.ox-hidden {
-  overflow-x: hidden;
+.o-hidden {
+  overflow: hidden !important;
 }
 
 .ox-scroll {
-  overflow-x: scroll;
+  overflow-x: scroll !important;
 }
 
 .ox-auto {
-  overflow-x: auto;
+  overflow-x: auto !important;
 }
 
-.oy-hidden {
-  overflow-y: hidden;
+.ox-hidden {
+  overflow-x: hidden !important;
 }
 
 .oy-scroll {
-  overflow-y: scroll;
+  overflow-y: scroll !important;
 }
 
 .oy-auto {
-  overflow-y: auto;
+  overflow-y: auto !important;
+}
+
+.oy-hidden {
+  overflow-y: hidden !important;
 }
