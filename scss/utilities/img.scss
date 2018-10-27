@@ -1,25 +1,15 @@
 @import "../base/colors.scss";
 
-img {
-  &.responsive {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-
-  &.fill-width {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  &.fit-contain {
-    object-fit: contain !important;
-  }
-
-  &.fit-cover {
-    object-fit: cover !important;
-  }
-
-  &.fit-none {
-    object-fit: none !important;
-  }
+.responsive {
+  max-width: 100% !important;
+  height: auto !important;
 }
+
+.fill-width {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.fit-contain { object-fit: contain !important; }
+.fit-cover { object-fit: cover !important; }
+.fit-none { object-fit: none !important; }
