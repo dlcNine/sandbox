@@ -5,7 +5,8 @@ $close-radius: 0.125em;
 $close-xmark-size: 0.5em;
 $close-xmark-border-width: 0.0625em;
 
-button.close {
+// button
+.close {
   font-size: 1.6rem;
   height: $close-size;
   width: $close-size;

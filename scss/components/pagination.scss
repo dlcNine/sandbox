@@ -7,31 +7,34 @@ $pagination-hover-color: $alpha-black;
 $pagination-page-border-radius: 0.25em;
 $pagination-page-a-padding: 0.25em;
 
-ul.pagination {
+// ul
+.pagination {
     font-size: 1.6rem;
 
-    li.page {
+    // li
+    .page {
         display: inline-block;
         border-radius: $pagination-page-border-radius;
         color: $pagination-color;
         
-        &.active {
+        &.is-active {
             border: 0.1rem solid $pagination-active-color;
             color: $pagination-active-color;
         }
 
-        &.disabled a.page-a {
+        &.is-disabled .page-a {
             opacity: $DISABLED_OPACITY;
             pointer-events: none;
         }
 
-        &:not(.disabled):not(.active) a.page-a {
+        &:not(.is-disabled):not(.is-active) .page-a {
             &:hover, &:focus {
                 color: $pagination-hover-color;
             }
         }
 
-        a.page-a {
+        // a
+        .page-a {
             display: inline-block;
             padding: $pagination-page-a-padding;
             color: inherit;

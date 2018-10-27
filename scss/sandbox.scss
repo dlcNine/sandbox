@@ -4,7 +4,10 @@
 @import "./base/global-variables.scss";
 @import "./base/mixins.scss";
 @import "./base/reset.scss";
-@import "./base/font-sizes.scss";
+@import "./base/headings.scss";
+@import "./base/a.scss";
+@import "./base/ul-ol.scss";
+@import "./base/table.scss";
 
 /* ============ layout ============ */
 @import "./layout/grid.scss";
@@ -39,14 +42,14 @@
 @import "./components/popover.scss";
 @import "./components/code.scss";
 @import "./components/loading.scss";
-@import "./components/table.scss";
 @import "./components/steps.scss";
-@import "./components/ul-ol.scss";
 
 /* ============ utilities ============ */
+@import "./utilities/font-sizes.scss";
 @import "./utilities/spacing.scss";
 @import "./utilities/borders.scss";
 @import "./utilities/display.scss";
+@import "./utilities/position.scss";
 @import "./utilities/float.scss";
 @import "./utilities/z-index.scss";
 @import "./utilities/overflow.scss";
@@ -58,7 +61,7 @@
 @import "./utilities/zeroing.scss";
 
 /* ============ themes ============ */
-@import "./base/themes.scss";
+@import "./themes/themes.scss";
 
 
 

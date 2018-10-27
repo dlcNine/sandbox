@@ -16,8 +16,8 @@ tfoot, th, thead, time, tr, track, u, ul, var, video, wbr {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
@@ -37,12 +37,11 @@ bdi, datalist, mark, output, progress, rp, rt, time, wbr {
 
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
   line-height: 1;
-  height: 100%;
+  background-color: $BODY_BACKGROUND_COLOR;
   font-family: $FONT_STACK;
   color: $FONT_COLOR;
 }
@@ -80,6 +79,10 @@ sub {
 
 sup {
   vertical-align: super;
+}
+
+hr {
+  border-top: 0.1rem solid $BORDER_COLOR;
 }
 
 

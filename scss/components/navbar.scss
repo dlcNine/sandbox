@@ -1,7 +1,7 @@
 @import "../base/colors.scss";
 @import "../base/mixins.scss";
 
-$navbar-padding: 1em;
+$navbar-padding: 0.25em;
 $navbar-item-padding: 0.5em;
 $navbar-item-border-radius: 0.25em;
 
@@ -16,12 +16,13 @@ $navbar-item-border-radius: 0.25em;
     width: 100%;
   }
 
-  div.navbar-item, a.navbar-item {
+  // div, a
+  .navbar-item {
     display: inline-block;
     padding: $navbar-item-padding;
     border-radius: $navbar-item-border-radius;
 
-    &.active {
+    &.is-active {
       background-color: $alpha-gray;
     }
   }

@@ -1,89 +1,34 @@
 @import "../base/breakpoint-values.scss";
 
-.block {
-  display: block !important;
-}
-
-.inline {
-  display: inline !important;
-}
-
-.inline-block {
-  display: inline-block !important;
-}
-
-.absent {
-  display: none !important;
-}
-
-.invisible {
-  visibility: hidden !important;
-}
+.flex  { display: flex !important; }
+.block { display: block !important; }
+.inline { display: inline !important; }
+.inline-block { display: inline-block !important; }
+.absent { display: none !important; }
+.invisible { visibility: hidden !important; }
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
-  .block-sm {
-    display: block !important;
-  }
-
-  .inline-sm {
-    display: inline !important;
-  }
-
-  .inline-block-sm {
-    display: inline-block !important;
-  }
-
-  .absent-sm {
-    display: none !important;
-  }
-
-  .invisible-sm {
-    visibility: hidden !important;
-  }
+  .block-sm { display: block !important; }
+  .inline-sm { display: inline !important; }
+  .inline-block-sm { display: inline-block !important; }
+  .absent-sm { display: none !important; }
+  .invisible-sm { visibility: hidden !important; }
 }
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
-  .block-md {
-    display: block !important;
-  }
-
-  .inline-md {
-    display: inline !important;
-  }
-
-  .inline-block-md {
-    display: inline-block !important;
-  }
-
-  .absent-md {
-    display: none !important;
-  }
-
-  .invisible-md {
-    visibility: hidden !important;
-  }
+  .block-md { display: block !important; }
+  .inline-md { display: inline !important; }
+  .inline-block-md { display: inline-block !important; }
+  .absent-md { display: none !important; }
+  .invisible-md { visibility: hidden !important; }
 }
 
 @media screen and (min-width: $lg-and-up) {
-  .block-lg {
-    display: block !important;
-  }
-
-  .inline-lg {
-    display: inline !important;
-  }
-
-  .inline-block-lg {
-    display: inline-block !important;
-  }
-
-  .absent-lg {
-    display: none !important;
-  }
-
-  .invisible-lg {
-    visibility: hidden !important;
-  }
+  .block-lg { display: block !important; }
+  .inline-lg { display: inline !important; }
+  .inline-block-lg { display: inline-block !important; }
+  .absent-lg { display: none !important; }
+  .invisible-lg { visibility: hidden !important; }
 }
 
 

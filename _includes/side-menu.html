@@ -1,232 +1,199 @@
-<div id="demo-side-menu" class="fixed unit-10-sm unit-5-md unit-3-lg demo-mblack h-1 z-30 p-2 o-auto">
-  <button id="demo-side-menu-close" class="close to-right dark h2"></button>
-  <ul class="p list-menu indent-sublists dark clear-right">
-    <li class="list-item">
-      <a href="{{ 'docs/overview.html' | absolute_url }}" class="list-a">overview</a>
-    </li>
-    <li class="list-label">
-      <a href="" class="list-a">Base</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="{{ 'docs/base/breakpoint-values.html' || absolute_url }}" class="list-a">breakpoint-values</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/base/colors.html' | absolute_url }}" class="list-a">colors</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/base/reset.html' | absolute_url }}" class="list-a">reset</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/base/font-sizes.html' | absolute_url }}" class="list-a">font-sizes</a>
-      </li>
-    </ul>
-    <li class="list-label">
-      <a href="" class="list-a">Utilities</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/zeroing.html' | absolute_url }}" class="list-a">zeroing</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/spacing.html' | absolute_url }}" class="list-a">spacing</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/display.html' | absolute_url }}" class="list-a">display</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/flexbox.html' | absolute_url }}" class="list-a">flexbox</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/float.html' | absolute_url }}" class="list-a">float</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/z-index.html' | absolute_url }}" class="list-a">z-index</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/overflow.html' | absolute_url }}" class="list-a">overflow</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/text.html' | absolute_url }}" class="list-a">text</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/utilities/img.html' | absolute_url }}" class="list-a">img</a>
-      </li>
-    </ul>
-    <li class="list-label">
-      <a href="" class="list-a">Layout</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="{{ 'docs/layout/grid.html' | absolute_url }}" class="list-a">grid</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/layout/positioning.html' | absolute_url }}" class="list-a">positioning</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/layout/height.html' | absolute_url }}" class="list-a">height</a>
-      </li>
-    </ul>
-    <li class="list-label">
-      <a href="" class="list-a">Buttons</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="{{ 'docs/buttons/buttons.html' | absolute_url }}" class="list-a">buttons</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/buttons/outlined-buttons.html' | absolute_url }}" class="list-a">outlined-buttons</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/buttons/buttons-bar.html' | absolute_url }}" class="list-a">buttons-bar</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/buttons/container-buttons.html' | absolute_url }}" class="list-a">container-buttons</a>
-      </li>
-    </ul>
-    <li class="list-label">
-      <a href="" class="list-a">Forms</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="" class="list-a">controls</a>
-      </li>
-      <ul class="list-menu absent">
-        <li class="list-item">
-          <a href="{{ 'docs/forms/controls-textfield.html' | absolute_url }}" class="list-a">texfield</a>
+<aside id="sideMenu" class="light p-2 fixed z-10 w-1-4 h-1 left-top oy-auto">
+    <button id="closeSideMenu"class="close dark to-right"></button>
+    <ul class="tabs vertical indent-nested clear-right">
+        <li class="tab">
+            <a href="" class="tab-a">Base</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="/docs/base/breakpoint-values.html" class="tab-a">Breakpoint Values</a>
+                </li>
+                <li class="tab">
+                    <a href="/docs/base/colors.html" class="tab-a">Colors</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Global Variables</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Mixins</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Reset</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Font Sizes</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Themes</a>
+                </li>
+            </ul>
         </li>
-        <li class="list-item">
-          <a href="{{ 'docs/forms/controls-select.html' | absolute_url }}" class="list-a">select</a>
+        <li class="tab">
+            <a href="" class="tab-a">Utilities</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="" class="tab-a">Spacing</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Borders</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Display</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Float</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Z-index</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Overflow</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Height</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Width</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Text</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Img</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Animation</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Zeroing</a>
+                </li>
+            </ul>
         </li>
-        <li class="list-item">
-          <a href="{{ 'docs/forms/controls-textarea.html' | absolute_url }}" class="list-a">textarea</a>
+        <li class="tab">
+            <a href="" class="tab-a">Layout</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="" class="tab-a">Grid</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Positioning</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Flexbox</a>
+                </li>
+            </ul>
         </li>
-        <li class="list-item">
-          <a href="{{ 'docs/forms/controls-checkbox-radio.html' | absolute_url }}" class="list-a">checkbox and radio</a>
+        <li class="tab">
+            <a href="" class="tab-a">Buttons</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="" class="tab-a">Button</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Button Outlined</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Buttons</a>
+                </li>
+            </ul>
         </li>
-      </ul>
-      <li class="list-item">
-        <a href="{{ 'docs/forms/icons-wrapper.html' | absolute_url }}" class="list-a">icons-wrapper</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/forms/addons-wrapper.html' | absolute_url }}" class="list-a">addons-wrapper</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/forms/fields.html' | absolute_url }}" class="list-a">fields</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/forms/container-field.html' | absolute_url }}" class="list-a">container-field</a>
-      </li>
+        <li class="tab">
+            <a href="" class="tab-a">Forms</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="" class="tab-a">Controls</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Field</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Addons</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Icons</a>
+                </li>
+            </ul>
+        </li>
+        <li class="tab">
+            <a href="" class="tab-a">Components</a>
+            <ul class="tabs vertical absent">
+                <li class="tab">
+                    <a href="" class="tab-a">Modal</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Card</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Tabs</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Close</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Tag</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Tags</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Square</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Progress Bar</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Banner</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">List Items</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Pagination</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Navbar</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Dropdown</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Popover</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Code</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Loading</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Table</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">Steps</a>
+                </li>
+                <li class="tab">
+                    <a href="" class="tab-a">ul and ol</a>
+                </li>
+            </ul>
+        </li>
     </ul>
-    <li class="list-label">
-      <a href="" class="list-a">Components</a>
-    </li>
-    <ul class="list-menu">
-      <li class="list-item">
-        <a href="{{ 'docs/components/modal.html' | absolute_url }}" class="list-a">modal</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/box.html' | absolute_url }}" class="list-a">box</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/message.html' | absolute_url }}" class="list-a">message</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/tabs.html' | absolute_url }}" class="list-a">tabs</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/menu.html' | absolute_url }}" class="list-a">menu</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/icon.html' | absolute_url }}" class="list-a">icon</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/close.html' | absolute_url }}" class="list-a">close</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/stamp.html' | absolute_url }}" class="list-a">stamp</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/stamp-bar.html' | absolute_url }}" class="list-a">stamp-bar</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/images.html' | absolute_url }}" class="list-a">images</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/progress-bar.html' | absolute_url }}" class="list-a">progress-bar</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/list-menu.html' | absolute_url }}" class="list-a">list-menu</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/banner.html' | absolute_url }}" class="list-a">banner</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/card.html' | absolute_url }}" class="list-a">card</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/navbar.html' | absolute_url }}" class="list-a">navbar</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/dropdown.html' | absolute_url }}" class="list-a">dropdown</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/popover.html' | absolute_url }}" class="list-a">popover</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/popmark.html' | absolute_url }}" class="list-a">popmark</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/snippet.html' | absolute_url }}" class="list-a">snippet</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/code.html' | absolute_url }}" class="list-a">code</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/loading.html' | absolute_url }}" class="list-a">loading</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/table.html' | absolute_url }}" class="list-a">table</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/path.html' | absolute_url }}" class="list-a">path</a>
-      </li>
-      <li class="list-item">
-        <a href="{{ 'docs/components/ul-and-ol.html' | absolute_url }}" class="list-a">ul and ol</a>
-      </li>
-    </ul>
-  </ul>
-</div>
-<script>
-  const demoSideMenuClose = document.querySelector("#demo-side-menu-close");
-  const demoSideMenuListA = document.querySelectorAll("div#demo-side-menu ul.list-menu a.list-a");
-  function isElementThis(actual, expected, expectedClass){
-    return (actual.tagName.toLowerCase() === expected && actual.classList.contains(expectedClass));
-  }
-  demoSideMenuClose.addEventListener("click", function(){
-    document.querySelector("#demo-side-menu").classList.remove("demo-side-menu-reveal");
-  });
+</aside>
+<script type="text/javascript">
+    (function(){
+        const closeSideMenu = document.querySelector('#closeSideMenu');
+        const sideMenu = document.querySelector('#sideMenu');
 
-  demoSideMenuListA.forEach(function(aElement){
-    aElement.addEventListener("click", function(event){
-      if (event.target.getAttribute("href") === ''){
-        event.preventDefault();
-        const parent = event.target.parentElement;
-        const nextUncle = parent.nextElementSibling;
-        if (isElementThis(parent, "li", "list-label") && isElementThis(nextUncle, "ul", "list-menu")){
-          nextUncle.classList.toggle("absent");
-        }
-        else if (isElementThis(parent, "li", "list-item") && isElementThis(nextUncle, "ul", "list-menu")){
-          nextUncle.classList.toggle("absent");
-        }
-      }
-    });
-  });
+        closeSideMenu.addEventListener('click', function(e){
+            sideMenu.classList.toggle('in');
+        });
+
+        sideMenu.addEventListener('click', function(e){
+            const target = e.target;
+            const sibling = e.target.nextElementSibling;
+
+            if (target.tagName.toLowerCase() === 'a' && target.classList.contains('tab-a') && sibling) {
+                e.preventDefault();
+                sibling.classList.toggle('absent');
+            }
+        });
+    })();
 </script>
-
-
-
-
-
-
-

@@ -1,51 +1,55 @@
-.flex  {
-  display: flex !important;
+@import "../base/breakpoint-values.scss";
+
+.start { justify-content: flex-start; }
+.center { justify-content: center; }
+.end { justify-content: flex-end; }
+.between { justify-content: space-between; }
+.around { justify-content: space-around; }
+.even { justify-content: space-evenly; }
+
+.cross-start { align-items: flex-start; }
+.cross-center { align-items: center; }
+.cross-end { align-items: flex-end; }
+.cross-baseline { align-items: baseline; }
+.cross-stretch { align-items: stretch; }
+
+@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+  .order-1-sm { order: 1; }
+  .order-2-sm { order: 2; }
+  .order-3-sm { order: 3; }
 }
 
-// ---
-
-.flex-start {
-  justify-content: flex-start;
+@media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .order-1-md { order: 1; }
+  .order-2-md { order: 2; }
+  .order-3-md { order: 3; }
 }
 
-.flex-center {
-  justify-content: center;
+@media screen and (min-width: $lg-and-up) {
+  .order-1-lg { order: 1; }
+  .order-2-lg { order: 2; }
+  .order-3-lg { order: 3; }
 }
 
-.flex-end {
-  justify-content: flex-end;
-}
 
-.flex-between {
-  justify-content: space-between;
-}
 
-.flex-around {
-  justify-content: space-around;
-}
 
-.flex-even {
-  justify-content: space-evenly;
-}
 
-// ---
 
-.flex-cross-start {
-  align-items: flex-start;
-}
 
-.flex-cross-center {
-  align-items: center;
-}
 
-.flex-cross-end {
-  align-items: flex-end;
-}
 
-.flex-cross-baseline {
-  align-items: baseline;
-}
 
-.flex-cross-stretch {
-  align-items: stretch;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+

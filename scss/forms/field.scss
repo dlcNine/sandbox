@@ -7,26 +7,29 @@ $field-help-spacing: 0.5rem;
 
 $field-required-asterisk-color: $light-danger;
 
-div.field {
+// div
+.field {
   &.horizontal {
     display: flex;
     align-items: baseline;
   }
 
-  label.label {
+  // label
+  .label {
     font-size: 1.6rem;
     display: block;
     margin-bottom: $field-label-spacing;
   }
 
-  &.required label.label::after {
+  &.required .label::after {
     font-size: $field-help-font-size;
     content: ' * ';
     vertical-align: top;
     color: $field-required-asterisk-color;
   }  
 
-  p.help {
+  // p
+  .help {
     font-size: $field-help-font-size;
     margin-top: $field-help-spacing;
     margin-bottom: 0;

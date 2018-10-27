@@ -4,7 +4,8 @@
 $buttons-button-border-width: 0.0625em;
 $buttons-button-round-radius: $RADIUS_ROUND;
 
-div.buttons {
+// div
+.buttons {
   font-size: 1.6rem;
 
   &::after {
@@ -12,8 +13,6 @@ div.buttons {
   }
 
   &.flex {
-    display: flex;
-
     & > .button, & > .reveal-wrapper, & > .reveal-wrapper > .button {
       width: 100%;
     }

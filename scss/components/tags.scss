@@ -4,7 +4,8 @@
 $tags-font-size: 0.75em;
 $tags-tag-round-radius: $RADIUS_ROUND;
 
-span.tags {
+// span
+.tags {
   font-size: $tags-font-size;
   display: inline-block;
   vertical-align: text-bottom;
@@ -14,23 +15,23 @@ span.tags {
   }
 
   &.r-round {
-    span.tag:first-child {
+    .tag:first-child {
       border-top-left-radius: $tags-tag-round-radius;
       border-bottom-left-radius: $tags-tag-round-radius;
     }
-    span.tag:last-child {
+    .tag:last-child {
       border-top-right-radius: $tags-tag-round-radius;
       border-bottom-right-radius: $tags-tag-round-radius;
     }
   }
 
   &.r-0 {
-    span.tag {
+    .tag {
       border-radius: 0;
     }
   }
 
-  span.tag {
+  .tag {
     font-size: inherit;
     float: left;
 

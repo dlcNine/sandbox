@@ -20,7 +20,8 @@ $control-switch-track-height: 0.5em;
 $control-switch-track-width: 2.2em;
 $control-switch-box-size: 1.2em;
 
-input.textbox, select.textbox, textarea.textbox {
+// input, select, textarea
+.textbox {
   font-size: 1.6rem;
   display: block;
   width: 100%;
@@ -30,6 +31,10 @@ input.textbox, select.textbox, textarea.textbox {
   border-radius: $control-border-radius;
   transition: all 125ms;
   z-index: 5;
+
+  &::placeholder {
+    color: $alpha-light-black;
+  }
 
   &:hover {
     border-color: $control-hover-border-color;
@@ -52,15 +57,15 @@ input.textbox, select.textbox, textarea.textbox {
     opacity: $DISABLED_OPACITY;
   }
 
+  &[multiple] {
+    height: auto;
+  }
+
 }
 
 input.textbox, select.textbox {
   height: $control-height;
   padding: 0rem $control-spacing;
-}
-
-select.textbox[multiple] {
-  height: auto;
 }
 
 textarea.textbox {
@@ -76,7 +81,8 @@ textarea.textbox {
   }
 }
 
-label.checkbox, label.radio {
+// label
+.checkbox, .radio {
   font-size: 1.6rem;
   display: inline-block;
   height: $control-height;
@@ -92,7 +98,8 @@ label.checkbox, label.radio {
   }
 }
 
-label.checkbox.switch, label.radio.switch {
+// label
+.checkbox.switch, .radio.switch {
   input[type="checkbox"], input[type="radio"] {
     display: none;
   }
@@ -136,5 +143,4 @@ label.checkbox.switch, label.radio.switch {
     cursor: not-allowed;
     opacity: $DISABLED_OPACITY;
   }
-
 }
