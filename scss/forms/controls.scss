@@ -31,6 +31,10 @@ input.textbox, select.textbox, textarea.textbox {
   transition: all 125ms;
   z-index: 5;
 
+  &::placeholder {
+    color: $alpha-light-black;
+  }
+
   &:hover {
     border-color: $control-hover-border-color;
   }

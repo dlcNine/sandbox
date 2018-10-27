@@ -41,6 +41,7 @@ html {
 
 body {
   line-height: 1;
+  background-color: $BODY_BACKGROUND_COLOR;
   font-family: $FONT_STACK;
   color: $FONT_COLOR;
 }
@@ -78,6 +79,10 @@ sub {
 
 sup {
   vertical-align: super;
+}
+
+hr {
+  border-top: 0.1rem solid $BORDER_COLOR;
 }
 
 

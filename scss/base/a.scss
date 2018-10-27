@@ -1,0 +1,15 @@
+@import "./colors.scss";
+
+a.text-a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $link-unvisited;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $link-visited;
+    }
+}

@@ -1,5 +1,9 @@
 @import "../base/breakpoint-values.scss";
 
+.flex  {
+  display: flex !important;
+}
+
 .block {
   display: block !important;
 }
@@ -21,6 +25,10 @@
 }
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+  .flex-sm  {
+    display: flex !important;
+  }
+
   .block-sm {
     display: block !important;
   }
@@ -43,6 +51,10 @@
 }
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
+  .flex-md  {
+    display: flex !important;
+  }
+
   .block-md {
     display: block !important;
   }
@@ -65,6 +77,10 @@
 }
 
 @media screen and (min-width: $lg-and-up) {
+  .flex-lg  {
+    display: flex !important;
+  }
+
   .block-lg {
     display: block !important;
   }
