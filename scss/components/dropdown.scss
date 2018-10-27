@@ -19,7 +19,7 @@ $reveal-transition-speed: 150ms;
   .reveal-trigger-focus + .reveal-target:hover,
   .reveal-trigger-hover:hover + .reveal-target,
   .reveal-trigger-hover + .reveal-target:hover,
-  .reveal-target.revealed {
+  .reveal-target.is-revealed {
     opacity: 1;
     pointer-events: auto;
   }
@@ -31,7 +31,8 @@ $reveal-transition-speed: 150ms;
   }
 }
 
-div.dropdown {
+// div
+.dropdown {
   font-size: 1.6rem;
   position: absolute;
   z-index: $dropdown-z-index;
@@ -65,7 +66,8 @@ div.dropdown {
     top: 0;
   }
 
-  div.dropdown-item, a.dropdown-item {
+  // div, a
+  .dropdown-item {
     padding: $dropdown-item-padding;
   }
 
@@ -80,17 +82,18 @@ div.dropdown {
     }
   }
 
-  div.dropdown-divider {
+  // div
+  .dropdown-divider {
     border-top: 0.1rem solid $dropdown-border-color;
   }
 
-  div.dropdown {
+  .dropdown {
     &.on-right, &.on-left {
       top: -1 * $dropdown-item-padding;
     }
   }
 
-  div.reveal-wrapper {
+  .reveal-wrapper {
     display: block;
   }
 

@@ -7,22 +7,21 @@ $card-radius: 0.4rem;
 $card-part-padding: 1.6rem;
 $card-part-radius: 0.3rem;
 
+// div
 .card {
-  background-color: $card-background-color;
-}
-
-div.card {
   font-size: 1.6rem;
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
+  background-color: $card-background-color;
 
   &.r-0 {
-    div.card-header, div.card-body, div.card-footer {
+    .card-header, .card-body, .card-footer {
       border-radius: 0;
     }
   }
 
-  div.card-header, div.card-body, div.card-footer {
+  // div
+  .card-header, .card-body, .card-footer {
     padding: $card-part-padding;
 
     &.image {
@@ -36,15 +35,15 @@ div.card {
     }
   }
 
-  div.card-header {
+  .card-header {
     border-radius: $card-part-radius $card-part-radius 0rem 0rem;
   }
 
-  div.card-body:only-child {
+  .card-body:only-child {
     border-radius: $card-part-radius;
   }
 
-  div.card-footer {
+  .card-footer {
     border-radius: 0rem 0rem $card-part-radius $card-part-radius;
   }
 }

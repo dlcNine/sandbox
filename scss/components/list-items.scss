@@ -4,21 +4,23 @@
 $list-item-border-color: $BORDER_COLOR;
 $list-item-padding: 1em;
 
-ul.list-items {
-    li.list-item:first-child {
+// ul
+.list-items {
+    // li
+    .list-item:first-child {
         padding-bottom: $list-item-padding;
     }
 
-    li.list-item:not(:first-child):not(:last-child) {
+    .list-item:not(:first-child):not(:last-child) {
         padding-top: $list-item-padding;
         padding-bottom: $list-item-padding;
     }
 
-    li.list-item:last-child {
+    .list-item:last-child {
         padding-top: $list-item-padding;
     }
 
-    li.list-item:not(:last-child) {
+    .list-item:not(:last-child) {
         border-bottom: 0.1rem solid $list-item-border-color;
     }
 }

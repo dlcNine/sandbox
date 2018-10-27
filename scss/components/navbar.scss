@@ -16,12 +16,13 @@ $navbar-item-border-radius: 0.25em;
     width: 100%;
   }
 
-  div.navbar-item, a.navbar-item {
+  // div, a
+  .navbar-item {
     display: inline-block;
     padding: $navbar-item-padding;
     border-radius: $navbar-item-border-radius;
 
-    &.active {
+    &.is-active {
       background-color: $alpha-gray;
     }
   }

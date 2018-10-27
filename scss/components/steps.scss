@@ -5,10 +5,12 @@ $steps-hover-color: $alpha-black;
 $steps-last-child-color: $light-primary;
 $steps-separator-x-spacing: 0.25em;
 
-ul.steps {
+// ul
+.steps {
     font-size: 1.6rem;
 
-    li.step {
+    // li
+    .step {
         display: inline-block;
         color: $steps-color;
 
@@ -16,7 +18,8 @@ ul.steps {
             color: $steps-last-child-color;
         }
 
-        a.step-a {
+        // a
+        .step-a {
             text-decoration: none;
             color: inherit;
 
@@ -25,7 +28,7 @@ ul.steps {
             }
         }
 
-        &:not(:last-child) a.step-a {
+        &:not(:last-child) .step-a {
             &:hover, &:focus {
                 color: $steps-hover-color;
             }

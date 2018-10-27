@@ -5,43 +5,45 @@ $icons-focus-color: $alpha-black;
 $icons-spacing: 0.5em;
 $icons-input-spacing: 2em;
 
-div.icons {
+// div
+.icons {
   font-size: 1.6rem;
   position: relative;
   width: 100%;
 
-  &.on-left input.textbox {
+  &.on-left .textbox {
     padding-left: $icons-input-spacing;
   }
 
-  &.on-right input.textbox {
+  &.on-right .textbox {
     padding-right: $icons-input-spacing;
   }
 
-  &.on-both input.textbox {
+  &.on-both .textbox {
     padding-left: $icons-input-spacing;
     padding-right: $icons-input-spacing;
   }
 
-  span.icon-left, span.icon-right {
+  // span
+  .icon-left, .icon-right {
     position: absolute;
     top: 50%;
     transform: translate(0%, -50%);
     color: $icons-color;
   }
 
-  span.icon-left {
+  .icon-left {
     left: $icons-spacing;
   }
 
-  span.icon-right {
+  .icon-right {
     right: $icons-spacing;
   }
 
-  input.textbox {
+  .textbox {
     font-size: inherit;
 
-    &:focus ~ span.icon-left, &:focus ~ span.icon-right {
+    &:focus ~ .icon-left, &:focus ~ .icon-right {
       color: $icons-focus-color;
     }
   }

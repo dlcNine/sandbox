@@ -5,13 +5,15 @@ $code-border-radius: 0.25em;
 $code-padding: 1em;
 $snippet-padding: 0.25em;
 
-pre.code, span.snippet {
+// pre, span
+.code, .snippet {
   font-family: monospace;
   background-color: $code-background-color;
   border-radius: $code-border-radius;
 }
 
-pre.code {
+// pre
+.code {
   font-size: 1.6rem;
   line-height: 1.5;
   border-radius: $code-border-radius;
@@ -23,7 +25,8 @@ pre.code {
   }
 }
 
-span.snippet {
+// span
+.snippet {
   display: inline-block;
   padding: $snippet-padding;
 }

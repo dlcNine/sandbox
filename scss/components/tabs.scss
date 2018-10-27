@@ -11,8 +11,10 @@ $tab-a-hover-background-color: $light-primary;
 $tabs-vertical-a-padding: 0.25em;
 $tabs-vertical-nested-margin-left: 1em;
 
-ul.tabs:not(.vertical), ul.tabs.vertical {
-    li.tab a.tab-a {
+// ul
+.tabs:not(.vertical), .tabs.vertical {
+    // li
+    .tab .tab-a {
         display: block;
         color: $tab-text-color;
         text-decoration: none;
@@ -24,53 +26,52 @@ ul.tabs:not(.vertical), ul.tabs.vertical {
     }
 }
 
-ul.tabs:not(.vertical) {
+// ul
+.tabs:not(.vertical) {
     font-size: 1.6rem;
 
-    li.tab {
+    // li
+    .tab {
         display: inline-block;
 
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             color: $alpha-black;
-        }
-
-        a.tab-a {
-            padding: $tab-a-y-padding $tab-a-x-padding;
         }
     }
 
-    li.tab-item {
+    // li
+    .tab-item, .tab-a {
         padding: $tab-a-y-padding $tab-a-x-padding;
     }
 
-    &.underline li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+    &.underline .tab {
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             text-decoration: underline;
         }
     }
 
-    &.border-bottom li.tab {
-        &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+    &.border-bottom .tab {
+        &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             border-bottom: 0.1rem solid $tab-a-hover-background-color;
         }
     }
 
     &.solid {
-        &.r-0 li.tab a.tab-a {
+        &.r-0 .tab .tab-a {
             border-radius: 0;
         }
 
-        &.r-round li.tab a.tab-a {
+        &.r-round .tab .tab-a {
             border-radius: $RADIUS_ROUND;
         }
 
-        li.tab {
-            &.active a.tab-a, a.tab-a:hover, a.tab-a:focus {
+        .tab {
+            &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
                 background-color: $tab-a-hover-background-color;
                 color: $alpha-white;
             }
 
-            a.tab-a {
+            .tab-a {
                 border-radius: $tab-a-border-radius;
             }
         }
@@ -79,19 +80,19 @@ ul.tabs:not(.vertical) {
     &.borders {
         border-bottom: 0.1rem solid $BORDER_COLOR;
 
-        li.tab {
+        .tab {
             &:not(:last-child) {
                 margin-right: -0.1rem;
             }
 
             margin-bottom: -0.1rem;
 
-            &.active a.tab-a {
+            &.is-active .tab-a {
                 border: 0.1rem solid $BORDER_ACTIVE_COLOR;
                 border-bottom: 0.1rem solid $white;
             }
 
-            a.tab-a {
+            .tab-a {
                 border-radius: $tab-a-border-radius;
                 border-radius: $tab-a-border-radius $tab-a-border-radius 0em 0em;
 
@@ -104,55 +105,54 @@ ul.tabs:not(.vertical) {
     }
 }
 
-ul.tabs.vertical {
+// ul
+.tabs.vertical {
     font-size: 1.6rem;
 
-    ul.tabs.vertical {
+    // ul
+    .tabs.vertical {
         font-size: inherit;
     }
 
-    li.tab {
-        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+    // li
+    .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             color: $alpha-black;
-        }
-
-        a.tab-a {
-            padding: $tabs-vertical-a-padding;
         }
     }
 
-    li.tab-item {
+    .tab-item, .tab-a {
         padding: $tabs-vertical-a-padding;
 
     }
 
-    &.indent-nested li.tab ul.tabs.vertical {
+    &.indent-nested .tab .tabs.vertical {
         margin-left: $tabs-vertical-nested-margin-left;
     }
 
-    &.underline li.tab {
-        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+    &.underline .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             text-decoration: underline;
         }
     }
 
-    &.border-left li.tab {
-        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+    &.border-left .tab {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             border-left: 0.1rem solid $tab-a-hover-background-color;
         }
     }
 
-    &.solid li.tab {
-        a.tab-a {
+    &.solid .tab {
+        .tab-a {
             border-radius: $tab-a-border-radius;
         }
         
-        &.active > a.tab-a, a.tab-a:hover, a.tab-a:focus {
+        &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             background-color: $tab-a-hover-background-color;
             color: $alpha-white;
         }
     }
-
 }
+
 
 

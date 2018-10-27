@@ -5,19 +5,18 @@ $tag-padding: 0.25em 0.5em;
 $tag-border-radius: 0.25em;
 $tag-background-color: $medium-gray;
 
+// span
 .tag {
-  background-color: $tag-background-color;
-}
-
-span.tag {
   font-size: $tag-font-size;
   display: inline-block;
   padding: $tag-padding;
   line-height: 1;
   border-radius: $tag-border-radius;
+  background-color: $tag-background-color;
   vertical-align: text-bottom;
 
-  a.tag-a {
+  // a
+  .tag-a {
     color: inherit;
     text-decoration: none;
 
@@ -27,7 +26,8 @@ span.tag {
     }
   }
 
-  button.close {
+  // button
+  .close {
     font-size: $tag-font-size;
   }
 }

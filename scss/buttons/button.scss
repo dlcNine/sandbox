@@ -8,16 +8,12 @@ $button-color: $alpha-black;
 $button-border-radius: $BUTTON_BORDER_RADIUS;
 $button-default-build-color: $medium-gray;
 
-.button {
-  color: $button-color;
-  @include border-background-color($button-default-build-color);
-}
-
 .button, .button.outlined {
   @include button-default($light-gray, $dark-gray, $alpha-light-primary);
 }
 
-a.button, button.button, input.button {
+// button, a, input
+.button {
   font-size: 1.6rem;
   display: inline-block;
   text-align: center;
@@ -26,6 +22,8 @@ a.button, button.button, input.button {
   border-width: $button-border-width;
   border-style: solid;
   border-radius: $button-border-radius;
+  color: $button-color;
+  @include border-background-color($button-default-build-color);
   transition: all 175ms;
 
   &:hover {
@@ -35,6 +33,20 @@ a.button, button.button, input.button {
   &:active, &:focus {
     outline: none;
     z-index: 5;
+  }
+
+  &.wide {
+    display: block;
+    width: 100%;
+  }
+
+  &[disabled] {
+    opacity: $DISABLED_OPACITY;
+    pointer-events: none;
+  }
+
+  &:link {
+    text-decoration: none;
   }
 
   &.primary {
@@ -60,20 +72,4 @@ a.button, button.button, input.button {
   &.dark {
     @include button-default($light-black, $black, $alpha-light-primary);
   }
-}
-
-// ---
-
-a.button:link {
-  text-decoration: none;
-}
-
-.button[disabled] {
-  opacity: $DISABLED_OPACITY;
-  pointer-events: none;
-}
-
-.button.wide {
-  display: block;
-  width: 100%;
 }

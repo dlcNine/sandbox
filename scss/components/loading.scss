@@ -17,15 +17,13 @@ $loading-size-x4: 4em;
   }
 }
 
+// span
 .loading {
-  border-color: $loading-border-color;
-}
-
-span.loading {
   display: inline-block;
   position: relative;
   width: $loading-size;
   height: $loading-size;
+  border-color: $loading-border-color;
 
   &.x2 {
     font-size: $loading-size-x2;
