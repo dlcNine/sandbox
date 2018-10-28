@@ -1,7 +1,5 @@
----
----
-<div id="sideMenu" class="unit-2 light fixed left-top h-1-vh p-2 oy-auto">
-    <button class="close to-right"></button>
+<div id="sideMenu" class="unit-2 light fixed left-top h-1-vh p-2 oy-auto is-in">
+    <button class="close to-right toggle-side-menu"></button>
     <ul class="tabs vertical clear-right indent-nested">
         <li class="tab">
             <a href="" class="tab-a">Base</a>
@@ -188,25 +186,6 @@
         </li>
     </ul>
 </div>
-<script type="text/javascript">
-    // side menu
-    (function(){
-        const sideMenu = document.querySelector('#sideMenu');
-        sideMenu.addEventListener('click', function(e){
-            const target = e.target;
-            const sibling = target.nextElementSibling;
-
-            if (e.target.classList.contains('tab-a') && sibling) {
-                e.preventDefault();
-                sibling.classList.toggle('absent');
-            }
-          
-        });
-    })();
-    // click if tab-a has sibling
-        // toggle siblings absent class
-</script>
-
 
 
 

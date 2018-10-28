@@ -9,9 +9,10 @@
     {% include css-links.html %}
 </head>
 <body>
-    {% include navbar.html %}
-    <div class="unit-10 push-2 h-1-vh"></div>
-
-    
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+    </main>
+    {% include script.html %}
 </body>
 </html>

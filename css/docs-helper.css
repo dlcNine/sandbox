@@ -1,13 +1,19 @@
-/*#sideMenu {
-  transform: translate(-125%, 0%);
-  transition: transform 500ms;
+#main, #sideMenu {
+    transition: all 500ms;
 }
 
-#sideMenu.in {
-  transform: translate(0%, 0%);
+#sideMenu {
+    transform: translate(-100%, 0%);
+  
 }
 
-*/
+#sideMenu.is-in {
+    transform: translate(0%, 0%);
+}
+
+
+
+
 
 
 
