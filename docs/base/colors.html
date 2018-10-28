@@ -1,0 +1,116 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    {% include css-links.html %}
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Colors</h1>
+            <hr class="mb-1">
+            <h3 class="mb-1">Description</h3>
+            <p class="mb-2">The following colors are used in sandbox.</p>
+            <div id="colors" class="grid">
+            </div>
+            <div class="flex between mt-3">
+                <a href="/docs/base/breakpoint-values.html" class="button outlined">previous</a>
+                <a href="/docs/base/global-variables.html" class="button outlined">next</a>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        (function(){
+            const colors = document.querySelector('#colors');
+            console.log(colors);
+            let colorData = [
+                [
+                    'rgb(244, 250, 255)',
+                    'rgb(84, 171, 247)',
+                    'rgb(62, 157, 239)',
+                    'rgb(40, 126, 201)'
+                ],
+                [
+                    'rgb(246, 255, 244)',
+                    'rgb(98, 214, 72)',
+                    'rgb(84, 196, 58)',
+                    'rgb(63, 150, 42)'
+                ],
+                [
+                    'rgb(252, 252, 239)',
+                    'rgb(244, 244, 73)',
+                    'rgb(232, 232, 25)',
+                    'rgb(111, 111, 16)'
+                ],
+                [
+                    'rgb(255, 248, 247)',
+                    'rgb(242, 85, 65)',
+                    'rgb(229, 60, 39)',
+                    'rgb(198, 44, 23)'
+                ],
+                [
+                    'rgba(84, 171, 247, 0.5)',
+                    'rgba(98, 214, 72, 0.5)',
+                    'rgba(244, 244, 73, 0.5)',
+                    'rgba(242, 85, 65, 0.5)'
+                ],
+                [
+                    'rgb(255, 255, 255)',
+                    'rgb(245, 245, 245)',
+                    'rgb(230, 230, 230)',
+                    'rgb(215, 215, 215)'
+                ],
+                [
+                    'rgb(249, 249, 249)',
+                    'rgb(216, 216, 216)',
+                    'rgb(201, 201, 201)',
+                    'rgb(147, 147, 147)'
+                ],
+                [
+                    'rgb(122, 122, 122)',
+                    'rgb(99, 99, 99)',
+                    'rgb(76, 76, 76)',
+                    'rgb(52, 52, 52)'
+                ],
+                [
+                    'rgba(0, 0, 0, 0.8)',
+                    'rgba(0, 0, 0, 0.3)'
+                ],
+                [
+                    'rgba(144, 144, 144, 0.2)',
+                    'rgba(144, 144, 144, 0.1)'
+                ],
+                [
+                    'rgba(255, 255, 255, 0.9)',
+                    'rgba(255, 255, 255, 0.65)'
+                ],
+                [
+                    'cornflowerblue',
+                    'mediumpurple'
+                ]
+            ];
+
+            for (let index = 0; index < colorData.length; index++) {
+                let unit = document.createElement('div');
+                unit.className = 'unit-3 unit-4-md unit-6-sm';
+
+                for (let i = 0; i < colorData[index].length; i++) {
+                    let swatch = document.createElement('div');
+                    swatch.className = 'p-2';
+                    swatch.style.backgroundColor = colorData[index][i];
+                    unit.appendChild(swatch);
+                }
+
+                colors.appendChild(unit);
+            }
+        })();
+    </script>
+    {% include script.html %}
+</body>
+</html>

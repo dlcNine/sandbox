@@ -6,7 +6,6 @@
 
             toggleSideMenu.forEach(function(element){
                 element.addEventListener('click', function(){
-                    console.log('toggling side menu');
                     sideMenu.classList.toggle('is-in');
                     main.classList.toggle('ml-0');
                     main.classList.toggle('unit-12');
@@ -21,7 +20,6 @@
                     e.preventDefault();
                     sibling.classList.toggle('absent');
                 }
-              
             });
     })();
 </script>
