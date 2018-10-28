@@ -6,6 +6,8 @@ $list-item-padding: 1em;
 
 // ul
 .list-items {
+    font-size: 1.6rem;
+    
     // li
     .list-item:first-child {
         padding-bottom: $list-item-padding;

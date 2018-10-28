@@ -69,12 +69,12 @@ $reveal-transition-speed: 150ms;
   // div, a
   .dropdown-item {
     padding: $dropdown-item-padding;
+    display: block;
   }
 
   a.dropdown-item {
     color: inherit;
     text-decoration: none;
-    display: block;
 
     &:hover, &:focus {
       outline: none;
@@ -91,10 +91,6 @@ $reveal-transition-speed: 150ms;
     &.on-right, &.on-left {
       top: -1 * $dropdown-item-padding;
     }
-  }
-
-  .reveal-wrapper {
-    display: block;
   }
 
 }
