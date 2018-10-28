@@ -5,53 +5,61 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sandbox</title>
+    <title>Breakpoint Values</title>
     {% include css-links.html %}
 </head>
 <body>
     {% include side-menu.html %}
-    {% include navbar.html %}
-    <div class="no-float unit-10 p-0 push-1">
-        <h1>Breakpoint Values</h1>
-        <hr class="mb-2">
-        <div class="grid">
-            <div class="unit-6 unit-12-sm">
-                <p class="mb-2">Sandbox comes with 3 responsive breakpoints out of the box, as shown in the table.</p>
-                <p class="mb-2">If you're customizing sandbox, these breakpoint ranges can easily be changed by plugging in your own desired values into the related sass variables and running a build.</p>
-            </div>
-            <div class="unit-6 unit-12-sm">
-                <table class="table border-bottoms">
-                <thead class="striped-odd">
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 no-float">
+            <h1>Breakpoint Values</h1>
+            <hr class="mb-1">
+            <h3 class="mb-1">Description</h3>
+            <p class="mb-1">Sandbox has three responsive breakpoints out of the box, as shown in the following table. If you're customizing sandbox, these breakpoints can be changed by plugging your desired values into the related scss variables and running a build.</p>
+            <p class="mb-1">The range in pixels is based on an unchanged browser font size of 16 pixels.</p>
+            <table class="table border-bottoms mb-2">
+                <thead>
                     <tr>
                         <th>Breakpoint</th>
                         <th>Range</th>
-                        <th>Range in pixels</th>
-                        <th>Class Suffix</th>
+                        <th>Range in Pixels</th>
+                        <th>Suffix</th>
                     </tr>
                 </thead>
-                <tbody class="striped-even">
+                <tbody class="striped-odd">
                     <tr>
                         <td>small</td>
-                        <td>&ge; 0rem &amp;&amp; &le; 48rem</td>
-                        <td>&ge; 0px &amp;&amp; &le; 768px</td>
-                        <td><span class="snippet">-sm</span></td>
+                        <td>&ge; 0rem && &le; 48rem</td>
+                        <td>&ge; 0px && &le; 768px</td>
+                        <td><span class="snippet">sm</code></td>
                     </tr>
                     <tr>
                         <td>medium</td>
-                        <td>&ge; 48.0625rem &amp;&amp; &le; 64rem</td>
-                        <td>&ge; 769px &amp;&amp; &le; 1024px</td>
-                        <td><span class="snippet">-md</span></td>
+                        <td>&ge; 48.0625rem && &le; 64rem</td>
+                        <td>&ge; 769px && &le; 1024px</td>
+                        <td><span class="snippet">md</span></td>
                     </tr>
                     <tr>
                         <td>large</td>
                         <td>&ge; 64.0625rem</td>
                         <td>&ge; 1025px</td>
-                        <td><span class="snippet">-lg</span></td>
+                        <td><span class="snippet">lg</span></td>
                     </tr>
                 </tbody>
             </table>
+            <div class="card b-0">
+                <div class="card-body info">
+                    <p>Note that breakpoint specific classes will only apply during their specified breakpoint. This behavior differs from other frameworks that use a <span class="snippet">this breakpoint and up</span> methodology.
+                    </p>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="" class="button" disabled>previous</a>
+                <a href="/docs/base/colors.html" class="button">next</a>
             </div>
         </div>
-    </div>
+    </main>
+    {% include script.html %}
 </body>
 </html>
