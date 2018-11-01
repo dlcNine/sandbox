@@ -4,7 +4,7 @@
   "description": "A responsive, scalable, and easy to use CSS framework.",
   "main": "scss/sandbox.scss",
   "scripts": {
-    "build-compressed": "scss scss/sandbox.scss dist/sandbox-min.css --style compressed",
+    "build-compressed": "node_modules/sass/sass.js scss/sandbox.scss dist/sandbox-min.css --style compressed",
     "build-autoprefix": "node_modules/.bin/postcss dist/sandbox-min.css --use autoprefixer --map true --output dist/sandbox-min.css",
     "build": "npm run build-compressed && npm run build-autoprefix",
     "open-root": "open -a 'Sublime Text' package.json scss/sandbox.scss",
@@ -37,6 +37,7 @@
   "devDependencies": {
     "autoprefixer": "^7.2.3",
     "postcss": "^6.0.14",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^4.1.1",
+    "sass": "^1.14.3"
   }
 }
