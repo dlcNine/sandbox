@@ -8,8 +8,8 @@
 .w-1 { width: 100% !important; }
 
 .w-1-4-vw { width: 25vw !important; }
-.w-1-3-vw { width: (1 / 3)vw !important; }
+.w-1-3-vw { width: (1 / 3 * 100) * 1vw !important; }
 .w-1-2-vw { width: 50vw !important; }
-.w-2-3-vw { width: (2 / 3)vw !important; }
+.w-2-3-vw { width: (2 / 3 * 100) * 1vw !important; }
 .w-3-4-vw { width: 75vw !important; }
 .w-1-vw { width: 100vw !important; }
