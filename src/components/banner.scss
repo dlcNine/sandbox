@@ -1,0 +1,9 @@
+$banner-padding: 1em;
+$banner-min-height: 10em;
+
+// div
+.banner {
+  font-size: 1.6rem;
+  padding: $banner-padding;
+  min-height: $banner-min-height;
+}

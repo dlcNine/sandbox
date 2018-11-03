@@ -1,0 +1,40 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+
+$progress-bar-height: 1em;
+$progress-bar-radius: 0.125em;
+$progress-bar-background-color: $light-gray;
+$progress-background-color: $dark-gray;
+
+// div
+.progress-bar {
+  font-size: 1.6rem;
+  height: $progress-bar-height;
+  background-color: $progress-bar-background-color;
+  border-radius: $progress-bar-radius;
+  overflow: hidden;
+
+  &::after {
+    @include clearfix();
+  }
+}
+
+// div
+.progress {
+  float: left;
+  height: 100%;
+  min-width: 0%;
+  max-width: 100%;
+  text-align: center;
+  background-color: $progress-background-color;
+  transition: width 200ms;
+}
+
+
+
+
+
+
+
+
+

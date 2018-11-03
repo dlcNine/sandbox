@@ -1,0 +1,60 @@
+@import "../base/colors.scss";
+@import "../base/mixins.scss";
+
+$field-help-font-size: 1.2rem;
+$field-label-spacing: 1rem;
+$field-help-spacing: 0.5rem;
+
+$field-required-asterisk-color: $light-danger;
+
+// div
+.field {
+  &.horizontal {
+    display: flex;
+    align-items: baseline;
+  }
+
+  // label
+  .label {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: $field-label-spacing;
+  }
+
+  &.required .label::after {
+    font-size: $field-help-font-size;
+    content: ' * ';
+    vertical-align: top;
+    color: $field-required-asterisk-color;
+  }  
+
+  // p
+  .help {
+    font-size: $field-help-font-size;
+    margin-top: $field-help-spacing;
+    margin-bottom: 0;
+  }
+
+  &.primary {
+    @include field-theme($light-primary, $medium-primary, $alpha-light-primary);
+  }
+
+  &.info {
+    @include field-theme($light-info, $medium-info, $alpha-light-info);
+  }
+
+  &.caution {
+    @include field-theme($light-caution, $medium-caution, $alpha-light-caution);
+  }
+
+  &.danger {
+    @include field-theme($light-danger, $medium-danger, $alpha-light-danger);
+  }
+}
+
+
+
+
+
+
+

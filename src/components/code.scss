@@ -1,0 +1,34 @@
+@import "../base/colors.scss";
+
+$code-color: $alpha-black;
+$code-background-color: $medium-white;
+$code-border-radius: 0.25em;
+$code-padding: 1em;
+$snippet-padding: 0.25em;
+
+// pre, span
+.code, .snippet {
+  font-family: monospace;
+  color: $code-color;
+  background-color: $code-background-color;
+  border-radius: $code-border-radius;
+}
+
+// pre
+.code {
+  font-size: 1.6rem;
+  border-radius: $code-border-radius;
+  white-space: pre-wrap;
+  padding: $code-padding;
+
+  code {
+    display: block;
+  }
+}
+
+// span
+.snippet {
+  display: inline-block;
+  padding: $snippet-padding;
+}
+

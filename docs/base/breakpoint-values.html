@@ -1,97 +1,65 @@
 ---
 ---
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox breakpoint values</title>
-  {% include css-links.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakpoint Values</title>
+    {% include css-links.html %}
 </head>
 <body>
-  <!-- side-menu -->
-  {% include side-menu.html %}
-  <!-- end side-menu -->
-  <!-- navbar -->
-  {% include navbar.html %}
-  <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pl-3">
-    <h1 class="ml-2-lg">Breakpoint Values</h1>
-  </div>
-  <div class="p-2 p4-lg">
-    <div class="p-1">
-      <h2>Specs</h2>
-      <div class="stamp-bar h5">
-        <span class="stamp light">breakpoints</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">theme classes</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">size classes</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">font-size scaling</span>
-        <span class="stamp danger">no</span>
-      </div> 
-      <div class="stamp-bar h5">
-        <span class="stamp light">uses grid within</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">variables</span>
-        <span class="stamp info">yes</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">display set</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">position set</span>
-        <span class="stamp danger">no</span>
-      </div>
-    </div>
-    <hr>
-    <div class="p-1">
-      <h2>Description</h2>
-      <p>If you are customizing Sandbox, you can easily alter the breakpoint values used by changing the values assigned to the the variables within this file.</p>
-    </div>
-    <div class="p-1">
-      <h2>Variables</h2>
-      <table class="table slim">
-        <thead class="border-rows">
-          <tr>
-            <th>Variable Identifier</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody class="striped-even row-hover">
-          <tr>
-            <td class="text-red">$breakpoint-small</td>
-            <td>26.5625rem</td>
-          </tr>
-          <tr>
-            <td class="text-red">$breakpoint-medium-lower</td>
-            <td>26.625rem</td>
-          </tr>
-          <tr>
-            <td class="text-red">$breakpoint-medium-upper</td>
-            <td>48rem</td>
-          </tr>
-          <tr>
-            <td class="text-red">$breakpoint-large</td>
-            <td>48.0625rem</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="flex flex-between p-1 pt-2">
-      <a href="../overview.html" class="button dark m-0">previous</a>
-      <a href="./colors.html" class="button dark m-0">next</a>
-    </div>
-  </div>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 no-float">
+            <h1>Breakpoint Values</h1>
+            <hr class="mb-1">
+            <h3 class="mb-1">Description</h3>
+            <p class="mb-1">Sandbox has three responsive breakpoints out of the box, as shown in the following table. If you're customizing sandbox, these breakpoints can be changed by plugging your desired values into the related scss variables and running a build.</p>
+            <p class="mb-1">The range in pixels is based on an unchanged browser font size of 16 pixels.</p>
+            <table class="table border-bottoms mb-2">
+                <thead>
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Range</th>
+                        <th>Range in Pixels</th>
+                        <th>Suffix</th>
+                    </tr>
+                </thead>
+                <tbody class="striped-odd">
+                    <tr>
+                        <td>small</td>
+                        <td>&ge; 0rem && &le; 48rem</td>
+                        <td>&ge; 0px && &le; 768px</td>
+                        <td><span class="snippet">sm</code></td>
+                    </tr>
+                    <tr>
+                        <td>medium</td>
+                        <td>&ge; 48.0625rem && &le; 64rem</td>
+                        <td>&ge; 769px && &le; 1024px</td>
+                        <td><span class="snippet">md</span></td>
+                    </tr>
+                    <tr>
+                        <td>large</td>
+                        <td>&ge; 64.0625rem</td>
+                        <td>&ge; 1025px</td>
+                        <td><span class="snippet">lg</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="card b-0">
+                <div class="card-body info">
+                    <p>Note that breakpoint specific classes will only apply during their specified breakpoint. This behavior differs from other frameworks that use a <span class="snippet">this breakpoint and up</span> methodology.
+                    </p>
+                </div>
+            </div>
+            <div class="flex between mt-3">
+                <a href="" class="button" disabled>previous</a>
+                <a href="/docs/base/colors.html" class="button">next</a>
+            </div>
+        </div>
+    </main>
+    {% include script.html %}
 </body>
 </html>

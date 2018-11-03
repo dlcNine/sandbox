@@ -1,0 +1,25 @@
+<script type="text/javascript">
+    (function(){
+            const sideMenu = document.querySelector('#sideMenu');
+            const toggleSideMenu = document.querySelectorAll('.toggle-side-menu');
+            const main = document.querySelector('#main');
+
+            toggleSideMenu.forEach(function(element){
+                element.addEventListener('click', function(){
+                    sideMenu.classList.toggle('is-in');
+                    main.classList.toggle('ml-0');
+                    main.classList.toggle('unit-12');
+                });
+            });
+
+            sideMenu.addEventListener('click', function(e){
+                const target = e.target;
+                const sibling = target.nextElementSibling;
+
+                if (e.target.classList.contains('tab-a') && sibling) {
+                    e.preventDefault();
+                    sibling.classList.toggle('absent');
+                }
+            });
+    })();
+</script>

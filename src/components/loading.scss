@@ -1,0 +1,56 @@
+@import "../base/global-variables.scss";
+@import "../base/colors.scss";
+
+$loading-border-color: $medium-gray;
+$loading-size: 1em;
+$loading-size-x2: 2em;
+$loading-size-x3: 3em;
+$loading-size-x4: 4em;
+
+@keyframes revolution {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+// span
+.loading {
+  display: inline-block;
+  position: relative;
+  width: $loading-size;
+  height: $loading-size;
+  border-color: $loading-border-color;
+
+  &.x2 {
+    font-size: $loading-size-x2;
+  }
+
+  &.x3 {
+    font-size: $loading-size-x3;
+  }
+
+  &.x4 {
+    font-size: $loading-size-x4;
+  }
+  
+  &::before {
+    position: absolute;
+    content: '';
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: inherit;
+    border-radius: $RADIUS_ROUND;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    width: $loading-size;
+    height: $loading-size;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: revolution 650ms linear 0ms infinite normal;
+
+  }
+}
