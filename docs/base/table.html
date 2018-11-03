@@ -1,0 +1,104 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    {% include css-links.html %}
+</head>
+<body>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Table</h1>
+            <hr class="mb-2">
+            <h3 class="mb-2">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.table</span></li>
+                            <li><span class="snippet">.table.tight</span></li>
+                            <li><span class="snippet">.table.tighter</span></li>
+                            <li><span class="snippet">.table.border-all</span></li>
+                            <li><span class="snippet">.table.border-bottoms</span></li>
+                            <li><span class="snippet">.table.striped-odd</span></li>
+                            <li><span class="snippet">.table.striped-even</span></li>
+                            <li><span class="snippet">.table.row-hover</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.table .border-all</span></li>
+                            <li><span class="snippet">.table .border-bottoms</span></li>
+                            <li><span class="snippet">.table .striped-odd</span></li>
+                            <li><span class="snippet">.table .striped-even</span></li>
+                            <li><span class="snippet">.table .row-hover</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2">Example</h3>
+            <div class="grid">
+                <div class="unit-12 unit-6-lg">
+                    <table class="table border-bottoms">
+                        <thead class="striped-odd">
+                            <tr>
+                                <th>Lorem</th>
+                                <th>Ipsum</th>
+                                <th>Dolor</th>
+                            </tr>
+                        </thead>
+                        <tbody class="row-hover striped-even">
+                            <tr>
+                                <td>lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                            </tr>
+                            <tr>
+                                <td>lorem</td>
+                                <td>ipsum</td>
+                                <td>dolor</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;table class="table border-bottoms"&gt;
+    &lt;thead class="striped-odd"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Lorem&lt;/th&gt;
+            &lt;th&gt;Ipsum&lt;/th&gt;
+            &lt;th&gt;Dolor&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody class="row-hover striped-even"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Lorem&lt;/td&gt;
+            &lt;td&gt;Ipsum&lt;/td&gt;
+            &lt;td&gt;Dolor&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Lorem&lt;/td&gt;
+            &lt;td&gt;Ipsum&lt;/td&gt;
+            &lt;td&gt;Dolor&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+                </div>
+            </div>
+            <p class="mb-2"></p>
+            <div class="flex between mt-3">
+                <a href="/docs/base/ul-ol.html" class="button">previous</a>
+                <a href="/docs/layout/grid.html" class="button">next</a>
+            </div>
+        </div>
+    </main>
+
+    {% include script.html %}
+</body>
+</html>
