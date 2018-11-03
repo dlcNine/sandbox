@@ -49,7 +49,7 @@ $tabs-vertical-nested-margin-left: 1em;
         }
     }
 
-    &.border-bottom .tab {
+    &.border-bottoms .tab {
         &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             border-bottom: 0.1rem solid $tab-a-hover-background-color;
         }
@@ -76,7 +76,7 @@ $tabs-vertical-nested-margin-left: 1em;
         }
     }
 
-    &.borders {
+    &.border-bottomless {
         border-bottom: 0.1rem solid $BORDER_COLOR;
 
         .tab {
@@ -135,7 +135,7 @@ $tabs-vertical-nested-margin-left: 1em;
         }
     }
 
-    &.border-left .tab {
+    &.border-lefts .tab {
         &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             border-left: 0.1rem solid $tab-a-hover-background-color;
         }

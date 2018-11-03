@@ -2,7 +2,7 @@
 @import "../base/global-variables.scss";
 @import "../base/mixins.scss";
 
-$unit-padding: $GRID_SPACING;
+$unit-padding: $UNIT_SPACING;
 
 // div
 [class*="unit-"] {
@@ -37,12 +37,12 @@ $unit-padding: $GRID_SPACING;
   width: 100%;
 }
 
-@for $index from 1 through $UNITS {
-  .unit-#{$index} { width: percentage($index / $UNITS); }
+@for $index from 1 through $GRID_SYSTEM {
+  .unit-#{$index} { width: percentage($index / $GRID_SYSTEM); }
 }
 
-@for $index from 1 through $UNITS {
-  .push-#{$index} { margin-left: percentage($index / $UNITS); }
+@for $index from 1 through $GRID_SYSTEM {
+  .push-#{$index} { margin-left: percentage($index / $GRID_SYSTEM); }
 }
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
@@ -54,12 +54,12 @@ $unit-padding: $GRID_SPACING;
     @include tight-responsive($unit-padding);
   }
 
-  @for $index from 1 through $UNITS {
-    .unit-#{$index}-sm { width: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .unit-#{$index}-sm { width: percentage($index / $GRID_SYSTEM); }
   }
 
-  @for $index from 1 through $UNITS {
-    .push-#{$index}-sm { margin-left: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .push-#{$index}-sm { margin-left: percentage($index / $GRID_SYSTEM); }
   }
 }
 
@@ -72,12 +72,12 @@ $unit-padding: $GRID_SPACING;
     @include tight-responsive($unit-padding);
   }
 
-  @for $index from 1 through $UNITS {
-    .unit-#{$index}-md { width: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .unit-#{$index}-md { width: percentage($index / $GRID_SYSTEM); }
   }
 
-  @for $index from 1 through $UNITS {
-    .push-#{$index}-md { margin-left: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .push-#{$index}-md { margin-left: percentage($index / $GRID_SYSTEM); }
   }
 
 }
@@ -91,11 +91,11 @@ $unit-padding: $GRID_SPACING;
     @include tight-responsive($unit-padding);
   }
 
-  @for $index from 1 through $UNITS {
-    .unit-#{$index}-lg { width: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .unit-#{$index}-lg { width: percentage($index / $GRID_SYSTEM); }
   }
 
-  @for $index from 1 through $UNITS {
-    .push-#{$index}-lg { margin-left: percentage($index / $UNITS); }
+  @for $index from 1 through $GRID_SYSTEM {
+    .push-#{$index}-lg { margin-left: percentage($index / $GRID_SYSTEM); }
   }
 }
