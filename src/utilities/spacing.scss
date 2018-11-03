@@ -1,7 +1,7 @@
 @import "../base/breakpoint-values.scss";
 @import "../base/global-variables.scss";
 
-$spacing: $GRID_SPACING;
+$spacing: $UNIT_SPACING;
 
 .mx-auto {
   margin-left: auto !important;
