@@ -104,12 +104,14 @@
     &lt;div class="unit-6"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
     &lt;div class="unit-6"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
     &lt;div class="unit-4"&gt;<span class="text-muted"> your content... </span>&lt;/div&gt;
-    <span class="text-muted">and so on...</span>
-&lt;/div&gt;
-            </code></pre>
+    <span class="text-muted">&lt;&excl;-- and so on... --&gt;</span>
+&lt;/div&gt;</code></pre>
             <p class="mb-2">Since Sandbox's grid system is float based, any units whose width exceeds the width remaining for that line, will wrap onto the next line (typically). This means that you can put as many units as you want inside of a single grid.</p>
             <h3 class="mb-2">The grid class</h3>
             <p class="mb-2">The <span class="snippet">.grid</span> class uses a negative margin on all sides so that the units used within it align with whatever content neighbors the <span class="snippet">.grid</span> itself. For this reason the <span class="snippet"> .grid</span> should be used inside of an element that has sufficient padding.</p>
+
+            <h3 class="mb-2">Grid units</h3>
+            <p class="mb-2">Each unit is floated left and has padding on all sides equal to the margin value that the grid negates. There's no requirement that a unit be used within a grid, so if you wanted to use a unit elsewhere, you could.</p>
 
             <p class="mb-2"></p>
             <div class="flex between mt-3">
