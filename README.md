@@ -29,4 +29,4 @@ The SASS will compile and output your new `sandbox-min.css` to the `dist/` direc
 Sandbox uses Autoprefixer to take care of vendor specific prefixes, so there's no need to write them yourself. 
 
 ## Documentation
-The docs are currently in progress. Please check back soon.
+[The docs](https://dlcnine.github.io/sandbox/) are currently under construction, but feel free to check them out as they progress. 
