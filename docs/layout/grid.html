@@ -107,11 +107,87 @@
     <span class="text-muted">&lt;&excl;-- and so on... --&gt;</span>
 &lt;/div&gt;</code></pre>
             <p class="mb-2">Since Sandbox's grid system is float based, any units whose width exceeds the width remaining for that line, will wrap onto the next line (typically). This means that you can put as many units as you want inside of a single grid.</p>
+            <div class="card b-0 mb-2">
+                <div class="card-body info">
+                    <p>Keep in mind that the width of each unit is just a percentage out of the total grid system value. For example, a <span class="snippet">.unit-6</span> out of a 12 unit grid system would have a width of <span class="snippet">50%</span>. A <span class="snippet">.unit-3</span> out of a 12 unit grid system would have a width of <span class="snippet">25%</span>, and so on.</p>
+                </div>
+            </div>
+
             <h3 class="mb-2">The grid class</h3>
             <p class="mb-2">The <span class="snippet">.grid</span> class uses a negative margin on all sides so that the units used within it align with whatever content neighbors the <span class="snippet">.grid</span> itself. For this reason the <span class="snippet"> .grid</span> should be used inside of an element that has sufficient padding.</p>
 
+            <h3 class="mb-2">Grid tight</h3>
+            <p class="mb-2">Using <span class="snippet">.grid.tight</span> halves the margin value used by the <span class="snippet">.grid</span> and also halves the padding of any units used inside of it.</p>
+
+
+
             <h3 class="mb-2">Grid units</h3>
             <p class="mb-2">Each unit is floated left and has padding on all sides equal to the margin value that the grid negates. There's no requirement that a unit be used within a grid, so if you wanted to use a unit elsewhere, you could.</p>
+            <h3 class="mb-2">Responsive</h3>
+            <p class="mb-2">Use <span class="snippet">.unit-[size]-[breakpoint]</span> to specify what size a unit should be during the specified breakpoint. Change the width of your browser to see the responsiveness in action.</p>
+            <div class="grid">
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">12</p>
+                        <p class="absent-sm absent-lg">6</p>
+                        <p class="absent-sm absent-md">3</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">12</p>
+                        <p class="absent-sm absent-lg">6</p>
+                        <p class="absent-sm absent-md">3</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">12</p>
+                        <p class="absent-sm absent-lg">6</p>
+                        <p class="absent-sm absent-md">3</p>
+                    </div>
+                </div>
+                <div class="unit-12-sm unit-6-md unit-3-lg">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">12</p>
+                        <p class="absent-sm absent-lg">6</p>
+                        <p class="absent-sm absent-md">3</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+    &lt;div class="unit-12-sm unit-6-md unit-3-lg"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2">Default unit</h3>
+            <p class="mb-2">Using a <span class="snippet">.unit-[size]</span> means that it's not bound to a breakpoint. The breakpoint specific unit classes are more specific, so they will have priority over any unit that is not bound to a breakpoint. Change the width of your browser to see the example in action.</p>
+            <div class="grid">
+                <div class="unit-12 unit-6-md">
+                    <div class="r primary p-1 text-center">
+                        <p class="absent-md absent-lg">12</p>
+                        <p class="absent-sm absent-lg">6</p>
+                        <p class="absent-sm absent-md">12</p>
+                    </div>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="grid"&gt;
+    &lt;div class="unit-12 unit-6-md"&gt;
+        <span class="text-muted">&lt;!-- content --&gt;</span>
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+
+
 
             <p class="mb-2"></p>
             <div class="flex between mt-3">
