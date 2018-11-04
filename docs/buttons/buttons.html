@@ -1,239 +1,203 @@
 ---
 ---
 <!doctype html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox-buttons</title>
-  {% include css-links.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    {% include css-links.html %}
 </head>
 <body>
-  <!-- side-menu -->
-  {% include side-menu.html %}
-  <!-- end side-menu -->
-  <!-- navbar -->
-  {% include navbar.html %}
-  <!-- end navbar -->
-  <div class="banner demo-wgray flex flex-cross-center pl-3">
-    <h1 class="ml-2-lg">Buttons</h1>
-  </div>
-  <div class="p-2 p-4-lg">
-    <div class="p-1">
-      <h2>Specs</h2>
-      <div class="stamp-bar h5">
-        <span class="stamp light">breakpoints</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">theme classes</span>
-        <span class="stamp primary">primary</span>
-        <span class="stamp info">info</span>
-        <span class="stamp caution">caution</span>
-        <span class="stamp danger">danger</span>
-        <span class="stamp light">light</span>
-        <span class="stamp dark">dark</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">size classes</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">font-size scaling</span>
-        <span class="stamp info">yes</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">uses grid within</span>
-        <span class="stamp danger">no</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">variables</span>
-        <span class="stamp info">yes</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">display set</span>
-        <span class="stamp info">inline-block</span>
-      </div>
-      <div class="stamp-bar h5">
-        <span class="stamp light">position set</span>
-        <span class="stamp danger">no</span>
-      </div>
-    </div>
-    <hr>
-    <div class="p-1">
-      <h2>Class overview</h2>
-      <div class="message">
-        <div class="message-body clearfix">
-          <div class="unit-12-sm unit-6">
-            <ul class="ul circle-hollow p-alt text-break-all">
-              <li>
-                <span class="snippet no-background"><span class="text-blue">a</span><span class="text-indigo">.button</span></span>
-              </li>
-              <li>
-                <span class="snippet no-background"><span class="text-blue">button</span><span class="text-indigo">.button</span></span>
-              </li>
-              <li>
-                <span class="snippet no-background"><span class="text-blue">input</span>[type="submit"]<span class="text-indigo">.button</span></span>
-              </li>
-              <li>
-                <span class="snippet no-background"><span class="text-blue">input</span>[type="reset"]<span class="text-indigo">.button</span></span>
-              </li>
-            </ul>
-          </div>
-          <div class="unit-12-sm unit-6">
-            <ul class="ul circle-hollow p-alt text-break-all">
-              <li>
-                <span class="snippet no-background text-indigo">.button.wide</span>
-              </li>
-            </ul>
-          </div>
+    {% include side-menu.html %}
+    <main id="main" class="unit-10 push-2 p-0">
+        {% include navbar.html %}
+        <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
+            <h1>Buttons</h1>
+            <hr class="mb-1">
+            <div class="mb-2">
+                <span class="tags h5 mr-half">
+                    <span class="tag light">font-size scaling</span>
+                    <span class="tag info">yes</span>
+                </span>
+            </div>
+            <h3 class="mb-2">Class list</h3>
+            <div class="p-1 light r mb-2">
+                <div class="grid">
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.buttons</span></li>
+                        </ul>
+                    </div>
+                    <div class="unit-6 unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.buttons.flex</span></li>
+                            <li><span class="snippet">.buttons.r-round</span></li>
+                            <li><span class="snippet">.buttons.r-0</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mb-2">Description</h3>
+            <p class="mb-2">A <span class="snippet">.buttons</span> is meant to have only two kinds of immediate children, a <span class="snippet">.button</span> or a <span class="snap snippet">.reveal-wrapper</span>. Use the <span class="snippet">.buttons</span> class on a block level element such as a <span class="snippet">div</span>.</p>
+            <h3 class="mb-2">Example</h3>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <div class="buttons">
+                        <button class="button">one</button>
+                        <button class="button">two</button>
+                        <button class="button">three</button>
+                    </div>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;div class="buttons"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <p class="mb-2">Use themes or the <span class="snippet">.outlined</span> class on the individual buttons, as you normally would.</p>
+            <h3 class="mb-2">Flex utility class</h3>
+            <p class="mb-2">Using the <span class="snippet">.flex</span> utility class on a <span class="snippet">.buttons</span> causes each button to become equal in width.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <div class="buttons flex">
+                        <button class="button">one</button>
+                        <button class="button">two</button>
+                        <button class="button">three</button>
+                    </div>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;div class="buttons flex"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2">Border radius utility classes</h3>
+            <p class="mb-2">Using the <span class="snippet">.r-round</span> or <span class="snippet">.r-0</span> utility classes on a <span class="snippet">.buttons</span> will affect the first and last children of the <span class="snippet">.buttons</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <div class="buttons r-round mb-half">
+                        <button class="button">one</button>
+                        <button class="button">two</button>
+                        <button class="button">three</button>
+                    </div>
+                    <div class="buttons r-0">
+                        <button class="button">one</button>
+                        <button class="button">two</button>
+                        <button class="button">three</button>
+                    </div>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;div class="buttons r-round"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons r-0"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+            <h3 class="mb-2">Font size scaling</h3>
+            <p class="mb-2">Using one of the <a href="{{ '/docs/utilities/font-sizes.html' | absolute_url}}" class="a">font-size utility classes</a> on a <span class="snippet">.buttons</span> will cause each immediate child <span class="snippet">.button</span> or <span class="snippet">.reveal-wrapper</span> to inherit that font-size.</p>
+            <div class="mb-2">
+                <div class="buttons h6 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+                <div class="buttons h5 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+                <div class="buttons h4 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+                <div class="buttons h3 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+                <div class="buttons h2 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+                <div class="buttons h1 mb-half">
+                    <button class="button">one</button>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="buttons h6"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons h5"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons h4"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons h3"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons h2"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="buttons h1"&gt;
+    &lt;button class="button"&gt;one&lt;/button&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            <h3 class="mb-2">Reveal wrapper</h3>
+            <p class="mb-2">As you'll see once you get to the <a href="{{ '/docs/components/dropdown.html' | absolute_url}}" class="a">dropdown component</a>, a reveal wrapper can be used to reveal some content. The structure for using a <span class="snippet">.reveal-wrapper</span> in a <span class="snippet">.buttons</span> is as follows.</p>
+            <div class="mb-2">
+                <div class="buttons">
+                    <div class="reveal-wrapper">
+                        <button class="button reveal-trigger-focus">reveal</button>
+                        <div class="popover reveal-target">
+                            <p>I've been revealed!</p>
+                        </div>
+                    </div>
+                    <button class="button">two</button>
+                    <button class="button">three</button>
+                </div>
+            </div>
+            <pre class="code mb-2"><code>&lt;div class="buttons"&gt;
+    &lt;div class="reveal-wrapper"&gt;
+        &lt;button class="button reveal-trigger-focus"&gt;reveal&lt;/button&gt;
+        &lt;div class="popover reveal-target"&gt;
+            &lt;p&gt;I've been revealed!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="button"&gt;two&lt;/button&gt;
+    &lt;button class="button"&gt;three&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            <div class="flex between mt-3">
+                <a href="{{ '/docs/buttons/button-outlined.html' | absolute_url }}" class="button">previous</a>
+                <a href="{{ '/docs/forms/controls.html' | absolute_url }}" class="button">next</a>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="p-1">
-      <h2>Description</h2>
-      <p>Apply the <span class="snippet p-alt text-indigo">.button</span> class to the specified elements in order to have Sandbox's button styling applied.</p>
-    </div>
-    <div class="p-1">
-      <h2>Wide</h2>
-      <p class="mb-2">Use the <span class="snippet p-alt text-indigo">.wide</span> class on one of the specified elements with the <span class="snippet p-alt text-indigo">.button</span> class to have its display set to block, and also take up the full width available.</p>
-      <button class="button primary wide">I'm a wide button</button>
-    </div>
-    <div class="p-1">
-      <h2>Theme classes</h2>
-      <p class="mb-1">Apply one of the <span class="snippet p-alt text-indigo">.*</span> classes for the desired styling.</p>
-      <div class="grid">
-        <div class="unit-12 unit-4-lg">
-          <button class="button">default</button>
-          <button class="button primary">primary</button>
-          <button class="button info">info</button>
-          <button class="button caution">caution</button>
-          <button class="button danger">danger</button>
-          <button class="button light">light</button>
-          <button class="button dark">dark</button>
-        </div>
-        <div class="unit-12 unit-8-lg">
-          <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
-            <ol class="code p-alt text-nowrap ox-auto">
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button"</span><span class="text-blue">&gt;</span>default<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button primary"</span><span class="text-blue">&gt;</span>primary<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button info"</span><span class="text-blue">&gt;</span>info<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button caution"</span><span class="text-blue">&gt;</span>caution<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button danger"</span><span class="text-blue">&gt;</span>danger<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button light"</span><span class="text-blue">&gt;</span>light<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button dark"</span><span class="text-blue">&gt;</span>dark<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="p-1">
-      <h2>Font size scaling</h2>
-      <p class="mb-1">Apply the font-size classes to adjust the size of the buttons.</p>
-      <div class="grid">
-        <div class="unit-12">
-          <button class="button h6">sizes</button>
-          <button class="button h5">sizes</button>
-          <button class="button p-alt">sizes</button>
-          <button class="button h4">sizes</button>
-          <button class="button h3">sizes</button>
-          <button class="button h2">sizes</button>
-          <button class="button h1 absent-sm">sizes</button>
-          <button class="button huge-2 absent-sm absent-md">sizes</button>
-          <button class="button huge-1 absent-sm absent-md">sizes</button>
-        </div>
-        <div class="unit-12">
-          <div class="relative">
-            <button class="button outlined absolute right-top demo-copy-button h5 z-10 m-0">copy</button>
-            <ol class="code p-alt text-nowrap ox-auto">
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h6"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h5"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button p-alt"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h4"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h3"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h2"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line absent-sm">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button h1"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line absent-sm absent-md">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button huge-2"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-              <li class="line absent-sm absent-md">
-                <span class="text-blue">&lt;button</span> <span class="text-violet">class=</span><span class="text-indigo">"button huge-1"</span><span class="text-blue">&gt;</span>sizes<span class="text-blue">&lt;/button&gt;</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <div class="p-1">
-      <h2>Variables</h2>
-      <table class="table p slim">
-        <thead class="border-rows">
-          <tr>
-            <th>Variable Identifier</th>
-            <th>Value</th>
-          </tr>
-        </thead>
-        <tbody class="striped-even row-hover">
-          <tr>
-            <td class="text-red">$button-padding</td>
-            <td>0.5em 1.25em</td>
-          </tr>
-          <tr>
-            <td class="text-red">$button-margin</td>
-            <td>0rem 0.6rem 0.6rem 0rem</td>
-          </tr>
-          <tr>
-            <td class="text-red">$button-radius</td>
-            <td>0.1875em</td>
-          </tr>
-          <tr>
-            <td class="text-red">$button-focus-shadow-spread</td>
-            <td>0.125em</td>
-          </tr>
-          <tr>
-            <td class="text-red rbl">$button-font-family</td>
-            <td class="rbr">sans-serif</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="flex flex-between p-1 pt-2">
-      <a href="../layout/height.html" class="button dark m-0">previous</a>
-      <a href="./outlined-buttons.html" class="button dark m-0">next</a>
-    </div>
-  </div>
-  <!-- copy-code -->
-  {% include copy-code.html %}
-  <!-- end copy-code -->
+    </main>
+    {% include script.html %}
 </body>
 </html>
