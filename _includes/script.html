@@ -1,15 +1,44 @@
 <script type="text/javascript">
     (function(){
             const sideMenu = document.querySelector('#sideMenu');
-            const toggleSideMenu = document.querySelectorAll('.toggle-side-menu');
+            const toggleSideMenuButtons = document.querySelectorAll('.toggle-side-menu');
             const main = document.querySelector('#main');
 
-            toggleSideMenu.forEach(function(element){
-                element.addEventListener('click', function(){
-                    sideMenu.classList.toggle('is-in');
-                    main.classList.toggle('ml-0');
-                    main.classList.toggle('unit-12');
-                });
+            function toggleSideMenu() {
+                sideMenu.classList.toggle('is-in');
+                main.classList.toggle('ml-0');
+                main.classList.toggle('unit-12');
+
+                if (sideMenu.classList.contains('is-in'))
+                    sessionStorage.setItem('isSideMenuIn', 'true');
+                else
+                    sessionStorage.setItem('isSideMenuIn', 'false');
+            }
+
+            function setActiveTabs() {
+                const parent = document.querySelector('input[name="parent"]').value;
+                const child = document.querySelector('input[name="child"]').value;
+
+                // find the parent
+                    // select it
+                    // toggle the nested tabs of the seleted parent
+                    // select the child
+
+                console.log(parent);
+                console.log(child);
+            }
+
+            function initializePage() {
+                // setActiveTabs();
+
+                if (sessionStorage.getItem('isSideMenuIn') && !JSON.parse(sessionStorage.getItem('isSideMenuIn'))){
+                    toggleSideMenu();
+                }
+                
+            }
+
+            toggleSideMenuButtons.forEach(function(element){
+                element.addEventListener('click', toggleSideMenu);
             });
 
             sideMenu.addEventListener('click', function(e){
@@ -21,5 +50,7 @@
                     sibling.classList.toggle('absent');
                 }
             });
+
+            initializePage();
     })();
 </script>
