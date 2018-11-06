@@ -16,20 +16,25 @@
             }
 
             function setActiveTabs() {
+                // check that the inputs exists, before pulling their value
                 const parent = document.querySelector('input[name="parent"]').value;
                 const child = document.querySelector('input[name="child"]').value;
+                const tabLinks = sideMenu.querySelectorAll('.tab-a');
 
-                // find the parent
-                    // select it
-                    // toggle the nested tabs of the seleted parent
-                    // select the child
+                for (let index = 0; index < tabLinks.length; index++) {
+                    if (tabLinks[index].innerText.toLowerCase() === parent) {
+                        tabLinks[index].parentElement.classList.add('is-active');
+                        tabLinks[index].nextElementSibling.classList.remove('absent');
+                    }
 
-                console.log(parent);
-                console.log(child);
+                    if (tabLinks[index].innerText.toLowerCase() === child) {
+                        tabLinks[index].parentElement.classList.add('is-active');
+                    }
+                }
             }
 
             function initializePage() {
-                // setActiveTabs();
+                setActiveTabs();
 
                 if (sessionStorage.getItem('isSideMenuIn') && !JSON.parse(sessionStorage.getItem('isSideMenuIn'))){
                     toggleSideMenu();
