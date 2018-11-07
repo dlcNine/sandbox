@@ -5,14 +5,28 @@
             const main = document.querySelector('#main');
 
             function toggleSideMenu() {
+                let state;
+
                 sideMenu.classList.toggle('is-in');
                 main.classList.toggle('ml-0');
                 main.classList.toggle('unit-12');
 
+                if (sessionStorage.getItem('sideMenuState')) {
+                    state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+                }
+                else {
+                    state = {};
+                    state.isIn = false;
+                    state.parentTabsOpen = [];
+                    state.currentPage = '';
+                }
+
                 if (sideMenu.classList.contains('is-in'))
-                    sessionStorage.setItem('isSideMenuIn', 'true');
+                    state.isIn = true;
                 else
-                    sessionStorage.setItem('isSideMenuIn', 'false');
+                    state.isIn = false;
+
+               sessionStorage.setItem('sideMenuState', JSON.stringify(state));
             }
 
             function setActiveTabs() {
@@ -34,8 +48,11 @@
             }
 
             function initializePage() {
-                if (sessionStorage.getItem('isSideMenuIn') && !JSON.parse(sessionStorage.getItem('isSideMenuIn'))){
-                    toggleSideMenu();
+                if (sessionStorage.getItem('sideMenuState')) {
+                    let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+
+                    if (!state.isIn)
+                        toggleSideMenu();
                 }
 
                 setActiveTabs();
