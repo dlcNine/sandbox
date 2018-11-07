@@ -17,8 +17,6 @@
                 else {
                     state = {};
                     state.isIn = false;
-                    state.parentTabsOpen = [];
-                    state.currentPage = '';
                 }
 
                 if (sideMenu.classList.contains('is-in'))
@@ -30,20 +28,18 @@
             }
 
             function setActiveTabs() {
-                const parent = document.querySelector('input[name="parent"]');
-                const child = document.querySelector('input[name="child"]');
-                const tabLinks = sideMenu.querySelectorAll('.tab-a');
-                let isParentSet = false;
+                const tabParentSiblings = sideMenu.querySelectorAll('.tab-a + ul');
 
-                for (let index = 0; index < tabLinks.length; index++) {
-                    if (parent && tabLinks[index].innerText.toLowerCase() === parent.value && !isParentSet) {
-                        tabLinks[index].parentElement.classList.add('is-active');
-                        tabLinks[index].nextElementSibling.classList.remove('absent');
-                        isParentSet = true;
+                for (let index = 0; index < tabParentSiblings.length; index++) {
+                    let tabA = tabParentSiblings[index].previousElementSibling;
+
+                    if (sessionStorage.getItem('sideMenuState')) {
+                        const state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+
+                        if (state.parentTabsOpen.includes(tabA.innerText.toLowerCase()))
+                            tabParentSiblings[index].classList.remove('absent');
                     }
-                    else if (child && tabLinks[index].innerText.toLowerCase() === child.value) {
-                        tabLinks[index].parentElement.classList.add('is-active');
-                    }
+
                 }
             }
 
@@ -58,17 +54,38 @@
                 setActiveTabs();
             }
 
-            toggleSideMenuButtons.forEach(function(element){
+            toggleSideMenuButtons.forEach(function(element) {
                 element.addEventListener('click', toggleSideMenu);
             });
 
-            sideMenu.addEventListener('click', function(e){
+            sideMenu.addEventListener('click', function(e) {
                 const target = e.target;
                 const sibling = target.nextElementSibling;
+                let state;
 
                 if (e.target.classList.contains('tab-a') && sibling) {
                     e.preventDefault();
                     sibling.classList.toggle('absent');
+
+                    if (sessionStorage.getItem('sideMenuState')) {
+                        state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+                    }
+                    else {
+                        state = {};
+                        state.parentTabsOpen = [];
+                    }
+
+                    if (sibling.classList.contains('absent') && state.parentTabsOpen.includes(e.target.innerText.toLowerCase())) {
+                        const index = state.parentTabsOpen.indexOf(e.target.innerText.toLowerCase());
+
+                        state.parentTabsOpen.splice(index, 1);
+                    }
+                    else if (!sibling.classList.contains('absent') && !state.parentTabsOpen.includes(e.target.innerText.toLowerCase())) {
+                        state.parentTabsOpen.push(e.target.innerText.toLowerCase());
+                    }
+
+                    sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+                    console.log(sessionStorage.getItem('sideMenuState'));
                 }
             });
 
