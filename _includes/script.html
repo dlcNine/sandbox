@@ -1,83 +1,94 @@
 <script type="text/javascript">
     (function(){
-            const sideMenu = document.querySelector('#sideMenu');
-            const toggleSideMenuButtons = document.querySelectorAll('.toggle-side-menu');
-            const main = document.querySelector('#main');
+        const sideMenu = document.querySelector('#sideMenu');
+        const toggleSideMenuButtons = document.querySelectorAll('.toggle-side-menu');
+        const main = document.querySelector('#main');
 
-            function toggleSideMenu() {
-                let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+        function getSideMenuState() {
+            let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
 
-                sideMenu.classList.toggle('is-in');
-                main.classList.toggle('ml-0');
-                main.classList.toggle('unit-12');
-
-                if (!state)
-                    state = {};
-
-                if (sideMenu.classList.contains('is-in'))
+            if (!state) {
+                state = {};
+                state.isIn = true;
+                state.parentTabsOpen = [];
+            }
+            else {
+                if (!state.hasOwnProperty('isIn'))
                     state.isIn = true;
-                else
-                    state.isIn = false;
-
-               sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+                else if (!state.hasOwnProperty('parentTabsOpen'))
+                    state.parentTabsOpen = [];
             }
 
-            function setActiveTabs() {
-                const nestedTabLists = sideMenu.querySelectorAll('.tab-a + ul');
-                const state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+            return state;
+        }
 
-                for (let index = 0; index < nestedTabLists.length; index++) {
-                    let tabA = nestedTabLists[index].previousElementSibling;
+        function toggleSideMenu() {
+            let state = getSideMenuState();
 
-                    if (state && state.parentTabsOpen && state.parentTabsOpen.includes(tabA.innerText.toLowerCase()))
-                        nestedTabLists[index].classList.remove('absent');
+            sideMenu.classList.toggle('is-in');
+            main.classList.toggle('ml-0');
+            main.classList.toggle('unit-12');
+
+            if (sideMenu.classList.contains('is-in'))
+                state.isIn = true;
+            else
+                state.isIn = false;
+
+           sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+        }
+
+        function setOpenTabs() {
+            const nestedTabLists = sideMenu.querySelectorAll('.tab-a + ul');
+            let state = getSideMenuState();
+
+            for (let index = 0; index < nestedTabLists.length; index++) {
+                let tabA = nestedTabLists[index].previousElementSibling;
+
+                if (state.parentTabsOpen.includes(tabA.innerText)) {
+                    nestedTabLists[index].classList.remove('absent');
                 }
             }
+        }
 
-            function handleSideMenuClick(e) {
-                const target = e.target;
-                const sibling = target.nextElementSibling;
-                let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+        function handleSideMenuClick(e) {
+            const target = e.target;
+            const sibling = target.nextElementSibling;
+            let state = getSideMenuState();
 
-                if (target.classList.contains('tab-a') && sibling) {
-                    e.preventDefault();
-                    sibling.classList.toggle('absent');
+            if (target.classList.contains('tab-a') && sibling) {
+                e.preventDefault();
+                sibling.classList.toggle('absent');
 
-                    if (!state)
-                        state = {};
+                if (sibling.classList.contains('absent') && state.parentTabsOpen.includes(e.target.innerText)) {
+                    const index = state.parentTabsOpen.indexOf(e.target.innerText);
 
-                    if (!state.parentTabsOpen)
-                        state.parentTabsOpen = [];
-
-                    if (sibling.classList.contains('absent') && state.parentTabsOpen && state.parentTabsOpen.includes(e.target.innerText.toLowerCase())) {
-                        const index = state.parentTabsOpen.indexOf(e.target.innerText.toLowerCase());
-
-                        state.parentTabsOpen.splice(index, 1);
-                    }
-                    else if (!sibling.classList.contains('absent') && state.parentTabsOpen && !state.parentTabsOpen.includes(e.target.innerText.toLowerCase())) {
-                        state.parentTabsOpen.push(e.target.innerText.toLowerCase());
-                    }
-
-                    sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+                    state.parentTabsOpen.splice(index, 1);
+                }
+                else if (!sibling.classList.contains('absent') && !state.parentTabsOpen.includes(e.target.innerText)) {
+                    state.parentTabsOpen.push(e.target.innerText);
                 }
 
+                sessionStorage.setItem('sideMenuState', JSON.stringify(state));
             }
+            // else if just .tab-a
+                // figure out how to set appropriate .is-active classes
+        }
 
-            function initializePage() {
-                let state = JSON.parse(sessionStorage.getItem('sideMenuState'));
+        function initializePage() {
+            let state = getSideMenuState();
 
-                if (state && state.hasOwnProperty('isIn') && !state.isIn)
-                    toggleSideMenu();
+            if (!state.isIn)
+                toggleSideMenu();
 
-                setActiveTabs();
-            }
+            setOpenTabs();
+        }
 
-            toggleSideMenuButtons.forEach(function(element) {
-                element.addEventListener('click', toggleSideMenu);
-            });
+        toggleSideMenuButtons.forEach(function(element) {
+            element.addEventListener('click', toggleSideMenu);
+        });
 
-            sideMenu.addEventListener('click', handleSideMenuClick);
+        sideMenu.addEventListener('click', handleSideMenuClick);
 
-            initializePage();
+        initializePage();
     })();
 </script>
