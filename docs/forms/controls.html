@@ -130,11 +130,252 @@
             <p class="mb-2">Use the <span class="snippet">.no-resize</span> class on a <span class="snippet">textarea.textbox</span> to remove the resizing handle.</p>
             <textarea class="textbox no-resize mb-2" placeholder="no resize"></textarea>
             <pre class="code mb-2"><code>&lt;textarea class="textbox no-resize mb-2" placeholder="no resize"&gt;&lt;/textarea&gt;</code></pre>
-
-
-
-
-
+            <h3 class="mb-2">Checkbox and Radio</h3>
+            <p class="mb-2">Sandbox wraps the checkbox and radio input elements in a <span class="snippet">label</span> with the related class name (<span class="snippet">.checkbox</span> or <span class="snippet">.radio</span>) applied. One benefit of this is that the hitbox for checking the related element includes whatever is in the <span class="snippet">label</span>.</p>
+            <div class="grid mb-2">
+                <div class="unit-12 unit-6-lg">
+                    <label class="checkbox mr-1">
+                        <input type="checkbox" name="" value="">
+                        checkbox
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="" value="">
+                        radio
+                    </label>
+                </div>
+                <div class="unit-12 unit-6-lg">
+                    <pre class="code"><code>&lt;label class="checkbox mr-1"&gt;
+    &lt;input type="checkbox" name="" value=""&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio"&gt;
+    &lt;input type="radio" name="" value=""&gt;
+    radio
+&lt;/label&gt;</code></pre>
+                </div>
+            </div>
+            <p class="mb-2">Unlike the <span class="snippet">.textbox</span> class, the display type for <span class="snippet">.checkbox</span> and <span class="snippet">.radio</span> is set to <span class="snippet">inline-block</span>. Make use of the <a href="{{ '/docs/utilities/display.html' | absolute_url }}" class="a">display utility classes</a> to change this behavior.</p>
+            <h3 class="mb-2">Checkbox and Radio switches</h3>
+            <p class="mb-2">Sandbox provides a customized checkbox and radio input. In order for it to work, the <span class="snippet">i</span> element which it uses must go immediately after the <span class="snippet">input</span> element.</p>
+            <label class="checkbox switch mr-1">
+                <input type="checkbox" name="" value="">
+                <i></i>
+                checkbox
+            </label>
+            <label class="radio switch mr-1">
+                <input type="radio" name="state" value="on">
+                <i></i>
+                radio
+            </label>
+            <label class="radio switch mb-2">
+                <input type="radio" name="state" value="off">
+                <i></i>
+                radio
+            </label>
+            <pre class="code mb-2"><code>&lt;label class="checkbox switch mr-1"&gt;
+    &lt;input type="checkbox" name="" value=""&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio switch mr-1"&gt;
+    &lt;input type="radio" name="state" value="on"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch"&gt;
+    &lt;input type="radio" name="state" value="off"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
+            <h3 class="mb-2">Disabled Checkbox and Radio</h3>
+            <label class="checkbox mr-1">
+                <input type="checkbox" disabled>
+                checkbox
+            </label>
+            <label class="checkbox switch mr-1">
+                <input type="checkbox" disabled>
+                <i></i>
+                checkbox
+            </label>
+            <label class="radio mr-1">
+                <input type="radio" disabled>
+                radio
+            </label>
+            <label class="radio switch mb-2">
+                <input type="radio" disabled>
+                <i></i>
+                radio
+            </label>
+            <pre class="code mb-2"><code>&lt;label class="checkbox mr-1"&gt;
+    &lt;input type="checkbox" disabled&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch mr-1"&gt;
+    &lt;input type="checkbox" disabled&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio mr-1"&gt;
+    &lt;input type="radio" disabled&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch"&gt;
+    &lt;input type="radio" disabled&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
+            <h3 class="mb-2">Font size scaling</h3>
+            <p class="mb-2">Use the <a href="{{ '/docs/utilities/font-size.html' | absolute_url}}" class="a">font size utility</a> classes to adjust the size of the controls.</p>
+            <input type="text" class="textbox mb-half h6" placeholder="text">
+            <input type="text" class="textbox mb-half h3" placeholder="text">
+            <input type="text" class="textbox mb-half h1" placeholder="text">
+            <select class="textbox mb-half h6">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <select class="textbox mb-half h3">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <select class="textbox mb-half h1">
+                <option value="" selected disabled>select</option>
+                <option value="">option</option>
+            </select>
+            <div>
+                <label class="checkbox h6 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h6">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="checkbox h3 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h3">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="checkbox h1 mr-1">
+                    <input type="checkbox">
+                    checkbox
+                </label>
+                <label class="checkbox switch h1">
+                    <input type="checkbox">
+                    <i></i>
+                    checkbox
+                </label>
+            </div>
+            <div>
+                <label class="radio h6 mr-1">
+                    <input type="radio" name="part-1">
+                    radio
+                </label>
+                <label class="radio switch h6">
+                    <input type="radio" name="part-1">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <div>
+                <label class="radio h3 mr-1">
+                    <input type="radio" name="part-2">
+                    radio
+                </label>
+                <label class="radio switch h3">
+                    <input type="radio" name="part-2">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <div class="mb-2">
+                <label class="radio h1 mr-1">
+                    <input type="radio" name="part-3">
+                    radio
+                </label>
+                <label class="radio switch h1">
+                    <input type="radio" name="part-3">
+                    <i></i>
+                    radio
+                </label>
+            </div>
+            <pre class="code mb-2"><code>&lt;input type="text" class="textbox h6 mb-half" placeholder="text"&gt;
+&lt;input type="text" class="textbox h3 mb-half" placeholder="text"&gt;
+&lt;input type="text" class="textbox h1 mb-half" placeholder="text"&gt;
+&lt;select class="textbox h6 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="textbox h3 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class="textbox h1 mb-half"&gt;
+    &lt;option value="" selected disabled&gt;select&lt;/option&gt;
+    &lt;option value=""&gt;option&lt;/option&gt;
+&lt;/select&gt;
+&lt;label class="checkbox h6 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h6"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox h3 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h3"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox h1 mr-1"&gt;
+    &lt;input type="checkbox"&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="checkbox switch h1"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    checkbox
+&lt;/label&gt;
+&lt;label class="radio h6 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h6"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio h3 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h3"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio h1 mr-1"&gt;
+    &lt;input type="radio"&gt;
+    radio
+&lt;/label&gt;
+&lt;label class="radio switch h1"&gt;
+    &lt;input type="radio"&gt;
+    &lt;i&gt;&lt;/i&gt;
+    radio
+&lt;/label&gt;</code></pre>
             <div class="flex between mt-3">
                 <a href="{{ '/docs/buttons/buttons.html' | absolute_url }}" class="button">previous</a>
                 <a href="{{ '/docs/forms/field.html' | absolute_url }}" class="button">next</a>
