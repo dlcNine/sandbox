@@ -5,7 +5,8 @@
     text-decoration: none;
     color: $link-unvisited;
 
-    &:hover {
+    &:hover, &:focus {
+        outline: none;
         text-decoration: underline;
     }
 
