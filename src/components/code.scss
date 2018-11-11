@@ -1,6 +1,7 @@
 @import "../base/colors.scss";
 
 $code-color: $alpha-black;
+$code-line-height: 1.25;
 $code-background-color: $medium-white;
 $code-border-radius: 0.25em;
 $code-padding: 1em;
@@ -17,6 +18,7 @@ $snippet-padding: 0.25em;
 // pre
 .code {
   font-size: 1.6rem;
+  line-height: $code-line-height;
   border-radius: $code-border-radius;
   white-space: pre-wrap;
   padding: $code-padding;

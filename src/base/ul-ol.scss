@@ -58,6 +58,7 @@ $ul-ol-li-padding-tight: 0.125em;
 
 .ul .ul, .ul .ol, 
 .ol .ol, .ol .ul {
+  font-size: inherit;
   margin-left: $ul-ol-indentation;
 }
 
