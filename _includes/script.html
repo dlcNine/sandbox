@@ -37,6 +37,29 @@
            sessionStorage.setItem('sideMenuState', JSON.stringify(state));
         }
 
+        function setActiveTabs() {
+            let currentTabName = document.querySelector('h1').innerText;
+            let innerTabLinks = sideMenu.querySelectorAll('ul ul .tab-a');
+            let state = getSideMenuState();
+
+            for (let index = 0; index < innerTabLinks.length; index++) {
+                if (innerTabLinks[index].innerText === currentTabName) {
+                    let parentTab = innerTabLinks[index].parentElement;
+                    let grandParentTabA = parentTab.parentElement.previousElementSibling;
+
+                    parentTab.classList.add('is-active');
+                    grandParentTabA.parentElement.classList.add('is-active');
+
+                    if (state.parentTabsOpen.indexOf(grandParentTabA.innerText) === -1) {
+                        state.parentTabsOpen.push(grandParentTabA.innerText);
+                    }
+                    break;
+                }
+            }
+
+            sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+        }
+
         function setOpenTabs() {
             const nestedTabLists = sideMenu.querySelectorAll('.tab-a + ul');
             let state = getSideMenuState();
@@ -70,8 +93,6 @@
 
                 sessionStorage.setItem('sideMenuState', JSON.stringify(state));
             }
-            // else if just .tab-a
-                // figure out how to set appropriate .is-active classes
         }
 
         function initializePage() {
@@ -80,6 +101,7 @@
             if (!state.isIn)
                 toggleSideMenu();
 
+            setActiveTabs();
             setOpenTabs();
         }
 
