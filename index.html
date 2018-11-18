@@ -5,16 +5,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sandbox</title>
     {% include css-links.html %}
 </head>
 <body>
-    <div class="flex center cross-center h-1-vh">
-        <div class="text-center">
-            <h1>Sandbox</h1>
-            <h3 class="text-muted mb-2">The lightweight css framework</h3>
-            <a href="{{'/docs/base/breakpoint-values.html' | absolute_url}}" class="button outlined">docs</a>
+    <div id="hero" class="flex cross-stretch h-1-vh p-2">
+        <div class="inner flex center cross-center w-1 r p-2 ">
+            <div class="text-center">
+                <h1 id="heroTitle" class="huge-2 h2-sm">sandbox</h1>
+                <h3 class="text-muted mb-1 h4-sm">The lightweight css framework</h3>
+                <a href="{{'/docs/base/breakpoint-values.html' | absolute_url}}" class="button outlined">docs</a>
+            </div>
         </div>
     </div>
+    <script type="text/javascript">
+        let heroTitle = document.getElementById('heroTitle');
+        if (heroTitle.style.backgroundClip === undefined || heroTitle.style.webkitBackgroundClip === undefined) {
+            heroTitle.style.backgroundImage = 'none';
+            heroTitle.style.color = 'lightblue';
+        }
+    </script>
 </body>
 </html>

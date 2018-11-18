@@ -21,7 +21,7 @@ tfoot, th, thead, time, tr, track, u, ul, var, video, wbr {
   vertical-align: baseline;
 }
 
-*, *::before, *::after {
+*, ::before, ::after {
   box-sizing: border-box;
 }
 

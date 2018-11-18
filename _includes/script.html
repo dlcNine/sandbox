@@ -37,6 +37,29 @@
            sessionStorage.setItem('sideMenuState', JSON.stringify(state));
         }
 
+        function setActiveTabs() {
+            let currentTabName = document.querySelector('h1').innerText;
+            let innerTabLinks = sideMenu.querySelectorAll('ul ul .tab-a');
+            let state = getSideMenuState();
+
+            for (let index = 0; index < innerTabLinks.length; index++) {
+                if (innerTabLinks[index].innerText === currentTabName) {
+                    let parentTab = innerTabLinks[index].parentElement;
+                    let grandParentTabA = parentTab.parentElement.previousElementSibling;
+
+                    parentTab.classList.add('is-active');
+                    grandParentTabA.parentElement.classList.add('is-active');
+
+                    if (state.parentTabsOpen.indexOf(grandParentTabA.innerText) === -1) {
+                        state.parentTabsOpen.push(grandParentTabA.innerText);
+                    }
+                    break;
+                }
+            }
+
+            sessionStorage.setItem('sideMenuState', JSON.stringify(state));
+        }
+
         function setOpenTabs() {
             const nestedTabLists = sideMenu.querySelectorAll('.tab-a + ul');
             let state = getSideMenuState();
@@ -44,7 +67,7 @@
             for (let index = 0; index < nestedTabLists.length; index++) {
                 let tabA = nestedTabLists[index].previousElementSibling;
 
-                if (state.parentTabsOpen.includes(tabA.innerText)) {
+                if (state.parentTabsOpen.indexOf(tabA.innerText) !== -1) {
                     nestedTabLists[index].classList.remove('absent');
                 }
             }
@@ -59,19 +82,17 @@
                 e.preventDefault();
                 sibling.classList.toggle('absent');
 
-                if (sibling.classList.contains('absent') && state.parentTabsOpen.includes(e.target.innerText)) {
+                if (sibling.classList.contains('absent') && state.parentTabsOpen.indexOf(e.target.innerText) !== -1) {
                     const index = state.parentTabsOpen.indexOf(e.target.innerText);
 
                     state.parentTabsOpen.splice(index, 1);
                 }
-                else if (!sibling.classList.contains('absent') && !state.parentTabsOpen.includes(e.target.innerText)) {
+                else if (!sibling.classList.contains('absent') && state.parentTabsOpen.indexOf(e.target.innerText) === -1) {
                     state.parentTabsOpen.push(e.target.innerText);
                 }
 
                 sessionStorage.setItem('sideMenuState', JSON.stringify(state));
             }
-            // else if just .tab-a
-                // figure out how to set appropriate .is-active classes
         }
 
         function initializePage() {
@@ -80,6 +101,7 @@
             if (!state.isIn)
                 toggleSideMenu();
 
+            setActiveTabs();
             setOpenTabs();
         }
 
