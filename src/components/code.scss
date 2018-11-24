@@ -19,8 +19,7 @@ $snippet-padding: 0.25em;
 .code {
   font-size: 1.6rem;
   line-height: $code-line-height;
-  border-radius: $code-border-radius;
-  white-space: pre-wrap;
+  overflow-x: auto;
   padding: $code-padding;
 
   code {
