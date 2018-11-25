@@ -35,6 +35,7 @@
                     <div class="unit-6 unit-12-sm">
                         <ul class="ul">
                             <li><span class="snippet">.flex</span></li>
+                            <li><span class="snippet">.flex-wrap</span></li>
                             <li><span class="snippet">.block</span></li>
                             <li><span class="snippet">.inline</span></li>
                             <li><span class="snippet">.inline-block</span></li>
@@ -44,6 +45,11 @@
                     </div>
                     <div class="unit-6 unit-12-sm">
                         <ul class="ul">
+                            <li><span class="snippet">.flex-(breakpoint)</span></li>
+                            <li><span class="snippet">.flex-wrap-(breakpoint)</span></li>
+                            <li><span class="snippet">.block-(breakpoint)</span></li>
+                            <li><span class="snippet">.inline-(breakpoint)</span></li>
+                            <li><span class="snippet">.inline-block-(breakpoint)</span></li>
                             <li><span class="snippet">.absent-(breakpoint)</span></li>
                             <li><span class="snippet">.invisible-(breakpoint)</span></li>
                         </ul>
@@ -53,8 +59,7 @@
             <h3 class="mb-2 fw-bold">Description</h3>
             <p class="mb-2">Use the display utility classes to override the display type for an element.</p>
             <h3 class="mb-2 fw-bold">Absent</h3>
-            <p class="mb-2">The <span class="snippet">.absent</span> class is an abstraction on <span class="snippet">display: none;</span>. Plug in any of the breakpoint suffixes (<span class="snippet">sm</span>, <span class="snippet">md</span>, <span class="snippet">lg</span>) into <span class="snippet">(breakpoint)</span> to have the element be absent during that breakpoint.</p>
-            <p class="mb-2">Reduce the width of your browser to see the example in action.</p>
+            <p class="mb-2">The <span class="snippet">.absent</span> class is an abstraction on <span class="snippet">display: none;</span>. Reduce the width of your browser to see the example in action.</p>
             <div class="text-center mb-2">
                 <p class="absent-md absent-lg">small breakpoint</p>
                 <p class="absent-sm absent-lg">medium breakpoint</p>
@@ -66,8 +71,7 @@
     &lt;p class="absent-sm absent-md"&gt;large breakpoint&lt;/p&gt;
 &lt;/div&gt;</code></pre>
             <h3 class="mb-2 fw-bold">Invisible</h3>
-            <p class="mb-2">Use the <span class="snippet">.invisible</span> class to set <span class="snippet">visibility: hidden;</span> on an element. Plug in any of the breakpoint suffixes (<span class="snippet">sm</span>, <span class="snippet">md</span>, <span class="snippet">lg</span>) into <span class="snippet">(breakpoint)</span> to have the element be invisible during that breakpoint.</p>
-            <p class="mb-2">Reduce the width of your browser to see the example in action.</p>
+            <p class="mb-2">Use the <span class="snippet">.invisible</span> class to set <span class="snippet">visibility: hidden;</span> on an element. Reduce the width of your browser to see the example in action.</p>
             <div class="clearfix mb-2">
                 <figure class="square x3 primary mr-1 invisible-sm to-left"></figure>
                 <figure class="square x3 info mr-1 invisible-md to-left"></figure>
@@ -78,6 +82,8 @@
     &lt;figure class="square x3 info mr-1 invisible-md to-left"&gt;&lt;/figure&gt;
     &lt;figure class="square x3 danger mr-1 invisible-lg to-left"&gt;&lt;/figure&gt;
 &lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Flex-wrap</h3>
+            <p class="mb-2">The <span class="snippet">.flex-wrap</span> class sets the <span class="snippet">display</span> to <span class="snippet">flex</span> and sets the flex flow to wrap onto new lines. Consider using this class on a <span class="snippet">.grid</span> if the situation calls for it.</p>
             <div class="flex between mt-3">
                 <a href="{{ '/docs/utilities/border.html' | absolute_url }}" class="button">previous</a>
                 <a href="{{ '/docs/utilities/position.html' | absolute_url }}" class="button">next</a>
