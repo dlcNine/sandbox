@@ -2,8 +2,8 @@
 
 .flex  { display: flex !important; }
 .flex-wrap {
-  display: flex;
-  flex-flow: row wrap;
+  display: flex !important;
+  flex-flow: row wrap !important;
 }
 .block { display: block !important; }
 .inline { display: inline !important; }
@@ -14,8 +14,8 @@
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .flex-sm  { display: flex !important; }
   .flex-wrap-sm {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex !important;
+    flex-flow: row wrap !important;
   }
   .block-sm { display: block !important; }
   .inline-sm { display: inline !important; }
@@ -27,8 +27,8 @@
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .flex-md  { display: flex !important; }
   .flex-wrap-md {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex !important;
+    flex-flow: row wrap !important;
   }
   .block-md { display: block !important; }
   .inline-md { display: inline !important; }
@@ -40,8 +40,8 @@
 @media screen and (min-width: $lg-and-up) {
   .flex-lg  { display: flex !important; }
   .flex-wrap-lg {
-    display: flex;
-    flex-flow: row wrap;
+    display: flex !important;
+    flex-flow: row wrap !important;
   }
   .block-lg { display: block !important; }
   .inline-lg { display: inline !important; }
