@@ -30,7 +30,6 @@ $control-switch-box-size: 1.2em;
   border: $control-border-width solid $control-border-color;
   border-radius: $control-border-radius;
   transition: all 125ms;
-  z-index: 5;
 
   &::placeholder {
     color: $alpha-light-black;

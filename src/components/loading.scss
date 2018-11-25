@@ -9,11 +9,11 @@ $loading-size-x4: 4em;
 
 @keyframes revolution {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg);
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -24,6 +24,7 @@ $loading-size-x4: 4em;
   width: $loading-size;
   height: $loading-size;
   border-color: $loading-border-color;
+  vertical-align: text-bottom;
 
   &.x2 {
     font-size: $loading-size-x2;
@@ -36,9 +37,19 @@ $loading-size-x4: 4em;
   &.x4 {
     font-size: $loading-size-x4;
   }
+
+  &.is-paused::before {
+    animation-play-state: paused;
+  }
+
+  &.is-reversed::before {
+    animation-direction: reverse;
+  }
   
   &::before {
     position: absolute;
+    left: 0;
+    top: 0;
     content: '';
     border-width: 0.1rem;
     border-style: solid;
@@ -48,9 +59,6 @@ $loading-size-x4: 4em;
     border-bottom-color: transparent;
     width: $loading-size;
     height: $loading-size;
-    top: 50%;
-    transform: translate(-50%, -50%);
     animation: revolution 650ms linear 0ms infinite normal;
-
   }
 }

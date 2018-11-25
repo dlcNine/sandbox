@@ -1,7 +1,9 @@
 <script type="text/javascript">
     (function(){
         const sideMenu = document.querySelector('#sideMenu');
+        const topMenu = document.querySelector('#topMenu');
         const toggleSideMenuButtons = document.querySelectorAll('.toggle-side-menu');
+        const toggleTopMenuButton = document.querySelector('.toggle-top-menu');
         const main = document.querySelector('#main');
 
         function getSideMenuState() {
@@ -73,7 +75,7 @@
             }
         }
 
-        function handleSideMenuClick(e) {
+        function handleDocsNavClick(e) {
             const target = e.target;
             const sibling = target.nextElementSibling;
             let state = getSideMenuState();
@@ -105,12 +107,28 @@
             setOpenTabs();
         }
 
+        initializePage();
+
         toggleSideMenuButtons.forEach(function(element) {
             element.addEventListener('click', toggleSideMenu);
         });
 
-        sideMenu.addEventListener('click', handleSideMenuClick);
+        toggleTopMenuButton.addEventListener('click', function(e){
+            let state = getSideMenuState();
 
-        initializePage();
+            topMenu.classList.toggle('absent');
+
+            if (sideMenu.classList.contains('is-in')) {
+                sideMenu.classList.remove('is-in');
+                state.isIn = false;
+
+
+                main.classList.add('ml-0');
+                main.classList.add('unit-12');
+            }
+        });
+
+        sideMenu.addEventListener('click', handleDocsNavClick);
+        topMenu.addEventListener('click', handleDocsNavClick);
     })();
 </script>
