@@ -29,7 +29,7 @@
                     <span class="tag">font-size scaling</span><span class="tag primary">n/a</span>
                 </span>
             </div>
-            <h3 class="mb-2">Class list</h3>
+            <h3 class="mb-2 fw-bold">Class list</h3>
             <div class="p-1 light r mb-2">
                 <div class="grid">
                     <div class="unit-4 unit-6-md unit-12-sm">
@@ -58,11 +58,11 @@
                     </div>
                 </div>
             </div>
-            <h3 class="mb-2">Flex containers</h3>
+            <h3 class="mb-2 fw-bold">Flex containers</h3>
             <p class="mb-2">The classes specified above (except for <span class="snippet">.order-(value)-(breakpoint)</span>) are to be applied to an element whose display property is set to <span class="snippet">flex</span>, which becomes the flex container. These classes determine how to place the immediate children (flex items) of the flex container.</p>
             <p class="mb-2">The classes without <span class="snippet">cross-</span> affect items along the main axis, which is by default left to right with no wrapping.</p>
             <p class="mb-2">The classes with <span class="snippet">cross-</span> affect items along the cross axis (perpendicular to the main axis). By default the cross axis would be top to bottom.</p>
-            <h3 class="mb-2">Example</h3>
+            <h3 class="mb-2 fw-bold">Example</h3>
             <div class="flex between cross-center mb-2">
                 <button class="button h1">button</button>
                 <small>Lorem ipsum dolor.</small>
@@ -73,7 +73,7 @@
     &lt;small&gt;Lorem ipsum dolor.&lt;/small&gt;
     &lt;span class="tag dark h4"&gt;tag&lt;/span&gt;
 &lt;/div&gt;</code></pre>
-            <h3 class="mb-2">Flex items</h3>
+            <h3 class="mb-2 fw-bold">Flex items</h3>
             <p class="mb-2">The only classes that Sandbox provides for flex items are <span class="snippet">.order-(value)-(breakpoint)</span>. These classes allow the rearrangement of the flex items at specific breakpoints, so long as they are within a flex container.</p>
             <p class="mb-2">The values that can be plugged into <span class="snippet">(value)</span> are: 
                 <span class="snippet">1</span>, 
@@ -82,8 +82,8 @@
                 <span class="snippet">4</span>.
             </p>
             <p class="mb-2">Plug in whichever breakpoint suffix you want to use into <span class="snippet">(breakpoint)</span>.</p>
-            <h3 class="mb-2">Example</h3>
-            <div class="flex mb-2">
+            <h3 class="mb-2 fw-bold">Example</h3>
+            <div class="flex grid mb-2">
                 <div class="unit-12 order-2-md order-3-sm">
                     <div class="r primary p-1 text-center">
                         <p>1</p>
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <pre class="code mb-2"><code>&lt;div class="flex"&gt;
+            <pre class="code mb-2"><code>&lt;div class="flex grid"&gt;
     &lt;div class="unit-12 order-2-md order-3-sm"&gt;
         <span class="text-muted">&lt;!-- content 1 --&gt;</span>
     &lt;/div&gt;
@@ -111,7 +111,7 @@
         <span class="text-muted">&lt;!-- content 3 --&gt;</span>
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-            <h3 class="mb-2">More info</h3>
+            <h3 class="mb-2 fw-bold">More info</h3>
             <p class="mb-2">For more information on flexbox, check out this <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" class="a">article</a>.</p>
             <div class="flex between mt-3">
                 <a href="{{ '/docs/layout/position-presets.html' | absolute_url }}" class="button">previous</a>

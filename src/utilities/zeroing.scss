@@ -2,6 +2,7 @@
 
 .no-background { background: none !important; }
 .no-shadow { box-shadow: none !important; }
+.no-before::before, .no-after::after { display: none !important; }
 
 .b-0 { border: 0 !important; }
 .bt-0 { border-top: 0 !important; }
