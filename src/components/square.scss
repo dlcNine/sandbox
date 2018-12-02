@@ -6,6 +6,7 @@ $square-border-radius: 0.125em;
 
 figure.square {
   font-size: 1.6rem;
+  display: inline-block;
   height: $square-size;
   width: $square-size;
   border-radius: $square-border-radius;
@@ -46,5 +47,6 @@ figure.square {
     height: 100%;
     width: 100%;
     border-radius: inherit;
+    object-fit: cover;
   }
 }
