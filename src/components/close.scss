@@ -50,32 +50,4 @@ $close-xmark-border-width: 0.0625em;
   &::after {
     transform: rotate(135deg) translate(-50%, -50%);
   }
-
-  &.dark {
-    background-color: $light-black;
-
-    &::before, &::after {
-      border-color: $medium-gray;
-    }
-
-    &:hover, &:focus {
-      background-color: $medium-black;
-      outline: none;
-
-      &::before, &::after {
-        border-color: $medium-white;
-      }
-    }
-
-    &:focus {
-      background-color: $medium-black;
-      outline: none;
-    }
-
-    &:active {
-      &::before, &::after {
-        border-color: $white;
-      }
-    }
-  }
 }
