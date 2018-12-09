@@ -14,8 +14,7 @@ $list-item-padding: 1em;
     }
 
     .list-item:not(:first-child):not(:last-child) {
-        padding-top: $list-item-padding;
-        padding-bottom: $list-item-padding;
+        padding: $list-item-padding 0rem;
     }
 
     .list-item:last-child {

@@ -27,15 +27,18 @@ $loading-size-x4: 4em;
   vertical-align: text-bottom;
 
   &.x2 {
-    font-size: $loading-size-x2;
+    width: $loading-size-x2;
+    height: $loading-size-x2;
   }
 
   &.x3 {
-    font-size: $loading-size-x3;
+    width: $loading-size-x3;
+    height: $loading-size-x3;
   }
 
   &.x4 {
-    font-size: $loading-size-x4;
+    width: $loading-size-x4;
+    height: $loading-size-x4;
   }
 
   &.is-paused::before {
@@ -57,8 +60,8 @@ $loading-size-x4: 4em;
     border-radius: $RADIUS_ROUND;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    width: $loading-size;
-    height: $loading-size;
+    width: inherit;
+    height: inherit;
     animation: revolution 650ms linear 0ms infinite normal;
   }
 }
