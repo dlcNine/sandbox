@@ -1,6 +1,6 @@
 ---
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -34,7 +34,7 @@
             </div>
             <h3 class="mb-2 fw-bold">Class list</h3>
             <div class="p-1 light r mb-2">
-                <div class="grid">
+                <div class="flex grid flex-wrap">
                     <div class="unit-4 unit-6-md unit-12-sm">
                         <ul class="ul">
                             <li><span class="snippet">.start</span></li>
@@ -59,6 +59,11 @@
                             <li><span class="snippet">.order-(value)-(breakpoint)</span></li>
                         </ul>
                     </div>
+                    <div class="unit-4 unit-6-md unit-12-sm">
+                        <ul class="ul">
+                            <li><span class="snippet">.flex-wrap</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <h3 class="mb-2 fw-bold">Flex containers</h3>
@@ -76,6 +81,8 @@
     &lt;small&gt;Lorem ipsum dolor.&lt;/small&gt;
     &lt;span class="tag dark h4"&gt;tag&lt;/span&gt;
 &lt;/div&gt;</code></pre>
+            <h3 class="mb-2 fw-bold">Flex wrap</h3>
+            <p class="mb-2">Use the <span class="snippet">.flex-wrap</span> class on a flex container to have the flex items wrap onto new lines if they exceed the remaining width for the current line.</p>
             <h3 class="mb-2 fw-bold">Flex items</h3>
             <p class="mb-2">The only classes that Sandbox provides for flex items are <span class="snippet">.order-(value)-(breakpoint)</span>. These classes allow the rearrangement of the flex items at specific breakpoints, so long as they are within a flex container.</p>
             <p class="mb-2">The values that can be plugged into <span class="snippet">(value)</span> are: 
