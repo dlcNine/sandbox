@@ -1,10 +1,6 @@
 @import "../base/breakpoint-values.scss";
 
 .flex  { display: flex !important; }
-.flex-wrap {
-  display: flex !important;
-  flex-flow: row wrap !important;
-}
 .block { display: block !important; }
 .inline { display: inline !important; }
 .inline-block { display: inline-block !important; }
@@ -13,10 +9,6 @@
 
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   .flex-sm  { display: flex !important; }
-  .flex-wrap-sm {
-    display: flex !important;
-    flex-flow: row wrap !important;
-  }
   .block-sm { display: block !important; }
   .inline-sm { display: inline !important; }
   .inline-block-sm { display: inline-block !important; }
@@ -26,10 +18,6 @@
 
 @media screen and (min-width: $md-lower) and (max-width: $md-upper) {
   .flex-md  { display: flex !important; }
-  .flex-wrap-md {
-    display: flex !important;
-    flex-flow: row wrap !important;
-  }
   .block-md { display: block !important; }
   .inline-md { display: inline !important; }
   .inline-block-md { display: inline-block !important; }
@@ -39,10 +27,6 @@
 
 @media screen and (min-width: $lg-and-up) {
   .flex-lg  { display: flex !important; }
-  .flex-wrap-lg {
-    display: flex !important;
-    flex-flow: row wrap !important;
-  }
   .block-lg { display: block !important; }
   .inline-lg { display: inline !important; }
   .inline-block-lg { display: inline-block !important; }

@@ -13,6 +13,8 @@
 .cross-baseline { align-items: baseline; }
 .cross-stretch { align-items: stretch; }
 
+.flex-wrap { flex-wrap: wrap; }
+
 @media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
   @for $index from 1 through 4 {
       .order-#{$index}-sm { order: $index; }
