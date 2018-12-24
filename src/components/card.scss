@@ -43,7 +43,7 @@ $card-part-radius: 0.3rem;
     border-radius: $card-part-radius;
   }
 
-  .card-footer {
+  .card-footer, .card-body:last-child {
     border-radius: 0rem 0rem $card-part-radius $card-part-radius;
   }
 }
