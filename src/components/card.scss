@@ -39,11 +39,11 @@ $card-part-radius: 0.3rem;
     border-radius: $card-part-radius $card-part-radius 0rem 0rem;
   }
 
-  .card-body:only-child {
-    border-radius: $card-part-radius;
+  .card-footer, .card-body:last-child {
+    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
   }
 
-  .card-footer {
-    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
+  .card-body:only-child {
+    border-radius: $card-part-radius;
   }
 }
