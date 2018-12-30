@@ -6,15 +6,17 @@ $navbar-padding: 0.25em;
 $navbar-item-padding: 0.5em;
 $navbar-item-border-radius: 0.25em;
 
+// nav, div
 .navbar {
   font-size: 1.6rem;
-  z-index: 25;
   padding: $navbar-padding;
   background-color: $navbar-background-color;
 
   &.fixed-top {
     position: fixed;
+    z-index: 25;
     top: 0;
+    left: 0;
     width: 100%;
   }
 

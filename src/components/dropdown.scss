@@ -69,6 +69,7 @@ $reveal-transition-speed: 150ms;
   // div, a
   .dropdown-item {
     padding: $dropdown-item-padding;
+    text-align: left;
     display: block;
   }
 
