@@ -11,7 +11,7 @@
 .h5 { font-size: 1.2rem !important; }
 .h6 { font-size: 0.9rem !important; }
 
-@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+@media screen and (max-width: $sm-and-below) {
   .huge-1-sm { font-size: 6.7rem !important; }
   .huge-2-sm { font-size: 5.1rem !important; }
   .h1-sm { font-size: 3.8rem !important; }
@@ -33,7 +33,7 @@
   .h6-md { font-size: 0.9rem !important; }
 }
 
-@media screen and (min-width: $lg-and-up) {
+@media screen and (min-width: $lg-and-above) {
   .huge-1-lg { font-size: 6.7rem !important; }
   .huge-2-lg { font-size: 5.1rem !important; }
   .h1-lg { font-size: 3.8rem !important; }

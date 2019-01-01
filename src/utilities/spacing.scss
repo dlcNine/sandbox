@@ -169,7 +169,7 @@ $spacing: $UNIT_SPACING;
 }
 
 
-@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+@media screen and (max-width: $sm-and-below) {
   .m-half-sm { margin: 0.5 * $spacing !important; }
   .mt-half-sm { margin-top: 0.5 * $spacing !important; }
   .mb-half-sm { margin-bottom: 0.5 * $spacing !important; }
@@ -493,7 +493,7 @@ $spacing: $UNIT_SPACING;
   }
 }
 
-@media screen and (min-width: $lg-and-up) {
+@media screen and (min-width: $lg-and-above) {
   .m-half-lg { margin: 0.5 * $spacing !important; }
   .mt-half-lg { margin-top: 0.5 * $spacing !important; }
   .mb-half-lg { margin-bottom: 0.5 * $spacing !important; }

@@ -45,7 +45,7 @@ $unit-padding: $UNIT_SPACING;
   .push-#{$index} { margin-left: percentage($index / $GRID_SYSTEM); }
 }
 
-@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+@media screen and (max-width: $sm-and-below) {
   .grid.tight.no-tight-sm {
     @include tight-cancel($unit-padding);
   }
@@ -82,7 +82,7 @@ $unit-padding: $UNIT_SPACING;
 
 }
 
-@media screen and (min-width: $lg-and-up) {
+@media screen and (min-width: $lg-and-above) {
   .grid.tight.no-tight-lg {
     @include tight-cancel($unit-padding);
   }
