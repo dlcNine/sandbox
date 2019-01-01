@@ -11,17 +11,14 @@ $tabs-vertical-a-padding: 0.25em;
 $tabs-vertical-nested-margin-left: 1em;
 
 // ul
-.tabs:not(.vertical), .tabs.vertical {
-    // li
-    .tab .tab-a {
-        display: block;
-        color: inherit;
-        text-decoration: none;
-        border: 0.1rem solid transparent;
+.tab-a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    border: 0.1rem solid transparent;
 
-        &:focus {
-            outline: none;
-        }
+    &:focus {
+        outline: none;
     }
 }
 
@@ -46,21 +43,23 @@ $tabs-vertical-nested-margin-left: 1em;
     &.underline .tab {
         &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             text-decoration: underline;
+            color: $alpha-black;
         }
     }
 
     &.border-bottoms .tab {
         &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
             border-bottom: 0.1rem solid $tab-a-hover-background-color;
+            color: $alpha-black;
         }
     }
 
     &.solid {
-        &.r-0 .tab .tab-a {
+        &.r-0 .tab-a {
             border-radius: 0;
         }
 
-        &.r-round .tab .tab-a {
+        &.r-round .tab-a {
             border-radius: $RADIUS_ROUND;
         }
 
@@ -88,7 +87,8 @@ $tabs-vertical-nested-margin-left: 1em;
 
             &.is-active .tab-a {
                 border: 0.1rem solid $BORDER_ACTIVE_COLOR;
-                border-bottom: 0.1rem solid $white;
+                border-bottom: 0.1rem solid $BODY_BACKGROUND_COLOR;
+                color: $alpha-black;
             }
 
             .tab-a {
@@ -97,7 +97,8 @@ $tabs-vertical-nested-margin-left: 1em;
 
                 &:hover, &:focus {
                     border: 0.1rem solid $BORDER_COLOR;
-                    border-bottom: 0.1rem solid $white;
+                    border-bottom: 0.1rem solid $BODY_BACKGROUND_COLOR;
+                    color: $alpha-black;
                 }
             }
         }
@@ -125,19 +126,21 @@ $tabs-vertical-nested-margin-left: 1em;
 
     }
 
-    &.indent-nested .tab .tabs.vertical {
+    &.indent-nested .tabs.vertical {
         margin-left: $tabs-vertical-nested-margin-left;
     }
 
     &.underline .tab {
         &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             text-decoration: underline;
+            color: $alpha-black;
         }
     }
 
     &.border-lefts .tab {
         &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
             border-left: 0.1rem solid $tab-a-hover-background-color;
+            color: $alpha-black;
         }
     }
 

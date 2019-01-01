@@ -7,7 +7,7 @@
 .absent { display: none !important; }
 .invisible { visibility: hidden !important; }
 
-@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+@media screen and (max-width: $sm-and-below) {
   .flex-sm  { display: flex !important; }
   .block-sm { display: block !important; }
   .inline-sm { display: inline !important; }
@@ -25,7 +25,7 @@
   .invisible-md { visibility: hidden !important; }
 }
 
-@media screen and (min-width: $lg-and-up) {
+@media screen and (min-width: $lg-and-above) {
   .flex-lg  { display: flex !important; }
   .block-lg { display: block !important; }
   .inline-lg { display: inline !important; }

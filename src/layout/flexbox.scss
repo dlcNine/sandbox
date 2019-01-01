@@ -15,7 +15,7 @@
 
 .flex-wrap { flex-wrap: wrap; }
 
-@media screen and (min-width: $sm-lower) and (max-width: $sm-upper) {
+@media screen and (max-width: $sm-and-below) {
   @for $index from 1 through 4 {
       .order-#{$index}-sm { order: $index; }
   }
@@ -27,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: $lg-and-up) {
+@media screen and (min-width: $lg-and-above) {
   @for $index from 1 through 4 {
       .order-#{$index}-lg { order: $index; }
   }
