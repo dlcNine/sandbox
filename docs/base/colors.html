@@ -3,10 +3,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head.html %}
     <title>Colors</title>
-    {% include css-links.html %}
 </head>
 <body>
     {% include side-menu.html %}
@@ -14,6 +12,11 @@
         {% include navbar.html %}
         <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
             <h1>Colors</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">_colors.scss</li>
+            </ul>
             <hr class="mb-2">
             <h3 class="mb-2 fw-bold">Description</h3>
             <p class="mb-2">The following color variables are used throughout Sandbox. Keep in mind that when compiled these values are converted to hex values.</p>

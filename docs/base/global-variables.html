@@ -3,10 +3,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include head.html %}
     <title>Global Variables</title>
-    {% include css-links.html %}
 </head>
 <body>
     {% include side-menu.html %}
@@ -14,6 +12,11 @@
         {% include navbar.html %}
         <div class="unit-10 push-1 unit-12-sm ml-0-sm no-float">
             <h1>Global Variables</h1>
+            <ul class="steps h5 mb-half">
+                <li class="step">src</li>
+                <li class="step">base</li>
+                <li class="step">_global-variables.scss</li>
+            </ul>
             <hr class="mb-2">
             <h3 class="mb-2 fw-bold">Description</h3>
             <p class="mb-2">If you're customizing sandbox, the global variables file is the place to start. Here you can set the font stack, font color, and other settings used throughout the framework.</p>
