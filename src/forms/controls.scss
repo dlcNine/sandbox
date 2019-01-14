@@ -46,7 +46,7 @@ $control-switch-box-size: 1.2em;
   }
 
   &[readonly], &[disabled] {
-    background-color: $white-gray;
+    background-color: $light-white;
     border-color: $control-hover-border-color;
     cursor: not-allowed;
     box-shadow: none;
