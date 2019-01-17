@@ -2,6 +2,7 @@
 @import "../base/colors.scss";
 
 $loading-border-color: $medium-gray;
+$loading-border-width: 0.1rem;
 $loading-size: 1em;
 $loading-size-x2: 2em;
 $loading-size-x3: 3em;
@@ -54,7 +55,7 @@ $loading-size-x4: 4em;
     left: 0;
     top: 0;
     content: '';
-    border-width: 0.1rem;
+    border-width: $loading-border-width;
     border-style: solid;
     border-color: inherit;
     border-radius: $RADIUS_ROUND;

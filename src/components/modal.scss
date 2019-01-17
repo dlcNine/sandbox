@@ -1,6 +1,7 @@
 @import "../base/colors.scss";
 
 $overlay-background-color: $alpha-light-black;
+$overlay-z-index: 55;
 $modal-padding: 1.25em;
 $modal-border-radius: 0.25em;
 $modal-background-color: $white;
@@ -8,7 +9,7 @@ $modal-background-color: $white;
 // div
 .overlay {
   position: fixed;
-  z-index: 55;
+  z-index: $overlay-z-index;
   top: 0;
   left: 0;
   height: 100.1%;

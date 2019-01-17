@@ -9,7 +9,7 @@
 @mixin tight-cancel($spacing) {
   margin: -1 * $spacing;
 
-  div[class*="unit-"] {
+  [class*="unit-"] {
     padding: $spacing;
   }
 }
@@ -17,7 +17,7 @@
 @mixin tight-responsive($spacing) {
   margin: -0.5 * $spacing;
 
-  div[class*="unit-"] {
+  [class*="unit-"] {
     padding: 0.5 * $spacing;
   }
 }
@@ -36,7 +36,7 @@
    @include border-background-color($dark-color);
   }
 
-  &:focus:not([disabled]) {
+  &:focus {
     box-shadow: 0 0 0 $CONTROL_SHADOW_SPREAD $shadow-color;
   }
 }
@@ -53,7 +53,7 @@
   background-color: inherit;
   color: $FONT_COLOR;
 
-  input.textbox, select.textbox, textarea.textbox {
+  .textbox {
     border-color: $light-color;
 
     &:focus {
@@ -61,7 +61,7 @@
     }
   }
 
-  p.help {
+  .help {
     color: $medium-color;
   }
 }

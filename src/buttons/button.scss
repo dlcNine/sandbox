@@ -41,6 +41,7 @@ $button-default-build-color: $medium-gray;
 
   &[disabled] {
     opacity: $DISABLED_OPACITY;
+    pointer-events: none;
   }
 
   &:link {

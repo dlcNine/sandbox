@@ -3,11 +3,6 @@
 
 $spacing: $UNIT_SPACING;
 
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 .m-half { margin: 0.5 * $spacing !important; }
 .mt-half { margin-top: 0.5 * $spacing !important; }
 .mb-half { margin-bottom: 0.5 * $spacing !important; }
@@ -40,6 +35,11 @@ $spacing: $UNIT_SPACING;
     margin-top: $spacing * $index !important;
     margin-bottom: $spacing * $index !important;
   }
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .p-half { padding: 0.5 * $spacing !important; }

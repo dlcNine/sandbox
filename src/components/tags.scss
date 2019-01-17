@@ -15,11 +15,11 @@ $tags-tag-round-radius: $RADIUS_ROUND;
   }
 
   &.r-round {
-    .tag:first-child {
+    :first-child {
       border-top-left-radius: $tags-tag-round-radius;
       border-bottom-left-radius: $tags-tag-round-radius;
     }
-    .tag:last-child {
+    :last-child {
       border-top-right-radius: $tags-tag-round-radius;
       border-bottom-right-radius: $tags-tag-round-radius;
     }

@@ -9,6 +9,8 @@ $control-shadow-spread: $CONTROL_SHADOW_SPREAD;
 $control-box-shadow-color: $alpha-light-primary;
 $control-border-radius: 0.125em;
 $control-spacing: 1rem;
+$control-placeholder-color: $alpha-light-black;
+$control-readonly-background-color: $light-white;
 
 $control-height: $CONTROL_HEIGHT;
 
@@ -32,7 +34,7 @@ $control-switch-box-size: 1.2em;
   transition: all 125ms;
 
   &::placeholder {
-    color: $alpha-light-black;
+    color: $control-placeholder-color;
   }
 
   &:hover {
@@ -46,7 +48,7 @@ $control-switch-box-size: 1.2em;
   }
 
   &[readonly], &[disabled] {
-    background-color: $light-white;
+    background-color: $control-readonly-background-color;
     border-color: $control-hover-border-color;
     cursor: not-allowed;
     box-shadow: none;

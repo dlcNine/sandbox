@@ -2,8 +2,13 @@
 
 $close-size: 1em;
 $close-radius: 0.125em;
-$close-xmark-size: 0.5em;
-$close-xmark-border-width: 0.0625em;
+$close-x-size: 0.5em;
+$close-x-border-width: 0.0625em;
+$close-background-color: $medium-white;
+$close-hover-background-color: $light-white;
+$close-x-border-color: $dark-gray;
+$close-x-hover-border-color: $light-black;
+$close-x-active-border-color: $black;
 
 // button
 .close {
@@ -12,16 +17,16 @@ $close-xmark-border-width: 0.0625em;
   width: $close-size;
   border-radius: $close-radius;
   position: relative;
-  background-color: $medium-white;
+  background-color: $close-background-color;
   transition: all 125ms;
 
   &:hover, &:focus {
-    background-color: $light-white;
+    background-color: $close-hover-background-color;
     outline: none;
     cursor: pointer;
 
     &::before, &::after {
-      border-color: $light-black;
+      border-color: $close-x-hover-border-color;
     }
   }
 
@@ -29,14 +34,14 @@ $close-xmark-border-width: 0.0625em;
     outline: none;
     
     &::before, &::after {
-      border-color: $black;
+      border-color: $close-x-active-border-color;
     }
   }
 
   &::before, &::after {
     content: '';
-    border-right: $close-xmark-border-width solid $dark-gray;
-    height: $close-xmark-size;
+    border-right: $close-x-border-width solid $close-x-border-color;
+    height: $close-x-size;
     position: absolute;
     top: 50%;
     left: 50%;

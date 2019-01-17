@@ -1,6 +1,7 @@
 @import "../base/colors.scss";
 @import "../base/global-variables";
 
+$dropdown-padding: 0.6rem 0rem;
 $dropdown-background-color: $white;
 $dropdown-border-radius: 0.3rem;
 $dropdown-border-color: $BORDER_COLOR;
@@ -15,6 +16,12 @@ $reveal-transition-speed: 150ms;
   display: inline-block;
   position: relative;
 
+  .reveal-target {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $reveal-transition-speed;
+  }
+
   .reveal-trigger-focus:focus + .reveal-target,
   .reveal-trigger-focus + .reveal-target:hover,
   .reveal-trigger-hover:hover + .reveal-target,
@@ -22,12 +29,6 @@ $reveal-transition-speed: 150ms;
   .reveal-target.is-revealed {
     opacity: 1;
     pointer-events: auto;
-  }
-
-  .reveal-target {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity $reveal-transition-speed;
   }
 }
 
@@ -40,7 +41,7 @@ $reveal-transition-speed: 150ms;
   background-color: $dropdown-background-color;
   border: 0.1rem solid $dropdown-border-color;
   border-radius: $dropdown-border-radius;
-  padding: 0.6rem 0rem;
+  padding: $dropdown-padding;
   white-space: nowrap;
   left: 0;
   top: 100%;

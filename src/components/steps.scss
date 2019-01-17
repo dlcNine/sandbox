@@ -4,6 +4,7 @@ $steps-color: $alpha-light-black;
 $steps-hover-color: $alpha-black;
 $steps-last-child-color: $light-primary;
 $steps-separator-x-spacing: 0.25em;
+$steps-separator: '/';
 
 // ul
 .steps {
@@ -35,7 +36,7 @@ $steps-separator-x-spacing: 0.25em;
         }
 
         &:not(:last-child)::after {
-            content: '/';
+            content: $steps-separator;
             margin: 0rem $steps-separator-x-spacing;
         }
     }
