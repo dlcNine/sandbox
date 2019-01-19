@@ -6,6 +6,7 @@ $code-background-color: $medium-white;
 $code-border-radius: 0.25em;
 $code-padding: 1em;
 $snippet-padding: 0.25em;
+$snippet-line-height: 1;
 
 // pre, span
 .code, .snippet {
@@ -26,6 +27,7 @@ $snippet-padding: 0.25em;
 // span
 .snippet {
   display: inline-block;
+  line-height: $snippet-line-height;
   padding: $snippet-padding;
 }
 
