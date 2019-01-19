@@ -1,0 +1,52 @@
+$squared-size: 1em;
+$squared-size-x2: 2em;
+$squared-size-x3: 3em;
+$squared-size-x4: 4em;
+$squared-border-radius: 0.125em;
+
+.squared {
+  font-size: 1.6rem;
+  display: inline-block;
+  height: $squared-size;
+  width: $squared-size;
+  border-radius: $squared-border-radius;
+
+  &.text {
+    text-align: center;
+    line-height: $squared-size;
+  }
+
+  &.x2 {
+    height: $squared-size-x2;
+    width: $squared-size-x2;
+
+    &.text {
+      line-height: $squared-size-x2;
+    }
+  }
+
+  &.x3 {
+    height: $squared-size-x3;
+    width: $squared-size-x3;
+
+    &.text {
+      line-height: $squared-size-x3;
+    }
+  }
+
+  &.x4 {
+    height: $squared-size-x4;
+    width: $squared-size-x4;
+
+    &.text {
+      line-height: $squared-size-x4;
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+  }
+}

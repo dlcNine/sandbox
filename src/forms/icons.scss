@@ -24,22 +24,6 @@ $icons-input-spacing: 2em;
     padding-right: $icons-input-spacing;
   }
 
-  // span
-  .icon-left, .icon-right {
-    position: absolute;
-    top: 50%;
-    transform: translate(0%, -50%);
-    color: $icons-color;
-  }
-
-  .icon-left {
-    left: $icons-spacing;
-  }
-
-  .icon-right {
-    right: $icons-spacing;
-  }
-
   .textbox {
     font-size: inherit;
 
@@ -48,3 +32,22 @@ $icons-input-spacing: 2em;
     }
   }
 }
+
+// span
+.icon-left, .icon-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  color: $icons-color;
+}
+
+.icon-left {
+  left: $icons-spacing;
+}
+
+.icon-right {
+  right: $icons-spacing;
+}
+
+
+  

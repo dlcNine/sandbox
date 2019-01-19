@@ -21,31 +21,33 @@ $card-part-radius: 0.3rem;
       border-radius: 0;
     }
   }
+}
 
-  // div
-  .card-header, .card-body, .card-footer {
-    padding: $card-part-padding;
+// div
+.card-header, .card-body, .card-footer {
+  padding: $card-part-padding;
 
-    &.image {
-      padding: 0;
+  &.image {
+    padding: 0;
 
-      img {
-        width: 100%;
-        display: block;
-        border-radius: inherit;
-      }
+    img {
+      width: 100%;
+      display: block;
+      border-radius: inherit;
     }
   }
-
-  .card-header {
-    border-radius: $card-part-radius $card-part-radius 0rem 0rem;
-  }
-
-  .card-footer, .card-body:last-child {
-    border-radius: 0rem 0rem $card-part-radius $card-part-radius;
-  }
-
-  .card-body:only-child {
-    border-radius: $card-part-radius;
-  }
 }
+
+.card-header {
+  border-radius: $card-part-radius $card-part-radius 0rem 0rem;
+}
+
+.card-footer, .card-body:last-child {
+  border-radius: 0rem 0rem $card-part-radius $card-part-radius;
+}
+
+.card-body:only-child {
+  border-radius: $card-part-radius;
+}
+
+

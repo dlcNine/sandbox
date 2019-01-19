@@ -7,21 +7,21 @@ $list-item-padding: 1em;
 // ul
 .list-items {
     font-size: 1.6rem;
-    
-    // li
-    .list-item:first-child {
-        padding-bottom: $list-item-padding;
-    }
+}
 
-    .list-item:not(:first-child):not(:last-child) {
-        padding: $list-item-padding 0rem;
-    }
+// li
+.list-item:first-child {
+    padding-bottom: $list-item-padding;
+}
 
-    .list-item:last-child {
-        padding-top: $list-item-padding;
-    }
+.list-item:not(:first-child):not(:last-child) {
+    padding: $list-item-padding 0rem;
+}
 
-    .list-item:not(:last-child) {
-        border-bottom: 0.1rem solid $list-item-border-color;
-    }
+.list-item:last-child {
+    padding-top: $list-item-padding;
+}
+
+.list-item:not(:last-child) {
+    border-bottom: 0.1rem solid $list-item-border-color;
 }

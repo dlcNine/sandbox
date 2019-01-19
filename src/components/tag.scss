@@ -17,20 +17,20 @@ $tag-color: $FONT_COLOR;
   color: $tag-color;
   vertical-align: text-bottom;
 
-  // a
-  .tag-a {
-    color: inherit;
-    text-decoration: none;
-
-    &:hover, &:focus {
-      outline: none;
-      text-decoration: underline;
-    }
-  }
-
   // button
   .close {
     font-size: $tag-font-size;
+  }
+}
+
+// a
+.tag-a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    outline: none;
+    text-decoration: underline;
   }
 }
 

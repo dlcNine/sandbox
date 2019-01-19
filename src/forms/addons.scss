@@ -58,38 +58,38 @@ $addon-border-radius: 0.25em;
     &:not(:last-child) {
       margin-right: -1 * $addon-border-width;
     }
-  }
+  }  
+}
 
-  // span
-  .addon {
-    height: $addon-height;
-    line-height: $addon-height;
-    color: $addon-color;
-    background-color: $addon-background-color;
-    border: $addon-border-width solid $addon-border-color;
-    border-radius: $addon-border-radius;
-    padding: 0 $addon-spacing;
-    white-space: nowrap;
+// span
+.addon {
+  height: $addon-height;
+  line-height: $addon-height;
+  color: $addon-color;
+  background-color: $addon-background-color;
+  border: $addon-border-width solid $addon-border-color;
+  border-radius: $addon-border-radius;
+  padding: 0 $addon-spacing;
+  white-space: nowrap;
 
-    &.interactive {
-      padding: 0;
-      border: 0;
-      background: none;
+  &.interactive {
+    padding: 0;
+    border: 0;
+    background: none;
 
-      .button {
-        font-size: inherit;
-        border-radius: inherit;
-        height: inherit;
-        padding: 0 $addon-spacing;
-      }
+    .button {
+      font-size: inherit;
+      border-radius: inherit;
+      height: inherit;
+      padding: 0 $addon-spacing;
+    }
 
-      // select
-      .textbox {
-        font-size: inherit;
-        width: auto;
-        background-color: $addon-background-color;
-        border-color: $addon-border-color;
-      }
+    // select
+    .textbox {
+      font-size: inherit;
+      width: auto;
+      background-color: $addon-background-color;
+      border-color: $addon-border-color;
     }
   }
 }

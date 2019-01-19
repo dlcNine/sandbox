@@ -23,28 +23,27 @@ $navbar-item-hover-background-color: $alpha-light-black;
     left: 0;
     width: 100%;
   }
+}
 
-  // div, a
-  .navbar-item {
-    display: inline-block;
-    padding: $navbar-item-padding;
-    border-radius: $navbar-item-border-radius;
+// div, a
+.navbar-item {
+  display: inline-block;
+  padding: $navbar-item-padding;
+  border-radius: $navbar-item-border-radius;
 
-    &.is-active {
-      background-color: $navbar-item-hover-background-color;
-    }
+  &.is-active {
+    background-color: $navbar-item-hover-background-color;
   }
+}
 
-  a.navbar-item {
-    color: inherit;
-    text-decoration: none;
+a.navbar-item {
+  color: inherit;
+  text-decoration: none;
 
-    &:hover, &:focus {
-      outline: none;
-      background-color: $navbar-item-hover-background-color;
-    }
+  &:hover, &:focus {
+    outline: none;
+    background-color: $navbar-item-hover-background-color;
   }
-
 }
 
 
