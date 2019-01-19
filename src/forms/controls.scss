@@ -22,6 +22,10 @@ $control-switch-track-height: 0.5em;
 $control-switch-track-width: 2.2em;
 $control-switch-box-size: 1.2em;
 
+.textbox:not(select) {
+  appearance: none;
+}
+
 // input, select, textarea
 .textbox {
   font-size: 1.6rem;
