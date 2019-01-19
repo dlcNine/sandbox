@@ -1,5 +1,8 @@
 # Sandbox
-Sandbox is an open source CSS framework. 
+Sandbox is an open source CSS only framework.
+
+## Documentation
+Check out [the docs](https://dlcnine.github.io/sandbox/) to learn how to use Sandbox.
 
 ## Installation
 ```
@@ -35,7 +38,4 @@ npm run build
 while inside of the `sandbox-css` directory. The SASS will compile and output your new `sandbox-min.css` to the `dist/` directory.
 
 ## Compatibility
-Sandbox uses Autoprefixer to take care of vendor specific prefixes, so there's no need to write them yourself. 
-
-## Documentation
-[The docs](https://dlcnine.github.io/sandbox/) are currently under construction, but feel free to check them out as they progress. 
+Sandbox uses Autoprefixer to take care of vendor specific prefixes, so there's no need to write them yourself.
