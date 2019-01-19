@@ -1,13 +1,13 @@
 # Sandbox
 Sandbox is an open source CSS only framework.
 
-## Documentation
-Check out [the docs](https://dlcnine.github.io/sandbox/) to learn how to use Sandbox.
-
 ## Installation
 ```
 npm install sandbox-css
 ```
+
+## Documentation
+Check out [the docs](https://dlcnine.github.io/sandbox/) to learn how to use Sandbox.
 
 ## Description
 Sandbox is a CSS only framework written in SASS, which complies to a single CSS file.
