@@ -35,10 +35,10 @@
   },
   "homepage": "https://github.com/dlcNine/sandbox#readme",
   "devDependencies": {
-    "autoprefixer": "^7.2.3",
-    "postcss": "^6.0.14",
+    "autoprefixer": "^7.2.6",
+    "postcss": "^6.0.23",
     "postcss-cli": "^4.1.1",
-    "sass": "^1.14.3"
+    "sass": "^1.16.1"
   },
   "dependencies": {
     "npm": "^6.6.0"
