@@ -2,6 +2,7 @@
 @import "../base/mixins.scss";
 
 $navbar-background-color: $medium-white;
+$navbar-color: $FONT_COLOR;
 $navbar-padding: 0.25em;
 $navbar-item-padding: 0.5em;
 $navbar-item-border-radius: 0.25em;
@@ -13,6 +14,7 @@ $navbar-item-hover-background-color: $alpha-light-black;
   font-size: 1.6rem;
   padding: $navbar-padding;
   background-color: $navbar-background-color;
+  color: $navbar-color;
 
   &.fixed-top {
     position: fixed;

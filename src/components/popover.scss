@@ -5,6 +5,7 @@ $popover-padding: 1rem;
 $popover-min-width: 10rem;
 $popover-border-color: $BORDER_COLOR;
 $popover-background-color: $white;
+$popover-color: $FONT_COLOR;
 $popover-border-radius: 0.25em;
 $popover-z-index: 25;
 
@@ -18,6 +19,7 @@ $popover-z-index: 25;
     border-radius: $popover-border-radius;
     border: 0.1rem solid $popover-border-color;
     background-color: $popover-background-color;
+    color: $popover-color;
     white-space: nowrap;
     left: 50%;
     bottom: 100%;

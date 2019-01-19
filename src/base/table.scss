@@ -2,6 +2,7 @@
 @import "./global-variables.scss";
 
 $table-background-color: $white;
+$table-color: $FONT_COLOR;
 $table-item-padding: 0.75em;
 $table-tight-padding: 0.5em;
 $table-tighter-padding: 0.25em;
@@ -14,6 +15,7 @@ $table-row-hover-color: $alpha-gray;
   width: 100%;
   text-align: left;
   background-color: $table-background-color;
+  color: $table-color;
 
   th, td {
     padding: $table-item-padding;

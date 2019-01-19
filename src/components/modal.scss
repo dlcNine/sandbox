@@ -5,6 +5,7 @@ $overlay-z-index: 55;
 $modal-padding: 1.25em;
 $modal-border-radius: 0.25em;
 $modal-background-color: $white;
+$modal-color: $FONT_COLOR;
 
 // div
 .overlay {
@@ -24,4 +25,5 @@ $modal-background-color: $white;
   padding: $modal-padding;
   border-radius: $modal-border-radius;
   background-color: $modal-background-color;
+  color: $modal-color;
 }

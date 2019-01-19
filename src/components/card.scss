@@ -2,6 +2,7 @@
 @import "../base/global-variables.scss";
 
 $card-border-color: $BORDER_COLOR;
+$card-color: $FONT_COLOR;
 $card-background-color: $white;
 $card-radius: 0.4rem;
 $card-part-padding: 1.2rem;
@@ -13,6 +14,7 @@ $card-part-radius: 0.3rem;
   border: 0.1rem solid $card-border-color;
   border-radius: $card-radius;
   background-color: $card-background-color;
+  color: $card-color;
 
   &.r-0 {
     .card-header, .card-body, .card-footer {

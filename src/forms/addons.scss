@@ -5,6 +5,7 @@ $addon-height: $CONTROL_HEIGHT;
 $addon-border-width: 0.1rem;
 $addon-background-color: $light-white;
 $addon-border-color: $BORDER_COLOR;
+$addon-color: $FONT_COLOR;
 $addon-spacing: 1rem;
 $addon-border-radius: 0.25em;
 
@@ -63,6 +64,7 @@ $addon-border-radius: 0.25em;
   .addon {
     height: $addon-height;
     line-height: $addon-height;
+    color: $addon-color;
     background-color: $addon-background-color;
     border: $addon-border-width solid $addon-border-color;
     border-radius: $addon-border-radius;

@@ -4,6 +4,7 @@ $tag-font-size: 0.75em;
 $tag-padding: 0.25em 0.5em;
 $tag-border-radius: 0.25em;
 $tag-background-color: $medium-gray;
+$tag-color: $FONT_COLOR;
 
 // span
 .tag {
@@ -13,6 +14,7 @@ $tag-background-color: $medium-gray;
   line-height: 1;
   border-radius: $tag-border-radius;
   background-color: $tag-background-color;
+  color: $tag-color;
   vertical-align: text-bottom;
 
   // a
