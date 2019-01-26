@@ -33,6 +33,10 @@ $pagination-page-a-padding: 0.25em;
             }
         }
 
+        &:first-child .page-a {
+            padding-left: 0;
+        }
+
         // a
         .page-a {
             display: inline-block;
