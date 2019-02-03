@@ -47,8 +47,13 @@ $tabs-vertical-nested-margin-left: 1em;
     }
 
     &.border-bottoms .tab {
+        .tab-a {
+            border-width: 0rem 0rem 0.1rem 0rem;
+        }
+
         &.is-active .tab-a, .tab-a:hover, .tab-a:focus {
-            border-bottom: 0.1rem solid $tab-a-hover-background-color;
+            border-style: solid;
+            border-color: $tab-a-hover-background-color;
             color: $alpha-black;
         }
     }
@@ -137,8 +142,13 @@ $tabs-vertical-nested-margin-left: 1em;
     }
 
     &.border-lefts .tab {
+        .tab-a {
+            border-width: 0rem 0rem 0rem 0.1rem;
+        }
+
         &.is-active > .tab-a, .tab-a:hover, .tab-a:focus {
-            border-left: 0.1rem solid $tab-a-hover-background-color;
+            border-style: solid;
+            border-color: $tab-a-hover-background-color;
             color: $alpha-black;
         }
     }
