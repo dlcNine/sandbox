@@ -1,8 +1,16 @@
 @import "./colors.scss";
 
+a {
+    color: inherit;
+    text-decoration: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
 .a {
     cursor: pointer;
-    text-decoration: none;
     color: $link-unvisited;
 
     &:hover, &:focus {
